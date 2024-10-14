@@ -64,17 +64,7 @@ public class TaskInstance implements Serializable {
 
     private Date firstSubmitTime;
 
-    private Date submitTime;
-
-    private Date startTime;
-
-    private Date endTime;
-
-    private String host;
-
-    private String executePath;
-
-    private String logPath;
+    private TaskExecutionEnvironment taskExecutionEnvironment;
 
     private int retryTimes;
 
@@ -140,10 +130,8 @@ public class TaskInstance implements Serializable {
 
     private int testFlag;
 
-    public void init(String host, Date startTime, String executePath) {
-        this.host = host;
-        this.startTime = startTime;
-        this.executePath = executePath;
+    public void init(TaskExecutionEnvironment taskExecutionEnvironment) {
+        this.taskExecutionEnvironment = taskExecutionEnvironment;
     }
 
 }
