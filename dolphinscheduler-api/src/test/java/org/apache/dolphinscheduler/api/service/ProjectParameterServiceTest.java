@@ -77,8 +77,13 @@ public class ProjectParameterServiceTest {
         // PERMISSION DENIED
         when(projectService.hasProjectAndWritePerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class)))
                 .thenReturn(false);
-        Result result = projectParameterService.createProjectParameter(loginUser, projectCode, "key", "value",
-                DataType.VARCHAR.name());
+        CreateProjectParameterParams params = new CreateProjectParameterParams()
+                .withLoginUser(loginUser)
+                .withProjectCode(projectCode)
+                .withProjectParameterName("key")
+                .withProjectParameterValue("value")
+                .withProjectParameterDataType(DataType.VARCHAR.name());
+        Result result = projectParameterService.createProjectParameter(params);
         assertNull(result.getData());
         assertNull(result.getCode());
         assertNull(result.getMsg());
@@ -123,8 +128,14 @@ public class ProjectParameterServiceTest {
         // NO PERMISSION
         when(projectService.hasProjectAndWritePerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class)))
                 .thenReturn(false);
-        Result result = projectParameterService.updateProjectParameter(loginUser, projectCode, 1, "key", "value",
-                DataType.VARCHAR.name());
+        UpdateProjectParameterParams updateParams = new UpdateProjectParameterParams()
+                .withLoginUser(loginUser)
+                .withProjectCode(projectCode)
+                .withCode(1L)
+                .withProjectParameterName("key")
+                .withProjectParameterValue("value")
+                .withProjectParameterDataType(DataType.VARCHAR.name());
+        Result result = projectParameterService.updateProjectParameter(updateParams);
         assertNull(result.getData());
         assertNull(result.getCode());
         assertNull(result.getMsg());
@@ -170,7 +181,11 @@ public class ProjectParameterServiceTest {
         // NO PERMISSION
         when(projectService.hasProjectAndWritePerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class)))
                 .thenReturn(false);
-        Result result = projectParameterService.deleteProjectParametersByCode(loginUser, projectCode, 1);
+        DeleteProjectParametersByCodeParams deleteParams = new DeleteProjectParametersByCodeParams()
+                .withLoginUser(loginUser)
+                .withProjectCode(projectCode)
+                .withCode(1L);
+        Result result = projectParameterService.deleteProjectParametersByCode(deleteParams);
         assertNull(result.getData());
         assertNull(result.getCode());
         assertNull(result.getMsg());
@@ -204,7 +219,11 @@ public class ProjectParameterServiceTest {
                 Mockito.any()))
                         .thenReturn(false);
 
-        Result result = projectParameterService.queryProjectParameterByCode(loginUser, projectCode, 1);
+        QueryProjectParameterByCodeParams queryParams = new QueryProjectParameterByCodeParams()
+                .withLoginUser(loginUser)
+                .withProjectCode(projectCode)
+                .withCode(1L);
+        Result result = projectParameterService.queryProjectParameterByCode(queryParams);
         assertNull(result.getData());
         assertNull(result.getCode());
         assertNull(result.getMsg());
@@ -234,9 +253,13 @@ public class ProjectParameterServiceTest {
                 Mockito.any()))
                         .thenReturn(false);
 
-        Result result =
-                projectParameterService.queryProjectParameterListPaging(loginUser, projectCode, pageSize, pageNo, null,
-                        DataType.VARCHAR.name());
+        QueryProjectParameterListPagingParams pagingParams = new QueryProjectParameterListPagingParams()
+                .withLoginUser(loginUser)
+                .withProjectCode(projectCode)
+                .withPageSize(pageSize)
+                .withPageNo(pageNo)
+                .withProjectParameterDataType(DataType.VARCHAR.name());
+        Result result = projectParameterService.queryProjectParameterListPaging(pagingParams);
         assertNull(result.getData());
         assertNull(result.getCode());
         assertNull(result.getMsg());
@@ -267,7 +290,11 @@ public class ProjectParameterServiceTest {
         AssertionsHelper.assertThrowsServiceException(Status.PROJECT_PARAMETER_NOT_EXISTS,
                 () -> projectParameterService.batchDeleteProjectParametersByCodes(loginUser, projectCode, "1,2"));
 
-        projectParameterService.batchDeleteProjectParametersByCodes(loginUser, projectCode, "1");
+        BatchDeleteProjectParametersByCodesParams batchDeleteParams3 = new BatchDeleteProjectParametersByCodesParams()
+                .withLoginUser(loginUser)
+                .withProjectCode(projectCode)
+                .withCodes("1");
+        projectParameterService.batchDeleteProjectParametersByCodes(batchDeleteParams3);
     }
 
     private Project getProject(long projectCode) {

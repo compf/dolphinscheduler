@@ -140,10 +140,10 @@ public class TaskInstance implements Serializable {
 
     private int testFlag;
 
-    public void init(String host, Date startTime, String executePath) {
-        this.host = host;
-        this.startTime = startTime;
-        this.executePath = executePath;
+    public void init(TaskInstanceInitParams params) {
+        this.host = params.getHost();
+        this.startTime = params.getStartTime();
+        this.executePath = params.getExecutePath();
     }
 
 }
