@@ -22,18 +22,18 @@ import org.apache.dolphinscheduler.dao.entity.User;
 
 public interface ProjectParameterService {
 
-    Result createProjectParameter(User loginUser, long projectCode, String projectParameterName,
-                                  String projectParameterValue, String projectParameterDataType);
+    Result createProjectParameter(ProjectParameterInfo projectParameterInfo, long projectCode,
+                                  String projectParameterValue);
 
-    Result updateProjectParameter(User loginUser, long projectCode, long code, String projectParameterName,
-                                  String projectParameterValue, String projectParameterDataType);
+    Result updateProjectParameter(ProjectParameterInfo projectParameterInfo, long projectCode, long code,
+                                  String projectParameterValue);
 
-    Result deleteProjectParametersByCode(User loginUser, long projectCode, long code);
+    Result deleteProjectParametersByCode(ProjectParameterInfo projectParameterInfo, long projectCode);
 
-    Result batchDeleteProjectParametersByCodes(User loginUser, long projectCode, String codes);
+    Result batchDeleteProjectParametersByCodes(ProjectParameterInfo projectParameterInfo, long projectCode);
 
-    Result queryProjectParameterListPaging(User loginUser, long projectCode, Integer pageSize, Integer pageNo,
-                                           String searchVal, String projectParameterDataType);
+    Result queryProjectParameterListPaging(ProjectParameterInfo projectParameterInfo, long projectCode, Integer pageSize, Integer pageNo,
+                                           String searchVal);
 
-    Result queryProjectParameterByCode(User loginUser, long projectCode, long code);
+    Result queryProjectParameterByCode(ProjectParameterInfo projectParameterInfo, long projectCode, long code);
 }

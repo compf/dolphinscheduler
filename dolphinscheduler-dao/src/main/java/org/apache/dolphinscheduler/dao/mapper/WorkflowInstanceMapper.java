@@ -112,13 +112,10 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      */
     IPage<WorkflowInstance> queryWorkflowInstanceListPaging(Page<WorkflowInstance> page,
                                                             @Param("projectCode") Long projectCode,
-                                                            @Param("workflowDefinitionCode") Long workflowDefinitionCode,
-                                                            @Param("searchVal") String searchVal,
-                                                            @Param("executorName") String executorName,
-                                                            @Param("states") int[] statusArray,
-                                                            @Param("host") String host,
-                                                            @Param("startTime") Date startTime,
-                                                            @Param("endTime") Date endTime);
+                                                            @Param("workflowDefinitionCode") WorkflowDefinitionCode workflowDefinitionCode,
+                                                            @Param("queryWorkflowInstanceListPagingParameter") QueryWorkflowInstanceListPagingParameter queryWorkflowInstanceListPagingParameter,
+                                                            @Param("queryWorkflowInstanceListPagingParameter") QueryWorkflowInstanceListPagingParameter queryWorkflowInstanceListPagingParameter,
+                                                            @Param("queryWorkflowInstanceListPagingParameter") QueryWorkflowInstanceListPagingParameter queryWorkflowInstanceListPagingParameter);
 
     /**
      * set failover by host and state array
@@ -169,9 +166,8 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @return ExecuteStatusCount list
      */
     List<WorkflowInstanceStatusCountDto> countWorkflowInstanceStateByProjectCodes(
-                                                                                  @Param("startTime") Date startTime,
-                                                                                  @Param("endTime") Date endTime,
-                                                                                  @Param("projectCodes") Collection<Long> projectCodes);
+                                                                                  @Param("workflowInstanceStatusCountDtoParameter") WorkflowInstanceStatusCountDtoParameter workflowInstanceStatusCountDtoParameter,
+                                                                                  @Param("workflowInstanceStatusCountDtoParameter") WorkflowInstanceStatusCountDtoParameter workflowInstanceStatusCountDtoParameter,
 
     /**
      * query workflow instance by workflowDefinitionCode
@@ -181,7 +177,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @return workflow instance list
      */
     List<WorkflowInstance> queryByWorkflowDefinitionCode(@Param("workflowDefinitionCode") Long workflowDefinitionCode,
-                                                         @Param("size") int size);
+                                                         @Param("taskAlertInfo") TaskAlertInfo taskAlertInfo);
 
     /**
      * query last scheduler workflow instance
@@ -194,10 +190,8 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @return workflow instance
      */
     WorkflowInstance queryLastSchedulerWorkflow(@Param("workflowDefinitionCode") Long workflowDefinitionCode,
-                                                @Param("taskDefinitionCode") Long taskDefinitionCode,
-                                                @Param("startTime") Date startTime,
-                                                @Param("endTime") Date endTime,
-                                                @Param("testFlag") int testFlag);
+                                                @Param("queryLastSchedulerWorkflowParameter") QueryLastSchedulerWorkflowParameter queryLastSchedulerWorkflowParameter,
+                                                @Param("queryLastSchedulerWorkflowParameter") QueryLastSchedulerWorkflowParameter queryLastSchedulerWorkflowParameter);
 
     /**
      * query last manual workflow instance
@@ -210,10 +204,8 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @return workflow instance
      */
     WorkflowInstance queryLastManualWorkflow(@Param("workflowDefinitionCode") Long workflowDefinitionCode,
-                                             @Param("taskCode") Long taskCode,
-                                             @Param("startTime") Date startTime,
-                                             @Param("endTime") Date endTime,
-                                             @Param("testFlag") int testFlag);
+                                             @Param("queryLastManualWorkflowParameter") QueryLastManualWorkflowParameter queryLastManualWorkflowParameter,
+                                             @Param("queryLastManualWorkflowParameter") QueryLastManualWorkflowParameter queryLastManualWorkflowParameter);
 
     /**
      * query first schedule workflow instance
@@ -243,10 +235,9 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      */
 
     List<WorkflowInstance> queryTopNWorkflowInstance(@Param("size") int size,
-                                                     @Param("startTime") Date startTime,
-                                                     @Param("endTime") Date endTime,
-                                                     @Param("status") WorkflowExecutionStatus status,
-                                                     @Param("projectCode") long projectCode);
+                                                     @Param("queryTopNWorkflowInstanceParameter") QueryTopNWorkflowInstanceParameter queryTopNWorkflowInstanceParameter,
+                                                     @Param("queryTopNWorkflowInstanceParameter") QueryTopNWorkflowInstanceParameter queryTopNWorkflowInstanceParameter,
+                                                     @Param("queryTopNWorkflowInstanceParameter") QueryTopNWorkflowInstanceParameter queryTopNWorkflowInstanceParameter);
 
     /**
      * query workflow instance by workflowDefinitionCode and stateArray
@@ -257,11 +248,11 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      */
 
     List<WorkflowInstance> queryByWorkflowDefinitionCodeAndStatus(@Param("workflowDefinitionCode") Long workflowDefinitionCode,
-                                                                  @Param("states") int[] states);
+                                                                  @Param("queryWorkflowInstanceListPagingParameter") QueryWorkflowInstanceListPagingParameter queryWorkflowInstanceListPagingParameter);
 
     List<WorkflowInstance> queryByWorkflowCodeVersionStatus(@Param("workflowDefinitionCode") long workflowDefinitionCode,
-                                                            @Param("workflowDefinitionVersion") int workflowDefinitionVersion,
-                                                            @Param("states") int[] states);
+                                                            @Param("queryWorkflowInstanceListPagingParameter") QueryWorkflowInstanceListPagingParameter queryWorkflowInstanceListPagingParameter,
+                                                            @Param("queryWorkflowInstanceListPagingParameter") QueryWorkflowInstanceListPagingParameter queryWorkflowInstanceListPagingParameter);
 
     /**
      * Filter workflow instance
@@ -275,13 +266,12 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @return workflow instance IPage
      */
     IPage<WorkflowInstance> queryWorkflowInstanceListV2Paging(Page<WorkflowInstance> page,
-                                                              @Param("projectCode") Long projectCode,
-                                                              @Param("workflowDefinitionCode") Long workflowDefinitionCode,
+                                                              @Param("workflowDefinitionCode") WorkflowDefinitionCode workflowDefinitionCode,
+                                                              @Param("workflowDefinitionCode") WorkflowDefinitionCode workflowDefinitionCode,
                                                               @Param("name") String name,
-                                                              @Param("startTime") String startTime,
-                                                              @Param("endTime") String endTime,
-                                                              @Param("state") Integer state,
-                                                              @Param("host") String host);
+                                                              @Param("queryWorkflowInstanceListPagingParameter") QueryWorkflowInstanceListPagingParameter queryWorkflowInstanceListPagingParameter,
+                                                              @Param("queryWorkflowInstanceListPagingParameter") QueryWorkflowInstanceListPagingParameter queryWorkflowInstanceListPagingParameter,
+                                                              @Param("queryWorkflowInstanceListPagingParameter") QueryWorkflowInstanceListPagingParameter queryWorkflowInstanceListPagingParameter);
 
     /**
      * Statistics workflow instance state v2
@@ -297,12 +287,10 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @return ExecuteStatusCount list
      */
     List<ExecuteStatusCount> countInstanceStateV2(
-                                                  @Param("startTime") Date startTime,
-                                                  @Param("endTime") Date endTime,
-                                                  @Param("projectCode") Long projectCode,
-                                                  @Param("workflowCode") Long workflowCode,
-                                                  @Param("model") Integer model,
-                                                  @Param("projectIds") Set<Integer> projectIds);
+                                                  @Param("workflowInstanceStatusCountDtoParameter") WorkflowInstanceStatusCountDtoParameter workflowInstanceStatusCountDtoParameter,
+                                                  @Param("workflowInstanceStatusCountDtoParameter") WorkflowInstanceStatusCountDtoParameter workflowInstanceStatusCountDtoParameter,
+                                                  @Param("workflowInstanceStatusCountDtoParameter") WorkflowInstanceStatusCountDtoParameter workflowInstanceStatusCountDtoParameter,
+                                                  @Param("workflowInstanceStatusCountDtoParameter") WorkflowInstanceStatusCountDtoParameter workflowInstanceStatusCountDtoParameter);
 
     /**
      * query process list by triggerCode

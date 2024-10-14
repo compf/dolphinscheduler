@@ -17,35 +17,38 @@
 
 package org.apache.dolphinscheduler.plugin.task.api.model;
 
-public class TaskAlertInfo {
+public class TaskAlertInfo implements AlertData {
 
-    private String title;
+    private final String title;
 
-    private String content;
+    private final String content;
 
-    private Integer alertGroupId;
+    private final Integer alertGroupId;
 
+    @Override
     public String getTitle() {
         return title;
-    }
+    
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+// Removed setTitle method
 
+    
+
+    @Override
     public String getContent() {
         return content;
     }
 
-    public void setContent(String content) {
-        this.content = content;
-    }
+// Removed setContent method
 
+    
+
+    @Override
     public Integer getAlertGroupId() {
         return alertGroupId;
     }
 
-    public void setAlertGroupId(Integer alertGroupId) {
-        this.alertGroupId = alertGroupId;
+// Removed setAlertGroupId method
+
     }
 }
