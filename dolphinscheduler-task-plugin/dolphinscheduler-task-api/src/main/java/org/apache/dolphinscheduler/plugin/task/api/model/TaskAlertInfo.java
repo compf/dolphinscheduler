@@ -19,6 +19,16 @@ package org.apache.dolphinscheduler.plugin.task.api.model;
 
 public class TaskAlertInfo {
 
+    private int workflowInstanceId;
+
+    public int getWorkflowInstanceId() {
+        return workflowInstanceId;
+    }
+
+    public void setWorkflowInstanceId(int workflowInstanceId) {
+        this.workflowInstanceId = workflowInstanceId;
+    }
+
     private String title;
 
     private String content;

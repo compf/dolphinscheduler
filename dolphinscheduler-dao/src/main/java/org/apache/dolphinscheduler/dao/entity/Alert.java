@@ -84,6 +84,9 @@ public class Alert {
     @TableField("alert_type")
     private AlertType alertType;
 
+    @TableField("workflow_instance_id")
+    private Integer workflowInstanceId;
+
     @TableField(exist = false)
     private Map<String, Object> info = new HashMap<>();
 
