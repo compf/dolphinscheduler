@@ -109,9 +109,7 @@ public class SchedulerController extends BaseController {
     @OperatorLog(auditType = AuditType.SCHEDULE_CREATE)
     public Result createSchedule(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
                                  @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
-                                 @RequestParam(value = "workflowDefinitionCode") long workflowDefinitionCode,
-                                 @RequestParam(value = "schedule") String schedule,
-                                 @RequestParam(value = "warningType", required = false, defaultValue = DEFAULT_WARNING_TYPE) WarningType warningType,
+                                 ScheduleCreateRequest createRequest) {
                                  @RequestParam(value = "warningGroupId", required = false, defaultValue = DEFAULT_NOTIFY_GROUP_ID) int warningGroupId,
                                  @RequestParam(value = "failureStrategy", required = false, defaultValue = DEFAULT_FAILURE_POLICY) FailureStrategy failureStrategy,
                                  @RequestParam(value = "workerGroup", required = false, defaultValue = "default") String workerGroup,
@@ -121,15 +119,7 @@ public class SchedulerController extends BaseController {
         Map<String, Object> result = schedulerService.insertSchedule(
                 loginUser,
                 projectCode,
-                workflowDefinitionCode,
-                schedule,
-                warningType,
-                warningGroupId,
-                failureStrategy,
-                workflowInstancePriority,
-                workerGroup,
-                tenantCode,
-                environmentCode);
+                createRequest);
 
         return returnDataList(result);
     }
@@ -335,19 +325,4 @@ public class SchedulerController extends BaseController {
     @OperatorLog(auditType = AuditType.SCHEDULE_UPDATE)
     public Result updateScheduleByWorkflowDefinitionCode(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
                                                          @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
-                                                         @PathVariable(value = "code") long workflowDefinitionCode,
-                                                         @RequestParam(value = "schedule") String schedule,
-                                                         @RequestParam(value = "warningType", required = false, defaultValue = DEFAULT_WARNING_TYPE) WarningType warningType,
-                                                         @RequestParam(value = "warningGroupId", required = false) int warningGroupId,
-                                                         @RequestParam(value = "failureStrategy", required = false, defaultValue = "END") FailureStrategy failureStrategy,
-                                                         @RequestParam(value = "workerGroup", required = false, defaultValue = "default") String workerGroup,
-                                                         @RequestParam(value = "tenantCode", required = false, defaultValue = "default") String tenantCode,
-                                                         @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") long environmentCode,
-                                                         @RequestParam(value = "workflowInstancePriority", required = false) Priority workflowInstancePriority) {
-        Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(loginUser, projectCode,
-                workflowDefinitionCode, schedule,
-                warningType, warningGroupId, failureStrategy, workflowInstancePriority, workerGroup, tenantCode,
-                environmentCode);
-        return returnDataList(result);
-    }
-}
+                                                         ScheduleUpdateRequest updateRequest) {
