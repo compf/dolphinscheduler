@@ -107,8 +107,7 @@ public class SchedulerController extends BaseController {
     @ResponseStatus(HttpStatus.CREATED)
     @ApiException(CREATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_CREATE)
-    public Result createSchedule(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
-                                 @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
+    public Result createSchedule(ScheduleParameters scheduleParameters) {
                                  @RequestParam(value = "workflowDefinitionCode") long workflowDefinitionCode,
                                  @RequestParam(value = "schedule") String schedule,
                                  @RequestParam(value = "warningType", required = false, defaultValue = DEFAULT_WARNING_TYPE) WarningType warningType,
@@ -118,18 +117,7 @@ public class SchedulerController extends BaseController {
                                  @RequestParam(value = "tenantCode", required = false, defaultValue = "default") String tenantCode,
                                  @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") Long environmentCode,
                                  @RequestParam(value = "workflowInstancePriority", required = false, defaultValue = DEFAULT_WORKFLOW_INSTANCE_PRIORITY) Priority workflowInstancePriority) {
-        Map<String, Object> result = schedulerService.insertSchedule(
-                loginUser,
-                projectCode,
-                workflowDefinitionCode,
-                schedule,
-                warningType,
-                warningGroupId,
-                failureStrategy,
-                workflowInstancePriority,
-                workerGroup,
-                tenantCode,
-                environmentCode);
+        Map<String, Object> result = schedulerService.insertSchedule(scheduleParameters);
 
         return returnDataList(result);
     }
@@ -333,8 +321,7 @@ public class SchedulerController extends BaseController {
     @ResponseStatus(HttpStatus.OK)
     @ApiException(UPDATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_UPDATE)
-    public Result updateScheduleByWorkflowDefinitionCode(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
-                                                         @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
+    public Result updateScheduleByWorkflowDefinitionCode(ScheduleParameters scheduleParameters) {
                                                          @PathVariable(value = "code") long workflowDefinitionCode,
                                                          @RequestParam(value = "schedule") String schedule,
                                                          @RequestParam(value = "warningType", required = false, defaultValue = DEFAULT_WARNING_TYPE) WarningType warningType,
@@ -344,10 +331,7 @@ public class SchedulerController extends BaseController {
                                                          @RequestParam(value = "tenantCode", required = false, defaultValue = "default") String tenantCode,
                                                          @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") long environmentCode,
                                                          @RequestParam(value = "workflowInstancePriority", required = false) Priority workflowInstancePriority) {
-        Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(loginUser, projectCode,
-                workflowDefinitionCode, schedule,
-                warningType, warningGroupId, failureStrategy, workflowInstancePriority, workerGroup, tenantCode,
-                environmentCode);
+        Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(scheduleParameters);
         return returnDataList(result);
     }
 }
