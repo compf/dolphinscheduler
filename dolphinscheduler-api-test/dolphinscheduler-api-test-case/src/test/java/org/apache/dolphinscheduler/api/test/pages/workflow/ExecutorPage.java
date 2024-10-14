@@ -38,24 +38,20 @@ public class ExecutorPage {
 
     private String sessionId;
 
-    public HttpResponse startWorkflowInstance(User loginUser,
-                                              long projectCode,
-                                              long workflowDefinitionCode,
-                                              String scheduleTime,
-                                              FailureStrategy failureStrategy,
-                                              WarningType warningType) {
-        Map<String, Object> params = new HashMap<>();
-        params.put("loginUser", loginUser);
-        params.put("workflowDefinitionCode", workflowDefinitionCode);
-        params.put("scheduleTime", scheduleTime);
-        params.put("failureStrategy", failureStrategy);
-        params.put("warningType", warningType);
+    public HttpResponse startWorkflowInstance(StartWorkflowInstanceParams params,
+                                              ) {
+        Map<String, Object> httpParams = new HashMap<>();
+        httpParams.put("loginUser", params.getLoginUser());
+        httpParams.put("workflowDefinitionCode", params.getWorkflowDefinitionCode());
+        httpParams.put("scheduleTime", params.getScheduleTime());
+        httpParams.put("failureStrategy", params.getFailureStrategy());
+        httpParams.put("warningType", params.getWarningType());
         Map<String, String> headers = new HashMap<>();
-        headers.put(Constants.SESSION_ID_KEY, sessionId);
+        headers.put(Constants.SESSION_ID_KEY, params.getSessionId());
 
         RequestClient requestClient = new RequestClient();
-        String url = String.format("/projects/%s/executors/start-workflow-instance", projectCode);
-        return requestClient.post(url, headers, params);
+        String url = String.format("/projects/%s/executors/start-workflow-instance", params.getProjectCode());
+        return requestClient.post(url, headers, httpParams);
     }
 
     public HttpResponse queryExecutingWorkflow(User loginUser, long projectCode, long workflowInstanceCode) {
@@ -63,7 +59,7 @@ public class ExecutorPage {
         params.put("loginUser", loginUser);
         params.put("id", workflowInstanceCode);
         Map<String, String> headers = new HashMap<>();
-        headers.put(Constants.SESSION_ID_KEY, sessionId);
+        headers.put(Constants.SESSION_ID_KEY, params.getSessionId());
         RequestClient requestClient = new RequestClient();
         String url = String.format("/projects/%s/executors/query-executing-workflow", projectCode);
         return requestClient.get(url, headers, params);
@@ -76,11 +72,11 @@ public class ExecutorPage {
         params.put("workflowInstanceId", workflowInstanceId);
         params.put("executeType", executeType);
         Map<String, String> headers = new HashMap<>();
-        headers.put(Constants.SESSION_ID_KEY, sessionId);
+        headers.put(Constants.SESSION_ID_KEY, params.getSessionId());
 
         RequestClient requestClient = new RequestClient();
         String url = String.format("/projects/%s/executors/execute", projectCode);
-        return requestClient.post(url, headers, params);
+        return requestClient.post(url, headers, httpParams);
     }
 
     public HttpResponse executeTask(User loginUser, long projectCode, int workflowInstanceId, String startNodeList,
@@ -91,11 +87,11 @@ public class ExecutorPage {
         params.put("startNodeList", startNodeList);
         params.put("taskDependType", taskDependType);
         Map<String, String> headers = new HashMap<>();
-        headers.put(Constants.SESSION_ID_KEY, sessionId);
+        headers.put(Constants.SESSION_ID_KEY, params.getSessionId());
 
         RequestClient requestClient = new RequestClient();
         String url = String.format("/projects/%s/executors/execute-task", projectCode);
-        return requestClient.post(url, headers, params);
+        return requestClient.post(url, headers, httpParams);
     }
 
 }
