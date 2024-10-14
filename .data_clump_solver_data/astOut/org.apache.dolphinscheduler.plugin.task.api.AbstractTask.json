@@ -1,0 +1,617 @@
+{
+  "name" : "AbstractTask",
+  "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 35,
+    "startColumn" : 17,
+    "endLine" : 35,
+    "endColumn" : 22
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/memberField/taskRequest" : {
+      "name" : "taskRequest",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/memberField/taskRequest",
+      "type" : "org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+      "displayedType" : "TaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 36,
+        "endLine" : 44,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/memberField/exitStatusCode" : {
+      "name" : "exitStatusCode",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/memberField/exitStatusCode",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 28,
+        "endLine" : 59,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PROTECTED", "VOLATILE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/memberField/processId" : {
+      "name" : "processId",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/memberField/processId",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 19,
+        "endLine" : 49,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/memberField/taskOutputParams" : {
+      "name" : "taskOutputParams",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/memberField/taskOutputParams",
+      "type" : "java.util.Map<java.lang.String, java.lang.String>",
+      "displayedType" : "Map<String, String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 39,
+        "startColumn" : 35,
+        "endLine" : 39,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/memberField/appIds" : {
+      "name" : "appIds",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/memberField/appIds",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 22,
+        "endLine" : 54,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/memberField/needAlert" : {
+      "name" : "needAlert",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/memberField/needAlert",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 23,
+        "endLine" : 61,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/memberField/taskAlertInfo" : {
+      "name" : "taskAlertInfo",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/memberField/taskAlertInfo",
+      "type" : "org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.TaskAlertInfo",
+      "displayedType" : "TaskAlertInfo",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 29,
+        "endLine" : 63,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setProcessId(int processId)" : {
+      "name" : "setProcessId",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setProcessId(int processId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 102,
+        "startColumn" : 17,
+        "endLine" : 102,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "processId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setProcessId(int processId)/parameter/processId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 102,
+          "startColumn" : 34,
+          "endLine" : 102,
+          "endColumn" : 43
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setProcessId(int processId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setExitStatusCode(int exitStatusCode)" : {
+      "name" : "setExitStatusCode",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setExitStatusCode(int exitStatusCode)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 94,
+        "startColumn" : 17,
+        "endLine" : 94,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "exitStatusCode",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setExitStatusCode(int exitStatusCode)/parameter/exitStatusCode",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 94,
+          "startColumn" : 39,
+          "endLine" : 94,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setExitStatusCode(int exitStatusCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/getAppIds()" : {
+      "name" : "getAppIds",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/getAppIds()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 106,
+        "startColumn" : 19,
+        "endLine" : 106,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/logHandle(java.util.concurrent.LinkedBlockingQueue<java.lang.String> logs)" : {
+      "name" : "logHandle",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/logHandle(java.util.concurrent.LinkedBlockingQueue<java.lang.String> logs)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 158,
+        "startColumn" : 17,
+        "endLine" : 158,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "logs",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/logHandle(java.util.concurrent.LinkedBlockingQueue<java.lang.String> logs)/parameter/logs",
+        "type" : "java.util.concurrent.LinkedBlockingQueue<java.lang.String>",
+        "displayedType" : "LinkedBlockingQueue<String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 158,
+          "startColumn" : 55,
+          "endLine" : 158,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/logHandle(java.util.concurrent.LinkedBlockingQueue<java.lang.String> logs)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/cancel()" : {
+      "name" : "cancel",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/cancel()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 26,
+        "endLine" : 83,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/getNeedAlert()" : {
+      "name" : "getNeedAlert",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/getNeedAlert()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 114,
+        "startColumn" : 20,
+        "endLine" : 114,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/init()" : {
+      "name" : "init",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/init()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 17,
+        "endLine" : 77,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/getParameters()" : {
+      "name" : "getParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/getParameters()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.parameters.AbstractParameters",
+      "displayedType" : "AbstractParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 135,
+        "startColumn" : 40,
+        "endLine" : 135,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/getExitStatusCode()" : {
+      "name" : "getExitStatusCode",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/getExitStatusCode()",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 90,
+        "startColumn" : 16,
+        "endLine" : 90,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setAppIds(java.lang.String appIds)" : {
+      "name" : "setAppIds",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setAppIds(java.lang.String appIds)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 110,
+        "startColumn" : 17,
+        "endLine" : 110,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "appIds",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setAppIds(java.lang.String appIds)/parameter/appIds",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 34,
+          "endLine" : 110,
+          "endColumn" : 40
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setAppIds(java.lang.String appIds)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/getExitStatus()" : {
+      "name" : "getExitStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/getExitStatus()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus",
+      "displayedType" : "TaskExecutionStatus",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 142,
+        "startColumn" : 32,
+        "endLine" : 142,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setSqlParamsMap(java.lang.String content, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> paramsPropsMap, int taskInstanceId)" : {
+      "name" : "setSqlParamsMap",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setSqlParamsMap(java.lang.String content, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> paramsPropsMap, int taskInstanceId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 174,
+        "startColumn" : 17,
+        "endLine" : 174,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setSqlParamsMap(java.lang.String content, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> paramsPropsMap, int taskInstanceId)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 174,
+          "startColumn" : 40,
+          "endLine" : 174,
+          "endColumn" : 47
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setSqlParamsMap(java.lang.String content, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> paramsPropsMap, int taskInstanceId)"
+      }, {
+        "name" : "sqlParamsMap",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setSqlParamsMap(java.lang.String content, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> paramsPropsMap, int taskInstanceId)/parameter/sqlParamsMap",
+        "type" : "java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property>",
+        "displayedType" : "Map<Integer, Property>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 174,
+          "startColumn" : 72,
+          "endLine" : 174,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setSqlParamsMap(java.lang.String content, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> paramsPropsMap, int taskInstanceId)"
+      }, {
+        "name" : "paramsPropsMap",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setSqlParamsMap(java.lang.String content, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> paramsPropsMap, int taskInstanceId)/parameter/paramsPropsMap",
+        "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property>",
+        "displayedType" : "Map<String, Property>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 175,
+          "startColumn" : 55,
+          "endLine" : 175,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setSqlParamsMap(java.lang.String content, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> paramsPropsMap, int taskInstanceId)"
+      }, {
+        "name" : "taskInstanceId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setSqlParamsMap(java.lang.String content, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> paramsPropsMap, int taskInstanceId)/parameter/taskInstanceId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 175,
+          "startColumn" : 75,
+          "endLine" : 175,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setSqlParamsMap(java.lang.String content, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.Property> paramsPropsMap, int taskInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setTaskAlertInfo(org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.TaskAlertInfo taskAlertInfo)" : {
+      "name" : "setTaskAlertInfo",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setTaskAlertInfo(org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.TaskAlertInfo taskAlertInfo)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 126,
+        "startColumn" : 17,
+        "endLine" : 126,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskAlertInfo",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setTaskAlertInfo(org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.TaskAlertInfo taskAlertInfo)/parameter/taskAlertInfo",
+        "type" : "org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.TaskAlertInfo",
+        "displayedType" : "TaskAlertInfo",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 126,
+          "startColumn" : 48,
+          "endLine" : 126,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setTaskAlertInfo(org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.TaskAlertInfo taskAlertInfo)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/handle(org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)" : {
+      "name" : "handle",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/handle(org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 26,
+        "endLine" : 81,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskCallBack",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/handle(org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)/parameter/taskCallBack",
+        "type" : "org.apache.dolphinscheduler.plugin.task.api.TaskCallBack",
+        "displayedType" : "TaskCallBack",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 81,
+          "startColumn" : 46,
+          "endLine" : 81,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/handle(org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/getProcessId()" : {
+      "name" : "getProcessId",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/getProcessId()",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 16,
+        "endLine" : 98,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/getTaskAlertInfo()" : {
+      "name" : "getTaskAlertInfo",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/getTaskAlertInfo()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.api.org.apache.dolphinscheduler.plugin.task.api.model.TaskAlertInfo",
+      "displayedType" : "TaskAlertInfo",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 122,
+        "startColumn" : 26,
+        "endLine" : 122,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setNeedAlert(boolean needAlert)" : {
+      "name" : "setNeedAlert",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setNeedAlert(boolean needAlert)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 118,
+        "startColumn" : 17,
+        "endLine" : 118,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "needAlert",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setNeedAlert(boolean needAlert)/parameter/needAlert",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 118,
+          "startColumn" : 38,
+          "endLine" : 118,
+          "endColumn" : 47
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask/method/setNeedAlert(boolean needAlert)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.AbstractTask"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-api/src/main/java/org/apache/dolphinscheduler/plugin/task/api/AbstractTask.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

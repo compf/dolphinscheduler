@@ -1,0 +1,429 @@
+{
+  "name" : "HttpSender",
+  "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 41,
+    "startColumn" : 14,
+    "endLine" : 41,
+    "endColumn" : 19
+  },
+  "modifiers" : [ "PUBLIC", "FINAL" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/memberField/url" : {
+      "name" : "url",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/memberField/url",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 48,
+        "startColumn" : 20,
+        "endLine" : 48,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/memberField/bodyParams" : {
+      "name" : "bodyParams",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/memberField/bodyParams",
+      "type" : "java.util.Map<java.lang.String, java.lang.String>",
+      "displayedType" : "Map<String, String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 45,
+        "startColumn" : 33,
+        "endLine" : 45,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/memberField/timeout" : {
+      "name" : "timeout",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/memberField/timeout",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 17,
+        "endLine" : 47,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/memberField/requestType" : {
+      "name" : "requestType",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/memberField/requestType",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.http.HttpRequestMethod",
+      "displayedType" : "HttpRequestMethod",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 46,
+        "startColumn" : 31,
+        "endLine" : 46,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/memberField/headerParams" : {
+      "name" : "headerParams",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/memberField/headerParams",
+      "type" : "java.util.Map<java.lang.String, java.lang.String>",
+      "displayedType" : "Map<String, String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 33,
+        "endLine" : 43,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/memberField/contentType" : {
+      "name" : "contentType",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/memberField/contentType",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.common.model.OkHttpRequestHeaderContentType",
+      "displayedType" : "OkHttpRequestHeaderContentType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 44,
+        "endLine" : 44,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/paramsValidator(java.util.Map<java.lang.String, java.lang.String> paramsMap)" : {
+      "name" : "paramsValidator",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/paramsValidator(java.util.Map<java.lang.String, java.lang.String> paramsMap)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 18,
+        "endLine" : 54,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "paramsMap",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/paramsValidator(java.util.Map<java.lang.String, java.lang.String> paramsMap)/parameter/paramsMap",
+        "type" : "java.util.Map<java.lang.String, java.lang.String>",
+        "displayedType" : "Map<String, String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 54,
+          "startColumn" : 54,
+          "endLine" : 54,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/paramsValidator(java.util.Map<java.lang.String, java.lang.String> paramsMap)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/setMsgInUrl(java.lang.String msg)" : {
+      "name" : "setMsgInUrl",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/setMsgInUrl(java.lang.String msg)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 183,
+        "startColumn" : 18,
+        "endLine" : 183,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "msg",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/setMsgInUrl(java.lang.String msg)/parameter/msg",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 183,
+          "startColumn" : 37,
+          "endLine" : 183,
+          "endColumn" : 40
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/setMsgInUrl(java.lang.String msg)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/sendPutRequest()" : {
+      "name" : "sendPutRequest",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/sendPutRequest()",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.common.model.OkHttpResponse",
+      "displayedType" : "OkHttpResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 169,
+        "startColumn" : 28,
+        "endLine" : 169,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/setMsgInRequestBody(java.lang.String msg)" : {
+      "name" : "setMsgInRequestBody",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/setMsgInRequestBody(java.lang.String msg)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 212,
+        "startColumn" : 18,
+        "endLine" : 212,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "msg",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/setMsgInRequestBody(java.lang.String msg)/parameter/msg",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 212,
+          "startColumn" : 45,
+          "endLine" : 212,
+          "endColumn" : 48
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/setMsgInRequestBody(java.lang.String msg)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/sendGetRequest()" : {
+      "name" : "sendGetRequest",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/sendGetRequest()",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.common.model.OkHttpResponse",
+      "displayedType" : "OkHttpResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 145,
+        "startColumn" : 28,
+        "endLine" : 145,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/sendHttpRequest(java.lang.String msg)" : {
+      "name" : "sendHttpRequest",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/sendHttpRequest(java.lang.String msg)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.common.model.OkHttpResponse",
+      "displayedType" : "OkHttpResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 124,
+        "startColumn" : 28,
+        "endLine" : 124,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "msg",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/sendHttpRequest(java.lang.String msg)/parameter/msg",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 124,
+          "startColumn" : 51,
+          "endLine" : 124,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/sendHttpRequest(java.lang.String msg)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/setMsgInHeader(java.lang.String msg)" : {
+      "name" : "setMsgInHeader",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/setMsgInHeader(java.lang.String msg)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 197,
+        "startColumn" : 18,
+        "endLine" : 197,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "msg",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/setMsgInHeader(java.lang.String msg)/parameter/msg",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 197,
+          "startColumn" : 40,
+          "endLine" : 197,
+          "endColumn" : 43
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/setMsgInHeader(java.lang.String msg)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/validateResponse(org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.common.model.OkHttpResponse okHttpResponse, org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.alert.api.AlertResult alertResult)" : {
+      "name" : "validateResponse",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/validateResponse(org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.common.model.OkHttpResponse okHttpResponse, org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.alert.api.AlertResult alertResult)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 112,
+        "startColumn" : 18,
+        "endLine" : 112,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "okHttpResponse",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/validateResponse(org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.common.model.OkHttpResponse okHttpResponse, org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.alert.api.AlertResult alertResult)/parameter/okHttpResponse",
+        "type" : "org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.common.model.OkHttpResponse",
+        "displayedType" : "OkHttpResponse",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 112,
+          "startColumn" : 50,
+          "endLine" : 112,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/validateResponse(org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.common.model.OkHttpResponse okHttpResponse, org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.alert.api.AlertResult alertResult)"
+      }, {
+        "name" : "alertResult",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/validateResponse(org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.common.model.OkHttpResponse okHttpResponse, org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.alert.api.AlertResult alertResult)/parameter/alertResult",
+        "type" : "org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.alert.api.AlertResult",
+        "displayedType" : "AlertResult",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 112,
+          "startColumn" : 78,
+          "endLine" : 112,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/validateResponse(org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.common.model.OkHttpResponse okHttpResponse, org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.alert.api.AlertResult alertResult)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/sendPostRequest()" : {
+      "name" : "sendPostRequest",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/sendPostRequest()",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.common.model.OkHttpResponse",
+      "displayedType" : "OkHttpResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 157,
+        "startColumn" : 28,
+        "endLine" : 157,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/send(java.lang.String msg)" : {
+      "name" : "send",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/send(java.lang.String msg)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.http.org.apache.dolphinscheduler.alert.api.AlertResult",
+      "displayedType" : "AlertResult",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 24,
+        "endLine" : 96,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "msg",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/send(java.lang.String msg)/parameter/msg",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 96,
+          "startColumn" : 36,
+          "endLine" : 96,
+          "endColumn" : 39
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender/method/send(java.lang.String msg)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.http.HttpSender"
+    }
+  },
+  "file_path" : "dolphinscheduler-alert/dolphinscheduler-alert-plugins/dolphinscheduler-alert-http/src/main/java/org/apache/dolphinscheduler/plugin/alert/http/HttpSender.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

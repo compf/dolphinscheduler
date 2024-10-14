@@ -1,0 +1,157 @@
+{
+  "name" : "JdkDynamicRpcClientProxyFactory",
+  "key" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 39,
+    "startColumn" : 1,
+    "endLine" : 39,
+    "endColumn" : 6
+  },
+  "modifiers" : [ ],
+  "fields" : {
+    "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory/memberField/nettyRemotingClient" : {
+      "name" : "nettyRemotingClient",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory/memberField/nettyRemotingClient",
+      "type" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient",
+      "displayedType" : "NettyRemotingClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 41,
+        "startColumn" : 39,
+        "endLine" : 41,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory"
+    },
+    "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory/memberField/proxyClientCache" : {
+      "name" : "proxyClientCache",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory/memberField/proxyClientCache",
+      "type" : "com.google.common.cache.LoadingCache<java.lang.String, java.util.Map<java.lang.String, java.lang.Object>>",
+      "displayedType" : "LoadingCache<String, Map<String, Object>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 68,
+        "endLine" : 43,
+        "endColumn" : 84
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory/method/newProxyClient(java.lang.String serverHost, java.lang.Class<T> clientInterface)" : {
+      "name" : "newProxyClient",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory/method/newProxyClient(java.lang.String serverHost, java.lang.Class<T> clientInterface)",
+      "type" : "T",
+      "displayedType" : "T",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 74,
+        "startColumn" : 19,
+        "endLine" : 74,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "serverHost",
+        "key" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory/method/newProxyClient(java.lang.String serverHost, java.lang.Class<T> clientInterface)/parameter/serverHost",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 74,
+          "startColumn" : 41,
+          "endLine" : 74,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory/method/newProxyClient(java.lang.String serverHost, java.lang.Class<T> clientInterface)"
+      }, {
+        "name" : "clientInterface",
+        "key" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory/method/newProxyClient(java.lang.String serverHost, java.lang.Class<T> clientInterface)/parameter/clientInterface",
+        "type" : "java.lang.Class<T>",
+        "displayedType" : "Class<T>",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 74,
+          "startColumn" : 62,
+          "endLine" : 74,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory/method/newProxyClient(java.lang.String serverHost, java.lang.Class<T> clientInterface)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory"
+    },
+    "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory/method/getProxyClient(java.lang.String serverHost, java.lang.Class<T> clientInterface)" : {
+      "name" : "getProxyClient",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory/method/getProxyClient(java.lang.String serverHost, java.lang.Class<T> clientInterface)",
+      "type" : "T",
+      "displayedType" : "T",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 18,
+        "endLine" : 68,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "serverHost",
+        "key" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory/method/getProxyClient(java.lang.String serverHost, java.lang.Class<T> clientInterface)/parameter/serverHost",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 68,
+          "startColumn" : 40,
+          "endLine" : 68,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory/method/getProxyClient(java.lang.String serverHost, java.lang.Class<T> clientInterface)"
+      }, {
+        "name" : "clientInterface",
+        "key" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory/method/getProxyClient(java.lang.String serverHost, java.lang.Class<T> clientInterface)/parameter/clientInterface",
+        "type" : "java.lang.Class<T>",
+        "displayedType" : "Class<T>",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 68,
+          "startColumn" : 61,
+          "endLine" : 68,
+          "endColumn" : 76
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory/method/getProxyClient(java.lang.String serverHost, java.lang.Class<T> clientInterface)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.JdkDynamicRpcClientProxyFactory"
+    }
+  },
+  "file_path" : "dolphinscheduler-extract/dolphinscheduler-extract-base/src/main/java/org/apache/dolphinscheduler/extract/base/client/JdkDynamicRpcClientProxyFactory.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.extract.base.client.IRpcClientProxyFactory" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

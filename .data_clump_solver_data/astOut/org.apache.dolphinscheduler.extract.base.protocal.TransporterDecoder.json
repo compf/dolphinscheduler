@@ -1,0 +1,224 @@
+{
+  "name" : "TransporterDecoder",
+  "key" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 30,
+    "startColumn" : 8,
+    "endLine" : 30,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/memberField/header" : {
+      "name" : "header",
+      "key" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/memberField/header",
+      "type" : "byte[]",
+      "displayedType" : "byte[]",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 37,
+        "startColumn" : 20,
+        "endLine" : 37,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder"
+    },
+    "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/memberField/headerLength" : {
+      "name" : "headerLength",
+      "key" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/memberField/headerLength",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 36,
+        "startColumn" : 17,
+        "endLine" : 36,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder"
+    },
+    "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/memberField/bodyLength" : {
+      "name" : "bodyLength",
+      "key" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/memberField/bodyLength",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 38,
+        "startColumn" : 17,
+        "endLine" : 38,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder"
+    },
+    "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/memberField/body" : {
+      "name" : "body",
+      "key" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/memberField/body",
+      "type" : "byte[]",
+      "displayedType" : "byte[]",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 39,
+        "startColumn" : 20,
+        "endLine" : 39,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/method/checkVersion(byte version)" : {
+      "name" : "checkVersion",
+      "key" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/method/checkVersion(byte version)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 18,
+        "endLine" : 79,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "version",
+        "key" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/method/checkVersion(byte version)/parameter/version",
+        "type" : "byte",
+        "displayedType" : "byte",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 79,
+          "startColumn" : 36,
+          "endLine" : 79,
+          "endColumn" : 43
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/method/checkVersion(byte version)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder"
+    },
+    "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/method/decode(org.apache.dolphinscheduler.extract.base.protocal.io.netty.channel.ChannelHandlerContext ctx, org.apache.dolphinscheduler.extract.base.protocal.io.netty.buffer.ByteBuf in, java.util.List<java.lang.Object> out)" : {
+      "name" : "decode",
+      "key" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/method/decode(org.apache.dolphinscheduler.extract.base.protocal.io.netty.channel.ChannelHandlerContext ctx, org.apache.dolphinscheduler.extract.base.protocal.io.netty.buffer.ByteBuf in, java.util.List<java.lang.Object> out)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 20,
+        "endLine" : 42,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "ctx",
+        "key" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/method/decode(org.apache.dolphinscheduler.extract.base.protocal.io.netty.channel.ChannelHandlerContext ctx, org.apache.dolphinscheduler.extract.base.protocal.io.netty.buffer.ByteBuf in, java.util.List<java.lang.Object> out)/parameter/ctx",
+        "type" : "org.apache.dolphinscheduler.extract.base.protocal.io.netty.channel.ChannelHandlerContext",
+        "displayedType" : "ChannelHandlerContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 42,
+          "startColumn" : 49,
+          "endLine" : 42,
+          "endColumn" : 52
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/method/decode(org.apache.dolphinscheduler.extract.base.protocal.io.netty.channel.ChannelHandlerContext ctx, org.apache.dolphinscheduler.extract.base.protocal.io.netty.buffer.ByteBuf in, java.util.List<java.lang.Object> out)"
+      }, {
+        "name" : "in",
+        "key" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/method/decode(org.apache.dolphinscheduler.extract.base.protocal.io.netty.channel.ChannelHandlerContext ctx, org.apache.dolphinscheduler.extract.base.protocal.io.netty.buffer.ByteBuf in, java.util.List<java.lang.Object> out)/parameter/in",
+        "type" : "org.apache.dolphinscheduler.extract.base.protocal.io.netty.buffer.ByteBuf",
+        "displayedType" : "ByteBuf",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 42,
+          "startColumn" : 62,
+          "endLine" : 42,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/method/decode(org.apache.dolphinscheduler.extract.base.protocal.io.netty.channel.ChannelHandlerContext ctx, org.apache.dolphinscheduler.extract.base.protocal.io.netty.buffer.ByteBuf in, java.util.List<java.lang.Object> out)"
+      }, {
+        "name" : "out",
+        "key" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/method/decode(org.apache.dolphinscheduler.extract.base.protocal.io.netty.channel.ChannelHandlerContext ctx, org.apache.dolphinscheduler.extract.base.protocal.io.netty.buffer.ByteBuf in, java.util.List<java.lang.Object> out)/parameter/out",
+        "type" : "java.util.List<java.lang.Object>",
+        "displayedType" : "List<Object>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 42,
+          "startColumn" : 79,
+          "endLine" : 42,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/method/decode(org.apache.dolphinscheduler.extract.base.protocal.io.netty.channel.ChannelHandlerContext ctx, org.apache.dolphinscheduler.extract.base.protocal.io.netty.buffer.ByteBuf in, java.util.List<java.lang.Object> out)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder"
+    },
+    "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/method/checkMagic(byte magic)" : {
+      "name" : "checkMagic",
+      "key" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/method/checkMagic(byte magic)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 73,
+        "startColumn" : 18,
+        "endLine" : 73,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "magic",
+        "key" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/method/checkMagic(byte magic)/parameter/magic",
+        "type" : "byte",
+        "displayedType" : "byte",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 73,
+          "startColumn" : 34,
+          "endLine" : 73,
+          "endColumn" : 39
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder/method/checkMagic(byte magic)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder"
+    }
+  },
+  "file_path" : "dolphinscheduler-extract/dolphinscheduler-extract-base/src/main/java/org/apache/dolphinscheduler/extract/base/protocal/TransporterDecoder.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.extract.base.protocal.io.netty.handler.codec.ReplayingDecoder<org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder$State>", "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder$State", "org.apache.dolphinscheduler.extract.base.protocal.TransporterDecoder" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

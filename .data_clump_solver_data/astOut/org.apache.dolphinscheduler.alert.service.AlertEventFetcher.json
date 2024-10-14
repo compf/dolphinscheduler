@@ -1,0 +1,110 @@
+{
+  "name" : "AlertEventFetcher",
+  "key" : "org.apache.dolphinscheduler.alert.service.AlertEventFetcher",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 31,
+    "startColumn" : 8,
+    "endLine" : 31,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.alert.service.AlertEventFetcher/memberField/alertDao" : {
+      "name" : "alertDao",
+      "key" : "org.apache.dolphinscheduler.alert.service.AlertEventFetcher/memberField/alertDao",
+      "type" : "org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.AlertDao",
+      "displayedType" : "AlertDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 33,
+        "startColumn" : 28,
+        "endLine" : 33,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AlertEventFetcher"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.alert.service.AlertEventFetcher/method/getEventOffset(org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.entity.Alert event)" : {
+      "name" : "getEventOffset",
+      "key" : "org.apache.dolphinscheduler.alert.service.AlertEventFetcher/method/getEventOffset(org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.entity.Alert event)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 48,
+        "startColumn" : 19,
+        "endLine" : 48,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "event",
+        "key" : "org.apache.dolphinscheduler.alert.service.AlertEventFetcher/method/getEventOffset(org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.entity.Alert event)/parameter/event",
+        "type" : "org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.entity.Alert",
+        "displayedType" : "Alert",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 48,
+          "startColumn" : 40,
+          "endLine" : 48,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AlertEventFetcher/method/getEventOffset(org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.entity.Alert event)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AlertEventFetcher"
+    },
+    "org.apache.dolphinscheduler.alert.service.AlertEventFetcher/method/fetchPendingEvent(int eventOffset)" : {
+      "name" : "fetchPendingEvent",
+      "key" : "org.apache.dolphinscheduler.alert.service.AlertEventFetcher/method/fetchPendingEvent(int eventOffset)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.entity.Alert>",
+      "displayedType" : "List<Alert>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 24,
+        "endLine" : 43,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "eventOffset",
+        "key" : "org.apache.dolphinscheduler.alert.service.AlertEventFetcher/method/fetchPendingEvent(int eventOffset)/parameter/eventOffset",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 43,
+          "startColumn" : 46,
+          "endLine" : 43,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AlertEventFetcher/method/fetchPendingEvent(int eventOffset)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AlertEventFetcher"
+    }
+  },
+  "file_path" : "dolphinscheduler-alert/dolphinscheduler-alert-server/src/main/java/org/apache/dolphinscheduler/alert/service/AlertEventFetcher.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher<org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.entity.Alert>", "org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.entity.Alert" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

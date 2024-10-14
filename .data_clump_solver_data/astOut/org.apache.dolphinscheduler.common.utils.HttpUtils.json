@@ -1,0 +1,256 @@
+{
+  "name" : "HttpUtils",
+  "key" : "org.apache.dolphinscheduler.common.utils.HttpUtils",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 52,
+    "startColumn" : 8,
+    "endLine" : 52,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.common.utils.HttpUtils/memberField/requestConfig" : {
+      "name" : "requestConfig",
+      "key" : "org.apache.dolphinscheduler.common.utils.HttpUtils/memberField/requestConfig",
+      "type" : "org.apache.dolphinscheduler.common.utils.org.apache.http.client.config.RequestConfig",
+      "displayedType" : "RequestConfig",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 40,
+        "endLine" : 57,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.HttpUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.HttpUtils/memberField/ctx" : {
+      "name" : "ctx",
+      "key" : "org.apache.dolphinscheduler.common.utils.HttpUtils/memberField/ctx",
+      "type" : "javax.net.ssl.SSLContext",
+      "displayedType" : "SSLContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 55,
+        "startColumn" : 37,
+        "endLine" : 55,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.HttpUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.HttpUtils/memberField/socketFactory" : {
+      "name" : "socketFactory",
+      "key" : "org.apache.dolphinscheduler.common.utils.HttpUtils/memberField/socketFactory",
+      "type" : "org.apache.dolphinscheduler.common.utils.org.apache.http.conn.ssl.SSLConnectionSocketFactory",
+      "displayedType" : "SSLConnectionSocketFactory",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 53,
+        "endLine" : 56,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.HttpUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.HttpUtils/memberField/cm" : {
+      "name" : "cm",
+      "key" : "org.apache.dolphinscheduler.common.utils.HttpUtils/memberField/cm",
+      "type" : "org.apache.dolphinscheduler.common.utils.org.apache.http.impl.conn.PoolingHttpClientConnectionManager",
+      "displayedType" : "PoolingHttpClientConnectionManager",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 61,
+        "endLine" : 54,
+        "endColumn" : 63
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.HttpUtils"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.common.utils.HttpUtils/method/getResponseContentString(org.apache.dolphinscheduler.common.utils.org.apache.http.client.methods.HttpGet httpGet, org.apache.dolphinscheduler.common.utils.org.apache.http.impl.client.CloseableHttpClient httpClient)" : {
+      "name" : "getResponseContentString",
+      "key" : "org.apache.dolphinscheduler.common.utils.HttpUtils/method/getResponseContentString(org.apache.dolphinscheduler.common.utils.org.apache.http.client.methods.HttpGet httpGet, org.apache.dolphinscheduler.common.utils.org.apache.http.impl.client.CloseableHttpClient httpClient)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 133,
+        "startColumn" : 26,
+        "endLine" : 133,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "httpGet",
+        "key" : "org.apache.dolphinscheduler.common.utils.HttpUtils/method/getResponseContentString(org.apache.dolphinscheduler.common.utils.org.apache.http.client.methods.HttpGet httpGet, org.apache.dolphinscheduler.common.utils.org.apache.http.impl.client.CloseableHttpClient httpClient)/parameter/httpGet",
+        "type" : "org.apache.dolphinscheduler.common.utils.org.apache.http.client.methods.HttpGet",
+        "displayedType" : "HttpGet",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 133,
+          "startColumn" : 59,
+          "endLine" : 133,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.HttpUtils/method/getResponseContentString(org.apache.dolphinscheduler.common.utils.org.apache.http.client.methods.HttpGet httpGet, org.apache.dolphinscheduler.common.utils.org.apache.http.impl.client.CloseableHttpClient httpClient)"
+      }, {
+        "name" : "httpClient",
+        "key" : "org.apache.dolphinscheduler.common.utils.HttpUtils/method/getResponseContentString(org.apache.dolphinscheduler.common.utils.org.apache.http.client.methods.HttpGet httpGet, org.apache.dolphinscheduler.common.utils.org.apache.http.impl.client.CloseableHttpClient httpClient)/parameter/httpClient",
+        "type" : "org.apache.dolphinscheduler.common.utils.org.apache.http.impl.client.CloseableHttpClient",
+        "displayedType" : "CloseableHttpClient",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 133,
+          "startColumn" : 88,
+          "endLine" : 133,
+          "endColumn" : 98
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.HttpUtils/method/getResponseContentString(org.apache.dolphinscheduler.common.utils.org.apache.http.client.methods.HttpGet httpGet, org.apache.dolphinscheduler.common.utils.org.apache.http.impl.client.CloseableHttpClient httpClient)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.HttpUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.HttpUtils/method/get(java.lang.String url)" : {
+      "name" : "get",
+      "key" : "org.apache.dolphinscheduler.common.utils.HttpUtils/method/get(java.lang.String url)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 120,
+        "startColumn" : 26,
+        "endLine" : 120,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "url",
+        "key" : "org.apache.dolphinscheduler.common.utils.HttpUtils/method/get(java.lang.String url)/parameter/url",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 120,
+          "startColumn" : 37,
+          "endLine" : 120,
+          "endColumn" : 40
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.HttpUtils/method/get(java.lang.String url)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.HttpUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.HttpUtils/method/getHttpClientBuilder()" : {
+      "name" : "getHttpClientBuilder",
+      "key" : "org.apache.dolphinscheduler.common.utils.HttpUtils/method/getHttpClientBuilder()",
+      "type" : "org.apache.dolphinscheduler.common.utils.org.apache.http.impl.client.HttpClientBuilder",
+      "displayedType" : "HttpClientBuilder",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 108,
+        "startColumn" : 37,
+        "endLine" : 108,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.HttpUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.HttpUtils/method/getInstance()" : {
+      "name" : "getInstance",
+      "key" : "org.apache.dolphinscheduler.common.utils.HttpUtils/method/getInstance()",
+      "type" : "org.apache.dolphinscheduler.common.utils.org.apache.http.impl.client.CloseableHttpClient",
+      "displayedType" : "CloseableHttpClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 39,
+        "endLine" : 98,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.HttpUtils"
+    }
+  },
+  "file_path" : "dolphinscheduler-common/src/main/java/org/apache/dolphinscheduler/common/utils/HttpUtils.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.common.utils.HttpUtils.HttpClientInstance" : {
+      "name" : "HttpClientInstance",
+      "key" : "org.apache.dolphinscheduler.common.utils.HttpUtils.HttpClientInstance",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 102,
+        "startColumn" : 20,
+        "endLine" : 102,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.common.utils.HttpUtils.HttpClientInstance/memberField/httpClient" : {
+          "name" : "httpClient",
+          "key" : "org.apache.dolphinscheduler.common.utils.HttpUtils.HttpClientInstance/memberField/httpClient",
+          "type" : "org.apache.dolphinscheduler.common.utils.org.apache.http.impl.client.CloseableHttpClient",
+          "displayedType" : "CloseableHttpClient",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 104,
+            "startColumn" : 50,
+            "endLine" : 104,
+            "endColumn" : 60
+          },
+          "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.HttpUtils.HttpClientInstance"
+        }
+      },
+      "methods" : { },
+      "file_path" : "dolphinscheduler-common/src/main/java/org/apache/dolphinscheduler/common/utils/HttpUtils.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.common.utils.HttpUtils",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,649 @@
+{
+  "name" : "SchedulerServiceTest",
+  "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 61,
+    "startColumn" : 8,
+    "endLine" : 61,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/projectMapper" : {
+      "name" : "projectMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/projectMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.ProjectMapper",
+      "displayedType" : "ProjectMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 27,
+        "endLine" : 79,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/userId" : {
+      "name" : "userId",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/userId",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 104,
+        "startColumn" : 30,
+        "endLine" : 104,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/projectCode" : {
+      "name" : "projectCode",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/projectCode",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 103,
+        "startColumn" : 31,
+        "endLine" : 103,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/executorService" : {
+      "name" : "executorService",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/executorService",
+      "type" : "org.apache.dolphinscheduler.api.service.ExecutorService",
+      "displayedType" : "ExecutorService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 29,
+        "endLine" : 91,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/workflowDefinitionMapper" : {
+      "name" : "workflowDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/workflowDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionMapper",
+      "displayedType" : "WorkflowDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 82,
+        "startColumn" : 38,
+        "endLine" : 82,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/schedulerApi" : {
+      "name" : "schedulerApi",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/schedulerApi",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.scheduler.api.SchedulerApi",
+      "displayedType" : "SchedulerApi",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 26,
+        "endLine" : 88,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/processDefinitionName" : {
+      "name" : "processDefinitionName",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/processDefinitionName",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 105,
+        "startColumn" : 33,
+        "endLine" : 105,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/user" : {
+      "name" : "user",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/user",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 99,
+        "startColumn" : 27,
+        "endLine" : 99,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PROTECTED", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/userName" : {
+      "name" : "userName",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/userName",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 101,
+        "startColumn" : 33,
+        "endLine" : 101,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/endTime" : {
+      "name" : "endTime",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/endTime",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 111,
+        "startColumn" : 33,
+        "endLine" : 111,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/monitorService" : {
+      "name" : "monitorService",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/monitorService",
+      "type" : "org.apache.dolphinscheduler.api.service.MonitorService",
+      "displayedType" : "MonitorService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 70,
+        "startColumn" : 28,
+        "endLine" : 70,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/tenantMapper" : {
+      "name" : "tenantMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/tenantMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.TenantMapper",
+      "displayedType" : "TenantMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 97,
+        "startColumn" : 26,
+        "endLine" : 97,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/environmentCode" : {
+      "name" : "environmentCode",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/environmentCode",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 109,
+        "startColumn" : 31,
+        "endLine" : 109,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/environmentMapper" : {
+      "name" : "environmentMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/environmentMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.EnvironmentMapper",
+      "displayedType" : "EnvironmentMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 94,
+        "startColumn" : 31,
+        "endLine" : 94,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/schedulerService" : {
+      "name" : "schedulerService",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/schedulerService",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.service.impl.SchedulerServiceImpl",
+      "displayedType" : "SchedulerServiceImpl",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 34,
+        "endLine" : 64,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/projectName" : {
+      "name" : "projectName",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/projectName",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 102,
+        "startColumn" : 33,
+        "endLine" : 102,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/processDefinitionCode" : {
+      "name" : "processDefinitionCode",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/processDefinitionCode",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 106,
+        "startColumn" : 31,
+        "endLine" : 106,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/crontab" : {
+      "name" : "crontab",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/crontab",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 112,
+        "startColumn" : 33,
+        "endLine" : 112,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/processService" : {
+      "name" : "processService",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/processService",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.service.process.ProcessService",
+      "displayedType" : "ProcessService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 73,
+        "startColumn" : 28,
+        "endLine" : 73,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/processDefinitionVersion" : {
+      "name" : "processDefinitionVersion",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/processDefinitionVersion",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 107,
+        "startColumn" : 30,
+        "endLine" : 107,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/projectService" : {
+      "name" : "projectService",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/projectService",
+      "type" : "org.apache.dolphinscheduler.api.service.ProjectService",
+      "displayedType" : "ProjectService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 85,
+        "startColumn" : 28,
+        "endLine" : 85,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/exception" : {
+      "name" : "exception",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/exception",
+      "type" : "java.lang.Exception",
+      "displayedType" : "Exception",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 100,
+        "startColumn" : 25,
+        "endLine" : 100,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/scheduleMapper" : {
+      "name" : "scheduleMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/scheduleMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.ScheduleMapper",
+      "displayedType" : "ScheduleMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 28,
+        "endLine" : 76,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/workflowTaskRelationMapper" : {
+      "name" : "workflowTaskRelationMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/workflowTaskRelationMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.WorkflowTaskRelationMapper",
+      "displayedType" : "WorkflowTaskRelationMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 40,
+        "endLine" : 67,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/scheduleId" : {
+      "name" : "scheduleId",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/scheduleId",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 108,
+        "startColumn" : 30,
+        "endLine" : 108,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/startTime" : {
+      "name" : "startTime",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/memberField/startTime",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 110,
+        "startColumn" : 33,
+        "endLine" : 110,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/getProcessDefinition()" : {
+      "name" : "getProcessDefinition",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/getProcessDefinition()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition",
+      "displayedType" : "WorkflowDefinition",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 403,
+        "startColumn" : 32,
+        "endLine" : 403,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/getSchedule()" : {
+      "name" : "getSchedule",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/getSchedule()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.Schedule",
+      "displayedType" : "Schedule",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 413,
+        "startColumn" : 22,
+        "endLine" : 413,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/testDeleteSchedules()" : {
+      "name" : "testDeleteSchedules",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/testDeleteSchedules()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 217,
+        "startColumn" : 17,
+        "endLine" : 217,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/getProject()" : {
+      "name" : "getProject",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/getProject()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.Project",
+      "displayedType" : "Project",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 394,
+        "startColumn" : 21,
+        "endLine" : 394,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/getEnvironment()" : {
+      "name" : "getEnvironment",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/getEnvironment()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.Environment",
+      "displayedType" : "Environment",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 422,
+        "startColumn" : 25,
+        "endLine" : 422,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/testGetSchedules()" : {
+      "name" : "testGetSchedules",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/testGetSchedules()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 289,
+        "startColumn" : 17,
+        "endLine" : 289,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/testCreateSchedulesV2()" : {
+      "name" : "testCreateSchedulesV2",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/testCreateSchedulesV2()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 122,
+        "startColumn" : 17,
+        "endLine" : 122,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/testFilterSchedules()" : {
+      "name" : "testFilterSchedules",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/testFilterSchedules()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 273,
+        "startColumn" : 17,
+        "endLine" : 273,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/testUpdateSchedulesV2()" : {
+      "name" : "testUpdateSchedulesV2",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/testUpdateSchedulesV2()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 320,
+        "startColumn" : 17,
+        "endLine" : 320,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/setUp()" : {
+      "name" : "setUp",
+      "key" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest/method/setUp()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 115,
+        "startColumn" : 17,
+        "endLine" : 115,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.SchedulerServiceTest"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/test/java/org/apache/dolphinscheduler/api/service/SchedulerServiceTest.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.service.BaseServiceTestTool" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

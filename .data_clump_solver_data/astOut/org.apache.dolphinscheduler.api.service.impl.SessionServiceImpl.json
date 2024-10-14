@@ -1,0 +1,176 @@
+{
+  "name" : "SessionServiceImpl",
+  "key" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 44,
+    "startColumn" : 8,
+    "endLine" : 44,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/memberField/sessionDao" : {
+      "name" : "sessionDao",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/memberField/sessionDao",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.repository.SessionDao",
+      "displayedType" : "SessionDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 24,
+        "endLine" : 47,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/method/createSessionIfAbsent(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user)" : {
+      "name" : "createSessionIfAbsent",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/method/createSessionIfAbsent(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Session",
+      "displayedType" : "Session",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 20,
+        "endLine" : 59,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "user",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/method/createSessionIfAbsent(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user)/parameter/user",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 59,
+          "startColumn" : 47,
+          "endLine" : 59,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/method/createSessionIfAbsent(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/method/getSession(java.lang.String sessionId)" : {
+      "name" : "getSession",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/method/getSession(java.lang.String sessionId)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Session",
+      "displayedType" : "Session",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 50,
+        "startColumn" : 20,
+        "endLine" : 50,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "sessionId",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/method/getSession(java.lang.String sessionId)/parameter/sessionId",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 50,
+          "startColumn" : 38,
+          "endLine" : 50,
+          "endColumn" : 47
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/method/getSession(java.lang.String sessionId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/method/expireSession(java.lang.Integer userId)" : {
+      "name" : "expireSession",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/method/expireSession(java.lang.Integer userId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 17,
+        "endLine" : 91,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/method/expireSession(java.lang.Integer userId)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 91,
+          "startColumn" : 39,
+          "endLine" : 91,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/method/expireSession(java.lang.Integer userId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/method/isSessionExpire(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Session session)" : {
+      "name" : "isSessionExpire",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/method/isSessionExpire(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Session session)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 20,
+        "endLine" : 96,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "session",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/method/isSessionExpire(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Session session)/parameter/session",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Session",
+        "displayedType" : "Session",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 96,
+          "startColumn" : 44,
+          "endLine" : 96,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl/method/isSessionExpire(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Session session)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.SessionServiceImpl"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/service/impl/SessionServiceImpl.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.SessionService" ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.service.impl.BaseServiceImpl" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

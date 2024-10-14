@@ -1,0 +1,174 @@
+{
+  "name" : "YarnClientAspect",
+  "key" : "org.apache.dolphinscheduler.aop.YarnClientAspect",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 36,
+    "startColumn" : 8,
+    "endLine" : 36,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.aop.YarnClientAspect/memberField/currentApplicationReport" : {
+      "name" : "currentApplicationReport",
+      "key" : "org.apache.dolphinscheduler.aop.YarnClientAspect/memberField/currentApplicationReport",
+      "type" : "org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationReport",
+      "displayedType" : "ApplicationReport",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 41,
+        "startColumn" : 31,
+        "endLine" : 41,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.aop.YarnClientAspect"
+    },
+    "org.apache.dolphinscheduler.aop.YarnClientAspect/memberField/appInfoFilePath" : {
+      "name" : "appInfoFilePath",
+      "key" : "org.apache.dolphinscheduler.aop.YarnClientAspect/memberField/appInfoFilePath",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 26,
+        "endLine" : 43,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.aop.YarnClientAspect"
+    },
+    "org.apache.dolphinscheduler.aop.YarnClientAspect/memberField/logger" : {
+      "name" : "logger",
+      "key" : "org.apache.dolphinscheduler.aop.YarnClientAspect/memberField/logger",
+      "type" : "org.slf4j.Logger",
+      "displayedType" : "Logger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 45,
+        "startColumn" : 28,
+        "endLine" : 45,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PROTECTED", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.aop.YarnClientAspect"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.aop.YarnClientAspect/method/registerApplicationReport(org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationReport appReport, org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationId appId)" : {
+      "name" : "registerApplicationReport",
+      "key" : "org.apache.dolphinscheduler.aop.YarnClientAspect/method/registerApplicationReport(org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationReport appReport, org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationId appId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 90,
+        "startColumn" : 17,
+        "endLine" : 90,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "appReport",
+        "key" : "org.apache.dolphinscheduler.aop.YarnClientAspect/method/registerApplicationReport(org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationReport appReport, org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationId appId)/parameter/appReport",
+        "type" : "org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationReport",
+        "displayedType" : "ApplicationReport",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 90,
+          "startColumn" : 61,
+          "endLine" : 90,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.aop.YarnClientAspect/method/registerApplicationReport(org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationReport appReport, org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationId appId)"
+      }, {
+        "name" : "appId",
+        "key" : "org.apache.dolphinscheduler.aop.YarnClientAspect/method/registerApplicationReport(org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationReport appReport, org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationId appId)/parameter/appId",
+        "type" : "org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationId",
+        "displayedType" : "ApplicationId",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 90,
+          "startColumn" : 86,
+          "endLine" : 90,
+          "endColumn" : 91
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.aop.YarnClientAspect/method/registerApplicationReport(org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationReport appReport, org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationId appId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.aop.YarnClientAspect"
+    },
+    "org.apache.dolphinscheduler.aop.YarnClientAspect/method/registerApplicationInfo(org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationSubmissionContext appContext, org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationId submittedAppId)" : {
+      "name" : "registerApplicationInfo",
+      "key" : "org.apache.dolphinscheduler.aop.YarnClientAspect/method/registerApplicationInfo(org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationSubmissionContext appContext, org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationId submittedAppId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 60,
+        "startColumn" : 17,
+        "endLine" : 60,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "appContext",
+        "key" : "org.apache.dolphinscheduler.aop.YarnClientAspect/method/registerApplicationInfo(org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationSubmissionContext appContext, org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationId submittedAppId)/parameter/appContext",
+        "type" : "org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationSubmissionContext",
+        "displayedType" : "ApplicationSubmissionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 60,
+          "startColumn" : 70,
+          "endLine" : 60,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.aop.YarnClientAspect/method/registerApplicationInfo(org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationSubmissionContext appContext, org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationId submittedAppId)"
+      }, {
+        "name" : "submittedAppId",
+        "key" : "org.apache.dolphinscheduler.aop.YarnClientAspect/method/registerApplicationInfo(org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationSubmissionContext appContext, org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationId submittedAppId)/parameter/submittedAppId",
+        "type" : "org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationId",
+        "displayedType" : "ApplicationId",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 60,
+          "startColumn" : 96,
+          "endLine" : 60,
+          "endColumn" : 110
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.aop.YarnClientAspect/method/registerApplicationInfo(org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationSubmissionContext appContext, org.apache.dolphinscheduler.aop.org.apache.hadoop.yarn.api.records.ApplicationId submittedAppId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.aop.YarnClientAspect"
+    }
+  },
+  "file_path" : "dolphinscheduler-yarn-aop/src/main/java/org/apache/dolphinscheduler/aop/YarnClientAspect.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

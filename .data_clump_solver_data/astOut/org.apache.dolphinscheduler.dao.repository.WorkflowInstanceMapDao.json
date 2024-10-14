@@ -1,0 +1,140 @@
+{
+  "name" : "WorkflowInstanceMapDao",
+  "key" : "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao",
+  "type" : "interface",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 24,
+    "startColumn" : 8,
+    "endLine" : 24,
+    "endColumn" : 17
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : { },
+  "methods" : {
+    "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao/method/deleteByParentId(int workflowInstanceId)" : {
+      "name" : "deleteByParentId",
+      "key" : "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao/method/deleteByParentId(int workflowInstanceId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 36,
+        "startColumn" : 10,
+        "endLine" : 36,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao/method/deleteByParentId(int workflowInstanceId)/parameter/workflowInstanceId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 36,
+          "startColumn" : 31,
+          "endLine" : 36,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao/method/deleteByParentId(int workflowInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao/method/querySubWorkflowInstanceIds(int workflowInstanceId)" : {
+      "name" : "querySubWorkflowInstanceIds",
+      "key" : "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao/method/querySubWorkflowInstanceIds(int workflowInstanceId)",
+      "type" : "java.util.List<java.lang.Integer>",
+      "displayedType" : "List<Integer>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 34,
+        "startColumn" : 19,
+        "endLine" : 34,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao/method/querySubWorkflowInstanceIds(int workflowInstanceId)/parameter/workflowInstanceId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 34,
+          "startColumn" : 51,
+          "endLine" : 34,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao/method/querySubWorkflowInstanceIds(int workflowInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao/method/queryWorkflowMapByParent(java.lang.Integer parentWorkflowId, java.lang.Integer parentTaskId)" : {
+      "name" : "queryWorkflowMapByParent",
+      "key" : "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao/method/queryWorkflowMapByParent(java.lang.Integer parentWorkflowId, java.lang.Integer parentTaskId)",
+      "type" : "org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.WorkflowInstanceRelation",
+      "displayedType" : "WorkflowInstanceRelation",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 32,
+        "startColumn" : 30,
+        "endLine" : 32,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "parentWorkflowId",
+        "key" : "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao/method/queryWorkflowMapByParent(java.lang.Integer parentWorkflowId, java.lang.Integer parentTaskId)/parameter/parentWorkflowId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 32,
+          "startColumn" : 63,
+          "endLine" : 32,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao/method/queryWorkflowMapByParent(java.lang.Integer parentWorkflowId, java.lang.Integer parentTaskId)"
+      }, {
+        "name" : "parentTaskId",
+        "key" : "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao/method/queryWorkflowMapByParent(java.lang.Integer parentWorkflowId, java.lang.Integer parentTaskId)/parameter/parentTaskId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 32,
+          "startColumn" : 89,
+          "endLine" : 32,
+          "endColumn" : 101
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao/method/queryWorkflowMapByParent(java.lang.Integer parentWorkflowId, java.lang.Integer parentTaskId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.WorkflowInstanceMapDao"
+    }
+  },
+  "file_path" : "dolphinscheduler-dao/src/main/java/org/apache/dolphinscheduler/dao/repository/WorkflowInstanceMapDao.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.dao.repository.IDao<org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.WorkflowInstanceRelation>", "org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.WorkflowInstanceRelation" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

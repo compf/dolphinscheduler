@@ -1,0 +1,875 @@
+{
+  "name" : "MailSender",
+  "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 64,
+    "startColumn" : 14,
+    "endLine" : 64,
+    "endColumn" : 19
+  },
+  "modifiers" : [ "PUBLIC", "FINAL" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mailSenderEmail" : {
+      "name" : "mailSenderEmail",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mailSenderEmail",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 26,
+        "endLine" : 71,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mailUseSSL" : {
+      "name" : "mailUseSSL",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mailUseSSL",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 26,
+        "endLine" : 76,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mailSmtpPort" : {
+      "name" : "mailSmtpPort",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mailSmtpPort",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 70,
+        "startColumn" : 26,
+        "endLine" : 70,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/enableSmtpAuth" : {
+      "name" : "enableSmtpAuth",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/enableSmtpAuth",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 26,
+        "endLine" : 72,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/receiverCcs" : {
+      "name" : "receiverCcs",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/receiverCcs",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 32,
+        "endLine" : 67,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mailUseStartTLS" : {
+      "name" : "mailUseStartTLS",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mailUseStartTLS",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 26,
+        "endLine" : 75,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/sslTrust" : {
+      "name" : "sslTrust",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/sslTrust",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 26,
+        "endLine" : 77,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/xlsFilePath" : {
+      "name" : "xlsFilePath",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/xlsFilePath",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 20,
+        "endLine" : 81,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/receivers" : {
+      "name" : "receivers",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/receivers",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 32,
+        "endLine" : 66,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mailSmtpHost" : {
+      "name" : "mailSmtpHost",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mailSmtpHost",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 26,
+        "endLine" : 69,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mailProtocol" : {
+      "name" : "mailProtocol",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mailProtocol",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 26,
+        "endLine" : 68,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mailPasswd" : {
+      "name" : "mailPasswd",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mailPasswd",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 74,
+        "startColumn" : 26,
+        "endLine" : 74,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mailUser" : {
+      "name" : "mailUser",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mailUser",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 73,
+        "startColumn" : 26,
+        "endLine" : 73,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/showType" : {
+      "name" : "showType",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/showType",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 26,
+        "endLine" : 78,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/alertTemplate" : {
+      "name" : "alertTemplate",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/alertTemplate",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.plugin.alert.email.template.AlertTemplate",
+      "displayedType" : "AlertTemplate",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 33,
+        "endLine" : 79,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mustNotNull" : {
+      "name" : "mustNotNull",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/memberField/mustNotNull",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 26,
+        "endLine" : 80,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/deleteFile(java.io.File file)" : {
+      "name" : "deleteFile",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/deleteFile(java.io.File file)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 393,
+        "startColumn" : 17,
+        "endLine" : 393,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "file",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/deleteFile(java.io.File file)/parameter/file",
+        "type" : "java.io.File",
+        "displayedType" : "File",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 393,
+          "startColumn" : 33,
+          "endLine" : 393,
+          "endColumn" : 37
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/deleteFile(java.io.File file)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachContent(java.lang.String title, java.lang.String content, java.lang.String partContent, org.apache.dolphinscheduler.plugin.alert.email.javax.mail.internet.MimeMessage msg)" : {
+      "name" : "attachContent",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachContent(java.lang.String title, java.lang.String content, java.lang.String partContent, org.apache.dolphinscheduler.plugin.alert.email.javax.mail.internet.MimeMessage msg)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 317,
+        "startColumn" : 18,
+        "endLine" : 317,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "title",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachContent(java.lang.String title, java.lang.String content, java.lang.String partContent, org.apache.dolphinscheduler.plugin.alert.email.javax.mail.internet.MimeMessage msg)/parameter/title",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 317,
+          "startColumn" : 39,
+          "endLine" : 317,
+          "endColumn" : 44
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachContent(java.lang.String title, java.lang.String content, java.lang.String partContent, org.apache.dolphinscheduler.plugin.alert.email.javax.mail.internet.MimeMessage msg)"
+      }, {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachContent(java.lang.String title, java.lang.String content, java.lang.String partContent, org.apache.dolphinscheduler.plugin.alert.email.javax.mail.internet.MimeMessage msg)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 317,
+          "startColumn" : 53,
+          "endLine" : 317,
+          "endColumn" : 60
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachContent(java.lang.String title, java.lang.String content, java.lang.String partContent, org.apache.dolphinscheduler.plugin.alert.email.javax.mail.internet.MimeMessage msg)"
+      }, {
+        "name" : "partContent",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachContent(java.lang.String title, java.lang.String content, java.lang.String partContent, org.apache.dolphinscheduler.plugin.alert.email.javax.mail.internet.MimeMessage msg)/parameter/partContent",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 317,
+          "startColumn" : 69,
+          "endLine" : 317,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachContent(java.lang.String title, java.lang.String content, java.lang.String partContent, org.apache.dolphinscheduler.plugin.alert.email.javax.mail.internet.MimeMessage msg)"
+      }, {
+        "name" : "msg",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachContent(java.lang.String title, java.lang.String content, java.lang.String partContent, org.apache.dolphinscheduler.plugin.alert.email.javax.mail.internet.MimeMessage msg)/parameter/msg",
+        "type" : "org.apache.dolphinscheduler.plugin.alert.email.javax.mail.internet.MimeMessage",
+        "displayedType" : "MimeMessage",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 318,
+          "startColumn" : 44,
+          "endLine" : 318,
+          "endColumn" : 47
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachContent(java.lang.String title, java.lang.String content, java.lang.String partContent, org.apache.dolphinscheduler.plugin.alert.email.javax.mail.internet.MimeMessage msg)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/handleException(org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult alertResult, java.lang.Exception e)" : {
+      "name" : "handleException",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/handleException(org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult alertResult, java.lang.Exception e)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 408,
+        "startColumn" : 18,
+        "endLine" : 408,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "alertResult",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/handleException(org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult alertResult, java.lang.Exception e)/parameter/alertResult",
+        "type" : "org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult",
+        "displayedType" : "AlertResult",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 408,
+          "startColumn" : 46,
+          "endLine" : 408,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/handleException(org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult alertResult, java.lang.Exception e)"
+      }, {
+        "name" : "e",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/handleException(org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult alertResult, java.lang.Exception e)/parameter/e",
+        "type" : "java.lang.Exception",
+        "displayedType" : "Exception",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 408,
+          "startColumn" : 69,
+          "endLine" : 408,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/handleException(org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult alertResult, java.lang.Exception e)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/htmlTable(java.lang.String content, boolean showAll)" : {
+      "name" : "htmlTable",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/htmlTable(java.lang.String content, boolean showAll)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 222,
+        "startColumn" : 20,
+        "endLine" : 222,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/htmlTable(java.lang.String content, boolean showAll)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 222,
+          "startColumn" : 37,
+          "endLine" : 222,
+          "endColumn" : 44
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/htmlTable(java.lang.String content, boolean showAll)"
+      }, {
+        "name" : "showAll",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/htmlTable(java.lang.String content, boolean showAll)/parameter/showAll",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 222,
+          "startColumn" : 54,
+          "endLine" : 222,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/htmlTable(java.lang.String content, boolean showAll)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/getStringObjectMap(java.lang.String title, java.lang.String content, org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult alertResult, org.apache.dolphinscheduler.plugin.alert.email.org.apache.commons.mail.HtmlEmail email)" : {
+      "name" : "getStringObjectMap",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/getStringObjectMap(java.lang.String title, java.lang.String content, org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult alertResult, org.apache.dolphinscheduler.plugin.alert.email.org.apache.commons.mail.HtmlEmail email)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult",
+      "displayedType" : "AlertResult",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 363,
+        "startColumn" : 25,
+        "endLine" : 363,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "title",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/getStringObjectMap(java.lang.String title, java.lang.String content, org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult alertResult, org.apache.dolphinscheduler.plugin.alert.email.org.apache.commons.mail.HtmlEmail email)/parameter/title",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 363,
+          "startColumn" : 51,
+          "endLine" : 363,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/getStringObjectMap(java.lang.String title, java.lang.String content, org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult alertResult, org.apache.dolphinscheduler.plugin.alert.email.org.apache.commons.mail.HtmlEmail email)"
+      }, {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/getStringObjectMap(java.lang.String title, java.lang.String content, org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult alertResult, org.apache.dolphinscheduler.plugin.alert.email.org.apache.commons.mail.HtmlEmail email)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 363,
+          "startColumn" : 65,
+          "endLine" : 363,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/getStringObjectMap(java.lang.String title, java.lang.String content, org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult alertResult, org.apache.dolphinscheduler.plugin.alert.email.org.apache.commons.mail.HtmlEmail email)"
+      }, {
+        "name" : "alertResult",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/getStringObjectMap(java.lang.String title, java.lang.String content, org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult alertResult, org.apache.dolphinscheduler.plugin.alert.email.org.apache.commons.mail.HtmlEmail email)/parameter/alertResult",
+        "type" : "org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult",
+        "displayedType" : "AlertResult",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 363,
+          "startColumn" : 86,
+          "endLine" : 363,
+          "endColumn" : 97
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/getStringObjectMap(java.lang.String title, java.lang.String content, org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult alertResult, org.apache.dolphinscheduler.plugin.alert.email.org.apache.commons.mail.HtmlEmail email)"
+      }, {
+        "name" : "email",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/getStringObjectMap(java.lang.String title, java.lang.String content, org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult alertResult, org.apache.dolphinscheduler.plugin.alert.email.org.apache.commons.mail.HtmlEmail email)/parameter/email",
+        "type" : "org.apache.dolphinscheduler.plugin.alert.email.org.apache.commons.mail.HtmlEmail",
+        "displayedType" : "HtmlEmail",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 364,
+          "startColumn" : 54,
+          "endLine" : 364,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/getStringObjectMap(java.lang.String title, java.lang.String content, org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult alertResult, org.apache.dolphinscheduler.plugin.alert.email.org.apache.commons.mail.HtmlEmail email)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/sendMails(java.lang.String title, java.lang.String content)" : {
+      "name" : "sendMails",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/sendMails(java.lang.String title, java.lang.String content)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult",
+      "displayedType" : "AlertResult",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 143,
+        "startColumn" : 24,
+        "endLine" : 143,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "title",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/sendMails(java.lang.String title, java.lang.String content)/parameter/title",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 143,
+          "startColumn" : 41,
+          "endLine" : 143,
+          "endColumn" : 46
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/sendMails(java.lang.String title, java.lang.String content)"
+      }, {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/sendMails(java.lang.String title, java.lang.String content)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 143,
+          "startColumn" : 55,
+          "endLine" : 143,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/sendMails(java.lang.String title, java.lang.String content)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/htmlTable(java.lang.String content)" : {
+      "name" : "htmlTable",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/htmlTable(java.lang.String content)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 232,
+        "startColumn" : 20,
+        "endLine" : 232,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/htmlTable(java.lang.String content)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 232,
+          "startColumn" : 37,
+          "endLine" : 232,
+          "endColumn" : 44
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/htmlTable(java.lang.String content)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/sendMails(java.util.List<java.lang.String> receivers, java.util.List<java.lang.String> receiverCcs, java.lang.String title, java.lang.String content)" : {
+      "name" : "sendMails",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/sendMails(java.util.List<java.lang.String> receivers, java.util.List<java.lang.String> receiverCcs, java.lang.String title, java.lang.String content)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.email.org.apache.dolphinscheduler.alert.api.AlertResult",
+      "displayedType" : "AlertResult",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 155,
+        "startColumn" : 24,
+        "endLine" : 155,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "receivers",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/sendMails(java.util.List<java.lang.String> receivers, java.util.List<java.lang.String> receiverCcs, java.lang.String title, java.lang.String content)/parameter/receivers",
+        "type" : "java.util.List<java.lang.String>",
+        "displayedType" : "List<String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 155,
+          "startColumn" : 47,
+          "endLine" : 155,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/sendMails(java.util.List<java.lang.String> receivers, java.util.List<java.lang.String> receiverCcs, java.lang.String title, java.lang.String content)"
+      }, {
+        "name" : "receiverCcs",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/sendMails(java.util.List<java.lang.String> receivers, java.util.List<java.lang.String> receiverCcs, java.lang.String title, java.lang.String content)/parameter/receiverCcs",
+        "type" : "java.util.List<java.lang.String>",
+        "displayedType" : "List<String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 155,
+          "startColumn" : 71,
+          "endLine" : 155,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/sendMails(java.util.List<java.lang.String> receivers, java.util.List<java.lang.String> receiverCcs, java.lang.String title, java.lang.String content)"
+      }, {
+        "name" : "title",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/sendMails(java.util.List<java.lang.String> receivers, java.util.List<java.lang.String> receiverCcs, java.lang.String title, java.lang.String content)/parameter/title",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 155,
+          "startColumn" : 91,
+          "endLine" : 155,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/sendMails(java.util.List<java.lang.String> receivers, java.util.List<java.lang.String> receiverCcs, java.lang.String title, java.lang.String content)"
+      }, {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/sendMails(java.util.List<java.lang.String> receivers, java.util.List<java.lang.String> receiverCcs, java.lang.String title, java.lang.String content)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 155,
+          "startColumn" : 105,
+          "endLine" : 155,
+          "endColumn" : 112
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/sendMails(java.util.List<java.lang.String> receivers, java.util.List<java.lang.String> receiverCcs, java.lang.String title, java.lang.String content)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/htmlText(java.lang.String content)" : {
+      "name" : "htmlText",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/htmlText(java.lang.String content)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 242,
+        "startColumn" : 20,
+        "endLine" : 242,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/htmlText(java.lang.String content)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 242,
+          "startColumn" : 36,
+          "endLine" : 242,
+          "endColumn" : 43
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/htmlText(java.lang.String content)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/getSession()" : {
+      "name" : "getSession",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/getSession()",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.email.javax.mail.Session",
+      "displayedType" : "Session",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 281,
+        "startColumn" : 21,
+        "endLine" : 281,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachment(java.lang.String title, java.lang.String content, java.lang.String partContent)" : {
+      "name" : "attachment",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachment(java.lang.String title, java.lang.String content, java.lang.String partContent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 249,
+        "startColumn" : 18,
+        "endLine" : 249,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "title",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachment(java.lang.String title, java.lang.String content, java.lang.String partContent)/parameter/title",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 249,
+          "startColumn" : 36,
+          "endLine" : 249,
+          "endColumn" : 41
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachment(java.lang.String title, java.lang.String content, java.lang.String partContent)"
+      }, {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachment(java.lang.String title, java.lang.String content, java.lang.String partContent)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 249,
+          "startColumn" : 50,
+          "endLine" : 249,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachment(java.lang.String title, java.lang.String content, java.lang.String partContent)"
+      }, {
+        "name" : "partContent",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachment(java.lang.String title, java.lang.String content, java.lang.String partContent)/parameter/partContent",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 249,
+          "startColumn" : 66,
+          "endLine" : 249,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/attachment(java.lang.String title, java.lang.String content, java.lang.String partContent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/getMimeMessage()" : {
+      "name" : "getMimeMessage",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender/method/getMimeMessage()",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.email.javax.mail.internet.MimeMessage",
+      "displayedType" : "MimeMessage",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 258,
+        "startColumn" : 25,
+        "endLine" : 258,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.email.MailSender"
+    }
+  },
+  "file_path" : "dolphinscheduler-alert/dolphinscheduler-alert-plugins/dolphinscheduler-alert-email/src/main/java/org/apache/dolphinscheduler/plugin/alert/email/MailSender.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,208 @@
+{
+  "name" : "TaskInstanceKillOperationFunction",
+  "key" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 43,
+    "startColumn" : 8,
+    "endLine" : 43,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/memberField/workerManager" : {
+      "name" : "workerManager",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/memberField/workerManager",
+      "type" : "org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool",
+      "displayedType" : "WorkerTaskExecutorThreadPool",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 48,
+        "startColumn" : 42,
+        "endLine" : 48,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/memberField/messageRetryRunner" : {
+      "name" : "messageRetryRunner",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/memberField/messageRetryRunner",
+      "type" : "org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner",
+      "displayedType" : "MessageRetryRunner",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 32,
+        "endLine" : 51,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/cancelApplication(org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor workerTaskExecutor)" : {
+      "name" : "cancelApplication",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/cancelApplication(org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor workerTaskExecutor)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 114,
+        "startColumn" : 20,
+        "endLine" : 114,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerTaskExecutor",
+        "key" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/cancelApplication(org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor workerTaskExecutor)/parameter/workerTaskExecutor",
+        "type" : "org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor",
+        "displayedType" : "WorkerTaskExecutor",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 114,
+          "startColumn" : 57,
+          "endLine" : 114,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/cancelApplication(org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor workerTaskExecutor)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/killProcess(java.lang.String tenantCode, java.lang.Integer processId)" : {
+      "name" : "killProcess",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/killProcess(java.lang.String tenantCode, java.lang.Integer processId)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 130,
+        "startColumn" : 23,
+        "endLine" : 130,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "tenantCode",
+        "key" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/killProcess(java.lang.String tenantCode, java.lang.Integer processId)/parameter/tenantCode",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 130,
+          "startColumn" : 42,
+          "endLine" : 130,
+          "endColumn" : 52
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/killProcess(java.lang.String tenantCode, java.lang.Integer processId)"
+      }, {
+        "name" : "processId",
+        "key" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/killProcess(java.lang.String tenantCode, java.lang.Integer processId)/parameter/processId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 130,
+          "startColumn" : 62,
+          "endLine" : 130,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/killProcess(java.lang.String tenantCode, java.lang.Integer processId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/operate(org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.extract.worker.transportor.TaskInstanceKillRequest taskInstanceKillRequest)" : {
+      "name" : "operate",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/operate(org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.extract.worker.transportor.TaskInstanceKillRequest taskInstanceKillRequest)",
+      "type" : "org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.extract.worker.transportor.TaskInstanceKillResponse",
+      "displayedType" : "TaskInstanceKillResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 37,
+        "endLine" : 61,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstanceKillRequest",
+        "key" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/operate(org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.extract.worker.transportor.TaskInstanceKillRequest taskInstanceKillRequest)/parameter/taskInstanceKillRequest",
+        "type" : "org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.extract.worker.transportor.TaskInstanceKillRequest",
+        "displayedType" : "TaskInstanceKillRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 61,
+          "startColumn" : 69,
+          "endLine" : 61,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/operate(org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.extract.worker.transportor.TaskInstanceKillRequest taskInstanceKillRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/doKill(org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)" : {
+      "name" : "doKill",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/doKill(org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 101,
+        "startColumn" : 21,
+        "endLine" : 101,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/doKill(org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)/parameter/taskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+        "displayedType" : "TaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 101,
+          "startColumn" : 49,
+          "endLine" : 101,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction/method/doKill(org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction"
+    }
+  },
+  "file_path" : "dolphinscheduler-worker/src/main/java/org/apache/dolphinscheduler/server/worker/runner/operator/TaskInstanceKillOperationFunction.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.worker.runner.operator.ITaskInstanceOperationFunction<org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.extract.worker.transportor.TaskInstanceKillRequest, org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.extract.worker.transportor.TaskInstanceKillResponse>", "org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.extract.worker.transportor.TaskInstanceKillRequest", "org.apache.dolphinscheduler.server.worker.runner.operator.org.apache.dolphinscheduler.extract.worker.transportor.TaskInstanceKillResponse" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

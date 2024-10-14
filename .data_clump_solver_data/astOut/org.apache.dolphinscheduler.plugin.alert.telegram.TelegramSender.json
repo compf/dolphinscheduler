@@ -1,0 +1,872 @@
+{
+  "name" : "TelegramSender",
+  "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 52,
+    "startColumn" : 14,
+    "endLine" : 52,
+    "endColumn" : 19
+  },
+  "modifiers" : [ "PUBLIC", "FINAL" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/parseMode" : {
+      "name" : "parseMode",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/parseMode",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 26,
+        "endLine" : 58,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/url" : {
+      "name" : "url",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/url",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 20,
+        "endLine" : 64,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/enableProxy" : {
+      "name" : "enableProxy",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/enableProxy",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 60,
+        "startColumn" : 27,
+        "endLine" : 60,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/BOT_TOKEN_REGEX" : {
+      "name" : "BOT_TOKEN_REGEX",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/BOT_TOKEN_REGEX",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 33,
+        "endLine" : 54,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/proxy" : {
+      "name" : "proxy",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/proxy",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 20,
+        "endLine" : 66,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/password" : {
+      "name" : "password",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/password",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 20,
+        "endLine" : 72,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/port" : {
+      "name" : "port",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/port",
+      "type" : "java.lang.Integer",
+      "displayedType" : "Integer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 21,
+        "endLine" : 68,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/botToken" : {
+      "name" : "botToken",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/botToken",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 20,
+        "endLine" : 62,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/chatId" : {
+      "name" : "chatId",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/chatId",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 26,
+        "endLine" : 56,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/user" : {
+      "name" : "user",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/memberField/user",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 70,
+        "startColumn" : 20,
+        "endLine" : 70,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/buildMsgJsonStr(java.lang.String content)" : {
+      "name" : "buildMsgJsonStr",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/buildMsgJsonStr(java.lang.String content)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 168,
+        "startColumn" : 20,
+        "endLine" : 168,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/buildMsgJsonStr(java.lang.String content)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 168,
+          "startColumn" : 43,
+          "endLine" : 168,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/buildMsgJsonStr(java.lang.String content)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/buildHttpPost(java.lang.String url, java.lang.String msg)" : {
+      "name" : "buildHttpPost",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/buildHttpPost(java.lang.String url, java.lang.String msg)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.telegram.org.apache.http.client.methods.HttpPost",
+      "displayedType" : "HttpPost",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 234,
+        "startColumn" : 29,
+        "endLine" : 234,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "url",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/buildHttpPost(java.lang.String url, java.lang.String msg)/parameter/url",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 234,
+          "startColumn" : 50,
+          "endLine" : 234,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/buildHttpPost(java.lang.String url, java.lang.String msg)"
+      }, {
+        "name" : "msg",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/buildHttpPost(java.lang.String url, java.lang.String msg)/parameter/msg",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 234,
+          "startColumn" : 62,
+          "endLine" : 234,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/buildHttpPost(java.lang.String url, java.lang.String msg)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)" : {
+      "name" : "getProxyClient",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.telegram.org.apache.http.impl.client.CloseableHttpClient",
+      "displayedType" : "CloseableHttpClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 246,
+        "startColumn" : 40,
+        "endLine" : 246,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "proxy",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)/parameter/proxy",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 246,
+          "startColumn" : 62,
+          "endLine" : 246,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)"
+      }, {
+        "name" : "port",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)/parameter/port",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 246,
+          "startColumn" : 73,
+          "endLine" : 246,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)"
+      }, {
+        "name" : "user",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)/parameter/user",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 246,
+          "startColumn" : 86,
+          "endLine" : 246,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)"
+      }, {
+        "name" : "password",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)/parameter/password",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 246,
+          "startColumn" : 99,
+          "endLine" : 246,
+          "endColumn" : 107
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getProxyConfig(java.lang.String proxy, int port)" : {
+      "name" : "getProxyConfig",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getProxyConfig(java.lang.String proxy, int port)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.telegram.org.apache.http.client.config.RequestConfig",
+      "displayedType" : "RequestConfig",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 254,
+        "startColumn" : 34,
+        "endLine" : 254,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "proxy",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getProxyConfig(java.lang.String proxy, int port)/parameter/proxy",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 254,
+          "startColumn" : 56,
+          "endLine" : 254,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getProxyConfig(java.lang.String proxy, int port)"
+      }, {
+        "name" : "port",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getProxyConfig(java.lang.String proxy, int port)/parameter/port",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 254,
+          "startColumn" : 67,
+          "endLine" : 254,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getProxyConfig(java.lang.String proxy, int port)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/isTextParseMode()" : {
+      "name" : "isTextParseMode",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/isTextParseMode()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 178,
+        "startColumn" : 21,
+        "endLine" : 178,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/parseRespToResult(java.lang.String resp)" : {
+      "name" : "parseRespToResult",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/parseRespToResult(java.lang.String resp)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.telegram.org.apache.dolphinscheduler.alert.api.AlertResult",
+      "displayedType" : "AlertResult",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 114,
+        "startColumn" : 25,
+        "endLine" : 114,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "resp",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/parseRespToResult(java.lang.String resp)/parameter/resp",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 114,
+          "startColumn" : 50,
+          "endLine" : 114,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/parseRespToResult(java.lang.String resp)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/sendMessage(org.apache.dolphinscheduler.plugin.alert.telegram.org.apache.dolphinscheduler.alert.api.AlertData alertData)" : {
+      "name" : "sendMessage",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/sendMessage(org.apache.dolphinscheduler.plugin.alert.telegram.org.apache.dolphinscheduler.alert.api.AlertData alertData)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.telegram.org.apache.dolphinscheduler.alert.api.AlertResult",
+      "displayedType" : "AlertResult",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 100,
+        "startColumn" : 24,
+        "endLine" : 100,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "alertData",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/sendMessage(org.apache.dolphinscheduler.plugin.alert.telegram.org.apache.dolphinscheduler.alert.api.AlertData alertData)/parameter/alertData",
+        "type" : "org.apache.dolphinscheduler.plugin.alert.telegram.org.apache.dolphinscheduler.alert.api.AlertData",
+        "displayedType" : "AlertData",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 100,
+          "startColumn" : 46,
+          "endLine" : 100,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/sendMessage(org.apache.dolphinscheduler.plugin.alert.telegram.org.apache.dolphinscheduler.alert.api.AlertData alertData)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/sendInvoke(java.lang.String title, java.lang.String content)" : {
+      "name" : "sendInvoke",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/sendInvoke(java.lang.String title, java.lang.String content)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 136,
+        "startColumn" : 20,
+        "endLine" : 136,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "title",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/sendInvoke(java.lang.String title, java.lang.String content)/parameter/title",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 136,
+          "startColumn" : 38,
+          "endLine" : 136,
+          "endColumn" : 43
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/sendInvoke(java.lang.String title, java.lang.String content)"
+      }, {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/sendInvoke(java.lang.String title, java.lang.String content)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 136,
+          "startColumn" : 52,
+          "endLine" : 136,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/sendInvoke(java.lang.String title, java.lang.String content)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getDefaultClient()" : {
+      "name" : "getDefaultClient",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender/method/getDefaultClient()",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.telegram.org.apache.http.impl.client.CloseableHttpClient",
+      "displayedType" : "CloseableHttpClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 242,
+        "startColumn" : 40,
+        "endLine" : 242,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender"
+    }
+  },
+  "file_path" : "dolphinscheduler-alert/dolphinscheduler-alert-plugins/dolphinscheduler-alert-telegram/src/main/java/org/apache/dolphinscheduler/plugin/alert/telegram/TelegramSender.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse" : {
+      "name" : "TelegramSendMsgResponse",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 182,
+        "startColumn" : 12,
+        "endLine" : 182,
+        "endColumn" : 17
+      },
+      "modifiers" : [ "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/memberField/result" : {
+          "name" : "result",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/memberField/result",
+          "type" : "java.lang.Object",
+          "displayedType" : "Object",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 191,
+            "startColumn" : 24,
+            "endLine" : 191,
+            "endColumn" : 30
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/memberField/ok" : {
+          "name" : "ok",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/memberField/ok",
+          "type" : "java.lang.Boolean",
+          "displayedType" : "Boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 185,
+            "startColumn" : 25,
+            "endLine" : 185,
+            "endColumn" : 27
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/memberField/errorCode" : {
+          "name" : "errorCode",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/memberField/errorCode",
+          "type" : "java.lang.Integer",
+          "displayedType" : "Integer",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 187,
+            "startColumn" : 25,
+            "endLine" : 187,
+            "endColumn" : 34
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/memberField/description" : {
+          "name" : "description",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/memberField/description",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 189,
+            "startColumn" : 24,
+            "endLine" : 189,
+            "endColumn" : 35
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/setErrorCode(java.lang.Integer errorCode)" : {
+          "name" : "setErrorCode",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/setErrorCode(java.lang.Integer errorCode)",
+          "type" : "void",
+          "displayedType" : "void",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 207,
+            "startColumn" : 21,
+            "endLine" : 207,
+            "endColumn" : 33
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "errorCode",
+            "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/setErrorCode(java.lang.Integer errorCode)/parameter/errorCode",
+            "type" : "java.lang.Integer",
+            "displayedType" : "Integer",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 207,
+              "startColumn" : 42,
+              "endLine" : 207,
+              "endColumn" : 51
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/setErrorCode(java.lang.Integer errorCode)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/isOk()" : {
+          "name" : "isOk",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/isOk()",
+          "type" : "boolean",
+          "displayedType" : "boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 193,
+            "startColumn" : 24,
+            "endLine" : 193,
+            "endColumn" : 28
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/getResult()" : {
+          "name" : "getResult",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/getResult()",
+          "type" : "java.lang.Object",
+          "displayedType" : "Object",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 224,
+            "startColumn" : 23,
+            "endLine" : 224,
+            "endColumn" : 32
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/setOk(java.lang.Boolean ok)" : {
+          "name" : "setOk",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/setOk(java.lang.Boolean ok)",
+          "type" : "void",
+          "displayedType" : "void",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 202,
+            "startColumn" : 21,
+            "endLine" : 202,
+            "endColumn" : 26
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "ok",
+            "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/setOk(java.lang.Boolean ok)/parameter/ok",
+            "type" : "java.lang.Boolean",
+            "displayedType" : "Boolean",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 202,
+              "startColumn" : 35,
+              "endLine" : 202,
+              "endColumn" : 37
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/setOk(java.lang.Boolean ok)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/setDescription(java.lang.String description)" : {
+          "name" : "setDescription",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/setDescription(java.lang.String description)",
+          "type" : "void",
+          "displayedType" : "void",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 220,
+            "startColumn" : 21,
+            "endLine" : 220,
+            "endColumn" : 35
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "description",
+            "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/setDescription(java.lang.String description)/parameter/description",
+            "type" : "java.lang.String",
+            "displayedType" : "String",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 220,
+              "startColumn" : 43,
+              "endLine" : 220,
+              "endColumn" : 54
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/setDescription(java.lang.String description)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/getOk()" : {
+          "name" : "getOk",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/getOk()",
+          "type" : "java.lang.Boolean",
+          "displayedType" : "Boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 197,
+            "startColumn" : 24,
+            "endLine" : 197,
+            "endColumn" : 29
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/getErrorCode()" : {
+          "name" : "getErrorCode",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/getErrorCode()",
+          "type" : "java.lang.Integer",
+          "displayedType" : "Integer",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 211,
+            "startColumn" : 24,
+            "endLine" : 211,
+            "endColumn" : 36
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/getDescription()" : {
+          "name" : "getDescription",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/getDescription()",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 215,
+            "startColumn" : 23,
+            "endLine" : 215,
+            "endColumn" : 37
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/setResult(java.lang.Object result)" : {
+          "name" : "setResult",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/setResult(java.lang.Object result)",
+          "type" : "void",
+          "displayedType" : "void",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 229,
+            "startColumn" : 21,
+            "endLine" : 229,
+            "endColumn" : 30
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "result",
+            "key" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/setResult(java.lang.Object result)/parameter/result",
+            "type" : "java.lang.Object",
+            "displayedType" : "Object",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 229,
+              "startColumn" : 38,
+              "endLine" : 229,
+              "endColumn" : 44
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse/method/setResult(java.lang.Object result)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender.TelegramSendMsgResponse"
+        }
+      },
+      "file_path" : "dolphinscheduler-alert/dolphinscheduler-alert-plugins/dolphinscheduler-alert-telegram/src/main/java/org/apache/dolphinscheduler/plugin/alert/telegram/TelegramSender.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.plugin.alert.telegram.TelegramSender",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,1163 @@
+{
+  "name" : "DagHelper",
+  "key" : "org.apache.dolphinscheduler.service.utils.DagHelper",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 57,
+    "startColumn" : 8,
+    "endLine" : 57,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : { },
+  "methods" : {
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/getWorkflowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList)" : {
+      "name" : "getWorkflowDag",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getWorkflowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList)",
+      "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.process.WorkflowDag",
+      "displayedType" : "WorkflowDag",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 493,
+        "startColumn" : 31,
+        "endLine" : 493,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskNodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getWorkflowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList)/parameter/taskNodeList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+        "displayedType" : "List<TaskNode>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 493,
+          "startColumn" : 61,
+          "endLine" : 493,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getWorkflowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseConditionTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)" : {
+      "name" : "parseConditionTask",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseConditionTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)",
+      "type" : "java.util.List<java.lang.Long>",
+      "displayedType" : "List<Long>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 349,
+        "startColumn" : 30,
+        "endLine" : 349,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "nodeCode",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseConditionTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)/parameter/nodeCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 349,
+          "startColumn" : 54,
+          "endLine" : 349,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseConditionTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)"
+      }, {
+        "name" : "skipTaskNodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseConditionTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)/parameter/skipTaskNodeList",
+        "type" : "java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+        "displayedType" : "Map<Long, TaskNode>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 350,
+          "startColumn" : 69,
+          "endLine" : 350,
+          "endColumn" : 85
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseConditionTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)"
+      }, {
+        "name" : "dag",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseConditionTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)/parameter/dag",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation>",
+        "displayedType" : "DAG<Long, TaskNode, TaskNodeRelation>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 351,
+          "startColumn" : 87,
+          "endLine" : 351,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseConditionTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)"
+      }, {
+        "name" : "completeTaskList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseConditionTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)/parameter/completeTaskList",
+        "type" : "java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance>",
+        "displayedType" : "Map<Long, TaskInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 352,
+          "startColumn" : 73,
+          "endLine" : 352,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseConditionTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/buildDagGraph(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.process.WorkflowDag workflowDag)" : {
+      "name" : "buildDagGraph",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/buildDagGraph(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.process.WorkflowDag workflowDag)",
+      "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation>",
+      "displayedType" : "DAG<Long, TaskNode, TaskNodeRelation>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 467,
+        "startColumn" : 57,
+        "endLine" : 467,
+        "endColumn" : 70
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowDag",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/buildDagGraph(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.process.WorkflowDag workflowDag)/parameter/workflowDag",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.process.WorkflowDag",
+        "displayedType" : "WorkflowDag",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 467,
+          "startColumn" : 83,
+          "endLine" : 467,
+          "endColumn" : 94
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/buildDagGraph(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.process.WorkflowDag workflowDag)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveConditionsAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)" : {
+      "name" : "haveConditionsAfterNode",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveConditionsAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 551,
+        "startColumn" : 27,
+        "endLine" : 551,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "parentNodeCode",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveConditionsAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)/parameter/parentNodeCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 551,
+          "startColumn" : 56,
+          "endLine" : 551,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveConditionsAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)"
+      }, {
+        "name" : "dag",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveConditionsAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)/parameter/dag",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation>",
+        "displayedType" : "DAG<Long, TaskNode, TaskNodeRelation>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 552,
+          "startColumn" : 89,
+          "endLine" : 552,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveConditionsAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/skipTaskNode4Switch(java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)" : {
+      "name" : "skipTaskNode4Switch",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/skipTaskNode4Switch(java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)",
+      "type" : "java.util.List<java.lang.Long>",
+      "displayedType" : "List<Long>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 407,
+        "startColumn" : 30,
+        "endLine" : 407,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "skipTaskNodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/skipTaskNode4Switch(java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)/parameter/skipTaskNodeList",
+        "type" : "java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+        "displayedType" : "Map<Long, TaskNode>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 407,
+          "startColumn" : 70,
+          "endLine" : 407,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/skipTaskNode4Switch(java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)"
+      }, {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/skipTaskNode4Switch(java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 408,
+          "startColumn" : 63,
+          "endLine" : 408,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/skipTaskNode4Switch(java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)"
+      }, {
+        "name" : "dag",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/skipTaskNode4Switch(java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)/parameter/dag",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation>",
+        "displayedType" : "DAG<Long, TaskNode, TaskNodeRelation>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 409,
+          "startColumn" : 88,
+          "endLine" : 409,
+          "endColumn" : 91
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/skipTaskNode4Switch(java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPre(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<java.lang.Long> recoveryNodeCodeList, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)" : {
+      "name" : "getFlowNodeListPre",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPre(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<java.lang.Long> recoveryNodeCodeList, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+      "displayedType" : "List<TaskNode>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 180,
+        "startColumn" : 35,
+        "endLine" : 180,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "startNode",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPre(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<java.lang.Long> recoveryNodeCodeList, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)/parameter/startNode",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode",
+        "displayedType" : "TaskNode",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 180,
+          "startColumn" : 63,
+          "endLine" : 180,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPre(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<java.lang.Long> recoveryNodeCodeList, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)"
+      }, {
+        "name" : "recoveryNodeCodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPre(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<java.lang.Long> recoveryNodeCodeList, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)/parameter/recoveryNodeCodeList",
+        "type" : "java.util.List<java.lang.Long>",
+        "displayedType" : "List<Long>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 181,
+          "startColumn" : 65,
+          "endLine" : 181,
+          "endColumn" : 85
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPre(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<java.lang.Long> recoveryNodeCodeList, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)"
+      }, {
+        "name" : "taskNodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPre(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<java.lang.Long> recoveryNodeCodeList, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)/parameter/taskNodeList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+        "displayedType" : "List<TaskNode>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 182,
+          "startColumn" : 69,
+          "endLine" : 182,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPre(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<java.lang.Long> recoveryNodeCodeList, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)"
+      }, {
+        "name" : "visitedNodeCodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPre(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<java.lang.Long> recoveryNodeCodeList, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)/parameter/visitedNodeCodeList",
+        "type" : "java.util.List<java.lang.Long>",
+        "displayedType" : "List<Long>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 183,
+          "startColumn" : 65,
+          "endLine" : 183,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPre(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<java.lang.Long> recoveryNodeCodeList, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/allDependsForbiddenOrEnd(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode taskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)" : {
+      "name" : "allDependsForbiddenOrEnd",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/allDependsForbiddenOrEnd(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode taskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 261,
+        "startColumn" : 27,
+        "endLine" : 261,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskNode",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/allDependsForbiddenOrEnd(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode taskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)/parameter/taskNode",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode",
+        "displayedType" : "TaskNode",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 261,
+          "startColumn" : 61,
+          "endLine" : 261,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/allDependsForbiddenOrEnd(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode taskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)"
+      }, {
+        "name" : "dag",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/allDependsForbiddenOrEnd(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode taskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)/parameter/dag",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation>",
+        "displayedType" : "DAG<Long, TaskNode, TaskNodeRelation>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 262,
+          "startColumn" : 90,
+          "endLine" : 262,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/allDependsForbiddenOrEnd(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode taskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)"
+      }, {
+        "name" : "skipTaskNodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/allDependsForbiddenOrEnd(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode taskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)/parameter/skipTaskNodeList",
+        "type" : "java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+        "displayedType" : "Map<Long, TaskNode>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 263,
+          "startColumn" : 72,
+          "endLine" : 263,
+          "endColumn" : 88
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/allDependsForbiddenOrEnd(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode taskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)"
+      }, {
+        "name" : "completeTaskList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/allDependsForbiddenOrEnd(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode taskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)/parameter/completeTaskList",
+        "type" : "java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance>",
+        "displayedType" : "Map<Long, TaskInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 264,
+          "startColumn" : 76,
+          "endLine" : 264,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/allDependsForbiddenOrEnd(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode taskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseSwitchTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)" : {
+      "name" : "parseSwitchTask",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseSwitchTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)",
+      "type" : "java.util.List<java.lang.Long>",
+      "displayedType" : "List<Long>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 391,
+        "startColumn" : 30,
+        "endLine" : 391,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "nodeCode",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseSwitchTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)/parameter/nodeCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 391,
+          "startColumn" : 51,
+          "endLine" : 391,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseSwitchTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)"
+      }, {
+        "name" : "skipTaskNodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseSwitchTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)/parameter/skipTaskNodeList",
+        "type" : "java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+        "displayedType" : "Map<Long, TaskNode>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 392,
+          "startColumn" : 66,
+          "endLine" : 392,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseSwitchTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)"
+      }, {
+        "name" : "dag",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseSwitchTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)/parameter/dag",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation>",
+        "displayedType" : "DAG<Long, TaskNode, TaskNodeRelation>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 393,
+          "startColumn" : 84,
+          "endLine" : 393,
+          "endColumn" : 87
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseSwitchTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)"
+      }, {
+        "name" : "completeTaskList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseSwitchTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)/parameter/completeTaskList",
+        "type" : "java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance>",
+        "displayedType" : "Map<Long, TaskInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 394,
+          "startColumn" : 70,
+          "endLine" : 394,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parseSwitchTask(java.lang.Long nodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/setTaskNodeSkip(java.lang.Long skipNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList)" : {
+      "name" : "setTaskNodeSkip",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/setTaskNodeSkip(java.lang.Long skipNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 446,
+        "startColumn" : 25,
+        "endLine" : 446,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "skipNodeCode",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/setTaskNodeSkip(java.lang.Long skipNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList)/parameter/skipNodeCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 446,
+          "startColumn" : 46,
+          "endLine" : 446,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/setTaskNodeSkip(java.lang.Long skipNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList)"
+      }, {
+        "name" : "dag",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/setTaskNodeSkip(java.lang.Long skipNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList)/parameter/dag",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation>",
+        "displayedType" : "DAG<Long, TaskNode, TaskNodeRelation>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 447,
+          "startColumn" : 79,
+          "endLine" : 447,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/setTaskNodeSkip(java.lang.Long skipNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList)"
+      }, {
+        "name" : "skipTaskNodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/setTaskNodeSkip(java.lang.Long skipNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList)/parameter/skipTaskNodeList",
+        "type" : "java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+        "displayedType" : "Map<Long, TaskNode>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 448,
+          "startColumn" : 61,
+          "endLine" : 448,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/setTaskNodeSkip(java.lang.Long skipNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowNodeListByStartNode(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType taskDependType)" : {
+      "name" : "generateFlowNodeListByStartNode",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowNodeListByStartNode(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType taskDependType)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+      "displayedType" : "List<TaskNode>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 34,
+        "endLine" : 91,
+        "endColumn" : 65
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskNodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowNodeListByStartNode(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType taskDependType)/parameter/taskNodeList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+        "displayedType" : "List<TaskNode>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 91,
+          "startColumn" : 81,
+          "endLine" : 91,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowNodeListByStartNode(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType taskDependType)"
+      }, {
+        "name" : "startNodeNameList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowNodeListByStartNode(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType taskDependType)/parameter/startNodeNameList",
+        "type" : "java.util.List<java.lang.Long>",
+        "displayedType" : "List<Long>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 92,
+          "startColumn" : 77,
+          "endLine" : 92,
+          "endColumn" : 94
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowNodeListByStartNode(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType taskDependType)"
+      }, {
+        "name" : "recoveryNodeCodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowNodeListByStartNode(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType taskDependType)/parameter/recoveryNodeCodeList",
+        "type" : "java.util.List<java.lang.Long>",
+        "displayedType" : "List<Long>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 93,
+          "startColumn" : 77,
+          "endLine" : 93,
+          "endColumn" : 97
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowNodeListByStartNode(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType taskDependType)"
+      }, {
+        "name" : "taskDependType",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowNodeListByStartNode(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType taskDependType)/parameter/taskDependType",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType",
+        "displayedType" : "TaskDependType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 94,
+          "startColumn" : 81,
+          "endLine" : 94,
+          "endColumn" : 95
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowNodeListByStartNode(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType taskDependType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPost(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)" : {
+      "name" : "getFlowNodeListPost",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPost(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+      "displayedType" : "List<TaskNode>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 152,
+        "startColumn" : 35,
+        "endLine" : 152,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "startNode",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPost(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)/parameter/startNode",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode",
+        "displayedType" : "TaskNode",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 152,
+          "startColumn" : 64,
+          "endLine" : 152,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPost(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)"
+      }, {
+        "name" : "taskNodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPost(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)/parameter/taskNodeList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+        "displayedType" : "List<TaskNode>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 153,
+          "startColumn" : 70,
+          "endLine" : 153,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPost(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)"
+      }, {
+        "name" : "visitedNodeCodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPost(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)/parameter/visitedNodeCodeList",
+        "type" : "java.util.List<java.lang.Long>",
+        "displayedType" : "List<Long>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 154,
+          "startColumn" : 66,
+          "endLine" : 154,
+          "endColumn" : 85
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getFlowNodeListPost(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode startNode, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<java.lang.Long> visitedNodeCodeList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveSubAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.lang.String filterNodeType)" : {
+      "name" : "haveSubAfterNode",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveSubAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.lang.String filterNodeType)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 567,
+        "startColumn" : 27,
+        "endLine" : 567,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "parentNodeCode",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveSubAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.lang.String filterNodeType)/parameter/parentNodeCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 567,
+          "startColumn" : 49,
+          "endLine" : 567,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveSubAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.lang.String filterNodeType)"
+      }, {
+        "name" : "dag",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveSubAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.lang.String filterNodeType)/parameter/dag",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation>",
+        "displayedType" : "DAG<Long, TaskNode, TaskNodeRelation>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 568,
+          "startColumn" : 82,
+          "endLine" : 568,
+          "endColumn" : 85
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveSubAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.lang.String filterNodeType)"
+      }, {
+        "name" : "filterNodeType",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveSubAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.lang.String filterNodeType)/parameter/filterNodeType",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 568,
+          "startColumn" : 94,
+          "endLine" : 568,
+          "endColumn" : 108
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveSubAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.lang.String filterNodeType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/findNodeByCode(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> nodeDetails, java.lang.Long nodeCode)" : {
+      "name" : "findNodeByCode",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/findNodeByCode(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> nodeDetails, java.lang.Long nodeCode)",
+      "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode",
+      "displayedType" : "TaskNode",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 244,
+        "startColumn" : 28,
+        "endLine" : 244,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "nodeDetails",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/findNodeByCode(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> nodeDetails, java.lang.Long nodeCode)/parameter/nodeDetails",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+        "displayedType" : "List<TaskNode>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 244,
+          "startColumn" : 58,
+          "endLine" : 244,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/findNodeByCode(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> nodeDetails, java.lang.Long nodeCode)"
+      }, {
+        "name" : "nodeCode",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/findNodeByCode(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> nodeDetails, java.lang.Long nodeCode)/parameter/nodeCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 244,
+          "startColumn" : 76,
+          "endLine" : 244,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/findNodeByCode(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> nodeDetails, java.lang.Long nodeCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/isTaskNodeNeedSkip(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode taskNode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList)" : {
+      "name" : "isTaskNodeNeedSkip",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/isTaskNodeNeedSkip(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode taskNode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 332,
+        "startColumn" : 28,
+        "endLine" : 332,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskNode",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/isTaskNodeNeedSkip(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode taskNode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList)/parameter/taskNode",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode",
+        "displayedType" : "TaskNode",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 332,
+          "startColumn" : 56,
+          "endLine" : 332,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/isTaskNodeNeedSkip(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode taskNode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList)"
+      }, {
+        "name" : "skipTaskNodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/isTaskNodeNeedSkip(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode taskNode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList)/parameter/skipTaskNodeList",
+        "type" : "java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+        "displayedType" : "Map<Long, TaskNode>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 333,
+          "startColumn" : 67,
+          "endLine" : 333,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/isTaskNodeNeedSkip(org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode taskNode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/parsePostNodes(java.lang.Long preNodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)" : {
+      "name" : "parsePostNodes",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parsePostNodes(java.lang.Long preNodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)",
+      "type" : "java.util.Set<java.lang.Long>",
+      "displayedType" : "Set<Long>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 289,
+        "startColumn" : 29,
+        "endLine" : 289,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "preNodeCode",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parsePostNodes(java.lang.Long preNodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)/parameter/preNodeCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 289,
+          "startColumn" : 49,
+          "endLine" : 289,
+          "endColumn" : 60
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parsePostNodes(java.lang.Long preNodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)"
+      }, {
+        "name" : "skipTaskNodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parsePostNodes(java.lang.Long preNodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)/parameter/skipTaskNodeList",
+        "type" : "java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+        "displayedType" : "Map<Long, TaskNode>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 290,
+          "startColumn" : 64,
+          "endLine" : 290,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parsePostNodes(java.lang.Long preNodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)"
+      }, {
+        "name" : "dag",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parsePostNodes(java.lang.Long preNodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)/parameter/dag",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation>",
+        "displayedType" : "DAG<Long, TaskNode, TaskNodeRelation>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 291,
+          "startColumn" : 82,
+          "endLine" : 291,
+          "endColumn" : 85
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parsePostNodes(java.lang.Long preNodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)"
+      }, {
+        "name" : "completeTaskList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parsePostNodes(java.lang.Long preNodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)/parameter/completeTaskList",
+        "type" : "java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance>",
+        "displayedType" : "Map<Long, TaskInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 292,
+          "startColumn" : 68,
+          "endLine" : 292,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/parsePostNodes(java.lang.Long preNodeCode, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> skipTaskNodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.TaskInstance> completeTaskList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/getWorkflowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation> workflowTaskRelations)" : {
+      "name" : "getWorkflowDag",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getWorkflowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation> workflowTaskRelations)",
+      "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.process.WorkflowDag",
+      "displayedType" : "WorkflowDag",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 521,
+        "startColumn" : 31,
+        "endLine" : 521,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskNodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getWorkflowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation> workflowTaskRelations)/parameter/taskNodeList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+        "displayedType" : "List<TaskNode>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 521,
+          "startColumn" : 61,
+          "endLine" : 521,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getWorkflowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation> workflowTaskRelations)"
+      }, {
+        "name" : "workflowTaskRelations",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getWorkflowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation> workflowTaskRelations)/parameter/workflowTaskRelations",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation>",
+        "displayedType" : "List<WorkflowTaskRelation>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 522,
+          "startColumn" : 73,
+          "endLine" : 522,
+          "endColumn" : 94
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/getWorkflowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList, java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation> workflowTaskRelations)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> totalTaskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType depNodeType)" : {
+      "name" : "generateFlowDag",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> totalTaskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType depNodeType)",
+      "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.process.WorkflowDag",
+      "displayedType" : "WorkflowDag",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 220,
+        "startColumn" : 31,
+        "endLine" : 220,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "totalTaskNodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> totalTaskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType depNodeType)/parameter/totalTaskNodeList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+        "displayedType" : "List<TaskNode>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 220,
+          "startColumn" : 62,
+          "endLine" : 220,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> totalTaskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType depNodeType)"
+      }, {
+        "name" : "startNodeNameList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> totalTaskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType depNodeType)/parameter/startNodeNameList",
+        "type" : "java.util.List<java.lang.Long>",
+        "displayedType" : "List<Long>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 221,
+          "startColumn" : 58,
+          "endLine" : 221,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> totalTaskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType depNodeType)"
+      }, {
+        "name" : "recoveryNodeCodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> totalTaskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType depNodeType)/parameter/recoveryNodeCodeList",
+        "type" : "java.util.List<java.lang.Long>",
+        "displayedType" : "List<Long>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 222,
+          "startColumn" : 58,
+          "endLine" : 222,
+          "endColumn" : 78
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> totalTaskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType depNodeType)"
+      }, {
+        "name" : "depNodeType",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> totalTaskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType depNodeType)/parameter/depNodeType",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType",
+        "displayedType" : "TaskDependType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 223,
+          "startColumn" : 62,
+          "endLine" : 223,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateFlowDag(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> totalTaskNodeList, java.util.List<java.lang.Long> startNodeNameList, java.util.List<java.lang.Long> recoveryNodeCodeList, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.enums.TaskDependType depNodeType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveAllNodeAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)" : {
+      "name" : "haveAllNodeAfterNode",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveAllNodeAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 559,
+        "startColumn" : 27,
+        "endLine" : 559,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "parentNodeCode",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveAllNodeAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)/parameter/parentNodeCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 559,
+          "startColumn" : 53,
+          "endLine" : 559,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveAllNodeAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)"
+      }, {
+        "name" : "dag",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveAllNodeAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)/parameter/dag",
+        "type" : "org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation>",
+        "displayedType" : "DAG<Long, TaskNode, TaskNodeRelation>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 560,
+          "startColumn" : 86,
+          "endLine" : 560,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/haveAllNodeAfterNode(java.lang.Long parentNodeCode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.graph.DAG<java.lang.Long, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode, org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation> dag)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    },
+    "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateRelationListByFlowNodes(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList)" : {
+      "name" : "generateRelationListByFlowNodes",
+      "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateRelationListByFlowNodes(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.common.model.TaskNodeRelation>",
+      "displayedType" : "List<TaskNodeRelation>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 42,
+        "endLine" : 66,
+        "endColumn" : 73
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskNodeList",
+        "key" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateRelationListByFlowNodes(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList)/parameter/taskNodeList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode>",
+        "displayedType" : "List<TaskNode>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 66,
+          "startColumn" : 89,
+          "endLine" : 66,
+          "endColumn" : 101
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.utils.DagHelper/method/generateRelationListByFlowNodes(java.util.List<org.apache.dolphinscheduler.service.utils.org.apache.dolphinscheduler.service.model.TaskNode> taskNodeList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.utils.DagHelper"
+    }
+  },
+  "file_path" : "dolphinscheduler-service/src/main/java/org/apache/dolphinscheduler/service/utils/DagHelper.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

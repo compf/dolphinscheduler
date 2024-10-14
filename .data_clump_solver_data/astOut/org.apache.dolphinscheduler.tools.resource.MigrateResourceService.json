@@ -1,0 +1,211 @@
+{
+  "name" : "MigrateResourceService",
+  "key" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 45,
+    "startColumn" : 8,
+    "endLine" : 45,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/memberField/storageOperator" : {
+      "name" : "storageOperator",
+      "key" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/memberField/storageOperator",
+      "type" : "org.apache.dolphinscheduler.tools.resource.org.apache.dolphinscheduler.plugin.storage.api.StorageOperator",
+      "displayedType" : "StorageOperator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 50,
+        "startColumn" : 29,
+        "endLine" : 50,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService"
+    },
+    "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/memberField/MIGRATE_BASE_DIR" : {
+      "name" : "MIGRATE_BASE_DIR",
+      "key" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/memberField/MIGRATE_BASE_DIR",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 33,
+        "endLine" : 58,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService"
+    },
+    "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/memberField/logger" : {
+      "name" : "logger",
+      "key" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/memberField/logger",
+      "type" : "org.slf4j.Logger",
+      "displayedType" : "Logger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 33,
+        "endLine" : 47,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService"
+    },
+    "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/memberField/dataSource" : {
+      "name" : "dataSource",
+      "key" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/memberField/dataSource",
+      "type" : "javax.sql.DataSource",
+      "displayedType" : "DataSource",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 24,
+        "endLine" : 56,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService"
+    },
+    "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/memberField/tenantMapper" : {
+      "name" : "tenantMapper",
+      "key" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/memberField/tenantMapper",
+      "type" : "org.apache.dolphinscheduler.tools.resource.org.apache.dolphinscheduler.dao.mapper.TenantMapper",
+      "displayedType" : "TenantMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 26,
+        "endLine" : 53,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/method/getAllResources()" : {
+      "name" : "getAllResources",
+      "key" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/method/getAllResources()",
+      "type" : "java.util.List<java.util.Map<java.lang.String, java.lang.Object>>",
+      "displayedType" : "List<Map<String, Object>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 39,
+        "endLine" : 88,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService"
+    },
+    "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/method/createMigrateDirByType(java.lang.String targetTenantCode, org.apache.dolphinscheduler.tools.resource.org.apache.dolphinscheduler.spi.enums.ResourceType type)" : {
+      "name" : "createMigrateDirByType",
+      "key" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/method/createMigrateDirByType(java.lang.String targetTenantCode, org.apache.dolphinscheduler.tools.resource.org.apache.dolphinscheduler.spi.enums.ResourceType type)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 106,
+        "startColumn" : 19,
+        "endLine" : 106,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "targetTenantCode",
+        "key" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/method/createMigrateDirByType(java.lang.String targetTenantCode, org.apache.dolphinscheduler.tools.resource.org.apache.dolphinscheduler.spi.enums.ResourceType type)/parameter/targetTenantCode",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 106,
+          "startColumn" : 49,
+          "endLine" : 106,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/method/createMigrateDirByType(java.lang.String targetTenantCode, org.apache.dolphinscheduler.tools.resource.org.apache.dolphinscheduler.spi.enums.ResourceType type)"
+      }, {
+        "name" : "type",
+        "key" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/method/createMigrateDirByType(java.lang.String targetTenantCode, org.apache.dolphinscheduler.tools.resource.org.apache.dolphinscheduler.spi.enums.ResourceType type)/parameter/type",
+        "type" : "org.apache.dolphinscheduler.tools.resource.org.apache.dolphinscheduler.spi.enums.ResourceType",
+        "displayedType" : "ResourceType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 106,
+          "startColumn" : 80,
+          "endLine" : 106,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/method/createMigrateDirByType(java.lang.String targetTenantCode, org.apache.dolphinscheduler.tools.resource.org.apache.dolphinscheduler.spi.enums.ResourceType type)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService"
+    },
+    "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/method/migrateResourceOnce(java.lang.String targetTenantCode)" : {
+      "name" : "migrateResourceOnce",
+      "key" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/method/migrateResourceOnce(java.lang.String targetTenantCode)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 60,
+        "startColumn" : 17,
+        "endLine" : 60,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "targetTenantCode",
+        "key" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/method/migrateResourceOnce(java.lang.String targetTenantCode)/parameter/targetTenantCode",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 60,
+          "startColumn" : 44,
+          "endLine" : 60,
+          "endColumn" : 60
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService/method/migrateResourceOnce(java.lang.String targetTenantCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.resource.MigrateResourceService"
+    }
+  },
+  "file_path" : "dolphinscheduler-tools/src/main/java/org/apache/dolphinscheduler/tools/resource/MigrateResourceService.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,357 @@
+{
+  "name" : "SubWorkflowServiceImpl",
+  "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 40,
+    "startColumn" : 8,
+    "endLine" : 40,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/memberField/relationSubWorkflowMapper" : {
+      "name" : "relationSubWorkflowMapper",
+      "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/memberField/relationSubWorkflowMapper",
+      "type" : "org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.mapper.RelationSubWorkflowMapper",
+      "displayedType" : "RelationSubWorkflowMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 39,
+        "endLine" : 43,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl"
+    },
+    "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/memberField/workflowInstanceDao" : {
+      "name" : "workflowInstanceDao",
+      "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/memberField/workflowInstanceDao",
+      "type" : "org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.repository.WorkflowInstanceDao",
+      "displayedType" : "WorkflowInstanceDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 46,
+        "startColumn" : 33,
+        "endLine" : 46,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl"
+    },
+    "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/memberField/workflowDefinitionLogMapper" : {
+      "name" : "workflowDefinitionLogMapper",
+      "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/memberField/workflowDefinitionLogMapper",
+      "type" : "org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper",
+      "displayedType" : "WorkflowDefinitionLogMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 41,
+        "endLine" : 49,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterFinishProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)" : {
+      "name" : "filterFinishProcessInstances",
+      "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterFinishProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance>",
+      "displayedType" : "List<WorkflowInstance>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 70,
+        "startColumn" : 35,
+        "endLine" : 70,
+        "endColumn" : 63
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceList",
+        "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterFinishProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)/parameter/workflowInstanceList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance>",
+        "displayedType" : "List<WorkflowInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 70,
+          "startColumn" : 87,
+          "endLine" : 70,
+          "endColumn" : 107
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterFinishProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl"
+    },
+    "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterSuccessProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)" : {
+      "name" : "filterSuccessProcessInstances",
+      "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterSuccessProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance>",
+      "displayedType" : "List<WorkflowInstance>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 35,
+        "endLine" : 76,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceList",
+        "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterSuccessProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)/parameter/workflowInstanceList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance>",
+        "displayedType" : "List<WorkflowInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 76,
+          "startColumn" : 88,
+          "endLine" : 76,
+          "endColumn" : 108
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterSuccessProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl"
+    },
+    "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterWaitToRunProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)" : {
+      "name" : "filterWaitToRunProcessInstances",
+      "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterWaitToRunProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance>",
+      "displayedType" : "List<WorkflowInstance>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 35,
+        "endLine" : 88,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceList",
+        "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterWaitToRunProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)/parameter/workflowInstanceList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance>",
+        "displayedType" : "List<WorkflowInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 88,
+          "startColumn" : 90,
+          "endLine" : 88,
+          "endColumn" : 110
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterWaitToRunProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl"
+    },
+    "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/getAllDynamicSubWorkflow(long processInstanceId, long taskCode)" : {
+      "name" : "getAllDynamicSubWorkflow",
+      "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/getAllDynamicSubWorkflow(long processInstanceId, long taskCode)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance>",
+      "displayedType" : "List<WorkflowInstance>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 35,
+        "endLine" : 52,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "processInstanceId",
+        "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/getAllDynamicSubWorkflow(long processInstanceId, long taskCode)/parameter/processInstanceId",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 52,
+          "startColumn" : 65,
+          "endLine" : 52,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/getAllDynamicSubWorkflow(long processInstanceId, long taskCode)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/getAllDynamicSubWorkflow(long processInstanceId, long taskCode)/parameter/taskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 52,
+          "startColumn" : 89,
+          "endLine" : 52,
+          "endColumn" : 97
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/getAllDynamicSubWorkflow(long processInstanceId, long taskCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl"
+    },
+    "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterFailedProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)" : {
+      "name" : "filterFailedProcessInstances",
+      "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterFailedProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance>",
+      "displayedType" : "List<WorkflowInstance>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 95,
+        "startColumn" : 35,
+        "endLine" : 95,
+        "endColumn" : 63
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceList",
+        "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterFailedProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)/parameter/workflowInstanceList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance>",
+        "displayedType" : "List<WorkflowInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 95,
+          "startColumn" : 87,
+          "endLine" : 95,
+          "endColumn" : 107
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterFailedProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl"
+    },
+    "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/batchInsertRelationSubWorkflow(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.RelationSubWorkflow> relationSubWorkflowList)" : {
+      "name" : "batchInsertRelationSubWorkflow",
+      "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/batchInsertRelationSubWorkflow(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.RelationSubWorkflow> relationSubWorkflowList)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 16,
+        "endLine" : 64,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "relationSubWorkflowList",
+        "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/batchInsertRelationSubWorkflow(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.RelationSubWorkflow> relationSubWorkflowList)/parameter/relationSubWorkflowList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.RelationSubWorkflow>",
+        "displayedType" : "List<RelationSubWorkflow>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 64,
+          "startColumn" : 73,
+          "endLine" : 64,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/batchInsertRelationSubWorkflow(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.RelationSubWorkflow> relationSubWorkflowList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl"
+    },
+    "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/getWorkflowOutputParameters(org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)" : {
+      "name" : "getWorkflowOutputParameters",
+      "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/getWorkflowOutputParameters(org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.plugin.task.api.model.Property>",
+      "displayedType" : "List<Property>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 101,
+        "startColumn" : 27,
+        "endLine" : 101,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/getWorkflowOutputParameters(org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 101,
+          "startColumn" : 72,
+          "endLine" : 101,
+          "endColumn" : 88
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/getWorkflowOutputParameters(org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl"
+    },
+    "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterRunningProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)" : {
+      "name" : "filterRunningProcessInstances",
+      "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterRunningProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance>",
+      "displayedType" : "List<WorkflowInstance>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 82,
+        "startColumn" : 35,
+        "endLine" : 82,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceList",
+        "key" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterRunningProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)/parameter/workflowInstanceList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance>",
+        "displayedType" : "List<WorkflowInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 82,
+          "startColumn" : 88,
+          "endLine" : 82,
+          "endColumn" : 108
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl/method/filterRunningProcessInstances(java.util.List<org.apache.dolphinscheduler.service.subworkflow.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> workflowInstanceList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl"
+    }
+  },
+  "file_path" : "dolphinscheduler-service/src/main/java/org/apache/dolphinscheduler/service/subworkflow/SubWorkflowServiceImpl.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.service.subworkflow.SubWorkflowService" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

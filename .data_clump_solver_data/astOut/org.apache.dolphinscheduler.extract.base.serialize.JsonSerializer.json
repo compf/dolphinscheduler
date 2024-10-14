@@ -1,0 +1,158 @@
+{
+  "name" : "JsonSerializer",
+  "key" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 45,
+    "startColumn" : 8,
+    "endLine" : 45,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer/memberField/objectMapper" : {
+      "name" : "objectMapper",
+      "key" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer/memberField/objectMapper",
+      "type" : "com.fasterxml.jackson.databind.ObjectMapper",
+      "displayedType" : "ObjectMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 39,
+        "endLine" : 47,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer/method/serialize(T obj)" : {
+      "name" : "serialize",
+      "key" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer/method/serialize(T obj)",
+      "type" : "byte[]",
+      "displayedType" : "byte[]",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 70,
+        "startColumn" : 30,
+        "endLine" : 70,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "obj",
+        "key" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer/method/serialize(T obj)/parameter/obj",
+        "type" : "T",
+        "displayedType" : "T",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 70,
+          "startColumn" : 42,
+          "endLine" : 70,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer/method/serialize(T obj)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer"
+    },
+    "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer/method/deserialize(byte[] src, java.lang.Class<T> clazz)" : {
+      "name" : "deserialize",
+      "key" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer/method/deserialize(byte[] src, java.lang.Class<T> clazz)",
+      "type" : "T",
+      "displayedType" : "T",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 108,
+        "startColumn" : 25,
+        "endLine" : 108,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "src",
+        "key" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer/method/deserialize(byte[] src, java.lang.Class<T> clazz)/parameter/src",
+        "type" : "byte[]",
+        "displayedType" : "byte[]",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 108,
+          "startColumn" : 44,
+          "endLine" : 108,
+          "endColumn" : 47
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer/method/deserialize(byte[] src, java.lang.Class<T> clazz)"
+      }, {
+        "name" : "clazz",
+        "key" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer/method/deserialize(byte[] src, java.lang.Class<T> clazz)/parameter/clazz",
+        "type" : "java.lang.Class<T>",
+        "displayedType" : "Class<T>",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 108,
+          "startColumn" : 58,
+          "endLine" : 108,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer/method/deserialize(byte[] src, java.lang.Class<T> clazz)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer"
+    },
+    "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer/method/serializeToString(T obj)" : {
+      "name" : "serializeToString",
+      "key" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer/method/serializeToString(T obj)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 89,
+        "startColumn" : 30,
+        "endLine" : 89,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "obj",
+        "key" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer/method/serializeToString(T obj)/parameter/obj",
+        "type" : "T",
+        "displayedType" : "T",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 89,
+          "startColumn" : 50,
+          "endLine" : 89,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer/method/serializeToString(T obj)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.serialize.JsonSerializer"
+    }
+  },
+  "file_path" : "dolphinscheduler-extract/dolphinscheduler-extract-base/src/main/java/org/apache/dolphinscheduler/extract/base/serialize/JsonSerializer.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

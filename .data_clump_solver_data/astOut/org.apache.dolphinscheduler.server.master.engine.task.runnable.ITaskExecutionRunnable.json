@@ -1,0 +1,278 @@
+{
+  "name" : "ITaskExecutionRunnable",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+  "type" : "interface",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 31,
+    "startColumn" : 8,
+    "endLine" : 31,
+    "endColumn" : 17
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : { },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/isTaskInstanceCanRetry()" : {
+      "name" : "isTaskInstanceCanRetry",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/isTaskInstanceCanRetry()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 13,
+        "endLine" : 54,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/getTaskExecutionContext()" : {
+      "name" : "getTaskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/getTaskExecutionContext()",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+      "displayedType" : "TaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 26,
+        "endLine" : 88,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/kill()" : {
+      "name" : "kill",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/kill()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 10,
+        "endLine" : 76,
+        "endColumn" : 14
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/initializeFirstRunTaskInstance()" : {
+      "name" : "initializeFirstRunTaskInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/initializeFirstRunTaskInstance()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 10,
+        "endLine" : 49,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/pause()" : {
+      "name" : "pause",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/pause()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 10,
+        "endLine" : 71,
+        "endColumn" : 15
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/retry()" : {
+      "name" : "retry",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/retry()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 60,
+        "startColumn" : 10,
+        "endLine" : 60,
+        "endColumn" : 15
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/getTaskInstance()" : {
+      "name" : "getTaskInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/getTaskInstance()",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+      "displayedType" : "TaskInstance",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 84,
+        "startColumn" : 18,
+        "endLine" : 84,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/getWorkflowExecutionGraph()" : {
+      "name" : "getWorkflowExecutionGraph",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/getWorkflowExecutionGraph()",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowExecutionGraph",
+      "displayedType" : "IWorkflowExecutionGraph",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 29,
+        "endLine" : 80,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/failover()" : {
+      "name" : "failover",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/failover()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 10,
+        "endLine" : 66,
+        "endColumn" : 18
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/getTaskDefinition()" : {
+      "name" : "getTaskDefinition",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/getTaskDefinition()",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskDefinition",
+      "displayedType" : "TaskDefinition",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 86,
+        "startColumn" : 20,
+        "endLine" : 86,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/getName()" : {
+      "name" : "getName",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/getName()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 35,
+        "startColumn" : 20,
+        "endLine" : 35,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC", "DEFAULT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/getWorkflowInstance()" : {
+      "name" : "getWorkflowInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/getWorkflowInstance()",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+      "displayedType" : "WorkflowInstance",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 82,
+        "startColumn" : 22,
+        "endLine" : 82,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/isTaskInstanceInitialized()" : {
+      "name" : "isTaskInstanceInitialized",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/isTaskInstanceInitialized()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 13,
+        "endLine" : 44,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/getWorkflowEventBus()" : {
+      "name" : "getWorkflowEventBus",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable/method/getWorkflowEventBus()",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus",
+      "displayedType" : "WorkflowEventBus",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 22,
+        "endLine" : 78,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/task/runnable/ITaskExecutionRunnable.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "java.lang.Comparable<org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable>", "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

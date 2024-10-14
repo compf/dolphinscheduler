@@ -1,0 +1,615 @@
+{
+  "name" : "OSUtils",
+  "key" : "org.apache.dolphinscheduler.common.utils.OSUtils",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 48,
+    "startColumn" : 8,
+    "endLine" : 48,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.common.utils.OSUtils/memberField/SI" : {
+      "name" : "SI",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/memberField/SI",
+      "type" : "org.apache.dolphinscheduler.common.utils.oshi.SystemInfo",
+      "displayedType" : "SystemInfo",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 50,
+        "startColumn" : 37,
+        "endLine" : 50,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/memberField/hal" : {
+      "name" : "hal",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/memberField/hal",
+      "type" : "org.apache.dolphinscheduler.common.utils.oshi.hardware.HardwareAbstractionLayer",
+      "displayedType" : "HardwareAbstractionLayer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 51,
+        "endLine" : 52,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/memberField/PATTERN" : {
+      "name" : "PATTERN",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/memberField/PATTERN",
+      "type" : "java.util.regex.Pattern",
+      "displayedType" : "Pattern",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 34,
+        "endLine" : 58,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/existTenantCodeInLinux(java.lang.String tenantCode)" : {
+      "name" : "existTenantCodeInLinux",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/existTenantCodeInLinux(java.lang.String tenantCode)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 167,
+        "startColumn" : 27,
+        "endLine" : 167,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "tenantCode",
+        "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/existTenantCodeInLinux(java.lang.String tenantCode)/parameter/tenantCode",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 167,
+          "startColumn" : 57,
+          "endLine" : 167,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/existTenantCodeInLinux(java.lang.String tenantCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/createLinuxUser(java.lang.String userName, java.lang.String userGroup)" : {
+      "name" : "createLinuxUser",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createLinuxUser(java.lang.String userName, java.lang.String userGroup)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 227,
+        "startColumn" : 25,
+        "endLine" : 227,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createLinuxUser(java.lang.String userName, java.lang.String userGroup)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 227,
+          "startColumn" : 48,
+          "endLine" : 227,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createLinuxUser(java.lang.String userName, java.lang.String userGroup)"
+      }, {
+        "name" : "userGroup",
+        "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createLinuxUser(java.lang.String userName, java.lang.String userGroup)/parameter/userGroup",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 227,
+          "startColumn" : 65,
+          "endLine" : 227,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createLinuxUser(java.lang.String userName, java.lang.String userGroup)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/getUserList()" : {
+      "name" : "getUserList",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/getUserList()",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 32,
+        "endLine" : 68,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/createMacUser(java.lang.String userName, java.lang.String userGroup)" : {
+      "name" : "createMacUser",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createMacUser(java.lang.String userName, java.lang.String userGroup)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 241,
+        "startColumn" : 25,
+        "endLine" : 241,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createMacUser(java.lang.String userName, java.lang.String userGroup)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 241,
+          "startColumn" : 46,
+          "endLine" : 241,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createMacUser(java.lang.String userName, java.lang.String userGroup)"
+      }, {
+        "name" : "userGroup",
+        "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createMacUser(java.lang.String userName, java.lang.String userGroup)/parameter/userGroup",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 241,
+          "startColumn" : 63,
+          "endLine" : 241,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createMacUser(java.lang.String userName, java.lang.String userGroup)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/getGroup()" : {
+      "name" : "getGroup",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/getGroup()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 278,
+        "startColumn" : 26,
+        "endLine" : 278,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/exeCmd(java.lang.String command)" : {
+      "name" : "exeCmd",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/exeCmd(java.lang.String command)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 325,
+        "startColumn" : 26,
+        "endLine" : 325,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "command",
+        "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/exeCmd(java.lang.String command)/parameter/command",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 325,
+          "startColumn" : 40,
+          "endLine" : 325,
+          "endColumn" : 47
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/exeCmd(java.lang.String command)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/createWindowsUser(java.lang.String userName, java.lang.String userGroup)" : {
+      "name" : "createWindowsUser",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createWindowsUser(java.lang.String userName, java.lang.String userGroup)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 260,
+        "startColumn" : 25,
+        "endLine" : 260,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createWindowsUser(java.lang.String userName, java.lang.String userGroup)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 260,
+          "startColumn" : 50,
+          "endLine" : 260,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createWindowsUser(java.lang.String userName, java.lang.String userGroup)"
+      }, {
+        "name" : "userGroup",
+        "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createWindowsUser(java.lang.String userName, java.lang.String userGroup)/parameter/userGroup",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 260,
+          "startColumn" : 67,
+          "endLine" : 260,
+          "endColumn" : 76
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createWindowsUser(java.lang.String userName, java.lang.String userGroup)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/isSudoEnable()" : {
+      "name" : "isSudoEnable",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/isSudoEnable()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 314,
+        "startColumn" : 27,
+        "endLine" : 314,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/getUserListFromLinux()" : {
+      "name" : "getUserListFromLinux",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/getUserListFromLinux()",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 89,
+        "startColumn" : 33,
+        "endLine" : 89,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/createUserIfAbsent(java.lang.String userName)" : {
+      "name" : "createUserIfAbsent",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createUserIfAbsent(java.lang.String userName)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 186,
+        "startColumn" : 37,
+        "endLine" : 186,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createUserIfAbsent(java.lang.String userName)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 186,
+          "startColumn" : 63,
+          "endLine" : 186,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createUserIfAbsent(java.lang.String userName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/getUserListFromWindows()" : {
+      "name" : "getUserListFromWindows",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/getUserListFromWindows()",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 127,
+        "startColumn" : 33,
+        "endLine" : 127,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/createUser(java.lang.String userName)" : {
+      "name" : "createUser",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createUser(java.lang.String userName)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 199,
+        "startColumn" : 24,
+        "endLine" : 199,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createUser(java.lang.String userName)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 199,
+          "startColumn" : 42,
+          "endLine" : 199,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/createUser(java.lang.String userName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/isWindows()" : {
+      "name" : "isWindows",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/isWindows()",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 350,
+        "startColumn" : 27,
+        "endLine" : 350,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/getProcessID()" : {
+      "name" : "getProcessID",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/getProcessID()",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 345,
+        "startColumn" : 23,
+        "endLine" : 345,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/getSudoCmd(java.lang.String tenantCode, java.lang.String command)" : {
+      "name" : "getSudoCmd",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/getSudoCmd(java.lang.String tenantCode, java.lang.String command)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 307,
+        "startColumn" : 26,
+        "endLine" : 307,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "tenantCode",
+        "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/getSudoCmd(java.lang.String tenantCode, java.lang.String command)/parameter/tenantCode",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 307,
+          "startColumn" : 44,
+          "endLine" : 307,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/getSudoCmd(java.lang.String tenantCode, java.lang.String command)"
+      }, {
+        "name" : "command",
+        "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/getSudoCmd(java.lang.String tenantCode, java.lang.String command)/parameter/command",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 307,
+          "startColumn" : 63,
+          "endLine" : 307,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/getSudoCmd(java.lang.String tenantCode, java.lang.String command)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/getTotalSystemMemory()" : {
+      "name" : "getTotalSystemMemory",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/getTotalSystemMemory()",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 60,
+        "startColumn" : 24,
+        "endLine" : 60,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/getSystemAvailableMemoryUsed()" : {
+      "name" : "getSystemAvailableMemoryUsed",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/getSystemAvailableMemoryUsed()",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 24,
+        "endLine" : 64,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/getUserListFromMac()" : {
+      "name" : "getUserListFromMac",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/getUserListFromMac()",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 113,
+        "startColumn" : 33,
+        "endLine" : 113,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.OSUtils/method/exeShell(java.lang.String[] command)" : {
+      "name" : "exeShell",
+      "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/exeShell(java.lang.String[] command)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 341,
+        "startColumn" : 26,
+        "endLine" : 341,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "command",
+        "key" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/exeShell(java.lang.String[] command)/parameter/command",
+        "type" : "java.lang.String[]",
+        "displayedType" : "String[]",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 341,
+          "startColumn" : 44,
+          "endLine" : 341,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.OSUtils/method/exeShell(java.lang.String[] command)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.OSUtils"
+    }
+  },
+  "file_path" : "dolphinscheduler-common/src/main/java/org/apache/dolphinscheduler/common/utils/OSUtils.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,279 @@
+{
+  "name" : "MasterServerMetrics",
+  "key" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 28,
+    "startColumn" : 8,
+    "endLine" : 28,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/memberField/masterConsumeCommandCounter" : {
+      "name" : "masterConsumeCommandCounter",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/memberField/masterConsumeCommandCounter",
+      "type" : "org.apache.dolphinscheduler.server.master.metrics.io.micrometer.core.instrument.Counter",
+      "displayedType" : "Counter",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 41,
+        "startColumn" : 27,
+        "endLine" : 41,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/memberField/masterOverloadCounter" : {
+      "name" : "masterOverloadCounter",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/memberField/masterOverloadCounter",
+      "type" : "org.apache.dolphinscheduler.server.master.metrics.io.micrometer.core.instrument.Counter",
+      "displayedType" : "Counter",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 33,
+        "startColumn" : 27,
+        "endLine" : 33,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/memberField/masterHeartBeatCounter" : {
+      "name" : "masterHeartBeatCounter",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/memberField/masterHeartBeatCounter",
+      "type" : "org.apache.dolphinscheduler.server.master.metrics.io.micrometer.core.instrument.Counter",
+      "displayedType" : "Counter",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 46,
+        "startColumn" : 27,
+        "endLine" : 46,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/incMasterOverload()" : {
+      "name" : "incMasterOverload",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/incMasterOverload()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 17,
+        "endLine" : 75,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/registerMasterCpuUsageGauge(java.util.function.Supplier<java.lang.Number> supplier)" : {
+      "name" : "registerMasterCpuUsageGauge",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/registerMasterCpuUsageGauge(java.util.function.Supplier<java.lang.Number> supplier)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 17,
+        "endLine" : 57,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "supplier",
+        "key" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/registerMasterCpuUsageGauge(java.util.function.Supplier<java.lang.Number> supplier)/parameter/supplier",
+        "type" : "java.util.function.Supplier<java.lang.Number>",
+        "displayedType" : "Supplier<Number>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 57,
+          "startColumn" : 62,
+          "endLine" : 57,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/registerMasterCpuUsageGauge(java.util.function.Supplier<java.lang.Number> supplier)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/registerMasterMemoryUsageGauge(java.util.function.Supplier<java.lang.Number> supplier)" : {
+      "name" : "registerMasterMemoryUsageGauge",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/registerMasterMemoryUsageGauge(java.util.function.Supplier<java.lang.Number> supplier)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 17,
+        "endLine" : 63,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "supplier",
+        "key" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/registerMasterMemoryUsageGauge(java.util.function.Supplier<java.lang.Number> supplier)/parameter/supplier",
+        "type" : "java.util.function.Supplier<java.lang.Number>",
+        "displayedType" : "Supplier<Number>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 63,
+          "startColumn" : 65,
+          "endLine" : 63,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/registerMasterMemoryUsageGauge(java.util.function.Supplier<java.lang.Number> supplier)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/incMasterHeartbeatCount()" : {
+      "name" : "incMasterHeartbeatCount",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/incMasterHeartbeatCount()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 17,
+        "endLine" : 83,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/registerMasterMemoryAvailableGauge(java.util.function.Supplier<java.lang.Number> supplier)" : {
+      "name" : "registerMasterMemoryAvailableGauge",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/registerMasterMemoryAvailableGauge(java.util.function.Supplier<java.lang.Number> supplier)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 17,
+        "endLine" : 51,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "supplier",
+        "key" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/registerMasterMemoryAvailableGauge(java.util.function.Supplier<java.lang.Number> supplier)/parameter/supplier",
+        "type" : "java.util.function.Supplier<java.lang.Number>",
+        "displayedType" : "Supplier<Number>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 51,
+          "startColumn" : 69,
+          "endLine" : 51,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/registerMasterMemoryAvailableGauge(java.util.function.Supplier<java.lang.Number> supplier)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/registerUncachedException(java.util.function.Supplier<java.lang.Number> supplier)" : {
+      "name" : "registerUncachedException",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/registerUncachedException(java.util.function.Supplier<java.lang.Number> supplier)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 24,
+        "endLine" : 69,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "supplier",
+        "key" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/registerUncachedException(java.util.function.Supplier<java.lang.Number> supplier)/parameter/supplier",
+        "type" : "java.util.function.Supplier<java.lang.Number>",
+        "displayedType" : "Supplier<Number>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 69,
+          "startColumn" : 73,
+          "endLine" : 69,
+          "endColumn" : 81
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/registerUncachedException(java.util.function.Supplier<java.lang.Number> supplier)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/incMasterConsumeCommand(int commandCount)" : {
+      "name" : "incMasterConsumeCommand",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/incMasterConsumeCommand(int commandCount)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 17,
+        "endLine" : 79,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "commandCount",
+        "key" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/incMasterConsumeCommand(int commandCount)/parameter/commandCount",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 79,
+          "startColumn" : 45,
+          "endLine" : 79,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics/method/incMasterConsumeCommand(int commandCount)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.MasterServerMetrics"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/metrics/MasterServerMetrics.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

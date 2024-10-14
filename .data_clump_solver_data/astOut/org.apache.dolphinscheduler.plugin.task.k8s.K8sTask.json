@@ -1,0 +1,266 @@
+{
+  "name" : "K8sTask",
+  "key" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 50,
+    "startColumn" : 8,
+    "endLine" : 50,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/memberField/k8sConnectionParam" : {
+      "name" : "k8sConnectionParam",
+      "key" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/memberField/k8sConnectionParam",
+      "type" : "org.apache.dolphinscheduler.plugin.task.k8s.org.apache.dolphinscheduler.plugin.datasource.k8s.param.K8sConnectionParam",
+      "displayedType" : "K8sConnectionParam",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 32,
+        "endLine" : 58,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/memberField/k8sTaskParameters" : {
+      "name" : "k8sTaskParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/memberField/k8sTaskParameters",
+      "type" : "org.apache.dolphinscheduler.plugin.task.k8s.org.apache.dolphinscheduler.plugin.task.api.parameters.K8sTaskParameters",
+      "displayedType" : "K8sTaskParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 31,
+        "endLine" : 54,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/memberField/taskExecutionContext" : {
+      "name" : "taskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/memberField/taskExecutionContext",
+      "type" : "org.apache.dolphinscheduler.plugin.task.k8s.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+      "displayedType" : "TaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 40,
+        "endLine" : 52,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/memberField/k8sTaskExecutionContext" : {
+      "name" : "k8sTaskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/memberField/k8sTaskExecutionContext",
+      "type" : "org.apache.dolphinscheduler.plugin.task.k8s.org.apache.dolphinscheduler.plugin.task.api.K8sTaskExecutionContext",
+      "displayedType" : "K8sTaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 37,
+        "endLine" : 56,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/getParameters()" : {
+      "name" : "getParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/getParameters()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.k8s.org.apache.dolphinscheduler.plugin.task.api.parameters.AbstractParameters",
+      "displayedType" : "AbstractParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 92,
+        "startColumn" : 31,
+        "endLine" : 92,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/buildCommand()" : {
+      "name" : "buildCommand",
+      "key" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/buildCommand()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 97,
+        "startColumn" : 22,
+        "endLine" : 97,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/convertToLabelMap(java.util.List<org.apache.dolphinscheduler.plugin.task.k8s.org.apache.dolphinscheduler.plugin.task.api.model.Label> labels)" : {
+      "name" : "convertToLabelMap",
+      "key" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/convertToLabelMap(java.util.List<org.apache.dolphinscheduler.plugin.task.k8s.org.apache.dolphinscheduler.plugin.task.api.model.Label> labels)",
+      "type" : "java.util.Map<java.lang.String, java.lang.String>",
+      "displayedType" : "Map<String, String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 134,
+        "startColumn" : 32,
+        "endLine" : 134,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "labels",
+        "key" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/convertToLabelMap(java.util.List<org.apache.dolphinscheduler.plugin.task.k8s.org.apache.dolphinscheduler.plugin.task.api.model.Label> labels)/parameter/labels",
+        "type" : "java.util.List<org.apache.dolphinscheduler.plugin.task.k8s.org.apache.dolphinscheduler.plugin.task.api.model.Label>",
+        "displayedType" : "List<Label>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 134,
+          "startColumn" : 62,
+          "endLine" : 134,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/convertToLabelMap(java.util.List<org.apache.dolphinscheduler.plugin.task.k8s.org.apache.dolphinscheduler.plugin.task.api.model.Label> labels)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/dealOutParam(java.util.Map<java.lang.String, java.lang.String> taskOutputParams)" : {
+      "name" : "dealOutParam",
+      "key" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/dealOutParam(java.util.Map<java.lang.String, java.lang.String> taskOutputParams)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 117,
+        "startColumn" : 20,
+        "endLine" : 117,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskOutputParams",
+        "key" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/dealOutParam(java.util.Map<java.lang.String, java.lang.String> taskOutputParams)/parameter/taskOutputParams",
+        "type" : "java.util.Map<java.lang.String, java.lang.String>",
+        "displayedType" : "Map<String, String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 117,
+          "startColumn" : 53,
+          "endLine" : 117,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/dealOutParam(java.util.Map<java.lang.String, java.lang.String> taskOutputParams)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/init()" : {
+      "name" : "init",
+      "key" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/init()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 17,
+        "endLine" : 65,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/convertToNodeSelectorRequirements(java.util.List<org.apache.dolphinscheduler.plugin.task.k8s.org.apache.dolphinscheduler.plugin.task.api.model.NodeSelectorExpression> expressions)" : {
+      "name" : "convertToNodeSelectorRequirements",
+      "key" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/convertToNodeSelectorRequirements(java.util.List<org.apache.dolphinscheduler.plugin.task.k8s.org.apache.dolphinscheduler.plugin.task.api.model.NodeSelectorExpression> expressions)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.plugin.task.k8s.io.fabric8.kubernetes.api.model.NodeSelectorRequirement>",
+      "displayedType" : "List<NodeSelectorRequirement>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 121,
+        "startColumn" : 42,
+        "endLine" : 121,
+        "endColumn" : 75
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "expressions",
+        "key" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/convertToNodeSelectorRequirements(java.util.List<org.apache.dolphinscheduler.plugin.task.k8s.org.apache.dolphinscheduler.plugin.task.api.model.NodeSelectorExpression> expressions)/parameter/expressions",
+        "type" : "java.util.List<org.apache.dolphinscheduler.plugin.task.k8s.org.apache.dolphinscheduler.plugin.task.api.model.NodeSelectorExpression>",
+        "displayedType" : "List<NodeSelectorExpression>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 121,
+          "startColumn" : 105,
+          "endLine" : 121,
+          "endColumn" : 116
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/convertToNodeSelectorRequirements(java.util.List<org.apache.dolphinscheduler.plugin.task.k8s.org.apache.dolphinscheduler.plugin.task.api.model.NodeSelectorExpression> expressions)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/getApplicationIds()" : {
+      "name" : "getApplicationIds",
+      "key" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask/method/getApplicationIds()",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 87,
+        "startColumn" : 25,
+        "endLine" : 87,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.k8s.K8sTask"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-k8s/src/main/java/org/apache/dolphinscheduler/plugin/task/k8s/K8sTask.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.plugin.task.k8s.org.apache.dolphinscheduler.plugin.task.api.k8s.AbstractK8sTask" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,688 @@
+{
+  "name" : "WeChatSender",
+  "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 54,
+    "startColumn" : 14,
+    "endLine" : 54,
+    "endColumn" : 19
+  },
+  "modifiers" : [ "PUBLIC", "FINAL" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/MSG_REG_EXP" : {
+      "name" : "MSG_REG_EXP",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/MSG_REG_EXP",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 33,
+        "endLine" : 58,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/AGENT_ID_REG_EXP" : {
+      "name" : "AGENT_ID_REG_EXP",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/AGENT_ID_REG_EXP",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 33,
+        "endLine" : 57,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/showType" : {
+      "name" : "showType",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/showType",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 26,
+        "endLine" : 68,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/weChatAgentIdChatId" : {
+      "name" : "weChatAgentIdChatId",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/weChatAgentIdChatId",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 26,
+        "endLine" : 63,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/SECRET_REGEX" : {
+      "name" : "SECRET_REGEX",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/SECRET_REGEX",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 33,
+        "endLine" : 61,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/MUST_NOT_NULL" : {
+      "name" : "MUST_NOT_NULL",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/MUST_NOT_NULL",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 33,
+        "endLine" : 56,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/weChatTokenUrlReplace" : {
+      "name" : "weChatTokenUrlReplace",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/weChatTokenUrlReplace",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 26,
+        "endLine" : 65,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/weChatToken" : {
+      "name" : "weChatToken",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/weChatToken",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 26,
+        "endLine" : 66,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/weChatUsers" : {
+      "name" : "weChatUsers",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/weChatUsers",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 26,
+        "endLine" : 64,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/CORP_ID_REGEX" : {
+      "name" : "CORP_ID_REGEX",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/CORP_ID_REGEX",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 60,
+        "startColumn" : 33,
+        "endLine" : 60,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/TOKEN_REGEX" : {
+      "name" : "TOKEN_REGEX",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/TOKEN_REGEX",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 33,
+        "endLine" : 62,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/USER_REG_EXP" : {
+      "name" : "USER_REG_EXP",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/USER_REG_EXP",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 33,
+        "endLine" : 59,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/sendType" : {
+      "name" : "sendType",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/memberField/sendType",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 26,
+        "endLine" : 67,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/markdownText(java.lang.String title, java.lang.String content)" : {
+      "name" : "markdownText",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/markdownText(java.lang.String title, java.lang.String content)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 113,
+        "startColumn" : 27,
+        "endLine" : 113,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "title",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/markdownText(java.lang.String title, java.lang.String content)/parameter/title",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 113,
+          "startColumn" : 47,
+          "endLine" : 113,
+          "endColumn" : 52
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/markdownText(java.lang.String title, java.lang.String content)"
+      }, {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/markdownText(java.lang.String title, java.lang.String content)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 113,
+          "startColumn" : 61,
+          "endLine" : 113,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/markdownText(java.lang.String title, java.lang.String content)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/get(java.lang.String url)" : {
+      "name" : "get",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/get(java.lang.String url)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 138,
+        "startColumn" : 27,
+        "endLine" : 138,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "url",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/get(java.lang.String url)/parameter/url",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 138,
+          "startColumn" : 38,
+          "endLine" : 138,
+          "endColumn" : 41
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/get(java.lang.String url)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/markdownByAlert(java.lang.String title, java.lang.String content)" : {
+      "name" : "markdownByAlert",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/markdownByAlert(java.lang.String title, java.lang.String content)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 251,
+        "startColumn" : 20,
+        "endLine" : 251,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "title",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/markdownByAlert(java.lang.String title, java.lang.String content)/parameter/title",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 251,
+          "startColumn" : 43,
+          "endLine" : 251,
+          "endColumn" : 48
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/markdownByAlert(java.lang.String title, java.lang.String content)"
+      }, {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/markdownByAlert(java.lang.String title, java.lang.String content)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 251,
+          "startColumn" : 57,
+          "endLine" : 251,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/markdownByAlert(java.lang.String title, java.lang.String content)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/getToken()" : {
+      "name" : "getToken",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/getToken()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 255,
+        "startColumn" : 20,
+        "endLine" : 255,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/checkWeChatSendMsgResult(java.lang.String result)" : {
+      "name" : "checkWeChatSendMsgResult",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/checkWeChatSendMsgResult(java.lang.String result)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.wechat.org.apache.dolphinscheduler.alert.api.AlertResult",
+      "displayedType" : "AlertResult",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 178,
+        "startColumn" : 32,
+        "endLine" : 178,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "result",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/checkWeChatSendMsgResult(java.lang.String result)/parameter/result",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 178,
+          "startColumn" : 64,
+          "endLine" : 178,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/checkWeChatSendMsgResult(java.lang.String result)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/sendEnterpriseWeChat(java.lang.String title, java.lang.String content)" : {
+      "name" : "sendEnterpriseWeChat",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/sendEnterpriseWeChat(java.lang.String title, java.lang.String content)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.wechat.org.apache.dolphinscheduler.alert.api.AlertResult",
+      "displayedType" : "AlertResult",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 208,
+        "startColumn" : 24,
+        "endLine" : 208,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "title",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/sendEnterpriseWeChat(java.lang.String title, java.lang.String content)/parameter/title",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 208,
+          "startColumn" : 52,
+          "endLine" : 208,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/sendEnterpriseWeChat(java.lang.String title, java.lang.String content)"
+      }, {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/sendEnterpriseWeChat(java.lang.String title, java.lang.String content)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 208,
+          "startColumn" : 66,
+          "endLine" : 208,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/sendEnterpriseWeChat(java.lang.String title, java.lang.String content)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/post(java.lang.String url, java.lang.String data)" : {
+      "name" : "post",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/post(java.lang.String url, java.lang.String data)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 85,
+        "startColumn" : 27,
+        "endLine" : 85,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "url",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/post(java.lang.String url, java.lang.String data)/parameter/url",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 85,
+          "startColumn" : 39,
+          "endLine" : 85,
+          "endColumn" : 42
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/post(java.lang.String url, java.lang.String data)"
+      }, {
+        "name" : "data",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/post(java.lang.String url, java.lang.String data)/parameter/data",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 85,
+          "startColumn" : 51,
+          "endLine" : 85,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/post(java.lang.String url, java.lang.String data)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/mkString(java.lang.Iterable<java.lang.String> list)" : {
+      "name" : "mkString",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/mkString(java.lang.Iterable<java.lang.String> list)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 160,
+        "startColumn" : 27,
+        "endLine" : 160,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "list",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/mkString(java.lang.Iterable<java.lang.String> list)/parameter/list",
+        "type" : "java.lang.Iterable<java.lang.String>",
+        "displayedType" : "Iterable<String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 160,
+          "startColumn" : 53,
+          "endLine" : 160,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender/method/mkString(java.lang.Iterable<java.lang.String> list)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender"
+    }
+  },
+  "file_path" : "dolphinscheduler-alert/dolphinscheduler-alert-plugins/dolphinscheduler-alert-wechat/src/main/java/org/apache/dolphinscheduler/plugin/alert/wechat/WeChatSender.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse" : {
+      "name" : "WeChatSendMsgResponse",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 266,
+        "startColumn" : 18,
+        "endLine" : 266,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "STATIC", "FINAL" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse/memberField/errcode" : {
+          "name" : "errcode",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse/memberField/errcode",
+          "type" : "java.lang.Integer",
+          "displayedType" : "Integer",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 268,
+            "startColumn" : 25,
+            "endLine" : 268,
+            "endColumn" : 32
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse/memberField/errmsg" : {
+          "name" : "errmsg",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse/memberField/errmsg",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 269,
+            "startColumn" : 24,
+            "endLine" : 269,
+            "endColumn" : 30
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse/method/toString()" : {
+          "name" : "toString",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse/method/toString()",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 305,
+            "startColumn" : 23,
+            "endLine" : 305,
+            "endColumn" : 31
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse/method/hashCode()" : {
+          "name" : "hashCode",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse/method/hashCode()",
+          "type" : "int",
+          "displayedType" : "int",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 295,
+            "startColumn" : 20,
+            "endLine" : 295,
+            "endColumn" : 28
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse/method/equals(java.lang.Object o)" : {
+          "name" : "equals",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse/method/equals(java.lang.Object o)",
+          "type" : "boolean",
+          "displayedType" : "boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 274,
+            "startColumn" : 24,
+            "endLine" : 274,
+            "endColumn" : 30
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "o",
+            "key" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse/method/equals(java.lang.Object o)/parameter/o",
+            "type" : "java.lang.Object",
+            "displayedType" : "Object",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 274,
+              "startColumn" : 44,
+              "endLine" : 274,
+              "endColumn" : 45
+            },
+            "modifiers" : [ "FINAL" ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse/method/equals(java.lang.Object o)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender.WeChatSendMsgResponse"
+        }
+      },
+      "file_path" : "dolphinscheduler-alert/dolphinscheduler-alert-plugins/dolphinscheduler-alert-wechat/src/main/java/org/apache/dolphinscheduler/plugin/alert/wechat/WeChatSender.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.plugin.alert.wechat.WeChatSender",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : { }
+}

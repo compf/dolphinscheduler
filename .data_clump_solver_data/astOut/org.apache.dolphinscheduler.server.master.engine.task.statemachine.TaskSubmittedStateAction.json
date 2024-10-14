@@ -1,0 +1,852 @@
+{
+  "name" : "TaskSubmittedStateAction",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 51,
+    "startColumn" : 8,
+    "endLine" : 51,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/memberField/globalTaskDispatchWaitingQueue" : {
+      "name" : "globalTaskDispatchWaitingQueue",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/memberField/globalTaskDispatchWaitingQueue",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.runner.GlobalTaskDispatchWaitingQueue",
+      "displayedType" : "GlobalTaskDispatchWaitingQueue",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 44,
+        "endLine" : 54,
+        "endColumn" : 74
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/memberField/taskGroupCoordinator" : {
+      "name" : "taskGroupCoordinator",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/memberField/taskGroupCoordinator",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator",
+      "displayedType" : "TaskGroupCoordinator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 34,
+        "endLine" : 57,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/memberField/taskInstanceDao" : {
+      "name" : "taskInstanceDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/memberField/taskInstanceDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.dao.repository.TaskInstanceDao",
+      "displayedType" : "TaskInstanceDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 60,
+        "startColumn" : 29,
+        "endLine" : 60,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/startEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskStartLifecycleEvent taskStartEvent)" : {
+      "name" : "startEventAction",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/startEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskStartLifecycleEvent taskStartEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 17,
+        "endLine" : 63,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/startEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskStartLifecycleEvent taskStartEvent)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 63,
+          "startColumn" : 67,
+          "endLine" : 63,
+          "endColumn" : 92
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/startEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskStartLifecycleEvent taskStartEvent)"
+      }, {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/startEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskStartLifecycleEvent taskStartEvent)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 64,
+          "startColumn" : 63,
+          "endLine" : 64,
+          "endColumn" : 84
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/startEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskStartLifecycleEvent taskStartEvent)"
+      }, {
+        "name" : "taskStartEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/startEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskStartLifecycleEvent taskStartEvent)/parameter/taskStartEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskStartLifecycleEvent",
+        "displayedType" : "TaskStartLifecycleEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 65,
+          "startColumn" : 64,
+          "endLine" : 65,
+          "endColumn" : 78
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/startEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskStartLifecycleEvent taskStartEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/retryEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRetryLifecycleEvent taskRetryEvent)" : {
+      "name" : "retryEventAction",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/retryEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRetryLifecycleEvent taskRetryEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 90,
+        "startColumn" : 17,
+        "endLine" : 90,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/retryEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRetryLifecycleEvent taskRetryEvent)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 90,
+          "startColumn" : 67,
+          "endLine" : 90,
+          "endColumn" : 92
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/retryEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRetryLifecycleEvent taskRetryEvent)"
+      }, {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/retryEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRetryLifecycleEvent taskRetryEvent)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 91,
+          "startColumn" : 63,
+          "endLine" : 91,
+          "endColumn" : 84
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/retryEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRetryLifecycleEvent taskRetryEvent)"
+      }, {
+        "name" : "taskRetryEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/retryEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRetryLifecycleEvent taskRetryEvent)/parameter/taskRetryEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRetryLifecycleEvent",
+        "displayedType" : "TaskRetryLifecycleEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 92,
+          "startColumn" : 64,
+          "endLine" : 92,
+          "endColumn" : 78
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/retryEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRetryLifecycleEvent taskRetryEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/pausedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPausedLifecycleEvent taskPausedEvent)" : {
+      "name" : "pausedEventAction",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/pausedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPausedLifecycleEvent taskPausedEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 139,
+        "startColumn" : 17,
+        "endLine" : 139,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/pausedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPausedLifecycleEvent taskPausedEvent)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 139,
+          "startColumn" : 68,
+          "endLine" : 139,
+          "endColumn" : 93
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/pausedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPausedLifecycleEvent taskPausedEvent)"
+      }, {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/pausedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPausedLifecycleEvent taskPausedEvent)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 140,
+          "startColumn" : 64,
+          "endLine" : 140,
+          "endColumn" : 85
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/pausedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPausedLifecycleEvent taskPausedEvent)"
+      }, {
+        "name" : "taskPausedEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/pausedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPausedLifecycleEvent taskPausedEvent)/parameter/taskPausedEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPausedLifecycleEvent",
+        "displayedType" : "TaskPausedLifecycleEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 141,
+          "startColumn" : 66,
+          "endLine" : 141,
+          "endColumn" : 81
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/pausedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPausedLifecycleEvent taskPausedEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/failedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailedLifecycleEvent taskFailedEvent)" : {
+      "name" : "failedEventAction",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/failedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailedLifecycleEvent taskFailedEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 168,
+        "startColumn" : 17,
+        "endLine" : 168,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/failedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailedLifecycleEvent taskFailedEvent)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 168,
+          "startColumn" : 68,
+          "endLine" : 168,
+          "endColumn" : 93
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/failedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailedLifecycleEvent taskFailedEvent)"
+      }, {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/failedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailedLifecycleEvent taskFailedEvent)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 169,
+          "startColumn" : 64,
+          "endLine" : 169,
+          "endColumn" : 85
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/failedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailedLifecycleEvent taskFailedEvent)"
+      }, {
+        "name" : "taskFailedEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/failedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailedLifecycleEvent taskFailedEvent)/parameter/taskFailedEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailedLifecycleEvent",
+        "displayedType" : "TaskFailedLifecycleEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 170,
+          "startColumn" : 66,
+          "endLine" : 170,
+          "endColumn" : 81
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/failedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailedLifecycleEvent taskFailedEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/succeedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskSuccessLifecycleEvent taskSuccessEvent)" : {
+      "name" : "succeedEventAction",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/succeedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskSuccessLifecycleEvent taskSuccessEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 176,
+        "startColumn" : 17,
+        "endLine" : 176,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/succeedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskSuccessLifecycleEvent taskSuccessEvent)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 176,
+          "startColumn" : 69,
+          "endLine" : 176,
+          "endColumn" : 94
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/succeedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskSuccessLifecycleEvent taskSuccessEvent)"
+      }, {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/succeedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskSuccessLifecycleEvent taskSuccessEvent)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 177,
+          "startColumn" : 65,
+          "endLine" : 177,
+          "endColumn" : 86
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/succeedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskSuccessLifecycleEvent taskSuccessEvent)"
+      }, {
+        "name" : "taskSuccessEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/succeedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskSuccessLifecycleEvent taskSuccessEvent)/parameter/taskSuccessEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskSuccessLifecycleEvent",
+        "displayedType" : "TaskSuccessLifecycleEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 178,
+          "startColumn" : 68,
+          "endLine" : 178,
+          "endColumn" : 84
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/succeedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskSuccessLifecycleEvent taskSuccessEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/killedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKilledLifecycleEvent taskKilledEvent)" : {
+      "name" : "killedEventAction",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/killedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKilledLifecycleEvent taskKilledEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 160,
+        "startColumn" : 17,
+        "endLine" : 160,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/killedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKilledLifecycleEvent taskKilledEvent)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 160,
+          "startColumn" : 68,
+          "endLine" : 160,
+          "endColumn" : 93
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/killedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKilledLifecycleEvent taskKilledEvent)"
+      }, {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/killedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKilledLifecycleEvent taskKilledEvent)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 161,
+          "startColumn" : 64,
+          "endLine" : 161,
+          "endColumn" : 85
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/killedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKilledLifecycleEvent taskKilledEvent)"
+      }, {
+        "name" : "taskKilledEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/killedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKilledLifecycleEvent taskKilledEvent)/parameter/taskKilledEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKilledLifecycleEvent",
+        "displayedType" : "TaskKilledLifecycleEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 162,
+          "startColumn" : 66,
+          "endLine" : 162,
+          "endColumn" : 81
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/killedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKilledLifecycleEvent taskKilledEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/startedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRunningLifecycleEvent taskRunningEvent)" : {
+      "name" : "startedEventAction",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/startedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRunningLifecycleEvent taskRunningEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 82,
+        "startColumn" : 17,
+        "endLine" : 82,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/startedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRunningLifecycleEvent taskRunningEvent)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 82,
+          "startColumn" : 69,
+          "endLine" : 82,
+          "endColumn" : 94
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/startedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRunningLifecycleEvent taskRunningEvent)"
+      }, {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/startedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRunningLifecycleEvent taskRunningEvent)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 83,
+          "startColumn" : 65,
+          "endLine" : 83,
+          "endColumn" : 86
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/startedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRunningLifecycleEvent taskRunningEvent)"
+      }, {
+        "name" : "taskRunningEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/startedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRunningLifecycleEvent taskRunningEvent)/parameter/taskRunningEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRunningLifecycleEvent",
+        "displayedType" : "TaskRunningLifecycleEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 84,
+          "startColumn" : 68,
+          "endLine" : 84,
+          "endColumn" : 84
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/startedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskRunningLifecycleEvent taskRunningEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/dispatchEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchLifecycleEvent taskDispatchEvent)" : {
+      "name" : "dispatchEventAction",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/dispatchEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchLifecycleEvent taskDispatchEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 17,
+        "endLine" : 98,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/dispatchEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchLifecycleEvent taskDispatchEvent)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 98,
+          "startColumn" : 70,
+          "endLine" : 98,
+          "endColumn" : 95
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/dispatchEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchLifecycleEvent taskDispatchEvent)"
+      }, {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/dispatchEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchLifecycleEvent taskDispatchEvent)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 99,
+          "startColumn" : 66,
+          "endLine" : 99,
+          "endColumn" : 87
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/dispatchEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchLifecycleEvent taskDispatchEvent)"
+      }, {
+        "name" : "taskDispatchEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/dispatchEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchLifecycleEvent taskDispatchEvent)/parameter/taskDispatchEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchLifecycleEvent",
+        "displayedType" : "TaskDispatchLifecycleEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 100,
+          "startColumn" : 70,
+          "endLine" : 100,
+          "endColumn" : 87
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/dispatchEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchLifecycleEvent taskDispatchEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/matchState()" : {
+      "name" : "matchState",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/matchState()",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus",
+      "displayedType" : "TaskExecutionStatus",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 192,
+        "startColumn" : 32,
+        "endLine" : 192,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/killEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKillLifecycleEvent taskKillEvent)" : {
+      "name" : "killEventAction",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/killEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKillLifecycleEvent taskKillEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 147,
+        "startColumn" : 17,
+        "endLine" : 147,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/killEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKillLifecycleEvent taskKillEvent)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 147,
+          "startColumn" : 66,
+          "endLine" : 147,
+          "endColumn" : 91
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/killEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKillLifecycleEvent taskKillEvent)"
+      }, {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/killEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKillLifecycleEvent taskKillEvent)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 148,
+          "startColumn" : 62,
+          "endLine" : 148,
+          "endColumn" : 83
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/killEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKillLifecycleEvent taskKillEvent)"
+      }, {
+        "name" : "taskKillEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/killEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKillLifecycleEvent taskKillEvent)/parameter/taskKillEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKillLifecycleEvent",
+        "displayedType" : "TaskKillLifecycleEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 149,
+          "startColumn" : 62,
+          "endLine" : 149,
+          "endColumn" : 75
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/killEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskKillLifecycleEvent taskKillEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/pauseEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPauseLifecycleEvent taskPauseEvent)" : {
+      "name" : "pauseEventAction",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/pauseEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPauseLifecycleEvent taskPauseEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 126,
+        "startColumn" : 17,
+        "endLine" : 126,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/pauseEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPauseLifecycleEvent taskPauseEvent)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 126,
+          "startColumn" : 67,
+          "endLine" : 126,
+          "endColumn" : 92
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/pauseEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPauseLifecycleEvent taskPauseEvent)"
+      }, {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/pauseEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPauseLifecycleEvent taskPauseEvent)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 127,
+          "startColumn" : 63,
+          "endLine" : 127,
+          "endColumn" : 84
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/pauseEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPauseLifecycleEvent taskPauseEvent)"
+      }, {
+        "name" : "taskPauseEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/pauseEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPauseLifecycleEvent taskPauseEvent)/parameter/taskPauseEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPauseLifecycleEvent",
+        "displayedType" : "TaskPauseLifecycleEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 128,
+          "startColumn" : 64,
+          "endLine" : 128,
+          "endColumn" : 78
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/pauseEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskPauseLifecycleEvent taskPauseEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/dispatchedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchedLifecycleEvent taskDispatchedEvent)" : {
+      "name" : "dispatchedEventAction",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/dispatchedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchedLifecycleEvent taskDispatchedEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 118,
+        "startColumn" : 17,
+        "endLine" : 118,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/dispatchedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchedLifecycleEvent taskDispatchedEvent)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 118,
+          "startColumn" : 72,
+          "endLine" : 118,
+          "endColumn" : 97
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/dispatchedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchedLifecycleEvent taskDispatchedEvent)"
+      }, {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/dispatchedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchedLifecycleEvent taskDispatchedEvent)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 119,
+          "startColumn" : 68,
+          "endLine" : 119,
+          "endColumn" : 89
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/dispatchedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchedLifecycleEvent taskDispatchedEvent)"
+      }, {
+        "name" : "taskDispatchedEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/dispatchedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchedLifecycleEvent taskDispatchedEvent)/parameter/taskDispatchedEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchedLifecycleEvent",
+        "displayedType" : "TaskDispatchedLifecycleEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 120,
+          "startColumn" : 74,
+          "endLine" : 120,
+          "endColumn" : 93
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/dispatchedEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskDispatchedLifecycleEvent taskDispatchedEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/failoverEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailoverLifecycleEvent taskFailoverEvent)" : {
+      "name" : "failoverEventAction",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/failoverEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailoverLifecycleEvent taskFailoverEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 184,
+        "startColumn" : 17,
+        "endLine" : 184,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/failoverEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailoverLifecycleEvent taskFailoverEvent)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 184,
+          "startColumn" : 70,
+          "endLine" : 184,
+          "endColumn" : 95
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/failoverEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailoverLifecycleEvent taskFailoverEvent)"
+      }, {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/failoverEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailoverLifecycleEvent taskFailoverEvent)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 185,
+          "startColumn" : 66,
+          "endLine" : 185,
+          "endColumn" : 87
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/failoverEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailoverLifecycleEvent taskFailoverEvent)"
+      }, {
+        "name" : "taskFailoverEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/failoverEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailoverLifecycleEvent taskFailoverEvent)/parameter/taskFailoverEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailoverLifecycleEvent",
+        "displayedType" : "TaskFailoverLifecycleEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 186,
+          "startColumn" : 70,
+          "endLine" : 186,
+          "endColumn" : 87
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction/method/failoverEventAction(org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.statemachine.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskFailoverLifecycleEvent taskFailoverEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.statemachine.TaskSubmittedStateAction"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/task/statemachine/TaskSubmittedStateAction.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.master.engine.task.statemachine.AbstractTaskStateAction" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

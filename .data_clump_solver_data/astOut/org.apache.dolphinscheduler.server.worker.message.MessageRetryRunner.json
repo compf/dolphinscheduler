@@ -1,0 +1,519 @@
+{
+  "name" : "MessageRetryRunner",
+  "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 50,
+    "startColumn" : 8,
+    "endLine" : 50,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/memberField/messageSenders" : {
+      "name" : "messageSenders",
+      "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/memberField/messageSenders",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventSender>",
+      "displayedType" : "List<TaskInstanceExecutionEventSender>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 60,
+        "startColumn" : 52,
+        "endLine" : 60,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner"
+    },
+    "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/memberField/needToRetryMessages" : {
+      "name" : "needToRetryMessages",
+      "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/memberField/needToRetryMessages",
+      "type" : "java.util.Map<java.lang.Integer, java.util.List<org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner$TaskInstanceMessage>>",
+      "displayedType" : "Map<Integer, List<TaskInstanceMessage>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 59,
+        "endLine" : 65,
+        "endColumn" : 78
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner"
+    },
+    "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/memberField/messageSenderMap" : {
+      "name" : "messageSenderMap",
+      "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/memberField/messageSenderMap",
+      "type" : "java.util.Map<org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType, org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventSender<org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent>>",
+      "displayedType" : "Map<ITaskExecutionEvent.TaskInstanceExecutionEventType, TaskInstanceExecutionEventSender<ITaskExecutionEvent>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 130,
+        "endLine" : 62,
+        "endColumn" : 146
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner"
+    },
+    "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/memberField/MESSAGE_RETRY_WINDOW" : {
+      "name" : "MESSAGE_RETRY_WINDOW",
+      "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/memberField/MESSAGE_RETRY_WINDOW",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 31,
+        "endLine" : 56,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/updateMessageHost(int taskInstanceId, java.lang.String messageReceiverHost)" : {
+      "name" : "updateMessageHost",
+      "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/updateMessageHost(int taskInstanceId, java.lang.String messageReceiverHost)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 20,
+        "endLine" : 96,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstanceId",
+        "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/updateMessageHost(int taskInstanceId, java.lang.String messageReceiverHost)/parameter/taskInstanceId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 96,
+          "startColumn" : 42,
+          "endLine" : 96,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/updateMessageHost(int taskInstanceId, java.lang.String messageReceiverHost)"
+      }, {
+        "name" : "messageReceiverHost",
+        "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/updateMessageHost(int taskInstanceId, java.lang.String messageReceiverHost)/parameter/messageReceiverHost",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 96,
+          "startColumn" : 65,
+          "endLine" : 96,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/updateMessageHost(int taskInstanceId, java.lang.String messageReceiverHost)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner"
+    },
+    "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/start()" : {
+      "name" : "start",
+      "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/start()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 30,
+        "endLine" : 68,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner"
+    },
+    "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/clearMessage()" : {
+      "name" : "clearMessage",
+      "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/clearMessage()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 155,
+        "startColumn" : 17,
+        "endLine" : 155,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner"
+    },
+    "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/addRetryMessage(int taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent iTaskExecutionEvent)" : {
+      "name" : "addRetryMessage",
+      "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/addRetryMessage(int taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent iTaskExecutionEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 17,
+        "endLine" : 78,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstanceId",
+        "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/addRetryMessage(int taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent iTaskExecutionEvent)/parameter/taskInstanceId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 78,
+          "startColumn" : 37,
+          "endLine" : 78,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/addRetryMessage(int taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent iTaskExecutionEvent)"
+      }, {
+        "name" : "iTaskExecutionEvent",
+        "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/addRetryMessage(int taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent iTaskExecutionEvent)/parameter/iTaskExecutionEvent",
+        "type" : "org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent",
+        "displayedType" : "ITaskExecutionEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 78,
+          "startColumn" : 82,
+          "endLine" : 78,
+          "endColumn" : 101
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/addRetryMessage(int taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent iTaskExecutionEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner"
+    },
+    "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/removeRetryMessages(int taskInstanceId)" : {
+      "name" : "removeRetryMessages",
+      "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/removeRetryMessages(int taskInstanceId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 92,
+        "startColumn" : 17,
+        "endLine" : 92,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstanceId",
+        "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/removeRetryMessages(int taskInstanceId)/parameter/taskInstanceId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 92,
+          "startColumn" : 41,
+          "endLine" : 92,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/removeRetryMessages(int taskInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner"
+    },
+    "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/run()" : {
+      "name" : "run",
+      "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/run()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 107,
+        "startColumn" : 17,
+        "endLine" : 107,
+        "endColumn" : 20
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner"
+    },
+    "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/removeRetryMessage(int taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType eventType)" : {
+      "name" : "removeRetryMessage",
+      "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/removeRetryMessage(int taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType eventType)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 84,
+        "startColumn" : 17,
+        "endLine" : 84,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstanceId",
+        "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/removeRetryMessage(int taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType eventType)/parameter/taskInstanceId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 84,
+          "startColumn" : 40,
+          "endLine" : 84,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/removeRetryMessage(int taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType eventType)"
+      }, {
+        "name" : "eventType",
+        "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/removeRetryMessage(int taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType eventType)/parameter/eventType",
+        "type" : "org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType",
+        "displayedType" : "ITaskExecutionEvent.TaskInstanceExecutionEventType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 85,
+          "startColumn" : 96,
+          "endLine" : 85,
+          "endColumn" : 105
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner/method/removeRetryMessage(int taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType eventType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner"
+    }
+  },
+  "file_path" : "dolphinscheduler-worker/src/main/java/org/apache/dolphinscheduler/server/worker/message/MessageRetryRunner.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.common.thread.BaseDaemonThread" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage" : {
+      "name" : "TaskInstanceMessage",
+      "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 163,
+        "startColumn" : 19,
+        "endLine" : 163,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/memberField/taskInstanceId" : {
+          "name" : "taskInstanceId",
+          "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/memberField/taskInstanceId",
+          "type" : "long",
+          "displayedType" : "long",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 165,
+            "startColumn" : 22,
+            "endLine" : 165,
+            "endColumn" : 36
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage"
+        },
+        "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/memberField/eventType" : {
+          "name" : "eventType",
+          "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/memberField/eventType",
+          "type" : "org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType",
+          "displayedType" : "ITaskExecutionEvent.TaskInstanceExecutionEventType",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 166,
+            "startColumn" : 68,
+            "endLine" : 166,
+            "endColumn" : 77
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage"
+        },
+        "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/memberField/event" : {
+          "name" : "event",
+          "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/memberField/event",
+          "type" : "org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent",
+          "displayedType" : "ITaskExecutionEvent",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 167,
+            "startColumn" : 37,
+            "endLine" : 167,
+            "endColumn" : 42
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/method/hashCode()" : {
+          "name" : "hashCode",
+          "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/method/hashCode()",
+          "type" : "int",
+          "displayedType" : "int",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 192,
+            "startColumn" : 20,
+            "endLine" : 192,
+            "endColumn" : 28
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage"
+        },
+        "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/method/equals(java.lang.Object o)" : {
+          "name" : "equals",
+          "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/method/equals(java.lang.Object o)",
+          "type" : "boolean",
+          "displayedType" : "boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 180,
+            "startColumn" : 24,
+            "endLine" : 180,
+            "endColumn" : 30
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "o",
+            "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/method/equals(java.lang.Object o)/parameter/o",
+            "type" : "java.lang.Object",
+            "displayedType" : "Object",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 180,
+              "startColumn" : 38,
+              "endLine" : 180,
+              "endColumn" : 39
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/method/equals(java.lang.Object o)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage"
+        },
+        "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/method/of(long taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType eventType, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent event)" : {
+          "name" : "of",
+          "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/method/of(long taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType eventType, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent event)",
+          "type" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner$TaskInstanceMessage",
+          "displayedType" : "TaskInstanceMessage",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 169,
+            "startColumn" : 43,
+            "endLine" : 169,
+            "endColumn" : 45
+          },
+          "modifiers" : [ "PUBLIC", "STATIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "taskInstanceId",
+            "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/method/of(long taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType eventType, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent event)/parameter/taskInstanceId",
+            "type" : "long",
+            "displayedType" : "long",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 169,
+              "startColumn" : 51,
+              "endLine" : 169,
+              "endColumn" : 65
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/method/of(long taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType eventType, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent event)"
+          }, {
+            "name" : "eventType",
+            "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/method/of(long taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType eventType, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent event)/parameter/eventType",
+            "type" : "org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType",
+            "displayedType" : "ITaskExecutionEvent.TaskInstanceExecutionEventType",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 170,
+              "startColumn" : 97,
+              "endLine" : 170,
+              "endColumn" : 106
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/method/of(long taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType eventType, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent event)"
+          }, {
+            "name" : "event",
+            "key" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/method/of(long taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType eventType, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent event)/parameter/event",
+            "type" : "org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent",
+            "displayedType" : "ITaskExecutionEvent",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 171,
+              "startColumn" : 66,
+              "endLine" : 171,
+              "endColumn" : 71
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage/method/of(long taskInstanceId, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventType eventType, org.apache.dolphinscheduler.server.worker.message.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent event)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.TaskInstanceMessage"
+        }
+      },
+      "file_path" : "dolphinscheduler-worker/src/main/java/org/apache/dolphinscheduler/server/worker/message/MessageRetryRunner.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : { }
+}

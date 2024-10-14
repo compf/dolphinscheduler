@@ -1,0 +1,459 @@
+{
+  "name" : "WorkerClusters",
+  "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 37,
+    "startColumn" : 8,
+    "endLine" : 37,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/memberField/workerClusterChangeListeners" : {
+      "name" : "workerClusterChangeListeners",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/memberField/workerClusterChangeListeners",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.cluster.IClustersChangeListener<org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata>>",
+      "displayedType" : "List<IClustersChangeListener<WorkerServerMetadata>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 48,
+        "startColumn" : 71,
+        "endLine" : 48,
+        "endColumn" : 99
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/memberField/workerMapping" : {
+      "name" : "workerMapping",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/memberField/workerMapping",
+      "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata>",
+      "displayedType" : "Map<String, WorkerServerMetadata>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 53,
+        "endLine" : 43,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/memberField/workerGroupMapping" : {
+      "name" : "workerGroupMapping",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/memberField/workerGroupMapping",
+      "type" : "java.util.Map<java.lang.String, java.util.List<java.lang.String>>",
+      "displayedType" : "Map<String, List<String>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 46,
+        "startColumn" : 45,
+        "endLine" : 46,
+        "endColumn" : 63
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/getServers()" : {
+      "name" : "getServers",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/getServers()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata>",
+      "displayedType" : "List<WorkerServerMetadata>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 39,
+        "endLine" : 52,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/getNormalWorkerServerAddressByGroup(java.lang.String workerGroup)" : {
+      "name" : "getNormalWorkerServerAddressByGroup",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/getNormalWorkerServerAddressByGroup(java.lang.String workerGroup)",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 25,
+        "endLine" : 63,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerGroup",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/getNormalWorkerServerAddressByGroup(java.lang.String workerGroup)/parameter/workerGroup",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 63,
+          "startColumn" : 68,
+          "endLine" : 63,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/getNormalWorkerServerAddressByGroup(java.lang.String workerGroup)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onServerAdded(org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata workerServer)" : {
+      "name" : "onServerAdded",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onServerAdded(org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata workerServer)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 121,
+        "startColumn" : 17,
+        "endLine" : 121,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerServer",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onServerAdded(org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata workerServer)/parameter/workerServer",
+        "type" : "org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata",
+        "displayedType" : "WorkerServerMetadata",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 121,
+          "startColumn" : 52,
+          "endLine" : 121,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onServerAdded(org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata workerServer)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onWorkerGroupDelete(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)" : {
+      "name" : "onWorkerGroupDelete",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onWorkerGroupDelete(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 85,
+        "startColumn" : 17,
+        "endLine" : 85,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerGroups",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onWorkerGroupDelete(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)/parameter/workerGroups",
+        "type" : "java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup>",
+        "displayedType" : "List<WorkerGroup>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 85,
+          "startColumn" : 55,
+          "endLine" : 85,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onWorkerGroupDelete(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/parseServerFromHeartbeat(java.lang.String serverHeartBeatJson)" : {
+      "name" : "parseServerFromHeartbeat",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/parseServerFromHeartbeat(java.lang.String serverHeartBeatJson)",
+      "type" : "org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata",
+      "displayedType" : "WorkerServerMetadata",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 112,
+        "startColumn" : 26,
+        "endLine" : 112,
+        "endColumn" : 50
+      },
+      "modifiers" : [ ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "serverHeartBeatJson",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/parseServerFromHeartbeat(java.lang.String serverHeartBeatJson)/parameter/serverHeartBeatJson",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 112,
+          "startColumn" : 58,
+          "endLine" : 112,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/parseServerFromHeartbeat(java.lang.String serverHeartBeatJson)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/getWorkerServerAddressByGroup(java.lang.String workerGroup)" : {
+      "name" : "getWorkerServerAddressByGroup",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/getWorkerServerAddressByGroup(java.lang.String workerGroup)",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 25,
+        "endLine" : 56,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerGroup",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/getWorkerServerAddressByGroup(java.lang.String workerGroup)/parameter/workerGroup",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 56,
+          "startColumn" : 62,
+          "endLine" : 56,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/getWorkerServerAddressByGroup(java.lang.String workerGroup)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onWorkerGroupChange(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)" : {
+      "name" : "onWorkerGroupChange",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onWorkerGroupChange(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 99,
+        "startColumn" : 17,
+        "endLine" : 99,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerGroups",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onWorkerGroupChange(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)/parameter/workerGroups",
+        "type" : "java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup>",
+        "displayedType" : "List<WorkerGroup>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 99,
+          "startColumn" : 55,
+          "endLine" : 99,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onWorkerGroupChange(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/registerListener(org.apache.dolphinscheduler.server.master.cluster.IClustersChangeListener<org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata> listener)" : {
+      "name" : "registerListener",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/registerListener(org.apache.dolphinscheduler.server.master.cluster.IClustersChangeListener<org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata> listener)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 17,
+        "endLine" : 80,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "listener",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/registerListener(org.apache.dolphinscheduler.server.master.cluster.IClustersChangeListener<org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata> listener)/parameter/listener",
+        "type" : "org.apache.dolphinscheduler.server.master.cluster.IClustersChangeListener<org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata>",
+        "displayedType" : "IClustersChangeListener<WorkerServerMetadata>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 80,
+          "startColumn" : 80,
+          "endLine" : 80,
+          "endColumn" : 88
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/registerListener(org.apache.dolphinscheduler.server.master.cluster.IClustersChangeListener<org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata> listener)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/containsWorkerGroup(java.lang.String workerGroup)" : {
+      "name" : "containsWorkerGroup",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/containsWorkerGroup(java.lang.String workerGroup)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 74,
+        "startColumn" : 20,
+        "endLine" : 74,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerGroup",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/containsWorkerGroup(java.lang.String workerGroup)/parameter/workerGroup",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 74,
+          "startColumn" : 47,
+          "endLine" : 74,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/containsWorkerGroup(java.lang.String workerGroup)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onServerRemove(org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata workerServer)" : {
+      "name" : "onServerRemove",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onServerRemove(org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata workerServer)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 129,
+        "startColumn" : 17,
+        "endLine" : 129,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerServer",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onServerRemove(org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata workerServer)/parameter/workerServer",
+        "type" : "org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata",
+        "displayedType" : "WorkerServerMetadata",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 129,
+          "startColumn" : 53,
+          "endLine" : 129,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onServerRemove(org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata workerServer)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onServerUpdate(org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata workerServer)" : {
+      "name" : "onServerUpdate",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onServerUpdate(org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata workerServer)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 137,
+        "startColumn" : 17,
+        "endLine" : 137,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerServer",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onServerUpdate(org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata workerServer)/parameter/workerServer",
+        "type" : "org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata",
+        "displayedType" : "WorkerServerMetadata",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 137,
+          "startColumn" : 53,
+          "endLine" : 137,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onServerUpdate(org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata workerServer)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onWorkerGroupAdd(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)" : {
+      "name" : "onWorkerGroupAdd",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onWorkerGroupAdd(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 92,
+        "startColumn" : 17,
+        "endLine" : 92,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerGroups",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onWorkerGroupAdd(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)/parameter/workerGroups",
+        "type" : "java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup>",
+        "displayedType" : "List<WorkerGroup>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 92,
+          "startColumn" : 52,
+          "endLine" : 92,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters/method/onWorkerGroupAdd(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerClusters"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/cluster/WorkerClusters.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.master.cluster.IClusters<org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata>", "org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata", "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener" ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.master.cluster.AbstractClusterSubscribeListener<org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata>", "org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

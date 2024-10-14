@@ -1,0 +1,273 @@
+{
+  "name" : "ProjectWorkerGroupRelationServiceImpl",
+  "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 63,
+    "startColumn" : 8,
+    "endLine" : 63,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/memberField/projectMapper" : {
+      "name" : "projectMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/memberField/projectMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.ProjectMapper",
+      "displayedType" : "ProjectMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 27,
+        "endLine" : 71,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/memberField/projectWorkerGroupMapper" : {
+      "name" : "projectWorkerGroupMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/memberField/projectWorkerGroupMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.ProjectWorkerGroupMapper",
+      "displayedType" : "ProjectWorkerGroupMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 38,
+        "endLine" : 68,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/memberField/taskDefinitionMapper" : {
+      "name" : "taskDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/memberField/taskDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.TaskDefinitionMapper",
+      "displayedType" : "TaskDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 34,
+        "endLine" : 77,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/memberField/workerGroupMapper" : {
+      "name" : "workerGroupMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/memberField/workerGroupMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkerGroupMapper",
+      "displayedType" : "WorkerGroupMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 74,
+        "startColumn" : 31,
+        "endLine" : 74,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/memberField/scheduleMapper" : {
+      "name" : "scheduleMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/memberField/scheduleMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.ScheduleMapper",
+      "displayedType" : "ScheduleMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 28,
+        "endLine" : 80,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/memberField/projectService" : {
+      "name" : "projectService",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/memberField/projectService",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.ProjectService",
+      "displayedType" : "ProjectService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 28,
+        "endLine" : 83,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/assignWorkerGroupsToProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.util.List<java.lang.String> workerGroups)" : {
+      "name" : "assignWorkerGroupsToProject",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/assignWorkerGroupsToProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.util.List<java.lang.String> workerGroups)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 93,
+        "startColumn" : 19,
+        "endLine" : 93,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/assignWorkerGroupsToProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.util.List<java.lang.String> workerGroups)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 93,
+          "startColumn" : 52,
+          "endLine" : 93,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/assignWorkerGroupsToProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.util.List<java.lang.String> workerGroups)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/assignWorkerGroupsToProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.util.List<java.lang.String> workerGroups)/parameter/projectCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 93,
+          "startColumn" : 68,
+          "endLine" : 93,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/assignWorkerGroupsToProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.util.List<java.lang.String> workerGroups)"
+      }, {
+        "name" : "workerGroups",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/assignWorkerGroupsToProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.util.List<java.lang.String> workerGroups)/parameter/workerGroups",
+        "type" : "java.util.List<java.lang.String>",
+        "displayedType" : "List<String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 93,
+          "startColumn" : 94,
+          "endLine" : 93,
+          "endColumn" : 106
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/assignWorkerGroupsToProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.util.List<java.lang.String> workerGroups)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/queryWorkerGroupsByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)" : {
+      "name" : "queryWorkerGroupsByProject",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/queryWorkerGroupsByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 192,
+        "startColumn" : 32,
+        "endLine" : 192,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/queryWorkerGroupsByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 192,
+          "startColumn" : 64,
+          "endLine" : 192,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/queryWorkerGroupsByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/queryWorkerGroupsByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)/parameter/projectCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 192,
+          "startColumn" : 80,
+          "endLine" : 192,
+          "endColumn" : 91
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/queryWorkerGroupsByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/getAllUsedWorkerGroups(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)" : {
+      "name" : "getAllUsedWorkerGroups",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/getAllUsedWorkerGroups(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)",
+      "type" : "java.util.Set<java.lang.String>",
+      "displayedType" : "Set<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 220,
+        "startColumn" : 25,
+        "endLine" : 220,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "project",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/getAllUsedWorkerGroups(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)/parameter/project",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project",
+        "displayedType" : "Project",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 220,
+          "startColumn" : 56,
+          "endLine" : 220,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl/method/getAllUsedWorkerGroups(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectWorkerGroupRelationServiceImpl"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/service/impl/ProjectWorkerGroupRelationServiceImpl.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.ProjectWorkerGroupRelationService" ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.service.impl.BaseServiceImpl" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

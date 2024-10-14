@@ -1,0 +1,367 @@
+{
+  "name" : "ResponseFuture",
+  "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 33,
+    "startColumn" : 8,
+    "endLine" : 33,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/memberField/FUTURE_TABLE" : {
+      "name" : "FUTURE_TABLE",
+      "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/memberField/FUTURE_TABLE",
+      "type" : "java.util.concurrent.ConcurrentHashMap<java.lang.Long, org.apache.dolphinscheduler.extract.base.future.ResponseFuture>",
+      "displayedType" : "ConcurrentHashMap<Long, ResponseFuture>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 35,
+        "startColumn" : 66,
+        "endLine" : 35,
+        "endColumn" : 78
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture"
+    },
+    "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/memberField/opaque" : {
+      "name" : "opaque",
+      "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/memberField/opaque",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 37,
+        "startColumn" : 24,
+        "endLine" : 37,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture"
+    },
+    "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/memberField/cause" : {
+      "name" : "cause",
+      "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/memberField/cause",
+      "type" : "java.lang.Throwable",
+      "displayedType" : "Throwable",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 23,
+        "endLine" : 52,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture"
+    },
+    "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/memberField/timeoutMillis" : {
+      "name" : "timeoutMillis",
+      "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/memberField/timeoutMillis",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 40,
+        "startColumn" : 24,
+        "endLine" : 40,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture"
+    },
+    "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/memberField/latch" : {
+      "name" : "latch",
+      "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/memberField/latch",
+      "type" : "java.util.concurrent.CountDownLatch",
+      "displayedType" : "CountDownLatch",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 34,
+        "endLine" : 42,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture"
+    },
+    "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/memberField/sendOk" : {
+      "name" : "sendOk",
+      "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/memberField/sendOk",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 50,
+        "startColumn" : 30,
+        "endLine" : 50,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE", "VOLATILE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture"
+    },
+    "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/memberField/beginTimestamp" : {
+      "name" : "beginTimestamp",
+      "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/memberField/beginTimestamp",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 24,
+        "endLine" : 44,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture"
+    },
+    "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/memberField/iRpcResponse" : {
+      "name" : "iRpcResponse",
+      "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/memberField/iRpcResponse",
+      "type" : "org.apache.dolphinscheduler.extract.base.future.org.apache.dolphinscheduler.extract.base.IRpcResponse",
+      "displayedType" : "IRpcResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 48,
+        "startColumn" : 26,
+        "endLine" : 48,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/putResponse(org.apache.dolphinscheduler.extract.base.future.org.apache.dolphinscheduler.extract.base.IRpcResponse iRpcResponse)" : {
+      "name" : "putResponse",
+      "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/putResponse(org.apache.dolphinscheduler.extract.base.future.org.apache.dolphinscheduler.extract.base.IRpcResponse iRpcResponse)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 17,
+        "endLine" : 72,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "iRpcResponse",
+        "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/putResponse(org.apache.dolphinscheduler.extract.base.future.org.apache.dolphinscheduler.extract.base.IRpcResponse iRpcResponse)/parameter/iRpcResponse",
+        "type" : "org.apache.dolphinscheduler.extract.base.future.org.apache.dolphinscheduler.extract.base.IRpcResponse",
+        "displayedType" : "IRpcResponse",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 72,
+          "startColumn" : 48,
+          "endLine" : 72,
+          "endColumn" : 60
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/putResponse(org.apache.dolphinscheduler.extract.base.future.org.apache.dolphinscheduler.extract.base.IRpcResponse iRpcResponse)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture"
+    },
+    "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/isSendOK()" : {
+      "name" : "isSendOK",
+      "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/isSendOK()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 92,
+        "startColumn" : 20,
+        "endLine" : 92,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture"
+    },
+    "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/isTimeout()" : {
+      "name" : "isTimeout",
+      "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/isTimeout()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 87,
+        "startColumn" : 20,
+        "endLine" : 87,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture"
+    },
+    "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/getFuture(long opaque)" : {
+      "name" : "getFuture",
+      "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/getFuture(long opaque)",
+      "type" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture",
+      "displayedType" : "ResponseFuture",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 34,
+        "endLine" : 78,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "opaque",
+        "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/getFuture(long opaque)/parameter/opaque",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 78,
+          "startColumn" : 49,
+          "endLine" : 78,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/getFuture(long opaque)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture"
+    },
+    "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/waitResponse()" : {
+      "name" : "waitResponse",
+      "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/waitResponse()",
+      "type" : "org.apache.dolphinscheduler.extract.base.future.org.apache.dolphinscheduler.extract.base.IRpcResponse",
+      "displayedType" : "IRpcResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 25,
+        "endLine" : 65,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture"
+    },
+    "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/getCause()" : {
+      "name" : "getCause",
+      "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/getCause()",
+      "type" : "java.lang.Throwable",
+      "displayedType" : "Throwable",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 104,
+        "startColumn" : 22,
+        "endLine" : 104,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture"
+    },
+    "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/setSendOk(boolean sendOk)" : {
+      "name" : "setSendOk",
+      "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/setSendOk(boolean sendOk)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 17,
+        "endLine" : 96,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "sendOk",
+        "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/setSendOk(boolean sendOk)/parameter/sendOk",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 96,
+          "startColumn" : 35,
+          "endLine" : 96,
+          "endColumn" : 41
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/setSendOk(boolean sendOk)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture"
+    },
+    "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/setCause(java.lang.Throwable cause)" : {
+      "name" : "setCause",
+      "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/setCause(java.lang.Throwable cause)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 100,
+        "startColumn" : 17,
+        "endLine" : 100,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "cause",
+        "key" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/setCause(java.lang.Throwable cause)/parameter/cause",
+        "type" : "java.lang.Throwable",
+        "displayedType" : "Throwable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 100,
+          "startColumn" : 36,
+          "endLine" : 100,
+          "endColumn" : 41
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture/method/setCause(java.lang.Throwable cause)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.future.ResponseFuture"
+    }
+  },
+  "file_path" : "dolphinscheduler-extract/dolphinscheduler-extract-base/src/main/java/org/apache/dolphinscheduler/extract/base/future/ResponseFuture.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

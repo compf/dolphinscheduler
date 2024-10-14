@@ -1,0 +1,196 @@
+{
+  "name" : "WorkflowFailoverCommandHandler",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 52,
+    "startColumn" : 8,
+    "endLine" : 52,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/memberField/applicationContext" : {
+      "name" : "applicationContext",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/memberField/applicationContext",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.springframework.context.ApplicationContext",
+      "displayedType" : "ApplicationContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 32,
+        "endLine" : 67,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/memberField/taskGroupCoordinator" : {
+      "name" : "taskGroupCoordinator",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/memberField/taskGroupCoordinator",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator",
+      "displayedType" : "TaskGroupCoordinator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 34,
+        "endLine" : 64,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/memberField/workflowInstanceDao" : {
+      "name" : "workflowInstanceDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/memberField/workflowInstanceDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.repository.WorkflowInstanceDao",
+      "displayedType" : "WorkflowInstanceDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 55,
+        "startColumn" : 33,
+        "endLine" : 55,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/memberField/taskInstanceDao" : {
+      "name" : "taskInstanceDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/memberField/taskInstanceDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.repository.TaskInstanceDao",
+      "displayedType" : "TaskInstanceDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 29,
+        "endLine" : 58,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/memberField/taskExecutionContextFactory" : {
+      "name" : "taskExecutionContextFactory",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/memberField/taskExecutionContextFactory",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory",
+      "displayedType" : "TaskExecutionContextFactory",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 41,
+        "endLine" : 61,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/method/assembleWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)" : {
+      "name" : "assembleWorkflowInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/method/assembleWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 20,
+        "endLine" : 83,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecuteContextBuilder",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/method/assembleWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)/parameter/workflowExecuteContextBuilder",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder",
+        "displayedType" : "WorkflowExecuteContextBuilder",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 84,
+          "startColumn" : 81,
+          "endLine" : 84,
+          "endColumn" : 110
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/method/assembleWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/method/assembleWorkflowExecutionGraph(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)" : {
+      "name" : "assembleWorkflowExecutionGraph",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/method/assembleWorkflowExecutionGraph(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 107,
+        "startColumn" : 20,
+        "endLine" : 107,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecuteContextBuilder",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/method/assembleWorkflowExecutionGraph(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)/parameter/workflowExecuteContextBuilder",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder",
+        "displayedType" : "WorkflowExecuteContextBuilder",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 107,
+          "startColumn" : 87,
+          "endLine" : 107,
+          "endColumn" : 116
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/method/assembleWorkflowExecutionGraph(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/method/commandType()" : {
+      "name" : "commandType",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler/method/commandType()",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.common.enums.CommandType",
+      "displayedType" : "CommandType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 145,
+        "startColumn" : 24,
+        "endLine" : 145,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.WorkflowFailoverCommandHandler"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/command/handler/WorkflowFailoverCommandHandler.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.master.engine.command.handler.AbstractCommandHandler" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

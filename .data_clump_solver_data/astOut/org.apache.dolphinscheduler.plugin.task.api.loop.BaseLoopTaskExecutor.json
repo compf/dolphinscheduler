@@ -1,0 +1,214 @@
+{
+  "name" : "BaseLoopTaskExecutor",
+  "key" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 41,
+    "startColumn" : 17,
+    "endLine" : 41,
+    "endColumn" : 22
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/memberField/cancel" : {
+      "name" : "cancel",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/memberField/cancel",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 46,
+        "startColumn" : 32,
+        "endLine" : 46,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PROTECTED", "VOLATILE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/memberField/loopTaskInstanceInfo" : {
+      "name" : "loopTaskInstanceInfo",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/memberField/loopTaskInstanceInfo",
+      "type" : "org.apache.dolphinscheduler.plugin.task.api.loop.LoopTaskInstanceInfo",
+      "displayedType" : "LoopTaskInstanceInfo",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 46,
+        "endLine" : 51,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/cancelLoopTaskInstance(org.apache.dolphinscheduler.plugin.task.api.loop.LoopTaskInstanceInfo taskInstanceInfo)" : {
+      "name" : "cancelLoopTaskInstance",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/cancelLoopTaskInstance(org.apache.dolphinscheduler.plugin.task.api.loop.LoopTaskInstanceInfo taskInstanceInfo)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 120,
+        "startColumn" : 26,
+        "endLine" : 120,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstanceInfo",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/cancelLoopTaskInstance(org.apache.dolphinscheduler.plugin.task.api.loop.LoopTaskInstanceInfo taskInstanceInfo)/parameter/taskInstanceInfo",
+        "type" : "org.apache.dolphinscheduler.plugin.task.api.loop.LoopTaskInstanceInfo",
+        "displayedType" : "LoopTaskInstanceInfo",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 120,
+          "startColumn" : 80,
+          "endLine" : 120,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/cancelLoopTaskInstance(org.apache.dolphinscheduler.plugin.task.api.loop.LoopTaskInstanceInfo taskInstanceInfo)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/submitLoopTask()" : {
+      "name" : "submitLoopTask",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/submitLoopTask()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.api.loop.LoopTaskInstanceInfo",
+      "displayedType" : "LoopTaskInstanceInfo",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 103,
+        "startColumn" : 51,
+        "endLine" : 103,
+        "endColumn" : 65
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/queryTaskInstanceStatus(org.apache.dolphinscheduler.plugin.task.api.loop.LoopTaskInstanceInfo taskInstanceInfo)" : {
+      "name" : "queryTaskInstanceStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/queryTaskInstanceStatus(org.apache.dolphinscheduler.plugin.task.api.loop.LoopTaskInstanceInfo taskInstanceInfo)",
+      "type" : "org.apache.dolphinscheduler.plugin.task.api.loop.LoopTaskInstanceStatus",
+      "displayedType" : "LoopTaskInstanceStatus",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 108,
+        "startColumn" : 53,
+        "endLine" : 108,
+        "endColumn" : 76
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstanceInfo",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/queryTaskInstanceStatus(org.apache.dolphinscheduler.plugin.task.api.loop.LoopTaskInstanceInfo taskInstanceInfo)/parameter/taskInstanceInfo",
+        "type" : "org.apache.dolphinscheduler.plugin.task.api.loop.LoopTaskInstanceInfo",
+        "displayedType" : "LoopTaskInstanceInfo",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 108,
+          "startColumn" : 107,
+          "endLine" : 108,
+          "endColumn" : 123
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/queryTaskInstanceStatus(org.apache.dolphinscheduler.plugin.task.api.loop.LoopTaskInstanceInfo taskInstanceInfo)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/handle(org.apache.dolphinscheduler.plugin.task.api.loop.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)" : {
+      "name" : "handle",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/handle(org.apache.dolphinscheduler.plugin.task.api.loop.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 17,
+        "endLine" : 58,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskCallBack",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/handle(org.apache.dolphinscheduler.plugin.task.api.loop.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)/parameter/taskCallBack",
+        "type" : "org.apache.dolphinscheduler.plugin.task.api.loop.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack",
+        "displayedType" : "TaskCallBack",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 58,
+          "startColumn" : 37,
+          "endLine" : 58,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/handle(org.apache.dolphinscheduler.plugin.task.api.loop.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/getTaskInstanceStatusQueryInterval()" : {
+      "name" : "getTaskInstanceStatusQueryInterval",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/getTaskInstanceStatusQueryInterval()",
+      "type" : "java.time.Duration",
+      "displayedType" : "Duration",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 113,
+        "startColumn" : 30,
+        "endLine" : 113,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/cancelApplication()" : {
+      "name" : "cancelApplication",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor/method/cancelApplication()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 123,
+        "startColumn" : 17,
+        "endLine" : 123,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.loop.BaseLoopTaskExecutor"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-api/src/main/java/org/apache/dolphinscheduler/plugin/task/api/loop/BaseLoopTaskExecutor.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.plugin.task.api.loop.org.apache.dolphinscheduler.plugin.task.api.AbstractRemoteTask" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

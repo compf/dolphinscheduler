@@ -1,0 +1,294 @@
+{
+  "name" : "FailoverCoordinator",
+  "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 47,
+    "startColumn" : 8,
+    "endLine" : 47,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/memberField/workflowFailover" : {
+      "name" : "workflowFailover",
+      "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/memberField/workflowFailover",
+      "type" : "org.apache.dolphinscheduler.server.master.failover.WorkflowFailover",
+      "displayedType" : "WorkflowFailover",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 30,
+        "endLine" : 65,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/memberField/workflowRepository" : {
+      "name" : "workflowRepository",
+      "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/memberField/workflowRepository",
+      "type" : "org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.IWorkflowRepository",
+      "displayedType" : "IWorkflowRepository",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 33,
+        "endLine" : 53,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/memberField/registryClient" : {
+      "name" : "registryClient",
+      "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/memberField/registryClient",
+      "type" : "org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.registry.api.RegistryClient",
+      "displayedType" : "RegistryClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 50,
+        "startColumn" : 28,
+        "endLine" : 50,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/memberField/platformTransactionManager" : {
+      "name" : "platformTransactionManager",
+      "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/memberField/platformTransactionManager",
+      "type" : "org.apache.dolphinscheduler.server.master.failover.org.springframework.transaction.PlatformTransactionManager",
+      "displayedType" : "PlatformTransactionManager",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 40,
+        "endLine" : 62,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/memberField/taskFailover" : {
+      "name" : "taskFailover",
+      "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/memberField/taskFailover",
+      "type" : "org.apache.dolphinscheduler.server.master.failover.TaskFailover",
+      "displayedType" : "TaskFailover",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 26,
+        "endLine" : 56,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/memberField/workflowInstanceDao" : {
+      "name" : "workflowInstanceDao",
+      "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/memberField/workflowInstanceDao",
+      "type" : "org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.dao.repository.WorkflowInstanceDao",
+      "displayedType" : "WorkflowInstanceDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 33,
+        "endLine" : 59,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/getFailoverWorkflowsForMaster(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.MasterFailoverEvent masterFailoverEvent)" : {
+      "name" : "getFailoverWorkflowsForMaster",
+      "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/getFailoverWorkflowsForMaster(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.MasterFailoverEvent masterFailoverEvent)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.dao.entity.WorkflowInstance>",
+      "displayedType" : "List<WorkflowInstance>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 106,
+        "startColumn" : 36,
+        "endLine" : 106,
+        "endColumn" : 65
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "masterFailoverEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/getFailoverWorkflowsForMaster(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.MasterFailoverEvent masterFailoverEvent)/parameter/masterFailoverEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.MasterFailoverEvent",
+        "displayedType" : "MasterFailoverEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 106,
+          "startColumn" : 92,
+          "endLine" : 106,
+          "endColumn" : 111
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/getFailoverWorkflowsForMaster(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.MasterFailoverEvent masterFailoverEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/getFailoverTaskForWorker(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.WorkerFailoverEvent workerFailoverEvent)" : {
+      "name" : "getFailoverTaskForWorker",
+      "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/getFailoverTaskForWorker(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.WorkerFailoverEvent workerFailoverEvent)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable>",
+      "displayedType" : "List<ITaskExecutionRunnable>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 146,
+        "startColumn" : 42,
+        "endLine" : 146,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerFailoverEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/getFailoverTaskForWorker(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.WorkerFailoverEvent workerFailoverEvent)/parameter/workerFailoverEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.WorkerFailoverEvent",
+        "displayedType" : "WorkerFailoverEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 146,
+          "startColumn" : 93,
+          "endLine" : 146,
+          "endColumn" : 112
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/getFailoverTaskForWorker(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.WorkerFailoverEvent workerFailoverEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/failoverMaster(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.MasterFailoverEvent masterFailoverEvent)" : {
+      "name" : "failoverMaster",
+      "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/failoverMaster(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.MasterFailoverEvent masterFailoverEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 86,
+        "startColumn" : 17,
+        "endLine" : 86,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "masterFailoverEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/failoverMaster(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.MasterFailoverEvent masterFailoverEvent)/parameter/masterFailoverEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.MasterFailoverEvent",
+        "displayedType" : "MasterFailoverEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 86,
+          "startColumn" : 58,
+          "endLine" : 86,
+          "endColumn" : 77
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/failoverMaster(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.MasterFailoverEvent masterFailoverEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/globalMasterFailover(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.GlobalMasterFailoverEvent globalMasterFailoverEvent)" : {
+      "name" : "globalMasterFailover",
+      "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/globalMasterFailover(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.GlobalMasterFailoverEvent globalMasterFailoverEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 17,
+        "endLine" : 68,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "globalMasterFailoverEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/globalMasterFailover(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.GlobalMasterFailoverEvent globalMasterFailoverEvent)/parameter/globalMasterFailoverEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.GlobalMasterFailoverEvent",
+        "displayedType" : "GlobalMasterFailoverEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 68,
+          "startColumn" : 64,
+          "endLine" : 68,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/globalMasterFailover(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.GlobalMasterFailoverEvent globalMasterFailoverEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/failoverWorker(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.WorkerFailoverEvent workerFailoverEvent)" : {
+      "name" : "failoverWorker",
+      "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/failoverWorker(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.WorkerFailoverEvent workerFailoverEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 130,
+        "startColumn" : 17,
+        "endLine" : 130,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerFailoverEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/failoverWorker(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.WorkerFailoverEvent workerFailoverEvent)/parameter/workerFailoverEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.WorkerFailoverEvent",
+        "displayedType" : "WorkerFailoverEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 130,
+          "startColumn" : 58,
+          "endLine" : 130,
+          "endColumn" : 77
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator/method/failoverWorker(org.apache.dolphinscheduler.server.master.failover.org.apache.dolphinscheduler.server.master.engine.system.event.WorkerFailoverEvent workerFailoverEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/failover/FailoverCoordinator.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.master.failover.IFailoverCoordinator" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

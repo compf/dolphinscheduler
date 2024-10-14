@@ -1,0 +1,944 @@
+{
+  "name" : "DAG",
+  "key" : "org.apache.dolphinscheduler.common.graph.DAG",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 44,
+    "startColumn" : 8,
+    "endLine" : 44,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.common.graph.DAG/memberField/lock" : {
+      "name" : "lock",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/memberField/lock",
+      "type" : "java.util.concurrent.locks.ReadWriteLock",
+      "displayedType" : "ReadWriteLock",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 46,
+        "startColumn" : 33,
+        "endLine" : 46,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/memberField/reverseEdgesMap" : {
+      "name" : "reverseEdgesMap",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/memberField/reverseEdgesMap",
+      "type" : "java.util.Map<Node, java.util.Map<Node, EdgeInfo>>",
+      "displayedType" : "Map<Node, Map<Node, EdgeInfo>>",
+      "hasTypeVariable" : true,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 50,
+        "endLine" : 61,
+        "endColumn" : 65
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/memberField/edgesMap" : {
+      "name" : "edgesMap",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/memberField/edgesMap",
+      "type" : "java.util.Map<Node, java.util.Map<Node, EdgeInfo>>",
+      "displayedType" : "Map<Node, Map<Node, EdgeInfo>>",
+      "hasTypeVariable" : true,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 50,
+        "endLine" : 56,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/memberField/nodesMap" : {
+      "name" : "nodesMap",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/memberField/nodesMap",
+      "type" : "java.util.Map<Node, NodeInfo>",
+      "displayedType" : "Map<Node, NodeInfo>",
+      "hasTypeVariable" : true,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 39,
+        "endLine" : 51,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.common.graph.DAG/method/addNode(Node node, NodeInfo nodeInfo)" : {
+      "name" : "addNode",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addNode(Node node, NodeInfo nodeInfo)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 17,
+        "endLine" : 75,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "node",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addNode(Node node, NodeInfo nodeInfo)/parameter/node",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 75,
+          "startColumn" : 30,
+          "endLine" : 75,
+          "endColumn" : 34
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addNode(Node node, NodeInfo nodeInfo)"
+      }, {
+        "name" : "nodeInfo",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addNode(Node node, NodeInfo nodeInfo)/parameter/nodeInfo",
+        "type" : "NodeInfo",
+        "displayedType" : "NodeInfo",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 75,
+          "startColumn" : 45,
+          "endLine" : 75,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addNode(Node node, NodeInfo nodeInfo)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, java.util.Map<Node, java.util.Map<Node, EdgeInfo>> edges)" : {
+      "name" : "addEdge",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, java.util.Map<Node, java.util.Map<Node, EdgeInfo>> edges)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 365,
+        "startColumn" : 18,
+        "endLine" : 365,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "fromNode",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, java.util.Map<Node, java.util.Map<Node, EdgeInfo>> edges)/parameter/fromNode",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 365,
+          "startColumn" : 31,
+          "endLine" : 365,
+          "endColumn" : 39
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, java.util.Map<Node, java.util.Map<Node, EdgeInfo>> edges)"
+      }, {
+        "name" : "toNode",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, java.util.Map<Node, java.util.Map<Node, EdgeInfo>> edges)/parameter/toNode",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 365,
+          "startColumn" : 46,
+          "endLine" : 365,
+          "endColumn" : 52
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, java.util.Map<Node, java.util.Map<Node, EdgeInfo>> edges)"
+      }, {
+        "name" : "edge",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, java.util.Map<Node, java.util.Map<Node, EdgeInfo>> edges)/parameter/edge",
+        "type" : "EdgeInfo",
+        "displayedType" : "EdgeInfo",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 365,
+          "startColumn" : 63,
+          "endLine" : 365,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, java.util.Map<Node, java.util.Map<Node, EdgeInfo>> edges)"
+      }, {
+        "name" : "edges",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, java.util.Map<Node, java.util.Map<Node, EdgeInfo>> edges)/parameter/edges",
+        "type" : "java.util.Map<Node, java.util.Map<Node, EdgeInfo>>",
+        "displayedType" : "Map<Node, Map<Node, EdgeInfo>>",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 365,
+          "startColumn" : 100,
+          "endLine" : 365,
+          "endColumn" : 105
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, java.util.Map<Node, java.util.Map<Node, EdgeInfo>> edges)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/getNodesCount()" : {
+      "name" : "getNodesCount",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/getNodesCount()",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 199,
+        "startColumn" : 16,
+        "endLine" : 199,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/getSubsequentNodes(Node node)" : {
+      "name" : "getSubsequentNodes",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/getSubsequentNodes(Node node)",
+      "type" : "java.util.Set<Node>",
+      "displayedType" : "Set<Node>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 283,
+        "startColumn" : 22,
+        "endLine" : 283,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "node",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/getSubsequentNodes(Node node)/parameter/node",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 283,
+          "startColumn" : 46,
+          "endLine" : 283,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/getSubsequentNodes(Node node)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, boolean createNode)" : {
+      "name" : "addEdge",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, boolean createNode)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 105,
+        "startColumn" : 21,
+        "endLine" : 105,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "fromNode",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, boolean createNode)/parameter/fromNode",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 105,
+          "startColumn" : 34,
+          "endLine" : 105,
+          "endColumn" : 42
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, boolean createNode)"
+      }, {
+        "name" : "toNode",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, boolean createNode)/parameter/toNode",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 105,
+          "startColumn" : 49,
+          "endLine" : 105,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, boolean createNode)"
+      }, {
+        "name" : "createNode",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, boolean createNode)/parameter/createNode",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 105,
+          "startColumn" : 65,
+          "endLine" : 105,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, boolean createNode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/getPreviousNodes(Node node)" : {
+      "name" : "getPreviousNodes",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/getPreviousNodes(Node node)",
+      "type" : "java.util.Set<Node>",
+      "displayedType" : "Set<Node>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 267,
+        "startColumn" : 22,
+        "endLine" : 267,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "node",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/getPreviousNodes(Node node)/parameter/node",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 267,
+          "startColumn" : 44,
+          "endLine" : 267,
+          "endColumn" : 48
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/getPreviousNodes(Node node)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/getIndegree(Node node)" : {
+      "name" : "getIndegree",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/getIndegree(Node node)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 299,
+        "startColumn" : 16,
+        "endLine" : 299,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "node",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/getIndegree(Node node)/parameter/node",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 299,
+          "startColumn" : 33,
+          "endLine" : 299,
+          "endColumn" : 37
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/getIndegree(Node node)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/getNode(Node node)" : {
+      "name" : "getNode",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/getNode(Node node)",
+      "type" : "NodeInfo",
+      "displayedType" : "NodeInfo",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 184,
+        "startColumn" : 21,
+        "endLine" : 184,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "node",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/getNode(Node node)/parameter/node",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 184,
+          "startColumn" : 34,
+          "endLine" : 184,
+          "endColumn" : 38
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/getNode(Node node)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/getEndNode()" : {
+      "name" : "getEndNode",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/getEndNode()",
+      "type" : "java.util.Collection<Node>",
+      "displayedType" : "Collection<Node>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 250,
+        "startColumn" : 29,
+        "endLine" : 250,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/addNodeIfAbsent(Node node, NodeInfo nodeInfo)" : {
+      "name" : "addNodeIfAbsent",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addNodeIfAbsent(Node node, NodeInfo nodeInfo)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 351,
+        "startColumn" : 18,
+        "endLine" : 351,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "node",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addNodeIfAbsent(Node node, NodeInfo nodeInfo)/parameter/node",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 351,
+          "startColumn" : 39,
+          "endLine" : 351,
+          "endColumn" : 43
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addNodeIfAbsent(Node node, NodeInfo nodeInfo)"
+      }, {
+        "name" : "nodeInfo",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addNodeIfAbsent(Node node, NodeInfo nodeInfo)/parameter/nodeInfo",
+        "type" : "NodeInfo",
+        "displayedType" : "NodeInfo",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 351,
+          "startColumn" : 54,
+          "endLine" : 351,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addNodeIfAbsent(Node node, NodeInfo nodeInfo)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, boolean createNode)" : {
+      "name" : "addEdge",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, boolean createNode)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 118,
+        "startColumn" : 20,
+        "endLine" : 118,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "fromNode",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, boolean createNode)/parameter/fromNode",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 118,
+          "startColumn" : 33,
+          "endLine" : 118,
+          "endColumn" : 41
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, boolean createNode)"
+      }, {
+        "name" : "toNode",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, boolean createNode)/parameter/toNode",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 118,
+          "startColumn" : 48,
+          "endLine" : 118,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, boolean createNode)"
+      }, {
+        "name" : "edge",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, boolean createNode)/parameter/edge",
+        "type" : "EdgeInfo",
+        "displayedType" : "EdgeInfo",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 118,
+          "startColumn" : 65,
+          "endLine" : 118,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, boolean createNode)"
+      }, {
+        "name" : "createNode",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, boolean createNode)/parameter/createNode",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 118,
+          "startColumn" : 79,
+          "endLine" : 118,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode, EdgeInfo edge, boolean createNode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/containsNode(Node node)" : {
+      "name" : "containsNode",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/containsNode(Node node)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 147,
+        "startColumn" : 20,
+        "endLine" : 147,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "node",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/containsNode(Node node)/parameter/node",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 147,
+          "startColumn" : 38,
+          "endLine" : 147,
+          "endColumn" : 42
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/containsNode(Node node)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/isLegalAddEdge(Node fromNode, Node toNode, boolean createNode)" : {
+      "name" : "isLegalAddEdge",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/isLegalAddEdge(Node fromNode, Node toNode, boolean createNode)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 380,
+        "startColumn" : 21,
+        "endLine" : 380,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "fromNode",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/isLegalAddEdge(Node fromNode, Node toNode, boolean createNode)/parameter/fromNode",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 380,
+          "startColumn" : 41,
+          "endLine" : 380,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/isLegalAddEdge(Node fromNode, Node toNode, boolean createNode)"
+      }, {
+        "name" : "toNode",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/isLegalAddEdge(Node fromNode, Node toNode, boolean createNode)/parameter/toNode",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 380,
+          "startColumn" : 56,
+          "endLine" : 380,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/isLegalAddEdge(Node fromNode, Node toNode, boolean createNode)"
+      }, {
+        "name" : "createNode",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/isLegalAddEdge(Node fromNode, Node toNode, boolean createNode)/parameter/createNode",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 380,
+          "startColumn" : 72,
+          "endLine" : 380,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/isLegalAddEdge(Node fromNode, Node toNode, boolean createNode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/getBeginNode()" : {
+      "name" : "getBeginNode",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/getBeginNode()",
+      "type" : "java.util.Collection<Node>",
+      "displayedType" : "Collection<Node>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 234,
+        "startColumn" : 29,
+        "endLine" : 234,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/containsEdge(Node fromNode, Node toNode)" : {
+      "name" : "containsEdge",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/containsEdge(Node fromNode, Node toNode)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 164,
+        "startColumn" : 20,
+        "endLine" : 164,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "fromNode",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/containsEdge(Node fromNode, Node toNode)/parameter/fromNode",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 164,
+          "startColumn" : 38,
+          "endLine" : 164,
+          "endColumn" : 46
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/containsEdge(Node fromNode, Node toNode)"
+      }, {
+        "name" : "toNode",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/containsEdge(Node fromNode, Node toNode)/parameter/toNode",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 164,
+          "startColumn" : 53,
+          "endLine" : 164,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/containsEdge(Node fromNode, Node toNode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/topologicalSort()" : {
+      "name" : "topologicalSort",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/topologicalSort()",
+      "type" : "java.util.List<Node>",
+      "displayedType" : "List<Node>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 329,
+        "startColumn" : 23,
+        "endLine" : 329,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/getEdgesCount()" : {
+      "name" : "getEdgesCount",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/getEdgesCount()",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 214,
+        "startColumn" : 16,
+        "endLine" : 214,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/hasCycle()" : {
+      "name" : "hasCycle",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/hasCycle()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 314,
+        "startColumn" : 20,
+        "endLine" : 314,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode)" : {
+      "name" : "addEdge",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 93,
+        "startColumn" : 20,
+        "endLine" : 93,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "fromNode",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode)/parameter/fromNode",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 93,
+          "startColumn" : 33,
+          "endLine" : 93,
+          "endColumn" : 41
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode)"
+      }, {
+        "name" : "toNode",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode)/parameter/toNode",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 93,
+          "startColumn" : 48,
+          "endLine" : 93,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/addEdge(Node fromNode, Node toNode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/toString()" : {
+      "name" : "toString",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/toString()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 509,
+        "startColumn" : 19,
+        "endLine" : 509,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/getNeighborNodes(Node node, java.util.Map<Node, java.util.Map<Node, EdgeInfo>> edges)" : {
+      "name" : "getNeighborNodes",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/getNeighborNodes(Node node, java.util.Map<Node, java.util.Map<Node, EdgeInfo>> edges)",
+      "type" : "java.util.Set<Node>",
+      "displayedType" : "Set<Node>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 423,
+        "startColumn" : 23,
+        "endLine" : 423,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "node",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/getNeighborNodes(Node node, java.util.Map<Node, java.util.Map<Node, EdgeInfo>> edges)/parameter/node",
+        "type" : "Node",
+        "displayedType" : "Node",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 423,
+          "startColumn" : 45,
+          "endLine" : 423,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/getNeighborNodes(Node node, java.util.Map<Node, java.util.Map<Node, EdgeInfo>> edges)"
+      }, {
+        "name" : "edges",
+        "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/getNeighborNodes(Node node, java.util.Map<Node, java.util.Map<Node, EdgeInfo>> edges)/parameter/edges",
+        "type" : "java.util.Map<Node, java.util.Map<Node, EdgeInfo>>",
+        "displayedType" : "Map<Node, Map<Node, EdgeInfo>>",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 423,
+          "startColumn" : 88,
+          "endLine" : 423,
+          "endColumn" : 93
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.graph.DAG/method/getNeighborNodes(Node node, java.util.Map<Node, java.util.Map<Node, EdgeInfo>> edges)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/topologicalSortImpl()" : {
+      "name" : "topologicalSortImpl",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/topologicalSortImpl()",
+      "type" : "java.util.Map$Entry<java.lang.Boolean, java.util.List<Node>>",
+      "displayedType" : "Map.Entry<Boolean, List<Node>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 446,
+        "startColumn" : 44,
+        "endLine" : 446,
+        "endColumn" : 63
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    },
+    "org.apache.dolphinscheduler.common.graph.DAG/method/getAllNodesList()" : {
+      "name" : "getAllNodesList",
+      "key" : "org.apache.dolphinscheduler.common.graph.DAG/method/getAllNodesList()",
+      "type" : "java.util.Set<Node>",
+      "displayedType" : "Set<Node>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 504,
+        "startColumn" : 22,
+        "endLine" : 504,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.graph.DAG"
+    }
+  },
+  "file_path" : "dolphinscheduler-common/src/main/java/org/apache/dolphinscheduler/common/graph/DAG.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

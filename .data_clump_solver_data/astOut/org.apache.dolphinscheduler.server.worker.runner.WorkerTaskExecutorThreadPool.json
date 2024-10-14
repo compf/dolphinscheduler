@@ -1,0 +1,267 @@
+{
+  "name" : "WorkerTaskExecutorThreadPool",
+  "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 35,
+    "startColumn" : 8,
+    "endLine" : 35,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/memberField/workerMessageSender" : {
+      "name" : "workerMessageSender",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/memberField/workerMessageSender",
+      "type" : "org.apache.dolphinscheduler.server.worker.runner.org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender",
+      "displayedType" : "WorkerMessageSender",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 37,
+        "startColumn" : 39,
+        "endLine" : 37,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/memberField/threadPoolExecutor" : {
+      "name" : "threadPoolExecutor",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/memberField/threadPoolExecutor",
+      "type" : "java.util.concurrent.ThreadPoolExecutor",
+      "displayedType" : "ThreadPoolExecutor",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 39,
+        "startColumn" : 38,
+        "endLine" : 39,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/memberField/workerConfig" : {
+      "name" : "workerConfig",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/memberField/workerConfig",
+      "type" : "org.apache.dolphinscheduler.server.worker.runner.org.apache.dolphinscheduler.server.worker.config.WorkerConfig",
+      "displayedType" : "WorkerConfig",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 41,
+        "startColumn" : 32,
+        "endLine" : 41,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/getRunningTaskExecutorSize()" : {
+      "name" : "getRunningTaskExecutorSize",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/getRunningTaskExecutorSize()",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 92,
+        "startColumn" : 16,
+        "endLine" : 92,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/getThreadPoolUsage()" : {
+      "name" : "getThreadPoolUsage",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/getThreadPoolUsage()",
+      "type" : "double",
+      "displayedType" : "double",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 19,
+        "endLine" : 96,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/killTaskBeforeExecuteByInstanceId(java.lang.Integer taskInstanceId)" : {
+      "name" : "killTaskBeforeExecuteByInstanceId",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/killTaskBeforeExecuteByInstanceId(java.lang.Integer taskInstanceId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 103,
+        "startColumn" : 17,
+        "endLine" : 103,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstanceId",
+        "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/killTaskBeforeExecuteByInstanceId(java.lang.Integer taskInstanceId)/parameter/taskInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 103,
+          "startColumn" : 59,
+          "endLine" : 103,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/killTaskBeforeExecuteByInstanceId(java.lang.Integer taskInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/isOverload()" : {
+      "name" : "isOverload",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/isOverload()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 20,
+        "endLine" : 80,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/getWaitingTaskExecutorSize()" : {
+      "name" : "getWaitingTaskExecutorSize",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/getWaitingTaskExecutorSize()",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 84,
+        "startColumn" : 16,
+        "endLine" : 84,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/sendDispatchedEvent(org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor workerTaskExecutor)" : {
+      "name" : "sendDispatchedEvent",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/sendDispatchedEvent(org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor workerTaskExecutor)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 74,
+        "startColumn" : 18,
+        "endLine" : 74,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerTaskExecutor",
+        "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/sendDispatchedEvent(org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor workerTaskExecutor)/parameter/workerTaskExecutor",
+        "type" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor",
+        "displayedType" : "WorkerTaskExecutor",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 74,
+          "startColumn" : 57,
+          "endLine" : 74,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/sendDispatchedEvent(org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor workerTaskExecutor)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/clearTask()" : {
+      "name" : "clearTask",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/clearTask()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 110,
+        "startColumn" : 17,
+        "endLine" : 110,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/submitWorkerTaskExecutor(org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor workerTaskExecutor)" : {
+      "name" : "submitWorkerTaskExecutor",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/submitWorkerTaskExecutor(org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor workerTaskExecutor)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 20,
+        "endLine" : 54,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerTaskExecutor",
+        "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/submitWorkerTaskExecutor(org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor workerTaskExecutor)/parameter/workerTaskExecutor",
+        "type" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor",
+        "displayedType" : "WorkerTaskExecutor",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 54,
+          "startColumn" : 64,
+          "endLine" : 54,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool/method/submitWorkerTaskExecutor(org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor workerTaskExecutor)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool"
+    }
+  },
+  "file_path" : "dolphinscheduler-worker/src/main/java/org/apache/dolphinscheduler/server/worker/runner/WorkerTaskExecutorThreadPool.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

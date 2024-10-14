@@ -1,0 +1,112 @@
+{
+  "name" : "RoundRobinWorkerLoadBalancer",
+  "key" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.RoundRobinWorkerLoadBalancer",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 33,
+    "startColumn" : 8,
+    "endLine" : 33,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.RoundRobinWorkerLoadBalancer/memberField/robinIndex" : {
+      "name" : "robinIndex",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.RoundRobinWorkerLoadBalancer/memberField/robinIndex",
+      "type" : "java.util.concurrent.atomic.AtomicInteger",
+      "displayedType" : "AtomicInteger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 37,
+        "startColumn" : 33,
+        "endLine" : 37,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.RoundRobinWorkerLoadBalancer"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.RoundRobinWorkerLoadBalancer/memberField/workerClusters" : {
+      "name" : "workerClusters",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.RoundRobinWorkerLoadBalancer/memberField/workerClusters",
+      "type" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.org.apache.dolphinscheduler.server.master.cluster.WorkerClusters",
+      "displayedType" : "WorkerClusters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 35,
+        "startColumn" : 34,
+        "endLine" : 35,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.RoundRobinWorkerLoadBalancer"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.RoundRobinWorkerLoadBalancer/method/getType()" : {
+      "name" : "getType",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.RoundRobinWorkerLoadBalancer/method/getType()",
+      "type" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.WorkerLoadBalancerType",
+      "displayedType" : "WorkerLoadBalancerType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 35,
+        "endLine" : 53,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.RoundRobinWorkerLoadBalancer"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.RoundRobinWorkerLoadBalancer/method/select(java.lang.String workerGroup)" : {
+      "name" : "select",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.RoundRobinWorkerLoadBalancer/method/select(java.lang.String workerGroup)",
+      "type" : "java.util.Optional<java.lang.String>",
+      "displayedType" : "Optional<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 29,
+        "endLine" : 44,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerGroup",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.RoundRobinWorkerLoadBalancer/method/select(java.lang.String workerGroup)/parameter/workerGroup",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 44,
+          "startColumn" : 52,
+          "endLine" : 44,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.RoundRobinWorkerLoadBalancer/method/select(java.lang.String workerGroup)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.RoundRobinWorkerLoadBalancer"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/cluster/loadbalancer/RoundRobinWorkerLoadBalancer.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.IWorkerLoadBalancer" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

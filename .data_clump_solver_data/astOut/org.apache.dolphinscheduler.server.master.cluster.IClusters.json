@@ -1,0 +1,482 @@
+{
+  "name" : "IClusters",
+  "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters",
+  "type" : "interface",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 24,
+    "startColumn" : 8,
+    "endLine" : 24,
+    "endColumn" : 17
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : { },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.cluster.IClusters/method/registerListener(org.apache.dolphinscheduler.server.master.cluster.IClusters$IClustersChangeListener<S> listener)" : {
+      "name" : "registerListener",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters/method/registerListener(org.apache.dolphinscheduler.server.master.cluster.IClusters$IClustersChangeListener<S> listener)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 28,
+        "startColumn" : 10,
+        "endLine" : 28,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "listener",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters/method/registerListener(org.apache.dolphinscheduler.server.master.cluster.IClusters$IClustersChangeListener<S> listener)/parameter/listener",
+        "type" : "org.apache.dolphinscheduler.server.master.cluster.IClusters$IClustersChangeListener<S>",
+        "displayedType" : "IClustersChangeListener<S>",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 28,
+          "startColumn" : 54,
+          "endLine" : 28,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters/method/registerListener(org.apache.dolphinscheduler.server.master.cluster.IClusters$IClustersChangeListener<S> listener)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.IClusters/method/getServers()" : {
+      "name" : "getServers",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters/method/getServers()",
+      "type" : "java.util.List<S>",
+      "displayedType" : "List<S>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 26,
+        "startColumn" : 13,
+        "endLine" : 26,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/cluster/IClusters.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : {
+    "org.apache.dolphinscheduler.server.master.cluster.IClusters.IServerMetadata" : {
+      "name" : "IServerMetadata",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IServerMetadata",
+      "type" : "interface",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 30,
+        "startColumn" : 5,
+        "endLine" : 30,
+        "endColumn" : 14
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT", "STATIC" ],
+      "fields" : { },
+      "methods" : {
+        "org.apache.dolphinscheduler.server.master.cluster.IClusters.IServerMetadata/method/getAddress()" : {
+          "name" : "getAddress",
+          "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IServerMetadata/method/getAddress()",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 32,
+            "startColumn" : 16,
+            "endLine" : 32,
+            "endColumn" : 26
+          },
+          "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IServerMetadata"
+        },
+        "org.apache.dolphinscheduler.server.master.cluster.IClusters.IServerMetadata/method/getServerStatus()" : {
+          "name" : "getServerStatus",
+          "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IServerMetadata/method/getServerStatus()",
+          "type" : "org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.common.enums.ServerStatus",
+          "displayedType" : "ServerStatus",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 34,
+            "startColumn" : 22,
+            "endLine" : 34,
+            "endColumn" : 37
+          },
+          "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IServerMetadata"
+        }
+      },
+      "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/cluster/IClusters.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerAddedListener" : {
+      "name" : "ServerAddedListener",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerAddedListener",
+      "type" : "interface",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 48,
+        "startColumn" : 5,
+        "endLine" : 48,
+        "endColumn" : 14
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT", "STATIC" ],
+      "fields" : { },
+      "methods" : {
+        "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerAddedListener/method/onServerRemove(S server)" : {
+          "name" : "onServerRemove",
+          "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerAddedListener/method/onServerRemove(S server)",
+          "type" : "void",
+          "displayedType" : "void",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 51,
+            "startColumn" : 22,
+            "endLine" : 51,
+            "endColumn" : 36
+          },
+          "modifiers" : [ "PUBLIC", "DEFAULT" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "server",
+            "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerAddedListener/method/onServerRemove(S server)/parameter/server",
+            "type" : "S",
+            "displayedType" : "S",
+            "hasTypeVariable" : true,
+            "position" : {
+              "startLine" : 51,
+              "startColumn" : 39,
+              "endLine" : 51,
+              "endColumn" : 45
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerAddedListener/method/onServerRemove(S server)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerAddedListener"
+        },
+        "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerAddedListener/method/onServerUpdate(S server)" : {
+          "name" : "onServerUpdate",
+          "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerAddedListener/method/onServerUpdate(S server)",
+          "type" : "void",
+          "displayedType" : "void",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 56,
+            "startColumn" : 22,
+            "endLine" : 56,
+            "endColumn" : 36
+          },
+          "modifiers" : [ "PUBLIC", "DEFAULT" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "server",
+            "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerAddedListener/method/onServerUpdate(S server)/parameter/server",
+            "type" : "S",
+            "displayedType" : "S",
+            "hasTypeVariable" : true,
+            "position" : {
+              "startLine" : 56,
+              "startColumn" : 39,
+              "endLine" : 56,
+              "endColumn" : 45
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerAddedListener/method/onServerUpdate(S server)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerAddedListener"
+        }
+      },
+      "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/cluster/IClusters.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ "org.apache.dolphinscheduler.server.master.cluster.IClusters$IClustersChangeListener<S>", "S" ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener" : {
+      "name" : "ServerRemovedListener",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener",
+      "type" : "interface",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 5,
+        "endLine" : 62,
+        "endColumn" : 14
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT", "STATIC" ],
+      "fields" : { },
+      "methods" : {
+        "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener/method/onServerRemove(S server)" : {
+          "name" : "onServerRemove",
+          "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener/method/onServerRemove(S server)",
+          "type" : "void",
+          "displayedType" : "void",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 70,
+            "startColumn" : 14,
+            "endLine" : 70,
+            "endColumn" : 28
+          },
+          "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "server",
+            "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener/method/onServerRemove(S server)/parameter/server",
+            "type" : "S",
+            "displayedType" : "S",
+            "hasTypeVariable" : true,
+            "position" : {
+              "startLine" : 70,
+              "startColumn" : 31,
+              "endLine" : 70,
+              "endColumn" : 37
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener/method/onServerRemove(S server)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener"
+        },
+        "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener/method/onServerUpdate(S server)" : {
+          "name" : "onServerUpdate",
+          "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener/method/onServerUpdate(S server)",
+          "type" : "void",
+          "displayedType" : "void",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 73,
+            "startColumn" : 22,
+            "endLine" : 73,
+            "endColumn" : 36
+          },
+          "modifiers" : [ "PUBLIC", "DEFAULT" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "server",
+            "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener/method/onServerUpdate(S server)/parameter/server",
+            "type" : "S",
+            "displayedType" : "S",
+            "hasTypeVariable" : true,
+            "position" : {
+              "startLine" : 73,
+              "startColumn" : 39,
+              "endLine" : 73,
+              "endColumn" : 45
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener/method/onServerUpdate(S server)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener"
+        },
+        "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener/method/onServerAdded(S server)" : {
+          "name" : "onServerAdded",
+          "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener/method/onServerAdded(S server)",
+          "type" : "void",
+          "displayedType" : "void",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 65,
+            "startColumn" : 22,
+            "endLine" : 65,
+            "endColumn" : 35
+          },
+          "modifiers" : [ "PUBLIC", "DEFAULT" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "server",
+            "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener/method/onServerAdded(S server)/parameter/server",
+            "type" : "S",
+            "displayedType" : "S",
+            "hasTypeVariable" : true,
+            "position" : {
+              "startLine" : 65,
+              "startColumn" : 38,
+              "endLine" : 65,
+              "endColumn" : 44
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener/method/onServerAdded(S server)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.ServerRemovedListener"
+        }
+      },
+      "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/cluster/IClusters.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ "org.apache.dolphinscheduler.server.master.cluster.IClusters$IClustersChangeListener<S>", "S" ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener" : {
+      "name" : "IClustersChangeListener",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener",
+      "type" : "interface",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 38,
+        "startColumn" : 5,
+        "endLine" : 38,
+        "endColumn" : 14
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT", "STATIC" ],
+      "fields" : { },
+      "methods" : {
+        "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener/method/onServerAdded(S server)" : {
+          "name" : "onServerAdded",
+          "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener/method/onServerAdded(S server)",
+          "type" : "void",
+          "displayedType" : "void",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 40,
+            "startColumn" : 14,
+            "endLine" : 40,
+            "endColumn" : 27
+          },
+          "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "server",
+            "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener/method/onServerAdded(S server)/parameter/server",
+            "type" : "S",
+            "displayedType" : "S",
+            "hasTypeVariable" : true,
+            "position" : {
+              "startLine" : 40,
+              "startColumn" : 30,
+              "endLine" : 40,
+              "endColumn" : 36
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener/method/onServerAdded(S server)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener"
+        },
+        "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener/method/onServerUpdate(S server)" : {
+          "name" : "onServerUpdate",
+          "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener/method/onServerUpdate(S server)",
+          "type" : "void",
+          "displayedType" : "void",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 44,
+            "startColumn" : 14,
+            "endLine" : 44,
+            "endColumn" : 28
+          },
+          "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "server",
+            "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener/method/onServerUpdate(S server)/parameter/server",
+            "type" : "S",
+            "displayedType" : "S",
+            "hasTypeVariable" : true,
+            "position" : {
+              "startLine" : 44,
+              "startColumn" : 31,
+              "endLine" : 44,
+              "endColumn" : 37
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener/method/onServerUpdate(S server)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener"
+        },
+        "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener/method/onServerRemove(S server)" : {
+          "name" : "onServerRemove",
+          "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener/method/onServerRemove(S server)",
+          "type" : "void",
+          "displayedType" : "void",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 42,
+            "startColumn" : 14,
+            "endLine" : 42,
+            "endColumn" : 28
+          },
+          "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "server",
+            "key" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener/method/onServerRemove(S server)/parameter/server",
+            "type" : "S",
+            "displayedType" : "S",
+            "hasTypeVariable" : true,
+            "position" : {
+              "startLine" : 42,
+              "startColumn" : 31,
+              "endLine" : 42,
+              "endColumn" : 37
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener/method/onServerRemove(S server)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters.IClustersChangeListener"
+        }
+      },
+      "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/cluster/IClusters.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.server.master.cluster.IClusters",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  }
+}

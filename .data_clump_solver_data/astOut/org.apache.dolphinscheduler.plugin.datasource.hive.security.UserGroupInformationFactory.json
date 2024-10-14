@@ -1,0 +1,213 @@
+{
+  "name" : "UserGroupInformationFactory",
+  "key" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 38,
+    "startColumn" : 8,
+    "endLine" : 38,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/memberField/userGroupInformationMap" : {
+      "name" : "userGroupInformationMap",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/memberField/userGroupInformationMap",
+      "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.datasource.hive.security.org.apache.hadoop.security.UserGroupInformation>",
+      "displayedType" : "Map<String, UserGroupInformation>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 60,
+        "endLine" : 42,
+        "endColumn" : 83
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/memberField/kerberosRenewalService" : {
+      "name" : "kerberosRenewalService",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/memberField/kerberosRenewalService",
+      "type" : "java.util.concurrent.ScheduledExecutorService",
+      "displayedType" : "ScheduledExecutorService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 51,
+        "endLine" : 44,
+        "endColumn" : 73
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/memberField/currentLoginTimesMap" : {
+      "name" : "currentLoginTimesMap",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/memberField/currentLoginTimesMap",
+      "type" : "java.util.Map<java.lang.String, java.lang.Integer>",
+      "displayedType" : "Map<String, Integer>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 40,
+        "startColumn" : 47,
+        "endLine" : 40,
+        "endColumn" : 67
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/method/openKerberos()" : {
+      "name" : "openKerberos",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/method/openKerberos()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 119,
+        "startColumn" : 27,
+        "endLine" : 119,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/method/createKerberosUser()" : {
+      "name" : "createKerberosUser",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/method/createKerberosUser()",
+      "type" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.org.apache.hadoop.security.UserGroupInformation",
+      "displayedType" : "UserGroupInformation",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 41,
+        "endLine" : 96,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/method/login(java.lang.String userName)" : {
+      "name" : "login",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/method/login(java.lang.String userName)",
+      "type" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.org.apache.hadoop.security.UserGroupInformation",
+      "displayedType" : "UserGroupInformation",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 53,
+        "endLine" : 65,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/method/login(java.lang.String userName)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 65,
+          "startColumn" : 66,
+          "endLine" : 65,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/method/login(java.lang.String userName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/method/logout(java.lang.String userName)" : {
+      "name" : "logout",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/method/logout(java.lang.String userName)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 37,
+        "endLine" : 79,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/method/logout(java.lang.String userName)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 79,
+          "startColumn" : 51,
+          "endLine" : 79,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/method/logout(java.lang.String userName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/method/createRemoteUser(java.lang.String userName)" : {
+      "name" : "createRemoteUser",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/method/createRemoteUser(java.lang.String userName)",
+      "type" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.org.apache.hadoop.security.UserGroupInformation",
+      "displayedType" : "UserGroupInformation",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 92,
+        "startColumn" : 41,
+        "endLine" : 92,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/method/createRemoteUser(java.lang.String userName)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 92,
+          "startColumn" : 65,
+          "endLine" : 92,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory/method/createRemoteUser(java.lang.String userName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.hive.security.UserGroupInformationFactory"
+    }
+  },
+  "file_path" : "dolphinscheduler-datasource-plugin/dolphinscheduler-datasource-hive/src/main/java/org/apache/dolphinscheduler/plugin/datasource/hive/security/UserGroupInformationFactory.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

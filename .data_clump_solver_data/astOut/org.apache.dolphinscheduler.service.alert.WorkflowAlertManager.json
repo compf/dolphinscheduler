@@ -1,0 +1,720 @@
+{
+  "name" : "WorkflowAlertManager",
+  "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 55,
+    "startColumn" : 8,
+    "endLine" : 55,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/memberField/alertDao" : {
+      "name" : "alertDao",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/memberField/alertDao",
+      "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.AlertDao",
+      "displayedType" : "AlertDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 22,
+        "endLine" : 61,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    },
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/memberField/userMapper" : {
+      "name" : "userMapper",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/memberField/userMapper",
+      "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.mapper.UserMapper",
+      "displayedType" : "UserMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 24,
+        "endLine" : 67,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    },
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/memberField/workflowDefinitionLogMapper" : {
+      "name" : "workflowDefinitionLogMapper",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/memberField/workflowDefinitionLogMapper",
+      "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper",
+      "displayedType" : "WorkflowDefinitionLogMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 41,
+        "endLine" : 64,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendTaskErrorAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)" : {
+      "name" : "sendTaskErrorAlert",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendTaskErrorAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 360,
+        "startColumn" : 17,
+        "endLine" : 360,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendTaskErrorAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 360,
+          "startColumn" : 49,
+          "endLine" : 360,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendTaskErrorAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)"
+      }, {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendTaskErrorAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 360,
+          "startColumn" : 80,
+          "endLine" : 360,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendTaskErrorAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    },
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendWorkflowTimeoutAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)" : {
+      "name" : "sendWorkflowTimeoutAlert",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendWorkflowTimeoutAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 333,
+        "startColumn" : 17,
+        "endLine" : 333,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendWorkflowTimeoutAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 333,
+          "startColumn" : 59,
+          "endLine" : 333,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendWorkflowTimeoutAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)"
+      }, {
+        "name" : "projectUser",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendWorkflowTimeoutAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)/parameter/projectUser",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser",
+        "displayedType" : "ProjectUser",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 333,
+          "startColumn" : 89,
+          "endLine" : 333,
+          "endColumn" : 100
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendWorkflowTimeoutAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    },
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getCommandCnName(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.common.enums.CommandType commandType)" : {
+      "name" : "getCommandCnName",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getCommandCnName(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.common.enums.CommandType commandType)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 20,
+        "endLine" : 75,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "commandType",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getCommandCnName(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.common.enums.CommandType commandType)/parameter/commandType",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.common.enums.CommandType",
+        "displayedType" : "CommandType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 75,
+          "startColumn" : 49,
+          "endLine" : 75,
+          "endColumn" : 60
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getCommandCnName(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.common.enums.CommandType commandType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    },
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendAlertWorkflowInstance(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)" : {
+      "name" : "sendAlertWorkflowInstance",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendAlertWorkflowInstance(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 245,
+        "startColumn" : 17,
+        "endLine" : 245,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendAlertWorkflowInstance(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 245,
+          "startColumn" : 60,
+          "endLine" : 245,
+          "endColumn" : 76
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendAlertWorkflowInstance(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)"
+      }, {
+        "name" : "taskInstances",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendAlertWorkflowInstance(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)/parameter/taskInstances",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance>",
+        "displayedType" : "List<TaskInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 246,
+          "startColumn" : 62,
+          "endLine" : 246,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendAlertWorkflowInstance(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)"
+      }, {
+        "name" : "projectUser",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendAlertWorkflowInstance(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)/parameter/projectUser",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser",
+        "displayedType" : "ProjectUser",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 247,
+          "startColumn" : 55,
+          "endLine" : 247,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendAlertWorkflowInstance(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    },
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/closeAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)" : {
+      "name" : "closeAlert",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/closeAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 306,
+        "startColumn" : 17,
+        "endLine" : 306,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/closeAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 306,
+          "startColumn" : 45,
+          "endLine" : 306,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/closeAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    },
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendWorkflowBlockingAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)" : {
+      "name" : "sendWorkflowBlockingAlert",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendWorkflowBlockingAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 441,
+        "startColumn" : 17,
+        "endLine" : 441,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendWorkflowBlockingAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 441,
+          "startColumn" : 60,
+          "endLine" : 441,
+          "endColumn" : 76
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendWorkflowBlockingAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)"
+      }, {
+        "name" : "projectUser",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendWorkflowBlockingAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)/parameter/projectUser",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser",
+        "displayedType" : "ProjectUser",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 442,
+          "startColumn" : 55,
+          "endLine" : 442,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendWorkflowBlockingAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    },
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendTaskTimeoutAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)" : {
+      "name" : "sendTaskTimeoutAlert",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendTaskTimeoutAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 428,
+        "startColumn" : 17,
+        "endLine" : 428,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendTaskTimeoutAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 428,
+          "startColumn" : 55,
+          "endLine" : 428,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendTaskTimeoutAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)"
+      }, {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendTaskTimeoutAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 429,
+          "startColumn" : 51,
+          "endLine" : 429,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendTaskTimeoutAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)"
+      }, {
+        "name" : "projectUser",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendTaskTimeoutAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)/parameter/projectUser",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser",
+        "displayedType" : "ProjectUser",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 430,
+          "startColumn" : 50,
+          "endLine" : 430,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendTaskTimeoutAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    },
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getContentWorkflowInstance(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)" : {
+      "name" : "getContentWorkflowInstance",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getContentWorkflowInstance(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 109,
+        "startColumn" : 19,
+        "endLine" : 109,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getContentWorkflowInstance(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 109,
+          "startColumn" : 63,
+          "endLine" : 109,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getContentWorkflowInstance(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)"
+      }, {
+        "name" : "taskInstances",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getContentWorkflowInstance(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)/parameter/taskInstances",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance>",
+        "displayedType" : "List<TaskInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 65,
+          "endLine" : 110,
+          "endColumn" : 78
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getContentWorkflowInstance(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)"
+      }, {
+        "name" : "projectUser",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getContentWorkflowInstance(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)/parameter/projectUser",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser",
+        "displayedType" : "ProjectUser",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 111,
+          "startColumn" : 58,
+          "endLine" : 111,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getContentWorkflowInstance(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.ProjectUser projectUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    },
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendAlertWorkerToleranceFault(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> toleranceTaskList)" : {
+      "name" : "sendAlertWorkerToleranceFault",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendAlertWorkerToleranceFault(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> toleranceTaskList)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 220,
+        "startColumn" : 17,
+        "endLine" : 220,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendAlertWorkerToleranceFault(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> toleranceTaskList)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 220,
+          "startColumn" : 64,
+          "endLine" : 220,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendAlertWorkerToleranceFault(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> toleranceTaskList)"
+      }, {
+        "name" : "toleranceTaskList",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendAlertWorkerToleranceFault(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> toleranceTaskList)/parameter/toleranceTaskList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance>",
+        "displayedType" : "List<TaskInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 220,
+          "startColumn" : 101,
+          "endLine" : 220,
+          "endColumn" : 118
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendAlertWorkerToleranceFault(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> toleranceTaskList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    },
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendDataQualityTaskExecuteResultAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.DqExecuteResult result, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)" : {
+      "name" : "sendDataQualityTaskExecuteResultAlert",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendDataQualityTaskExecuteResultAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.DqExecuteResult result, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 340,
+        "startColumn" : 17,
+        "endLine" : 340,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "result",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendDataQualityTaskExecuteResultAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.DqExecuteResult result, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)/parameter/result",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.DqExecuteResult",
+        "displayedType" : "DqExecuteResult",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 340,
+          "startColumn" : 71,
+          "endLine" : 340,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendDataQualityTaskExecuteResultAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.DqExecuteResult result, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)"
+      }, {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendDataQualityTaskExecuteResultAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.DqExecuteResult result, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 340,
+          "startColumn" : 96,
+          "endLine" : 340,
+          "endColumn" : 112
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/sendDataQualityTaskExecuteResultAlert(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.DqExecuteResult result, org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    },
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getTaskAlterContent(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)" : {
+      "name" : "getTaskAlterContent",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getTaskAlterContent(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 409,
+        "startColumn" : 19,
+        "endLine" : 409,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getTaskAlterContent(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 409,
+          "startColumn" : 52,
+          "endLine" : 409,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getTaskAlterContent(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    },
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getDataQualityAlterContent(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.DqExecuteResult result)" : {
+      "name" : "getDataQualityAlterContent",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getDataQualityAlterContent(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.DqExecuteResult result)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 378,
+        "startColumn" : 19,
+        "endLine" : 378,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "result",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getDataQualityAlterContent(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.DqExecuteResult result)/parameter/result",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.DqExecuteResult",
+        "displayedType" : "DqExecuteResult",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 378,
+          "startColumn" : 62,
+          "endLine" : 378,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getDataQualityAlterContent(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.DqExecuteResult result)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    },
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/isNeedToSendWarning(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)" : {
+      "name" : "isNeedToSendWarning",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/isNeedToSendWarning(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 274,
+        "startColumn" : 20,
+        "endLine" : 274,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/isNeedToSendWarning(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 274,
+          "startColumn" : 57,
+          "endLine" : 274,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/isNeedToSendWarning(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    },
+    "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getWorkerToleranceContent(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> toleranceTaskList)" : {
+      "name" : "getWorkerToleranceContent",
+      "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getWorkerToleranceContent(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> toleranceTaskList)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 184,
+        "startColumn" : 20,
+        "endLine" : 184,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getWorkerToleranceContent(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> toleranceTaskList)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 184,
+          "startColumn" : 63,
+          "endLine" : 184,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getWorkerToleranceContent(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> toleranceTaskList)"
+      }, {
+        "name" : "toleranceTaskList",
+        "key" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getWorkerToleranceContent(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> toleranceTaskList)/parameter/toleranceTaskList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance>",
+        "displayedType" : "List<TaskInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 184,
+          "startColumn" : 100,
+          "endLine" : 184,
+          "endColumn" : 117
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager/method/getWorkerToleranceContent(org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance, java.util.List<org.apache.dolphinscheduler.service.alert.org.apache.dolphinscheduler.dao.entity.TaskInstance> toleranceTaskList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.alert.WorkflowAlertManager"
+    }
+  },
+  "file_path" : "dolphinscheduler-service/src/main/java/org/apache/dolphinscheduler/service/alert/WorkflowAlertManager.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

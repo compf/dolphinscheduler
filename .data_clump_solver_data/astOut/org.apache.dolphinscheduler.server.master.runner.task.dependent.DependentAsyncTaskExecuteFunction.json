@@ -1,0 +1,339 @@
+{
+  "name" : "DependentAsyncTaskExecuteFunction",
+  "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 59,
+    "startColumn" : 8,
+    "endLine" : 59,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/dependResultMap" : {
+      "name" : "dependResultMap",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/dependResultMap",
+      "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.server.master.runner.task.dependent.org.apache.dolphinscheduler.plugin.task.api.enums.DependResult>",
+      "displayedType" : "Map<String, DependResult>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 73,
+        "startColumn" : 45,
+        "endLine" : 73,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/workflowDefinitionDao" : {
+      "name" : "workflowDefinitionDao",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/workflowDefinitionDao",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.org.apache.dolphinscheduler.dao.repository.WorkflowDefinitionDao",
+      "displayedType" : "WorkflowDefinitionDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 41,
+        "endLine" : 66,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/taskExecutionContext" : {
+      "name" : "taskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/taskExecutionContext",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+      "displayedType" : "TaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 40,
+        "endLine" : 63,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/taskDefinitionDao" : {
+      "name" : "taskDefinitionDao",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/taskDefinitionDao",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.org.apache.dolphinscheduler.dao.repository.TaskDefinitionDao",
+      "displayedType" : "TaskDefinitionDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 37,
+        "endLine" : 67,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/dependentDate" : {
+      "name" : "dependentDate",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/dependentDate",
+      "type" : "java.util.Date",
+      "displayedType" : "Date",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 24,
+        "endLine" : 71,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/workflowInstance" : {
+      "name" : "workflowInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/workflowInstance",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+      "displayedType" : "WorkflowInstance",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 70,
+        "startColumn" : 36,
+        "endLine" : 70,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/taskInstanceDao" : {
+      "name" : "taskInstanceDao",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/taskInstanceDao",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.org.apache.dolphinscheduler.dao.repository.TaskInstanceDao",
+      "displayedType" : "TaskInstanceDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 35,
+        "endLine" : 68,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/dependentTaskList" : {
+      "name" : "dependentTaskList",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/dependentTaskList",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dependent.org.apache.dolphinscheduler.server.master.utils.DependentExecute>",
+      "displayedType" : "List<DependentExecute>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 42,
+        "endLine" : 72,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/dependentParameters" : {
+      "name" : "dependentParameters",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/dependentParameters",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.org.apache.dolphinscheduler.plugin.task.api.parameters.DependentParameters",
+      "displayedType" : "DependentParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 39,
+        "endLine" : 64,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/projectDao" : {
+      "name" : "projectDao",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/projectDao",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.org.apache.dolphinscheduler.dao.repository.ProjectDao",
+      "displayedType" : "ProjectDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 30,
+        "endLine" : 65,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/DEFAULT_STATE_CHECK_INTERVAL" : {
+      "name" : "DEFAULT_STATE_CHECK_INTERVAL",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/DEFAULT_STATE_CHECK_INTERVAL",
+      "type" : "java.time.Duration",
+      "displayedType" : "Duration",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 35,
+        "endLine" : 61,
+        "endColumn" : 63
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/dependVarPoolPropertyMap" : {
+      "name" : "dependVarPoolPropertyMap",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/memberField/dependVarPoolPropertyMap",
+      "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.server.master.runner.task.dependent.org.apache.dolphinscheduler.plugin.task.api.model.Property>",
+      "displayedType" : "Map<String, Property>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 74,
+        "startColumn" : 41,
+        "endLine" : 74,
+        "endColumn" : 65
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/method/isAllDependentTaskFinished()" : {
+      "name" : "isAllDependentTaskFinished",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/method/isAllDependentTaskFinished()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 219,
+        "startColumn" : 21,
+        "endLine" : 219,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/method/getAsyncTaskStateCheckInterval()" : {
+      "name" : "getAsyncTaskStateCheckInterval",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/method/getAsyncTaskStateCheckInterval()",
+      "type" : "java.time.Duration",
+      "displayedType" : "Duration",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 243,
+        "startColumn" : 30,
+        "endLine" : 243,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/method/calculateDependResult()" : {
+      "name" : "calculateDependResult",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/method/calculateDependResult()",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.org.apache.dolphinscheduler.plugin.task.api.enums.DependResult",
+      "displayedType" : "DependResult",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 201,
+        "startColumn" : 26,
+        "endLine" : 201,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/method/calculateDependentDate()" : {
+      "name" : "calculateDependentDate",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/method/calculateDependentDate()",
+      "type" : "java.util.Date",
+      "displayedType" : "Date",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 115,
+        "startColumn" : 18,
+        "endLine" : 115,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/method/getAsyncTaskExecutionStatus()" : {
+      "name" : "getAsyncTaskExecutionStatus",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/method/getAsyncTaskExecutionStatus()",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.AsyncTaskExecutionStatus",
+      "displayedType" : "AsyncTaskExecutionStatus",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 99,
+        "startColumn" : 46,
+        "endLine" : 99,
+        "endColumn" : 73
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/method/initializeDependentTaskList()" : {
+      "name" : "initializeDependentTaskList",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction/method/initializeDependentTaskList()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dependent.org.apache.dolphinscheduler.server.master.utils.DependentExecute>",
+      "displayedType" : "List<DependentExecute>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 123,
+        "startColumn" : 36,
+        "endLine" : 123,
+        "endColumn" : 63
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dependent.DependentAsyncTaskExecuteFunction"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/runner/task/dependent/DependentAsyncTaskExecuteFunction.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.master.runner.task.dependent.org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecuteFunction" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

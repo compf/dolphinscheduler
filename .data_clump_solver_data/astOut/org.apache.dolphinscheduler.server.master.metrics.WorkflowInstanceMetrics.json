@@ -1,0 +1,291 @@
+{
+  "name" : "WorkflowInstanceMetrics",
+  "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 36,
+    "startColumn" : 8,
+    "endLine" : 36,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/memberField/workflowInstanceGenerateTimer" : {
+      "name" : "workflowInstanceGenerateTimer",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/memberField/workflowInstanceGenerateTimer",
+      "type" : "org.apache.dolphinscheduler.server.master.metrics.io.micrometer.core.instrument.Timer",
+      "displayedType" : "Timer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 25,
+        "endLine" : 56,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/memberField/workflowInstanceStates" : {
+      "name" : "workflowInstanceStates",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/memberField/workflowInstanceStates",
+      "type" : "java.util.Set<java.lang.String>",
+      "displayedType" : "Set<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 38,
+        "startColumn" : 31,
+        "endLine" : 38,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/memberField/commandQueryTimer" : {
+      "name" : "commandQueryTimer",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/memberField/commandQueryTimer",
+      "type" : "org.apache.dolphinscheduler.server.master.metrics.io.micrometer.core.instrument.Timer",
+      "displayedType" : "Timer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 25,
+        "endLine" : 51,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/incWorkflowInstanceByStateAndWorkflowDefinitionCode(java.lang.String state, java.lang.String workflowDefinitionCode)" : {
+      "name" : "incWorkflowInstanceByStateAndWorkflowDefinitionCode",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/incWorkflowInstanceByStateAndWorkflowDefinitionCode(java.lang.String state, java.lang.String workflowDefinitionCode)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 17,
+        "endLine" : 81,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "state",
+        "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/incWorkflowInstanceByStateAndWorkflowDefinitionCode(java.lang.String state, java.lang.String workflowDefinitionCode)/parameter/state",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 81,
+          "startColumn" : 82,
+          "endLine" : 81,
+          "endColumn" : 87
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/incWorkflowInstanceByStateAndWorkflowDefinitionCode(java.lang.String state, java.lang.String workflowDefinitionCode)"
+      }, {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/incWorkflowInstanceByStateAndWorkflowDefinitionCode(java.lang.String state, java.lang.String workflowDefinitionCode)/parameter/workflowDefinitionCode",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 82,
+          "startColumn" : 82,
+          "endLine" : 82,
+          "endColumn" : 104
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/incWorkflowInstanceByStateAndWorkflowDefinitionCode(java.lang.String state, java.lang.String workflowDefinitionCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/recordWorkflowInstanceGenerateTime(long milliseconds)" : {
+      "name" : "recordWorkflowInstanceGenerateTime",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/recordWorkflowInstanceGenerateTime(long milliseconds)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 17,
+        "endLine" : 65,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "milliseconds",
+        "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/recordWorkflowInstanceGenerateTime(long milliseconds)/parameter/milliseconds",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 65,
+          "startColumn" : 57,
+          "endLine" : 65,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/recordWorkflowInstanceGenerateTime(long milliseconds)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/registerWorkflowInstanceRunningGauge(java.util.function.Supplier<java.lang.Number> function)" : {
+      "name" : "registerWorkflowInstanceRunningGauge",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/registerWorkflowInstanceRunningGauge(java.util.function.Supplier<java.lang.Number> function)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 30,
+        "endLine" : 69,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PUBLIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "function",
+        "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/registerWorkflowInstanceRunningGauge(java.util.function.Supplier<java.lang.Number> function)/parameter/function",
+        "type" : "java.util.function.Supplier<java.lang.Number>",
+        "displayedType" : "Supplier<Number>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 69,
+          "startColumn" : 84,
+          "endLine" : 69,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/registerWorkflowInstanceRunningGauge(java.util.function.Supplier<java.lang.Number> function)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/registerWorkflowInstanceResubmitGauge(java.util.function.Supplier<java.lang.Number> function)" : {
+      "name" : "registerWorkflowInstanceResubmitGauge",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/registerWorkflowInstanceResubmitGauge(java.util.function.Supplier<java.lang.Number> function)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 30,
+        "endLine" : 75,
+        "endColumn" : 67
+      },
+      "modifiers" : [ "PUBLIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "function",
+        "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/registerWorkflowInstanceResubmitGauge(java.util.function.Supplier<java.lang.Number> function)/parameter/function",
+        "type" : "java.util.function.Supplier<java.lang.Number>",
+        "displayedType" : "Supplier<Number>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 75,
+          "startColumn" : 85,
+          "endLine" : 75,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/registerWorkflowInstanceResubmitGauge(java.util.function.Supplier<java.lang.Number> function)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/recordCommandQueryTime(long milliseconds)" : {
+      "name" : "recordCommandQueryTime",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/recordCommandQueryTime(long milliseconds)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 17,
+        "endLine" : 61,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "milliseconds",
+        "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/recordCommandQueryTime(long milliseconds)/parameter/milliseconds",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 61,
+          "startColumn" : 45,
+          "endLine" : 61,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/recordCommandQueryTime(long milliseconds)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/cleanUpWorkflowInstanceCountMetricsByDefinitionCode(java.lang.Long workflowDefinitionCode)" : {
+      "name" : "cleanUpWorkflowInstanceCountMetricsByDefinitionCode",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/cleanUpWorkflowInstanceCountMetricsByDefinitionCode(java.lang.Long workflowDefinitionCode)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 93,
+        "startColumn" : 17,
+        "endLine" : 93,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/cleanUpWorkflowInstanceCountMetricsByDefinitionCode(java.lang.Long workflowDefinitionCode)/parameter/workflowDefinitionCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 93,
+          "startColumn" : 80,
+          "endLine" : 93,
+          "endColumn" : 102
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics/method/cleanUpWorkflowInstanceCountMetricsByDefinitionCode(java.lang.Long workflowDefinitionCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.WorkflowInstanceMetrics"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/metrics/WorkflowInstanceMetrics.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

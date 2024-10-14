@@ -1,0 +1,129 @@
+{
+  "name" : "DynamicWeightedRoundRobinWorkerLoadBalancer",
+  "key" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 42,
+    "startColumn" : 8,
+    "endLine" : 42,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer/memberField/robinIndex" : {
+      "name" : "robinIndex",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer/memberField/robinIndex",
+      "type" : "java.util.concurrent.atomic.AtomicInteger",
+      "displayedType" : "AtomicInteger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 46,
+        "startColumn" : 33,
+        "endLine" : 46,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer/memberField/workerClusters" : {
+      "name" : "workerClusters",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer/memberField/workerClusters",
+      "type" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.org.apache.dolphinscheduler.server.master.cluster.WorkerClusters",
+      "displayedType" : "WorkerClusters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 34,
+        "endLine" : 44,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer/memberField/weightedServerMap" : {
+      "name" : "weightedServerMap",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer/memberField/weightedServerMap",
+      "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.server.master.cluster.loadbalancer.WeightedServer<org.apache.dolphinscheduler.server.master.cluster.loadbalancer.org.apache.dolphinscheduler.server.master.cluster.WorkerServerMetadata>>",
+      "displayedType" : "Map<String, WeightedServer<WorkerServerMetadata>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 48,
+        "startColumn" : 63,
+        "endLine" : 48,
+        "endColumn" : 80
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer/method/getType()" : {
+      "name" : "getType",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer/method/getType()",
+      "type" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.WorkerLoadBalancerType",
+      "displayedType" : "WorkerLoadBalancerType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 112,
+        "startColumn" : 35,
+        "endLine" : 112,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer/method/select(java.lang.String workerGroup)" : {
+      "name" : "select",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer/method/select(java.lang.String workerGroup)",
+      "type" : "java.util.Optional<java.lang.String>",
+      "displayedType" : "Optional<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 29,
+        "endLine" : 81,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerGroup",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer/method/select(java.lang.String workerGroup)/parameter/workerGroup",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 81,
+          "startColumn" : 52,
+          "endLine" : 81,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer/method/select(java.lang.String workerGroup)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.DynamicWeightedRoundRobinWorkerLoadBalancer"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/cluster/loadbalancer/DynamicWeightedRoundRobinWorkerLoadBalancer.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.master.cluster.loadbalancer.IWorkerLoadBalancer" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,651 @@
+{
+  "name" : "LogUtils",
+  "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 58,
+    "startColumn" : 8,
+    "endLine" : 58,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/memberField/TASK_INSTANCE_LOG_BASE_PATH" : {
+      "name" : "TASK_INSTANCE_LOG_BASE_PATH",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/memberField/TASK_INSTANCE_LOG_BASE_PATH",
+      "type" : "java.nio.file.Path",
+      "displayedType" : "Path",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 60,
+        "startColumn" : 25,
+        "endLine" : 60,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/memberField/APPLICATION_REGEX" : {
+      "name" : "APPLICATION_REGEX",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/memberField/APPLICATION_REGEX",
+      "type" : "java.util.regex.Pattern",
+      "displayedType" : "Pattern",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 34,
+        "endLine" : 63,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/memberField/TASK_INSTANCE_LOG_FULL_PATH_MDC_KEY" : {
+      "name" : "TASK_INSTANCE_LOG_FULL_PATH_MDC_KEY",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/memberField/TASK_INSTANCE_LOG_FULL_PATH_MDC_KEY",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 32,
+        "endLine" : 61,
+        "endColumn" : 67
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/removeWorkflowAndTaskInstanceIdMDC()" : {
+      "name" : "removeWorkflowAndTaskInstanceIdMDC",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/removeWorkflowAndTaskInstanceIdMDC()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 216,
+        "startColumn" : 24,
+        "endLine" : 216,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setTaskInstanceLogFullPathMDC(java.lang.String taskInstanceLogFullPath)" : {
+      "name" : "setTaskInstanceLogFullPathMDC",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setTaskInstanceLogFullPathMDC(java.lang.String taskInstanceLogFullPath)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 190,
+        "startColumn" : 24,
+        "endLine" : 190,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstanceLogFullPath",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setTaskInstanceLogFullPathMDC(java.lang.String taskInstanceLogFullPath)/parameter/taskInstanceLogFullPath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 190,
+          "startColumn" : 61,
+          "endLine" : 190,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setTaskInstanceLogFullPathMDC(java.lang.String taskInstanceLogFullPath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/removeTaskInstanceIdMDC()" : {
+      "name" : "removeTaskInstanceIdMDC",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/removeTaskInstanceIdMDC()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 225,
+        "startColumn" : 24,
+        "endLine" : 225,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPath(java.util.Date taskFirstSubmitTime, java.lang.Long workflowDefinitionCode, int workflowDefinitionVersion, int workflowInstanceId, int taskInstanceId)" : {
+      "name" : "getTaskInstanceLogFullPath",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPath(java.util.Date taskFirstSubmitTime, java.lang.Long workflowDefinitionCode, int workflowDefinitionVersion, int workflowInstanceId, int taskInstanceId)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 109,
+        "startColumn" : 26,
+        "endLine" : 109,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskFirstSubmitTime",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPath(java.util.Date taskFirstSubmitTime, java.lang.Long workflowDefinitionCode, int workflowDefinitionVersion, int workflowInstanceId, int taskInstanceId)/parameter/taskFirstSubmitTime",
+        "type" : "java.util.Date",
+        "displayedType" : "Date",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 109,
+          "startColumn" : 58,
+          "endLine" : 109,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPath(java.util.Date taskFirstSubmitTime, java.lang.Long workflowDefinitionCode, int workflowDefinitionVersion, int workflowInstanceId, int taskInstanceId)"
+      }, {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPath(java.util.Date taskFirstSubmitTime, java.lang.Long workflowDefinitionCode, int workflowDefinitionVersion, int workflowInstanceId, int taskInstanceId)/parameter/workflowDefinitionCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 58,
+          "endLine" : 110,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPath(java.util.Date taskFirstSubmitTime, java.lang.Long workflowDefinitionCode, int workflowDefinitionVersion, int workflowInstanceId, int taskInstanceId)"
+      }, {
+        "name" : "workflowDefinitionVersion",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPath(java.util.Date taskFirstSubmitTime, java.lang.Long workflowDefinitionCode, int workflowDefinitionVersion, int workflowInstanceId, int taskInstanceId)/parameter/workflowDefinitionVersion",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 111,
+          "startColumn" : 57,
+          "endLine" : 111,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPath(java.util.Date taskFirstSubmitTime, java.lang.Long workflowDefinitionCode, int workflowDefinitionVersion, int workflowInstanceId, int taskInstanceId)"
+      }, {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPath(java.util.Date taskFirstSubmitTime, java.lang.Long workflowDefinitionCode, int workflowDefinitionVersion, int workflowInstanceId, int taskInstanceId)/parameter/workflowInstanceId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 112,
+          "startColumn" : 57,
+          "endLine" : 112,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPath(java.util.Date taskFirstSubmitTime, java.lang.Long workflowDefinitionCode, int workflowDefinitionVersion, int workflowInstanceId, int taskInstanceId)"
+      }, {
+        "name" : "taskInstanceId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPath(java.util.Date taskFirstSubmitTime, java.lang.Long workflowDefinitionCode, int workflowDefinitionVersion, int workflowInstanceId, int taskInstanceId)/parameter/taskInstanceId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 113,
+          "startColumn" : 57,
+          "endLine" : 113,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPath(java.util.Date taskFirstSubmitTime, java.lang.Long workflowDefinitionCode, int workflowDefinitionVersion, int workflowInstanceId, int taskInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPath(org.apache.dolphinscheduler.plugin.task.api.utils.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)" : {
+      "name" : "getTaskInstanceLogFullPath",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPath(org.apache.dolphinscheduler.plugin.task.api.utils.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 89,
+        "startColumn" : 26,
+        "endLine" : 89,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPath(org.apache.dolphinscheduler.plugin.task.api.utils.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)/parameter/taskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.plugin.task.api.utils.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+        "displayedType" : "TaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 89,
+          "startColumn" : 74,
+          "endLine" : 89,
+          "endColumn" : 94
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPath(org.apache.dolphinscheduler.plugin.task.api.utils.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getAppIds(java.lang.String logPath, java.lang.String appInfoPath, java.lang.String fetchWay)" : {
+      "name" : "getAppIds",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getAppIds(java.lang.String logPath, java.lang.String appInfoPath, java.lang.String fetchWay)",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 73,
+        "startColumn" : 25,
+        "endLine" : 73,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "logPath",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getAppIds(java.lang.String logPath, java.lang.String appInfoPath, java.lang.String fetchWay)/parameter/logPath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 73,
+          "startColumn" : 42,
+          "endLine" : 73,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getAppIds(java.lang.String logPath, java.lang.String appInfoPath, java.lang.String fetchWay)"
+      }, {
+        "name" : "appInfoPath",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getAppIds(java.lang.String logPath, java.lang.String appInfoPath, java.lang.String fetchWay)/parameter/appInfoPath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 73,
+          "startColumn" : 58,
+          "endLine" : 73,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getAppIds(java.lang.String logPath, java.lang.String appInfoPath, java.lang.String fetchWay)"
+      }, {
+        "name" : "fetchWay",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getAppIds(java.lang.String logPath, java.lang.String appInfoPath, java.lang.String fetchWay)/parameter/fetchWay",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 73,
+          "startColumn" : 78,
+          "endLine" : 73,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getAppIds(java.lang.String logPath, java.lang.String appInfoPath, java.lang.String fetchWay)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/removeWorkflowInstanceIdMDC()" : {
+      "name" : "removeWorkflowInstanceIdMDC",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/removeWorkflowInstanceIdMDC()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 221,
+        "startColumn" : 24,
+        "endLine" : 221,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPathMdc()" : {
+      "name" : "getTaskInstanceLogFullPathMdc",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogFullPathMdc()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 186,
+        "startColumn" : 26,
+        "endLine" : 186,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setTaskInstanceIdMDC(java.lang.Integer taskInstanceId)" : {
+      "name" : "setTaskInstanceIdMDC",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setTaskInstanceIdMDC(java.lang.Integer taskInstanceId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 212,
+        "startColumn" : 24,
+        "endLine" : 212,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstanceId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setTaskInstanceIdMDC(java.lang.Integer taskInstanceId)/parameter/taskInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 212,
+          "startColumn" : 53,
+          "endLine" : 212,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setTaskInstanceIdMDC(java.lang.Integer taskInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getAppIdsFromLogFile(java.lang.String logPath)" : {
+      "name" : "getAppIdsFromLogFile",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getAppIdsFromLogFile(java.lang.String logPath)",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 163,
+        "startColumn" : 25,
+        "endLine" : 163,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "logPath",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getAppIdsFromLogFile(java.lang.String logPath)/parameter/logPath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 163,
+          "startColumn" : 62,
+          "endLine" : 163,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getAppIdsFromLogFile(java.lang.String logPath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setWorkflowInstanceIdMDC(java.lang.Integer workflowInstanceId)" : {
+      "name" : "setWorkflowInstanceIdMDC",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setWorkflowInstanceIdMDC(java.lang.Integer workflowInstanceId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 208,
+        "startColumn" : 24,
+        "endLine" : 208,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setWorkflowInstanceIdMDC(java.lang.Integer workflowInstanceId)/parameter/workflowInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 208,
+          "startColumn" : 57,
+          "endLine" : 208,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setWorkflowInstanceIdMDC(java.lang.Integer workflowInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogBasePath()" : {
+      "name" : "getTaskInstanceLogBasePath",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getTaskInstanceLogBasePath()",
+      "type" : "java.nio.file.Path",
+      "displayedType" : "Path",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 134,
+        "startColumn" : 24,
+        "endLine" : 134,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/removeTaskInstanceLogFullPathMDC()" : {
+      "name" : "removeTaskInstanceLogFullPathMDC",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/removeTaskInstanceLogFullPathMDC()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 198,
+        "startColumn" : 24,
+        "endLine" : 198,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getAppIdsFromAppInfoFile(java.lang.String appInfoPath)" : {
+      "name" : "getAppIdsFromAppInfoFile",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getAppIdsFromAppInfoFile(java.lang.String appInfoPath)",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 144,
+        "startColumn" : 25,
+        "endLine" : 144,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "appInfoPath",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getAppIdsFromAppInfoFile(java.lang.String appInfoPath)/parameter/appInfoPath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 144,
+          "startColumn" : 57,
+          "endLine" : 144,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/getAppIdsFromAppInfoFile(java.lang.String appInfoPath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setWorkflowAndTaskInstanceIDMDC(java.lang.Integer workflowInstanceId, java.lang.Integer taskInstanceId)" : {
+      "name" : "setWorkflowAndTaskInstanceIDMDC",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setWorkflowAndTaskInstanceIDMDC(java.lang.Integer workflowInstanceId, java.lang.Integer taskInstanceId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 202,
+        "startColumn" : 24,
+        "endLine" : 202,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setWorkflowAndTaskInstanceIDMDC(java.lang.Integer workflowInstanceId, java.lang.Integer taskInstanceId)/parameter/workflowInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 202,
+          "startColumn" : 64,
+          "endLine" : 202,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setWorkflowAndTaskInstanceIDMDC(java.lang.Integer workflowInstanceId, java.lang.Integer taskInstanceId)"
+      }, {
+        "name" : "taskInstanceId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setWorkflowAndTaskInstanceIDMDC(java.lang.Integer workflowInstanceId, java.lang.Integer taskInstanceId)/parameter/taskInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 203,
+          "startColumn" : 64,
+          "endLine" : 203,
+          "endColumn" : 78
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils/method/setWorkflowAndTaskInstanceIDMDC(java.lang.Integer workflowInstanceId, java.lang.Integer taskInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-api/src/main/java/org/apache/dolphinscheduler/plugin/task/api/utils/LogUtils.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils.MDCAutoClosableContext" : {
+      "name" : "MDCAutoClosableContext",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils.MDCAutoClosableContext",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 230,
+        "startColumn" : 19,
+        "endLine" : 230,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils.MDCAutoClosableContext/memberField/closeAction" : {
+          "name" : "closeAction",
+          "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils.MDCAutoClosableContext/memberField/closeAction",
+          "type" : "java.lang.Runnable",
+          "displayedType" : "Runnable",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 232,
+            "startColumn" : 32,
+            "endLine" : 232,
+            "endColumn" : 43
+          },
+          "modifiers" : [ "PRIVATE", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils.MDCAutoClosableContext"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils.MDCAutoClosableContext/method/close()" : {
+          "name" : "close",
+          "key" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils.MDCAutoClosableContext/method/close()",
+          "type" : "void",
+          "displayedType" : "void",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 235,
+            "startColumn" : 21,
+            "endLine" : 235,
+            "endColumn" : 26
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils.MDCAutoClosableContext"
+        }
+      },
+      "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-api/src/main/java/org/apache/dolphinscheduler/plugin/task/api/utils/LogUtils.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ "java.lang.AutoCloseable" ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.plugin.task.api.utils.LogUtils",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : { }
+}

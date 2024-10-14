@@ -1,0 +1,182 @@
+{
+  "name" : "SystemEventBusFireWorker",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 41,
+    "startColumn" : 8,
+    "endLine" : 41,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/memberField/systemEventHandlers" : {
+      "name" : "systemEventHandlers",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/memberField/systemEventHandlers",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.server.master.engine.system.event.ISystemEventHandler>",
+      "displayedType" : "List<ISystemEventHandler>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 50,
+        "startColumn" : 39,
+        "endLine" : 50,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/memberField/systemEventBus" : {
+      "name" : "systemEventBus",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/memberField/systemEventBus",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus",
+      "displayedType" : "SystemEventBus",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 28,
+        "endLine" : 44,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/memberField/flag" : {
+      "name" : "flag",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/memberField/flag",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 28,
+        "endLine" : 52,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/memberField/failoverCoordinator" : {
+      "name" : "failoverCoordinator",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/memberField/failoverCoordinator",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.server.master.failover.FailoverCoordinator",
+      "displayedType" : "FailoverCoordinator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 33,
+        "endLine" : 47,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/method/run()" : {
+      "name" : "run",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/method/run()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 17,
+        "endLine" : 66,
+        "endColumn" : 20
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/method/fireSystemEvent(org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.server.master.engine.system.event.AbstractSystemEvent systemEvent)" : {
+      "name" : "fireSystemEvent",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/method/fireSystemEvent(org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.server.master.engine.system.event.AbstractSystemEvent systemEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 18,
+        "endLine" : 91,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "systemEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/method/fireSystemEvent(org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.server.master.engine.system.event.AbstractSystemEvent systemEvent)/parameter/systemEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.server.master.engine.system.event.AbstractSystemEvent",
+        "displayedType" : "AbstractSystemEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 91,
+          "startColumn" : 60,
+          "endLine" : 91,
+          "endColumn" : 71
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/method/fireSystemEvent(org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.server.master.engine.system.event.AbstractSystemEvent systemEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/method/start()" : {
+      "name" : "start",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/method/start()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 17,
+        "endLine" : 59,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 107,
+        "startColumn" : 17,
+        "endLine" : 107,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/system/SystemEventBusFireWorker.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "java.lang.AutoCloseable" ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.common.thread.BaseDaemonThread" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

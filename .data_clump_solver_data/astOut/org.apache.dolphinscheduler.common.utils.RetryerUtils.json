@@ -1,0 +1,211 @@
+{
+  "name" : "RetryerUtils",
+  "key" : "org.apache.dolphinscheduler.common.utils.RetryerUtils",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 32,
+    "startColumn" : 8,
+    "endLine" : 32,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.common.utils.RetryerUtils/memberField/defaultRetryerResultNoCheck" : {
+      "name" : "defaultRetryerResultNoCheck",
+      "key" : "org.apache.dolphinscheduler.common.utils.RetryerUtils/memberField/defaultRetryerResultNoCheck",
+      "type" : "org.apache.dolphinscheduler.common.utils.com.github.rholder.retry.Retryer<java.lang.Boolean>",
+      "displayedType" : "Retryer<Boolean>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 35,
+        "startColumn" : 37,
+        "endLine" : 35,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.RetryerUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.RetryerUtils/memberField/defaultRetryerResultCheck" : {
+      "name" : "defaultRetryerResultCheck",
+      "key" : "org.apache.dolphinscheduler.common.utils.RetryerUtils/memberField/defaultRetryerResultCheck",
+      "type" : "org.apache.dolphinscheduler.common.utils.com.github.rholder.retry.Retryer<java.lang.Boolean>",
+      "displayedType" : "Retryer<Boolean>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 34,
+        "startColumn" : 37,
+        "endLine" : 34,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.RetryerUtils"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/getDefaultRetryer(boolean checkResult)" : {
+      "name" : "getDefaultRetryer",
+      "key" : "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/getDefaultRetryer(boolean checkResult)",
+      "type" : "org.apache.dolphinscheduler.common.utils.com.github.rholder.retry.Retryer<java.lang.Boolean>",
+      "displayedType" : "Retryer<Boolean>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 36,
+        "endLine" : 62,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "checkResult",
+        "key" : "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/getDefaultRetryer(boolean checkResult)/parameter/checkResult",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 62,
+          "startColumn" : 62,
+          "endLine" : 62,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/getDefaultRetryer(boolean checkResult)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.RetryerUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/getDefaultRetryer()" : {
+      "name" : "getDefaultRetryer",
+      "key" : "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/getDefaultRetryer()",
+      "type" : "org.apache.dolphinscheduler.common.utils.com.github.rholder.retry.Retryer<java.lang.Boolean>",
+      "displayedType" : "Retryer<Boolean>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 73,
+        "startColumn" : 36,
+        "endLine" : 73,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.RetryerUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/retryCall(java.util.concurrent.Callable<java.lang.Boolean> callable)" : {
+      "name" : "retryCall",
+      "key" : "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/retryCall(java.util.concurrent.Callable<java.lang.Boolean> callable)",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 109,
+        "startColumn" : 27,
+        "endLine" : 109,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "callable",
+        "key" : "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/retryCall(java.util.concurrent.Callable<java.lang.Boolean> callable)/parameter/callable",
+        "type" : "java.util.concurrent.Callable<java.lang.Boolean>",
+        "displayedType" : "Callable<Boolean>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 109,
+          "startColumn" : 61,
+          "endLine" : 109,
+          "endColumn" : 69
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/retryCall(java.util.concurrent.Callable<java.lang.Boolean> callable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.RetryerUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/retryCall(java.util.concurrent.Callable<java.lang.Boolean> callable, boolean checkResult)" : {
+      "name" : "retryCall",
+      "key" : "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/retryCall(java.util.concurrent.Callable<java.lang.Boolean> callable, boolean checkResult)",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 27,
+        "endLine" : 96,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "callable",
+        "key" : "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/retryCall(java.util.concurrent.Callable<java.lang.Boolean> callable, boolean checkResult)/parameter/callable",
+        "type" : "java.util.concurrent.Callable<java.lang.Boolean>",
+        "displayedType" : "Callable<Boolean>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 96,
+          "startColumn" : 61,
+          "endLine" : 96,
+          "endColumn" : 69
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/retryCall(java.util.concurrent.Callable<java.lang.Boolean> callable, boolean checkResult)"
+      }, {
+        "name" : "checkResult",
+        "key" : "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/retryCall(java.util.concurrent.Callable<java.lang.Boolean> callable, boolean checkResult)/parameter/checkResult",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 97,
+          "startColumn" : 45,
+          "endLine" : 97,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/retryCall(java.util.concurrent.Callable<java.lang.Boolean> callable, boolean checkResult)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.RetryerUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/getDefaultRetryerResultNoCheck()" : {
+      "name" : "getDefaultRetryerResultNoCheck",
+      "key" : "org.apache.dolphinscheduler.common.utils.RetryerUtils/method/getDefaultRetryerResultNoCheck()",
+      "type" : "org.apache.dolphinscheduler.common.utils.com.github.rholder.retry.Retryer<java.lang.Boolean>",
+      "displayedType" : "Retryer<Boolean>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 41,
+        "startColumn" : 37,
+        "endLine" : 41,
+        "endColumn" : 67
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.RetryerUtils"
+    }
+  },
+  "file_path" : "dolphinscheduler-common/src/main/java/org/apache/dolphinscheduler/common/utils/RetryerUtils.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

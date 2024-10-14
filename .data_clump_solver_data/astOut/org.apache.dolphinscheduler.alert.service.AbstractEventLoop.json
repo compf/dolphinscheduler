@@ -1,0 +1,184 @@
+{
+  "name" : "AbstractEventLoop",
+  "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 30,
+    "startColumn" : 17,
+    "endLine" : 30,
+    "endColumn" : 22
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/memberField/eventHandleWorkerNum" : {
+      "name" : "eventHandleWorkerNum",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/memberField/eventHandleWorkerNum",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 36,
+        "startColumn" : 23,
+        "endLine" : 36,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/memberField/runningFlag" : {
+      "name" : "runningFlag",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/memberField/runningFlag",
+      "type" : "java.util.concurrent.atomic.AtomicBoolean",
+      "displayedType" : "AtomicBoolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 40,
+        "startColumn" : 33,
+        "endLine" : 40,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/memberField/handlingEventCount" : {
+      "name" : "handlingEventCount",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/memberField/handlingEventCount",
+      "type" : "java.util.concurrent.atomic.AtomicInteger",
+      "displayedType" : "AtomicInteger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 34,
+        "startColumn" : 33,
+        "endLine" : 34,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/memberField/threadPoolExecutor" : {
+      "name" : "threadPoolExecutor",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/memberField/threadPoolExecutor",
+      "type" : "java.util.concurrent.ThreadPoolExecutor",
+      "displayedType" : "ThreadPoolExecutor",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 38,
+        "startColumn" : 38,
+        "endLine" : 38,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/memberField/eventPendingQueue" : {
+      "name" : "eventPendingQueue",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/memberField/eventPendingQueue",
+      "type" : "org.apache.dolphinscheduler.alert.service.EventPendingQueue<T>",
+      "displayedType" : "EventPendingQueue<T>",
+      "hasTypeVariable" : true,
+      "position" : {
+        "startLine" : 32,
+        "startColumn" : 40,
+        "endLine" : 32,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/method/shutdown()" : {
+      "name" : "shutdown",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/method/shutdown()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 17,
+        "endLine" : 96,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/method/start()" : {
+      "name" : "start",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/method/start()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 30,
+        "endLine" : 53,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/method/run()" : {
+      "name" : "run",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/method/run()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 17,
+        "endLine" : 63,
+        "endColumn" : 20
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/method/getHandlingEventCount()" : {
+      "name" : "getHandlingEventCount",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop/method/getHandlingEventCount()",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 16,
+        "endLine" : 91,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventLoop"
+    }
+  },
+  "file_path" : "dolphinscheduler-alert/dolphinscheduler-alert-server/src/main/java/org/apache/dolphinscheduler/alert/service/AbstractEventLoop.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.alert.service.EventLoop<T>", "T" ],
+  "extends_" : [ "org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.common.thread.BaseDaemonThread" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,230 @@
+{
+  "name" : "WorkerServer",
+  "key" : "org.apache.dolphinscheduler.server.worker.WorkerServer",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 60,
+    "startColumn" : 8,
+    "endLine" : 60,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.worker.WorkerServer/memberField/messageRetryRunner" : {
+      "name" : "messageRetryRunner",
+      "key" : "org.apache.dolphinscheduler.server.worker.WorkerServer/memberField/messageRetryRunner",
+      "type" : "org.apache.dolphinscheduler.server.worker.org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner",
+      "displayedType" : "MessageRetryRunner",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 32,
+        "endLine" : 69,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.WorkerServer"
+    },
+    "org.apache.dolphinscheduler.server.worker.WorkerServer/memberField/workerRpcServer" : {
+      "name" : "workerRpcServer",
+      "key" : "org.apache.dolphinscheduler.server.worker.WorkerServer/memberField/workerRpcServer",
+      "type" : "org.apache.dolphinscheduler.server.worker.org.apache.dolphinscheduler.server.worker.rpc.WorkerRpcServer",
+      "displayedType" : "WorkerRpcServer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 29,
+        "endLine" : 66,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.WorkerServer"
+    },
+    "org.apache.dolphinscheduler.server.worker.WorkerServer/memberField/metricsProvider" : {
+      "name" : "metricsProvider",
+      "key" : "org.apache.dolphinscheduler.server.worker.WorkerServer/memberField/metricsProvider",
+      "type" : "org.apache.dolphinscheduler.server.worker.org.apache.dolphinscheduler.meter.metrics.MetricsProvider",
+      "displayedType" : "MetricsProvider",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 29,
+        "endLine" : 72,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.WorkerServer"
+    },
+    "org.apache.dolphinscheduler.server.worker.WorkerServer/memberField/workerRegistryClient" : {
+      "name" : "workerRegistryClient",
+      "key" : "org.apache.dolphinscheduler.server.worker.WorkerServer/memberField/workerRegistryClient",
+      "type" : "org.apache.dolphinscheduler.server.worker.org.apache.dolphinscheduler.server.worker.registry.WorkerRegistryClient",
+      "displayedType" : "WorkerRegistryClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 34,
+        "endLine" : 63,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.WorkerServer"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.worker.WorkerServer/method/stop(java.lang.String cause)" : {
+      "name" : "stop",
+      "key" : "org.apache.dolphinscheduler.server.worker.WorkerServer/method/stop(java.lang.String cause)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 148,
+        "startColumn" : 17,
+        "endLine" : 148,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "cause",
+        "key" : "org.apache.dolphinscheduler.server.worker.WorkerServer/method/stop(java.lang.String cause)/parameter/cause",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 148,
+          "startColumn" : 29,
+          "endLine" : 148,
+          "endColumn" : 34
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.WorkerServer/method/stop(java.lang.String cause)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.WorkerServer"
+    },
+    "org.apache.dolphinscheduler.server.worker.WorkerServer/method/run()" : {
+      "name" : "run",
+      "key" : "org.apache.dolphinscheduler.server.worker.WorkerServer/method/run()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 87,
+        "startColumn" : 17,
+        "endLine" : 87,
+        "endColumn" : 20
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.WorkerServer"
+    },
+    "org.apache.dolphinscheduler.server.worker.WorkerServer/method/killAllRunningTasks()" : {
+      "name" : "killAllRunningTasks",
+      "key" : "org.apache.dolphinscheduler.server.worker.WorkerServer/method/killAllRunningTasks()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 156,
+        "startColumn" : 17,
+        "endLine" : 156,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.WorkerServer"
+    },
+    "org.apache.dolphinscheduler.server.worker.WorkerServer/method/main(java.lang.String[] args)" : {
+      "name" : "main",
+      "key" : "org.apache.dolphinscheduler.server.worker.WorkerServer/method/main(java.lang.String[] args)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 24,
+        "endLine" : 79,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "args",
+        "key" : "org.apache.dolphinscheduler.server.worker.WorkerServer/method/main(java.lang.String[] args)/parameter/args",
+        "type" : "java.lang.String[]",
+        "displayedType" : "String[]",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 79,
+          "startColumn" : 38,
+          "endLine" : 79,
+          "endColumn" : 42
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.WorkerServer/method/main(java.lang.String[] args)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.WorkerServer"
+    },
+    "org.apache.dolphinscheduler.server.worker.WorkerServer/method/close(java.lang.String cause)" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.server.worker.WorkerServer/method/close(java.lang.String cause)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 121,
+        "startColumn" : 17,
+        "endLine" : 121,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "cause",
+        "key" : "org.apache.dolphinscheduler.server.worker.WorkerServer/method/close(java.lang.String cause)/parameter/cause",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 121,
+          "startColumn" : 30,
+          "endLine" : 121,
+          "endColumn" : 35
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.WorkerServer/method/close(java.lang.String cause)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.WorkerServer"
+    }
+  },
+  "file_path" : "dolphinscheduler-worker/src/main/java/org/apache/dolphinscheduler/server/worker/WorkerServer.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.worker.org.apache.dolphinscheduler.common.IStoppable" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

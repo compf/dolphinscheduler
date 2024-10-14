@@ -1,0 +1,215 @@
+{
+  "name" : "EtcdConnectionStateListener",
+  "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 34,
+    "startColumn" : 8,
+    "endLine" : 34,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/memberField/connectionListeners" : {
+      "name" : "connectionListeners",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/memberField/connectionListeners",
+      "type" : "java.util.List<org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionListener>",
+      "displayedType" : "List<ConnectionListener>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 36,
+        "startColumn" : 44,
+        "endLine" : 36,
+        "endColumn" : 63
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/memberField/client" : {
+      "name" : "client",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/memberField/client",
+      "type" : "org.apache.dolphinscheduler.plugin.registry.etcd.io.etcd.jetcd.Client",
+      "displayedType" : "Client",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 40,
+        "startColumn" : 26,
+        "endLine" : 40,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/memberField/connectionState" : {
+      "name" : "connectionState",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/memberField/connectionState",
+      "type" : "org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionState",
+      "displayedType" : "ConnectionState",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 38,
+        "endLine" : 42,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PRIVATE", "VOLATILE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/memberField/scheduledExecutorService" : {
+      "name" : "scheduledExecutorService",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/memberField/scheduledExecutorService",
+      "type" : "java.util.concurrent.ScheduledExecutorService",
+      "displayedType" : "ScheduledExecutorService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 38,
+        "startColumn" : 44,
+        "endLine" : 38,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 17,
+        "endLine" : 56,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/method/addConnectionListener(org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionListener connectionListener)" : {
+      "name" : "addConnectionListener",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/method/addConnectionListener(org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionListener connectionListener)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 17,
+        "endLine" : 51,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "connectionListener",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/method/addConnectionListener(org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionListener connectionListener)/parameter/connectionListener",
+        "type" : "org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionListener",
+        "displayedType" : "ConnectionListener",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 51,
+          "startColumn" : 58,
+          "endLine" : 51,
+          "endColumn" : 76
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/method/addConnectionListener(org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionListener connectionListener)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/method/triggerListener(org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionState connectionState)" : {
+      "name" : "triggerListener",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/method/triggerListener(org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionState connectionState)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 110,
+        "startColumn" : 18,
+        "endLine" : 110,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "connectionState",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/method/triggerListener(org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionState connectionState)/parameter/connectionState",
+        "type" : "org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionState",
+        "displayedType" : "ConnectionState",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 50,
+          "endLine" : 110,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/method/triggerListener(org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionState connectionState)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/method/currentConnectivityState()" : {
+      "name" : "currentConnectivityState",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/method/currentConnectivityState()",
+      "type" : "org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionState",
+      "displayedType" : "ConnectionState",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 29,
+        "endLine" : 66,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/method/start()" : {
+      "name" : "start",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener/method/start()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 17,
+        "endLine" : 81,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener"
+    }
+  },
+  "file_path" : "dolphinscheduler-registry/dolphinscheduler-registry-plugins/dolphinscheduler-registry-etcd/src/main/java/org/apache/dolphinscheduler/plugin/registry/etcd/EtcdConnectionStateListener.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "java.lang.AutoCloseable" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

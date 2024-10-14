@@ -1,0 +1,262 @@
+{
+  "name" : "MasterClusters",
+  "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 36,
+    "startColumn" : 8,
+    "endLine" : 36,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/memberField/masterClusterChangeListeners" : {
+      "name" : "masterClusterChangeListeners",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/memberField/masterClusterChangeListeners",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.cluster.IClustersChangeListener<org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata>>",
+      "displayedType" : "List<IClustersChangeListener<MasterServerMetadata>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 45,
+        "startColumn" : 71,
+        "endLine" : 45,
+        "endColumn" : 99
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/memberField/masterServerMap" : {
+      "name" : "masterServerMap",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/memberField/masterServerMap",
+      "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata>",
+      "displayedType" : "Map<String, MasterServerMetadata>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 53,
+        "endLine" : 43,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/getServers()" : {
+      "name" : "getServers",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/getServers()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata>",
+      "displayedType" : "List<MasterServerMetadata>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 39,
+        "endLine" : 49,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/registerListener(org.apache.dolphinscheduler.server.master.cluster.IClustersChangeListener<org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata> listener)" : {
+      "name" : "registerListener",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/registerListener(org.apache.dolphinscheduler.server.master.cluster.IClustersChangeListener<org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata> listener)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 17,
+        "endLine" : 62,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "listener",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/registerListener(org.apache.dolphinscheduler.server.master.cluster.IClustersChangeListener<org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata> listener)/parameter/listener",
+        "type" : "org.apache.dolphinscheduler.server.master.cluster.IClustersChangeListener<org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata>",
+        "displayedType" : "IClustersChangeListener<MasterServerMetadata>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 62,
+          "startColumn" : 80,
+          "endLine" : 62,
+          "endColumn" : 88
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/registerListener(org.apache.dolphinscheduler.server.master.cluster.IClustersChangeListener<org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata> listener)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/onServerRemove(org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata masterServer)" : {
+      "name" : "onServerRemove",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/onServerRemove(org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata masterServer)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 84,
+        "startColumn" : 17,
+        "endLine" : 84,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "masterServer",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/onServerRemove(org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata masterServer)/parameter/masterServer",
+        "type" : "org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata",
+        "displayedType" : "MasterServerMetadata",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 84,
+          "startColumn" : 53,
+          "endLine" : 84,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/onServerRemove(org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata masterServer)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/onServerAdded(org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata masterServer)" : {
+      "name" : "onServerAdded",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/onServerAdded(org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata masterServer)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 17,
+        "endLine" : 76,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "masterServer",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/onServerAdded(org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata masterServer)/parameter/masterServer",
+        "type" : "org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata",
+        "displayedType" : "MasterServerMetadata",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 76,
+          "startColumn" : 52,
+          "endLine" : 76,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/onServerAdded(org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata masterServer)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/parseServerFromHeartbeat(java.lang.String masterHeartBeatJson)" : {
+      "name" : "parseServerFromHeartbeat",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/parseServerFromHeartbeat(java.lang.String masterHeartBeatJson)",
+      "type" : "org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata",
+      "displayedType" : "MasterServerMetadata",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 26,
+        "endLine" : 67,
+        "endColumn" : 50
+      },
+      "modifiers" : [ ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "masterHeartBeatJson",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/parseServerFromHeartbeat(java.lang.String masterHeartBeatJson)/parameter/masterHeartBeatJson",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 67,
+          "startColumn" : 58,
+          "endLine" : 67,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/parseServerFromHeartbeat(java.lang.String masterHeartBeatJson)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/getNormalServers()" : {
+      "name" : "getNormalServers",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/getNormalServers()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata>",
+      "displayedType" : "List<MasterServerMetadata>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 39,
+        "endLine" : 53,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/onServerUpdate(org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata masterServer)" : {
+      "name" : "onServerUpdate",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/onServerUpdate(org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata masterServer)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 92,
+        "startColumn" : 17,
+        "endLine" : 92,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "masterServer",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/onServerUpdate(org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata masterServer)/parameter/masterServer",
+        "type" : "org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata",
+        "displayedType" : "MasterServerMetadata",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 92,
+          "startColumn" : 53,
+          "endLine" : 92,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters/method/onServerUpdate(org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata masterServer)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/cluster/MasterClusters.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.master.cluster.IClusters<org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata>", "org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata" ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.master.cluster.AbstractClusterSubscribeListener<org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata>", "org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}
