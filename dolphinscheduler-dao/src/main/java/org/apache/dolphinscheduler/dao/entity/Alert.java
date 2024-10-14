@@ -48,11 +48,7 @@ public class Alert {
     @TableField(value = "sign")
     private String sign;
 
-    @TableField(value = "title")
-    private String title;
-
-    @TableField(value = "content")
-    private String content;
+    private TaskAlertInfo taskAlertInfo;
 
     @TableField(value = "alert_status")
     private AlertStatus alertStatus;
@@ -62,9 +58,7 @@ public class Alert {
 
     @TableField(value = "log")
     private String log;
-
-    @TableField("alertgroup_id")
-    private Integer alertGroupId;
+// alertGroupId is now part of TaskAlertInfo and accessed via taskAlertInfo.getAlertGroupId()
 
     @TableField("create_time")
     private Date createTime;
