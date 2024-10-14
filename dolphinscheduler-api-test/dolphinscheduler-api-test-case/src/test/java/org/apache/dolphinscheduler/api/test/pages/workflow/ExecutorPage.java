@@ -38,18 +38,15 @@ public class ExecutorPage {
 
     private String sessionId;
 
-    public HttpResponse startWorkflowInstance(User loginUser,
+    public HttpResponse startWorkflowInstance(ExecutionParameters executionParameters,
                                               long projectCode,
-                                              long workflowDefinitionCode,
-                                              String scheduleTime,
-                                              FailureStrategy failureStrategy,
-                                              WarningType warningType) {
+                                              ) {
         Map<String, Object> params = new HashMap<>();
-        params.put("loginUser", loginUser);
-        params.put("workflowDefinitionCode", workflowDefinitionCode);
-        params.put("scheduleTime", scheduleTime);
-        params.put("failureStrategy", failureStrategy);
-        params.put("warningType", warningType);
+        params.put("loginUser", executionParameters.getLoginUser());
+        params.put("workflowDefinitionCode", executionParameters.getWorkflowDefinitionCode());
+        params.put("scheduleTime", executionParameters.getScheduleTime());
+        params.put("failureStrategy", executionParameters.getFailureStrategy());
+        params.put("warningType", executionParameters.getWarningType());
         Map<String, String> headers = new HashMap<>();
         headers.put(Constants.SESSION_ID_KEY, sessionId);
 
