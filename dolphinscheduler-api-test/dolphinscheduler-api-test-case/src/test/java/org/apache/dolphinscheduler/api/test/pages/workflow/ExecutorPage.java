@@ -38,18 +38,10 @@ public class ExecutorPage {
 
     private String sessionId;
 
-    public HttpResponse startWorkflowInstance(User loginUser,
-                                              long projectCode,
-                                              long workflowDefinitionCode,
-                                              String scheduleTime,
-                                              FailureStrategy failureStrategy,
-                                              WarningType warningType) {
+    public HttpResponse startWorkflowInstance(ExecutionParameters executionParameters,
+                                              long projectCode) {
         Map<String, Object> params = new HashMap<>();
-        params.put("loginUser", loginUser);
-        params.put("workflowDefinitionCode", workflowDefinitionCode);
-        params.put("scheduleTime", scheduleTime);
-        params.put("failureStrategy", failureStrategy);
-        params.put("warningType", warningType);
+        params.putAll(executionParameters.toMap());
         Map<String, String> headers = new HashMap<>();
         headers.put(Constants.SESSION_ID_KEY, sessionId);
 
@@ -83,13 +75,11 @@ public class ExecutorPage {
         return requestClient.post(url, headers, params);
     }
 
-    public HttpResponse executeTask(User loginUser, long projectCode, int workflowInstanceId, String startNodeList,
-                                    TaskDependType taskDependType) {
+    public HttpResponse executeTask(TaskExecutionParameters taskExecutionParameters, long projectCode,
+                                    int workflowInstanceId) {
         Map<String, Object> params = new HashMap<>();
-        params.put("loginUser", loginUser);
+        params.putAll(taskExecutionParameters.toMap());
         params.put("workflowInstanceId", workflowInstanceId);
-        params.put("startNodeList", startNodeList);
-        params.put("taskDependType", taskDependType);
         Map<String, String> headers = new HashMap<>();
         headers.put(Constants.SESSION_ID_KEY, sessionId);
 
