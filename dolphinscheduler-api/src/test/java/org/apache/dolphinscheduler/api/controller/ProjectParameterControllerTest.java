@@ -46,22 +46,20 @@ public class ProjectParameterControllerTest {
 
     @Test
     public void testCreateProjectParameter() {
-        User loginUser = getGeneralUser();
+        ProjectParameterRequest projectParameterRequest = new ProjectParameterRequest(getGeneralUser(), 1, "key", "value", DataType.VARCHAR);
 
-        Mockito.when(projectParameterService.createProjectParameter(Mockito.any(), Mockito.anyLong(), Mockito.any(),
-                Mockito.any(), Mockito.any())).thenReturn(getSuccessResult());
-        Result result = projectParameterController.createProjectParameter(loginUser, 1, "key", "value",
+        Mockito.when(projectParameterService.createProjectParameter(Mockito.any(ProjectParameterRequest.class))).thenReturn(getSuccessResult());
+        Result result = projectParameterController.createProjectParameter(projectParameterRequest,
                 DataType.VARCHAR.name());
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
 
     @Test
     public void testUpdateProjectParameter() {
-        User loginUser = getGeneralUser();
+        ProjectParameterUpdateRequest projectParameterUpdateRequest = new ProjectParameterUpdateRequest(getGeneralUser(), 1, 1L, "key", "value", DataType.VARCHAR);
 
-        Mockito.when(projectParameterService.updateProjectParameter(Mockito.any(), Mockito.anyLong(), Mockito.anyLong(),
-                Mockito.any(), Mockito.any(), Mockito.any())).thenReturn(getSuccessResult());
-        Result result = projectParameterController.updateProjectParameter(loginUser, 1, 1L, "key", "value",
+        Mockito.when(projectParameterService.updateProjectParameter(Mockito.any(ProjectParameterUpdateRequest.class))).thenReturn(getSuccessResult());
+        Result result = projectParameterController.updateProjectParameter(projectParameterUpdateRequest,
                 DataType.LONG.name());
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
