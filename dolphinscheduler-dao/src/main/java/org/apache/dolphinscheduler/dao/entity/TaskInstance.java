@@ -40,19 +40,7 @@ public class TaskInstance implements Serializable {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private String name;
-
-    private String taskType;
-
-    private int workflowInstanceId;
-
-    private String workflowInstanceName;
-
-    private Long projectCode;
-
-    private long taskCode;
-
-    private int taskDefinitionVersion;
+    private TaskDefinitionKey taskDefinitionKey;
 
     @TableField(exist = false)
     private String processDefinitionName;
@@ -64,17 +52,7 @@ public class TaskInstance implements Serializable {
 
     private Date firstSubmitTime;
 
-    private Date submitTime;
-
-    private Date startTime;
-
-    private Date endTime;
-
-    private String host;
-
-    private String executePath;
-
-    private String logPath;
+    private TaskExecutionEnvironment taskExecutionEnvironment;
 
     private int retryTimes;
 
@@ -140,10 +118,8 @@ public class TaskInstance implements Serializable {
 
     private int testFlag;
 
-    public void init(String host, Date startTime, String executePath) {
-        this.host = host;
-        this.startTime = startTime;
-        this.executePath = executePath;
+    public void init(TaskExecutionEnvironment taskExecutionEnvironment) {
+        this.taskExecutionEnvironment = taskExecutionEnvironment;
     }
 
 }
