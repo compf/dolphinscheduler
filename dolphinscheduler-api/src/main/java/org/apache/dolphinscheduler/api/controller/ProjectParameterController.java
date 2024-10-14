@@ -72,7 +72,8 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
                                          @RequestParam(value = "projectParameterDataType", defaultValue = "VARCHAR") String projectParameterDataType) {
-        return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName,
+        ProjectParameterInfo projectParameterInfo = new ProjectParameterInfo(projectParameterName, projectParameterValue, projectParameterDescription, projectParameterDataType);
+        return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterInfo);
                 projectParameterValue, projectParameterDataType);
     }
 
@@ -92,7 +93,8 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
                                          @RequestParam(value = "projectParameterDataType") String projectParameterDataType) {
-        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName,
+        ProjectParameterInfo projectParameterInfo = new ProjectParameterInfo(projectParameterName, projectParameterValue, projectParameterDescription, projectParameterDataType);
+        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterInfo);
                 projectParameterValue, projectParameterDataType);
     }
 
