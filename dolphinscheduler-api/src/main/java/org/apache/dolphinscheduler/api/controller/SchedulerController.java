@@ -79,16 +79,7 @@ public class SchedulerController extends BaseController {
     /**
      * create schedule
      *
-     * @param loginUser login user
-     * @param projectCode project code
-     * @param workflowDefinitionCode workflow definition code
-     * @param schedule scheduler
-     * @param warningType warning type
-     * @param warningGroupId warning group id
-     * @param failureStrategy failure strategy
-     * @param workflowInstancePriority workflow instance priority
-     * @param workerGroup worker group
-     * @param tenantCode tenant code
+     * @param scheduleRequest schedule request
      * @return create result code
      */
     @Operation(summary = "createSchedule", description = "CREATE_SCHEDULE_NOTES")
@@ -107,8 +98,7 @@ public class SchedulerController extends BaseController {
     @ResponseStatus(HttpStatus.CREATED)
     @ApiException(CREATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_CREATE)
-    public Result createSchedule(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
-                                 @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
+    public Result createSchedule(ScheduleRequest scheduleRequest) {
                                  @RequestParam(value = "workflowDefinitionCode") long workflowDefinitionCode,
                                  @RequestParam(value = "schedule") String schedule,
                                  @RequestParam(value = "warningType", required = false, defaultValue = DEFAULT_WARNING_TYPE) WarningType warningType,
@@ -116,20 +106,7 @@ public class SchedulerController extends BaseController {
                                  @RequestParam(value = "failureStrategy", required = false, defaultValue = DEFAULT_FAILURE_POLICY) FailureStrategy failureStrategy,
                                  @RequestParam(value = "workerGroup", required = false, defaultValue = "default") String workerGroup,
                                  @RequestParam(value = "tenantCode", required = false, defaultValue = "default") String tenantCode,
-                                 @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") Long environmentCode,
-                                 @RequestParam(value = "workflowInstancePriority", required = false, defaultValue = DEFAULT_WORKFLOW_INSTANCE_PRIORITY) Priority workflowInstancePriority) {
-        Map<String, Object> result = schedulerService.insertSchedule(
-                loginUser,
-                projectCode,
-                workflowDefinitionCode,
-                schedule,
-                warningType,
-                warningGroupId,
-                failureStrategy,
-                workflowInstancePriority,
-                workerGroup,
-                tenantCode,
-                environmentCode);
+        Map<String, Object> result = schedulerService.insertSchedule(scheduleRequest);
 
         return returnDataList(result);
     }
@@ -306,15 +283,7 @@ public class SchedulerController extends BaseController {
     /**
      * update workflow definition schedule
      *
-     * @param loginUser login user
-     * @param projectCode project code
-     * @param workflowDefinitionCode workflow definition code
-     * @param schedule scheduler
-     * @param warningType warning type
-     * @param warningGroupId warning group id
-     * @param failureStrategy failure strategy
-     * @param workerGroup worker group
-     * @param workflowInstancePriority workflow instance priority
+     * @param scheduleRequest schedule request
      * @return update result code
      */
     @Operation(summary = "updateScheduleByWorkflowDefinitionCode", description = "UPDATE_SCHEDULE_BY_WORKFLOW_DEFINITION_CODE_NOTES")
@@ -333,21 +302,14 @@ public class SchedulerController extends BaseController {
     @ResponseStatus(HttpStatus.OK)
     @ApiException(UPDATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_UPDATE)
-    public Result updateScheduleByWorkflowDefinitionCode(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
-                                                         @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
+    public Result updateScheduleByWorkflowDefinitionCode(ScheduleRequest scheduleRequest) {
                                                          @PathVariable(value = "code") long workflowDefinitionCode,
                                                          @RequestParam(value = "schedule") String schedule,
                                                          @RequestParam(value = "warningType", required = false, defaultValue = DEFAULT_WARNING_TYPE) WarningType warningType,
                                                          @RequestParam(value = "warningGroupId", required = false) int warningGroupId,
                                                          @RequestParam(value = "failureStrategy", required = false, defaultValue = "END") FailureStrategy failureStrategy,
                                                          @RequestParam(value = "workerGroup", required = false, defaultValue = "default") String workerGroup,
-                                                         @RequestParam(value = "tenantCode", required = false, defaultValue = "default") String tenantCode,
-                                                         @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") long environmentCode,
-                                                         @RequestParam(value = "workflowInstancePriority", required = false) Priority workflowInstancePriority) {
-        Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(loginUser, projectCode,
-                workflowDefinitionCode, schedule,
-                warningType, warningGroupId, failureStrategy, workflowInstancePriority, workerGroup, tenantCode,
-                environmentCode);
+        Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(scheduleRequest);
         return returnDataList(result);
     }
 }
