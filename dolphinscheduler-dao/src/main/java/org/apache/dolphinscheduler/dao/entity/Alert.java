@@ -48,43 +48,44 @@ public class Alert {
     @TableField(value = "sign")
     private String sign;
 
-    @TableField(value = "title")
-    private String title;
+    private AlertInfo alertInfo;
+    
 
-    @TableField(value = "content")
-    private String content;
+    private AlertType alertType;
+    
 
     @TableField(value = "alert_status")
     private AlertStatus alertStatus;
-
+     @TableField(value = "alert_status")
     @TableField(value = "warning_type")
     private WarningType warningType;
 
     @TableField(value = "log")
     private String log;
-
+     @TableField(value = "warning_type")
     @TableField("alertgroup_id")
     private Integer alertGroupId;
 
     @TableField("create_time")
     private Date createTime;
-
+     @TableField(value = "create_time")
     @TableField("update_time")
     private Date updateTime;
 
     @TableField("project_code")
     private Long projectCode;
-
+     * creation time
     @TableField("workflow_definition_code")
     private Long workflowDefinitionCode;
 
     @TableField("workflow_instance_id")
     private Integer workflowInstanceId;
-
+     * update time
     @TableField("alert_type")
     private AlertType alertType;
 
     @TableField(exist = false)
     private Map<String, Object> info = new HashMap<>();
-
+     * log
 }
+     * custom params
