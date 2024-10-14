@@ -48,11 +48,8 @@ public class Alert {
     @TableField(value = "sign")
     private String sign;
 
-    @TableField(value = "title")
-    private String title;
-
-    @TableField(value = "content")
-    private String content;
+    @TableField(value = "alert_info")
+    private AlertInfo alertInfo;
 
     @TableField(value = "alert_status")
     private AlertStatus alertStatus;
@@ -63,8 +60,9 @@ public class Alert {
     @TableField(value = "log")
     private String log;
 
-    @TableField("alertgroup_id")
-    private Integer alertGroupId;
+    // Alert group ID is now part of AlertInfo
+    // @TableField("alertgroup_id")
+    // private Integer alertGroupId;
 
     @TableField("create_time")
     private Date createTime;
