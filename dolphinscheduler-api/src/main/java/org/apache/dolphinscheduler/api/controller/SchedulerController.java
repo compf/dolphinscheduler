@@ -107,7 +107,7 @@ public class SchedulerController extends BaseController {
     @ResponseStatus(HttpStatus.CREATED)
     @ApiException(CREATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_CREATE)
-    public Result createSchedule(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
+    public Result createSchedule(ScheduleCreationRequest request) {
                                  @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
                                  @RequestParam(value = "workflowDefinitionCode") long workflowDefinitionCode,
                                  @RequestParam(value = "schedule") String schedule,
@@ -333,7 +333,7 @@ public class SchedulerController extends BaseController {
     @ResponseStatus(HttpStatus.OK)
     @ApiException(UPDATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_UPDATE)
-    public Result updateScheduleByWorkflowDefinitionCode(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
+    public Result updateScheduleByWorkflowDefinitionCode(ScheduleUpdateByWorkflowDefinitionCodeRequest request) {
                                                          @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
                                                          @PathVariable(value = "code") long workflowDefinitionCode,
                                                          @RequestParam(value = "schedule") String schedule,
