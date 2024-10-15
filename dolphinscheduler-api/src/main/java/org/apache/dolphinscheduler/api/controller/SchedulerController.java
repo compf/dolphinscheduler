@@ -68,10 +68,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 @RequestMapping("/projects/{projectCode}/schedules")
 public class SchedulerController extends BaseController {
 
-    public static final String DEFAULT_WARNING_TYPE = "NONE";
-    public static final String DEFAULT_NOTIFY_GROUP_ID = "1";
-    public static final String DEFAULT_FAILURE_POLICY = "CONTINUE";
-    public static final String DEFAULT_WORKFLOW_INSTANCE_PRIORITY = "MEDIUM";
+    // Default scheduler-related constants have been moved to SchedulerDefaults
 
     @Autowired
     private SchedulerService schedulerService;
@@ -111,13 +108,11 @@ public class SchedulerController extends BaseController {
                                  @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
                                  @RequestParam(value = "workflowDefinitionCode") long workflowDefinitionCode,
                                  @RequestParam(value = "schedule") String schedule,
-                                 @RequestParam(value = "warningType", required = false, defaultValue = DEFAULT_WARNING_TYPE) WarningType warningType,
-                                 @RequestParam(value = "warningGroupId", required = false, defaultValue = DEFAULT_NOTIFY_GROUP_ID) int warningGroupId,
+                                 @RequestParam(value = "scheduleModel") ScheduleModel scheduleModel) {
                                  @RequestParam(value = "failureStrategy", required = false, defaultValue = DEFAULT_FAILURE_POLICY) FailureStrategy failureStrategy,
                                  @RequestParam(value = "workerGroup", required = false, defaultValue = "default") String workerGroup,
                                  @RequestParam(value = "tenantCode", required = false, defaultValue = "default") String tenantCode,
                                  @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") Long environmentCode,
-                                 @RequestParam(value = "workflowInstancePriority", required = false, defaultValue = DEFAULT_WORKFLOW_INSTANCE_PRIORITY) Priority workflowInstancePriority) {
         Map<String, Object> result = schedulerService.insertSchedule(
                 loginUser,
                 projectCode,
