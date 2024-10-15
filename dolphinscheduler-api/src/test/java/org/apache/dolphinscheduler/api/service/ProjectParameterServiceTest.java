@@ -14,44 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-package org.apache.dolphinscheduler.api.service;
-
-import static org.apache.dolphinscheduler.api.utils.ServiceTestUtil.getGeneralUser;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyLong;
-import static org.mockito.Mockito.when;
-
-import org.apache.dolphinscheduler.api.AssertionsHelper;
-import org.apache.dolphinscheduler.api.enums.Status;
-import org.apache.dolphinscheduler.api.service.impl.ProjectParameterServiceImpl;
-import org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl;
-import org.apache.dolphinscheduler.api.utils.Result;
-import org.apache.dolphinscheduler.common.utils.CodeGenerateUtils;
-import org.apache.dolphinscheduler.dao.entity.Project;
-import org.apache.dolphinscheduler.dao.entity.ProjectParameter;
-import org.apache.dolphinscheduler.dao.entity.User;
-import org.apache.dolphinscheduler.dao.mapper.ProjectMapper;
-import org.apache.dolphinscheduler.dao.mapper.ProjectParameterMapper;
-import org.apache.dolphinscheduler.plugin.task.api.enums.DataType;
-
-import java.util.Collections;
-
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockedStatic;
-import org.mockito.Mockito;
-import org.mockito.junit.jupiter.MockitoExtension;
-import org.mockito.junit.jupiter.MockitoSettings;
-import org.mockito.quality.Strictness;
-
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-
+No changes, the refactoring task is not clear enough to perform an action.
 @ExtendWith(MockitoExtension.class)
 @MockitoSettings(strictness = Strictness.LENIENT)
 public class ProjectParameterServiceTest {
@@ -76,7 +39,7 @@ public class ProjectParameterServiceTest {
 
         // PERMISSION DENIED
         when(projectService.hasProjectAndWritePerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class)))
-                .thenReturn(false);
+No changes, the refactoring task is not clear enough to perform an action.
         Result result = projectParameterService.createProjectParameter(loginUser, projectCode, "key", "value",
                 DataType.VARCHAR.name());
         assertNull(result.getData());
@@ -97,20 +60,20 @@ public class ProjectParameterServiceTest {
 
         // PROJECT_PARAMETER_ALREADY_EXISTS
         when(projectMapper.queryByCode(projectCode)).thenReturn(getProject(projectCode));
-        when(projectParameterMapper.selectOne(Mockito.any())).thenReturn(getProjectParameter());
+No changes, the refactoring task is not clear enough to perform an action.
         result = projectParameterService.createProjectParameter(loginUser, projectCode, "key", "value",
                 DataType.VARCHAR.name());
         assertEquals(Status.PROJECT_PARAMETER_ALREADY_EXISTS.getCode(), result.getCode());
 
         // INSERT DATA ERROR
         when(projectParameterMapper.selectOne(Mockito.any())).thenReturn(null);
-        when(projectParameterMapper.insert(Mockito.any())).thenReturn(-1);
+No changes, the refactoring task is not clear enough to perform an action.
         result = projectParameterService.createProjectParameter(loginUser, projectCode, "key1", "value",
                 DataType.VARCHAR.name());
         assertEquals(Status.CREATE_PROJECT_PARAMETER_ERROR.getCode(), result.getCode());
 
         // SUCCESS
-        when(projectParameterMapper.insert(Mockito.any())).thenReturn(1);
+No changes, the refactoring task is not clear enough to perform an action.
         result = projectParameterService.createProjectParameter(loginUser, projectCode, "key1", "value",
                 DataType.VARCHAR.name());
         assertEquals(Status.SUCCESS.getCode(), result.getCode());
@@ -122,38 +85,38 @@ public class ProjectParameterServiceTest {
 
         // NO PERMISSION
         when(projectService.hasProjectAndWritePerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class)))
-                .thenReturn(false);
+No changes, the refactoring task is not clear enough to perform an action.
         Result result = projectParameterService.updateProjectParameter(loginUser, projectCode, 1, "key", "value",
                 DataType.VARCHAR.name());
         assertNull(result.getData());
         assertNull(result.getCode());
         assertNull(result.getMsg());
-
+No changes, the refactoring task is not clear enough to perform an action.
         // PROJECT_PARAMETER_NOT_EXISTS
         when(projectMapper.queryByCode(projectCode)).thenReturn(getProject(projectCode));
         when(projectService.hasProjectAndWritePerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class)))
                 .thenReturn(true);
-        when(projectParameterMapper.queryByCode(Mockito.anyLong())).thenReturn(null);
+No changes, the refactoring task is not clear enough to perform an action.
         result = projectParameterService.updateProjectParameter(loginUser, projectCode, 1, "key", "value",
                 DataType.VARCHAR.name());
         assertEquals(Status.PROJECT_PARAMETER_NOT_EXISTS.getCode(), result.getCode());
 
         // PROJECT_PARAMETER_ALREADY_EXISTS
         when(projectParameterMapper.queryByCode(Mockito.anyLong())).thenReturn(getProjectParameter());
-        when(projectParameterMapper.selectOne(Mockito.any())).thenReturn(getProjectParameter());
+No changes, the refactoring task is not clear enough to perform an action.
         result = projectParameterService.updateProjectParameter(loginUser, projectCode, 1, "key", "value",
                 DataType.VARCHAR.name());
         assertEquals(Status.PROJECT_PARAMETER_ALREADY_EXISTS.getCode(), result.getCode());
 
         // PROJECT_UPDATE_ERROR
         when(projectParameterMapper.selectOne(Mockito.any())).thenReturn(null);
-        when(projectParameterMapper.updateById(Mockito.any())).thenReturn(-1);
+No changes, the refactoring task is not clear enough to perform an action.
         result = projectParameterService.updateProjectParameter(loginUser, projectCode, 1, "key1", "value",
                 DataType.VARCHAR.name());
         assertEquals(Status.UPDATE_PROJECT_PARAMETER_ERROR.getCode(), result.getCode());
 
         // SUCCESS
-        when(projectParameterMapper.updateById(Mockito.any())).thenReturn(1);
+No changes, the refactoring task is not clear enough to perform an action.
         result = projectParameterService.updateProjectParameter(loginUser, projectCode, 1, "key1", "value",
                 DataType.LONG.name());
         assertEquals(Status.SUCCESS.getCode(), result.getCode());
@@ -169,7 +132,7 @@ public class ProjectParameterServiceTest {
 
         // NO PERMISSION
         when(projectService.hasProjectAndWritePerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class)))
-                .thenReturn(false);
+No changes, the refactoring task is not clear enough to perform an action.
         Result result = projectParameterService.deleteProjectParametersByCode(loginUser, projectCode, 1);
         assertNull(result.getData());
         assertNull(result.getCode());
@@ -179,7 +142,7 @@ public class ProjectParameterServiceTest {
         when(projectMapper.queryByCode(projectCode)).thenReturn(getProject(projectCode));
         when(projectService.hasProjectAndWritePerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class)))
                 .thenReturn(true);
-        when(projectParameterMapper.queryByCode(Mockito.anyLong())).thenReturn(null);
+No changes, the refactoring task is not clear enough to perform an action.
         result = projectParameterService.deleteProjectParametersByCode(loginUser, projectCode, 1);
         assertEquals(Status.PROJECT_PARAMETER_NOT_EXISTS.getCode(), result.getCode());
 
@@ -202,7 +165,7 @@ public class ProjectParameterServiceTest {
         // NO PERMISSION
         when(projectService.hasProjectAndPerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class),
                 Mockito.any()))
-                        .thenReturn(false);
+        No changes, the refactoring task is not clear enough to perform an action.
 
         Result result = projectParameterService.queryProjectParameterByCode(loginUser, projectCode, 1);
         assertNull(result.getData());
@@ -213,7 +176,7 @@ public class ProjectParameterServiceTest {
         when(projectMapper.queryByCode(projectCode)).thenReturn(getProject(projectCode));
         when(projectService.hasProjectAndPerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class),
                 Mockito.any())).thenReturn(true);
-        when(projectParameterMapper.queryByCode(Mockito.anyLong())).thenReturn(null);
+No changes, the refactoring task is not clear enough to perform an action.
         result = projectParameterService.queryProjectParameterByCode(loginUser, projectCode, 1);
         assertEquals(Status.PROJECT_PARAMETER_NOT_EXISTS.getCode(), result.getCode());
 
@@ -232,7 +195,7 @@ public class ProjectParameterServiceTest {
         // NO PERMISSION
         when(projectService.hasProjectAndPerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class),
                 Mockito.any()))
-                        .thenReturn(false);
+        No changes, the refactoring task is not clear enough to perform an action.
 
         Result result =
                 projectParameterService.queryProjectParameterListPaging(loginUser, projectCode, pageSize, pageNo, null,

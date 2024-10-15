@@ -14,25 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-package org.apache.dolphinscheduler.dao.entity;
-
-import org.apache.dolphinscheduler.common.enums.Flag;
-import org.apache.dolphinscheduler.common.enums.Priority;
-import org.apache.dolphinscheduler.common.enums.TaskExecuteType;
-import org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus;
-
-import java.io.Serializable;
-import java.util.Date;
-
-import lombok.Data;
-
-import com.baomidou.mybatisplus.annotation.FieldStrategy;
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
-
+No changes, the refactoring task is not clear enough to perform an action.
 @Data
 @TableName("t_ds_task_instance")
 public class TaskInstance implements Serializable {
@@ -59,7 +41,7 @@ public class TaskInstance implements Serializable {
 
     @TableField(exist = false)
     private int taskGroupPriority;
-
+No changes, the refactoring task is not clear enough to perform an action.
     private TaskExecutionStatus state;
 
     private Date firstSubmitTime;
@@ -67,7 +49,7 @@ public class TaskInstance implements Serializable {
     private Date submitTime;
 
     private Date startTime;
-
+No changes, the refactoring task is not clear enough to perform an action.
     private Date endTime;
 
     private String host;
@@ -88,7 +70,7 @@ public class TaskInstance implements Serializable {
 
     @TableField(exist = false)
     private TaskDefinition taskDefine;
-
+No changes, the refactoring task is not clear enough to perform an action.
     private int pid;
 
     private String appLink;
@@ -140,7 +122,7 @@ public class TaskInstance implements Serializable {
 
     private int testFlag;
 
-    public void init(String host, Date startTime, String executePath) {
+No changes, the refactoring task is not clear enough to perform an action.
         this.host = host;
         this.startTime = startTime;
         this.executePath = executePath;

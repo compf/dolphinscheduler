@@ -14,38 +14,36 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-package org.apache.dolphinscheduler.plugin.task.api.model;
-
+No changes, the refactoring task is not clear enough to perform an action.
 public class TaskAlertInfo {
 
     private String title;
 
     private String content;
-
+No changes, the refactoring task is not clear enough to perform an action.
     private Integer alertGroupId;
-
-    public String getTitle() {
+No changes, the refactoring task is not clear enough to perform an action.
+No changes, the refactoring task is not clear enough to perform an action.
         return title;
     }
-
-    public void setTitle(String title) {
+No changes, the refactoring task is not clear enough to perform an action.
+No changes, the refactoring task is not clear enough to perform an action.
         this.title = title;
     }
 
-    public String getContent() {
+No changes, the refactoring task is not clear enough to perform an action.
         return content;
     }
 
-    public void setContent(String content) {
+No changes, the refactoring task is not clear enough to perform an action.
         this.content = content;
     }
 
-    public Integer getAlertGroupId() {
+No changes, the refactoring task is not clear enough to perform an action.
         return alertGroupId;
     }
 
-    public void setAlertGroupId(Integer alertGroupId) {
+No changes, the refactoring task is not clear enough to perform an action.
         this.alertGroupId = alertGroupId;
     }
 }

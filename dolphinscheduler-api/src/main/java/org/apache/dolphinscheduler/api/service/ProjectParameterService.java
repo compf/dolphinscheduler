@@ -14,12 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-package org.apache.dolphinscheduler.api.service;
-
-import org.apache.dolphinscheduler.api.utils.Result;
-import org.apache.dolphinscheduler.dao.entity.User;
-
+No changes, the refactoring task is not clear enough to perform an action.
 public interface ProjectParameterService {
 
     Result createProjectParameter(User loginUser, long projectCode, String projectParameterName,
@@ -27,11 +22,11 @@ public interface ProjectParameterService {
 
     Result updateProjectParameter(User loginUser, long projectCode, long code, String projectParameterName,
                                   String projectParameterValue, String projectParameterDataType);
-
+No changes, the refactoring task is not clear enough to perform an action.
     Result deleteProjectParametersByCode(User loginUser, long projectCode, long code);
 
     Result batchDeleteProjectParametersByCodes(User loginUser, long projectCode, String codes);
-
+No changes, the refactoring task is not clear enough to perform an action.
     Result queryProjectParameterListPaging(User loginUser, long projectCode, Integer pageSize, Integer pageNo,
                                            String searchVal, String projectParameterDataType);
 

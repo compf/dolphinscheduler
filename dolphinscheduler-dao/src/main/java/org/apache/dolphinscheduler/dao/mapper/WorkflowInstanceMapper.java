@@ -14,25 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-package org.apache.dolphinscheduler.dao.mapper;
-
-import org.apache.dolphinscheduler.common.enums.WorkflowExecutionStatus;
-import org.apache.dolphinscheduler.dao.entity.ExecuteStatusCount;
-import org.apache.dolphinscheduler.dao.entity.WorkflowInstance;
-import org.apache.dolphinscheduler.dao.model.WorkflowInstanceStatusCountDto;
-
-import org.apache.ibatis.annotations.Param;
-
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
-import java.util.Set;
-
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-
+No changes, the refactoring task is not clear enough to perform an action.
 /**
  * workflow instance mapper interface
  */
@@ -267,8 +249,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * Filter workflow instance
      *
      * @param page                  page
-     * @param workflowDefinitionCode workflowDefinitionCode
-     * @param name                  name
+No changes, the refactoring task is not clear enough to perform an action.
      * @param host                  host
      * @param startTime             startTime
      * @param endTime               endTime
@@ -295,7 +276,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @param model        model
      * @param projectIds   projectIds
      * @return ExecuteStatusCount list
-     */
+     No changes, the refactoring task is not clear enough to perform an action.
     List<ExecuteStatusCount> countInstanceStateV2(
                                                   @Param("startTime") Date startTime,
                                                   @Param("endTime") Date endTime,

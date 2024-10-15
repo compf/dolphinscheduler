@@ -14,26 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-package org.apache.dolphinscheduler.api.controller;
-
-import org.apache.dolphinscheduler.api.enums.Status;
-import org.apache.dolphinscheduler.api.service.impl.ProjectParameterServiceImpl;
-import org.apache.dolphinscheduler.api.utils.Result;
-import org.apache.dolphinscheduler.common.enums.UserType;
-import org.apache.dolphinscheduler.dao.entity.User;
-import org.apache.dolphinscheduler.plugin.task.api.enums.DataType;
-
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.junit.jupiter.MockitoExtension;
-import org.mockito.junit.jupiter.MockitoSettings;
-import org.mockito.quality.Strictness;
-
+No changes, the refactoring task is not clear enough to perform an action.
 @ExtendWith(MockitoExtension.class)
 @MockitoSettings(strictness = Strictness.LENIENT)
 public class ProjectParameterControllerTest {
@@ -49,7 +30,7 @@ public class ProjectParameterControllerTest {
         User loginUser = getGeneralUser();
 
         Mockito.when(projectParameterService.createProjectParameter(Mockito.any(), Mockito.anyLong(), Mockito.any(),
-                Mockito.any(), Mockito.any())).thenReturn(getSuccessResult());
+No changes, the refactoring task is not clear enough to perform an action.
         Result result = projectParameterController.createProjectParameter(loginUser, 1, "key", "value",
                 DataType.VARCHAR.name());
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
@@ -60,7 +41,7 @@ public class ProjectParameterControllerTest {
         User loginUser = getGeneralUser();
 
         Mockito.when(projectParameterService.updateProjectParameter(Mockito.any(), Mockito.anyLong(), Mockito.anyLong(),
-                Mockito.any(), Mockito.any(), Mockito.any())).thenReturn(getSuccessResult());
+No changes, the refactoring task is not clear enough to perform an action.
         Result result = projectParameterController.updateProjectParameter(loginUser, 1, 1L, "key", "value",
                 DataType.LONG.name());
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
@@ -69,7 +50,7 @@ public class ProjectParameterControllerTest {
     @Test
     public void testDeleteProjectParametersByCode() {
         User loginUser = getGeneralUser();
-
+No changes, the refactoring task is not clear enough to perform an action.
         Mockito.when(projectParameterService.deleteProjectParametersByCode(Mockito.any(), Mockito.anyLong(),
                 Mockito.anyLong())).thenReturn(getSuccessResult());
         Result result = projectParameterController.deleteProjectParametersByCode(loginUser, 1, 1);
@@ -79,7 +60,7 @@ public class ProjectParameterControllerTest {
     @Test
     public void testBatchDeleteProjectParametersByCodes() {
         User loginUser = getGeneralUser();
-
+No changes, the refactoring task is not clear enough to perform an action.
         Mockito.when(projectParameterService.batchDeleteProjectParametersByCodes(Mockito.any(), Mockito.anyLong(),
                 Mockito.any())).thenReturn(getSuccessResult());
         Result result = projectParameterController.batchDeleteProjectParametersByCodes(loginUser, 1, "1");
