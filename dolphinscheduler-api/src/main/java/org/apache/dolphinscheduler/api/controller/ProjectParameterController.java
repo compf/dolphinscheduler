@@ -89,11 +89,9 @@ public class ProjectParameterController extends BaseController {
     public Result updateProjectParameter(@Parameter(hidden = true) @RequestAttribute(value = Constants.SESSION_USER) User loginUser,
                                          @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
                                          @PathVariable("code") Long code,
-                                         @RequestParam("projectParameterName") String projectParameterName,
-                                         @RequestParam(value = "projectParameterValue") String projectParameterValue,
-                                         @RequestParam(value = "projectParameterDataType") String projectParameterDataType) {
-        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName,
-                projectParameterValue, projectParameterDataType);
+                                         ProjectParameterRequest parameterRequest) {
+        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, parameterRequest.getProjectParameterName(),
+                parameterRequest.getProjectParameterValue(), parameterRequest.getProjectParameterDataType());
     }
 
     @Operation(summary = "deleteProjectParametersByCode", description = "DELETE_PROJECT_PARAMETER_NOTES")
