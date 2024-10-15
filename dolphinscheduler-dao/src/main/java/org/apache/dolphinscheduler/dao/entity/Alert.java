@@ -48,11 +48,7 @@ public class Alert {
     @TableField(value = "sign")
     private String sign;
 
-    @TableField(value = "title")
-    private String title;
-
-    @TableField(value = "content")
-    private String content;
+    private AlertData alertData;
 
     @TableField(value = "alert_status")
     private AlertStatus alertStatus;
@@ -63,8 +59,37 @@ public class Alert {
     @TableField(value = "log")
     private String log;
 
-    @TableField("alertgroup_id")
-    private Integer alertGroupId;
+    public String getTitle() {
+        return alertData.getTitle();
+    }
+
+    public void setTitle(String title) {
+        alertData.setTitle(title);
+    }
+
+    public String getContent() {
+        return alertData.getContent();
+    }
+
+    public void setContent(String content) {
+        alertData.setContent(content);
+    }
+
+    public Integer getAlertGroupId() {
+        return alertData.getAlertGroupId();
+    }
+
+    public void setAlertGroupId(Integer alertGroupId) {
+        alertData.setAlertGroupId(alertGroupId);
+    }
+
+    public AlertData getAlertData() {
+        return alertData;
+    }
+
+    public void setAlertData(AlertData alertData) {
+        this.alertData = alertData;
+    }
 
     @TableField("create_time")
     private Date createTime;
