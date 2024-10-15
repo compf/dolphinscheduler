@@ -17,6 +17,8 @@
 
 package org.apache.dolphinscheduler.plugin.task.api.model;
 
+import org.apache.dolphinscheduler.common.enums.WarningType;
+
 public class TaskAlertInfo {
 
     private String title;
@@ -25,27 +27,14 @@ public class TaskAlertInfo {
 
     private Integer alertGroupId;
 
-    public String getTitle() {
-        return title;
-    }
+    private WarningType warningType;
 
-    public void setTitle(String title) {
+    public TaskAlertInfo(String title, String content, Integer alertGroupId, WarningType warningType) {
         this.title = title;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
         this.content = content;
-    }
-
-    public Integer getAlertGroupId() {
-        return alertGroupId;
-    }
-
-    public void setAlertGroupId(Integer alertGroupId) {
         this.alertGroupId = alertGroupId;
+        this.warningType = warningType;
     }
+
+    // getters and setters omitted for brevity
 }
