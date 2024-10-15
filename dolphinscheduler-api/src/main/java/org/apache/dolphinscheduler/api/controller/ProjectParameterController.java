@@ -71,8 +71,7 @@ public class ProjectParameterController extends BaseController {
                                          @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
-                                         @RequestParam(value = "projectParameterDataType", defaultValue = "VARCHAR") String projectParameterDataType) {
-        return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName,
+                                         @RequestParam(value = "projectParameterDataType", defaultValue = "VARCHAR") DataType projectParameterDataType) {
                 projectParameterValue, projectParameterDataType);
     }
 
@@ -91,8 +90,7 @@ public class ProjectParameterController extends BaseController {
                                          @PathVariable("code") Long code,
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
-                                         @RequestParam(value = "projectParameterDataType") String projectParameterDataType) {
-        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName,
+                                         @RequestParam(value = "projectParameterDataType") DataType projectParameterDataType) {
                 projectParameterValue, projectParameterDataType);
     }
 
