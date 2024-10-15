@@ -118,8 +118,7 @@ public class SchedulerController extends BaseController {
                                  @RequestParam(value = "tenantCode", required = false, defaultValue = "default") String tenantCode,
                                  @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") Long environmentCode,
                                  @RequestParam(value = "workflowInstancePriority", required = false, defaultValue = DEFAULT_WORKFLOW_INSTANCE_PRIORITY) Priority workflowInstancePriority) {
-        Map<String, Object> result = schedulerService.insertSchedule(
-                loginUser,
+        SchedulerData schedulerData = new SchedulerData(
                 projectCode,
                 workflowDefinitionCode,
                 schedule,
@@ -128,7 +127,8 @@ public class SchedulerController extends BaseController {
                 failureStrategy,
                 workflowInstancePriority,
                 workerGroup,
-                tenantCode,
+                tenantCode);
+        Map<String, Object> result = schedulerService.insertSchedule(loginUser, schedulerData);
                 environmentCode);
 
         return returnDataList(result);
@@ -344,9 +344,17 @@ public class SchedulerController extends BaseController {
                                                          @RequestParam(value = "tenantCode", required = false, defaultValue = "default") String tenantCode,
                                                          @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") long environmentCode,
                                                          @RequestParam(value = "workflowInstancePriority", required = false) Priority workflowInstancePriority) {
-        Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(loginUser, projectCode,
-                workflowDefinitionCode, schedule,
-                warningType, warningGroupId, failureStrategy, workflowInstancePriority, workerGroup, tenantCode,
+        SchedulerData schedulerData = new SchedulerData(
+                projectCode,
+                workflowDefinitionCode,
+                schedule,
+                warningType,
+                warningGroupId,
+                failureStrategy,
+                workflowInstancePriority,
+                workerGroup,
+                tenantCode);
+        Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(loginUser, schedulerData);
                 environmentCode);
         return returnDataList(result);
     }
