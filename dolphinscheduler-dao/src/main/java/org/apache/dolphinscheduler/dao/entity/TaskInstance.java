@@ -29,7 +29,6 @@ import lombok.Data;
 
 import com.baomidou.mybatisplus.annotation.FieldStrategy;
 import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
@@ -40,15 +39,11 @@ public class TaskInstance implements Serializable {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private String name;
 
     private String taskType;
 
     private int workflowInstanceId;
 
-    private String workflowInstanceName;
-
-    private Long projectCode;
 
     private long taskCode;
 
@@ -68,9 +63,6 @@ public class TaskInstance implements Serializable {
 
     private Date startTime;
 
-    private Date endTime;
-
-    private String host;
 
     private String executePath;
 
@@ -140,9 +132,9 @@ public class TaskInstance implements Serializable {
 
     private int testFlag;
 
-    public void init(String host, Date startTime, String executePath) {
-        this.host = host;
-        this.startTime = startTime;
+    public void init(TaskInstanceInitializationParameters initParameters) {
+        this.host = initParameters.getHost();
+        this.startTime = initParameters.getStartTime();
         this.executePath = executePath;
     }
 
