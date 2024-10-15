@@ -26,7 +26,6 @@ import org.apache.dolphinscheduler.api.exceptions.ApiException;
 import org.apache.dolphinscheduler.api.service.ProjectParameterService;
 import org.apache.dolphinscheduler.api.utils.Result;
 import org.apache.dolphinscheduler.common.constants.Constants;
-import org.apache.dolphinscheduler.dao.entity.User;
 import org.apache.dolphinscheduler.plugin.task.api.utils.ParameterUtils;
 
 import lombok.extern.slf4j.Slf4j;
@@ -67,13 +66,11 @@ public class ProjectParameterController extends BaseController {
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
     @ApiException(CREATE_PROJECT_PARAMETER_ERROR)
-    public Result createProjectParameter(@Parameter(hidden = true) @RequestAttribute(value = Constants.SESSION_USER) User loginUser,
+    public Result createProjectParameter(ProjectParameterRequest parameterRequest) {
                                          @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
-                                         @RequestParam(value = "projectParameterDataType", defaultValue = "VARCHAR") String projectParameterDataType) {
-        return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName,
-                projectParameterValue, projectParameterDataType);
+        return projectParameterService.createProjectParameter(loginUser, projectCode, new ProjectParameterConfig(projectParameterName, projectParameterValue, projectParameterDataType));
     }
 
     @Operation(summary = "updateProjectParameter", description = "UPDATE_PROJECT_PARAMETER_NOTES")
@@ -86,14 +83,12 @@ public class ProjectParameterController extends BaseController {
     @PutMapping(value = "/{code}")
     @ResponseStatus(HttpStatus.OK)
     @ApiException(UPDATE_PROJECT_PARAMETER_ERROR)
-    public Result updateProjectParameter(@Parameter(hidden = true) @RequestAttribute(value = Constants.SESSION_USER) User loginUser,
+    public Result updateProjectParameter(ProjectParameterRequest parameterRequest) {
                                          @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
                                          @PathVariable("code") Long code,
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
-                                         @RequestParam(value = "projectParameterDataType") String projectParameterDataType) {
-        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName,
-                projectParameterValue, projectParameterDataType);
+        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, new ProjectParameterConfig(projectParameterName, projectParameterValue, projectParameterDataType));
     }
 
     @Operation(summary = "deleteProjectParametersByCode", description = "DELETE_PROJECT_PARAMETER_NOTES")

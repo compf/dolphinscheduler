@@ -18,7 +18,7 @@
 package org.apache.dolphinscheduler.api.controller;
 
 import org.apache.dolphinscheduler.api.enums.Status;
-import org.apache.dolphinscheduler.api.service.impl.ProjectParameterServiceImpl;
+import org.apache.dolphinscheduler.api.service.ProjectParameterService;
 import org.apache.dolphinscheduler.api.utils.Result;
 import org.apache.dolphinscheduler.common.enums.UserType;
 import org.apache.dolphinscheduler.dao.entity.User;
@@ -48,9 +48,7 @@ public class ProjectParameterControllerTest {
     public void testCreateProjectParameter() {
         User loginUser = getGeneralUser();
 
-        Mockito.when(projectParameterService.createProjectParameter(Mockito.any(), Mockito.anyLong(), Mockito.any(),
-                Mockito.any(), Mockito.any())).thenReturn(getSuccessResult());
-        Result result = projectParameterController.createProjectParameter(loginUser, 1, "key", "value",
+        Mockito.when(projectParameterService.createProjectParameter(Mockito.any(User.class), Mockito.anyLong(), Mockito.any(ProjectParameterConfig.class))).thenReturn(getSuccessResult());
                 DataType.VARCHAR.name());
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
@@ -59,9 +57,7 @@ public class ProjectParameterControllerTest {
     public void testUpdateProjectParameter() {
         User loginUser = getGeneralUser();
 
-        Mockito.when(projectParameterService.updateProjectParameter(Mockito.any(), Mockito.anyLong(), Mockito.anyLong(),
-                Mockito.any(), Mockito.any(), Mockito.any())).thenReturn(getSuccessResult());
-        Result result = projectParameterController.updateProjectParameter(loginUser, 1, 1L, "key", "value",
+        Mockito.when(projectParameterService.updateProjectParameter(Mockito.any(User.class), Mockito.anyLong(), Mockito.anyLong(), Mockito.any(ProjectParameterConfig.class))).thenReturn(getSuccessResult());
                 DataType.LONG.name());
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
