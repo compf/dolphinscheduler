@@ -14,38 +14,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package org.apache.dolphinscheduler.plugin.task.api.model;
 
 public class TaskAlertInfo {
 
-    private String title;
+    private final AlertData alertData;
 
-    private String content;
-
-    private Integer alertGroupId;
-
-    public String getTitle() {
-        return title;
+    public TaskAlertInfo(AlertData alertData) {
+        this.alertData = alertData;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public String getTitle() {
+        return alertData.getTitle();
     }
 
     public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
+        return alertData.getContent();
     }
 
     public Integer getAlertGroupId() {
-        return alertGroupId;
+        return alertData.getAlertGroupId();
     }
 
-    public void setAlertGroupId(Integer alertGroupId) {
-        this.alertGroupId = alertGroupId;
+    // Other methods and logic
+}
     }
 }

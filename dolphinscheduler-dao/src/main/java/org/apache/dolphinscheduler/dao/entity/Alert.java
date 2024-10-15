@@ -49,11 +49,11 @@ public class Alert {
     private String sign;
 
     @TableField(value = "title")
-    private String title;
+    private final AlertData alertData;
 
-    @TableField(value = "content")
-    private String content;
-
+    public Alert(AlertData alertData) {
+        this.alertData = alertData;
+    }
     @TableField(value = "alert_status")
     private AlertStatus alertStatus;
 
@@ -63,8 +63,21 @@ public class Alert {
     @TableField(value = "log")
     private String log;
 
-    @TableField("alertgroup_id")
-    private Integer alertGroupId;
+    
+    public String getTitle() {
+        return alertData.getTitle();
+    }
+
+    public String getContent() {
+        return alertData.getContent();
+    }
+
+    public Integer getAlertGroupId() {
+        return alertData.getAlertGroupId();
+    }
+
+    // Other methods and logic
+}
 
     @TableField("create_time")
     private Date createTime;
