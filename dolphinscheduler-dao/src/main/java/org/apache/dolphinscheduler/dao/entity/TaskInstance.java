@@ -60,25 +60,7 @@ public class TaskInstance implements Serializable {
     @TableField(exist = false)
     private int taskGroupPriority;
 
-    private TaskExecutionStatus state;
-
-    private Date firstSubmitTime;
-
-    private Date submitTime;
-
-    private Date startTime;
-
-    private Date endTime;
-
-    private String host;
-
-    private String executePath;
-
-    private String logPath;
-
-    private int retryTimes;
-
-    private Flag alertFlag;
+    private TaskExecutionInfo executionInfo;
 
     @TableField(exist = false)
     private WorkflowInstance workflowInstance;
@@ -130,20 +112,12 @@ public class TaskInstance implements Serializable {
 
     private int dryRun;
 
-    private int taskGroupId;
-
-    private Integer cpuQuota;
-
-    private Integer memoryMax;
-
-    private TaskExecuteType taskExecuteType;
+    private TaskResourceInfo resourceInfo;
 
     private int testFlag;
 
-    public void init(String host, Date startTime, String executePath) {
-        this.host = host;
-        this.startTime = startTime;
-        this.executePath = executePath;
+    public void init(TaskExecutionInfo executionInfo) {
+        this.executionInfo = executionInfo;
     }
 
 }

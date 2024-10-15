@@ -257,11 +257,11 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      */
 
     List<WorkflowInstance> queryByWorkflowDefinitionCodeAndStatus(@Param("workflowDefinitionCode") Long workflowDefinitionCode,
-                                                                  @Param("states") int[] states);
+                                                                  @Param("states") WorkflowInstanceState[] states);
 
     List<WorkflowInstance> queryByWorkflowCodeVersionStatus(@Param("workflowDefinitionCode") long workflowDefinitionCode,
                                                             @Param("workflowDefinitionVersion") int workflowDefinitionVersion,
-                                                            @Param("states") int[] states);
+                                                            @Param("states") WorkflowInstanceState[] states);
 
     /**
      * Filter workflow instance
@@ -278,9 +278,9 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
                                                               @Param("projectCode") Long projectCode,
                                                               @Param("workflowDefinitionCode") Long workflowDefinitionCode,
                                                               @Param("name") String name,
-                                                              @Param("startTime") String startTime,
-                                                              @Param("endTime") String endTime,
-                                                              @Param("state") Integer state,
+                                                              @Param("startTime") WorkflowInstanceTime startTime,
+                                                              @Param("endTime") WorkflowInstanceTime endTime,
+                                                              @Param("state") WorkflowInstanceState state,
                                                               @Param("host") String host);
 
     /**

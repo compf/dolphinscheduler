@@ -59,47 +59,27 @@ public class ProjectParameterController extends BaseController {
     private ProjectParameterService projectParameterService;
 
     @Operation(summary = "createProjectParameter", description = "CREATE_PROJECT_PARAMETER_NOTES")
-    @Parameters({
-            @Parameter(name = "projectParameterName", description = "PROJECT_PARAMETER_NAME", schema = @Schema(implementation = String.class)),
-            @Parameter(name = "projectParameterValue", description = "PROJECT_PARAMETER_VALUE", schema = @Schema(implementation = String.class)),
-            @Parameter(name = "projectParameterDataType", description = "PROJECT_PARAMETER_DATA_TYPE", schema = @Schema(implementation = String.class))
-    })
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
     @ApiException(CREATE_PROJECT_PARAMETER_ERROR)
     public Result createProjectParameter(@Parameter(hidden = true) @RequestAttribute(value = Constants.SESSION_USER) User loginUser,
                                          @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
-                                         @RequestParam("projectParameterName") String projectParameterName,
-                                         @RequestParam(value = "projectParameterValue") String projectParameterValue,
-                                         @RequestParam(value = "projectParameterDataType", defaultValue = "VARCHAR") String projectParameterDataType) {
-        return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName,
-                projectParameterValue, projectParameterDataType);
+                                         @RequestBody ProjectParameterInfo parameterInfo) {
+        return projectParameterService.createProjectParameter(loginUser, projectCode, parameterInfo);
     }
 
     @Operation(summary = "updateProjectParameter", description = "UPDATE_PROJECT_PARAMETER_NOTES")
-    @Parameters({
-            @Parameter(name = "code", description = "PROJECT_PARAMETER_CODE", schema = @Schema(implementation = long.class, example = "123456")),
-            @Parameter(name = "projectParameterName", description = "PROJECT_PARAMETER_NAME", schema = @Schema(implementation = String.class)),
-            @Parameter(name = "projectParameterValue", description = "PROJECT_PARAMETER_VALUE", schema = @Schema(implementation = String.class)),
-            @Parameter(name = "projectParameterDataType", description = "PROJECT_PARAMETER_DATA_TYPE", schema = @Schema(implementation = String.class))
-    })
     @PutMapping(value = "/{code}")
     @ResponseStatus(HttpStatus.OK)
     @ApiException(UPDATE_PROJECT_PARAMETER_ERROR)
     public Result updateProjectParameter(@Parameter(hidden = true) @RequestAttribute(value = Constants.SESSION_USER) User loginUser,
                                          @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
                                          @PathVariable("code") Long code,
-                                         @RequestParam("projectParameterName") String projectParameterName,
-                                         @RequestParam(value = "projectParameterValue") String projectParameterValue,
-                                         @RequestParam(value = "projectParameterDataType") String projectParameterDataType) {
-        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName,
-                projectParameterValue, projectParameterDataType);
+                                         @RequestBody ProjectParameterInfo parameterInfo) {
+        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, parameterInfo);
     }
 
     @Operation(summary = "deleteProjectParametersByCode", description = "DELETE_PROJECT_PARAMETER_NOTES")
-    @Parameters({
-            @Parameter(name = "code", description = "PROJECT_PARAMETER_CODE", required = true, schema = @Schema(implementation = String.class))
-    })
     @PostMapping(value = "/delete")
     @ResponseStatus(HttpStatus.OK)
     @ApiException(DELETE_PROJECT_PARAMETER_ERROR)

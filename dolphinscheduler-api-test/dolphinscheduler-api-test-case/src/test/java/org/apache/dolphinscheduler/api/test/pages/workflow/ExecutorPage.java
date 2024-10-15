@@ -58,40 +58,29 @@ public class ExecutorPage {
         return requestClient.post(url, headers, params);
     }
 
-    public HttpResponse queryExecutingWorkflow(User loginUser, long projectCode, long workflowInstanceCode) {
-        Map<String, Object> params = new HashMap<>();
-        params.put("loginUser", loginUser);
-        params.put("id", workflowInstanceCode);
-        Map<String, String> headers = new HashMap<>();
-        headers.put(Constants.SESSION_ID_KEY, sessionId);
+    public HttpResponse queryExecutingWorkflow(ExecutionRequestContext context) {
+        Map<String, Object> params = context.createParamsMap();
+        Map<String, String> headers = context.createHeadersMap(sessionId);
         RequestClient requestClient = new RequestClient();
-        String url = String.format("/projects/%s/executors/query-executing-workflow", projectCode);
+        String url = String.format("/projects/%s/executors/query-executing-workflow", context.getProjectCode());
         return requestClient.get(url, headers, params);
     }
 
-    public HttpResponse execute(User loginUser, long projectCode, int workflowInstanceId, ExecuteType executeType) {
-        Map<String, Object> params = new HashMap<>();
-        params.put("loginUser", loginUser);
-        params.put("projectCode", projectCode);
-        params.put("workflowInstanceId", workflowInstanceId);
+    public HttpResponse execute(ExecutionRequestContext context, ExecuteType executeType) {
+        Map<String, Object> params = context.createParamsMap();
         params.put("executeType", executeType);
-        Map<String, String> headers = new HashMap<>();
-        headers.put(Constants.SESSION_ID_KEY, sessionId);
+        Map<String, String> headers = context.createHeadersMap(sessionId);
 
         RequestClient requestClient = new RequestClient();
-        String url = String.format("/projects/%s/executors/execute", projectCode);
+        String url = String.format("/projects/%s/executors/execute", context.getProjectCode());
         return requestClient.post(url, headers, params);
     }
 
-    public HttpResponse executeTask(User loginUser, long projectCode, int workflowInstanceId, String startNodeList,
-                                    TaskDependType taskDependType) {
-        Map<String, Object> params = new HashMap<>();
-        params.put("loginUser", loginUser);
-        params.put("workflowInstanceId", workflowInstanceId);
+    public HttpResponse executeTask(ExecutionRequestContext context, String startNodeList, TaskDependType taskDependType) {
+        Map<String, Object> params = context.createParamsMap();
         params.put("startNodeList", startNodeList);
         params.put("taskDependType", taskDependType);
-        Map<String, String> headers = new HashMap<>();
-        headers.put(Constants.SESSION_ID_KEY, sessionId);
+        Map<String, String> headers = context.createHeadersMap(sessionId);
 
         RequestClient requestClient = new RequestClient();
         String url = String.format("/projects/%s/executors/execute-task", projectCode);
