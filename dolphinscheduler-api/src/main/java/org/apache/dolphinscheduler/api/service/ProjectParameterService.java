@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+Result createProjectParameter(ProjectParameterRequest projectParameterRequest);
 package org.apache.dolphinscheduler.api.service;
 
 import org.apache.dolphinscheduler.api.utils.Result;
@@ -25,8 +25,7 @@ public interface ProjectParameterService {
     Result createProjectParameter(User loginUser, long projectCode, String projectParameterName,
                                   String projectParameterValue, String projectParameterDataType);
 
-    Result updateProjectParameter(User loginUser, long projectCode, long code, String projectParameterName,
-                                  String projectParameterValue, String projectParameterDataType);
+    Result updateProjectParameter(ProjectParameterRequest projectParameterRequest);
 
     Result deleteProjectParametersByCode(User loginUser, long projectCode, long code);
 
