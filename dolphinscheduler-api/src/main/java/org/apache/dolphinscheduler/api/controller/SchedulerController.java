@@ -107,8 +107,7 @@ public class SchedulerController extends BaseController {
     @ResponseStatus(HttpStatus.CREATED)
     @ApiException(CREATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_CREATE)
-    public Result createSchedule(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
-                                 @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
+    public Result createSchedule(ScheduleCreationParameters parameters) {
                                  @RequestParam(value = "workflowDefinitionCode") long workflowDefinitionCode,
                                  @RequestParam(value = "schedule") String schedule,
                                  @RequestParam(value = "warningType", required = false, defaultValue = DEFAULT_WARNING_TYPE) WarningType warningType,
@@ -333,8 +332,7 @@ public class SchedulerController extends BaseController {
     @ResponseStatus(HttpStatus.OK)
     @ApiException(UPDATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_UPDATE)
-    public Result updateScheduleByWorkflowDefinitionCode(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
-                                                         @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
+    public Result updateScheduleByWorkflowDefinitionCode(ScheduleUpdateParameters parameters) {
                                                          @PathVariable(value = "code") long workflowDefinitionCode,
                                                          @RequestParam(value = "schedule") String schedule,
                                                          @RequestParam(value = "warningType", required = false, defaultValue = DEFAULT_WARNING_TYPE) WarningType warningType,
