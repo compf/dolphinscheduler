@@ -129,7 +129,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      */
     int setFailoverByHostAndStateArray(@Param("host") String host,
                                        @Param("states") int[] stateArray);
-
+// Removed the setQueryWorkflowInstanceListPagingParams method
     /**
      * Update the workflow instance state from originState to destState
      */
