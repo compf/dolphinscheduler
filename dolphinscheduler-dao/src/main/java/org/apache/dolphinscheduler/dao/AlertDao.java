@@ -89,7 +89,7 @@ public class AlertDao {
      * @return add alert result
      */
     public int addAlert(Alert alert) {
-        if (null == alert.getAlertGroupId() || NumberUtils.INTEGER_ZERO.equals(alert.getAlertGroupId())) {
+        if (null == alert.getAlertGroup() || NumberUtils.INTEGER_ZERO.equals(alert.getAlertGroup().getId())) {
             log.warn("the value of alertGroupId is null or 0 ");
             return 0;
         }
@@ -176,7 +176,7 @@ public class AlertDao {
         alert.setWarningType(WarningType.FAILURE);
         alert.setAlertStatus(AlertStatus.WAIT_EXECUTION);
         alert.setContent(content);
-        alert.setAlertGroupId(ADMIN_ALERT_GROUP_ID);
+        alert.setAlertGroup(new AlertGroup(ADMIN_ALERT_GROUP_ID, "admin"));
         alert.setCreateTime(new Date());
         alert.setUpdateTime(new Date());
         alert.setAlertType(AlertType.FAULT_TOLERANCE_WARNING);
@@ -223,8 +223,8 @@ public class AlertDao {
         saveTaskTimeoutAlert(alert, content, alertGroupId);
     }
 
-    private void saveTaskTimeoutAlert(Alert alert, String content, int alertGroupId) {
-        alert.setAlertGroupId(alertGroupId);
+    private void saveTaskTimeoutAlert(Alert alert, String content, AlertGroup alertGroup) {
+        alert.setAlertGroup(alertGroup);
         alert.setWarningType(WarningType.FAILURE);
         alert.setContent(content);
         alert.setCreateTime(new Date());
@@ -254,8 +254,6 @@ public class AlertDao {
                 .workflowDefinitionCode(workflowInstance.getWorkflowDefinitionCode())
                 .workflowInstanceName(workflowInstance.getName())
                 .taskCode(taskInstance.getTaskCode())
-                .taskName(taskInstance.getName())
-                .taskType(taskInstance.getTaskType())
                 .taskStartTime(taskInstance.getStartTime())
                 .taskHost(taskInstance.getHost())
                 .event(AlertEvent.TIME_OUT)
