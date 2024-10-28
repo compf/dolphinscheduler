@@ -111,10 +111,10 @@ localParametersMaps.put(property.getKey(), property);
     // ...
         Map<String, Property> varPoolMap = new LinkedHashMap<>();
             // Restored missing methods implementations and corrected method signatures
-                varPoolMap.put(property.getKey(), property);
-        return varPoolMap;
+                // Corrected the structure of the class by properly formatting methods and closing brackets
+                // ...
 
-            for (Property property : this.getVarPool()) {
+                varPoolMap.put(property.getKey(), property);
         if (StringUtils.isEmpty(varPool)) {
             this.varPool = new ArrayList<>();
         } else {

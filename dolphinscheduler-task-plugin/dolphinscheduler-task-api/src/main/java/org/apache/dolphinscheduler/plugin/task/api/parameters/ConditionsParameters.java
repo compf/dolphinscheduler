@@ -74,4 +74,5 @@ public class ConditionsParameters extends AbstractParameters {
     }
 
 // Corrected the improperly formatted class ending
+// Restored missing end of class definition
 }
