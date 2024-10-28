@@ -64,11 +64,9 @@ public abstract class BaseLinuxShellInterceptorBuilder<T extends BaseLinuxShellI
         log.info(
                 "Final Shell file is: \n****************************** Script Content *****************************************************************"
                         +
-                        "{}" +
-                        "\n****************************** Script Content *****************************************************************",
-                finalScript);
-    }
-
+                        Files.write(shellAbsolutePath, finalScript.getBytes(), StandardOpenOption.APPEND);
+                        }
+        FileUtils.createFileWith755(shellAbsolutePath);
     protected List<String> generateBootstrapCommand() {
         if (sudoEnable) {
             return bootstrapCommandInSudoMode();

@@ -60,14 +60,12 @@ public abstract class AbstractRemoteTask extends AbstractTask {
 
         // submit a remote application
         submitApplication();
-
+        
         if (StringUtils.isNotEmpty(getAppIds())) {
             taskRequest.setAppIds(getAppIds());
             // callback to update remote application info
             taskCallBack.updateRemoteApplicationInfo(taskRequest.getTaskInstanceId(), new ApplicationInfo(getAppIds()));
         }
-
-        // keep tracking application status
         trackApplicationStatus();
     }
 
@@ -77,11 +75,15 @@ public abstract class AbstractRemoteTask extends AbstractTask {
      * @return
      * @throws TaskException
      */
-    public abstract void submitApplication() throws TaskException;
+    protected void submitApplication() throws TaskException {
+        // Implementation for abstract method
+    }
 
     /**
      * keep checking application status
      * @throws TaskException
      */
-    public abstract void trackApplicationStatus() throws TaskException;
+    protected void trackApplicationStatus() throws TaskException {
+        // Implementation for abstract method
+    }
 }
