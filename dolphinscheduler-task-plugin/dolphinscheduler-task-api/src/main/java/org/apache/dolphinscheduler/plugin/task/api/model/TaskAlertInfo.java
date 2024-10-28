@@ -42,10 +42,10 @@ public class TaskAlertInfo {
     }
 
     public Integer getAlertGroupId() {
-        return alertGroupId;
+        return alertGroup.getId();
     }
 
     public void setAlertGroupId(Integer alertGroupId) {
-        this.alertGroupId = alertGroupId;
+        this.alertGroup = new AlertGroup(alertGroupId);
     }
 }
