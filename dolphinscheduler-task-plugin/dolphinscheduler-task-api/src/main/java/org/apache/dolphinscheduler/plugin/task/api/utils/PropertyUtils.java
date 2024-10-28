@@ -47,8 +47,8 @@ public class PropertyUtils {
             try {
                 Map<String, String> startParamMap = JSONUtils.toMap(startParams);
                 startParamList = startParamMap.entrySet().stream()
-//                        .map(entry -> new Property(entry.getKey(), Direct.IN, DataType.VARCHAR, entry.getValue()))
-//                        .collect(Collectors.toList());
+                        .map(entry -> new Property(entry.getKey(), Direct.IN, DataType.VARCHAR, entry.getValue()))
+                        .collect(Collectors.toList());
             } catch (Exception ignore) {
                 startParamList = JSONUtils.toList(startParams, Property.class);
             }

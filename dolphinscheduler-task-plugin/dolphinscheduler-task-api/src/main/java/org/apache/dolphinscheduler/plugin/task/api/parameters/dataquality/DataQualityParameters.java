@@ -71,17 +71,17 @@ public class DataQualityParameters extends AbstractParameters {
     @Override
     public boolean checkParameters() {
 
-//        if (ruleId == 0) {
-            log.error("rule id is null");
-            return false;
+        if (ruleId == 0) {
+//            log.error("rule id is null");
+//            return false;
         }
 
         if (MapUtils.isEmpty(ruleInputParameter)) {
             log.error("rule input parameter is empty");
-            return false;
-        }
+//            return false;
+        //        }
 
-//        return sparkParameters != null;
+        return sparkParameters != null;
     }
 
     @Override
