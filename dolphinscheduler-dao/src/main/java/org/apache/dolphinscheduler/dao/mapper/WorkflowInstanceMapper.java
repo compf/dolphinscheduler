@@ -270,11 +270,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @param queryCriteria queryCriteria
      */
      IPage<WorkflowInstance> queryWorkflowInstanceListV2Paging(Page<WorkflowInstance> page,
-                                                              @Param("queryCriteria") WorkflowInstanceQueryCriteria queryCriteria,
-     * @param endTime               endTime
-     * @return workflow instance IPage
-                                                              @Param("endTime") String endTime,
-                                                              @Param("state") Integer state);
+                                                              @Param("queryCriteria") WorkflowInstanceQueryCriteria queryCriteria);
 
     /**
      * Statistics workflow instance state v2
