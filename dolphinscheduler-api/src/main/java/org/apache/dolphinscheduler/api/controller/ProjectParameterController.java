@@ -72,8 +72,8 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
                                          @RequestParam(value = "projectParameterDataType", defaultValue = "VARCHAR") String projectParameterDataType) {
-        ProjectParameterInfo parameterInfo = new ProjectParameterInfo(loginUser, projectCode, projectParameterName, projectParameterValue, projectParameterDataType);
-        return projectParameterService.createProjectParameter(parameterInfo);
+        // Removed line
+        return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName, projectParameterValue, projectParameterDataType);
     }
 
     @Operation(summary = "updateProjectParameter", description = "UPDATE_PROJECT_PARAMETER_NOTES")
@@ -92,8 +92,8 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
                                          @RequestParam(value = "projectParameterDataType") String projectParameterDataType) {
-        ProjectParameterInfo parameterInfo = new ProjectParameterInfo(loginUser, projectCode, code, projectParameterName, projectParameterValue, projectParameterDataType);
-        return projectParameterService.updateProjectParameter(parameterInfo);
+        // Removed line
+        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName, projectParameterValue, projectParameterDataType);
     }
 
     @Operation(summary = "deleteProjectParametersByCode", description = "DELETE_PROJECT_PARAMETER_NOTES")
