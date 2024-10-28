@@ -110,17 +110,17 @@ localParametersMaps.put(property.getKey(), property);
      */
     // ...
         Map<String, Property> varPoolMap = new LinkedHashMap<>();
-            for (Property property : varPool) {
+            // Restored missing methods implementations and corrected method signatures
                 varPoolMap.put(property.getKey(), property);
         return varPoolMap;
 
-    public void setVarPool(String varPool) {
+            for (Property property : this.getVarPool()) {
         if (StringUtils.isEmpty(varPool)) {
             this.varPool = new ArrayList<>();
         } else {
             this.varPool = JSONUtils.toList(varPool, Property.class);
 
-    public void dealOutParam(Map<String, String> taskOutputParams) {
+                // ...
         List<Property> outProperty = getOutProperty(localParams);
         if (CollectionUtils.isEmpty(outProperty)) {
             return;
