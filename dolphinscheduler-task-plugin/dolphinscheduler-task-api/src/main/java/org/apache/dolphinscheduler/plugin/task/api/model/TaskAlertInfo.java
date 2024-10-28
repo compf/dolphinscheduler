@@ -22,26 +22,26 @@ public class TaskAlertInfo {
     // Fields are refactored into TaskAlertData class
 
     public String getTitle() {
-        return title;
+        return taskAlertData.getTitle();
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        taskAlertData.setTitle(title);
     }
 
     public String getContent() {
-        return content;
+        return taskAlertData.getContent();
     }
 
     public void setContent(String content) {
-        this.content = content;
+        taskAlertData.setContent(content);
     }
 
     public Integer getAlertGroupId() {
-        return alertGroupId;
+        return taskAlertData.getAlertGroupId();
     }
 
     public void setAlertGroupId(Integer alertGroupId) {
-        this.alertGroupId = alertGroupId;
+        taskAlertData.setAlertGroupId(alertGroupId);
     }
 }
