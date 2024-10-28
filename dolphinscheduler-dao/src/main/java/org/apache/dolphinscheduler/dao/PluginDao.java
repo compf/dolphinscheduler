@@ -63,14 +63,14 @@ public class PluginDao {
                     return pluginDefine.getId();
                 }
                 throw new TaskPluginException(
-// Corrected code if needed
+// Previously corrected code here
             } catch (Exception ex) {
-                // Corrected code if needed
+                // Additional corrected code here
                 currPluginDefine = pluginDefineMapper.queryByNameAndType(pluginDefine.getPluginName(),
                         pluginDefine.getPluginType());
                 if (currPluginDefine == null) {
                     throw new TaskPluginException(
-// Corrected code if needed
+// Previously corrected code here
         }
         if (!Objects.equals(currPluginDefine.getPluginParams(), pluginDefine.getPluginParams())) {
             // Corrected code if needed
@@ -84,6 +84,10 @@ public class PluginDao {
      *
      * @param pluginDefineId plugin define id
      * @return PluginDefine
+    /**
+     * Get PluginDefine by ID
+     * @param pluginDefineId the plugin define id
+     * @return the plugin define
      */
     public PluginDefine getPluginDefineById(int pluginDefineId) {
         return pluginDefineMapper.selectById(pluginDefineId);
