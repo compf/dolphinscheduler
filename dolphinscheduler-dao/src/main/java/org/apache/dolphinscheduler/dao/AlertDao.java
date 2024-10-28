@@ -253,7 +253,7 @@ public class AlertDao {
                 .workflowInstanceId(workflowInstance.getId())
                 .workflowDefinitionCode(workflowInstance.getWorkflowDefinitionCode())
                 .workflowInstanceName(workflowInstance.getName())
-                .taskCode(taskInstance.getId())
+                .taskCode(Long.valueOf(taskInstance.getId()))
                 .taskName(taskInstance.getName())
                 .taskType(taskInstance.getTaskType())
                 .taskStartTime(taskInstance.getStartTime())
