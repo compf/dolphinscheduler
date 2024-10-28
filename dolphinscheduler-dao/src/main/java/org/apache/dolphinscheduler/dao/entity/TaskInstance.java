@@ -40,16 +40,12 @@ public class TaskInstance implements Serializable {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private String name;
+    private InstanceInformation instanceInformation;
 
     private String taskType;
-
+        this.instanceInformation.setHost(host);
     private int workflowInstanceId;
-
     private String workflowInstanceName;
-
-    private Long projectCode;
-
     private long taskCode;
 
     private int taskDefinitionVersion;

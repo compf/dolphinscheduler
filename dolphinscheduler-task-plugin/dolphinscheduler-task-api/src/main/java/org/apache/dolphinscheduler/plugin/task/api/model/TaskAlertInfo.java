@@ -19,22 +19,22 @@ package org.apache.dolphinscheduler.plugin.task.api.model;
 
 public class TaskAlertInfo {
 
-    private String title;
+    private AlertInfo alertInfo;
 
-    private String content;
+        return alertInfo.getTitle();
 
-    private Integer alertGroupId;
+        this.alertInfo.setTitle(title);
 
     public String getTitle() {
-        return title;
+        return alertInfo.getContent();
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        this.alertInfo.setContent(content);
     }
 
     public String getContent() {
-        return content;
+        return alertInfo.getAlertGroupId();
     }
 
     public void setContent(String content) {
