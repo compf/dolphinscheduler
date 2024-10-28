@@ -1,14 +1,18 @@
 public class WorkflowInstanceSearchParams {
-    private Long workflowDefinitionCode;
-    private String startTime;
-    private String endTime;
-    private Integer state;
+    private Date startTime;
+    private Date endTime;
+    private Long projectCode;
+    private Long workflowCode;
+    private Integer model;
+    private Set<Integer> projectIds;
 
-    public WorkflowInstanceSearchParams(Long workflowDefinitionCode, String startTime, String endTime, Integer state) {
-        this.workflowDefinitionCode = workflowDefinitionCode;
+    public WorkflowInstanceSearchParams(Date startTime, Date endTime, Long projectCode, Long workflowCode, Integer model, Set<Integer> projectIds) {
         this.startTime = startTime;
         this.endTime = endTime;
-        this.state = state;
+        this.projectCode = projectCode;
+        this.workflowCode = workflowCode;
+        this.model = model;
+        this.projectIds = projectIds;
     }
 
     // Getters and Setters
