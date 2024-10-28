@@ -1,9 +1,11 @@
 package org.apache.dolphinscheduler.dao.mapper;
 
+import java.util.Date;
+
 public class WorkflowInstanceQueryParameters {
     private Long workflowDefinitionCode;
-    private String startTime;
-    private String endTime;
+    private Date startTime;
+    private Date endTime;
     private Integer state;
 
     // Constructor, getters, and setters

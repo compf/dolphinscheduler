@@ -54,7 +54,7 @@ public class Alert {
     @TableField(value = "content")
     private String content;
 
-    @TableField(value = "alert_status")
+    @TableField(value = "alert_status", updateStrategy = FieldStrategy.IGNORED)
     private AlertStatus alertStatus;
 
     @TableField(value = "warning_type")
