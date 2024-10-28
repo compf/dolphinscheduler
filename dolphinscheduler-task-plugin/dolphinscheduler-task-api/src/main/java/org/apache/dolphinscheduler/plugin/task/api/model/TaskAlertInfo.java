@@ -23,7 +23,7 @@ public class TaskAlertInfo {
 
     private String content;
 
-        this.alertInfo = new AlertInfo(this.title, this.content, this.alertGroupId);
+
 
     public String getTitle() {
         return title;
