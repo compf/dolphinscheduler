@@ -57,7 +57,7 @@ public class TaskInstanceDaoImpl extends BaseDao<TaskInstance, TaskInstanceMappe
 
     @Override
     public boolean upsertTaskInstance(TaskInstance taskInstance) {
-        if (taskInstance.getId() != null) {
+        if (taskInstance.getId() != 0) {
             return updateById(taskInstance);
         } else {
             return insert(taskInstance) > 0;
