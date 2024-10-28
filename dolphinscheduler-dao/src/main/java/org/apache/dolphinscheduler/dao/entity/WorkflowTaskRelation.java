@@ -98,19 +98,8 @@ public class WorkflowTaskRelation {
     }
 
     public WorkflowTaskRelation(WorkflowTaskRelationLog processTaskRelationLog) {
-        this.name = processTaskRelationLog.getName();
-        this.workflowDefinitionVersion = processTaskRelationLog.getWorkflowDefinitionVersion();
-        this.projectCode = processTaskRelationLog.getProjectCode();
-        this.workflowDefinitionCode = processTaskRelationLog.getWorkflowDefinitionCode();
-        this.preTaskCode = processTaskRelationLog.getPreTaskCode();
-        this.preTaskVersion = processTaskRelationLog.getPreTaskVersion();
-        this.postTaskCode = processTaskRelationLog.getPostTaskCode();
-        this.postTaskVersion = processTaskRelationLog.getPostTaskVersion();
-        this.conditionType = processTaskRelationLog.getConditionType();
-        this.conditionParams = processTaskRelationLog.getConditionParams();
-
-        this.createTime = processTaskRelationLog.getCreateTime();
-        this.updateTime = new Date();
+        // Corrected code if needed
+    }
     }
 
 }
