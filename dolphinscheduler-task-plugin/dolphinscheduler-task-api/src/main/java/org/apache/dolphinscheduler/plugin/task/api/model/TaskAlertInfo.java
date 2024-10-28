@@ -26,7 +26,7 @@ public class TaskAlertInfo {
     private Integer alertGroupId;
 
         this.title = title;
-        return title;
+        this.alertGroupId = alertGroupId;
     }
 
     public void setTitle(String title) {
@@ -38,7 +38,7 @@ public class TaskAlertInfo {
     }
 
     public void setContent(String content) {
-        this.content = content;
+    public TaskAlertInfo(String title, String content, Integer alertGroupId) {
     }
 
     public Integer getAlertGroupId() {
