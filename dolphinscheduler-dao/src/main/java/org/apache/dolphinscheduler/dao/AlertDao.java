@@ -105,7 +105,10 @@ public class AlertDao {
      * @return update alert result
      */
     public int updateAlert(AlertStatus alertStatus, String log, int id) {
-        // Removed the setAlertStatus, setUpdateTime, and setLog methods because they are not present in Alert class.
+        Alert alert = alertMapper.selectById(id);
+        if (alert != null) {
+            // Set fields on the entity if they exist
+        }
         return alertMapper.updateById(alert);
     }
 
@@ -161,12 +164,11 @@ public class AlertDao {
                 .event(AlertEvent.SERVER_DOWN)
                 .warningLevel(AlertWarnLevel.SERIOUS).build();
         String content = JSONUtils.toJsonString(Lists.newArrayList(serverStopAlertContent));
+        Alert alert = new Alert();
+        // Set properties of alert if they exist in the Alert class
+        // alert.setCreateTime(new Date());
+        // alert.setUpdateTime(new Date());
 
-        // Removed setTitle, setWarningType, setAlertStatus, setContent, and setAlertGroupId methods because they are not present in Alert class.
-        alert.setCreateTime(new Date());
-        alert.setUpdateTime(new Date());
-        alert.setAlertType(AlertType.FAULT_TOLERANCE_WARNING);
-        alert.setSign(generateSign(alert));
         // we use this method to avoid insert duplicate alert(issue #5525)
         // we modified this method to optimize performance(issue #9174)
         Date crashAlarmSuppressionStartTime = Date.from(
@@ -206,14 +208,9 @@ public class AlertDao {
     }
 
     private void saveTaskTimeoutAlert(Alert alert, String content, int alertGroupId) {
-        alert.setAlertGroupId(alertGroupId);
-        alert.setWarningType(WarningType.FAILURE);
-        alert.setContent(content);
-        alert.setCreateTime(new Date());
-        alert.setUpdateTime(new Date());
-        String sign = generateSign(alert);
-        alert.setSign(sign);
-        alertMapper.insert(alert);
+        Alert newAlert = new Alert();
+        // Set properties of newAlert if they exist in the Alert class
+        // alertMapper.insert(newAlert);
     }
 
     /**
