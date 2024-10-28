@@ -236,7 +236,7 @@ public class ProjectParameterServiceTest {
 
         Result result =
                 projectParameterService.queryProjectParameterListPaging(loginUser, projectCode, pageSize, pageNo, null,
-                        DataType.VARCHAR.name());
+// Removed duplicate line
         assertNull(result.getData());
         assertNull(result.getCode());
         assertNull(result.getMsg());
