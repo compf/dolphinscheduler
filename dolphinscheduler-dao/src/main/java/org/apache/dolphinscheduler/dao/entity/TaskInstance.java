@@ -138,9 +138,9 @@ public class TaskInstance implements Serializable {
 
     private TaskExecuteType taskExecuteType;
 
-    public void init(TaskInstanceInitParam taskInstanceInitParam) {
-        this.host = taskInstanceInitParam.getHost();
-        this.startTime = taskInstanceInitParam.getStartTime();
-        this.executePath = taskInstanceInitParam.getExecutePath();
+    public void init(String host, Date startTime, String executePath) {
+        this.host = host;
+        this.startTime = startTime;
+        this.executePath = executePath;
     }
 }
