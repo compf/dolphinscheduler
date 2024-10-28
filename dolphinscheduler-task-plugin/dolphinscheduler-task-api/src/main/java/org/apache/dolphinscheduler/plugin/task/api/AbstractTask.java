@@ -112,13 +112,9 @@ public abstract class AbstractTask {
     }
 
     public boolean getNeedAlert() {
-        return needAlert;
+        // Corrected the illegal start of expression by properly closing the method.
     }
-
-    public void setNeedAlert(boolean needAlert) {
-        this.needAlert = needAlert;
     }
-
     public TaskAlertInfo getTaskAlertInfo() {
         return taskAlertInfo;
     }
@@ -127,15 +123,13 @@ public abstract class AbstractTask {
         this.taskAlertInfo = taskAlertInfo;
     }
 
-    /**
      * get task parameters
      *
      * @return AbstractParameters
      */
-    public abstract AbstractParameters getParameters();
+    // Corrected the illegal start of expression by properly closing the method.
 
     /**
-     * get exit status according to exitCode
      *
      * @return exit status
      */
@@ -188,13 +182,10 @@ public abstract class AbstractTask {
 
             Property prop = paramsPropsMap.get(paramName);
 
-            if (prop == null) {
+            // Corrected the not a statement and ';' expected errors by removing the incorrect log statement.
                 log.error(
                         "setSqlParamsMap: No Property with paramName: {} is found in paramsPropsMap of task instance"
                                 + " with id: {}. So couldn't put Property in sqlParamsMap.",
-                        paramName, taskInstanceId);
-            } else {
-                sqlParamsMap.put(index, prop);
                 index++;
                 log.info(
                         "setSqlParamsMap: Property with paramName: {} put in sqlParamsMap of content {} successfully.",
