@@ -115,9 +115,6 @@ public class SchedulerController extends BaseController {
                 createScheduleModel.getWorkerGroup(),
                 createScheduleModel.getTenantCode(),
                 createScheduleModel.getEnvironmentCode());
-                projectCode,
-                createScheduleModel);
-
 
         return returnDataList(result);
     }
