@@ -134,8 +134,10 @@ public class TaskInstance implements Serializable {
     private TaskExecuteType taskExecuteType;
 
     private int testFlag;
-    public void init(TaskInstanceDetails details, String executePath) {
-        this.details = details;
+    // Error Correction: Revert previous changes
+    public void init(String host, Date startTime, String executePath) {
+        this.host = host;
+        this.startTime = startTime;
         this.executePath = executePath;
         this.executePath = executePath;
         this.executePath = executePath;
