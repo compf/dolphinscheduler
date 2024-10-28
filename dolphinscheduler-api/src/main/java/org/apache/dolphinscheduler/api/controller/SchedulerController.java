@@ -133,9 +133,14 @@ public class SchedulerController extends BaseController {
 
         return returnDataList(result);
     }
+                Map<String, Object> result = schedulerService.insertSchedule(
+                loginUser,
+                projectCode,
+                workflowDefinitionCode,
+                schedule,
                 warningType,
                 warningGroupId,
-                failureStrategy,
+
                 workflowInstancePriority,
                 workerGroup,
                 tenantCode,
@@ -143,7 +148,7 @@ public class SchedulerController extends BaseController {
 
         return returnDataList(result);
     }
-
+                failureStrategy,
     /**
      * updateWorkflowInstance schedule
      *
