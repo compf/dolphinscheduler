@@ -102,7 +102,7 @@ public class SchedulerController extends BaseController {
     @OperatorLog(auditType = AuditType.SCHEDULE_CREATE)
     public Result createSchedule(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
                                  @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
-                                 @ModelAttribute CreateScheduleModel createScheduleModel) {
+                                 @RequestBody CreateScheduleModel createScheduleModel) {
         Map<String, Object> result = schedulerService.insertSchedule(
                 loginUser,
                 projectCode,
@@ -309,7 +309,7 @@ public class SchedulerController extends BaseController {
     public Result updateScheduleByWorkflowDefinitionCode(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
                                                          @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
                                                          @PathVariable(value = "code") long workflowDefinitionCode,
-                                                         @ModelAttribute UpdateScheduleModel updateScheduleModel) {
+                                                         @RequestBody UpdateScheduleModel updateScheduleModel) {
         Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(loginUser, projectCode,
                 workflowDefinitionCode, updateScheduleModel);
 
