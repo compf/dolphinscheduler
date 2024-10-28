@@ -44,8 +44,6 @@ public class TaskInstance implements Serializable {
 
     private Long projectCode;
 
-    private String host;
-
     private String taskType;
 
     private int workflowInstanceId;
@@ -70,8 +68,6 @@ public class TaskInstance implements Serializable {
     private Date startTime;
 
     private Date endTime;
-
-    private String host;
 
     private String executePath;
 
