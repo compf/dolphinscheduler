@@ -1,0 +1,332 @@
+{
+  "name" : "NettyRemotingClient",
+  "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 58,
+    "startColumn" : 8,
+    "endLine" : 58,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/memberField/workerGroup" : {
+      "name" : "workerGroup",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/memberField/workerGroup",
+      "type" : "org.apache.dolphinscheduler.extract.base.client.io.netty.channel.EventLoopGroup",
+      "displayedType" : "EventLoopGroup",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 34,
+        "endLine" : 67,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient"
+    },
+    "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/memberField/clientHandler" : {
+      "name" : "clientHandler",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/memberField/clientHandler",
+      "type" : "org.apache.dolphinscheduler.extract.base.client.NettyClientHandler",
+      "displayedType" : "NettyClientHandler",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 38,
+        "endLine" : 71,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient"
+    },
+    "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/memberField/bootstrap" : {
+      "name" : "bootstrap",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/memberField/bootstrap",
+      "type" : "org.apache.dolphinscheduler.extract.base.client.io.netty.bootstrap.Bootstrap",
+      "displayedType" : "Bootstrap",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 60,
+        "startColumn" : 29,
+        "endLine" : 60,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient"
+    },
+    "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/memberField/channels" : {
+      "name" : "channels",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/memberField/channels",
+      "type" : "java.util.Map<org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.utils.Host, org.apache.dolphinscheduler.extract.base.client.io.netty.channel.Channel>",
+      "displayedType" : "Map<Host, Channel>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 38,
+        "endLine" : 63,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient"
+    },
+    "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/memberField/isStarted" : {
+      "name" : "isStarted",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/memberField/isStarted",
+      "type" : "java.util.concurrent.atomic.AtomicBoolean",
+      "displayedType" : "AtomicBoolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 33,
+        "endLine" : 65,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient"
+    },
+    "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/memberField/clientConfig" : {
+      "name" : "clientConfig",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/memberField/clientConfig",
+      "type" : "org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.config.NettyClientConfig",
+      "displayedType" : "NettyClientConfig",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 37,
+        "endLine" : 69,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient"
+    },
+    "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/memberField/channelsLock" : {
+      "name" : "channelsLock",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/memberField/channelsLock",
+      "type" : "java.util.concurrent.locks.ReentrantLock",
+      "displayedType" : "ReentrantLock",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 33,
+        "endLine" : 62,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/closeChannel(org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.utils.Host host)" : {
+      "name" : "closeChannel",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/closeChannel(org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.utils.Host host)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 233,
+        "startColumn" : 17,
+        "endLine" : 233,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "host",
+        "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/closeChannel(org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.utils.Host host)/parameter/host",
+        "type" : "org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.utils.Host",
+        "displayedType" : "Host",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 233,
+          "startColumn" : 35,
+          "endLine" : 233,
+          "endColumn" : 39
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/closeChannel(org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.utils.Host host)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient"
+    },
+    "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/getOrCreateChannel(org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.utils.Host host)" : {
+      "name" : "getOrCreateChannel",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/getOrCreateChannel(org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.utils.Host host)",
+      "type" : "org.apache.dolphinscheduler.extract.base.client.io.netty.channel.Channel",
+      "displayedType" : "Channel",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 169,
+        "startColumn" : 13,
+        "endLine" : 169,
+        "endColumn" : 31
+      },
+      "modifiers" : [ ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "host",
+        "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/getOrCreateChannel(org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.utils.Host host)/parameter/host",
+        "type" : "org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.utils.Host",
+        "displayedType" : "Host",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 169,
+          "startColumn" : 37,
+          "endLine" : 169,
+          "endColumn" : 41
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/getOrCreateChannel(org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.utils.Host host)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient"
+    },
+    "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/createChannel(org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.utils.Host host)" : {
+      "name" : "createChannel",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/createChannel(org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.utils.Host host)",
+      "type" : "org.apache.dolphinscheduler.extract.base.client.io.netty.channel.Channel",
+      "displayedType" : "Channel",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 194,
+        "startColumn" : 13,
+        "endLine" : 194,
+        "endColumn" : 26
+      },
+      "modifiers" : [ ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "host",
+        "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/createChannel(org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.utils.Host host)/parameter/host",
+        "type" : "org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.utils.Host",
+        "displayedType" : "Host",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 194,
+          "startColumn" : 32,
+          "endLine" : 194,
+          "endColumn" : 36
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/createChannel(org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.utils.Host host)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient"
+    },
+    "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/closeChannels()" : {
+      "name" : "closeChannels",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/closeChannels()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 224,
+        "startColumn" : 18,
+        "endLine" : 224,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient"
+    },
+    "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/sendSync(org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.SyncRequestDto syncRequestDto)" : {
+      "name" : "sendSync",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/sendSync(org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.SyncRequestDto syncRequestDto)",
+      "type" : "org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.IRpcResponse",
+      "displayedType" : "IRpcResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 113,
+        "startColumn" : 25,
+        "endLine" : 113,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "syncRequestDto",
+        "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/sendSync(org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.SyncRequestDto syncRequestDto)/parameter/syncRequestDto",
+        "type" : "org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.SyncRequestDto",
+        "displayedType" : "SyncRequestDto",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 113,
+          "startColumn" : 49,
+          "endLine" : 113,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/sendSync(org.apache.dolphinscheduler.extract.base.client.org.apache.dolphinscheduler.extract.base.SyncRequestDto syncRequestDto)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient"
+    },
+    "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/start()" : {
+      "name" : "start",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/start()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 86,
+        "startColumn" : 18,
+        "endLine" : 86,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient"
+    },
+    "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 210,
+        "startColumn" : 17,
+        "endLine" : 210,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.client.NettyRemotingClient"
+    }
+  },
+  "file_path" : "dolphinscheduler-extract/dolphinscheduler-extract-base/src/main/java/org/apache/dolphinscheduler/extract/base/client/NettyRemotingClient.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "java.lang.AutoCloseable" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

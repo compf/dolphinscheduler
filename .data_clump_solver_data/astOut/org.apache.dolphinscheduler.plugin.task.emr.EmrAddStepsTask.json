@@ -1,0 +1,202 @@
+{
+  "name" : "EmrAddStepsTask",
+  "key" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 52,
+    "startColumn" : 8,
+    "endLine" : 52,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/memberField/stepId" : {
+      "name" : "stepId",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/memberField/stepId",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 20,
+        "endLine" : 54,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/memberField/waitingStateSet" : {
+      "name" : "waitingStateSet",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/memberField/waitingStateSet",
+      "type" : "java.util.HashSet<java.lang.String>",
+      "displayedType" : "HashSet<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 35,
+        "endLine" : 56,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/method/trackApplicationStatus()" : {
+      "name" : "trackApplicationStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/method/trackApplicationStatus()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 102,
+        "startColumn" : 17,
+        "endLine" : 102,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/method/getStepStatus()" : {
+      "name" : "getStepStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/method/getStepStatus()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.emr.com.amazonaws.services.elasticmapreduce.model.StepStatus",
+      "displayedType" : "StepStatus",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 176,
+        "startColumn" : 24,
+        "endLine" : 176,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/method/cancelApplication()" : {
+      "name" : "cancelApplication",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/method/cancelApplication()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 189,
+        "startColumn" : 17,
+        "endLine" : 189,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/method/createAddJobFlowStepsRequest()" : {
+      "name" : "createAddJobFlowStepsRequest",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/method/createAddJobFlowStepsRequest()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.emr.com.amazonaws.services.elasticmapreduce.model.AddJobFlowStepsRequest",
+      "displayedType" : "AddJobFlowStepsRequest",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 127,
+        "startColumn" : 38,
+        "endLine" : 127,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/method/getApplicationIds()" : {
+      "name" : "getApplicationIds",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/method/getApplicationIds()",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 25,
+        "endLine" : 71,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/method/submitApplication()" : {
+      "name" : "submitApplication",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/method/submitApplication()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 17,
+        "endLine" : 76,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/method/calculateExitStatusCode(org.apache.dolphinscheduler.plugin.task.emr.com.amazonaws.services.elasticmapreduce.model.StepStatus stepStatus)" : {
+      "name" : "calculateExitStatusCode",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/method/calculateExitStatusCode(org.apache.dolphinscheduler.plugin.task.emr.com.amazonaws.services.elasticmapreduce.model.StepStatus stepStatus)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 158,
+        "startColumn" : 17,
+        "endLine" : 158,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "stepStatus",
+        "key" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/method/calculateExitStatusCode(org.apache.dolphinscheduler.plugin.task.emr.com.amazonaws.services.elasticmapreduce.model.StepStatus stepStatus)/parameter/stepStatus",
+        "type" : "org.apache.dolphinscheduler.plugin.task.emr.com.amazonaws.services.elasticmapreduce.model.StepStatus",
+        "displayedType" : "StepStatus",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 158,
+          "startColumn" : 52,
+          "endLine" : 158,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask/method/calculateExitStatusCode(org.apache.dolphinscheduler.plugin.task.emr.com.amazonaws.services.elasticmapreduce.model.StepStatus stepStatus)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.EmrAddStepsTask"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-emr/src/main/java/org/apache/dolphinscheduler/plugin/task/emr/EmrAddStepsTask.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

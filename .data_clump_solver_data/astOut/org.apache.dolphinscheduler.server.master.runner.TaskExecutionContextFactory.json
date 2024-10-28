@@ -1,0 +1,659 @@
+{
+  "name" : "TaskExecutionContextFactory",
+  "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 84,
+    "startColumn" : 8,
+    "endLine" : 84,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/memberField/curingParamsService" : {
+      "name" : "curingParamsService",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/memberField/curingParamsService",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.service.expand.CuringParamsService",
+      "displayedType" : "CuringParamsService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 90,
+        "startColumn" : 33,
+        "endLine" : 90,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/memberField/masterConfig" : {
+      "name" : "masterConfig",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/memberField/masterConfig",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.server.master.config.MasterConfig",
+      "displayedType" : "MasterConfig",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 93,
+        "startColumn" : 26,
+        "endLine" : 93,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/memberField/processService" : {
+      "name" : "processService",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/memberField/processService",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.service.process.ProcessService",
+      "displayedType" : "ProcessService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 87,
+        "startColumn" : 28,
+        "endLine" : 87,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/memberField/hikariDataSource" : {
+      "name" : "hikariDataSource",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/memberField/hikariDataSource",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.com.zaxxer.hikari.HikariDataSource",
+      "displayedType" : "HikariDataSource",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 30,
+        "endLine" : 96,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setDataQualityTaskRelation(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, java.lang.String tenantCode)" : {
+      "name" : "setDataQualityTaskRelation",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setDataQualityTaskRelation(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, java.lang.String tenantCode)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 177,
+        "startColumn" : 18,
+        "endLine" : 177,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "dataQualityTaskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setDataQualityTaskRelation(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, java.lang.String tenantCode)/parameter/dataQualityTaskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext",
+        "displayedType" : "DataQualityTaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 177,
+          "startColumn" : 77,
+          "endLine" : 177,
+          "endColumn" : 108
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setDataQualityTaskRelation(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, java.lang.String tenantCode)"
+      }, {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setDataQualityTaskRelation(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, java.lang.String tenantCode)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 178,
+          "startColumn" : 58,
+          "endLine" : 178,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setDataQualityTaskRelation(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, java.lang.String tenantCode)"
+      }, {
+        "name" : "tenantCode",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setDataQualityTaskRelation(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, java.lang.String tenantCode)/parameter/tenantCode",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 179,
+          "startColumn" : 52,
+          "endLine" : 179,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setDataQualityTaskRelation(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, java.lang.String tenantCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setTargetConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config)" : {
+      "name" : "setTargetConfig",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setTargetConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 333,
+        "startColumn" : 18,
+        "endLine" : 333,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "dataQualityTaskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setTargetConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config)/parameter/dataQualityTaskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext",
+        "displayedType" : "DataQualityTaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 333,
+          "startColumn" : 66,
+          "endLine" : 333,
+          "endColumn" : 97
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setTargetConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config)"
+      }, {
+        "name" : "config",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setTargetConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config)/parameter/config",
+        "type" : "java.util.Map<java.lang.String, java.lang.String>",
+        "displayedType" : "Map<String, String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 334,
+          "startColumn" : 54,
+          "endLine" : 334,
+          "endColumn" : 60
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setTargetConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setStatisticsValueWriterConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext)" : {
+      "name" : "setStatisticsValueWriterConfig",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setStatisticsValueWriterConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 396,
+        "startColumn" : 18,
+        "endLine" : 396,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "dataQualityTaskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setStatisticsValueWriterConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext)/parameter/dataQualityTaskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext",
+        "displayedType" : "DataQualityTaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 396,
+          "startColumn" : 81,
+          "endLine" : 396,
+          "endColumn" : 112
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setStatisticsValueWriterConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setComparisonParams(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleInputEntry> ruleInputEntryList, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleExecuteSql> executeSqlList)" : {
+      "name" : "setComparisonParams",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setComparisonParams(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleInputEntry> ruleInputEntryList, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleExecuteSql> executeSqlList)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 285,
+        "startColumn" : 18,
+        "endLine" : 285,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "dataQualityTaskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setComparisonParams(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleInputEntry> ruleInputEntryList, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleExecuteSql> executeSqlList)/parameter/dataQualityTaskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext",
+        "displayedType" : "DataQualityTaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 285,
+          "startColumn" : 70,
+          "endLine" : 285,
+          "endColumn" : 101
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setComparisonParams(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleInputEntry> ruleInputEntryList, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleExecuteSql> executeSqlList)"
+      }, {
+        "name" : "config",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setComparisonParams(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleInputEntry> ruleInputEntryList, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleExecuteSql> executeSqlList)/parameter/config",
+        "type" : "java.util.Map<java.lang.String, java.lang.String>",
+        "displayedType" : "Map<String, String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 286,
+          "startColumn" : 58,
+          "endLine" : 286,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setComparisonParams(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleInputEntry> ruleInputEntryList, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleExecuteSql> executeSqlList)"
+      }, {
+        "name" : "ruleInputEntryList",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setComparisonParams(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleInputEntry> ruleInputEntryList, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleExecuteSql> executeSqlList)/parameter/ruleInputEntryList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleInputEntry>",
+        "displayedType" : "List<DqRuleInputEntry>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 287,
+          "startColumn" : 61,
+          "endLine" : 287,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setComparisonParams(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleInputEntry> ruleInputEntryList, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleExecuteSql> executeSqlList)"
+      }, {
+        "name" : "executeSqlList",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setComparisonParams(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleInputEntry> ruleInputEntryList, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleExecuteSql> executeSqlList)/parameter/executeSqlList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleExecuteSql>",
+        "displayedType" : "List<DqRuleExecuteSql>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 288,
+          "startColumn" : 61,
+          "endLine" : 288,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setComparisonParams(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleInputEntry> ruleInputEntryList, java.util.List<org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DqRuleExecuteSql> executeSqlList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setK8sTaskRelatedInfo(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)" : {
+      "name" : "setK8sTaskRelatedInfo",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setK8sTaskRelatedInfo(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 140,
+        "startColumn" : 17,
+        "endLine" : 140,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setK8sTaskRelatedInfo(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)/parameter/taskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+        "displayedType" : "TaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 140,
+          "startColumn" : 60,
+          "endLine" : 140,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setK8sTaskRelatedInfo(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)"
+      }, {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setK8sTaskRelatedInfo(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 140,
+          "startColumn" : 95,
+          "endLine" : 140,
+          "endColumn" : 107
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setK8sTaskRelatedInfo(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setTaskResourceInfo(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper resourceParametersHelper)" : {
+      "name" : "setTaskResourceInfo",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setTaskResourceInfo(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper resourceParametersHelper)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 145,
+        "startColumn" : 18,
+        "endLine" : 145,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "resourceParametersHelper",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setTaskResourceInfo(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper resourceParametersHelper)/parameter/resourceParametersHelper",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper",
+        "displayedType" : "ResourceParametersHelper",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 145,
+          "startColumn" : 63,
+          "endLine" : 145,
+          "endColumn" : 87
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setTaskResourceInfo(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.parameters.resource.ResourceParametersHelper resourceParametersHelper)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setK8sTaskRelation(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)" : {
+      "name" : "setK8sTaskRelation",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setK8sTaskRelation(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.K8sTaskExecutionContext",
+      "displayedType" : "K8sTaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 222,
+        "startColumn" : 37,
+        "endLine" : 222,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setK8sTaskRelation(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 222,
+          "startColumn" : 69,
+          "endLine" : 222,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setK8sTaskRelation(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/getDefaultDataSource()" : {
+      "name" : "getDefaultDataSource",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/getDefaultDataSource()",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.DataSource",
+      "displayedType" : "DataSource",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 369,
+        "startColumn" : 23,
+        "endLine" : 369,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setWriterConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext)" : {
+      "name" : "setWriterConfig",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setWriterConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 354,
+        "startColumn" : 18,
+        "endLine" : 354,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "dataQualityTaskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setWriterConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext)/parameter/dataQualityTaskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext",
+        "displayedType" : "DataQualityTaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 354,
+          "startColumn" : 66,
+          "endLine" : 354,
+          "endColumn" : 97
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setWriterConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/createTaskExecutionContext(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.server.master.engine.task.runnable.TaskExecutionContextCreateRequest request)" : {
+      "name" : "createTaskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/createTaskExecutionContext(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.server.master.engine.task.runnable.TaskExecutionContextCreateRequest request)",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+      "displayedType" : "TaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 33,
+        "endLine" : 98,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "request",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/createTaskExecutionContext(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.server.master.engine.task.runnable.TaskExecutionContextCreateRequest request)/parameter/request",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.server.master.engine.task.runnable.TaskExecutionContextCreateRequest",
+        "displayedType" : "TaskExecutionContextCreateRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 98,
+          "startColumn" : 94,
+          "endLine" : 98,
+          "endColumn" : 101
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/createTaskExecutionContext(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.server.master.engine.task.runnable.TaskExecutionContextCreateRequest request)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setSourceConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config)" : {
+      "name" : "setSourceConfig",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setSourceConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 261,
+        "startColumn" : 18,
+        "endLine" : 261,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "dataQualityTaskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setSourceConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config)/parameter/dataQualityTaskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext",
+        "displayedType" : "DataQualityTaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 261,
+          "startColumn" : 66,
+          "endLine" : 261,
+          "endColumn" : 97
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setSourceConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config)"
+      }, {
+        "name" : "config",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setSourceConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config)/parameter/config",
+        "type" : "java.util.Map<java.lang.String, java.lang.String>",
+        "displayedType" : "Map<String, String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 262,
+          "startColumn" : 54,
+          "endLine" : 262,
+          "endColumn" : 60
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setSourceConfig(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext dataQualityTaskExecutionContext, java.util.Map<java.lang.String, java.lang.String> config)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setTaskDataSourceResourceInfo(java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.parameters.resource.AbstractResourceParameters> map)" : {
+      "name" : "setTaskDataSourceResourceInfo",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setTaskDataSourceResourceInfo(java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.parameters.resource.AbstractResourceParameters> map)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 160,
+        "startColumn" : 18,
+        "endLine" : 160,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "map",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setTaskDataSourceResourceInfo(java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.parameters.resource.AbstractResourceParameters> map)/parameter/map",
+        "type" : "java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.parameters.resource.AbstractResourceParameters>",
+        "displayedType" : "Map<Integer, AbstractResourceParameters>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 160,
+          "startColumn" : 89,
+          "endLine" : 160,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setTaskDataSourceResourceInfo(java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.parameters.resource.AbstractResourceParameters> map)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setDataQualityTaskExecutionContext(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, java.lang.String tenantCode)" : {
+      "name" : "setDataQualityTaskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setDataQualityTaskExecutionContext(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, java.lang.String tenantCode)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 129,
+        "startColumn" : 17,
+        "endLine" : 129,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setDataQualityTaskExecutionContext(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, java.lang.String tenantCode)/parameter/taskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+        "displayedType" : "TaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 129,
+          "startColumn" : 73,
+          "endLine" : 129,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setDataQualityTaskExecutionContext(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, java.lang.String tenantCode)"
+      }, {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setDataQualityTaskExecutionContext(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, java.lang.String tenantCode)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 130,
+          "startColumn" : 65,
+          "endLine" : 130,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setDataQualityTaskExecutionContext(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, java.lang.String tenantCode)"
+      }, {
+        "name" : "tenantCode",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setDataQualityTaskExecutionContext(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, java.lang.String tenantCode)/parameter/tenantCode",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 131,
+          "startColumn" : 59,
+          "endLine" : 131,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory/method/setDataQualityTaskExecutionContext(org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.master.runner.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, java.lang.String tenantCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/runner/TaskExecutionContextFactory.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

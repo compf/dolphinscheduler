@@ -1,0 +1,573 @@
+{
+  "name" : "K8SNamespaceServiceImpl",
+  "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 59,
+    "startColumn" : 8,
+    "endLine" : 59,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/memberField/k8sNamespaceMapper" : {
+      "name" : "k8sNamespaceMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/memberField/k8sNamespaceMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.K8sNamespaceMapper",
+      "displayedType" : "K8sNamespaceMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 32,
+        "endLine" : 62,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/memberField/clusterMapper" : {
+      "name" : "clusterMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/memberField/clusterMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.ClusterMapper",
+      "displayedType" : "ClusterMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 27,
+        "endLine" : 68,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/memberField/k8sClientService" : {
+      "name" : "k8sClientService",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/memberField/k8sClientService",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.k8s.K8sClientService",
+      "displayedType" : "K8sClientService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 30,
+        "endLine" : 65,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/checkNamespaceExistInDb(java.lang.String namespace, java.lang.Long clusterCode)" : {
+      "name" : "checkNamespaceExistInDb",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/checkNamespaceExistInDb(java.lang.String namespace, java.lang.Long clusterCode)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 247,
+        "startColumn" : 21,
+        "endLine" : 247,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "namespace",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/checkNamespaceExistInDb(java.lang.String namespace, java.lang.Long clusterCode)/parameter/namespace",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 247,
+          "startColumn" : 52,
+          "endLine" : 247,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/checkNamespaceExistInDb(java.lang.String namespace, java.lang.Long clusterCode)"
+      }, {
+        "name" : "clusterCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/checkNamespaceExistInDb(java.lang.String namespace, java.lang.Long clusterCode)/parameter/clusterCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 247,
+          "startColumn" : 68,
+          "endLine" : 247,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/checkNamespaceExistInDb(java.lang.String namespace, java.lang.Long clusterCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/registerK8sNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String namespace, java.lang.Long clusterCode)" : {
+      "name" : "registerK8sNamespace",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/registerK8sNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String namespace, java.lang.Long clusterCode)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 111,
+        "startColumn" : 32,
+        "endLine" : 111,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/registerK8sNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String namespace, java.lang.Long clusterCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 111,
+          "startColumn" : 58,
+          "endLine" : 111,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/registerK8sNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String namespace, java.lang.Long clusterCode)"
+      }, {
+        "name" : "namespace",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/registerK8sNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String namespace, java.lang.Long clusterCode)/parameter/namespace",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 111,
+          "startColumn" : 76,
+          "endLine" : 111,
+          "endColumn" : 85
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/registerK8sNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String namespace, java.lang.Long clusterCode)"
+      }, {
+        "name" : "clusterCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/registerK8sNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String namespace, java.lang.Long clusterCode)/parameter/clusterCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 111,
+          "startColumn" : 92,
+          "endLine" : 111,
+          "endColumn" : 103
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/registerK8sNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String namespace, java.lang.Long clusterCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/getUnauthorizedNamespaces(java.util.Set<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace> namespaceSet, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace> authedNamespaceList)" : {
+      "name" : "getUnauthorizedNamespaces",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/getUnauthorizedNamespaces(java.util.Set<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace> namespaceSet, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace> authedNamespaceList)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace>",
+      "displayedType" : "List<K8sNamespace>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 343,
+        "startColumn" : 32,
+        "endLine" : 343,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "namespaceSet",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/getUnauthorizedNamespaces(java.util.Set<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace> namespaceSet, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace> authedNamespaceList)/parameter/namespaceSet",
+        "type" : "java.util.Set<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace>",
+        "displayedType" : "Set<K8sNamespace>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 343,
+          "startColumn" : 76,
+          "endLine" : 343,
+          "endColumn" : 88
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/getUnauthorizedNamespaces(java.util.Set<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace> namespaceSet, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace> authedNamespaceList)"
+      }, {
+        "name" : "authedNamespaceList",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/getUnauthorizedNamespaces(java.util.Set<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace> namespaceSet, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace> authedNamespaceList)/parameter/authedNamespaceList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace>",
+        "displayedType" : "List<K8sNamespace>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 344,
+          "startColumn" : 77,
+          "endLine" : 344,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/getUnauthorizedNamespaces(java.util.Set<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace> namespaceSet, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace> authedNamespaceList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/verifyNamespaceK8s(java.lang.String namespace, java.lang.Long clusterCode)" : {
+      "name" : "verifyNamespaceK8s",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/verifyNamespaceK8s(java.lang.String namespace, java.lang.Long clusterCode)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result<java.lang.Object>",
+      "displayedType" : "Result<Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 190,
+        "startColumn" : 27,
+        "endLine" : 190,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "namespace",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/verifyNamespaceK8s(java.lang.String namespace, java.lang.Long clusterCode)/parameter/namespace",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 190,
+          "startColumn" : 53,
+          "endLine" : 190,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/verifyNamespaceK8s(java.lang.String namespace, java.lang.Long clusterCode)"
+      }, {
+        "name" : "clusterCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/verifyNamespaceK8s(java.lang.String namespace, java.lang.Long clusterCode)/parameter/clusterCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 190,
+          "startColumn" : 69,
+          "endLine" : 190,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/verifyNamespaceK8s(java.lang.String namespace, java.lang.Long clusterCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryAuthorizedNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)" : {
+      "name" : "queryAuthorizedNamespace",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryAuthorizedNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 286,
+        "startColumn" : 32,
+        "endLine" : 286,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryAuthorizedNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 286,
+          "startColumn" : 62,
+          "endLine" : 286,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryAuthorizedNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryAuthorizedNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 286,
+          "startColumn" : 81,
+          "endLine" : 286,
+          "endColumn" : 87
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryAuthorizedNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)" : {
+      "name" : "queryListPaging",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 19,
+        "endLine" : 80,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 80,
+          "startColumn" : 40,
+          "endLine" : 80,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "searchVal",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/searchVal",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 80,
+          "startColumn" : 58,
+          "endLine" : 80,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/pageNo",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 80,
+          "startColumn" : 77,
+          "endLine" : 80,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/pageSize",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 80,
+          "startColumn" : 93,
+          "endLine" : 80,
+          "endColumn" : 101
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/deleteNamespaceById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)" : {
+      "name" : "deleteNamespaceById",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/deleteNamespaceById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 222,
+        "startColumn" : 32,
+        "endLine" : 222,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/deleteNamespaceById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 222,
+          "startColumn" : 57,
+          "endLine" : 222,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/deleteNamespaceById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/deleteNamespaceById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 222,
+          "startColumn" : 72,
+          "endLine" : 222,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/deleteNamespaceById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryNamespaceAvailable(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)" : {
+      "name" : "queryNamespaceAvailable",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryNamespaceAvailable(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace>",
+      "displayedType" : "List<K8sNamespace>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 307,
+        "startColumn" : 31,
+        "endLine" : 307,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryNamespaceAvailable(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 307,
+          "startColumn" : 60,
+          "endLine" : 307,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryNamespaceAvailable(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryUnauthorizedNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)" : {
+      "name" : "queryUnauthorizedNamespace",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryUnauthorizedNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 259,
+        "startColumn" : 32,
+        "endLine" : 259,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryUnauthorizedNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 259,
+          "startColumn" : 64,
+          "endLine" : 259,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryUnauthorizedNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryUnauthorizedNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 259,
+          "startColumn" : 83,
+          "endLine" : 259,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/queryUnauthorizedNamespace(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/setClusterName(java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace> k8sNamespaces)" : {
+      "name" : "setClusterName",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/setClusterName(java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace> k8sNamespaces)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 322,
+        "startColumn" : 18,
+        "endLine" : 322,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "k8sNamespaces",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/setClusterName(java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace> k8sNamespaces)/parameter/k8sNamespaces",
+        "type" : "java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace>",
+        "displayedType" : "List<K8sNamespace>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 322,
+          "startColumn" : 52,
+          "endLine" : 322,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl/method/setClusterName(java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.K8sNamespace> k8sNamespaces)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.K8SNamespaceServiceImpl"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/service/impl/K8SNamespaceServiceImpl.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.K8sNamespaceService" ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.service.impl.BaseServiceImpl" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,206 @@
+{
+  "name" : "AbstractTaskInstanceFactory",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 30,
+    "startColumn" : 17,
+    "endLine" : 30,
+    "endColumn" : 22
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/memberField/environmentMapper" : {
+      "name" : "environmentMapper",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/memberField/environmentMapper",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.mapper.EnvironmentMapper",
+      "displayedType" : "EnvironmentMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 35,
+        "startColumn" : 33,
+        "endLine" : 35,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/injectEnvironmentConfigFromDB(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)" : {
+      "name" : "injectEnvironmentConfigFromDB",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/injectEnvironmentConfigFromDB(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 121,
+        "startColumn" : 20,
+        "endLine" : 121,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/injectEnvironmentConfigFromDB(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 121,
+          "startColumn" : 63,
+          "endLine" : 121,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/injectEnvironmentConfigFromDB(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/cloneTaskInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance originTaskInstance)" : {
+      "name" : "cloneTaskInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/cloneTaskInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance originTaskInstance)",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+      "displayedType" : "TaskInstance",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 37,
+        "startColumn" : 28,
+        "endLine" : 37,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "originTaskInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/cloneTaskInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance originTaskInstance)/parameter/originTaskInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 37,
+          "startColumn" : 59,
+          "endLine" : 37,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/cloneTaskInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance originTaskInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/injectMetadataFromWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)" : {
+      "name" : "injectMetadataFromWorkflowInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/injectMetadataFromWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 104,
+        "startColumn" : 20,
+        "endLine" : 104,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/injectMetadataFromWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 104,
+          "startColumn" : 68,
+          "endLine" : 104,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/injectMetadataFromWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)"
+      }, {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/injectMetadataFromWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 104,
+          "startColumn" : 99,
+          "endLine" : 104,
+          "endColumn" : 115
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/injectMetadataFromWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/injectMetadataFromTaskDefinition(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition)" : {
+      "name" : "injectMetadataFromTaskDefinition",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/injectMetadataFromTaskDefinition(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 20,
+        "endLine" : 81,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/injectMetadataFromTaskDefinition(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 81,
+          "startColumn" : 66,
+          "endLine" : 81,
+          "endColumn" : 78
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/injectMetadataFromTaskDefinition(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition)"
+      }, {
+        "name" : "taskDefinition",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/injectMetadataFromTaskDefinition(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition)/parameter/taskDefinition",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskDefinition",
+        "displayedType" : "TaskDefinition",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 81,
+          "startColumn" : 95,
+          "endLine" : 81,
+          "endColumn" : 109
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory/method/injectMetadataFromTaskDefinition(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/task/runnable/AbstractTaskInstanceFactory.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskInstanceFactory<BUILDER>", "BUILDER" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

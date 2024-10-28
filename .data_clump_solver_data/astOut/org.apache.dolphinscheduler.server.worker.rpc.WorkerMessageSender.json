@@ -1,0 +1,144 @@
+{
+  "name" : "WorkerMessageSender",
+  "key" : "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 39,
+    "startColumn" : 8,
+    "endLine" : 39,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender/memberField/messageRetryRunner" : {
+      "name" : "messageRetryRunner",
+      "key" : "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender/memberField/messageRetryRunner",
+      "type" : "org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner",
+      "displayedType" : "MessageRetryRunner",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 32,
+        "endLine" : 42,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender"
+    },
+    "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender/memberField/messageSenderMap" : {
+      "name" : "messageSenderMap",
+      "key" : "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender/memberField/messageSenderMap",
+      "type" : "java.util.Map<org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.rpc.TaskInstanceExecutionEventType, org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventSender>",
+      "displayedType" : "Map<ITaskExecutionEvent.TaskInstanceExecutionEventType, TaskInstanceExecutionEventSender>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 109,
+        "endLine" : 47,
+        "endColumn" : 125
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender"
+    },
+    "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender/memberField/messageSenders" : {
+      "name" : "messageSenders",
+      "key" : "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender/memberField/messageSenders",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionEventSender>",
+      "displayedType" : "List<TaskInstanceExecutionEventSender>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 45,
+        "startColumn" : 52,
+        "endLine" : 45,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender/method/init()" : {
+      "name" : "init",
+      "key" : "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender/method/init()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 17,
+        "endLine" : 51,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender"
+    },
+    "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender/method/sendMessageWithRetry(org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.rpc.TaskInstanceExecutionEventType eventType)" : {
+      "name" : "sendMessageWithRetry",
+      "key" : "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender/method/sendMessageWithRetry(org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.rpc.TaskInstanceExecutionEventType eventType)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 17,
+        "endLine" : 57,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender/method/sendMessageWithRetry(org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.rpc.TaskInstanceExecutionEventType eventType)/parameter/taskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+        "displayedType" : "TaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 57,
+          "startColumn" : 68,
+          "endLine" : 57,
+          "endColumn" : 88
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender/method/sendMessageWithRetry(org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.rpc.TaskInstanceExecutionEventType eventType)"
+      }, {
+        "name" : "eventType",
+        "key" : "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender/method/sendMessageWithRetry(org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.rpc.TaskInstanceExecutionEventType eventType)/parameter/eventType",
+        "type" : "org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.rpc.TaskInstanceExecutionEventType",
+        "displayedType" : "ITaskExecutionEvent.TaskInstanceExecutionEventType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 58,
+          "startColumn" : 98,
+          "endLine" : 58,
+          "endColumn" : 107
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender/method/sendMessageWithRetry(org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.server.worker.rpc.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent#org.apache.dolphinscheduler.server.worker.rpc.TaskInstanceExecutionEventType eventType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender"
+    }
+  },
+  "file_path" : "dolphinscheduler-worker/src/main/java/org/apache/dolphinscheduler/server/worker/rpc/WorkerMessageSender.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

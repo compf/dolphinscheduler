@@ -1,0 +1,2405 @@
+{
+  "name" : "PythonGateway",
+  "key" : "org.apache.dolphinscheduler.api.python.PythonGateway",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 89,
+    "startColumn" : 8,
+    "endLine" : 89,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/DEFAULT_DRY_RUN" : {
+      "name" : "DEFAULT_DRY_RUN",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/DEFAULT_DRY_RUN",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 30,
+        "endLine" : 98,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/environmentService" : {
+      "name" : "environmentService",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/environmentService",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.api.service.EnvironmentService",
+      "displayedType" : "EnvironmentService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 114,
+        "startColumn" : 32,
+        "endLine" : 114,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/DEFAULT_TEST_FLAG" : {
+      "name" : "DEFAULT_TEST_FLAG",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/DEFAULT_TEST_FLAG",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 99,
+        "startColumn" : 30,
+        "endLine" : 99,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/DEFAULT_FAILURE_STRATEGY" : {
+      "name" : "DEFAULT_FAILURE_STRATEGY",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/DEFAULT_FAILURE_STRATEGY",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.common.enums.FailureStrategy",
+      "displayedType" : "FailureStrategy",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 42,
+        "endLine" : 91,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/executorService" : {
+      "name" : "executorService",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/executorService",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.api.service.ExecutorService",
+      "displayedType" : "ExecutorService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 117,
+        "startColumn" : 29,
+        "endLine" : 117,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/DEFAULT_ENVIRONMENT_CODE" : {
+      "name" : "DEFAULT_ENVIRONMENT_CODE",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/DEFAULT_ENVIRONMENT_CODE",
+      "type" : "java.lang.Long",
+      "displayedType" : "Long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 93,
+        "startColumn" : 31,
+        "endLine" : 93,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/COMPLEMENT_DEPENDENT_MODE" : {
+      "name" : "COMPLEMENT_DEPENDENT_MODE",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/COMPLEMENT_DEPENDENT_MODE",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.common.enums.ComplementDependentMode",
+      "displayedType" : "ComplementDependentMode",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 100,
+        "startColumn" : 50,
+        "endLine" : 100,
+        "endColumn" : 75
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/DEFAULT_PRIORITY" : {
+      "name" : "DEFAULT_PRIORITY",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/DEFAULT_PRIORITY",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.common.enums.Priority",
+      "displayedType" : "Priority",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 92,
+        "startColumn" : 35,
+        "endLine" : 92,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/DEFAULT_EXECUTION_ORDER" : {
+      "name" : "DEFAULT_EXECUTION_ORDER",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/DEFAULT_EXECUTION_ORDER",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.common.enums.ExecutionOrder",
+      "displayedType" : "ExecutionOrder",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 97,
+        "startColumn" : 41,
+        "endLine" : 97,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/workflowDefinitionService" : {
+      "name" : "workflowDefinitionService",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/workflowDefinitionService",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.api.service.WorkflowDefinitionService",
+      "displayedType" : "WorkflowDefinitionService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 120,
+        "startColumn" : 39,
+        "endLine" : 120,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/usersService" : {
+      "name" : "usersService",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/usersService",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.api.service.UsersService",
+      "displayedType" : "UsersService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 126,
+        "startColumn" : 26,
+        "endLine" : 126,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/DEFAULT_TASK_DEPEND_TYPE" : {
+      "name" : "DEFAULT_TASK_DEPEND_TYPE",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/DEFAULT_TASK_DEPEND_TYPE",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.common.enums.TaskDependType",
+      "displayedType" : "TaskDependType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 95,
+        "startColumn" : 41,
+        "endLine" : 95,
+        "endColumn" : 65
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/resourceService" : {
+      "name" : "resourceService",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/resourceService",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.api.service.ResourcesService",
+      "displayedType" : "ResourcesService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 129,
+        "startColumn" : 30,
+        "endLine" : 129,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/schedulerService" : {
+      "name" : "schedulerService",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/schedulerService",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.api.service.SchedulerService",
+      "displayedType" : "SchedulerService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 138,
+        "startColumn" : 30,
+        "endLine" : 138,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/DEFAULT_RUN_MODE" : {
+      "name" : "DEFAULT_RUN_MODE",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/DEFAULT_RUN_MODE",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.common.enums.RunMode",
+      "displayedType" : "RunMode",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 34,
+        "endLine" : 96,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/projectMapper" : {
+      "name" : "projectMapper",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/projectMapper",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.mapper.ProjectMapper",
+      "displayedType" : "ProjectMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 132,
+        "startColumn" : 27,
+        "endLine" : 132,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/workflowDefinitionMapper" : {
+      "name" : "workflowDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/workflowDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionMapper",
+      "displayedType" : "WorkflowDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 105,
+        "startColumn" : 38,
+        "endLine" : 105,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/taskDefinitionService" : {
+      "name" : "taskDefinitionService",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/taskDefinitionService",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.api.service.TaskDefinitionService",
+      "displayedType" : "TaskDefinitionService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 123,
+        "startColumn" : 35,
+        "endLine" : 123,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/queuePythonGateway" : {
+      "name" : "queuePythonGateway",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/queuePythonGateway",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.Queue",
+      "displayedType" : "Queue",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 162,
+        "startColumn" : 25,
+        "endLine" : 162,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/ADMIN_USER_ID" : {
+      "name" : "ADMIN_USER_ID",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/ADMIN_USER_ID",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 102,
+        "startColumn" : 30,
+        "endLine" : 102,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/dummyAdminUser" : {
+      "name" : "dummyAdminUser",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/dummyAdminUser",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 153,
+        "startColumn" : 24,
+        "endLine" : 153,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/projectService" : {
+      "name" : "projectService",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/projectService",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.api.service.ProjectService",
+      "displayedType" : "ProjectService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 108,
+        "startColumn" : 28,
+        "endLine" : 108,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/apiConfig" : {
+      "name" : "apiConfig",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/apiConfig",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.api.configuration.ApiConfig",
+      "displayedType" : "ApiConfig",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 147,
+        "startColumn" : 23,
+        "endLine" : 147,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/dataSourceMapper" : {
+      "name" : "dataSourceMapper",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/dataSourceMapper",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.mapper.DataSourceMapper",
+      "displayedType" : "DataSourceMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 144,
+        "startColumn" : 30,
+        "endLine" : 144,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/taskDefinitionMapper" : {
+      "name" : "taskDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/taskDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.mapper.TaskDefinitionMapper",
+      "displayedType" : "TaskDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 135,
+        "startColumn" : 34,
+        "endLine" : 135,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/scheduleMapper" : {
+      "name" : "scheduleMapper",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/scheduleMapper",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.mapper.ScheduleMapper",
+      "displayedType" : "ScheduleMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 141,
+        "startColumn" : 28,
+        "endLine" : 141,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/tenantService" : {
+      "name" : "tenantService",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/tenantService",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.api.service.TenantService",
+      "displayedType" : "TenantService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 111,
+        "startColumn" : 27,
+        "endLine" : 111,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/projectUserMapper" : {
+      "name" : "projectUserMapper",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/memberField/projectUserMapper",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.mapper.ProjectUserMapper",
+      "displayedType" : "ProjectUserMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 150,
+        "startColumn" : 31,
+        "endLine" : 150,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/getResourcesFileInfo(java.lang.String fullName)" : {
+      "name" : "getResourcesFileInfo",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getResourcesFileInfo(java.lang.String fullName)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 602,
+        "startColumn" : 32,
+        "endLine" : 602,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "fullName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getResourcesFileInfo(java.lang.String fullName)/parameter/fullName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 602,
+          "startColumn" : 60,
+          "endLine" : 602,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getResourcesFileInfo(java.lang.String fullName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/grantProjectToUser(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user)" : {
+      "name" : "grantProjectToUser",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/grantProjectToUser(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user)",
+      "type" : "java.lang.Integer",
+      "displayedType" : "Integer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 401,
+        "startColumn" : 21,
+        "endLine" : 401,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "project",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/grantProjectToUser(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user)/parameter/project",
+        "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.Project",
+        "displayedType" : "Project",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 401,
+          "startColumn" : 48,
+          "endLine" : 401,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/grantProjectToUser(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user)"
+      }, {
+        "name" : "user",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/grantProjectToUser(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user)/parameter/user",
+        "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 401,
+          "startColumn" : 62,
+          "endLine" : 401,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/grantProjectToUser(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteProject(java.lang.String userName, java.lang.Long projectCode)" : {
+      "name" : "deleteProject",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteProject(java.lang.String userName, java.lang.Long projectCode)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 441,
+        "startColumn" : 17,
+        "endLine" : 441,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteProject(java.lang.String userName, java.lang.Long projectCode)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 441,
+          "startColumn" : 38,
+          "endLine" : 441,
+          "endColumn" : 46
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteProject(java.lang.String userName, java.lang.Long projectCode)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteProject(java.lang.String userName, java.lang.Long projectCode)/parameter/projectCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 441,
+          "startColumn" : 53,
+          "endLine" : 441,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteProject(java.lang.String userName, java.lang.Long projectCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateTenant(java.lang.String userName, int id, java.lang.String tenantCode, int queueId, java.lang.String desc)" : {
+      "name" : "updateTenant",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateTenant(java.lang.String userName, int id, java.lang.String tenantCode, int queueId, java.lang.String desc)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 454,
+        "startColumn" : 17,
+        "endLine" : 454,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateTenant(java.lang.String userName, int id, java.lang.String tenantCode, int queueId, java.lang.String desc)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 454,
+          "startColumn" : 37,
+          "endLine" : 454,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateTenant(java.lang.String userName, int id, java.lang.String tenantCode, int queueId, java.lang.String desc)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateTenant(java.lang.String userName, int id, java.lang.String tenantCode, int queueId, java.lang.String desc)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 454,
+          "startColumn" : 51,
+          "endLine" : 454,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateTenant(java.lang.String userName, int id, java.lang.String tenantCode, int queueId, java.lang.String desc)"
+      }, {
+        "name" : "tenantCode",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateTenant(java.lang.String userName, int id, java.lang.String tenantCode, int queueId, java.lang.String desc)/parameter/tenantCode",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 454,
+          "startColumn" : 62,
+          "endLine" : 454,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateTenant(java.lang.String userName, int id, java.lang.String tenantCode, int queueId, java.lang.String desc)"
+      }, {
+        "name" : "queueId",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateTenant(java.lang.String userName, int id, java.lang.String tenantCode, int queueId, java.lang.String desc)/parameter/queueId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 454,
+          "startColumn" : 78,
+          "endLine" : 454,
+          "endColumn" : 85
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateTenant(java.lang.String userName, int id, java.lang.String tenantCode, int queueId, java.lang.String desc)"
+      }, {
+        "name" : "desc",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateTenant(java.lang.String userName, int id, java.lang.String tenantCode, int queueId, java.lang.String desc)/parameter/desc",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 454,
+          "startColumn" : 94,
+          "endLine" : 454,
+          "endColumn" : 98
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateTenant(java.lang.String userName, int id, java.lang.String tenantCode, int queueId, java.lang.String desc)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrGrantProject(java.lang.String userName, java.lang.String name, java.lang.String desc)" : {
+      "name" : "createOrGrantProject",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrGrantProject(java.lang.String userName, java.lang.String name, java.lang.String desc)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 416,
+        "startColumn" : 17,
+        "endLine" : 416,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrGrantProject(java.lang.String userName, java.lang.String name, java.lang.String desc)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 416,
+          "startColumn" : 45,
+          "endLine" : 416,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrGrantProject(java.lang.String userName, java.lang.String name, java.lang.String desc)"
+      }, {
+        "name" : "name",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrGrantProject(java.lang.String userName, java.lang.String name, java.lang.String desc)/parameter/name",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 416,
+          "startColumn" : 62,
+          "endLine" : 416,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrGrantProject(java.lang.String userName, java.lang.String name, java.lang.String desc)"
+      }, {
+        "name" : "desc",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrGrantProject(java.lang.String userName, java.lang.String name, java.lang.String desc)/parameter/desc",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 416,
+          "startColumn" : 75,
+          "endLine" : 416,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrGrantProject(java.lang.String userName, java.lang.String name, java.lang.String desc)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)" : {
+      "name" : "execWorkflowInstance",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 370,
+        "startColumn" : 17,
+        "endLine" : 370,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 370,
+          "startColumn" : 45,
+          "endLine" : 370,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)"
+      }, {
+        "name" : "projectName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)/parameter/projectName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 371,
+          "startColumn" : 45,
+          "endLine" : 371,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)"
+      }, {
+        "name" : "workflowName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)/parameter/workflowName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 372,
+          "startColumn" : 45,
+          "endLine" : 372,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)"
+      }, {
+        "name" : "cronTime",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)/parameter/cronTime",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 373,
+          "startColumn" : 45,
+          "endLine" : 373,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)"
+      }, {
+        "name" : "workerGroup",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)/parameter/workerGroup",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 374,
+          "startColumn" : 45,
+          "endLine" : 374,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)"
+      }, {
+        "name" : "warningType",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)/parameter/warningType",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 375,
+          "startColumn" : 45,
+          "endLine" : 375,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)"
+      }, {
+        "name" : "warningGroupId",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)/parameter/warningGroupId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 376,
+          "startColumn" : 46,
+          "endLine" : 376,
+          "endColumn" : 60
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)"
+      }, {
+        "name" : "timeout",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)/parameter/timeout",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 377,
+          "startColumn" : 46,
+          "endLine" : 377,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/execWorkflowInstance(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName, java.lang.String cronTime, java.lang.String workerGroup, java.lang.String warningType, java.lang.Integer warningGroupId, java.lang.Integer timeout)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateProject(java.lang.String userName, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)" : {
+      "name" : "updateProject",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateProject(java.lang.String userName, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 436,
+        "startColumn" : 17,
+        "endLine" : 436,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateProject(java.lang.String userName, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 436,
+          "startColumn" : 38,
+          "endLine" : 436,
+          "endColumn" : 46
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateProject(java.lang.String userName, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateProject(java.lang.String userName, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)/parameter/projectCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 436,
+          "startColumn" : 53,
+          "endLine" : 436,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateProject(java.lang.String userName, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)"
+      }, {
+        "name" : "projectName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateProject(java.lang.String userName, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)/parameter/projectName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 436,
+          "startColumn" : 73,
+          "endLine" : 436,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateProject(java.lang.String userName, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)"
+      }, {
+        "name" : "desc",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateProject(java.lang.String userName, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)/parameter/desc",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 436,
+          "startColumn" : 93,
+          "endLine" : 436,
+          "endColumn" : 97
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateProject(java.lang.String userName, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteUser(java.lang.String userName, int id)" : {
+      "name" : "deleteUser",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteUser(java.lang.String userName, int id)",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 487,
+        "startColumn" : 17,
+        "endLine" : 487,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteUser(java.lang.String userName, int id)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 487,
+          "startColumn" : 35,
+          "endLine" : 487,
+          "endColumn" : 43
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteUser(java.lang.String userName, int id)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteUser(java.lang.String userName, int id)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 487,
+          "startColumn" : 49,
+          "endLine" : 487,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteUser(java.lang.String userName, int id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/getWorkflowInfo(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName)" : {
+      "name" : "getWorkflowInfo",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getWorkflowInfo(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 535,
+        "startColumn" : 32,
+        "endLine" : 535,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getWorkflowInfo(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 535,
+          "startColumn" : 55,
+          "endLine" : 535,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getWorkflowInfo(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName)"
+      }, {
+        "name" : "projectName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getWorkflowInfo(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName)/parameter/projectName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 535,
+          "startColumn" : 72,
+          "endLine" : 535,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getWorkflowInfo(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName)"
+      }, {
+        "name" : "workflowName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getWorkflowInfo(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName)/parameter/workflowName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 536,
+          "startColumn" : 55,
+          "endLine" : 536,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getWorkflowInfo(java.lang.String userName, java.lang.String projectName, java.lang.String workflowName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/createTenant(java.lang.String tenantCode, java.lang.String desc, java.lang.String queueName)" : {
+      "name" : "createTenant",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createTenant(java.lang.String tenantCode, java.lang.String desc, java.lang.String queueName)",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.Tenant",
+      "displayedType" : "Tenant",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 446,
+        "startColumn" : 19,
+        "endLine" : 446,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "tenantCode",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createTenant(java.lang.String tenantCode, java.lang.String desc, java.lang.String queueName)/parameter/tenantCode",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 446,
+          "startColumn" : 39,
+          "endLine" : 446,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createTenant(java.lang.String tenantCode, java.lang.String desc, java.lang.String queueName)"
+      }, {
+        "name" : "desc",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createTenant(java.lang.String tenantCode, java.lang.String desc, java.lang.String queueName)/parameter/desc",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 446,
+          "startColumn" : 58,
+          "endLine" : 446,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createTenant(java.lang.String tenantCode, java.lang.String desc, java.lang.String queueName)"
+      }, {
+        "name" : "queueName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createTenant(java.lang.String tenantCode, java.lang.String desc, java.lang.String queueName)/parameter/queueName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 446,
+          "startColumn" : 71,
+          "endLine" : 446,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createTenant(java.lang.String tenantCode, java.lang.String desc, java.lang.String queueName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)" : {
+      "name" : "createOrUpdateWorkflow",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)",
+      "type" : "java.lang.Long",
+      "displayedType" : "Long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 236,
+        "startColumn" : 17,
+        "endLine" : 236,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 236,
+          "startColumn" : 47,
+          "endLine" : 236,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)"
+      }, {
+        "name" : "projectName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)/parameter/projectName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 237,
+          "startColumn" : 47,
+          "endLine" : 237,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)"
+      }, {
+        "name" : "name",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)/parameter/name",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 238,
+          "startColumn" : 47,
+          "endLine" : 238,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)"
+      }, {
+        "name" : "description",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)/parameter/description",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 239,
+          "startColumn" : 47,
+          "endLine" : 239,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)"
+      }, {
+        "name" : "globalParams",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)/parameter/globalParams",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 240,
+          "startColumn" : 47,
+          "endLine" : 240,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)"
+      }, {
+        "name" : "schedule",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)/parameter/schedule",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 241,
+          "startColumn" : 47,
+          "endLine" : 241,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)"
+      }, {
+        "name" : "onlineSchedule",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)/parameter/onlineSchedule",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 242,
+          "startColumn" : 48,
+          "endLine" : 242,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)"
+      }, {
+        "name" : "warningType",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)/parameter/warningType",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 243,
+          "startColumn" : 47,
+          "endLine" : 243,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)"
+      }, {
+        "name" : "warningGroupId",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)/parameter/warningGroupId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 244,
+          "startColumn" : 44,
+          "endLine" : 244,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)"
+      }, {
+        "name" : "timeout",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)/parameter/timeout",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 245,
+          "startColumn" : 44,
+          "endLine" : 245,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)"
+      }, {
+        "name" : "workerGroup",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)/parameter/workerGroup",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 246,
+          "startColumn" : 47,
+          "endLine" : 246,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)"
+      }, {
+        "name" : "releaseState",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)/parameter/releaseState",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 247,
+          "startColumn" : 44,
+          "endLine" : 247,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)"
+      }, {
+        "name" : "taskRelationJson",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)/parameter/taskRelationJson",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 248,
+          "startColumn" : 47,
+          "endLine" : 248,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)"
+      }, {
+        "name" : "taskDefinitionJson",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)/parameter/taskDefinitionJson",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 249,
+          "startColumn" : 47,
+          "endLine" : 249,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)"
+      }, {
+        "name" : "otherParamsJson",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)/parameter/otherParamsJson",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 250,
+          "startColumn" : 47,
+          "endLine" : 250,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)"
+      }, {
+        "name" : "executionType",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)/parameter/executionType",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 251,
+          "startColumn" : 47,
+          "endLine" : 251,
+          "endColumn" : 60
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateWorkflow(java.lang.String userName, java.lang.String projectName, java.lang.String name, java.lang.String description, java.lang.String globalParams, java.lang.String schedule, boolean onlineSchedule, java.lang.String warningType, int warningGroupId, int timeout, java.lang.String workerGroup, int releaseState, java.lang.String taskRelationJson, java.lang.String taskDefinitionJson, java.lang.String otherParamsJson, java.lang.String executionType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/ping()" : {
+      "name" : "ping",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/ping()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 170,
+        "startColumn" : 19,
+        "endLine" : 170,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/createUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)" : {
+      "name" : "createUser",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 464,
+        "startColumn" : 17,
+        "endLine" : 464,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 464,
+          "startColumn" : 35,
+          "endLine" : 464,
+          "endColumn" : 43
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)"
+      }, {
+        "name" : "userPassword",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)/parameter/userPassword",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 465,
+          "startColumn" : 35,
+          "endLine" : 465,
+          "endColumn" : 47
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)"
+      }, {
+        "name" : "email",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)/parameter/email",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 466,
+          "startColumn" : 35,
+          "endLine" : 466,
+          "endColumn" : 40
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)"
+      }, {
+        "name" : "phone",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)/parameter/phone",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 467,
+          "startColumn" : 35,
+          "endLine" : 467,
+          "endColumn" : 40
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)"
+      }, {
+        "name" : "tenantCode",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)/parameter/tenantCode",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 468,
+          "startColumn" : 35,
+          "endLine" : 468,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)"
+      }, {
+        "name" : "queue",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)/parameter/queue",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 469,
+          "startColumn" : 35,
+          "endLine" : 469,
+          "endColumn" : 40
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)"
+      }, {
+        "name" : "state",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)/parameter/state",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 470,
+          "startColumn" : 32,
+          "endLine" : 470,
+          "endColumn" : 37
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/getEnvironmentInfo(java.lang.String environmentName)" : {
+      "name" : "getEnvironmentInfo",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getEnvironmentInfo(java.lang.String environmentName)",
+      "type" : "java.lang.Long",
+      "displayedType" : "Long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 626,
+        "startColumn" : 17,
+        "endLine" : 626,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "environmentName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getEnvironmentInfo(java.lang.String environmentName)/parameter/environmentName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 626,
+          "startColumn" : 43,
+          "endLine" : 626,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getEnvironmentInfo(java.lang.String environmentName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/getCodeAndVersion(java.lang.String projectName, java.lang.String workflowDefinitionName, java.lang.String taskName)" : {
+      "name" : "getCodeAndVersion",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getCodeAndVersion(java.lang.String projectName, java.lang.String workflowDefinitionName, java.lang.String taskName)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Long>",
+      "displayedType" : "Map<String, Long>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 180,
+        "startColumn" : 30,
+        "endLine" : 180,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getCodeAndVersion(java.lang.String projectName, java.lang.String workflowDefinitionName, java.lang.String taskName)/parameter/projectName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 180,
+          "startColumn" : 55,
+          "endLine" : 180,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getCodeAndVersion(java.lang.String projectName, java.lang.String workflowDefinitionName, java.lang.String taskName)"
+      }, {
+        "name" : "workflowDefinitionName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getCodeAndVersion(java.lang.String projectName, java.lang.String workflowDefinitionName, java.lang.String taskName)/parameter/workflowDefinitionName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 180,
+          "startColumn" : 75,
+          "endLine" : 180,
+          "endColumn" : 97
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getCodeAndVersion(java.lang.String projectName, java.lang.String workflowDefinitionName, java.lang.String taskName)"
+      }, {
+        "name" : "taskName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getCodeAndVersion(java.lang.String projectName, java.lang.String workflowDefinitionName, java.lang.String taskName)/parameter/taskName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 181,
+          "startColumn" : 55,
+          "endLine" : 181,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getCodeAndVersion(java.lang.String projectName, java.lang.String workflowDefinitionName, java.lang.String taskName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/init()" : {
+      "name" : "init",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/init()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 655,
+        "startColumn" : 17,
+        "endLine" : 655,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/getDatasource(java.lang.String datasourceName, java.lang.String type)" : {
+      "name" : "getDatasource",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getDatasource(java.lang.String datasourceName, java.lang.String type)",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.DataSource",
+      "displayedType" : "DataSource",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 500,
+        "startColumn" : 23,
+        "endLine" : 500,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "datasourceName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getDatasource(java.lang.String datasourceName, java.lang.String type)/parameter/datasourceName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 500,
+          "startColumn" : 44,
+          "endLine" : 500,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getDatasource(java.lang.String datasourceName, java.lang.String type)"
+      }, {
+        "name" : "type",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getDatasource(java.lang.String datasourceName, java.lang.String type)/parameter/type",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 500,
+          "startColumn" : 67,
+          "endLine" : 500,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getDatasource(java.lang.String datasourceName, java.lang.String type)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryResourcesFileInfo(java.lang.String userName, java.lang.String fullName)" : {
+      "name" : "queryResourcesFileInfo",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryResourcesFileInfo(java.lang.String userName, java.lang.String fullName)",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.plugin.storage.api.StorageEntity",
+      "displayedType" : "StorageEntity",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 646,
+        "startColumn" : 26,
+        "endLine" : 646,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryResourcesFileInfo(java.lang.String userName, java.lang.String fullName)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 646,
+          "startColumn" : 56,
+          "endLine" : 646,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryResourcesFileInfo(java.lang.String userName, java.lang.String fullName)"
+      }, {
+        "name" : "fullName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryResourcesFileInfo(java.lang.String userName, java.lang.String fullName)/parameter/fullName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 646,
+          "startColumn" : 73,
+          "endLine" : 646,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryResourcesFileInfo(java.lang.String userName, java.lang.String fullName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/getGatewayVersion()" : {
+      "name" : "getGatewayVersion",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getGatewayVersion()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 650,
+        "startColumn" : 19,
+        "endLine" : 650,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteTenantById(java.lang.String userName, java.lang.Integer tenantId)" : {
+      "name" : "deleteTenantById",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteTenantById(java.lang.String userName, java.lang.Integer tenantId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 459,
+        "startColumn" : 17,
+        "endLine" : 459,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteTenantById(java.lang.String userName, java.lang.Integer tenantId)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 459,
+          "startColumn" : 41,
+          "endLine" : 459,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteTenantById(java.lang.String userName, java.lang.Integer tenantId)"
+      }, {
+        "name" : "tenantId",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteTenantById(java.lang.String userName, java.lang.Integer tenantId)/parameter/tenantId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 459,
+          "startColumn" : 59,
+          "endLine" : 459,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/deleteTenantById(java.lang.String userName, java.lang.Integer tenantId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/genTaskCodeList(java.lang.Integer genNum)" : {
+      "name" : "genTaskCodeList",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/genTaskCodeList(java.lang.Integer genNum)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 176,
+        "startColumn" : 32,
+        "endLine" : 176,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "genNum",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/genTaskCodeList(java.lang.Integer genNum)/parameter/genNum",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 176,
+          "startColumn" : 56,
+          "endLine" : 176,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/genTaskCodeList(java.lang.Integer genNum)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryProjectByName(java.lang.String userName, java.lang.String projectName)" : {
+      "name" : "queryProjectByName",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryProjectByName(java.lang.String userName, java.lang.String projectName)",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.Project",
+      "displayedType" : "Project",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 431,
+        "startColumn" : 20,
+        "endLine" : 431,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryProjectByName(java.lang.String userName, java.lang.String projectName)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 431,
+          "startColumn" : 46,
+          "endLine" : 431,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryProjectByName(java.lang.String userName, java.lang.String projectName)"
+      }, {
+        "name" : "projectName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryProjectByName(java.lang.String userName, java.lang.String projectName)/parameter/projectName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 431,
+          "startColumn" : 63,
+          "endLine" : 431,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryProjectByName(java.lang.String userName, java.lang.String projectName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/start()" : {
+      "name" : "start",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/start()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 661,
+        "startColumn" : 18,
+        "endLine" : 661,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/getDependentInfo(java.lang.String projectName, java.lang.String workflowName, java.lang.String taskName)" : {
+      "name" : "getDependentInfo",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getDependentInfo(java.lang.String projectName, java.lang.String workflowName, java.lang.String taskName)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 567,
+        "startColumn" : 32,
+        "endLine" : 567,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getDependentInfo(java.lang.String projectName, java.lang.String workflowName, java.lang.String taskName)/parameter/projectName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 567,
+          "startColumn" : 56,
+          "endLine" : 567,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getDependentInfo(java.lang.String projectName, java.lang.String workflowName, java.lang.String taskName)"
+      }, {
+        "name" : "workflowName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getDependentInfo(java.lang.String projectName, java.lang.String workflowName, java.lang.String taskName)/parameter/workflowName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 567,
+          "startColumn" : 76,
+          "endLine" : 567,
+          "endColumn" : 88
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getDependentInfo(java.lang.String projectName, java.lang.String workflowName, java.lang.String taskName)"
+      }, {
+        "name" : "taskName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getDependentInfo(java.lang.String projectName, java.lang.String workflowName, java.lang.String taskName)/parameter/taskName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 567,
+          "startColumn" : 97,
+          "endLine" : 567,
+          "endColumn" : 105
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getDependentInfo(java.lang.String projectName, java.lang.String workflowName, java.lang.String taskName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryUser(int id)" : {
+      "name" : "queryUser",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryUser(int id)",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 474,
+        "startColumn" : 17,
+        "endLine" : 474,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryUser(int id)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 474,
+          "startColumn" : 31,
+          "endLine" : 474,
+          "endColumn" : 33
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryUser(int id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/getWorkflow(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, java.lang.String workflowName)" : {
+      "name" : "getWorkflow",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getWorkflow(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, java.lang.String workflowName)",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition",
+      "displayedType" : "WorkflowDefinition",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 306,
+        "startColumn" : 32,
+        "endLine" : 306,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "user",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getWorkflow(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, java.lang.String workflowName)/parameter/user",
+        "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 306,
+          "startColumn" : 49,
+          "endLine" : 306,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getWorkflow(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, java.lang.String workflowName)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getWorkflow(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, java.lang.String workflowName)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 306,
+          "startColumn" : 60,
+          "endLine" : 306,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getWorkflow(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, java.lang.String workflowName)"
+      }, {
+        "name" : "workflowName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getWorkflow(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, java.lang.String workflowName)/parameter/workflowName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 306,
+          "startColumn" : 80,
+          "endLine" : 306,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/getWorkflow(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, java.lang.String workflowName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryTenantByCode(java.lang.String tenantCode)" : {
+      "name" : "queryTenantByCode",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryTenantByCode(java.lang.String tenantCode)",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.Tenant",
+      "displayedType" : "Tenant",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 450,
+        "startColumn" : 19,
+        "endLine" : 450,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "tenantCode",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryTenantByCode(java.lang.String tenantCode)/parameter/tenantCode",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 450,
+          "startColumn" : 44,
+          "endLine" : 450,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/queryTenantByCode(java.lang.String tenantCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)" : {
+      "name" : "createOrUpdateSchedule",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 338,
+        "startColumn" : 18,
+        "endLine" : 338,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "user",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)/parameter/user",
+        "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 338,
+          "startColumn" : 46,
+          "endLine" : 338,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 339,
+          "startColumn" : 46,
+          "endLine" : 339,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)"
+      }, {
+        "name" : "workflowCode",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)/parameter/workflowCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 340,
+          "startColumn" : 46,
+          "endLine" : 340,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)"
+      }, {
+        "name" : "schedule",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)/parameter/schedule",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 341,
+          "startColumn" : 48,
+          "endLine" : 341,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)"
+      }, {
+        "name" : "onlineSchedule",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)/parameter/onlineSchedule",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 342,
+          "startColumn" : 49,
+          "endLine" : 342,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)"
+      }, {
+        "name" : "workerGroup",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)/parameter/workerGroup",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 343,
+          "startColumn" : 48,
+          "endLine" : 343,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)"
+      }, {
+        "name" : "warningType",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)/parameter/warningType",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 344,
+          "startColumn" : 48,
+          "endLine" : 344,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)"
+      }, {
+        "name" : "warningGroupId",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)/parameter/warningGroupId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 345,
+          "startColumn" : 45,
+          "endLine" : 345,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/createOrUpdateSchedule(org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User user, long projectCode, long workflowCode, java.lang.String schedule, boolean onlineSchedule, java.lang.String workerGroup, java.lang.String warningType, int warningGroupId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    },
+    "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)" : {
+      "name" : "updateUser",
+      "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)",
+      "type" : "org.apache.dolphinscheduler.api.python.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 482,
+        "startColumn" : 17,
+        "endLine" : 482,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 482,
+          "startColumn" : 35,
+          "endLine" : 482,
+          "endColumn" : 43
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)"
+      }, {
+        "name" : "userPassword",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)/parameter/userPassword",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 482,
+          "startColumn" : 52,
+          "endLine" : 482,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)"
+      }, {
+        "name" : "email",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)/parameter/email",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 482,
+          "startColumn" : 73,
+          "endLine" : 482,
+          "endColumn" : 78
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)"
+      }, {
+        "name" : "phone",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)/parameter/phone",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 482,
+          "startColumn" : 87,
+          "endLine" : 482,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)"
+      }, {
+        "name" : "tenantCode",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)/parameter/tenantCode",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 482,
+          "startColumn" : 101,
+          "endLine" : 482,
+          "endColumn" : 111
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)"
+      }, {
+        "name" : "queue",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)/parameter/queue",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 483,
+          "startColumn" : 35,
+          "endLine" : 483,
+          "endColumn" : 40
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)"
+      }, {
+        "name" : "state",
+        "key" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)/parameter/state",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 483,
+          "startColumn" : 46,
+          "endLine" : 483,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.python.PythonGateway/method/updateUser(java.lang.String userName, java.lang.String userPassword, java.lang.String email, java.lang.String phone, java.lang.String tenantCode, java.lang.String queue, int state)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.python.PythonGateway"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/python/PythonGateway.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

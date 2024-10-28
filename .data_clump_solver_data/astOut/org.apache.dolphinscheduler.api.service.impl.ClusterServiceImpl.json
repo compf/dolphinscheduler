@@ -1,0 +1,525 @@
+{
+  "name" : "ClusterServiceImpl",
+  "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 59,
+    "startColumn" : 8,
+    "endLine" : 59,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/memberField/clusterMapper" : {
+      "name" : "clusterMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/memberField/clusterMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.ClusterMapper",
+      "displayedType" : "ClusterMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 27,
+        "endLine" : 62,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/memberField/k8sNamespaceMapper" : {
+      "name" : "k8sNamespaceMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/memberField/k8sNamespaceMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.K8sNamespaceMapper",
+      "displayedType" : "K8sNamespaceMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 32,
+        "endLine" : 68,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/memberField/k8sManager" : {
+      "name" : "k8sManager",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/memberField/k8sManager",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.k8s.K8sManager",
+      "displayedType" : "K8sManager",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 24,
+        "endLine" : 65,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/verifyCluster(java.lang.String clusterName)" : {
+      "name" : "verifyCluster",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/verifyCluster(java.lang.String clusterName)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 279,
+        "startColumn" : 17,
+        "endLine" : 279,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "clusterName",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/verifyCluster(java.lang.String clusterName)/parameter/clusterName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 279,
+          "startColumn" : 38,
+          "endLine" : 279,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/verifyCluster(java.lang.String clusterName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/deleteClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code)" : {
+      "name" : "deleteClusterByCode",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/deleteClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 200,
+        "startColumn" : 17,
+        "endLine" : 200,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/deleteClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 200,
+          "startColumn" : 42,
+          "endLine" : 200,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/deleteClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code)"
+      }, {
+        "name" : "code",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/deleteClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code)/parameter/code",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 200,
+          "startColumn" : 58,
+          "endLine" : 200,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/deleteClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryClusterByName(java.lang.String name)" : {
+      "name" : "queryClusterByName",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryClusterByName(java.lang.String name)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.ClusterDto",
+      "displayedType" : "ClusterDto",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 182,
+        "startColumn" : 23,
+        "endLine" : 182,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "name",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryClusterByName(java.lang.String name)/parameter/name",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 182,
+          "startColumn" : 49,
+          "endLine" : 182,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryClusterByName(java.lang.String name)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/updateClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code, java.lang.String name, java.lang.String config, java.lang.String desc)" : {
+      "name" : "updateClusterByCode",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/updateClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code, java.lang.String name, java.lang.String config, java.lang.String desc)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Cluster",
+      "displayedType" : "Cluster",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 229,
+        "startColumn" : 20,
+        "endLine" : 229,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/updateClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code, java.lang.String name, java.lang.String config, java.lang.String desc)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 229,
+          "startColumn" : 45,
+          "endLine" : 229,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/updateClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code, java.lang.String name, java.lang.String config, java.lang.String desc)"
+      }, {
+        "name" : "code",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/updateClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code, java.lang.String name, java.lang.String config, java.lang.String desc)/parameter/code",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 230,
+          "startColumn" : 45,
+          "endLine" : 230,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/updateClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code, java.lang.String name, java.lang.String config, java.lang.String desc)"
+      }, {
+        "name" : "name",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/updateClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code, java.lang.String name, java.lang.String config, java.lang.String desc)/parameter/name",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 231,
+          "startColumn" : 47,
+          "endLine" : 231,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/updateClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code, java.lang.String name, java.lang.String config, java.lang.String desc)"
+      }, {
+        "name" : "config",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/updateClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code, java.lang.String name, java.lang.String config, java.lang.String desc)/parameter/config",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 232,
+          "startColumn" : 47,
+          "endLine" : 232,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/updateClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code, java.lang.String name, java.lang.String config, java.lang.String desc)"
+      }, {
+        "name" : "desc",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/updateClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code, java.lang.String name, java.lang.String config, java.lang.String desc)/parameter/desc",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 233,
+          "startColumn" : 47,
+          "endLine" : 233,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/updateClusterByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long code, java.lang.String name, java.lang.String config, java.lang.String desc)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryClusterListPaging(java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)" : {
+      "name" : "queryClusterListPaging",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryClusterListPaging(java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.PageInfo<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.ClusterDto>",
+      "displayedType" : "PageInfo<ClusterDto>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 116,
+        "startColumn" : 33,
+        "endLine" : 116,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryClusterListPaging(java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)/parameter/pageNo",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 116,
+          "startColumn" : 64,
+          "endLine" : 116,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryClusterListPaging(java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryClusterListPaging(java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)/parameter/pageSize",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 116,
+          "startColumn" : 80,
+          "endLine" : 116,
+          "endColumn" : 88
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryClusterListPaging(java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)"
+      }, {
+        "name" : "searchVal",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryClusterListPaging(java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)/parameter/searchVal",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 116,
+          "startColumn" : 97,
+          "endLine" : 116,
+          "endColumn" : 106
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryClusterListPaging(java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryClusterByCode(java.lang.Long code)" : {
+      "name" : "queryClusterByCode",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryClusterByCode(java.lang.Long code)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.ClusterDto",
+      "displayedType" : "ClusterDto",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 164,
+        "startColumn" : 23,
+        "endLine" : 164,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "code",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryClusterByCode(java.lang.Long code)/parameter/code",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 164,
+          "startColumn" : 47,
+          "endLine" : 164,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryClusterByCode(java.lang.Long code)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/checkParams(java.lang.String name, java.lang.String config)" : {
+      "name" : "checkParams",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/checkParams(java.lang.String name, java.lang.String config)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 291,
+        "startColumn" : 20,
+        "endLine" : 291,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "name",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/checkParams(java.lang.String name, java.lang.String config)/parameter/name",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 291,
+          "startColumn" : 39,
+          "endLine" : 291,
+          "endColumn" : 43
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/checkParams(java.lang.String name, java.lang.String config)"
+      }, {
+        "name" : "config",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/checkParams(java.lang.String name, java.lang.String config)/parameter/config",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 291,
+          "startColumn" : 52,
+          "endLine" : 291,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/checkParams(java.lang.String name, java.lang.String config)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/createCluster(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String config, java.lang.String desc)" : {
+      "name" : "createCluster",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/createCluster(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String config, java.lang.String desc)",
+      "type" : "java.lang.Long",
+      "displayedType" : "Long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 17,
+        "endLine" : 80,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/createCluster(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String config, java.lang.String desc)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 80,
+          "startColumn" : 36,
+          "endLine" : 80,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/createCluster(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String config, java.lang.String desc)"
+      }, {
+        "name" : "name",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/createCluster(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String config, java.lang.String desc)/parameter/name",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 80,
+          "startColumn" : 54,
+          "endLine" : 80,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/createCluster(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String config, java.lang.String desc)"
+      }, {
+        "name" : "config",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/createCluster(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String config, java.lang.String desc)/parameter/config",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 80,
+          "startColumn" : 67,
+          "endLine" : 80,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/createCluster(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String config, java.lang.String desc)"
+      }, {
+        "name" : "desc",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/createCluster(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String config, java.lang.String desc)/parameter/desc",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 80,
+          "startColumn" : 82,
+          "endLine" : 80,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/createCluster(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String config, java.lang.String desc)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryAllClusterList()" : {
+      "name" : "queryAllClusterList",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl/method/queryAllClusterList()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.ClusterDto>",
+      "displayedType" : "List<ClusterDto>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 143,
+        "startColumn" : 29,
+        "endLine" : 143,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ClusterServiceImpl"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/service/impl/ClusterServiceImpl.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.ClusterService" ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.service.impl.BaseServiceImpl" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

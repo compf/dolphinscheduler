@@ -1,0 +1,392 @@
+{
+  "name" : "BaseDao",
+  "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 33,
+    "startColumn" : 17,
+    "endLine" : 33,
+    "endColumn" : 22
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.dao.repository.BaseDao/memberField/mybatisMapper" : {
+      "name" : "mybatisMapper",
+      "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/memberField/mybatisMapper",
+      "type" : "MYBATIS_MAPPER",
+      "displayedType" : "MYBATIS_MAPPER",
+      "hasTypeVariable" : true,
+      "position" : {
+        "startLine" : 35,
+        "startColumn" : 30,
+        "endLine" : 35,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryByIds(java.util.Collection<? extends java.io.Serializable> ids)" : {
+      "name" : "queryByIds",
+      "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryByIds(java.util.Collection<? extends java.io.Serializable> ids)",
+      "type" : "java.util.List<ENTITY>",
+      "displayedType" : "List<ENTITY>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 25,
+        "endLine" : 52,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "ids",
+        "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryByIds(java.util.Collection<? extends java.io.Serializable> ids)/parameter/ids",
+        "type" : "java.util.Collection<? extends java.io.Serializable>",
+        "displayedType" : "Collection<? extends Serializable>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 52,
+          "startColumn" : 71,
+          "endLine" : 52,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryByIds(java.util.Collection<? extends java.io.Serializable> ids)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.BaseDao/method/deleteByCondition(ENTITY queryCondition)" : {
+      "name" : "deleteByCondition",
+      "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/deleteByCondition(ENTITY queryCondition)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 106,
+        "startColumn" : 20,
+        "endLine" : 106,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "queryCondition",
+        "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/deleteByCondition(ENTITY queryCondition)/parameter/queryCondition",
+        "type" : "ENTITY",
+        "displayedType" : "ENTITY",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 106,
+          "startColumn" : 45,
+          "endLine" : 106,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/deleteByCondition(ENTITY queryCondition)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryAll()" : {
+      "name" : "queryAll",
+      "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryAll()",
+      "type" : "java.util.List<ENTITY>",
+      "displayedType" : "List<ENTITY>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 60,
+        "startColumn" : 25,
+        "endLine" : 60,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryById(java.io.Serializable id)" : {
+      "name" : "queryById",
+      "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryById(java.io.Serializable id)",
+      "type" : "ENTITY",
+      "displayedType" : "ENTITY",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 19,
+        "endLine" : 42,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryById(java.io.Serializable id)/parameter/id",
+        "type" : "java.io.Serializable",
+        "displayedType" : "Serializable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 42,
+          "startColumn" : 51,
+          "endLine" : 42,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryById(java.io.Serializable id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryOptionalById(java.io.Serializable id)" : {
+      "name" : "queryOptionalById",
+      "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryOptionalById(java.io.Serializable id)",
+      "type" : "java.util.Optional<ENTITY>",
+      "displayedType" : "Optional<ENTITY>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 29,
+        "endLine" : 47,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryOptionalById(java.io.Serializable id)/parameter/id",
+        "type" : "java.io.Serializable",
+        "displayedType" : "Serializable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 47,
+          "startColumn" : 69,
+          "endLine" : 47,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryOptionalById(java.io.Serializable id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryByCondition(ENTITY queryCondition)" : {
+      "name" : "queryByCondition",
+      "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryByCondition(ENTITY queryCondition)",
+      "type" : "java.util.List<ENTITY>",
+      "displayedType" : "List<ENTITY>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 25,
+        "endLine" : 65,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "queryCondition",
+        "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryByCondition(ENTITY queryCondition)/parameter/queryCondition",
+        "type" : "ENTITY",
+        "displayedType" : "ENTITY",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 65,
+          "startColumn" : 49,
+          "endLine" : 65,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/queryByCondition(ENTITY queryCondition)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.BaseDao/method/deleteById(java.io.Serializable id)" : {
+      "name" : "deleteById",
+      "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/deleteById(java.io.Serializable id)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 93,
+        "startColumn" : 20,
+        "endLine" : 93,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/deleteById(java.io.Serializable id)/parameter/id",
+        "type" : "java.io.Serializable",
+        "displayedType" : "Serializable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 93,
+          "startColumn" : 53,
+          "endLine" : 93,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/deleteById(java.io.Serializable id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.BaseDao/method/updateById(ENTITY model)" : {
+      "name" : "updateById",
+      "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/updateById(ENTITY model)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 20,
+        "endLine" : 88,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "model",
+        "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/updateById(ENTITY model)/parameter/model",
+        "type" : "ENTITY",
+        "displayedType" : "ENTITY",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 88,
+          "startColumn" : 47,
+          "endLine" : 88,
+          "endColumn" : 52
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/updateById(ENTITY model)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.BaseDao/method/insert(ENTITY model)" : {
+      "name" : "insert",
+      "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/insert(ENTITY model)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 73,
+        "startColumn" : 16,
+        "endLine" : 73,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "model",
+        "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/insert(ENTITY model)/parameter/model",
+        "type" : "ENTITY",
+        "displayedType" : "ENTITY",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 73,
+          "startColumn" : 39,
+          "endLine" : 73,
+          "endColumn" : 44
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/insert(ENTITY model)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.BaseDao/method/insertBatch(java.util.Collection<ENTITY> models)" : {
+      "name" : "insertBatch",
+      "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/insertBatch(java.util.Collection<ENTITY> models)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 17,
+        "endLine" : 78,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "models",
+        "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/insertBatch(java.util.Collection<ENTITY> models)/parameter/models",
+        "type" : "java.util.Collection<ENTITY>",
+        "displayedType" : "Collection<ENTITY>",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 78,
+          "startColumn" : 48,
+          "endLine" : 78,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/insertBatch(java.util.Collection<ENTITY> models)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.BaseDao/method/deleteByIds(java.util.Collection<? extends java.io.Serializable> ids)" : {
+      "name" : "deleteByIds",
+      "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/deleteByIds(java.util.Collection<? extends java.io.Serializable> ids)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 20,
+        "endLine" : 98,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "ids",
+        "key" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/deleteByIds(java.util.Collection<? extends java.io.Serializable> ids)/parameter/ids",
+        "type" : "java.util.Collection<? extends java.io.Serializable>",
+        "displayedType" : "Collection<? extends Serializable>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 98,
+          "startColumn" : 67,
+          "endLine" : 98,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao/method/deleteByIds(java.util.Collection<? extends java.io.Serializable> ids)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.BaseDao"
+    }
+  },
+  "file_path" : "dolphinscheduler-dao/src/main/java/org/apache/dolphinscheduler/dao/repository/BaseDao.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.dao.repository.IDao<ENTITY>", "ENTITY" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

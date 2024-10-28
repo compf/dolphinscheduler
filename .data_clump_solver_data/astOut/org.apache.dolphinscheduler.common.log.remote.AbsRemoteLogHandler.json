@@ -1,0 +1,286 @@
+{
+  "name" : "AbsRemoteLogHandler",
+  "key" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 38,
+    "startColumn" : 8,
+    "endLine" : 38,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/memberField/blobContainerClient" : {
+      "name" : "blobContainerClient",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/memberField/blobContainerClient",
+      "type" : "org.apache.dolphinscheduler.common.log.remote.com.azure.storage.blob.BlobContainerClient",
+      "displayedType" : "BlobContainerClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 46,
+        "startColumn" : 33,
+        "endLine" : 46,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/memberField/accountName" : {
+      "name" : "accountName",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/memberField/accountName",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 40,
+        "startColumn" : 20,
+        "endLine" : 40,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/memberField/containerName" : {
+      "name" : "containerName",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/memberField/containerName",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 20,
+        "endLine" : 44,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/memberField/instance" : {
+      "name" : "instance",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/memberField/instance",
+      "type" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler",
+      "displayedType" : "AbsRemoteLogHandler",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 48,
+        "startColumn" : 40,
+        "endLine" : 48,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/memberField/accountKey" : {
+      "name" : "accountKey",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/memberField/accountKey",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 20,
+        "endLine" : 42,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/getRemoteLog(java.lang.String logPath)" : {
+      "name" : "getRemoteLog",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/getRemoteLog(java.lang.String logPath)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 106,
+        "startColumn" : 17,
+        "endLine" : 106,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "logPath",
+        "key" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/getRemoteLog(java.lang.String logPath)/parameter/logPath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 106,
+          "startColumn" : 37,
+          "endLine" : 106,
+          "endColumn" : 44
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/getRemoteLog(java.lang.String logPath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/buildBlobContainerClient()" : {
+      "name" : "buildBlobContainerClient",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/buildBlobContainerClient()",
+      "type" : "org.apache.dolphinscheduler.common.log.remote.com.azure.storage.blob.BlobContainerClient",
+      "displayedType" : "BlobContainerClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 35,
+        "endLine" : 65,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/readContainerName()" : {
+      "name" : "readContainerName",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/readContainerName()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 134,
+        "startColumn" : 22,
+        "endLine" : 134,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/sendRemoteLog(java.lang.String logPath)" : {
+      "name" : "sendRemoteLog",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/sendRemoteLog(java.lang.String logPath)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 94,
+        "startColumn" : 17,
+        "endLine" : 94,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "logPath",
+        "key" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/sendRemoteLog(java.lang.String logPath)/parameter/logPath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 94,
+          "startColumn" : 38,
+          "endLine" : 94,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/sendRemoteLog(java.lang.String logPath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/readAccountName()" : {
+      "name" : "readAccountName",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/readAccountName()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 126,
+        "startColumn" : 22,
+        "endLine" : 126,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/getInstance()" : {
+      "name" : "getInstance",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/getInstance()",
+      "type" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler",
+      "displayedType" : "AbsRemoteLogHandler",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 52,
+        "endLine" : 57,
+        "endColumn" : 63
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/readAccountKey()" : {
+      "name" : "readAccountKey",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/readAccountKey()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 130,
+        "startColumn" : 22,
+        "endLine" : 130,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 89,
+        "startColumn" : 17,
+        "endLine" : 89,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.AbsRemoteLogHandler"
+    }
+  },
+  "file_path" : "dolphinscheduler-common/src/main/java/org/apache/dolphinscheduler/common/log/remote/AbsRemoteLogHandler.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.common.log.remote.RemoteLogHandler", "java.io.Closeable" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

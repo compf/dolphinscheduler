@@ -1,0 +1,111 @@
+{
+  "name" : "AsyncMasterTaskExecutorFactory",
+  "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutorFactory",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 28,
+    "startColumn" : 8,
+    "endLine" : 28,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutorFactory/memberField/asyncTaskDelayQueue" : {
+      "name" : "asyncTaskDelayQueue",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutorFactory/memberField/asyncTaskDelayQueue",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskDelayQueue",
+      "displayedType" : "AsyncMasterTaskDelayQueue",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 39,
+        "startColumn" : 39,
+        "endLine" : 39,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutorFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutorFactory/memberField/logicTaskPluginFactoryBuilder" : {
+      "name" : "logicTaskPluginFactoryBuilder",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutorFactory/memberField/logicTaskPluginFactoryBuilder",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.execute.org.apache.dolphinscheduler.server.master.runner.task.LogicTaskPluginFactoryBuilder",
+      "displayedType" : "LogicTaskPluginFactoryBuilder",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 33,
+        "startColumn" : 43,
+        "endLine" : 33,
+        "endColumn" : 72
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutorFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutorFactory/memberField/logicTaskInstanceExecutionEventSenderManager" : {
+      "name" : "logicTaskInstanceExecutionEventSenderManager",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutorFactory/memberField/logicTaskInstanceExecutionEventSenderManager",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.execute.org.apache.dolphinscheduler.server.master.runner.message.LogicTaskInstanceExecutionEventSenderManager",
+      "displayedType" : "LogicTaskInstanceExecutionEventSenderManager",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 36,
+        "startColumn" : 58,
+        "endLine" : 36,
+        "endColumn" : 102
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutorFactory"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutorFactory/method/createMasterTaskExecutor(org.apache.dolphinscheduler.server.master.runner.execute.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)" : {
+      "name" : "createMasterTaskExecutor",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutorFactory/method/createMasterTaskExecutor(org.apache.dolphinscheduler.server.master.runner.execute.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutor",
+      "displayedType" : "AsyncMasterTaskExecutor",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 36,
+        "endLine" : 42,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutorFactory/method/createMasterTaskExecutor(org.apache.dolphinscheduler.server.master.runner.execute.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)/parameter/taskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.execute.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+        "displayedType" : "TaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 42,
+          "startColumn" : 82,
+          "endLine" : 42,
+          "endColumn" : 102
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutorFactory/method/createMasterTaskExecutor(org.apache.dolphinscheduler.server.master.runner.execute.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutorFactory"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/runner/execute/AsyncMasterTaskExecutorFactory.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorFactory<org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutor>", "org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutor" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

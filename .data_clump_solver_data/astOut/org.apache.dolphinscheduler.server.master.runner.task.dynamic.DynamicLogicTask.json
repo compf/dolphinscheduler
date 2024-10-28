@@ -1,0 +1,471 @@
+{
+  "name" : "DynamicLogicTask",
+  "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 64,
+    "startColumn" : 8,
+    "endLine" : 64,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/workflowInstance" : {
+      "name" : "workflowInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/workflowInstance",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+      "displayedType" : "WorkflowInstance",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 30,
+        "endLine" : 77,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/workflowInstanceDao" : {
+      "name" : "workflowInstanceDao",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/workflowInstanceDao",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.repository.WorkflowInstanceDao",
+      "displayedType" : "WorkflowInstanceDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 39,
+        "endLine" : 67,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/processService" : {
+      "name" : "processService",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/processService",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.service.process.ProcessService",
+      "displayedType" : "ProcessService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 34,
+        "endLine" : 75,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/haveBeenCanceled" : {
+      "name" : "haveBeenCanceled",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/haveBeenCanceled",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 21,
+        "endLine" : 81,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/TASK_TYPE" : {
+      "name" : "TASK_TYPE",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/TASK_TYPE",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 32,
+        "endLine" : 66,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/subWorkflowService" : {
+      "name" : "subWorkflowService",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/subWorkflowService",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.service.subworkflow.SubWorkflowService",
+      "displayedType" : "SubWorkflowService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 38,
+        "endLine" : 69,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/taskInstance" : {
+      "name" : "taskInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/taskInstance",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+      "displayedType" : "TaskInstance",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 26,
+        "endLine" : 79,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/workflowDefinitionMapper" : {
+      "name" : "workflowDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/workflowDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionMapper",
+      "displayedType" : "WorkflowDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 44,
+        "endLine" : 71,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/commandMapper" : {
+      "name" : "commandMapper",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/memberField/commandMapper",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.mapper.CommandMapper",
+      "displayedType" : "CommandMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 73,
+        "startColumn" : 33,
+        "endLine" : 73,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/getAsyncTaskExecuteFunction()" : {
+      "name" : "getAsyncTaskExecuteFunction",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/getAsyncTaskExecuteFunction()",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecuteFunction",
+      "displayedType" : "AsyncTaskExecuteFunction",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 104,
+        "startColumn" : 37,
+        "endLine" : 104,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/resetProcessInstanceStatus(java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> existsSubWorkflowInstanceList)" : {
+      "name" : "resetProcessInstanceStatus",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/resetProcessInstanceStatus(java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> existsSubWorkflowInstanceList)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 126,
+        "startColumn" : 17,
+        "endLine" : 126,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "existsSubWorkflowInstanceList",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/resetProcessInstanceStatus(java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> existsSubWorkflowInstanceList)/parameter/existsSubWorkflowInstanceList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance>",
+        "displayedType" : "List<WorkflowInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 126,
+          "startColumn" : 67,
+          "endLine" : 126,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/resetProcessInstanceStatus(java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> existsSubWorkflowInstanceList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/isCancel()" : {
+      "name" : "isCancel",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/isCancel()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 319,
+        "startColumn" : 20,
+        "endLine" : 319,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/generateSubWorkflowInstance(java.util.List<java.util.Map<java.lang.String, java.lang.String>> parameterGroup)" : {
+      "name" : "generateSubWorkflowInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/generateSubWorkflowInstance(java.util.List<java.util.Map<java.lang.String, java.lang.String>> parameterGroup)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 146,
+        "startColumn" : 17,
+        "endLine" : 146,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "parameterGroup",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/generateSubWorkflowInstance(java.util.List<java.util.Map<java.lang.String, java.lang.String>> parameterGroup)/parameter/parameterGroup",
+        "type" : "java.util.List<java.util.Map<java.lang.String, java.lang.String>>",
+        "displayedType" : "List<Map<String, String>>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 146,
+          "startColumn" : 71,
+          "endLine" : 146,
+          "endColumn" : 85
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/generateSubWorkflowInstance(java.util.List<java.util.Map<java.lang.String, java.lang.String>> parameterGroup)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/doKillSubWorkflowInstances()" : {
+      "name" : "doKillSubWorkflowInstances",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/doKillSubWorkflowInstances()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 267,
+        "startColumn" : 18,
+        "endLine" : 267,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/createSubProcessInstance(org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.Command command)" : {
+      "name" : "createSubProcessInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/createSubProcessInstance(org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.Command command)",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+      "displayedType" : "WorkflowInstance",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 183,
+        "startColumn" : 29,
+        "endLine" : 183,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "command",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/createSubProcessInstance(org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.Command command)/parameter/command",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.Command",
+        "displayedType" : "Command",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 183,
+          "startColumn" : 62,
+          "endLine" : 183,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/createSubProcessInstance(org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.Command command)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/getDynamicInputParameters()" : {
+      "name" : "getDynamicInputParameters",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/getDynamicInputParameters()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.plugin.task.api.model.DynamicInputParameter>",
+      "displayedType" : "List<DynamicInputParameter>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 240,
+        "startColumn" : 41,
+        "endLine" : 240,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/doKillWaitToRunSubWorkflowInstances(java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> waitToRunWorkflowInstances)" : {
+      "name" : "doKillWaitToRunSubWorkflowInstances",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/doKillWaitToRunSubWorkflowInstances(java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> waitToRunWorkflowInstances)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 312,
+        "startColumn" : 18,
+        "endLine" : 312,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "waitToRunWorkflowInstances",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/doKillWaitToRunSubWorkflowInstances(java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> waitToRunWorkflowInstances)/parameter/waitToRunWorkflowInstances",
+        "type" : "java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance>",
+        "displayedType" : "List<WorkflowInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 312,
+          "startColumn" : 77,
+          "endLine" : 312,
+          "endColumn" : 103
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/doKillWaitToRunSubWorkflowInstances(java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> waitToRunWorkflowInstances)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/generateParameterGroup()" : {
+      "name" : "generateParameterGroup",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/generateParameterGroup()",
+      "type" : "java.util.List<java.util.Map<java.lang.String, java.lang.String>>",
+      "displayedType" : "List<Map<String, String>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 196,
+        "startColumn" : 38,
+        "endLine" : 196,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/pause()" : {
+      "name" : "pause",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/pause()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 254,
+        "startColumn" : 17,
+        "endLine" : 254,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/kill()" : {
+      "name" : "kill",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/kill()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 259,
+        "startColumn" : 17,
+        "endLine" : 259,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/doKillRunningSubWorkflowInstances(java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> runningSubWorkflowInstanceList)" : {
+      "name" : "doKillRunningSubWorkflowInstances",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/doKillRunningSubWorkflowInstances(java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> runningSubWorkflowInstanceList)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 288,
+        "startColumn" : 18,
+        "endLine" : 288,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "runningSubWorkflowInstanceList",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/doKillRunningSubWorkflowInstances(java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> runningSubWorkflowInstanceList)/parameter/runningSubWorkflowInstanceList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance>",
+        "displayedType" : "List<WorkflowInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 288,
+          "startColumn" : 75,
+          "endLine" : 288,
+          "endColumn" : 105
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask/method/doKillRunningSubWorkflowInstances(java.util.List<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.dao.entity.WorkflowInstance> runningSubWorkflowInstanceList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/runner/task/dynamic/DynamicLogicTask.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.server.master.runner.task.BaseAsyncLogicTask<org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.plugin.task.api.parameters.DynamicParameters>", "org.apache.dolphinscheduler.server.master.runner.task.dynamic.org.apache.dolphinscheduler.plugin.task.api.parameters.DynamicParameters" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

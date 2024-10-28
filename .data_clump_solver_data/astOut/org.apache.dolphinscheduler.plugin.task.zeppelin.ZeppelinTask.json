@@ -1,0 +1,322 @@
+{
+  "name" : "ZeppelinTask",
+  "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 50,
+    "startColumn" : 8,
+    "endLine" : 50,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/memberField/zeppelinParameters" : {
+      "name" : "zeppelinParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/memberField/zeppelinParameters",
+      "type" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinParameters",
+      "displayedType" : "ZeppelinParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 32,
+        "endLine" : 54,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/memberField/zeppelinConnectionParam" : {
+      "name" : "zeppelinConnectionParam",
+      "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/memberField/zeppelinConnectionParam",
+      "type" : "org.apache.dolphinscheduler.plugin.task.zeppelin.org.apache.dolphinscheduler.plugin.datasource.zeppelin.param.ZeppelinConnectionParam",
+      "displayedType" : "ZeppelinConnectionParam",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 37,
+        "endLine" : 61,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/memberField/taskExecutionContext" : {
+      "name" : "taskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/memberField/taskExecutionContext",
+      "type" : "org.apache.dolphinscheduler.plugin.task.zeppelin.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+      "displayedType" : "TaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 40,
+        "endLine" : 52,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/memberField/zClient" : {
+      "name" : "zClient",
+      "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/memberField/zClient",
+      "type" : "org.apache.dolphinscheduler.plugin.task.zeppelin.org.apache.zeppelin.client.ZeppelinClient",
+      "displayedType" : "ZeppelinClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 28,
+        "endLine" : 59,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/memberField/zeppelinTaskExecutionContext" : {
+      "name" : "zeppelinTaskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/memberField/zeppelinTaskExecutionContext",
+      "type" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTaskExecutionContext",
+      "displayedType" : "ZeppelinTaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 42,
+        "endLine" : 63,
+        "endColumn" : 70
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/getZeppelinClient()" : {
+      "name" : "getZeppelinClient",
+      "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/getZeppelinClient()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.zeppelin.org.apache.zeppelin.client.ZeppelinClient",
+      "displayedType" : "ZeppelinClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 180,
+        "startColumn" : 30,
+        "endLine" : 180,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/handle(org.apache.dolphinscheduler.plugin.task.zeppelin.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)" : {
+      "name" : "handle",
+      "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/handle(org.apache.dolphinscheduler.plugin.task.zeppelin.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 101,
+        "startColumn" : 17,
+        "endLine" : 101,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskCallBack",
+        "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/handle(org.apache.dolphinscheduler.plugin.task.zeppelin.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)/parameter/taskCallBack",
+        "type" : "org.apache.dolphinscheduler.plugin.task.zeppelin.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack",
+        "displayedType" : "TaskCallBack",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 101,
+          "startColumn" : 37,
+          "endLine" : 101,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/handle(org.apache.dolphinscheduler.plugin.task.zeppelin.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/init()" : {
+      "name" : "init",
+      "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/init()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 17,
+        "endLine" : 71,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/cancelApplication()" : {
+      "name" : "cancelApplication",
+      "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/cancelApplication()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 218,
+        "startColumn" : 17,
+        "endLine" : 218,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/login()" : {
+      "name" : "login",
+      "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/login()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 89,
+        "startColumn" : 20,
+        "endLine" : 89,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/trackApplicationStatus()" : {
+      "name" : "trackApplicationStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/trackApplicationStatus()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 171,
+        "startColumn" : 17,
+        "endLine" : 171,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/mapStatusToExitCode(org.apache.dolphinscheduler.plugin.task.zeppelin.org.apache.zeppelin.client.Status status)" : {
+      "name" : "mapStatusToExitCode",
+      "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/mapStatusToExitCode(org.apache.dolphinscheduler.plugin.task.zeppelin.org.apache.zeppelin.client.Status status)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 201,
+        "startColumn" : 17,
+        "endLine" : 201,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "status",
+        "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/mapStatusToExitCode(org.apache.dolphinscheduler.plugin.task.zeppelin.org.apache.zeppelin.client.Status status)/parameter/status",
+        "type" : "org.apache.dolphinscheduler.plugin.task.zeppelin.org.apache.zeppelin.client.Status",
+        "displayedType" : "Status",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 201,
+          "startColumn" : 44,
+          "endLine" : 201,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/mapStatusToExitCode(org.apache.dolphinscheduler.plugin.task.zeppelin.org.apache.zeppelin.client.Status status)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/getApplicationIds()" : {
+      "name" : "getApplicationIds",
+      "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/getApplicationIds()",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 244,
+        "startColumn" : 25,
+        "endLine" : 244,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/submitApplication()" : {
+      "name" : "submitApplication",
+      "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/submitApplication()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 166,
+        "startColumn" : 17,
+        "endLine" : 166,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/getParameters()" : {
+      "name" : "getParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask/method/getParameters()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.zeppelin.org.apache.dolphinscheduler.plugin.task.api.parameters.AbstractParameters",
+      "displayedType" : "AbstractParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 213,
+        "startColumn" : 31,
+        "endLine" : 213,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.zeppelin.ZeppelinTask"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-zeppelin/src/main/java/org/apache/dolphinscheduler/plugin/task/zeppelin/ZeppelinTask.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.plugin.task.zeppelin.org.apache.dolphinscheduler.plugin.task.api.AbstractRemoteTask" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

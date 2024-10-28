@@ -1,0 +1,378 @@
+{
+  "name" : "RecoverFailureTaskCommandHandler",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 58,
+    "startColumn" : 8,
+    "endLine" : 58,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/memberField/taskInstanceDao" : {
+      "name" : "taskInstanceDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/memberField/taskInstanceDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.repository.TaskInstanceDao",
+      "displayedType" : "TaskInstanceDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 29,
+        "endLine" : 64,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/memberField/applicationContext" : {
+      "name" : "applicationContext",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/memberField/applicationContext",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.springframework.context.ApplicationContext",
+      "displayedType" : "ApplicationContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 73,
+        "startColumn" : 32,
+        "endLine" : 73,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/memberField/taskExecutionContextFactory" : {
+      "name" : "taskExecutionContextFactory",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/memberField/taskExecutionContextFactory",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.TaskExecutionContextFactory",
+      "displayedType" : "TaskExecutionContextFactory",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 41,
+        "endLine" : 67,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/memberField/taskInstanceFactories" : {
+      "name" : "taskInstanceFactories",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/memberField/taskInstanceFactories",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.TaskInstanceFactories",
+      "displayedType" : "TaskInstanceFactories",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 35,
+        "endLine" : 76,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/memberField/taskGroupCoordinator" : {
+      "name" : "taskGroupCoordinator",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/memberField/taskGroupCoordinator",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator",
+      "displayedType" : "TaskGroupCoordinator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 70,
+        "startColumn" : 34,
+        "endLine" : 70,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/memberField/workflowInstanceDao" : {
+      "name" : "workflowInstanceDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/memberField/workflowInstanceDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.repository.WorkflowInstanceDao",
+      "displayedType" : "WorkflowInstanceDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 33,
+        "endLine" : 61,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/dealWithHistoryTaskInstances(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)" : {
+      "name" : "dealWithHistoryTaskInstances",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/dealWithHistoryTaskInstances(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance>",
+      "displayedType" : "List<TaskInstance>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 152,
+        "startColumn" : 32,
+        "endLine" : 152,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecuteContextBuilder",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/dealWithHistoryTaskInstances(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)/parameter/workflowExecuteContextBuilder",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder",
+        "displayedType" : "WorkflowExecuteContextBuilder",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 153,
+          "startColumn" : 97,
+          "endLine" : 153,
+          "endColumn" : 126
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/dealWithHistoryTaskInstances(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/assembleWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)" : {
+      "name" : "assembleWorkflowInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/assembleWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 92,
+        "startColumn" : 20,
+        "endLine" : 92,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecuteContextBuilder",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/assembleWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)/parameter/workflowExecuteContextBuilder",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder",
+        "displayedType" : "WorkflowExecuteContextBuilder",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 93,
+          "startColumn" : 81,
+          "endLine" : 93,
+          "endColumn" : 110
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/assembleWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/isTaskNeedRecreate(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)" : {
+      "name" : "isTaskNeedRecreate",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/isTaskNeedRecreate(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 212,
+        "startColumn" : 21,
+        "endLine" : 212,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/isTaskNeedRecreate(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 212,
+          "startColumn" : 59,
+          "endLine" : 212,
+          "endColumn" : 71
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/isTaskNeedRecreate(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/createRecreatedTaskInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)" : {
+      "name" : "createRecreatedTaskInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/createRecreatedTaskInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+      "displayedType" : "TaskInstance",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 220,
+        "startColumn" : 26,
+        "endLine" : 220,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/createRecreatedTaskInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 220,
+          "startColumn" : 73,
+          "endLine" : 220,
+          "endColumn" : 85
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/createRecreatedTaskInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/isTaskCanRecover(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)" : {
+      "name" : "isTaskCanRecover",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/isTaskCanRecover(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 227,
+        "startColumn" : 21,
+        "endLine" : 227,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/isTaskCanRecover(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 227,
+          "startColumn" : 57,
+          "endLine" : 227,
+          "endColumn" : 69
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/isTaskCanRecover(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/createRecoverTaskInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)" : {
+      "name" : "createRecoverTaskInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/createRecoverTaskInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+      "displayedType" : "TaskInstance",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 234,
+        "startColumn" : 26,
+        "endLine" : 234,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/createRecoverTaskInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 234,
+          "startColumn" : 71,
+          "endLine" : 234,
+          "endColumn" : 83
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/createRecoverTaskInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/commandType()" : {
+      "name" : "commandType",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/commandType()",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.common.enums.CommandType",
+      "displayedType" : "CommandType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 242,
+        "startColumn" : 24,
+        "endLine" : 242,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/assembleWorkflowExecutionGraph(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)" : {
+      "name" : "assembleWorkflowExecutionGraph",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/assembleWorkflowExecutionGraph(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 112,
+        "startColumn" : 20,
+        "endLine" : 112,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecuteContextBuilder",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/assembleWorkflowExecutionGraph(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)/parameter/workflowExecuteContextBuilder",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder",
+        "displayedType" : "WorkflowExecuteContextBuilder",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 112,
+          "startColumn" : 87,
+          "endLine" : 112,
+          "endColumn" : 116
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler/method/assembleWorkflowExecutionGraph(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.RecoverFailureTaskCommandHandler"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/command/handler/RecoverFailureTaskCommandHandler.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.master.engine.command.handler.AbstractCommandHandler" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

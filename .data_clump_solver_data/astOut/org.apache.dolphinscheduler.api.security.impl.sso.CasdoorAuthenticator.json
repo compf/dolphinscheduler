@@ -1,0 +1,209 @@
+{
+  "name" : "CasdoorAuthenticator",
+  "key" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 39,
+    "startColumn" : 8,
+    "endLine" : 39,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/memberField/casdoorAuthService" : {
+      "name" : "casdoorAuthService",
+      "key" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/memberField/casdoorAuthService",
+      "type" : "org.apache.dolphinscheduler.api.security.impl.sso.org.casbin.casdoor.service.CasdoorAuthService",
+      "displayedType" : "CasdoorAuthService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 32,
+        "endLine" : 44,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator"
+    },
+    "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/memberField/redirectUrl" : {
+      "name" : "redirectUrl",
+      "key" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/memberField/redirectUrl",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 46,
+        "startColumn" : 20,
+        "endLine" : 46,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator"
+    },
+    "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/memberField/usersService" : {
+      "name" : "usersService",
+      "key" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/memberField/usersService",
+      "type" : "org.apache.dolphinscheduler.api.security.impl.sso.org.apache.dolphinscheduler.api.service.UsersService",
+      "displayedType" : "UsersService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 26,
+        "endLine" : 42,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator"
+    },
+    "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/memberField/adminUserName" : {
+      "name" : "adminUserName",
+      "key" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/memberField/adminUserName",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 48,
+        "startColumn" : 20,
+        "endLine" : 48,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/method/login(java.lang.String state, java.lang.String code)" : {
+      "name" : "login",
+      "key" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/method/login(java.lang.String state, java.lang.String code)",
+      "type" : "org.apache.dolphinscheduler.api.security.impl.sso.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 17,
+        "endLine" : 51,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "state",
+        "key" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/method/login(java.lang.String state, java.lang.String code)/parameter/state",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 51,
+          "startColumn" : 39,
+          "endLine" : 51,
+          "endColumn" : 44
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/method/login(java.lang.String state, java.lang.String code)"
+      }, {
+        "name" : "code",
+        "key" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/method/login(java.lang.String state, java.lang.String code)/parameter/code",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 51,
+          "startColumn" : 53,
+          "endLine" : 51,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/method/login(java.lang.String state, java.lang.String code)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator"
+    },
+    "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/method/getSignInUrl(java.lang.String state)" : {
+      "name" : "getSignInUrl",
+      "key" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/method/getSignInUrl(java.lang.String state)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 85,
+        "startColumn" : 19,
+        "endLine" : 85,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "state",
+        "key" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/method/getSignInUrl(java.lang.String state)/parameter/state",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 85,
+          "startColumn" : 39,
+          "endLine" : 85,
+          "endColumn" : 44
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/method/getSignInUrl(java.lang.String state)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator"
+    },
+    "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/method/getUserType(java.lang.String userName)" : {
+      "name" : "getUserType",
+      "key" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/method/getUserType(java.lang.String userName)",
+      "type" : "org.apache.dolphinscheduler.api.security.impl.sso.org.apache.dolphinscheduler.common.enums.UserType",
+      "displayedType" : "UserType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 21,
+        "endLine" : 80,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/method/getUserType(java.lang.String userName)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 80,
+          "startColumn" : 40,
+          "endLine" : 80,
+          "endColumn" : 48
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator/method/getUserType(java.lang.String userName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.security.impl.sso.CasdoorAuthenticator"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/security/impl/sso/CasdoorAuthenticator.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.security.impl.sso.org.apache.dolphinscheduler.api.security.impl.AbstractSsoAuthenticator" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

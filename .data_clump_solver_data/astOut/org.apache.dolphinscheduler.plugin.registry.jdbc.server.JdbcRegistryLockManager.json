@@ -1,0 +1,315 @@
+{
+  "name" : "JdbcRegistryLockManager",
+  "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 39,
+    "startColumn" : 8,
+    "endLine" : 39,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/memberField/jdbcRegistryLockRepository" : {
+      "name" : "jdbcRegistryLockRepository",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/memberField/jdbcRegistryLockRepository",
+      "type" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.repository.JdbcRegistryLockRepository",
+      "displayedType" : "JdbcRegistryLockRepository",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 46,
+        "endLine" : 42,
+        "endColumn" : 72
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/memberField/jdbcRegistryProperties" : {
+      "name" : "jdbcRegistryProperties",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/memberField/jdbcRegistryProperties",
+      "type" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistryProperties",
+      "displayedType" : "JdbcRegistryProperties",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 41,
+        "startColumn" : 42,
+        "endLine" : 41,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/memberField/jdbcRegistryLockHolderMap" : {
+      "name" : "jdbcRegistryLockHolderMap",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/memberField/jdbcRegistryLockHolderMap",
+      "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager$LockEntry>",
+      "displayedType" : "Map<String, LockEntry>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 45,
+        "startColumn" : 42,
+        "endLine" : 45,
+        "endColumn" : 67
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey, long timeout)" : {
+      "name" : "acquireJdbcRegistryLock",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey, long timeout)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 89,
+        "startColumn" : 20,
+        "endLine" : 89,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "clientId",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey, long timeout)/parameter/clientId",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 89,
+          "startColumn" : 49,
+          "endLine" : 89,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey, long timeout)"
+      }, {
+        "name" : "lockKey",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey, long timeout)/parameter/lockKey",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 89,
+          "startColumn" : 66,
+          "endLine" : 89,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey, long timeout)"
+      }, {
+        "name" : "timeout",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey, long timeout)/parameter/timeout",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 89,
+          "startColumn" : 80,
+          "endLine" : 89,
+          "endColumn" : 87
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey, long timeout)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/releaseJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey)" : {
+      "name" : "releaseJdbcRegistryLock",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/releaseJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 126,
+        "startColumn" : 17,
+        "endLine" : 126,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "clientId",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/releaseJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey)/parameter/clientId",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 126,
+          "startColumn" : 46,
+          "endLine" : 126,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/releaseJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey)"
+      }, {
+        "name" : "lockKey",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/releaseJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey)/parameter/lockKey",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 126,
+          "startColumn" : 63,
+          "endLine" : 126,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/releaseJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey)" : {
+      "name" : "acquireJdbcRegistryLock",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 17,
+        "endLine" : 54,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "clientId",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey)/parameter/clientId",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 54,
+          "startColumn" : 46,
+          "endLine" : 54,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey)"
+      }, {
+        "name" : "lockKey",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey)/parameter/lockKey",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 54,
+          "startColumn" : 63,
+          "endLine" : 54,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String lockKey)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager"
+    }
+  },
+  "file_path" : "dolphinscheduler-registry/dolphinscheduler-registry-plugins/dolphinscheduler-registry-jdbc/src/main/java/org/apache/dolphinscheduler/plugin/registry/jdbc/server/JdbcRegistryLockManager.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryLockManager" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager.LockEntry" : {
+      "name" : "LockEntry",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager.LockEntry",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 143,
+        "startColumn" : 19,
+        "endLine" : 143,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager.LockEntry/memberField/lockKey" : {
+          "name" : "lockKey",
+          "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager.LockEntry/memberField/lockKey",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 145,
+            "startColumn" : 24,
+            "endLine" : 145,
+            "endColumn" : 31
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager.LockEntry"
+        },
+        "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager.LockEntry/memberField/lockOwner" : {
+          "name" : "lockOwner",
+          "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager.LockEntry/memberField/lockOwner",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 146,
+            "startColumn" : 24,
+            "endLine" : 146,
+            "endColumn" : 33
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager.LockEntry"
+        },
+        "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager.LockEntry/memberField/jdbcRegistryLock" : {
+          "name" : "jdbcRegistryLock",
+          "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager.LockEntry/memberField/jdbcRegistryLock",
+          "type" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.model.DTO.JdbcRegistryLockDTO",
+          "displayedType" : "JdbcRegistryLockDTO",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 147,
+            "startColumn" : 37,
+            "endLine" : 147,
+            "endColumn" : 53
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager.LockEntry"
+        }
+      },
+      "methods" : { },
+      "file_path" : "dolphinscheduler-registry/dolphinscheduler-registry-plugins/dolphinscheduler-registry-jdbc/src/main/java/org/apache/dolphinscheduler/plugin/registry/jdbc/server/JdbcRegistryLockManager.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryLockManager",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : { }
+}

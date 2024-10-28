@@ -1,0 +1,794 @@
+{
+  "name" : "DataSourceController",
+  "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 80,
+    "startColumn" : 8,
+    "endLine" : 80,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.controller.DataSourceController/memberField/dataSourceService" : {
+      "name" : "dataSourceService",
+      "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/memberField/dataSourceService",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.service.DataSourceService",
+      "displayedType" : "DataSourceService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 31,
+        "endLine" : 83,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getTables(java.lang.Integer datasourceId, java.lang.String database)" : {
+      "name" : "getTables",
+      "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getTables(java.lang.Integer datasourceId, java.lang.String database)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Object>",
+      "displayedType" : "Result<Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 348,
+        "startColumn" : 27,
+        "endLine" : 348,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "datasourceId",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getTables(java.lang.Integer datasourceId, java.lang.String database)/parameter/datasourceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 348,
+          "startColumn" : 75,
+          "endLine" : 348,
+          "endColumn" : 87
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getTables(java.lang.Integer datasourceId, java.lang.String database)"
+      }, {
+        "name" : "database",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getTables(java.lang.Integer datasourceId, java.lang.String database)/parameter/database",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 349,
+          "startColumn" : 78,
+          "endLine" : 349,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getTables(java.lang.Integer datasourceId, java.lang.String database)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController"
+    },
+    "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSourceList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.spi.enums.DbType type)" : {
+      "name" : "queryDataSourceList",
+      "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSourceList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.spi.enums.DbType type)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Object>",
+      "displayedType" : "Result<Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 167,
+        "startColumn" : 27,
+        "endLine" : 167,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSourceList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.spi.enums.DbType type)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 167,
+          "startColumn" : 128,
+          "endLine" : 167,
+          "endColumn" : 137
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSourceList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.spi.enums.DbType type)"
+      }, {
+        "name" : "type",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSourceList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.spi.enums.DbType type)/parameter/type",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.spi.enums.DbType",
+        "displayedType" : "DbType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 168,
+          "startColumn" : 76,
+          "endLine" : 168,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSourceList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.spi.enums.DbType type)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController"
+    },
+    "org.apache.dolphinscheduler.api.controller.DataSourceController/method/unAuthDatasource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)" : {
+      "name" : "unAuthDatasource",
+      "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/unAuthDatasource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Object>",
+      "displayedType" : "Result<Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 298,
+        "startColumn" : 27,
+        "endLine" : 298,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/unAuthDatasource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 298,
+          "startColumn" : 125,
+          "endLine" : 298,
+          "endColumn" : 134
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/unAuthDatasource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/unAuthDatasource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 299,
+          "startColumn" : 76,
+          "endLine" : 299,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/unAuthDatasource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController"
+    },
+    "org.apache.dolphinscheduler.api.controller.DataSourceController/method/deleteDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)" : {
+      "name" : "deleteDataSource",
+      "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/deleteDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Boolean>",
+      "displayedType" : "Result<Boolean>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 258,
+        "startColumn" : 28,
+        "endLine" : 258,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/deleteDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 258,
+          "startColumn" : 126,
+          "endLine" : 258,
+          "endColumn" : 135
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/deleteDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/deleteDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 259,
+          "startColumn" : 69,
+          "endLine" : 259,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/deleteDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController"
+    },
+    "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getTableColumns(java.lang.Integer datasourceId, java.lang.String tableName, java.lang.String database)" : {
+      "name" : "getTableColumns",
+      "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getTableColumns(java.lang.Integer datasourceId, java.lang.String tableName, java.lang.String database)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Object>",
+      "displayedType" : "Result<Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 363,
+        "startColumn" : 27,
+        "endLine" : 363,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "datasourceId",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getTableColumns(java.lang.Integer datasourceId, java.lang.String tableName, java.lang.String database)/parameter/datasourceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 363,
+          "startColumn" : 81,
+          "endLine" : 363,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getTableColumns(java.lang.Integer datasourceId, java.lang.String tableName, java.lang.String database)"
+      }, {
+        "name" : "tableName",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getTableColumns(java.lang.Integer datasourceId, java.lang.String tableName, java.lang.String database)/parameter/tableName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 364,
+          "startColumn" : 77,
+          "endLine" : 364,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getTableColumns(java.lang.Integer datasourceId, java.lang.String tableName, java.lang.String database)"
+      }, {
+        "name" : "database",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getTableColumns(java.lang.Integer datasourceId, java.lang.String tableName, java.lang.String database)/parameter/database",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 365,
+          "startColumn" : 84,
+          "endLine" : 365,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getTableColumns(java.lang.Integer datasourceId, java.lang.String tableName, java.lang.String database)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController"
+    },
+    "org.apache.dolphinscheduler.api.controller.DataSourceController/method/authedDatasource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)" : {
+      "name" : "authedDatasource",
+      "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/authedDatasource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Object>",
+      "displayedType" : "Result<Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 319,
+        "startColumn" : 27,
+        "endLine" : 319,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/authedDatasource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 319,
+          "startColumn" : 125,
+          "endLine" : 319,
+          "endColumn" : 134
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/authedDatasource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/authedDatasource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 320,
+          "startColumn" : 76,
+          "endLine" : 320,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/authedDatasource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController"
+    },
+    "org.apache.dolphinscheduler.api.controller.DataSourceController/method/verifyDataSourceName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name)" : {
+      "name" : "verifyDataSourceName",
+      "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/verifyDataSourceName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Boolean>",
+      "displayedType" : "Result<Boolean>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 278,
+        "startColumn" : 28,
+        "endLine" : 278,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/verifyDataSourceName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 278,
+          "startColumn" : 130,
+          "endLine" : 278,
+          "endColumn" : 139
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/verifyDataSourceName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name)"
+      }, {
+        "name" : "name",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/verifyDataSourceName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name)/parameter/name",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 279,
+          "startColumn" : 86,
+          "endLine" : 279,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/verifyDataSourceName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController"
+    },
+    "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getKerberosStartupState(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser)" : {
+      "name" : "getKerberosStartupState",
+      "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getKerberosStartupState(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Object>",
+      "displayedType" : "Result<Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 335,
+        "startColumn" : 27,
+        "endLine" : 335,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getKerberosStartupState(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 335,
+          "startColumn" : 132,
+          "endLine" : 335,
+          "endColumn" : 141
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getKerberosStartupState(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController"
+    },
+    "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)" : {
+      "name" : "queryDataSource",
+      "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Object>",
+      "displayedType" : "Result<Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 147,
+        "startColumn" : 27,
+        "endLine" : 147,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 147,
+          "startColumn" : 124,
+          "endLine" : 147,
+          "endColumn" : 133
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 148,
+          "startColumn" : 67,
+          "endLine" : 148,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController"
+    },
+    "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getDatabases(java.lang.Integer datasourceId)" : {
+      "name" : "getDatabases",
+      "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getDatabases(java.lang.Integer datasourceId)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Object>",
+      "displayedType" : "Result<Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 377,
+        "startColumn" : 27,
+        "endLine" : 377,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "datasourceId",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getDatabases(java.lang.Integer datasourceId)/parameter/datasourceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 377,
+          "startColumn" : 78,
+          "endLine" : 377,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/getDatabases(java.lang.Integer datasourceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController"
+    },
+    "org.apache.dolphinscheduler.api.controller.DataSourceController/method/createDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String jsonStr)" : {
+      "name" : "createDataSource",
+      "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/createDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String jsonStr)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.DataSource>",
+      "displayedType" : "Result<DataSource>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 31,
+        "endLine" : 98,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/createDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String jsonStr)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 98,
+          "startColumn" : 129,
+          "endLine" : 98,
+          "endColumn" : 138
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/createDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String jsonStr)"
+      }, {
+        "name" : "jsonStr",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/createDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String jsonStr)/parameter/jsonStr",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 99,
+          "startColumn" : 157,
+          "endLine" : 99,
+          "endColumn" : 164
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/createDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String jsonStr)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController"
+    },
+    "org.apache.dolphinscheduler.api.controller.DataSourceController/method/connectionTest(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)" : {
+      "name" : "connectionTest",
+      "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/connectionTest(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Boolean>",
+      "displayedType" : "Result<Boolean>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 237,
+        "startColumn" : 28,
+        "endLine" : 237,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/connectionTest(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 237,
+          "startColumn" : 124,
+          "endLine" : 237,
+          "endColumn" : 133
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/connectionTest(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/connectionTest(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 238,
+          "startColumn" : 67,
+          "endLine" : 238,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/connectionTest(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController"
+    },
+    "org.apache.dolphinscheduler.api.controller.DataSourceController/method/updateDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id, java.lang.String jsonStr)" : {
+      "name" : "updateDataSource",
+      "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/updateDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id, java.lang.String jsonStr)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.DataSource>",
+      "displayedType" : "Result<DataSource>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 123,
+        "startColumn" : 31,
+        "endLine" : 123,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/updateDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id, java.lang.String jsonStr)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 123,
+          "startColumn" : 129,
+          "endLine" : 123,
+          "endColumn" : 138
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/updateDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id, java.lang.String jsonStr)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/updateDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id, java.lang.String jsonStr)/parameter/id",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 124,
+          "startColumn" : 84,
+          "endLine" : 124,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/updateDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id, java.lang.String jsonStr)"
+      }, {
+        "name" : "jsonStr",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/updateDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id, java.lang.String jsonStr)/parameter/jsonStr",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 125,
+          "startColumn" : 68,
+          "endLine" : 125,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/updateDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id, java.lang.String jsonStr)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController"
+    },
+    "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSourceListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)" : {
+      "name" : "queryDataSourceListPaging",
+      "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSourceListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Object>",
+      "displayedType" : "Result<Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 191,
+        "startColumn" : 27,
+        "endLine" : 191,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSourceListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 191,
+          "startColumn" : 134,
+          "endLine" : 191,
+          "endColumn" : 143
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSourceListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "searchVal",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSourceListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/searchVal",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 192,
+          "startColumn" : 113,
+          "endLine" : 192,
+          "endColumn" : 122
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSourceListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSourceListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/pageNo",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 193,
+          "startColumn" : 85,
+          "endLine" : 193,
+          "endColumn" : 91
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSourceListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSourceListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/pageSize",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 194,
+          "startColumn" : 87,
+          "endLine" : 194,
+          "endColumn" : 95
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/queryDataSourceListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController"
+    },
+    "org.apache.dolphinscheduler.api.controller.DataSourceController/method/connectDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String jsonStr)" : {
+      "name" : "connectDataSource",
+      "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/connectDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String jsonStr)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Boolean>",
+      "displayedType" : "Result<Boolean>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 214,
+        "startColumn" : 28,
+        "endLine" : 214,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/connectDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String jsonStr)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 214,
+          "startColumn" : 127,
+          "endLine" : 214,
+          "endColumn" : 136
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/connectDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String jsonStr)"
+      }, {
+        "name" : "jsonStr",
+        "key" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/connectDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String jsonStr)/parameter/jsonStr",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 215,
+          "startColumn" : 153,
+          "endLine" : 215,
+          "endColumn" : 160
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController/method/connectDataSource(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String jsonStr)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.DataSourceController"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/controller/DataSourceController.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.controller.BaseController" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

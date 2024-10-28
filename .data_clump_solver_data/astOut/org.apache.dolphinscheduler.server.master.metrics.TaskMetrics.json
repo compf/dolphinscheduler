@@ -1,0 +1,247 @@
+{
+  "name" : "TaskMetrics",
+  "key" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 34,
+    "startColumn" : 8,
+    "endLine" : 34,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/memberField/taskInstanceCounters" : {
+      "name" : "taskInstanceCounters",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/memberField/taskInstanceCounters",
+      "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.server.master.metrics.io.micrometer.core.instrument.Counter>",
+      "displayedType" : "Map<String, Counter>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 36,
+        "startColumn" : 40,
+        "endLine" : 36,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/memberField/taskDispatchFailCounter" : {
+      "name" : "taskDispatchFailCounter",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/memberField/taskDispatchFailCounter",
+      "type" : "org.apache.dolphinscheduler.server.master.metrics.io.micrometer.core.instrument.Counter",
+      "displayedType" : "Counter",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 27,
+        "endLine" : 58,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/memberField/taskInstanceStates" : {
+      "name" : "taskInstanceStates",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/memberField/taskInstanceStates",
+      "type" : "java.util.Set<java.lang.String>",
+      "displayedType" : "Set<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 38,
+        "startColumn" : 31,
+        "endLine" : 38,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/memberField/taskDispatchErrorCounter" : {
+      "name" : "taskDispatchErrorCounter",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/memberField/taskDispatchErrorCounter",
+      "type" : "org.apache.dolphinscheduler.server.master.metrics.io.micrometer.core.instrument.Counter",
+      "displayedType" : "Counter",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 27,
+        "endLine" : 63,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/memberField/taskDispatchCounter" : {
+      "name" : "taskDispatchCounter",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/memberField/taskDispatchCounter",
+      "type" : "org.apache.dolphinscheduler.server.master.metrics.io.micrometer.core.instrument.Counter",
+      "displayedType" : "Counter",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 27,
+        "endLine" : 53,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/method/registerTaskPrepared(java.util.function.Supplier<java.lang.Number> consumer)" : {
+      "name" : "registerTaskPrepared",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/method/registerTaskPrepared(java.util.function.Supplier<java.lang.Number> consumer)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 30,
+        "endLine" : 68,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "consumer",
+        "key" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/method/registerTaskPrepared(java.util.function.Supplier<java.lang.Number> consumer)/parameter/consumer",
+        "type" : "java.util.function.Supplier<java.lang.Number>",
+        "displayedType" : "Supplier<Number>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 68,
+          "startColumn" : 68,
+          "endLine" : 68,
+          "endColumn" : 76
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/method/registerTaskPrepared(java.util.function.Supplier<java.lang.Number> consumer)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/method/incTaskDispatchFailed(int failedCount)" : {
+      "name" : "incTaskDispatchFailed",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/method/incTaskDispatchFailed(int failedCount)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 74,
+        "startColumn" : 17,
+        "endLine" : 74,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "failedCount",
+        "key" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/method/incTaskDispatchFailed(int failedCount)/parameter/failedCount",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 74,
+          "startColumn" : 43,
+          "endLine" : 74,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/method/incTaskDispatchFailed(int failedCount)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/method/incTaskDispatchError()" : {
+      "name" : "incTaskDispatchError",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/method/incTaskDispatchError()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 17,
+        "endLine" : 78,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/method/incTaskInstanceByState(java.lang.String state)" : {
+      "name" : "incTaskInstanceByState",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/method/incTaskInstanceByState(java.lang.String state)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 86,
+        "startColumn" : 17,
+        "endLine" : 86,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "state",
+        "key" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/method/incTaskInstanceByState(java.lang.String state)/parameter/state",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 86,
+          "startColumn" : 53,
+          "endLine" : 86,
+          "endColumn" : 58
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/method/incTaskInstanceByState(java.lang.String state)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics"
+    },
+    "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/method/incTaskDispatch()" : {
+      "name" : "incTaskDispatch",
+      "key" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics/method/incTaskDispatch()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 82,
+        "startColumn" : 17,
+        "endLine" : 82,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.metrics.TaskMetrics"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/metrics/TaskMetrics.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

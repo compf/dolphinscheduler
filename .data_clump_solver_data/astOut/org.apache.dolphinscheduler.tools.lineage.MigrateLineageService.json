@@ -1,0 +1,162 @@
+{
+  "name" : "MigrateLineageService",
+  "key" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 44,
+    "startColumn" : 8,
+    "endLine" : 44,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService/memberField/workflowTaskRelationMapper" : {
+      "name" : "workflowTaskRelationMapper",
+      "key" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService/memberField/workflowTaskRelationMapper",
+      "type" : "org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.mapper.WorkflowTaskRelationMapper",
+      "displayedType" : "WorkflowTaskRelationMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 40,
+        "endLine" : 53,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService"
+    },
+    "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService/memberField/workflowTaskLineageDao" : {
+      "name" : "workflowTaskLineageDao",
+      "key" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService/memberField/workflowTaskLineageDao",
+      "type" : "org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.repository.WorkflowTaskLineageDao",
+      "displayedType" : "WorkflowTaskLineageDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 50,
+        "startColumn" : 36,
+        "endLine" : 50,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService"
+    },
+    "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService/memberField/taskDefinitionMapper" : {
+      "name" : "taskDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService/memberField/taskDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.mapper.TaskDefinitionMapper",
+      "displayedType" : "TaskDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 34,
+        "endLine" : 47,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService/method/migrateLineageOnce()" : {
+      "name" : "migrateLineageOnce",
+      "key" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService/method/migrateLineageOnce()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 55,
+        "startColumn" : 17,
+        "endLine" : 55,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService"
+    },
+    "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService/method/getAllProcessLineages()" : {
+      "name" : "getAllProcessLineages",
+      "key" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService/method/getAllProcessLineages()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage>",
+      "displayedType" : "List<WorkflowTaskLineage>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 39,
+        "endLine" : 69,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService"
+    },
+    "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService/method/parseDependentTaskParams(org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, java.util.List<org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage> taskLineageList)" : {
+      "name" : "parseDependentTaskParams",
+      "key" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService/method/parseDependentTaskParams(org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, java.util.List<org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage> taskLineageList)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 18,
+        "endLine" : 96,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskDefinition",
+        "key" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService/method/parseDependentTaskParams(org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, java.util.List<org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage> taskLineageList)/parameter/taskDefinition",
+        "type" : "org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.entity.TaskDefinition",
+        "displayedType" : "TaskDefinition",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 96,
+          "startColumn" : 58,
+          "endLine" : 96,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService/method/parseDependentTaskParams(org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, java.util.List<org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage> taskLineageList)"
+      }, {
+        "name" : "taskLineageList",
+        "key" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService/method/parseDependentTaskParams(org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, java.util.List<org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage> taskLineageList)/parameter/taskLineageList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage>",
+        "displayedType" : "List<WorkflowTaskLineage>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 96,
+          "startColumn" : 100,
+          "endLine" : 96,
+          "endColumn" : 115
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService/method/parseDependentTaskParams(org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, java.util.List<org.apache.dolphinscheduler.tools.lineage.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage> taskLineageList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.lineage.MigrateLineageService"
+    }
+  },
+  "file_path" : "dolphinscheduler-tools/src/main/java/org/apache/dolphinscheduler/tools/lineage/MigrateLineageService.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

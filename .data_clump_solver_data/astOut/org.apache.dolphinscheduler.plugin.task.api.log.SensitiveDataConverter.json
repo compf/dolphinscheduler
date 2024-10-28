@@ -1,0 +1,160 @@
+{
+  "name" : "SensitiveDataConverter",
+  "key" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 37,
+    "startColumn" : 8,
+    "endLine" : 37,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter/memberField/maskPatterns" : {
+      "name" : "maskPatterns",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter/memberField/maskPatterns",
+      "type" : "java.util.HashSet<java.lang.String>",
+      "displayedType" : "HashSet<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 40,
+        "startColumn" : 36,
+        "endLine" : 40,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter/memberField/multilinePattern" : {
+      "name" : "multilinePattern",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter/memberField/multilinePattern",
+      "type" : "java.util.regex.Pattern",
+      "displayedType" : "Pattern",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 39,
+        "startColumn" : 28,
+        "endLine" : 39,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter/method/addMaskPattern(java.lang.String maskPattern)" : {
+      "name" : "addMaskPattern",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter/method/addMaskPattern(java.lang.String maskPattern)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 24,
+        "endLine" : 53,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "maskPattern",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter/method/addMaskPattern(java.lang.String maskPattern)/parameter/maskPattern",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 53,
+          "startColumn" : 46,
+          "endLine" : 53,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter/method/addMaskPattern(java.lang.String maskPattern)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter/method/convert(org.apache.dolphinscheduler.plugin.task.api.log.ch.qos.logback.classic.spi.ILoggingEvent event)" : {
+      "name" : "convert",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter/method/convert(org.apache.dolphinscheduler.plugin.task.api.log.ch.qos.logback.classic.spi.ILoggingEvent event)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 19,
+        "endLine" : 44,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "event",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter/method/convert(org.apache.dolphinscheduler.plugin.task.api.log.ch.qos.logback.classic.spi.ILoggingEvent event)/parameter/event",
+        "type" : "org.apache.dolphinscheduler.plugin.task.api.log.ch.qos.logback.classic.spi.ILoggingEvent",
+        "displayedType" : "ILoggingEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 44,
+          "startColumn" : 41,
+          "endLine" : 44,
+          "endColumn" : 46
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter/method/convert(org.apache.dolphinscheduler.plugin.task.api.log.ch.qos.logback.classic.spi.ILoggingEvent event)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter/method/maskSensitiveData(java.lang.String logMsg)" : {
+      "name" : "maskSensitiveData",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter/method/maskSensitiveData(java.lang.String logMsg)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 26,
+        "endLine" : 57,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "logMsg",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter/method/maskSensitiveData(java.lang.String logMsg)/parameter/logMsg",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 57,
+          "startColumn" : 57,
+          "endLine" : 57,
+          "endColumn" : 63
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter/method/maskSensitiveData(java.lang.String logMsg)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.log.SensitiveDataConverter"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-api/src/main/java/org/apache/dolphinscheduler/plugin/task/api/log/SensitiveDataConverter.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.plugin.task.api.log.ch.qos.logback.classic.pattern.MessageConverter" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

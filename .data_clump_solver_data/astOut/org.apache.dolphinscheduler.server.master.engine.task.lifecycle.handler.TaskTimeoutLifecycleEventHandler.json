@@ -1,0 +1,206 @@
+{
+  "name" : "TaskTimeoutLifecycleEventHandler",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 41,
+    "startColumn" : 8,
+    "endLine" : 41,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/memberField/workflowAlertManager" : {
+      "name" : "workflowAlertManager",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/memberField/workflowAlertManager",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.service.alert.WorkflowAlertManager",
+      "displayedType" : "WorkflowAlertManager",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 34,
+        "endLine" : 44,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/doTaskTimeoutKill(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "doTaskTimeoutKill",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/doTaskTimeoutKill(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 84,
+        "startColumn" : 18,
+        "endLine" : 84,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/doTaskTimeoutKill(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 84,
+          "startColumn" : 65,
+          "endLine" : 84,
+          "endColumn" : 86
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/doTaskTimeoutKill(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/handle(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.statemachine.ITaskStateAction taskStateAction, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskTimeoutLifecycleEvent taskTimeoutLifecycleEvent)" : {
+      "name" : "handle",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/handle(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.statemachine.ITaskStateAction taskStateAction, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskTimeoutLifecycleEvent taskTimeoutLifecycleEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 17,
+        "endLine" : 47,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskStateAction",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/handle(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.statemachine.ITaskStateAction taskStateAction, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskTimeoutLifecycleEvent taskTimeoutLifecycleEvent)/parameter/taskStateAction",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.statemachine.ITaskStateAction",
+        "displayedType" : "ITaskStateAction",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 47,
+          "startColumn" : 47,
+          "endLine" : 47,
+          "endColumn" : 62
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/handle(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.statemachine.ITaskStateAction taskStateAction, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskTimeoutLifecycleEvent taskTimeoutLifecycleEvent)"
+      }, {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/handle(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.statemachine.ITaskStateAction taskStateAction, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskTimeoutLifecycleEvent taskTimeoutLifecycleEvent)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 48,
+          "startColumn" : 57,
+          "endLine" : 48,
+          "endColumn" : 82
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/handle(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.statemachine.ITaskStateAction taskStateAction, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskTimeoutLifecycleEvent taskTimeoutLifecycleEvent)"
+      }, {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/handle(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.statemachine.ITaskStateAction taskStateAction, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskTimeoutLifecycleEvent taskTimeoutLifecycleEvent)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 49,
+          "startColumn" : 53,
+          "endLine" : 49,
+          "endColumn" : 74
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/handle(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.statemachine.ITaskStateAction taskStateAction, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskTimeoutLifecycleEvent taskTimeoutLifecycleEvent)"
+      }, {
+        "name" : "taskTimeoutLifecycleEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/handle(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.statemachine.ITaskStateAction taskStateAction, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskTimeoutLifecycleEvent taskTimeoutLifecycleEvent)/parameter/taskTimeoutLifecycleEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskTimeoutLifecycleEvent",
+        "displayedType" : "TaskTimeoutLifecycleEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 50,
+          "startColumn" : 56,
+          "endLine" : 50,
+          "endColumn" : 81
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/handle(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.statemachine.ITaskStateAction taskStateAction, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskTimeoutLifecycleEvent taskTimeoutLifecycleEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/doTaskTimeoutAlert(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "doTaskTimeoutAlert",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/doTaskTimeoutAlert(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 18,
+        "endLine" : 88,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/doTaskTimeoutAlert(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 88,
+          "startColumn" : 66,
+          "endLine" : 88,
+          "endColumn" : 87
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/doTaskTimeoutAlert(org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/matchEventType()" : {
+      "name" : "matchEventType",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler/method/matchEventType()",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.ILifecycleEventType",
+      "displayedType" : "ILifecycleEventType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 32,
+        "endLine" : 96,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.TaskTimeoutLifecycleEventHandler"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/task/lifecycle/handler/TaskTimeoutLifecycleEventHandler.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.AbstractTaskLifecycleEventHandler<org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskTimeoutLifecycleEvent>", "org.apache.dolphinscheduler.server.master.engine.task.lifecycle.handler.org.apache.dolphinscheduler.server.master.engine.task.lifecycle.event.TaskTimeoutLifecycleEvent" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

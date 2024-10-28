@@ -1,0 +1,205 @@
+{
+  "name" : "ServerLifeCycleManager",
+  "key" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 25,
+    "startColumn" : 8,
+    "endLine" : 25,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/memberField/serverStatus" : {
+      "name" : "serverStatus",
+      "key" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/memberField/serverStatus",
+      "type" : "org.apache.dolphinscheduler.common.lifecycle.ServerStatus",
+      "displayedType" : "ServerStatus",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 27,
+        "startColumn" : 42,
+        "endLine" : 27,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "VOLATILE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager"
+    },
+    "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/memberField/serverStartupTime" : {
+      "name" : "serverStartupTime",
+      "key" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/memberField/serverStartupTime",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 29,
+        "startColumn" : 25,
+        "endLine" : 29,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/method/toRunning()" : {
+      "name" : "toRunning",
+      "key" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/method/toRunning()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 35,
+        "startColumn" : 24,
+        "endLine" : 35,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager"
+    },
+    "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/method/isRunning()" : {
+      "name" : "isRunning",
+      "key" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/method/isRunning()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 39,
+        "startColumn" : 27,
+        "endLine" : 39,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager"
+    },
+    "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/method/toWaiting()" : {
+      "name" : "toWaiting",
+      "key" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/method/toWaiting()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 37,
+        "endLine" : 56,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager"
+    },
+    "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/method/toStopped()" : {
+      "name" : "toStopped",
+      "key" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/method/toStopped()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 84,
+        "startColumn" : 40,
+        "endLine" : 84,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager"
+    },
+    "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/method/recoverFromWaiting()" : {
+      "name" : "recoverFromWaiting",
+      "key" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/method/recoverFromWaiting()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 37,
+        "endLine" : 71,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager"
+    },
+    "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/method/getServerStartupTime()" : {
+      "name" : "getServerStartupTime",
+      "key" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/method/getServerStartupTime()",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 31,
+        "startColumn" : 24,
+        "endLine" : 31,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager"
+    },
+    "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/method/isStopped()" : {
+      "name" : "isStopped",
+      "key" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/method/isStopped()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 27,
+        "endLine" : 43,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager"
+    },
+    "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/method/getServerStatus()" : {
+      "name" : "getServerStatus",
+      "key" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager/method/getServerStatus()",
+      "type" : "org.apache.dolphinscheduler.common.lifecycle.ServerStatus",
+      "displayedType" : "ServerStatus",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 32,
+        "endLine" : 47,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.lifecycle.ServerLifeCycleManager"
+    }
+  },
+  "file_path" : "dolphinscheduler-common/src/main/java/org/apache/dolphinscheduler/common/lifecycle/ServerLifeCycleManager.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

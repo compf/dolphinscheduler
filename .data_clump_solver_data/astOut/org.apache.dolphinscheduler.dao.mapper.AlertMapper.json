@@ -1,0 +1,203 @@
+{
+  "name" : "AlertMapper",
+  "key" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper",
+  "type" : "interface",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 34,
+    "startColumn" : 8,
+    "endLine" : 34,
+    "endColumn" : 17
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : { },
+  "methods" : {
+    "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/selectByWorkflowInstanceId(java.lang.Integer processInstanceId)" : {
+      "name" : "selectByWorkflowInstanceId",
+      "key" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/selectByWorkflowInstanceId(java.lang.Integer processInstanceId)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.Alert>",
+      "displayedType" : "List<Alert>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 17,
+        "endLine" : 51,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "processInstanceId",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/selectByWorkflowInstanceId(java.lang.Integer processInstanceId)/parameter/processInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 51,
+          "startColumn" : 81,
+          "endLine" : 51,
+          "endColumn" : 98
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/selectByWorkflowInstanceId(java.lang.Integer processInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper"
+    },
+    "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/listingAlertByStatus(int minAlertId, int alertStatus, int limit)" : {
+      "name" : "listingAlertByStatus",
+      "key" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/listingAlertByStatus(int minAlertId, int alertStatus, int limit)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.Alert>",
+      "displayedType" : "List<Alert>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 39,
+        "startColumn" : 17,
+        "endLine" : 39,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "minAlertId",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/listingAlertByStatus(int minAlertId, int alertStatus, int limit)/parameter/minAlertId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 39,
+          "startColumn" : 63,
+          "endLine" : 39,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/listingAlertByStatus(int minAlertId, int alertStatus, int limit)"
+      }, {
+        "name" : "alertStatus",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/listingAlertByStatus(int minAlertId, int alertStatus, int limit)/parameter/alertStatus",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 39,
+          "startColumn" : 101,
+          "endLine" : 39,
+          "endColumn" : 112
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/listingAlertByStatus(int minAlertId, int alertStatus, int limit)"
+      }, {
+        "name" : "limit",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/listingAlertByStatus(int minAlertId, int alertStatus, int limit)/parameter/limit",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 40,
+          "startColumn" : 58,
+          "endLine" : 40,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/listingAlertByStatus(int minAlertId, int alertStatus, int limit)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper"
+    },
+    "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/insertAlertWhenServerCrash(org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.Alert alert, java.util.Date crashAlarmSuppressionStartTime)" : {
+      "name" : "insertAlertWhenServerCrash",
+      "key" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/insertAlertWhenServerCrash(org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.Alert alert, java.util.Date crashAlarmSuppressionStartTime)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 46,
+        "startColumn" : 10,
+        "endLine" : 46,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "alert",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/insertAlertWhenServerCrash(org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.Alert alert, java.util.Date crashAlarmSuppressionStartTime)/parameter/alert",
+        "type" : "org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.Alert",
+        "displayedType" : "Alert",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 46,
+          "startColumn" : 59,
+          "endLine" : 46,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/insertAlertWhenServerCrash(org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.Alert alert, java.util.Date crashAlarmSuppressionStartTime)"
+      }, {
+        "name" : "crashAlarmSuppressionStartTime",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/insertAlertWhenServerCrash(org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.Alert alert, java.util.Date crashAlarmSuppressionStartTime)/parameter/crashAlarmSuppressionStartTime",
+        "type" : "java.util.Date",
+        "displayedType" : "Date",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 47,
+          "startColumn" : 83,
+          "endLine" : 47,
+          "endColumn" : 113
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/insertAlertWhenServerCrash(org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.Alert alert, java.util.Date crashAlarmSuppressionStartTime)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper"
+    },
+    "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/deleteByWorkflowInstanceId(java.lang.Integer processInstanceId)" : {
+      "name" : "deleteByWorkflowInstanceId",
+      "key" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/deleteByWorkflowInstanceId(java.lang.Integer processInstanceId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 10,
+        "endLine" : 49,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "processInstanceId",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/deleteByWorkflowInstanceId(java.lang.Integer processInstanceId)/parameter/processInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 49,
+          "startColumn" : 74,
+          "endLine" : 49,
+          "endColumn" : 91
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper/method/deleteByWorkflowInstanceId(java.lang.Integer processInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.mapper.AlertMapper"
+    }
+  },
+  "file_path" : "dolphinscheduler-dao/src/main/java/org/apache/dolphinscheduler/dao/mapper/AlertMapper.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.dao.mapper.com.baomidou.mybatisplus.core.mapper.BaseMapper<org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.Alert>", "org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.Alert" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

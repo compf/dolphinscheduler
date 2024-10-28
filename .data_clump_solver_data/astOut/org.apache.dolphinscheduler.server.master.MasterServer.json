@@ -1,0 +1,332 @@
+{
+  "name" : "MasterServer",
+  "key" : "org.apache.dolphinscheduler.server.master.MasterServer",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 65,
+    "startColumn" : 8,
+    "endLine" : 65,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.MasterServer/memberField/masterRPCServer" : {
+      "name" : "masterRPCServer",
+      "key" : "org.apache.dolphinscheduler.server.master.MasterServer/memberField/masterRPCServer",
+      "type" : "org.apache.dolphinscheduler.server.master.org.apache.dolphinscheduler.server.master.rpc.MasterRpcServer",
+      "displayedType" : "MasterRpcServer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 29,
+        "endLine" : 80,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.MasterServer"
+    },
+    "org.apache.dolphinscheduler.server.master.MasterServer/memberField/metricsProvider" : {
+      "name" : "metricsProvider",
+      "key" : "org.apache.dolphinscheduler.server.master.MasterServer/memberField/metricsProvider",
+      "type" : "org.apache.dolphinscheduler.server.master.org.apache.dolphinscheduler.meter.metrics.MetricsProvider",
+      "displayedType" : "MetricsProvider",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 29,
+        "endLine" : 83,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.MasterServer"
+    },
+    "org.apache.dolphinscheduler.server.master.MasterServer/memberField/clusterStateMonitors" : {
+      "name" : "clusterStateMonitors",
+      "key" : "org.apache.dolphinscheduler.server.master.MasterServer/memberField/clusterStateMonitors",
+      "type" : "org.apache.dolphinscheduler.server.master.org.apache.dolphinscheduler.server.master.cluster.ClusterStateMonitors",
+      "displayedType" : "ClusterStateMonitors",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 86,
+        "startColumn" : 34,
+        "endLine" : 86,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.MasterServer"
+    },
+    "org.apache.dolphinscheduler.server.master.MasterServer/memberField/schedulerApi" : {
+      "name" : "schedulerApi",
+      "key" : "org.apache.dolphinscheduler.server.master.MasterServer/memberField/schedulerApi",
+      "type" : "org.apache.dolphinscheduler.server.master.org.apache.dolphinscheduler.scheduler.api.SchedulerApi",
+      "displayedType" : "SchedulerApi",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 26,
+        "endLine" : 77,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.MasterServer"
+    },
+    "org.apache.dolphinscheduler.server.master.MasterServer/memberField/systemEventBus" : {
+      "name" : "systemEventBus",
+      "key" : "org.apache.dolphinscheduler.server.master.MasterServer/memberField/systemEventBus",
+      "type" : "org.apache.dolphinscheduler.server.master.org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus",
+      "displayedType" : "SystemEventBus",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 92,
+        "startColumn" : 28,
+        "endLine" : 92,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.MasterServer"
+    },
+    "org.apache.dolphinscheduler.server.master.MasterServer/memberField/masterRegistryClient" : {
+      "name" : "masterRegistryClient",
+      "key" : "org.apache.dolphinscheduler.server.master.MasterServer/memberField/masterRegistryClient",
+      "type" : "org.apache.dolphinscheduler.server.master.org.apache.dolphinscheduler.server.master.registry.MasterRegistryClient",
+      "displayedType" : "MasterRegistryClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 34,
+        "endLine" : 71,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.MasterServer"
+    },
+    "org.apache.dolphinscheduler.server.master.MasterServer/memberField/clusterManager" : {
+      "name" : "clusterManager",
+      "key" : "org.apache.dolphinscheduler.server.master.MasterServer/memberField/clusterManager",
+      "type" : "org.apache.dolphinscheduler.server.master.org.apache.dolphinscheduler.server.master.cluster.ClusterManager",
+      "displayedType" : "ClusterManager",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 89,
+        "startColumn" : 28,
+        "endLine" : 89,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.MasterServer"
+    },
+    "org.apache.dolphinscheduler.server.master.MasterServer/memberField/systemEventBusFireWorker" : {
+      "name" : "systemEventBusFireWorker",
+      "key" : "org.apache.dolphinscheduler.server.master.MasterServer/memberField/systemEventBusFireWorker",
+      "type" : "org.apache.dolphinscheduler.server.master.org.apache.dolphinscheduler.server.master.engine.system.SystemEventBusFireWorker",
+      "displayedType" : "SystemEventBusFireWorker",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 95,
+        "startColumn" : 38,
+        "endLine" : 95,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.MasterServer"
+    },
+    "org.apache.dolphinscheduler.server.master.MasterServer/memberField/springApplicationContext" : {
+      "name" : "springApplicationContext",
+      "key" : "org.apache.dolphinscheduler.server.master.MasterServer/memberField/springApplicationContext",
+      "type" : "org.apache.dolphinscheduler.server.master.org.apache.dolphinscheduler.service.bean.SpringApplicationContext",
+      "displayedType" : "SpringApplicationContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 38,
+        "endLine" : 68,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.MasterServer"
+    },
+    "org.apache.dolphinscheduler.server.master.MasterServer/memberField/workflowEngine" : {
+      "name" : "workflowEngine",
+      "key" : "org.apache.dolphinscheduler.server.master.MasterServer/memberField/workflowEngine",
+      "type" : "org.apache.dolphinscheduler.server.master.org.apache.dolphinscheduler.server.master.engine.WorkflowEngine",
+      "displayedType" : "WorkflowEngine",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 74,
+        "startColumn" : 28,
+        "endLine" : 74,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.MasterServer"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.MasterServer/method/close(java.lang.String cause)" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.server.master.MasterServer/method/close(java.lang.String cause)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 160,
+        "startColumn" : 17,
+        "endLine" : 160,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "cause",
+        "key" : "org.apache.dolphinscheduler.server.master.MasterServer/method/close(java.lang.String cause)/parameter/cause",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 160,
+          "startColumn" : 30,
+          "endLine" : 160,
+          "endColumn" : 35
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.MasterServer/method/close(java.lang.String cause)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.MasterServer"
+    },
+    "org.apache.dolphinscheduler.server.master.MasterServer/method/shutdown()" : {
+      "name" : "shutdown",
+      "key" : "org.apache.dolphinscheduler.server.master.MasterServer/method/shutdown()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 156,
+        "startColumn" : 17,
+        "endLine" : 156,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.MasterServer"
+    },
+    "org.apache.dolphinscheduler.server.master.MasterServer/method/main(java.lang.String[] args)" : {
+      "name" : "main",
+      "key" : "org.apache.dolphinscheduler.server.master.MasterServer/method/main(java.lang.String[] args)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 97,
+        "startColumn" : 24,
+        "endLine" : 97,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "args",
+        "key" : "org.apache.dolphinscheduler.server.master.MasterServer/method/main(java.lang.String[] args)/parameter/args",
+        "type" : "java.lang.String[]",
+        "displayedType" : "String[]",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 97,
+          "startColumn" : 38,
+          "endLine" : 97,
+          "endColumn" : 42
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.MasterServer/method/main(java.lang.String[] args)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.MasterServer"
+    },
+    "org.apache.dolphinscheduler.server.master.MasterServer/method/stop(java.lang.String cause)" : {
+      "name" : "stop",
+      "key" : "org.apache.dolphinscheduler.server.master.MasterServer/method/stop(java.lang.String cause)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 188,
+        "startColumn" : 17,
+        "endLine" : 188,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "cause",
+        "key" : "org.apache.dolphinscheduler.server.master.MasterServer/method/stop(java.lang.String cause)/parameter/cause",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 188,
+          "startColumn" : 29,
+          "endLine" : 188,
+          "endColumn" : 34
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.MasterServer/method/stop(java.lang.String cause)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.MasterServer"
+    },
+    "org.apache.dolphinscheduler.server.master.MasterServer/method/initialized()" : {
+      "name" : "initialized",
+      "key" : "org.apache.dolphinscheduler.server.master.MasterServer/method/initialized()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 109,
+        "startColumn" : 17,
+        "endLine" : 109,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.MasterServer"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/MasterServer.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.master.org.apache.dolphinscheduler.common.IStoppable" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

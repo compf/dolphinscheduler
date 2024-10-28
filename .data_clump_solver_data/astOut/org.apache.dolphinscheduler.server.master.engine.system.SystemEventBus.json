@@ -1,0 +1,113 @@
+{
+  "name" : "SystemEventBus",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 38,
+    "startColumn" : 8,
+    "endLine" : 38,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus/memberField/eventChannel" : {
+      "name" : "eventChannel",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus/memberField/eventChannel",
+      "type" : "java.util.concurrent.LinkedBlockingQueue<org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.server.master.engine.system.event.AbstractSystemEvent>",
+      "displayedType" : "LinkedBlockingQueue<AbstractSystemEvent>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 40,
+        "startColumn" : 60,
+        "endLine" : 40,
+        "endColumn" : 72
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus/method/take()" : {
+      "name" : "take",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus/method/take()",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.server.master.engine.system.event.AbstractSystemEvent",
+      "displayedType" : "AbstractSystemEvent",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 32,
+        "endLine" : 52,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus/method/isEmpty()" : {
+      "name" : "isEmpty",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus/method/isEmpty()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 20,
+        "endLine" : 56,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus/method/publish(org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.server.master.engine.system.event.AbstractSystemEvent event)" : {
+      "name" : "publish",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus/method/publish(org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.server.master.engine.system.event.AbstractSystemEvent event)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 17,
+        "endLine" : 42,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "event",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus/method/publish(org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.server.master.engine.system.event.AbstractSystemEvent event)/parameter/event",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.server.master.engine.system.event.AbstractSystemEvent",
+        "displayedType" : "AbstractSystemEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 42,
+          "startColumn" : 51,
+          "endLine" : 42,
+          "endColumn" : 56
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus/method/publish(org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.server.master.engine.system.event.AbstractSystemEvent event)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.system.SystemEventBus"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/system/SystemEventBus.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.eventbus.AbstractDelayEventBus<org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.server.master.engine.system.event.AbstractSystemEvent>", "org.apache.dolphinscheduler.server.master.engine.system.org.apache.dolphinscheduler.server.master.engine.system.event.AbstractSystemEvent" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,502 @@
+{
+  "name" : "EnvironmentServiceTest",
+  "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 78,
+    "startColumn" : 8,
+    "endLine" : 78,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/logger" : {
+      "name" : "logger",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/logger",
+      "type" : "org.slf4j.Logger",
+      "displayedType" : "Logger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 32,
+        "endLine" : 80,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/testUserName" : {
+      "name" : "testUserName",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/testUserName",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 99,
+        "startColumn" : 32,
+        "endLine" : 99,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/baseServiceLogger" : {
+      "name" : "baseServiceLogger",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/baseServiceLogger",
+      "type" : "org.slf4j.Logger",
+      "displayedType" : "Logger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 33,
+        "endLine" : 81,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/relationMapper" : {
+      "name" : "relationMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/relationMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.EnvironmentWorkerGroupRelationMapper",
+      "displayedType" : "EnvironmentWorkerGroupRelationMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 50,
+        "endLine" : 91,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/environmentMapper" : {
+      "name" : "environmentMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/environmentMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.EnvironmentMapper",
+      "displayedType" : "EnvironmentMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 31,
+        "endLine" : 88,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/resourcePermissionCheckService" : {
+      "name" : "resourcePermissionCheckService",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/resourcePermissionCheckService",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckService",
+      "displayedType" : "ResourcePermissionCheckService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 97,
+        "startColumn" : 44,
+        "endLine" : 97,
+        "endColumn" : 74
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/workerGroups" : {
+      "name" : "workerGroups",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/workerGroups",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 103,
+        "startColumn" : 32,
+        "endLine" : 103,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/environmentName" : {
+      "name" : "environmentName",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/environmentName",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 101,
+        "startColumn" : 32,
+        "endLine" : 101,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/taskDefinitionMapper" : {
+      "name" : "taskDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/taskDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.TaskDefinitionMapper",
+      "displayedType" : "TaskDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 94,
+        "startColumn" : 34,
+        "endLine" : 94,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/environmentServiceLogger" : {
+      "name" : "environmentServiceLogger",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/environmentServiceLogger",
+      "type" : "org.slf4j.Logger",
+      "displayedType" : "Logger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 82,
+        "startColumn" : 33,
+        "endLine" : 82,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/environmentService" : {
+      "name" : "environmentService",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/memberField/environmentService",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceImpl",
+      "displayedType" : "EnvironmentServiceImpl",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 85,
+        "startColumn" : 36,
+        "endLine" : 85,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testCreateEnvironment()" : {
+      "name" : "testCreateEnvironment",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testCreateEnvironment()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 106,
+        "startColumn" : 17,
+        "endLine" : 106,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/getAdminUser()" : {
+      "name" : "getAdminUser",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/getAdminUser()",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 389,
+        "startColumn" : 18,
+        "endLine" : 389,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/getDesc()" : {
+      "name" : "getDesc",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/getDesc()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 350,
+        "startColumn" : 20,
+        "endLine" : 350,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testQueryEnvironmentListPaging()" : {
+      "name" : "testQueryEnvironmentListPaging",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testQueryEnvironmentListPaging()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 229,
+        "startColumn" : 17,
+        "endLine" : 229,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/getGeneralUser()" : {
+      "name" : "getGeneralUser",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/getGeneralUser()",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 378,
+        "startColumn" : 18,
+        "endLine" : 378,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/getConfig()" : {
+      "name" : "getConfig",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/getConfig()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 357,
+        "startColumn" : 20,
+        "endLine" : 357,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/getEnvironmentWorkerGroup()" : {
+      "name" : "getEnvironmentWorkerGroup",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/getEnvironmentWorkerGroup()",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.EnvironmentWorkerGroupRelation",
+      "displayedType" : "EnvironmentWorkerGroupRelation",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 340,
+        "startColumn" : 44,
+        "endLine" : 340,
+        "endColumn" : 69
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testQueryAllEnvironmentList()" : {
+      "name" : "testQueryAllEnvironmentList",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testQueryAllEnvironmentList()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 202,
+        "startColumn" : 17,
+        "endLine" : 202,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testQueryEnvironmentByName()" : {
+      "name" : "testQueryEnvironmentByName",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testQueryEnvironmentByName()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 261,
+        "startColumn" : 17,
+        "endLine" : 261,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testDeleteEnvironmentByCode()" : {
+      "name" : "testDeleteEnvironmentByCode",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testDeleteEnvironmentByCode()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 287,
+        "startColumn" : 17,
+        "endLine" : 287,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/getList()" : {
+      "name" : "getList",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/getList()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Environment>",
+      "displayedType" : "List<Environment>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 397,
+        "startColumn" : 31,
+        "endLine" : 397,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/getEnvironment()" : {
+      "name" : "getEnvironment",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/getEnvironment()",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Environment",
+      "displayedType" : "Environment",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 329,
+        "startColumn" : 25,
+        "endLine" : 329,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testCheckParams()" : {
+      "name" : "testCheckParams",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testCheckParams()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 149,
+        "startColumn" : 17,
+        "endLine" : 149,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testUpdateEnvironmentByCode()" : {
+      "name" : "testUpdateEnvironmentByCode",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testUpdateEnvironmentByCode()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 155,
+        "startColumn" : 17,
+        "endLine" : 155,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testQueryEnvironmentByCode()" : {
+      "name" : "testQueryEnvironmentByCode",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testQueryEnvironmentByCode()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 274,
+        "startColumn" : 17,
+        "endLine" : 274,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testVerifyEnvironment()" : {
+      "name" : "testVerifyEnvironment",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest/method/testVerifyEnvironment()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 315,
+        "startColumn" : 17,
+        "endLine" : 315,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.EnvironmentServiceTest"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/test/java/org/apache/dolphinscheduler/api/service/impl/EnvironmentServiceTest.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

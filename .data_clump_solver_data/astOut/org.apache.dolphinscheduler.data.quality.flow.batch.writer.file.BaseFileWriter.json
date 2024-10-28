@@ -1,0 +1,323 @@
+{
+  "name" : "BaseFileWriter",
+  "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 43,
+    "startColumn" : 17,
+    "endLine" : 43,
+    "endColumn" : 22
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/memberField/PATH" : {
+      "name" : "PATH",
+      "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/memberField/PATH",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 32,
+        "endLine" : 47,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter"
+    },
+    "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/memberField/SERIALIZER" : {
+      "name" : "SERIALIZER",
+      "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/memberField/SERIALIZER",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 46,
+        "startColumn" : 32,
+        "endLine" : 46,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter"
+    },
+    "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/memberField/config" : {
+      "name" : "config",
+      "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/memberField/config",
+      "type" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.dolphinscheduler.data.quality.config.Config",
+      "displayedType" : "Config",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 26,
+        "endLine" : 49,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter"
+    },
+    "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/memberField/PARTITION_BY" : {
+      "name" : "PARTITION_BY",
+      "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/memberField/PARTITION_BY",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 45,
+        "startColumn" : 32,
+        "endLine" : 45,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/getConfig()" : {
+      "name" : "getConfig",
+      "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/getConfig()",
+      "type" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.dolphinscheduler.data.quality.config.Config",
+      "displayedType" : "Config",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 19,
+        "endLine" : 56,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter"
+    },
+    "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/prepare(org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.dolphinscheduler.data.quality.execution.SparkRuntimeEnvironment prepareEnv)" : {
+      "name" : "prepare",
+      "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/prepare(org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.dolphinscheduler.data.quality.execution.SparkRuntimeEnvironment prepareEnv)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 17,
+        "endLine" : 61,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "prepareEnv",
+        "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/prepare(org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.dolphinscheduler.data.quality.execution.SparkRuntimeEnvironment prepareEnv)/parameter/prepareEnv",
+        "type" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.dolphinscheduler.data.quality.execution.SparkRuntimeEnvironment",
+        "displayedType" : "SparkRuntimeEnvironment",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 61,
+          "startColumn" : 49,
+          "endLine" : 61,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/prepare(org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.dolphinscheduler.data.quality.execution.SparkRuntimeEnvironment prepareEnv)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter"
+    },
+    "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/buildPathWithDefaultSchema(java.lang.String uri, java.lang.String defaultUriSchema)" : {
+      "name" : "buildPathWithDefaultSchema",
+      "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/buildPathWithDefaultSchema(java.lang.String uri, java.lang.String defaultUriSchema)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 90,
+        "startColumn" : 22,
+        "endLine" : 90,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "uri",
+        "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/buildPathWithDefaultSchema(java.lang.String uri, java.lang.String defaultUriSchema)/parameter/uri",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 90,
+          "startColumn" : 56,
+          "endLine" : 90,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/buildPathWithDefaultSchema(java.lang.String uri, java.lang.String defaultUriSchema)"
+      }, {
+        "name" : "defaultUriSchema",
+        "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/buildPathWithDefaultSchema(java.lang.String uri, java.lang.String defaultUriSchema)/parameter/defaultUriSchema",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 90,
+          "startColumn" : 68,
+          "endLine" : 90,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/buildPathWithDefaultSchema(java.lang.String uri, java.lang.String defaultUriSchema)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter"
+    },
+    "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/outputImpl(org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.spark.sql.Dataset<org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.spark.sql.Row> df, java.lang.String defaultUriSchema)" : {
+      "name" : "outputImpl",
+      "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/outputImpl(org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.spark.sql.Dataset<org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.spark.sql.Row> df, java.lang.String defaultUriSchema)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 94,
+        "startColumn" : 20,
+        "endLine" : 94,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "df",
+        "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/outputImpl(org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.spark.sql.Dataset<org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.spark.sql.Row> df, java.lang.String defaultUriSchema)/parameter/df",
+        "type" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.spark.sql.Dataset<org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.spark.sql.Row>",
+        "displayedType" : "Dataset<Row>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 94,
+          "startColumn" : 44,
+          "endLine" : 94,
+          "endColumn" : 46
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/outputImpl(org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.spark.sql.Dataset<org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.spark.sql.Row> df, java.lang.String defaultUriSchema)"
+      }, {
+        "name" : "defaultUriSchema",
+        "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/outputImpl(org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.spark.sql.Dataset<org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.spark.sql.Row> df, java.lang.String defaultUriSchema)/parameter/defaultUriSchema",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 94,
+          "startColumn" : 55,
+          "endLine" : 94,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/outputImpl(org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.spark.sql.Dataset<org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.spark.sql.Row> df, java.lang.String defaultUriSchema)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter"
+    },
+    "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/checkConfigImpl(java.util.List<java.lang.String> allowedUri)" : {
+      "name" : "checkConfigImpl",
+      "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/checkConfigImpl(java.util.List<java.lang.String> allowedUri)",
+      "type" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.dolphinscheduler.data.quality.config.ValidateResult",
+      "displayedType" : "ValidateResult",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 30,
+        "endLine" : 71,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "allowedUri",
+        "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/checkConfigImpl(java.util.List<java.lang.String> allowedUri)/parameter/allowedUri",
+        "type" : "java.util.List<java.lang.String>",
+        "displayedType" : "List<String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 71,
+          "startColumn" : 59,
+          "endLine" : 71,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/checkConfigImpl(java.util.List<java.lang.String> allowedUri)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter"
+    },
+    "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/uriInAllowedSchema(java.lang.String uri, java.util.List<java.lang.String> allowedUri)" : {
+      "name" : "uriInAllowedSchema",
+      "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/uriInAllowedSchema(java.lang.String uri, java.util.List<java.lang.String> allowedUri)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 86,
+        "startColumn" : 23,
+        "endLine" : 86,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "uri",
+        "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/uriInAllowedSchema(java.lang.String uri, java.util.List<java.lang.String> allowedUri)/parameter/uri",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 86,
+          "startColumn" : 49,
+          "endLine" : 86,
+          "endColumn" : 52
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/uriInAllowedSchema(java.lang.String uri, java.util.List<java.lang.String> allowedUri)"
+      }, {
+        "name" : "allowedUri",
+        "key" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/uriInAllowedSchema(java.lang.String uri, java.util.List<java.lang.String> allowedUri)/parameter/allowedUri",
+        "type" : "java.util.List<java.lang.String>",
+        "displayedType" : "List<String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 86,
+          "startColumn" : 67,
+          "endLine" : 86,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter/method/uriInAllowedSchema(java.lang.String uri, java.util.List<java.lang.String> allowedUri)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter"
+    }
+  },
+  "file_path" : "dolphinscheduler-data-quality/src/main/java/org/apache/dolphinscheduler/data/quality/flow/batch/writer/file/BaseFileWriter.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.org.apache.dolphinscheduler.data.quality.flow.batch.BatchWriter" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

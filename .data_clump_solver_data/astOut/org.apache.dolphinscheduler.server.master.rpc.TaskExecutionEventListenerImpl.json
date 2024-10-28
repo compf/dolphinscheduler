@@ -1,0 +1,275 @@
+{
+  "name" : "TaskExecutionEventListenerImpl",
+  "key" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 56,
+    "startColumn" : 8,
+    "endLine" : 56,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/memberField/IWorkflowRepository" : {
+      "name" : "IWorkflowRepository",
+      "key" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/memberField/IWorkflowRepository",
+      "type" : "org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.server.master.engine.IWorkflowRepository",
+      "displayedType" : "IWorkflowRepository",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 33,
+        "endLine" : 59,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/getTaskExecutionRunnable(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent taskExecutionEvent)" : {
+      "name" : "getTaskExecutionRunnable",
+      "key" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/getTaskExecutionRunnable(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent taskExecutionEvent)",
+      "type" : "org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+      "displayedType" : "ITaskExecutionRunnable",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 193,
+        "startColumn" : 36,
+        "endLine" : 193,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/getTaskExecutionRunnable(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent taskExecutionEvent)/parameter/taskExecutionEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent",
+        "displayedType" : "ITaskExecutionEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 193,
+          "startColumn" : 87,
+          "endLine" : 193,
+          "endColumn" : 105
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/getTaskExecutionRunnable(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.ITaskExecutionEvent taskExecutionEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl"
+    },
+    "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionKilled(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionKilledEvent taskExecutionKilledEvent)" : {
+      "name" : "onTaskInstanceExecutionKilled",
+      "key" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionKilled(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionKilledEvent taskExecutionKilledEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 155,
+        "startColumn" : 17,
+        "endLine" : 155,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionKilledEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionKilled(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionKilledEvent taskExecutionKilledEvent)/parameter/taskExecutionKilledEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionKilledEvent",
+        "displayedType" : "TaskExecutionKilledEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 155,
+          "startColumn" : 72,
+          "endLine" : 155,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionKilled(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionKilledEvent taskExecutionKilledEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl"
+    },
+    "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionPaused(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionPausedEvent taskExecutionPausedEvent)" : {
+      "name" : "onTaskInstanceExecutionPaused",
+      "key" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionPaused(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionPausedEvent taskExecutionPausedEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 176,
+        "startColumn" : 17,
+        "endLine" : 176,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionPausedEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionPaused(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionPausedEvent taskExecutionPausedEvent)/parameter/taskExecutionPausedEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionPausedEvent",
+        "displayedType" : "TaskExecutionPausedEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 176,
+          "startColumn" : 72,
+          "endLine" : 176,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionPaused(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionPausedEvent taskExecutionPausedEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl"
+    },
+    "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionRunning(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionRunningEvent taskExecutionRunningEvent)" : {
+      "name" : "onTaskInstanceExecutionRunning",
+      "key" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionRunning(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionRunningEvent taskExecutionRunningEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 86,
+        "startColumn" : 17,
+        "endLine" : 86,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunningEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionRunning(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionRunningEvent taskExecutionRunningEvent)/parameter/taskExecutionRunningEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionRunningEvent",
+        "displayedType" : "TaskExecutionRunningEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 86,
+          "startColumn" : 74,
+          "endLine" : 86,
+          "endColumn" : 99
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionRunning(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionRunningEvent taskExecutionRunningEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl"
+    },
+    "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionFailed(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionFailedEvent taskExecutionFailedEvent)" : {
+      "name" : "onTaskInstanceExecutionFailed",
+      "key" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionFailed(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionFailedEvent taskExecutionFailedEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 134,
+        "startColumn" : 17,
+        "endLine" : 134,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionFailedEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionFailed(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionFailedEvent taskExecutionFailedEvent)/parameter/taskExecutionFailedEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionFailedEvent",
+        "displayedType" : "TaskExecutionFailedEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 134,
+          "startColumn" : 72,
+          "endLine" : 134,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionFailed(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionFailedEvent taskExecutionFailedEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl"
+    },
+    "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceDispatched(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionDispatchEvent taskExecutionDispatchEvent)" : {
+      "name" : "onTaskInstanceDispatched",
+      "key" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceDispatched(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionDispatchEvent taskExecutionDispatchEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 17,
+        "endLine" : 62,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionDispatchEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceDispatched(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionDispatchEvent taskExecutionDispatchEvent)/parameter/taskExecutionDispatchEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionDispatchEvent",
+        "displayedType" : "TaskExecutionDispatchEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 62,
+          "startColumn" : 69,
+          "endLine" : 62,
+          "endColumn" : 95
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceDispatched(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionDispatchEvent taskExecutionDispatchEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl"
+    },
+    "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionSuccess(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionSuccessEvent taskExecutionSuccessEvent)" : {
+      "name" : "onTaskInstanceExecutionSuccess",
+      "key" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionSuccess(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionSuccessEvent taskExecutionSuccessEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 112,
+        "startColumn" : 17,
+        "endLine" : 112,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionSuccessEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionSuccess(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionSuccessEvent taskExecutionSuccessEvent)/parameter/taskExecutionSuccessEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionSuccessEvent",
+        "displayedType" : "TaskExecutionSuccessEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 112,
+          "startColumn" : 80,
+          "endLine" : 112,
+          "endColumn" : 105
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl/method/onTaskInstanceExecutionSuccess(org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.transportor.TaskExecutionSuccessEvent taskExecutionSuccessEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.rpc.TaskExecutionEventListenerImpl"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/rpc/TaskExecutionEventListenerImpl.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.master.rpc.org.apache.dolphinscheduler.extract.master.ITaskExecutionEventListener" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

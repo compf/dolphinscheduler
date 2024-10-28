@@ -1,0 +1,1054 @@
+{
+  "name" : "SchedulerController",
+  "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 69,
+    "startColumn" : 8,
+    "endLine" : 69,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.controller.SchedulerController/memberField/schedulerService" : {
+      "name" : "schedulerService",
+      "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/memberField/schedulerService",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.service.SchedulerService",
+      "displayedType" : "SchedulerService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 30,
+        "endLine" : 77,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController"
+    },
+    "org.apache.dolphinscheduler.api.controller.SchedulerController/memberField/DEFAULT_WARNING_TYPE" : {
+      "name" : "DEFAULT_WARNING_TYPE",
+      "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/memberField/DEFAULT_WARNING_TYPE",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 32,
+        "endLine" : 71,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController"
+    },
+    "org.apache.dolphinscheduler.api.controller.SchedulerController/memberField/DEFAULT_FAILURE_POLICY" : {
+      "name" : "DEFAULT_FAILURE_POLICY",
+      "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/memberField/DEFAULT_FAILURE_POLICY",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 73,
+        "startColumn" : 32,
+        "endLine" : 73,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController"
+    },
+    "org.apache.dolphinscheduler.api.controller.SchedulerController/memberField/DEFAULT_NOTIFY_GROUP_ID" : {
+      "name" : "DEFAULT_NOTIFY_GROUP_ID",
+      "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/memberField/DEFAULT_NOTIFY_GROUP_ID",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 32,
+        "endLine" : 72,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController"
+    },
+    "org.apache.dolphinscheduler.api.controller.SchedulerController/memberField/DEFAULT_WORKFLOW_INSTANCE_PRIORITY" : {
+      "name" : "DEFAULT_WORKFLOW_INSTANCE_PRIORITY",
+      "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/memberField/DEFAULT_WORKFLOW_INSTANCE_PRIORITY",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 74,
+        "startColumn" : 32,
+        "endLine" : 74,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.controller.SchedulerController/method/deleteScheduleById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)" : {
+      "name" : "deleteScheduleById",
+      "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/deleteScheduleById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 263,
+        "startColumn" : 19,
+        "endLine" : 263,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/deleteScheduleById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 263,
+          "startColumn" : 83,
+          "endLine" : 263,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/deleteScheduleById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/deleteScheduleById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 264,
+          "startColumn" : 137,
+          "endLine" : 264,
+          "endColumn" : 148
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/deleteScheduleById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/deleteScheduleById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)/parameter/id",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 265,
+          "startColumn" : 66,
+          "endLine" : 265,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/deleteScheduleById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController"
+    },
+    "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)" : {
+      "name" : "queryScheduleList",
+      "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 280,
+        "startColumn" : 19,
+        "endLine" : 280,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 280,
+          "startColumn" : 108,
+          "endLine" : 280,
+          "endColumn" : 117
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 281,
+          "startColumn" : 136,
+          "endLine" : 281,
+          "endColumn" : 147
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController"
+    },
+    "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)" : {
+      "name" : "queryScheduleListPaging",
+      "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 234,
+        "startColumn" : 19,
+        "endLine" : 234,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 234,
+          "startColumn" : 114,
+          "endLine" : 234,
+          "endColumn" : 123
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 235,
+          "startColumn" : 142,
+          "endLine" : 235,
+          "endColumn" : 153
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/workflowDefinitionCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 236,
+          "startColumn" : 134,
+          "endLine" : 236,
+          "endColumn" : 156
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "searchVal",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/searchVal",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 237,
+          "startColumn" : 103,
+          "endLine" : 237,
+          "endColumn" : 112
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/pageNo",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 238,
+          "startColumn" : 75,
+          "endLine" : 238,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/pageSize",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 239,
+          "startColumn" : 77,
+          "endLine" : 239,
+          "endColumn" : 85
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/queryScheduleListPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController"
+    },
+    "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)" : {
+      "name" : "updateScheduleByWorkflowDefinitionCode",
+      "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 336,
+        "startColumn" : 19,
+        "endLine" : 336,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 336,
+          "startColumn" : 129,
+          "endLine" : 336,
+          "endColumn" : 138
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 337,
+          "startColumn" : 157,
+          "endLine" : 337,
+          "endColumn" : 168
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/workflowDefinitionCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 338,
+          "startColumn" : 93,
+          "endLine" : 338,
+          "endColumn" : 115
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "schedule",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/schedule",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 339,
+          "startColumn" : 99,
+          "endLine" : 339,
+          "endColumn" : 107
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "warningType",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/warningType",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType",
+        "displayedType" : "WarningType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 340,
+          "startColumn" : 162,
+          "endLine" : 340,
+          "endColumn" : 173
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "warningGroupId",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/warningGroupId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 341,
+          "startColumn" : 120,
+          "endLine" : 341,
+          "endColumn" : 134
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "failureStrategy",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/failureStrategy",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy",
+        "displayedType" : "FailureStrategy",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 342,
+          "startColumn" : 155,
+          "endLine" : 342,
+          "endColumn" : 170
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "workerGroup",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/workerGroup",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 343,
+          "startColumn" : 146,
+          "endLine" : 343,
+          "endColumn" : 157
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "tenantCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/tenantCode",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 344,
+          "startColumn" : 145,
+          "endLine" : 344,
+          "endColumn" : 155
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "environmentCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/environmentCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 345,
+          "startColumn" : 143,
+          "endLine" : 345,
+          "endColumn" : 158
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "workflowInstancePriority",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/workflowInstancePriority",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority",
+        "displayedType" : "Priority",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 346,
+          "startColumn" : 135,
+          "endLine" : 346,
+          "endColumn" : 159
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateScheduleByWorkflowDefinitionCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController"
+    },
+    "org.apache.dolphinscheduler.api.controller.SchedulerController/method/publishScheduleOnline(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)" : {
+      "name" : "publishScheduleOnline",
+      "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/publishScheduleOnline(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Boolean>",
+      "displayedType" : "Result<Boolean>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 193,
+        "startColumn" : 28,
+        "endLine" : 193,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/publishScheduleOnline(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 193,
+          "startColumn" : 121,
+          "endLine" : 193,
+          "endColumn" : 130
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/publishScheduleOnline(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/publishScheduleOnline(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 194,
+          "startColumn" : 149,
+          "endLine" : 194,
+          "endColumn" : 160
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/publishScheduleOnline(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/publishScheduleOnline(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)/parameter/id",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 195,
+          "startColumn" : 78,
+          "endLine" : 195,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/publishScheduleOnline(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController"
+    },
+    "org.apache.dolphinscheduler.api.controller.SchedulerController/method/offlineSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)" : {
+      "name" : "offlineSchedule",
+      "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/offlineSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Boolean>",
+      "displayedType" : "Result<Boolean>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 207,
+        "startColumn" : 28,
+        "endLine" : 207,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/offlineSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 207,
+          "startColumn" : 115,
+          "endLine" : 207,
+          "endColumn" : 124
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/offlineSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/offlineSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 208,
+          "startColumn" : 143,
+          "endLine" : 208,
+          "endColumn" : 154
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/offlineSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/offlineSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)/parameter/id",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 209,
+          "startColumn" : 72,
+          "endLine" : 209,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/offlineSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController"
+    },
+    "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)" : {
+      "name" : "createSchedule",
+      "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 110,
+        "startColumn" : 19,
+        "endLine" : 110,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 105,
+          "endLine" : 110,
+          "endColumn" : 114
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 111,
+          "startColumn" : 133,
+          "endLine" : 111,
+          "endColumn" : 144
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/workflowDefinitionCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 112,
+          "startColumn" : 87,
+          "endLine" : 112,
+          "endColumn" : 109
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "schedule",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/schedule",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 113,
+          "startColumn" : 75,
+          "endLine" : 113,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "warningType",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/warningType",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType",
+        "displayedType" : "WarningType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 114,
+          "startColumn" : 138,
+          "endLine" : 114,
+          "endColumn" : 149
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "warningGroupId",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/warningGroupId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 115,
+          "startColumn" : 136,
+          "endLine" : 115,
+          "endColumn" : 150
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "failureStrategy",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/failureStrategy",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy",
+        "displayedType" : "FailureStrategy",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 116,
+          "startColumn" : 148,
+          "endLine" : 116,
+          "endColumn" : 163
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "workerGroup",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/workerGroup",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 117,
+          "startColumn" : 122,
+          "endLine" : 117,
+          "endColumn" : 133
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "tenantCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/tenantCode",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 118,
+          "startColumn" : 121,
+          "endLine" : 118,
+          "endColumn" : 131
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "environmentCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/environmentCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 119,
+          "startColumn" : 119,
+          "endLine" : 119,
+          "endColumn" : 134
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "workflowInstancePriority",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/workflowInstancePriority",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority",
+        "displayedType" : "Priority",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 120,
+          "startColumn" : 162,
+          "endLine" : 120,
+          "endColumn" : 186
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/createSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController"
+    },
+    "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)" : {
+      "name" : "updateSchedule",
+      "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 168,
+        "startColumn" : 19,
+        "endLine" : 168,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 168,
+          "startColumn" : 105,
+          "endLine" : 168,
+          "endColumn" : 114
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 169,
+          "startColumn" : 133,
+          "endLine" : 169,
+          "endColumn" : 144
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/id",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 170,
+          "startColumn" : 70,
+          "endLine" : 170,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "schedule",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/schedule",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 171,
+          "startColumn" : 75,
+          "endLine" : 171,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "warningType",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/warningType",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType",
+        "displayedType" : "WarningType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 172,
+          "startColumn" : 138,
+          "endLine" : 172,
+          "endColumn" : 149
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "warningGroupId",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/warningGroupId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 173,
+          "startColumn" : 136,
+          "endLine" : 173,
+          "endColumn" : 150
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "failureStrategy",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/failureStrategy",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy",
+        "displayedType" : "FailureStrategy",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 174,
+          "startColumn" : 131,
+          "endLine" : 174,
+          "endColumn" : 146
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "workerGroup",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/workerGroup",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 175,
+          "startColumn" : 122,
+          "endLine" : 175,
+          "endColumn" : 133
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "tenantCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/tenantCode",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 176,
+          "startColumn" : 121,
+          "endLine" : 176,
+          "endColumn" : 131
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "environmentCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/environmentCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 177,
+          "startColumn" : 119,
+          "endLine" : 177,
+          "endColumn" : 134
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      }, {
+        "name" : "workflowInstancePriority",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)/parameter/workflowInstancePriority",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority",
+        "displayedType" : "Priority",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 178,
+          "startColumn" : 162,
+          "endLine" : 178,
+          "endColumn" : 186
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/updateSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.Integer id, java.lang.String schedule, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.WarningType warningType, int warningGroupId, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.FailureStrategy failureStrategy, java.lang.String workerGroup, java.lang.String tenantCode, java.lang.Long environmentCode, org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.common.enums.Priority workflowInstancePriority)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController"
+    },
+    "org.apache.dolphinscheduler.api.controller.SchedulerController/method/previewSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String schedule)" : {
+      "name" : "previewSchedule",
+      "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/previewSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String schedule)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 300,
+        "startColumn" : 19,
+        "endLine" : 300,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/previewSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String schedule)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 300,
+          "startColumn" : 106,
+          "endLine" : 300,
+          "endColumn" : 115
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/previewSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String schedule)"
+      }, {
+        "name" : "schedule",
+        "key" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/previewSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String schedule)/parameter/schedule",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 301,
+          "startColumn" : 76,
+          "endLine" : 301,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController/method/previewSchedule(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String schedule)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.SchedulerController"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/controller/SchedulerController.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.controller.BaseController" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

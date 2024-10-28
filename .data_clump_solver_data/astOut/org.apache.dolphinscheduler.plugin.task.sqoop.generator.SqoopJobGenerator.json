@@ -1,0 +1,240 @@
+{
+  "name" : "SqoopJobGenerator",
+  "key" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 46,
+    "startColumn" : 8,
+    "endLine" : 46,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/memberField/targetGenerator" : {
+      "name" : "targetGenerator",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/memberField/targetGenerator",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.ITargetGenerator",
+      "displayedType" : "ITargetGenerator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 30,
+        "endLine" : 51,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/memberField/sourceGenerator" : {
+      "name" : "sourceGenerator",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/memberField/sourceGenerator",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.ISourceGenerator",
+      "displayedType" : "ISourceGenerator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 55,
+        "startColumn" : 30,
+        "endLine" : 55,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/memberField/commonGenerator" : {
+      "name" : "commonGenerator",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/memberField/commonGenerator",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.CommonGenerator",
+      "displayedType" : "CommonGenerator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 35,
+        "endLine" : 59,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/createTargetGenerator(java.lang.String targetType)" : {
+      "name" : "createTargetGenerator",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/createTargetGenerator(java.lang.String targetType)",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.ITargetGenerator",
+      "displayedType" : "ITargetGenerator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 129,
+        "startColumn" : 30,
+        "endLine" : 129,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "targetType",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/createTargetGenerator(java.lang.String targetType)/parameter/targetType",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 129,
+          "startColumn" : 59,
+          "endLine" : 129,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/createTargetGenerator(java.lang.String targetType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/generateSqoopJob(org.apache.dolphinscheduler.plugin.task.sqoop.generator.org.apache.dolphinscheduler.plugin.task.sqoop.parameter.SqoopParameters sqoopParameters, org.apache.dolphinscheduler.plugin.task.sqoop.generator.org.apache.dolphinscheduler.plugin.task.sqoop.SqoopTaskExecutionContext sqoopTaskExecutionContext)" : {
+      "name" : "generateSqoopJob",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/generateSqoopJob(org.apache.dolphinscheduler.plugin.task.sqoop.generator.org.apache.dolphinscheduler.plugin.task.sqoop.parameter.SqoopParameters sqoopParameters, org.apache.dolphinscheduler.plugin.task.sqoop.generator.org.apache.dolphinscheduler.plugin.task.sqoop.SqoopTaskExecutionContext sqoopTaskExecutionContext)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 19,
+        "endLine" : 77,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "sqoopParameters",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/generateSqoopJob(org.apache.dolphinscheduler.plugin.task.sqoop.generator.org.apache.dolphinscheduler.plugin.task.sqoop.parameter.SqoopParameters sqoopParameters, org.apache.dolphinscheduler.plugin.task.sqoop.generator.org.apache.dolphinscheduler.plugin.task.sqoop.SqoopTaskExecutionContext sqoopTaskExecutionContext)/parameter/sqoopParameters",
+        "type" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.org.apache.dolphinscheduler.plugin.task.sqoop.parameter.SqoopParameters",
+        "displayedType" : "SqoopParameters",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 77,
+          "startColumn" : 52,
+          "endLine" : 77,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/generateSqoopJob(org.apache.dolphinscheduler.plugin.task.sqoop.generator.org.apache.dolphinscheduler.plugin.task.sqoop.parameter.SqoopParameters sqoopParameters, org.apache.dolphinscheduler.plugin.task.sqoop.generator.org.apache.dolphinscheduler.plugin.task.sqoop.SqoopTaskExecutionContext sqoopTaskExecutionContext)"
+      }, {
+        "name" : "sqoopTaskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/generateSqoopJob(org.apache.dolphinscheduler.plugin.task.sqoop.generator.org.apache.dolphinscheduler.plugin.task.sqoop.parameter.SqoopParameters sqoopParameters, org.apache.dolphinscheduler.plugin.task.sqoop.generator.org.apache.dolphinscheduler.plugin.task.sqoop.SqoopTaskExecutionContext sqoopTaskExecutionContext)/parameter/sqoopTaskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.org.apache.dolphinscheduler.plugin.task.sqoop.SqoopTaskExecutionContext",
+        "displayedType" : "SqoopTaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 78,
+          "startColumn" : 62,
+          "endLine" : 78,
+          "endColumn" : 87
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/generateSqoopJob(org.apache.dolphinscheduler.plugin.task.sqoop.generator.org.apache.dolphinscheduler.plugin.task.sqoop.parameter.SqoopParameters sqoopParameters, org.apache.dolphinscheduler.plugin.task.sqoop.generator.org.apache.dolphinscheduler.plugin.task.sqoop.SqoopTaskExecutionContext sqoopTaskExecutionContext)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/createSqoopJobGenerator(java.lang.String sourceType, java.lang.String targetType)" : {
+      "name" : "createSqoopJobGenerator",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/createSqoopJobGenerator(java.lang.String sourceType, java.lang.String targetType)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 18,
+        "endLine" : 65,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "sourceType",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/createSqoopJobGenerator(java.lang.String sourceType, java.lang.String targetType)/parameter/sourceType",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 65,
+          "startColumn" : 49,
+          "endLine" : 65,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/createSqoopJobGenerator(java.lang.String sourceType, java.lang.String targetType)"
+      }, {
+        "name" : "targetType",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/createSqoopJobGenerator(java.lang.String sourceType, java.lang.String targetType)/parameter/targetType",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 65,
+          "startColumn" : 68,
+          "endLine" : 65,
+          "endColumn" : 78
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/createSqoopJobGenerator(java.lang.String sourceType, java.lang.String targetType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/createSourceGenerator(java.lang.String sourceType)" : {
+      "name" : "createSourceGenerator",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/createSourceGenerator(java.lang.String sourceType)",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.ISourceGenerator",
+      "displayedType" : "ISourceGenerator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 104,
+        "startColumn" : 30,
+        "endLine" : 104,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "sourceType",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/createSourceGenerator(java.lang.String sourceType)/parameter/sourceType",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 104,
+          "startColumn" : 59,
+          "endLine" : 104,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator/method/createSourceGenerator(java.lang.String sourceType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sqoop.generator.SqoopJobGenerator"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-sqoop/src/main/java/org/apache/dolphinscheduler/plugin/task/sqoop/generator/SqoopJobGenerator.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

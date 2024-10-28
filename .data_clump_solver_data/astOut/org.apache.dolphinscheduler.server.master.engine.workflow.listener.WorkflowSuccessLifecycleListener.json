@@ -1,0 +1,190 @@
+{
+  "name" : "WorkflowSuccessLifecycleListener",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 46,
+    "startColumn" : 8,
+    "endLine" : 46,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/memberField/commandDao" : {
+      "name" : "commandDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/memberField/commandDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.dao.repository.CommandDao",
+      "displayedType" : "CommandDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 24,
+        "endLine" : 52,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/memberField/workflowBackfillTrigger" : {
+      "name" : "workflowBackfillTrigger",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/memberField/workflowBackfillTrigger",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.trigger.WorkflowBackfillTrigger",
+      "displayedType" : "WorkflowBackfillTrigger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 37,
+        "endLine" : 49,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/method/match(org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.lifecycle.AbstractWorkflowLifecycleLifecycleEvent event)" : {
+      "name" : "match",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/method/match(org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.lifecycle.AbstractWorkflowLifecycleLifecycleEvent event)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 110,
+        "startColumn" : 20,
+        "endLine" : 110,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "event",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/method/match(org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.lifecycle.AbstractWorkflowLifecycleLifecycleEvent event)/parameter/event",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.lifecycle.AbstractWorkflowLifecycleLifecycleEvent",
+        "displayedType" : "AbstractWorkflowLifecycleLifecycleEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 66,
+          "endLine" : 110,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/method/match(org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.lifecycle.AbstractWorkflowLifecycleLifecycleEvent event)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/method/notifyWorkflowLifecycleEvent(org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.lifecycle.AbstractWorkflowLifecycleLifecycleEvent lifecycleEvent)" : {
+      "name" : "notifyWorkflowLifecycleEvent",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/method/notifyWorkflowLifecycleEvent(org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.lifecycle.AbstractWorkflowLifecycleLifecycleEvent lifecycleEvent)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 17,
+        "endLine" : 54,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/method/notifyWorkflowLifecycleEvent(org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.lifecycle.AbstractWorkflowLifecycleLifecycleEvent lifecycleEvent)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 54,
+          "startColumn" : 79,
+          "endLine" : 54,
+          "endColumn" : 104
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/method/notifyWorkflowLifecycleEvent(org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.lifecycle.AbstractWorkflowLifecycleLifecycleEvent lifecycleEvent)"
+      }, {
+        "name" : "lifecycleEvent",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/method/notifyWorkflowLifecycleEvent(org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.lifecycle.AbstractWorkflowLifecycleLifecycleEvent lifecycleEvent)/parameter/lifecycleEvent",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.lifecycle.AbstractWorkflowLifecycleLifecycleEvent",
+        "displayedType" : "AbstractWorkflowLifecycleLifecycleEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 55,
+          "startColumn" : 92,
+          "endLine" : 55,
+          "endColumn" : 106
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/method/notifyWorkflowLifecycleEvent(org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.server.master.engine.workflow.lifecycle.AbstractWorkflowLifecycleLifecycleEvent lifecycleEvent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/method/generateNextBackfillCommand(org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.extract.master.command.BackfillWorkflowCommandParam commandParam, org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)" : {
+      "name" : "generateNextBackfillCommand",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/method/generateNextBackfillCommand(org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.extract.master.command.BackfillWorkflowCommandParam commandParam, org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 18,
+        "endLine" : 76,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "commandParam",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/method/generateNextBackfillCommand(org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.extract.master.command.BackfillWorkflowCommandParam commandParam, org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)/parameter/commandParam",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.extract.master.command.BackfillWorkflowCommandParam",
+        "displayedType" : "BackfillWorkflowCommandParam",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 76,
+          "startColumn" : 81,
+          "endLine" : 76,
+          "endColumn" : 93
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/method/generateNextBackfillCommand(org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.extract.master.command.BackfillWorkflowCommandParam commandParam, org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)"
+      }, {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/method/generateNextBackfillCommand(org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.extract.master.command.BackfillWorkflowCommandParam commandParam, org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 77,
+          "startColumn" : 69,
+          "endLine" : 77,
+          "endColumn" : 85
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener/method/generateNextBackfillCommand(org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.extract.master.command.BackfillWorkflowCommandParam commandParam, org.apache.dolphinscheduler.server.master.engine.workflow.listener.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.listener.WorkflowSuccessLifecycleListener"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/workflow/listener/WorkflowSuccessLifecycleListener.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.master.engine.workflow.listener.IWorkflowLifecycleListener" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

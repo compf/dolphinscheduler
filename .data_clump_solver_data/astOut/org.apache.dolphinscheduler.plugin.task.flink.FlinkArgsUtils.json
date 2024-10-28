@@ -1,0 +1,496 @@
+{
+  "name" : "FlinkArgsUtils",
+  "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 37,
+    "startColumn" : 8,
+    "endLine" : 37,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/memberField/FLINK_VERSION_BEFORE_1_10" : {
+      "name" : "FLINK_VERSION_BEFORE_1_10",
+      "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/memberField/FLINK_VERSION_BEFORE_1_10",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 33,
+        "endLine" : 44,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/memberField/FLINK_VERSION_AFTER_OR_EQUALS_1_12" : {
+      "name" : "FLINK_VERSION_AFTER_OR_EQUALS_1_12",
+      "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/memberField/FLINK_VERSION_AFTER_OR_EQUALS_1_12",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 45,
+        "startColumn" : 33,
+        "endLine" : 45,
+        "endColumn" : 67
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/memberField/LOCAL_DEPLOY_MODE" : {
+      "name" : "LOCAL_DEPLOY_MODE",
+      "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/memberField/LOCAL_DEPLOY_MODE",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 33,
+        "endLine" : 43,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/memberField/FLINK_VERSION_AFTER_OR_EQUALS_1_13" : {
+      "name" : "FLINK_VERSION_AFTER_OR_EQUALS_1_13",
+      "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/memberField/FLINK_VERSION_AFTER_OR_EQUALS_1_13",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 46,
+        "startColumn" : 33,
+        "endLine" : 46,
+        "endColumn" : 67
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/memberField/DEFAULT_DEPLOY_MODE" : {
+      "name" : "DEFAULT_DEPLOY_MODE",
+      "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/memberField/DEFAULT_DEPLOY_MODE",
+      "type" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkDeployMode",
+      "displayedType" : "FlinkDeployMode",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 50,
+        "startColumn" : 41,
+        "endLine" : 50,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLine(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters param)" : {
+      "name" : "buildRunCommandLine",
+      "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLine(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters param)",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 32,
+        "endLine" : 58,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLine(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters param)/parameter/taskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+        "displayedType" : "TaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 58,
+          "startColumn" : 73,
+          "endLine" : 58,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLine(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters param)"
+      }, {
+        "name" : "param",
+        "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLine(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters param)/parameter/param",
+        "type" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters",
+        "displayedType" : "FlinkParameters",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 58,
+          "startColumn" : 111,
+          "endLine" : 58,
+          "endColumn" : 116
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLine(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters param)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/determinedYarnQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, org.apache.dolphinscheduler.plugin.task.flink.FlinkDeployMode deployMode, java.lang.String flinkVersion)" : {
+      "name" : "determinedYarnQueue",
+      "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/determinedYarnQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, org.apache.dolphinscheduler.plugin.task.flink.FlinkDeployMode deployMode, java.lang.String flinkVersion)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 305,
+        "startColumn" : 25,
+        "endLine" : 305,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "args",
+        "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/determinedYarnQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, org.apache.dolphinscheduler.plugin.task.flink.FlinkDeployMode deployMode, java.lang.String flinkVersion)/parameter/args",
+        "type" : "java.util.List<java.lang.String>",
+        "displayedType" : "List<String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 305,
+          "startColumn" : 58,
+          "endLine" : 305,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/determinedYarnQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, org.apache.dolphinscheduler.plugin.task.flink.FlinkDeployMode deployMode, java.lang.String flinkVersion)"
+      }, {
+        "name" : "flinkParameters",
+        "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/determinedYarnQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, org.apache.dolphinscheduler.plugin.task.flink.FlinkDeployMode deployMode, java.lang.String flinkVersion)/parameter/flinkParameters",
+        "type" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters",
+        "displayedType" : "FlinkParameters",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 305,
+          "startColumn" : 80,
+          "endLine" : 305,
+          "endColumn" : 95
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/determinedYarnQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, org.apache.dolphinscheduler.plugin.task.flink.FlinkDeployMode deployMode, java.lang.String flinkVersion)"
+      }, {
+        "name" : "deployMode",
+        "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/determinedYarnQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, org.apache.dolphinscheduler.plugin.task.flink.FlinkDeployMode deployMode, java.lang.String flinkVersion)/parameter/deployMode",
+        "type" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkDeployMode",
+        "displayedType" : "FlinkDeployMode",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 306,
+          "startColumn" : 61,
+          "endLine" : 306,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/determinedYarnQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, org.apache.dolphinscheduler.plugin.task.flink.FlinkDeployMode deployMode, java.lang.String flinkVersion)"
+      }, {
+        "name" : "flinkVersion",
+        "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/determinedYarnQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, org.apache.dolphinscheduler.plugin.task.flink.FlinkDeployMode deployMode, java.lang.String flinkVersion)/parameter/flinkVersion",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 306,
+          "startColumn" : 80,
+          "endLine" : 306,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/determinedYarnQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, org.apache.dolphinscheduler.plugin.task.flink.FlinkDeployMode deployMode, java.lang.String flinkVersion)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/doAddQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, java.lang.String option)" : {
+      "name" : "doAddQueue",
+      "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/doAddQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, java.lang.String option)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 322,
+        "startColumn" : 25,
+        "endLine" : 322,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "args",
+        "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/doAddQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, java.lang.String option)/parameter/args",
+        "type" : "java.util.List<java.lang.String>",
+        "displayedType" : "List<String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 322,
+          "startColumn" : 49,
+          "endLine" : 322,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/doAddQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, java.lang.String option)"
+      }, {
+        "name" : "flinkParameters",
+        "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/doAddQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, java.lang.String option)/parameter/flinkParameters",
+        "type" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters",
+        "displayedType" : "FlinkParameters",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 322,
+          "startColumn" : 71,
+          "endLine" : 322,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/doAddQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, java.lang.String option)"
+      }, {
+        "name" : "option",
+        "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/doAddQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, java.lang.String option)/parameter/option",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 322,
+          "startColumn" : 95,
+          "endLine" : 322,
+          "endColumn" : 101
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/doAddQueue(java.util.List<java.lang.String> args, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters, java.lang.String option)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildInitOptionsForSql(org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters)" : {
+      "name" : "buildInitOptionsForSql",
+      "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildInitOptionsForSql(org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters)",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 120,
+        "startColumn" : 32,
+        "endLine" : 120,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "flinkParameters",
+        "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildInitOptionsForSql(org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters)/parameter/flinkParameters",
+        "type" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters",
+        "displayedType" : "FlinkParameters",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 120,
+          "startColumn" : 71,
+          "endLine" : 120,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildInitOptionsForSql(org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLineForSql(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters)" : {
+      "name" : "buildRunCommandLineForSql",
+      "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLineForSql(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters)",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 97,
+        "startColumn" : 33,
+        "endLine" : 97,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLineForSql(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters)/parameter/taskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+        "displayedType" : "TaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 97,
+          "startColumn" : 80,
+          "endLine" : 97,
+          "endColumn" : 100
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLineForSql(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters)"
+      }, {
+        "name" : "flinkParameters",
+        "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLineForSql(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters)/parameter/flinkParameters",
+        "type" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters",
+        "displayedType" : "FlinkParameters",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 98,
+          "startColumn" : 75,
+          "endLine" : 98,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLineForSql(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildSavePointCommandLine(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)" : {
+      "name" : "buildSavePointCommandLine",
+      "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildSavePointCommandLine(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 84,
+        "startColumn" : 32,
+        "endLine" : 84,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildSavePointCommandLine(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)/parameter/taskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+        "displayedType" : "TaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 84,
+          "startColumn" : 79,
+          "endLine" : 84,
+          "endColumn" : 99
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildSavePointCommandLine(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildCancelCommandLine(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)" : {
+      "name" : "buildCancelCommandLine",
+      "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildCancelCommandLine(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 32,
+        "endLine" : 72,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildCancelCommandLine(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)/parameter/taskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+        "displayedType" : "TaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 72,
+          "startColumn" : 76,
+          "endLine" : 72,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildCancelCommandLine(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLineForOthers(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters)" : {
+      "name" : "buildRunCommandLineForOthers",
+      "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLineForOthers(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters)",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 182,
+        "startColumn" : 33,
+        "endLine" : 182,
+        "endColumn" : 61
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionContext",
+        "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLineForOthers(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters)/parameter/taskExecutionContext",
+        "type" : "org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+        "displayedType" : "TaskExecutionContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 182,
+          "startColumn" : 83,
+          "endLine" : 182,
+          "endColumn" : 103
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLineForOthers(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters)"
+      }, {
+        "name" : "flinkParameters",
+        "key" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLineForOthers(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters)/parameter/flinkParameters",
+        "type" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters",
+        "displayedType" : "FlinkParameters",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 183,
+          "startColumn" : 78,
+          "endLine" : 183,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils/method/buildRunCommandLineForOthers(org.apache.dolphinscheduler.plugin.task.flink.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext taskExecutionContext, org.apache.dolphinscheduler.plugin.task.flink.FlinkParameters flinkParameters)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.flink.FlinkArgsUtils"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-flink/src/main/java/org/apache/dolphinscheduler/plugin/task/flink/FlinkArgsUtils.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

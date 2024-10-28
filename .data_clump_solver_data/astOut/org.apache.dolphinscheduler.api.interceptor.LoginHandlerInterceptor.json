@@ -1,0 +1,202 @@
+{
+  "name" : "LoginHandlerInterceptor",
+  "key" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 47,
+    "startColumn" : 8,
+    "endLine" : 47,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/memberField/userMapper" : {
+      "name" : "userMapper",
+      "key" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/memberField/userMapper",
+      "type" : "org.apache.dolphinscheduler.api.interceptor.org.apache.dolphinscheduler.dao.mapper.UserMapper",
+      "displayedType" : "UserMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 50,
+        "startColumn" : 24,
+        "endLine" : 50,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor"
+    },
+    "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/memberField/authenticator" : {
+      "name" : "authenticator",
+      "key" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/memberField/authenticator",
+      "type" : "org.apache.dolphinscheduler.api.interceptor.org.apache.dolphinscheduler.api.security.Authenticator",
+      "displayedType" : "Authenticator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 27,
+        "endLine" : 53,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/postHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler, org.apache.dolphinscheduler.api.interceptor.org.springframework.web.servlet.ModelAndView modelAndView)" : {
+      "name" : "postHandle",
+      "key" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/postHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler, org.apache.dolphinscheduler.api.interceptor.org.springframework.web.servlet.ModelAndView modelAndView)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 99,
+        "startColumn" : 17,
+        "endLine" : 99,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "request",
+        "key" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/postHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler, org.apache.dolphinscheduler.api.interceptor.org.springframework.web.servlet.ModelAndView modelAndView)/parameter/request",
+        "type" : "org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest",
+        "displayedType" : "HttpServletRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 99,
+          "startColumn" : 47,
+          "endLine" : 99,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/postHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler, org.apache.dolphinscheduler.api.interceptor.org.springframework.web.servlet.ModelAndView modelAndView)"
+      }, {
+        "name" : "response",
+        "key" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/postHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler, org.apache.dolphinscheduler.api.interceptor.org.springframework.web.servlet.ModelAndView modelAndView)/parameter/response",
+        "type" : "org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse",
+        "displayedType" : "HttpServletResponse",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 99,
+          "startColumn" : 76,
+          "endLine" : 99,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/postHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler, org.apache.dolphinscheduler.api.interceptor.org.springframework.web.servlet.ModelAndView modelAndView)"
+      }, {
+        "name" : "handler",
+        "key" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/postHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler, org.apache.dolphinscheduler.api.interceptor.org.springframework.web.servlet.ModelAndView modelAndView)/parameter/handler",
+        "type" : "java.lang.Object",
+        "displayedType" : "Object",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 99,
+          "startColumn" : 93,
+          "endLine" : 99,
+          "endColumn" : 100
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/postHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler, org.apache.dolphinscheduler.api.interceptor.org.springframework.web.servlet.ModelAndView modelAndView)"
+      }, {
+        "name" : "modelAndView",
+        "key" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/postHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler, org.apache.dolphinscheduler.api.interceptor.org.springframework.web.servlet.ModelAndView modelAndView)/parameter/modelAndView",
+        "type" : "org.apache.dolphinscheduler.api.interceptor.org.springframework.web.servlet.ModelAndView",
+        "displayedType" : "ModelAndView",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 100,
+          "startColumn" : 41,
+          "endLine" : 100,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/postHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler, org.apache.dolphinscheduler.api.interceptor.org.springframework.web.servlet.ModelAndView modelAndView)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor"
+    },
+    "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/preHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler)" : {
+      "name" : "preHandle",
+      "key" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/preHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 20,
+        "endLine" : 64,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "request",
+        "key" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/preHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler)/parameter/request",
+        "type" : "org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest",
+        "displayedType" : "HttpServletRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 64,
+          "startColumn" : 49,
+          "endLine" : 64,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/preHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler)"
+      }, {
+        "name" : "response",
+        "key" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/preHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler)/parameter/response",
+        "type" : "org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse",
+        "displayedType" : "HttpServletResponse",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 64,
+          "startColumn" : 78,
+          "endLine" : 64,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/preHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler)"
+      }, {
+        "name" : "handler",
+        "key" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/preHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler)/parameter/handler",
+        "type" : "java.lang.Object",
+        "displayedType" : "Object",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 64,
+          "startColumn" : 95,
+          "endLine" : 64,
+          "endColumn" : 102
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor/method/preHandle(org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletRequest request, org.apache.dolphinscheduler.api.interceptor.javax.servlet.http.HttpServletResponse response, java.lang.Object handler)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.interceptor.LoginHandlerInterceptor"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/interceptor/LoginHandlerInterceptor.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.api.interceptor.org.springframework.web.servlet.HandlerInterceptor" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

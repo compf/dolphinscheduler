@@ -1,0 +1,1161 @@
+{
+  "name" : "WorkflowDefinitionServiceTest",
+  "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 112,
+    "startColumn" : 8,
+    "endLine" : 112,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/projectMapper" : {
+      "name" : "projectMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/projectMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.ProjectMapper",
+      "displayedType" : "ProjectMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 147,
+        "startColumn" : 27,
+        "endLine" : 147,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/taskDefinitionService" : {
+      "name" : "taskDefinitionService",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/taskDefinitionService",
+      "type" : "org.apache.dolphinscheduler.api.service.TaskDefinitionService",
+      "displayedType" : "TaskDefinitionService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 177,
+        "startColumn" : 35,
+        "endLine" : 177,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/schedulerService" : {
+      "name" : "schedulerService",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/schedulerService",
+      "type" : "org.apache.dolphinscheduler.api.service.SchedulerService",
+      "displayedType" : "SchedulerService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 156,
+        "startColumn" : 30,
+        "endLine" : 156,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/workflowDefinitionLogMapper" : {
+      "name" : "workflowDefinitionLogMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/workflowDefinitionLogMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper",
+      "displayedType" : "WorkflowDefinitionLogMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 138,
+        "startColumn" : 41,
+        "endLine" : 138,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/taskDefinitionLogService" : {
+      "name" : "taskDefinitionLogService",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/taskDefinitionLogService",
+      "type" : "org.apache.dolphinscheduler.api.service.TaskDefinitionLogService",
+      "displayedType" : "TaskDefinitionLogService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 180,
+        "startColumn" : 38,
+        "endLine" : 180,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/taskRelationJson" : {
+      "name" : "taskRelationJson",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/taskRelationJson",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 114,
+        "startColumn" : 33,
+        "endLine" : 114,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/workflowTaskRelationMapper" : {
+      "name" : "workflowTaskRelationMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/workflowTaskRelationMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.WorkflowTaskRelationMapper",
+      "displayedType" : "WorkflowTaskRelationMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 144,
+        "startColumn" : 40,
+        "endLine" : 144,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/dataSourceMapper" : {
+      "name" : "dataSourceMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/dataSourceMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.DataSourceMapper",
+      "displayedType" : "DataSourceMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 168,
+        "startColumn" : 30,
+        "endLine" : 168,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/metricsCleanUpService" : {
+      "name" : "metricsCleanUpService",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/metricsCleanUpService",
+      "type" : "org.apache.dolphinscheduler.api.service.MetricsCleanUpService",
+      "displayedType" : "MetricsCleanUpService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 174,
+        "startColumn" : 35,
+        "endLine" : 174,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/exception" : {
+      "name" : "exception",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/exception",
+      "type" : "java.lang.Exception",
+      "displayedType" : "Exception",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 189,
+        "startColumn" : 25,
+        "endLine" : 189,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/projectCodeOther" : {
+      "name" : "projectCodeOther",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/projectCodeOther",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 191,
+        "startColumn" : 33,
+        "endLine" : 191,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PROTECTED", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/warningGroupId" : {
+      "name" : "warningGroupId",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/warningGroupId",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 196,
+        "startColumn" : 32,
+        "endLine" : 196,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PROTECTED", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/workflowDefinitionMapper" : {
+      "name" : "workflowDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/workflowDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionMapper",
+      "displayedType" : "WorkflowDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 132,
+        "startColumn" : 38,
+        "endLine" : 132,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/workflowLineageService" : {
+      "name" : "workflowLineageService",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/workflowLineageService",
+      "type" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService",
+      "displayedType" : "WorkflowLineageService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 171,
+        "startColumn" : 36,
+        "endLine" : 171,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/taskDefinitionMapper" : {
+      "name" : "taskDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/taskDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.TaskDefinitionMapper",
+      "displayedType" : "TaskDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 135,
+        "startColumn" : 34,
+        "endLine" : 135,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/processService" : {
+      "name" : "processService",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/processService",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.service.process.ProcessService",
+      "displayedType" : "ProcessService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 159,
+        "startColumn" : 28,
+        "endLine" : 159,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/workflowInstanceService" : {
+      "name" : "workflowInstanceService",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/workflowInstanceService",
+      "type" : "org.apache.dolphinscheduler.api.service.WorkflowInstanceService",
+      "displayedType" : "WorkflowInstanceService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 165,
+        "startColumn" : 37,
+        "endLine" : 165,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/processDefinitionCode" : {
+      "name" : "processDefinitionCode",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/processDefinitionCode",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 192,
+        "startColumn" : 33,
+        "endLine" : 192,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PROTECTED", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/taskDefinitionLogDao" : {
+      "name" : "taskDefinitionLogDao",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/taskDefinitionLogDao",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.repository.TaskDefinitionLogDao",
+      "displayedType" : "TaskDefinitionLogDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 162,
+        "startColumn" : 34,
+        "endLine" : 162,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/projectCode" : {
+      "name" : "projectCode",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/projectCode",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 190,
+        "startColumn" : 33,
+        "endLine" : 190,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PROTECTED", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/workflowDefinitionDao" : {
+      "name" : "workflowDefinitionDao",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/workflowDefinitionDao",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.repository.WorkflowDefinitionDao",
+      "displayedType" : "WorkflowDefinitionDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 141,
+        "startColumn" : 35,
+        "endLine" : 141,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/userMapper" : {
+      "name" : "userMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/userMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.UserMapper",
+      "displayedType" : "UserMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 186,
+        "startColumn" : 24,
+        "endLine" : 186,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/executionType" : {
+      "name" : "executionType",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/executionType",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 198,
+        "startColumn" : 35,
+        "endLine" : 198,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PROTECTED", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/workflowDefinitionLogDao" : {
+      "name" : "workflowDefinitionLogDao",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/workflowDefinitionLogDao",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.repository.WorkflowDefinitionLogDao",
+      "displayedType" : "WorkflowDefinitionLogDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 183,
+        "startColumn" : 38,
+        "endLine" : 183,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/description" : {
+      "name" : "description",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/description",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 194,
+        "startColumn" : 35,
+        "endLine" : 194,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PROTECTED", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/user" : {
+      "name" : "user",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/user",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 188,
+        "startColumn" : 20,
+        "endLine" : 188,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/name" : {
+      "name" : "name",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/name",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 193,
+        "startColumn" : 35,
+        "endLine" : 193,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PROTECTED", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/taskDefinitionJson" : {
+      "name" : "taskDefinitionJson",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/taskDefinitionJson",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 119,
+        "startColumn" : 33,
+        "endLine" : 119,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/projectService" : {
+      "name" : "projectService",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/projectService",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl",
+      "displayedType" : "ProjectServiceImpl",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 150,
+        "startColumn" : 32,
+        "endLine" : 150,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/processDefinitionService" : {
+      "name" : "processDefinitionService",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/processDefinitionService",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.service.impl.WorkflowDefinitionServiceImpl",
+      "displayedType" : "WorkflowDefinitionServiceImpl",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 129,
+        "startColumn" : 43,
+        "endLine" : 129,
+        "endColumn" : 67
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/scheduleMapper" : {
+      "name" : "scheduleMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/scheduleMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.ScheduleMapper",
+      "displayedType" : "ScheduleMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 153,
+        "startColumn" : 28,
+        "endLine" : 153,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/releaseState" : {
+      "name" : "releaseState",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/releaseState",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 195,
+        "startColumn" : 35,
+        "endLine" : 195,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PROTECTED", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/timeout" : {
+      "name" : "timeout",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/memberField/timeout",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 197,
+        "startColumn" : 32,
+        "endLine" : 197,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PROTECTED", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/before()" : {
+      "name" : "before",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/before()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 201,
+        "startColumn" : 17,
+        "endLine" : 201,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/batchDeleteWorkflowDefinitionByCodeTest()" : {
+      "name" : "batchDeleteWorkflowDefinitionByCodeTest",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/batchDeleteWorkflowDefinitionByCodeTest()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 556,
+        "startColumn" : 17,
+        "endLine" : 556,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/deleteWorkflowDefinitionByCodeTest()" : {
+      "name" : "deleteWorkflowDefinitionByCodeTest",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/deleteWorkflowDefinitionByCodeTest()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 474,
+        "startColumn" : 17,
+        "endLine" : 474,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testUpdateWorkflowDefinitionV2()" : {
+      "name" : "testUpdateWorkflowDefinitionV2",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testUpdateWorkflowDefinitionV2()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 975,
+        "startColumn" : 17,
+        "endLine" : 975,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testViewTree()" : {
+      "name" : "testViewTree",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testViewTree()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 727,
+        "startColumn" : 17,
+        "endLine" : 727,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/getWorkflowDefinition()" : {
+      "name" : "getWorkflowDefinition",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/getWorkflowDefinition()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition",
+      "displayedType" : "WorkflowDefinition",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 1086,
+        "startColumn" : 32,
+        "endLine" : 1086,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testGetWorkflowDefinition()" : {
+      "name" : "testGetWorkflowDefinition",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testGetWorkflowDefinition()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 947,
+        "startColumn" : 17,
+        "endLine" : 947,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testGetNewProcessName()" : {
+      "name" : "testGetNewProcessName",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testGetNewProcessName()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 855,
+        "startColumn" : 17,
+        "endLine" : 855,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testVerifyWorkflowDefinitionName()" : {
+      "name" : "testVerifyWorkflowDefinitionName",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testVerifyWorkflowDefinitionName()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 609,
+        "startColumn" : 17,
+        "endLine" : 609,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testQueryWorkflowDefinitionListPaging()" : {
+      "name" : "testQueryWorkflowDefinitionListPaging",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testQueryWorkflowDefinitionListPaging()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 238,
+        "startColumn" : 17,
+        "endLine" : 238,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testCreateWorkflowDefinitionV2()" : {
+      "name" : "testCreateWorkflowDefinitionV2",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testCreateWorkflowDefinitionV2()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 868,
+        "startColumn" : 17,
+        "endLine" : 868,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testSubProcessViewTree()" : {
+      "name" : "testSubProcessViewTree",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testSubProcessViewTree()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 757,
+        "startColumn" : 17,
+        "endLine" : 757,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/getSchedule()" : {
+      "name" : "getSchedule",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/getSchedule()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.Schedule",
+      "displayedType" : "Schedule",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 1130,
+        "startColumn" : 22,
+        "endLine" : 1130,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testBatchMoveWorkflowDefinition()" : {
+      "name" : "testBatchMoveWorkflowDefinition",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testBatchMoveWorkflowDefinition()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 433,
+        "startColumn" : 17,
+        "endLine" : 433,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testQueryAllWorkflowDefinitionByProjectCode()" : {
+      "name" : "testQueryAllWorkflowDefinitionByProjectCode",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testQueryAllWorkflowDefinitionByProjectCode()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 710,
+        "startColumn" : 17,
+        "endLine" : 710,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testGetTaskNodeListByDefinitionCodes()" : {
+      "name" : "testGetTaskNodeListByDefinitionCodes",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testGetTaskNodeListByDefinitionCodes()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 675,
+        "startColumn" : 17,
+        "endLine" : 675,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testQueryWorkflowDefinitionByName()" : {
+      "name" : "testQueryWorkflowDefinitionByName",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testQueryWorkflowDefinitionByName()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 344,
+        "startColumn" : 17,
+        "endLine" : 344,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/getProcessTaskRelation()" : {
+      "name" : "getProcessTaskRelation",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/getProcessTaskRelation()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation>",
+      "displayedType" : "List<WorkflowTaskRelation>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 1113,
+        "startColumn" : 40,
+        "endLine" : 1113,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testGetTaskNodeListByDefinitionCode()" : {
+      "name" : "testGetTaskNodeListByDefinitionCode",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testGetTaskNodeListByDefinitionCode()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 650,
+        "startColumn" : 17,
+        "endLine" : 650,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testQueryWorkflowDefinitionByCode()" : {
+      "name" : "testQueryWorkflowDefinitionByCode",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testQueryWorkflowDefinitionByCode()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 308,
+        "startColumn" : 17,
+        "endLine" : 308,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/getTaskMainInfo()" : {
+      "name" : "getTaskMainInfo",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/getTaskMainInfo()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.TaskMainInfo>",
+      "displayedType" : "List<TaskMainInfo>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 1153,
+        "startColumn" : 32,
+        "endLine" : 1153,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testFilterWorkflowDefinition()" : {
+      "name" : "testFilterWorkflowDefinition",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testFilterWorkflowDefinition()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 931,
+        "startColumn" : 17,
+        "endLine" : 931,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/getProject(long projectCode)" : {
+      "name" : "getProject",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/getProject(long projectCode)",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.Project",
+      "displayedType" : "Project",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 1104,
+        "startColumn" : 21,
+        "endLine" : 1104,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/getProject(long projectCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 1104,
+          "startColumn" : 37,
+          "endLine" : 1104,
+          "endColumn" : 48
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/getProject(long projectCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testBatchCopyWorkflowDefinition()" : {
+      "name" : "testBatchCopyWorkflowDefinition",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testBatchCopyWorkflowDefinition()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 381,
+        "startColumn" : 17,
+        "endLine" : 381,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testBatchExportWorkflowDefinitionByCodes()" : {
+      "name" : "testBatchExportWorkflowDefinitionByCodes",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testBatchExportWorkflowDefinitionByCodes()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 790,
+        "startColumn" : 17,
+        "endLine" : 790,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testImportSqlWorkflowDefinition()" : {
+      "name" : "testImportSqlWorkflowDefinition",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testImportSqlWorkflowDefinition()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 811,
+        "startColumn" : 17,
+        "endLine" : 811,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testQueryWorkflowDefinitionList()" : {
+      "name" : "testQueryWorkflowDefinitionList",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testQueryWorkflowDefinitionList()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 211,
+        "startColumn" : 17,
+        "endLine" : 211,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testViewVariables()" : {
+      "name" : "testViewVariables",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testViewVariables()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 1060,
+        "startColumn" : 17,
+        "endLine" : 1060,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testCheckVersion()" : {
+      "name" : "testCheckVersion",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testCheckVersion()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 1053,
+        "startColumn" : 17,
+        "endLine" : 1053,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testCheckWorkflowNodeList()" : {
+      "name" : "testCheckWorkflowNodeList",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testCheckWorkflowNodeList()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 638,
+        "startColumn" : 17,
+        "endLine" : 638,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testUpdateWorkflowDefinition()" : {
+      "name" : "testUpdateWorkflowDefinition",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest/method/testUpdateWorkflowDefinition()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 773,
+        "startColumn" : 17,
+        "endLine" : 773,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowDefinitionServiceTest"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/test/java/org/apache/dolphinscheduler/api/service/WorkflowDefinitionServiceTest.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.service.BaseServiceTestTool" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

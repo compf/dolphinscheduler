@@ -1,0 +1,273 @@
+{
+  "name" : "BackfillWorkflowExecutorDelegate",
+  "key" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 51,
+    "startColumn" : 8,
+    "endLine" : 51,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/memberField/processService" : {
+      "name" : "processService",
+      "key" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/memberField/processService",
+      "type" : "org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.service.process.ProcessService",
+      "displayedType" : "ProcessService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 28,
+        "endLine" : 57,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate"
+    },
+    "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/memberField/commandDao" : {
+      "name" : "commandDao",
+      "key" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/memberField/commandDao",
+      "type" : "org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.dao.repository.CommandDao",
+      "displayedType" : "CommandDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 24,
+        "endLine" : 54,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate"
+    },
+    "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/memberField/registryClient" : {
+      "name" : "registryClient",
+      "key" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/memberField/registryClient",
+      "type" : "org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.registry.api.RegistryClient",
+      "displayedType" : "RegistryClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 60,
+        "startColumn" : 28,
+        "endLine" : 60,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doSerialBackfillWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO)" : {
+      "name" : "doSerialBackfillWorkflow",
+      "key" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doSerialBackfillWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO)",
+      "type" : "java.util.List<java.lang.Integer>",
+      "displayedType" : "List<Integer>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 27,
+        "endLine" : 72,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "backfillWorkflowDTO",
+        "key" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doSerialBackfillWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO)/parameter/backfillWorkflowDTO",
+        "type" : "org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO",
+        "displayedType" : "BackfillWorkflowDTO",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 72,
+          "startColumn" : 78,
+          "endLine" : 72,
+          "endColumn" : 97
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doSerialBackfillWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate"
+    },
+    "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doBackfillWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO, java.util.List<java.lang.String> backfillTimeList)" : {
+      "name" : "doBackfillWorkflow",
+      "key" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doBackfillWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO, java.util.List<java.lang.String> backfillTimeList)",
+      "type" : "java.lang.Integer",
+      "displayedType" : "Integer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 109,
+        "startColumn" : 21,
+        "endLine" : 109,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "backfillWorkflowDTO",
+        "key" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doBackfillWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO, java.util.List<java.lang.String> backfillTimeList)/parameter/backfillWorkflowDTO",
+        "type" : "org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO",
+        "displayedType" : "BackfillWorkflowDTO",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 109,
+          "startColumn" : 66,
+          "endLine" : 109,
+          "endColumn" : 85
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doBackfillWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO, java.util.List<java.lang.String> backfillTimeList)"
+      }, {
+        "name" : "backfillTimeList",
+        "key" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doBackfillWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO, java.util.List<java.lang.String> backfillTimeList)/parameter/backfillTimeList",
+        "type" : "java.util.List<java.lang.String>",
+        "displayedType" : "List<String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 59,
+          "endLine" : 110,
+          "endColumn" : 75
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doBackfillWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO, java.util.List<java.lang.String> backfillTimeList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate"
+    },
+    "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doParallelBackfillWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO)" : {
+      "name" : "doParallelBackfillWorkflow",
+      "key" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doParallelBackfillWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO)",
+      "type" : "java.util.List<java.lang.Integer>",
+      "displayedType" : "List<Integer>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 87,
+        "startColumn" : 27,
+        "endLine" : 87,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "backfillWorkflowDTO",
+        "key" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doParallelBackfillWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO)/parameter/backfillWorkflowDTO",
+        "type" : "org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO",
+        "displayedType" : "BackfillWorkflowDTO",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 87,
+          "startColumn" : 80,
+          "endLine" : 87,
+          "endColumn" : 99
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doParallelBackfillWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate"
+    },
+    "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/execute(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO)" : {
+      "name" : "execute",
+      "key" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/execute(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO)",
+      "type" : "java.util.List<java.lang.Integer>",
+      "displayedType" : "List<Integer>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 26,
+        "endLine" : 63,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "backfillWorkflowDTO",
+        "key" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/execute(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO)/parameter/backfillWorkflowDTO",
+        "type" : "org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO",
+        "displayedType" : "BackfillWorkflowDTO",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 63,
+          "startColumn" : 60,
+          "endLine" : 63,
+          "endColumn" : 79
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/execute(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate"
+    },
+    "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doBackfillDependentWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO, java.util.List<java.lang.String> backfillTimeList)" : {
+      "name" : "doBackfillDependentWorkflow",
+      "key" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doBackfillDependentWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO, java.util.List<java.lang.String> backfillTimeList)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 150,
+        "startColumn" : 18,
+        "endLine" : 150,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "backfillWorkflowDTO",
+        "key" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doBackfillDependentWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO, java.util.List<java.lang.String> backfillTimeList)/parameter/backfillWorkflowDTO",
+        "type" : "org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO",
+        "displayedType" : "BackfillWorkflowDTO",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 150,
+          "startColumn" : 72,
+          "endLine" : 150,
+          "endColumn" : 91
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doBackfillDependentWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO, java.util.List<java.lang.String> backfillTimeList)"
+      }, {
+        "name" : "backfillTimeList",
+        "key" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doBackfillDependentWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO, java.util.List<java.lang.String> backfillTimeList)/parameter/backfillTimeList",
+        "type" : "java.util.List<java.lang.String>",
+        "displayedType" : "List<String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 151,
+          "startColumn" : 65,
+          "endLine" : 151,
+          "endColumn" : 81
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate/method/doBackfillDependentWorkflow(org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO backfillWorkflowDTO, java.util.List<java.lang.String> backfillTimeList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.executor.workflow.BackfillWorkflowExecutorDelegate"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/executor/workflow/BackfillWorkflowExecutorDelegate.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.api.executor.workflow.IExecutorDelegate<org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO, java.util.List<java.lang.Integer>>", "org.apache.dolphinscheduler.api.executor.workflow.org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO", "java.util.List<java.lang.Integer>", "java.lang.Integer" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

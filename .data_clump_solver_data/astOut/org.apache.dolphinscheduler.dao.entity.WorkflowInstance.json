@@ -1,0 +1,953 @@
+{
+  "name" : "WorkflowInstance",
+  "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 53,
+    "startColumn" : 8,
+    "endLine" : 53,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/workflowInstancePriority" : {
+      "name" : "workflowInstancePriority",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/workflowInstancePriority",
+      "type" : "org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.Priority",
+      "displayedType" : "Priority",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 144,
+        "startColumn" : 22,
+        "endLine" : 144,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/executorName" : {
+      "name" : "executorName",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/executorName",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 116,
+        "startColumn" : 20,
+        "endLine" : 116,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/queue" : {
+      "name" : "queue",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/queue",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 121,
+        "startColumn" : 20,
+        "endLine" : 121,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/isSubWorkflow" : {
+      "name" : "isSubWorkflow",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/isSubWorkflow",
+      "type" : "org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.Flag",
+      "displayedType" : "Flag",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 123,
+        "startColumn" : 18,
+        "endLine" : 123,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/stateHistory" : {
+      "name" : "stateHistory",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/stateHistory",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 20,
+        "endLine" : 66,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/endTime" : {
+      "name" : "endTime",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/endTime",
+      "type" : "java.util.Date",
+      "displayedType" : "Date",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 18,
+        "endLine" : 75,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/name" : {
+      "name" : "name",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/name",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 20,
+        "endLine" : 79,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/taskDependType" : {
+      "name" : "taskDependType",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/taskDependType",
+      "type" : "org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.TaskDependType",
+      "displayedType" : "TaskDependType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 28,
+        "endLine" : 91,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/commandStartTime" : {
+      "name" : "commandStartTime",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/commandStartTime",
+      "type" : "java.util.Date",
+      "displayedType" : "Date",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 104,
+        "startColumn" : 18,
+        "endLine" : 104,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/nextWorkflowInstanceId" : {
+      "name" : "nextWorkflowInstanceId",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/nextWorkflowInstanceId",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 155,
+        "startColumn" : 17,
+        "endLine" : 155,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/workflowDefinition" : {
+      "name" : "workflowDefinition",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/workflowDefinition",
+      "type" : "org.apache.dolphinscheduler.dao.entity.WorkflowDefinition",
+      "displayedType" : "WorkflowDefinition",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 85,
+        "startColumn" : 32,
+        "endLine" : 85,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/failureStrategy" : {
+      "name" : "failureStrategy",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/failureStrategy",
+      "type" : "org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.FailureStrategy",
+      "displayedType" : "FailureStrategy",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 29,
+        "endLine" : 96,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/maxTryTimes" : {
+      "name" : "maxTryTimes",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/maxTryTimes",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 94,
+        "startColumn" : 17,
+        "endLine" : 94,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/dryRun" : {
+      "name" : "dryRun",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/dryRun",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 157,
+        "startColumn" : 17,
+        "endLine" : 157,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/scheduleTime" : {
+      "name" : "scheduleTime",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/scheduleTime",
+      "type" : "java.util.Date",
+      "displayedType" : "Date",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 102,
+        "startColumn" : 18,
+        "endLine" : 102,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/globalParams" : {
+      "name" : "globalParams",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/globalParams",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 109,
+        "startColumn" : 20,
+        "endLine" : 109,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/duration" : {
+      "name" : "duration",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/duration",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 142,
+        "startColumn" : 20,
+        "endLine" : 142,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/host" : {
+      "name" : "host",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/host",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 20,
+        "endLine" : 81,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/commandType" : {
+      "name" : "commandType",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/commandType",
+      "type" : "org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.CommandType",
+      "displayedType" : "CommandType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 87,
+        "startColumn" : 25,
+        "endLine" : 87,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/commandParam" : {
+      "name" : "commandParam",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/commandParam",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 89,
+        "startColumn" : 20,
+        "endLine" : 89,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/varPool" : {
+      "name" : "varPool",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/varPool",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 152,
+        "startColumn" : 20,
+        "endLine" : 152,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/locations" : {
+      "name" : "locations",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/locations",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 129,
+        "startColumn" : 20,
+        "endLine" : 129,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/warningType" : {
+      "name" : "warningType",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/warningType",
+      "type" : "org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.WarningType",
+      "displayedType" : "WarningType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 25,
+        "endLine" : 98,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/startTime" : {
+      "name" : "startTime",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/startTime",
+      "type" : "java.util.Date",
+      "displayedType" : "Date",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 18,
+        "endLine" : 72,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/recovery" : {
+      "name" : "recovery",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/recovery",
+      "type" : "org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.Flag",
+      "displayedType" : "Flag",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 18,
+        "endLine" : 71,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/runTimes" : {
+      "name" : "runTimes",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/runTimes",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 17,
+        "endLine" : 77,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/dependenceScheduleTimes" : {
+      "name" : "dependenceScheduleTimes",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/dependenceScheduleTimes",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 134,
+        "startColumn" : 20,
+        "endLine" : 134,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/executorId" : {
+      "name" : "executorId",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/executorId",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 114,
+        "startColumn" : 17,
+        "endLine" : 114,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/id" : {
+      "name" : "id",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/id",
+      "type" : "java.lang.Integer",
+      "displayedType" : "Integer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 21,
+        "endLine" : 56,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/tenantCode" : {
+      "name" : "tenantCode",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/tenantCode",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 118,
+        "startColumn" : 20,
+        "endLine" : 118,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/workerGroup" : {
+      "name" : "workerGroup",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/workerGroup",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 146,
+        "startColumn" : 20,
+        "endLine" : 146,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/warningGroupId" : {
+      "name" : "warningGroupId",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/warningGroupId",
+      "type" : "java.lang.Integer",
+      "displayedType" : "Integer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 100,
+        "startColumn" : 21,
+        "endLine" : 100,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/state" : {
+      "name" : "state",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/state",
+      "type" : "org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.WorkflowExecutionStatus",
+      "displayedType" : "WorkflowExecutionStatus",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 37,
+        "endLine" : 64,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/projectCode" : {
+      "name" : "projectCode",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/projectCode",
+      "type" : "java.lang.Long",
+      "displayedType" : "Long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 18,
+        "endLine" : 62,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/historyCmd" : {
+      "name" : "historyCmd",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/historyCmd",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 131,
+        "startColumn" : 20,
+        "endLine" : 131,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/restartTime" : {
+      "name" : "restartTime",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/restartTime",
+      "type" : "java.util.Date",
+      "displayedType" : "Date",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 159,
+        "startColumn" : 18,
+        "endLine" : 159,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/workflowDefinitionVersion" : {
+      "name" : "workflowDefinitionVersion",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/workflowDefinitionVersion",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 60,
+        "startColumn" : 17,
+        "endLine" : 60,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/environmentCode" : {
+      "name" : "environmentCode",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/environmentCode",
+      "type" : "java.lang.Long",
+      "displayedType" : "Long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 148,
+        "startColumn" : 18,
+        "endLine" : 148,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/testFlag" : {
+      "name" : "testFlag",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/testFlag",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 161,
+        "startColumn" : 17,
+        "endLine" : 161,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/timeout" : {
+      "name" : "timeout",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/timeout",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 150,
+        "startColumn" : 17,
+        "endLine" : 150,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/stateDescList" : {
+      "name" : "stateDescList",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/stateDescList",
+      "type" : "java.util.List<org.apache.dolphinscheduler.dao.entity.WorkflowInstance$StateDesc>",
+      "displayedType" : "List<StateDesc>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 29,
+        "endLine" : 69,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/dagData" : {
+      "name" : "dagData",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/dagData",
+      "type" : "org.apache.dolphinscheduler.dao.entity.DagData",
+      "displayedType" : "DagData",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 112,
+        "startColumn" : 21,
+        "endLine" : 112,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/workflowDefinitionCode" : {
+      "name" : "workflowDefinitionCode",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/memberField/workflowDefinitionCode",
+      "type" : "java.lang.Long",
+      "displayedType" : "Long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 18,
+        "endLine" : 58,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/method/isComplementData()" : {
+      "name" : "isComplementData",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/method/isComplementData()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 195,
+        "startColumn" : 20,
+        "endLine" : 195,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/method/getCmdTypeIfComplement()" : {
+      "name" : "getCmdTypeIfComplement",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/method/getCmdTypeIfComplement()",
+      "type" : "org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.CommandType",
+      "displayedType" : "CommandType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 208,
+        "startColumn" : 24,
+        "endLine" : 208,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/method/setStateWithDesc(org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.WorkflowExecutionStatus state, java.lang.String stateDesc)" : {
+      "name" : "setStateWithDesc",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/method/setStateWithDesc(org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.WorkflowExecutionStatus state, java.lang.String stateDesc)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 220,
+        "startColumn" : 17,
+        "endLine" : 220,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "state",
+        "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/method/setStateWithDesc(org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.WorkflowExecutionStatus state, java.lang.String stateDesc)/parameter/state",
+        "type" : "org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.WorkflowExecutionStatus",
+        "displayedType" : "WorkflowExecutionStatus",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 220,
+          "startColumn" : 58,
+          "endLine" : 220,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/method/setStateWithDesc(org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.WorkflowExecutionStatus state, java.lang.String stateDesc)"
+      }, {
+        "name" : "stateDesc",
+        "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/method/setStateWithDesc(org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.WorkflowExecutionStatus state, java.lang.String stateDesc)/parameter/stateDesc",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 220,
+          "startColumn" : 72,
+          "endLine" : 220,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/method/setStateWithDesc(org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.WorkflowExecutionStatus state, java.lang.String stateDesc)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    },
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/method/addHistoryCmd(org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.CommandType cmd)" : {
+      "name" : "addHistoryCmd",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/method/addHistoryCmd(org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.CommandType cmd)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 182,
+        "startColumn" : 17,
+        "endLine" : 182,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "cmd",
+        "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/method/addHistoryCmd(org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.CommandType cmd)/parameter/cmd",
+        "type" : "org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.CommandType",
+        "displayedType" : "CommandType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 182,
+          "startColumn" : 43,
+          "endLine" : 182,
+          "endColumn" : 46
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance/method/addHistoryCmd(org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.CommandType cmd)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance"
+    }
+  },
+  "file_path" : "dolphinscheduler-dao/src/main/java/org/apache/dolphinscheduler/dao/entity/WorkflowInstance.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.dao.entity.WorkflowInstance.StateDesc" : {
+      "name" : "StateDesc",
+      "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance.StateDesc",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 234,
+        "startColumn" : 19,
+        "endLine" : 234,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.dao.entity.WorkflowInstance.StateDesc/memberField/state" : {
+          "name" : "state",
+          "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance.StateDesc/memberField/state",
+          "type" : "org.apache.dolphinscheduler.dao.entity.org.apache.dolphinscheduler.common.enums.WorkflowExecutionStatus",
+          "displayedType" : "WorkflowExecutionStatus",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 237,
+            "startColumn" : 33,
+            "endLine" : 237,
+            "endColumn" : 38
+          },
+          "modifiers" : [ ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance.StateDesc"
+        },
+        "org.apache.dolphinscheduler.dao.entity.WorkflowInstance.StateDesc/memberField/time" : {
+          "name" : "time",
+          "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance.StateDesc/memberField/time",
+          "type" : "java.util.Date",
+          "displayedType" : "Date",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 236,
+            "startColumn" : 14,
+            "endLine" : 236,
+            "endColumn" : 18
+          },
+          "modifiers" : [ ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance.StateDesc"
+        },
+        "org.apache.dolphinscheduler.dao.entity.WorkflowInstance.StateDesc/memberField/desc" : {
+          "name" : "desc",
+          "key" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance.StateDesc/memberField/desc",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 238,
+            "startColumn" : 16,
+            "endLine" : 238,
+            "endColumn" : 20
+          },
+          "modifiers" : [ ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance.StateDesc"
+        }
+      },
+      "methods" : { },
+      "file_path" : "dolphinscheduler-dao/src/main/java/org/apache/dolphinscheduler/dao/entity/WorkflowInstance.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : { }
+}

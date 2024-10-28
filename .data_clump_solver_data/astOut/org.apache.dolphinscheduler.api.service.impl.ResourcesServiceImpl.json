@@ -1,0 +1,972 @@
+{
+  "name" : "ResourcesServiceImpl",
+  "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 98,
+    "startColumn" : 8,
+    "endLine" : 98,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/pagingResourceItemRequestTransformer" : {
+      "name" : "pagingResourceItemRequestTransformer",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/pagingResourceItemRequestTransformer",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.PagingResourceItemRequestTransformer",
+      "displayedType" : "PagingResourceItemRequestTransformer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 161,
+        "startColumn" : 50,
+        "endLine" : 161,
+        "endColumn" : 86
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/createFileRequestTransformer" : {
+      "name" : "createFileRequestTransformer",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/createFileRequestTransformer",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.FileRequestTransformer",
+      "displayedType" : "FileRequestTransformer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 143,
+        "startColumn" : 36,
+        "endLine" : 143,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/renameDirectoryRequestTransformer" : {
+      "name" : "renameDirectoryRequestTransformer",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/renameDirectoryRequestTransformer",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.RenameDirectoryRequestTransformer",
+      "displayedType" : "RenameDirectoryRequestTransformer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 116,
+        "startColumn" : 47,
+        "endLine" : 116,
+        "endColumn" : 80
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/createFileFromContentDtoValidator" : {
+      "name" : "createFileFromContentDtoValidator",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/createFileFromContentDtoValidator",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.CreateFileFromContentDtoValidator",
+      "displayedType" : "CreateFileFromContentDtoValidator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 131,
+        "startColumn" : 47,
+        "endLine" : 131,
+        "endColumn" : 80
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/updateFileRequestTransformer" : {
+      "name" : "updateFileRequestTransformer",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/updateFileRequestTransformer",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.UpdateFileRequestTransformer",
+      "displayedType" : "UpdateFileRequestTransformer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 149,
+        "startColumn" : 42,
+        "endLine" : 149,
+        "endColumn" : 70
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/fetchFileContentDtoValidator" : {
+      "name" : "fetchFileContentDtoValidator",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/fetchFileContentDtoValidator",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.FetchFileContentDtoValidator",
+      "displayedType" : "FetchFileContentDtoValidator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 134,
+        "startColumn" : 42,
+        "endLine" : 134,
+        "endColumn" : 70
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/storageOperator" : {
+      "name" : "storageOperator",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/storageOperator",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.plugin.storage.api.StorageOperator",
+      "displayedType" : "StorageOperator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 107,
+        "startColumn" : 29,
+        "endLine" : 107,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/createFileDtoValidator" : {
+      "name" : "createFileDtoValidator",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/createFileDtoValidator",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.CreateFileDtoValidator",
+      "displayedType" : "CreateFileDtoValidator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 146,
+        "startColumn" : 36,
+        "endLine" : 146,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/renameFileRequestTransformer" : {
+      "name" : "renameFileRequestTransformer",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/renameFileRequestTransformer",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.RenameFileRequestTransformer",
+      "displayedType" : "RenameFileRequestTransformer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 122,
+        "startColumn" : 42,
+        "endLine" : 122,
+        "endColumn" : 70
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/deleteResourceDtoValidator" : {
+      "name" : "deleteResourceDtoValidator",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/deleteResourceDtoValidator",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.DeleteResourceDtoValidator",
+      "displayedType" : "DeleteResourceDtoValidator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 155,
+        "startColumn" : 40,
+        "endLine" : 155,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/downloadFileDtoValidator" : {
+      "name" : "downloadFileDtoValidator",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/downloadFileDtoValidator",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.DownloadFileDtoValidator",
+      "displayedType" : "DownloadFileDtoValidator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 158,
+        "startColumn" : 38,
+        "endLine" : 158,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/createDirectoryRequestTransformer" : {
+      "name" : "createDirectoryRequestTransformer",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/createDirectoryRequestTransformer",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.CreateDirectoryRequestTransformer",
+      "displayedType" : "CreateDirectoryRequestTransformer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 110,
+        "startColumn" : 47,
+        "endLine" : 110,
+        "endColumn" : 80
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/renameFileDtoValidator" : {
+      "name" : "renameFileDtoValidator",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/renameFileDtoValidator",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.RenameFileDtoValidator",
+      "displayedType" : "RenameFileDtoValidator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 125,
+        "startColumn" : 36,
+        "endLine" : 125,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/updateFileDtoValidator" : {
+      "name" : "updateFileDtoValidator",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/updateFileDtoValidator",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.UpdateFileDtoValidator",
+      "displayedType" : "UpdateFileDtoValidator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 152,
+        "startColumn" : 36,
+        "endLine" : 152,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/userMapper" : {
+      "name" : "userMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/userMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.UserMapper",
+      "displayedType" : "UserMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 104,
+        "startColumn" : 24,
+        "endLine" : 104,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/tenantDao" : {
+      "name" : "tenantDao",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/tenantDao",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.repository.TenantDao",
+      "displayedType" : "TenantDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 101,
+        "startColumn" : 23,
+        "endLine" : 101,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/renameDirectoryDtoValidator" : {
+      "name" : "renameDirectoryDtoValidator",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/renameDirectoryDtoValidator",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.RenameDirectoryDtoValidator",
+      "displayedType" : "RenameDirectoryDtoValidator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 119,
+        "startColumn" : 41,
+        "endLine" : 119,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/createFileFromContentRequestTransformer" : {
+      "name" : "createFileFromContentRequestTransformer",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/createFileFromContentRequestTransformer",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.FileFromContentRequestTransformer",
+      "displayedType" : "FileFromContentRequestTransformer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 128,
+        "startColumn" : 47,
+        "endLine" : 128,
+        "endColumn" : 86
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/updateFileFromContentRequestTransformer" : {
+      "name" : "updateFileFromContentRequestTransformer",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/updateFileFromContentRequestTransformer",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.UpdateFileFromContentRequestTransformer",
+      "displayedType" : "UpdateFileFromContentRequestTransformer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 137,
+        "startColumn" : 53,
+        "endLine" : 137,
+        "endColumn" : 92
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/createDirectoryDtoValidator" : {
+      "name" : "createDirectoryDtoValidator",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/createDirectoryDtoValidator",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.CreateDirectoryDtoValidator",
+      "displayedType" : "CreateDirectoryDtoValidator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 113,
+        "startColumn" : 41,
+        "endLine" : 113,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/updateFileFromContentDtoValidator" : {
+      "name" : "updateFileFromContentDtoValidator",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/memberField/updateFileFromContentDtoValidator",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.validator.resource.UpdateFileFromContentDtoValidator",
+      "displayedType" : "UpdateFileFromContentDtoValidator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 140,
+        "startColumn" : 47,
+        "endLine" : 140,
+        "endColumn" : 80
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/renameFile(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.RenameFileRequest renameFileRequest)" : {
+      "name" : "renameFile",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/renameFile(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.RenameFileRequest renameFileRequest)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 225,
+        "startColumn" : 17,
+        "endLine" : 225,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "renameFileRequest",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/renameFile(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.RenameFileRequest renameFileRequest)/parameter/renameFileRequest",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.RenameFileRequest",
+        "displayedType" : "RenameFileRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 225,
+          "startColumn" : 46,
+          "endLine" : 225,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/renameFile(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.RenameFileRequest renameFileRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryFileStatus(java.lang.String userName, java.lang.String fileAbsolutePath)" : {
+      "name" : "queryFileStatus",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryFileStatus(java.lang.String userName, java.lang.String fileAbsolutePath)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.plugin.storage.api.StorageEntity",
+      "displayedType" : "StorageEntity",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 388,
+        "startColumn" : 26,
+        "endLine" : 388,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userName",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryFileStatus(java.lang.String userName, java.lang.String fileAbsolutePath)/parameter/userName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 388,
+          "startColumn" : 49,
+          "endLine" : 388,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryFileStatus(java.lang.String userName, java.lang.String fileAbsolutePath)"
+      }, {
+        "name" : "fileAbsolutePath",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryFileStatus(java.lang.String userName, java.lang.String fileAbsolutePath)/parameter/fileAbsolutePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 388,
+          "startColumn" : 66,
+          "endLine" : 388,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryFileStatus(java.lang.String userName, java.lang.String fileAbsolutePath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryResourceFiles(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.spi.enums.ResourceType resourceType)" : {
+      "name" : "queryResourceFiles",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryResourceFiles(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.spi.enums.ResourceType resourceType)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.ResourceComponent>",
+      "displayedType" : "List<ResourceComponent>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 292,
+        "startColumn" : 36,
+        "endLine" : 292,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryResourceFiles(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.spi.enums.ResourceType resourceType)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 292,
+          "startColumn" : 60,
+          "endLine" : 292,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryResourceFiles(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.spi.enums.ResourceType resourceType)"
+      }, {
+        "name" : "resourceType",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryResourceFiles(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.spi.enums.ResourceType resourceType)/parameter/resourceType",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.spi.enums.ResourceType",
+        "displayedType" : "ResourceType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 292,
+          "startColumn" : 84,
+          "endLine" : 292,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryResourceFiles(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.spi.enums.ResourceType resourceType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/createDirectory(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.CreateDirectoryRequest createDirectoryRequest)" : {
+      "name" : "createDirectory",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/createDirectory(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.CreateDirectoryRequest createDirectoryRequest)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 164,
+        "startColumn" : 17,
+        "endLine" : 164,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "createDirectoryRequest",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/createDirectory(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.CreateDirectoryRequest createDirectoryRequest)/parameter/createDirectoryRequest",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.CreateDirectoryRequest",
+        "displayedType" : "CreateDirectoryRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 164,
+          "startColumn" : 56,
+          "endLine" : 164,
+          "endColumn" : 78
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/createDirectory(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.CreateDirectoryRequest createDirectoryRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/fetchResourceFileContent(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.FetchFileContentRequest fetchFileContentRequest)" : {
+      "name" : "fetchResourceFileContent",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/fetchResourceFileContent(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.FetchFileContentRequest fetchFileContentRequest)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.vo.resources.FetchFileContentResponse",
+      "displayedType" : "FetchFileContentResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 313,
+        "startColumn" : 37,
+        "endLine" : 313,
+        "endColumn" : 61
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "fetchFileContentRequest",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/fetchResourceFileContent(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.FetchFileContentRequest fetchFileContentRequest)/parameter/fetchFileContentRequest",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.FetchFileContentRequest",
+        "displayedType" : "FetchFileContentRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 313,
+          "startColumn" : 86,
+          "endLine" : 313,
+          "endColumn" : 109
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/fetchResourceFileContent(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.FetchFileContentRequest fetchFileContentRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/updateFile(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.UpdateFileRequest updateFileRequest)" : {
+      "name" : "updateFile",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/updateFile(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.UpdateFileRequest updateFileRequest)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 236,
+        "startColumn" : 17,
+        "endLine" : 236,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "updateFileRequest",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/updateFile(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.UpdateFileRequest updateFileRequest)/parameter/updateFileRequest",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.UpdateFileRequest",
+        "displayedType" : "UpdateFileRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 236,
+          "startColumn" : 46,
+          "endLine" : 236,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/updateFile(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.UpdateFileRequest updateFileRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/downloadResource(org.apache.dolphinscheduler.api.service.impl.javax.servlet.http.HttpServletResponse response, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.DownloadFileRequest downloadFileRequest)" : {
+      "name" : "downloadResource",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/downloadResource(org.apache.dolphinscheduler.api.service.impl.javax.servlet.http.HttpServletResponse response, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.DownloadFileRequest downloadFileRequest)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 358,
+        "startColumn" : 17,
+        "endLine" : 358,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "response",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/downloadResource(org.apache.dolphinscheduler.api.service.impl.javax.servlet.http.HttpServletResponse response, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.DownloadFileRequest downloadFileRequest)/parameter/response",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.javax.servlet.http.HttpServletResponse",
+        "displayedType" : "HttpServletResponse",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 358,
+          "startColumn" : 54,
+          "endLine" : 358,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/downloadResource(org.apache.dolphinscheduler.api.service.impl.javax.servlet.http.HttpServletResponse response, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.DownloadFileRequest downloadFileRequest)"
+      }, {
+        "name" : "downloadFileRequest",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/downloadResource(org.apache.dolphinscheduler.api.service.impl.javax.servlet.http.HttpServletResponse response, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.DownloadFileRequest downloadFileRequest)/parameter/downloadFileRequest",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.DownloadFileRequest",
+        "displayedType" : "DownloadFileRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 358,
+          "startColumn" : 84,
+          "endLine" : 358,
+          "endColumn" : 103
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/downloadResource(org.apache.dolphinscheduler.api.service.impl.javax.servlet.http.HttpServletResponse response, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.DownloadFileRequest downloadFileRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/copyFileToLocal(java.lang.String fileContent)" : {
+      "name" : "copyFileToLocal",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/copyFileToLocal(java.lang.String fileContent)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 414,
+        "startColumn" : 20,
+        "endLine" : 414,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "fileContent",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/copyFileToLocal(java.lang.String fileContent)/parameter/fileContent",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 414,
+          "startColumn" : 43,
+          "endLine" : 414,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/copyFileToLocal(java.lang.String fileContent)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/createFile(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.CreateFileRequest createFileRequest)" : {
+      "name" : "createFile",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/createFile(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.CreateFileRequest createFileRequest)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 173,
+        "startColumn" : 17,
+        "endLine" : 173,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "createFileRequest",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/createFile(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.CreateFileRequest createFileRequest)/parameter/createFileRequest",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.CreateFileRequest",
+        "displayedType" : "CreateFileRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 173,
+          "startColumn" : 46,
+          "endLine" : 173,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/createFile(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.CreateFileRequest createFileRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/createFileFromContent(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.CreateFileFromContentRequest createFileFromContentRequest)" : {
+      "name" : "createFileFromContent",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/createFileFromContent(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.CreateFileFromContentRequest createFileFromContentRequest)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 193,
+        "startColumn" : 17,
+        "endLine" : 193,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "createFileFromContentRequest",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/createFileFromContent(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.CreateFileFromContentRequest createFileFromContentRequest)/parameter/createFileFromContentRequest",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.CreateFileFromContentRequest",
+        "displayedType" : "CreateFileFromContentRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 193,
+          "startColumn" : 68,
+          "endLine" : 193,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/createFileFromContent(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.CreateFileFromContentRequest createFileFromContentRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/pagingResourceItem(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.PagingResourceItemRequest pagingResourceItemRequest)" : {
+      "name" : "pagingResourceItem",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/pagingResourceItem(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.PagingResourceItemRequest pagingResourceItemRequest)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.PageInfo<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.vo.ResourceItemVO>",
+      "displayedType" : "PageInfo<ResourceItemVO>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 253,
+        "startColumn" : 37,
+        "endLine" : 253,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "pagingResourceItemRequest",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/pagingResourceItem(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.PagingResourceItemRequest pagingResourceItemRequest)/parameter/pagingResourceItemRequest",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.PagingResourceItemRequest",
+        "displayedType" : "PagingResourceItemRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 253,
+          "startColumn" : 82,
+          "endLine" : 253,
+          "endColumn" : 107
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/pagingResourceItem(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.PagingResourceItemRequest pagingResourceItemRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/renameDirectory(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.RenameDirectoryRequest renameDirectoryRequest)" : {
+      "name" : "renameDirectory",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/renameDirectory(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.RenameDirectoryRequest renameDirectoryRequest)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 214,
+        "startColumn" : 17,
+        "endLine" : 214,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "renameDirectoryRequest",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/renameDirectory(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.RenameDirectoryRequest renameDirectoryRequest)/parameter/renameDirectoryRequest",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.RenameDirectoryRequest",
+        "displayedType" : "RenameDirectoryRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 214,
+          "startColumn" : 56,
+          "endLine" : 214,
+          "endColumn" : 78
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/renameDirectory(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.RenameDirectoryRequest renameDirectoryRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryResourceBaseDir(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.spi.enums.ResourceType type)" : {
+      "name" : "queryResourceBaseDir",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryResourceBaseDir(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.spi.enums.ResourceType type)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 393,
+        "startColumn" : 19,
+        "endLine" : 393,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryResourceBaseDir(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.spi.enums.ResourceType type)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 393,
+          "startColumn" : 45,
+          "endLine" : 393,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryResourceBaseDir(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.spi.enums.ResourceType type)"
+      }, {
+        "name" : "type",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryResourceBaseDir(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.spi.enums.ResourceType type)/parameter/type",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.spi.enums.ResourceType",
+        "displayedType" : "ResourceType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 393,
+          "startColumn" : 69,
+          "endLine" : 393,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/queryResourceBaseDir(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.spi.enums.ResourceType type)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/updateFileFromContent(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.UpdateFileFromContentRequest updateFileContentRequest)" : {
+      "name" : "updateFileFromContent",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/updateFileFromContent(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.UpdateFileFromContentRequest updateFileContentRequest)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 338,
+        "startColumn" : 17,
+        "endLine" : 338,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "updateFileContentRequest",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/updateFileFromContent(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.UpdateFileFromContentRequest updateFileContentRequest)/parameter/updateFileContentRequest",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.UpdateFileFromContentRequest",
+        "displayedType" : "UpdateFileFromContentRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 338,
+          "startColumn" : 68,
+          "endLine" : 338,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/updateFileFromContent(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.UpdateFileFromContentRequest updateFileContentRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/delete(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.DeleteResourceRequest deleteResourceRequest)" : {
+      "name" : "delete",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/delete(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.DeleteResourceRequest deleteResourceRequest)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 303,
+        "startColumn" : 17,
+        "endLine" : 303,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "deleteResourceRequest",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/delete(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.DeleteResourceRequest deleteResourceRequest)/parameter/deleteResourceRequest",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.DeleteResourceRequest",
+        "displayedType" : "DeleteResourceRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 303,
+          "startColumn" : 46,
+          "endLine" : 303,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/delete(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.resources.DeleteResourceRequest deleteResourceRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/copyFileToLocal(org.apache.dolphinscheduler.api.service.impl.org.springframework.web.multipart.MultipartFile multipartFile)" : {
+      "name" : "copyFileToLocal",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/copyFileToLocal(org.apache.dolphinscheduler.api.service.impl.org.springframework.web.multipart.MultipartFile multipartFile)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 407,
+        "startColumn" : 20,
+        "endLine" : 407,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "multipartFile",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/copyFileToLocal(org.apache.dolphinscheduler.api.service.impl.org.springframework.web.multipart.MultipartFile multipartFile)/parameter/multipartFile",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.springframework.web.multipart.MultipartFile",
+        "displayedType" : "MultipartFile",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 407,
+          "startColumn" : 50,
+          "endLine" : 407,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl/method/copyFileToLocal(org.apache.dolphinscheduler.api.service.impl.org.springframework.web.multipart.MultipartFile multipartFile)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ResourcesServiceImpl"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/service/impl/ResourcesServiceImpl.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.ResourcesService" ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.service.impl.BaseServiceImpl" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

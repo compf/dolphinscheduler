@@ -1,0 +1,110 @@
+{
+  "name" : "WorkerTaskDispatcher",
+  "key" : "org.apache.dolphinscheduler.server.master.runner.dispatcher.WorkerTaskDispatcher",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 40,
+    "startColumn" : 8,
+    "endLine" : 40,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.runner.dispatcher.WorkerTaskDispatcher/memberField/workerLoadBalancer" : {
+      "name" : "workerLoadBalancer",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.dispatcher.WorkerTaskDispatcher/memberField/workerLoadBalancer",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.dispatcher.org.apache.dolphinscheduler.server.master.cluster.loadbalancer.IWorkerLoadBalancer",
+      "displayedType" : "IWorkerLoadBalancer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 39,
+        "endLine" : 42,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.dispatcher.WorkerTaskDispatcher"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.runner.dispatcher.WorkerTaskDispatcher/method/getTaskInstanceDispatchHost(org.apache.dolphinscheduler.server.master.runner.dispatcher.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable ITaskExecutionRunnable)" : {
+      "name" : "getTaskInstanceDispatchHost",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.dispatcher.WorkerTaskDispatcher/method/getTaskInstanceDispatchHost(org.apache.dolphinscheduler.server.master.runner.dispatcher.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable ITaskExecutionRunnable)",
+      "type" : "java.util.Optional<org.apache.dolphinscheduler.server.master.runner.dispatcher.org.apache.dolphinscheduler.extract.base.utils.Host>",
+      "displayedType" : "Optional<Host>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 70,
+        "startColumn" : 30,
+        "endLine" : 70,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "ITaskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.dispatcher.WorkerTaskDispatcher/method/getTaskInstanceDispatchHost(org.apache.dolphinscheduler.server.master.runner.dispatcher.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable ITaskExecutionRunnable)/parameter/ITaskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.dispatcher.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 70,
+          "startColumn" : 81,
+          "endLine" : 70,
+          "endColumn" : 103
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.dispatcher.WorkerTaskDispatcher/method/getTaskInstanceDispatchHost(org.apache.dolphinscheduler.server.master.runner.dispatcher.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable ITaskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.dispatcher.WorkerTaskDispatcher"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.dispatcher.WorkerTaskDispatcher/method/doDispatch(org.apache.dolphinscheduler.server.master.runner.dispatcher.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable ITaskExecutionRunnable)" : {
+      "name" : "doDispatch",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.dispatcher.WorkerTaskDispatcher/method/doDispatch(org.apache.dolphinscheduler.server.master.runner.dispatcher.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable ITaskExecutionRunnable)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 20,
+        "endLine" : 49,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "ITaskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.dispatcher.WorkerTaskDispatcher/method/doDispatch(org.apache.dolphinscheduler.server.master.runner.dispatcher.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable ITaskExecutionRunnable)/parameter/ITaskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.dispatcher.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 49,
+          "startColumn" : 54,
+          "endLine" : 49,
+          "endColumn" : 76
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.dispatcher.WorkerTaskDispatcher/method/doDispatch(org.apache.dolphinscheduler.server.master.runner.dispatcher.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable ITaskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.dispatcher.WorkerTaskDispatcher"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/runner/dispatcher/WorkerTaskDispatcher.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.master.runner.dispatcher.BaseTaskDispatcher" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

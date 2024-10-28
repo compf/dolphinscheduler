@@ -1,0 +1,145 @@
+{
+  "name" : "BasePooledDataSourceClient",
+  "key" : "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 40,
+    "startColumn" : 17,
+    "endLine" : 40,
+    "endColumn" : 22
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient/memberField/baseConnectionParam" : {
+      "name" : "baseConnectionParam",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient/memberField/baseConnectionParam",
+      "type" : "org.apache.dolphinscheduler.plugin.datasource.api.client.org.apache.dolphinscheduler.spi.datasource.BaseConnectionParam",
+      "displayedType" : "BaseConnectionParam",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 41,
+        "endLine" : 42,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PROTECTED", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient/memberField/dataSource" : {
+      "name" : "dataSource",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient/memberField/dataSource",
+      "type" : "org.apache.dolphinscheduler.plugin.datasource.api.client.com.zaxxer.hikari.HikariDataSource",
+      "displayedType" : "HikariDataSource",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 32,
+        "endLine" : 43,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient/method/getConnection()" : {
+      "name" : "getConnection",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient/method/getConnection()",
+      "type" : "java.sql.Connection",
+      "displayedType" : "Connection",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 23,
+        "endLine" : 75,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 17,
+        "endLine" : 80,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient/method/createDataSourcePool(org.apache.dolphinscheduler.plugin.datasource.api.client.org.apache.dolphinscheduler.spi.datasource.BaseConnectionParam baseConnectionParam, org.apache.dolphinscheduler.plugin.datasource.api.client.org.apache.dolphinscheduler.spi.enums.DbType dbType)" : {
+      "name" : "createDataSourcePool",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient/method/createDataSourcePool(org.apache.dolphinscheduler.plugin.datasource.api.client.org.apache.dolphinscheduler.spi.datasource.BaseConnectionParam baseConnectionParam, org.apache.dolphinscheduler.plugin.datasource.api.client.org.apache.dolphinscheduler.spi.enums.DbType dbType)",
+      "type" : "org.apache.dolphinscheduler.plugin.datasource.api.client.com.zaxxer.hikari.HikariDataSource",
+      "displayedType" : "HikariDataSource",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 29,
+        "endLine" : 53,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "baseConnectionParam",
+        "key" : "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient/method/createDataSourcePool(org.apache.dolphinscheduler.plugin.datasource.api.client.org.apache.dolphinscheduler.spi.datasource.BaseConnectionParam baseConnectionParam, org.apache.dolphinscheduler.plugin.datasource.api.client.org.apache.dolphinscheduler.spi.enums.DbType dbType)/parameter/baseConnectionParam",
+        "type" : "org.apache.dolphinscheduler.plugin.datasource.api.client.org.apache.dolphinscheduler.spi.datasource.BaseConnectionParam",
+        "displayedType" : "BaseConnectionParam",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 53,
+          "startColumn" : 70,
+          "endLine" : 53,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient/method/createDataSourcePool(org.apache.dolphinscheduler.plugin.datasource.api.client.org.apache.dolphinscheduler.spi.datasource.BaseConnectionParam baseConnectionParam, org.apache.dolphinscheduler.plugin.datasource.api.client.org.apache.dolphinscheduler.spi.enums.DbType dbType)"
+      }, {
+        "name" : "dbType",
+        "key" : "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient/method/createDataSourcePool(org.apache.dolphinscheduler.plugin.datasource.api.client.org.apache.dolphinscheduler.spi.datasource.BaseConnectionParam baseConnectionParam, org.apache.dolphinscheduler.plugin.datasource.api.client.org.apache.dolphinscheduler.spi.enums.DbType dbType)/parameter/dbType",
+        "type" : "org.apache.dolphinscheduler.plugin.datasource.api.client.org.apache.dolphinscheduler.spi.enums.DbType",
+        "displayedType" : "DbType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 53,
+          "startColumn" : 98,
+          "endLine" : 53,
+          "endColumn" : 104
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient/method/createDataSourcePool(org.apache.dolphinscheduler.plugin.datasource.api.client.org.apache.dolphinscheduler.spi.datasource.BaseConnectionParam baseConnectionParam, org.apache.dolphinscheduler.plugin.datasource.api.client.org.apache.dolphinscheduler.spi.enums.DbType dbType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.client.BasePooledDataSourceClient"
+    }
+  },
+  "file_path" : "dolphinscheduler-datasource-plugin/dolphinscheduler-datasource-api/src/main/java/org/apache/dolphinscheduler/plugin/datasource/api/client/BasePooledDataSourceClient.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.plugin.datasource.api.client.org.apache.dolphinscheduler.spi.datasource.PooledDataSourceClient" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

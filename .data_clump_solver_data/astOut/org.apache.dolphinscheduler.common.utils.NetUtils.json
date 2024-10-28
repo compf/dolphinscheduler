@@ -1,0 +1,769 @@
+{
+  "name" : "NetUtils",
+  "key" : "org.apache.dolphinscheduler.common.utils.NetUtils",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 45,
+    "startColumn" : 8,
+    "endLine" : 45,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.common.utils.NetUtils/memberField/NETWORK_PRIORITY_DEFAULT" : {
+      "name" : "NETWORK_PRIORITY_DEFAULT",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/memberField/NETWORK_PRIORITY_DEFAULT",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 55,
+        "startColumn" : 33,
+        "endLine" : 55,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/memberField/NETWORK_PRIORITY_INNER" : {
+      "name" : "NETWORK_PRIORITY_INNER",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/memberField/NETWORK_PRIORITY_INNER",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 33,
+        "endLine" : 56,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/memberField/HOST_ADDRESS" : {
+      "name" : "HOST_ADDRESS",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/memberField/HOST_ADDRESS",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 36,
+        "endLine" : 59,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "VOLATILE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/memberField/NETWORK_PRIORITY_OUTER" : {
+      "name" : "NETWORK_PRIORITY_OUTER",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/memberField/NETWORK_PRIORITY_OUTER",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 33,
+        "endLine" : 57,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/memberField/LOCAL_ADDRESS" : {
+      "name" : "LOCAL_ADDRESS",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/memberField/LOCAL_ADDRESS",
+      "type" : "java.net.InetAddress",
+      "displayedType" : "InetAddress",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 32,
+        "endLine" : 58,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/memberField/DOLPHIN_SCHEDULER_NETWORK_INTERFACE_PREFERRED" : {
+      "name" : "DOLPHIN_SCHEDULER_NETWORK_INTERFACE_PREFERRED",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/memberField/DOLPHIN_SCHEDULER_NETWORK_INTERFACE_PREFERRED",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 33,
+        "endLine" : 47,
+        "endColumn" : 78
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/memberField/DOLPHIN_SCHEDULER_NETWORK_INTERFACE_RESTRICT" : {
+      "name" : "DOLPHIN_SCHEDULER_NETWORK_INTERFACE_RESTRICT",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/memberField/DOLPHIN_SCHEDULER_NETWORK_INTERFACE_RESTRICT",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 33,
+        "endLine" : 49,
+        "endColumn" : 77
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/memberField/DOLPHIN_SCHEDULER_NETWORK_PRIORITY_STRATEGY" : {
+      "name" : "DOLPHIN_SCHEDULER_NETWORK_PRIORITY_STRATEGY",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/memberField/DOLPHIN_SCHEDULER_NETWORK_PRIORITY_STRATEGY",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 33,
+        "endLine" : 52,
+        "endColumn" : 76
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/isPreferIPV6Address()" : {
+      "name" : "isPreferIPV6Address",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/isPreferIPV6Address()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 175,
+        "startColumn" : 28,
+        "endLine" : 175,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/getIpv4Addresses(java.util.List<java.net.InetAddress> allInetAddresses)" : {
+      "name" : "getIpv4Addresses",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getIpv4Addresses(java.util.List<java.net.InetAddress> allInetAddresses)",
+      "type" : "java.util.List<java.net.InetAddress>",
+      "displayedType" : "List<InetAddress>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 275,
+        "startColumn" : 38,
+        "endLine" : 275,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "allInetAddresses",
+        "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getIpv4Addresses(java.util.List<java.net.InetAddress> allInetAddresses)/parameter/allInetAddresses",
+        "type" : "java.util.List<java.net.InetAddress>",
+        "displayedType" : "List<InetAddress>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 275,
+          "startColumn" : 73,
+          "endLine" : 275,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getIpv4Addresses(java.util.List<java.net.InetAddress> allInetAddresses)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/findAddressByDefaultPolicy(java.util.List<java.net.NetworkInterface> validNetworkInterfaces)" : {
+      "name" : "findAddressByDefaultPolicy",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/findAddressByDefaultPolicy(java.util.List<java.net.NetworkInterface> validNetworkInterfaces)",
+      "type" : "java.util.List<java.net.NetworkInterface>",
+      "displayedType" : "List<NetworkInterface>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 352,
+        "startColumn" : 43,
+        "endLine" : 352,
+        "endColumn" : 69
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "validNetworkInterfaces",
+        "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/findAddressByDefaultPolicy(java.util.List<java.net.NetworkInterface> validNetworkInterfaces)/parameter/validNetworkInterfaces",
+        "type" : "java.util.List<java.net.NetworkInterface>",
+        "displayedType" : "List<NetworkInterface>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 352,
+          "startColumn" : 93,
+          "endLine" : 352,
+          "endColumn" : 115
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/findAddressByDefaultPolicy(java.util.List<java.net.NetworkInterface> validNetworkInterfaces)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/specifyNetworkInterfaceName()" : {
+      "name" : "specifyNetworkInterfaceName",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/specifyNetworkInterfaceName()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 316,
+        "startColumn" : 27,
+        "endLine" : 316,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/getIpv6Addresses(java.util.List<java.net.InetAddress> allInetAddresses)" : {
+      "name" : "getIpv6Addresses",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getIpv6Addresses(java.util.List<java.net.InetAddress> allInetAddresses)",
+      "type" : "java.util.List<java.net.InetAddress>",
+      "displayedType" : "List<InetAddress>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 288,
+        "startColumn" : 38,
+        "endLine" : 288,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "allInetAddresses",
+        "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getIpv6Addresses(java.util.List<java.net.InetAddress> allInetAddresses)/parameter/allInetAddresses",
+        "type" : "java.util.List<java.net.InetAddress>",
+        "displayedType" : "List<InetAddress>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 288,
+          "startColumn" : 73,
+          "endLine" : 288,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getIpv6Addresses(java.util.List<java.net.InetAddress> allInetAddresses)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/findOuterAddressNetworkInterface(java.util.List<java.net.NetworkInterface> validNetworkInterfaces)" : {
+      "name" : "findOuterAddressNetworkInterface",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/findOuterAddressNetworkInterface(java.util.List<java.net.NetworkInterface> validNetworkInterfaces)",
+      "type" : "java.util.List<java.net.NetworkInterface>",
+      "displayedType" : "List<NetworkInterface>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 382,
+        "startColumn" : 43,
+        "endLine" : 382,
+        "endColumn" : 75
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "validNetworkInterfaces",
+        "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/findOuterAddressNetworkInterface(java.util.List<java.net.NetworkInterface> validNetworkInterfaces)/parameter/validNetworkInterfaces",
+        "type" : "java.util.List<java.net.NetworkInterface>",
+        "displayedType" : "List<NetworkInterface>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 382,
+          "startColumn" : 99,
+          "endLine" : 382,
+          "endColumn" : 121
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/findOuterAddressNetworkInterface(java.util.List<java.net.NetworkInterface> validNetworkInterfaces)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/isValidV6Address(java.net.InetAddress address)" : {
+      "name" : "isValidV6Address",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/isValidV6Address(java.net.InetAddress address)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 159,
+        "startColumn" : 30,
+        "endLine" : 159,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PROTECTED", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "address",
+        "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/isValidV6Address(java.net.InetAddress address)/parameter/address",
+        "type" : "java.net.InetAddress",
+        "displayedType" : "InetAddress",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 159,
+          "startColumn" : 59,
+          "endLine" : 159,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/isValidV6Address(java.net.InetAddress address)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/findInnerAddressNetWorkInterface(java.util.List<java.net.NetworkInterface> validNetworkInterfaces)" : {
+      "name" : "findInnerAddressNetWorkInterface",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/findInnerAddressNetWorkInterface(java.util.List<java.net.NetworkInterface> validNetworkInterfaces)",
+      "type" : "java.util.List<java.net.NetworkInterface>",
+      "displayedType" : "List<NetworkInterface>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 364,
+        "startColumn" : 43,
+        "endLine" : 364,
+        "endColumn" : 75
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "validNetworkInterfaces",
+        "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/findInnerAddressNetWorkInterface(java.util.List<java.net.NetworkInterface> validNetworkInterfaces)/parameter/validNetworkInterfaces",
+        "type" : "java.util.List<java.net.NetworkInterface>",
+        "displayedType" : "List<NetworkInterface>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 364,
+          "startColumn" : 99,
+          "endLine" : 364,
+          "endColumn" : 121
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/findInnerAddressNetWorkInterface(java.util.List<java.net.NetworkInterface> validNetworkInterfaces)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/getHost(java.net.InetAddress inetAddress)" : {
+      "name" : "getHost",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getHost(java.net.InetAddress inetAddress)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 85,
+        "startColumn" : 26,
+        "endLine" : 85,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "inetAddress",
+        "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getHost(java.net.InetAddress inetAddress)/parameter/inetAddress",
+        "type" : "java.net.InetAddress",
+        "displayedType" : "InetAddress",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 85,
+          "startColumn" : 46,
+          "endLine" : 85,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getHost(java.net.InetAddress inetAddress)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/getAllNetworkInterfaces()" : {
+      "name" : "getAllNetworkInterfaces",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getAllNetworkInterfaces()",
+      "type" : "java.util.List<java.net.NetworkInterface>",
+      "displayedType" : "List<NetworkInterface>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 304,
+        "startColumn" : 43,
+        "endLine" : 304,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/getAddr(int port)" : {
+      "name" : "getAddr",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getAddr(int port)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 26,
+        "endLine" : 77,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "port",
+        "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getAddr(int port)/parameter/port",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 77,
+          "startColumn" : 38,
+          "endLine" : 77,
+          "endColumn" : 42
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getAddr(int port)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/getLocalAddress0()" : {
+      "name" : "getLocalAddress0",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getLocalAddress0()",
+      "type" : "java.net.InetAddress",
+      "displayedType" : "InetAddress",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 126,
+        "startColumn" : 45,
+        "endLine" : 126,
+        "endColumn" : 61
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/getHost()" : {
+      "name" : "getHost",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getHost()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 100,
+        "startColumn" : 26,
+        "endLine" : 100,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/getAddr(java.lang.String host, int port)" : {
+      "name" : "getAddr",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getAddr(java.lang.String host, int port)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 26,
+        "endLine" : 69,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "host",
+        "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getAddr(java.lang.String host, int port)/parameter/host",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 69,
+          "startColumn" : 41,
+          "endLine" : 69,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getAddr(java.lang.String host, int port)"
+      }, {
+        "name" : "port",
+        "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getAddr(java.lang.String host, int port)/parameter/port",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 69,
+          "startColumn" : 51,
+          "endLine" : 69,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getAddr(java.lang.String host, int port)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/findSuitableInetAddress(java.util.List<java.net.NetworkInterface> networkInterfaces)" : {
+      "name" : "findSuitableInetAddress",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/findSuitableInetAddress(java.util.List<java.net.NetworkInterface> networkInterfaces)",
+      "type" : "java.util.List<java.net.InetAddress>",
+      "displayedType" : "List<InetAddress>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 239,
+        "startColumn" : 38,
+        "endLine" : 239,
+        "endColumn" : 61
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "networkInterfaces",
+        "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/findSuitableInetAddress(java.util.List<java.net.NetworkInterface> networkInterfaces)/parameter/networkInterfaces",
+        "type" : "java.util.List<java.net.NetworkInterface>",
+        "displayedType" : "List<NetworkInterface>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 239,
+          "startColumn" : 85,
+          "endLine" : 239,
+          "endColumn" : 102
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/findSuitableInetAddress(java.util.List<java.net.NetworkInterface> networkInterfaces)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/restrictNetworkInterfaceName()" : {
+      "name" : "restrictNetworkInterfaceName",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/restrictNetworkInterfaceName()",
+      "type" : "java.util.Set<java.lang.String>",
+      "displayedType" : "Set<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 321,
+        "startColumn" : 32,
+        "endLine" : 321,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/isPreferIPV4Address()" : {
+      "name" : "isPreferIPV4Address",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/isPreferIPV4Address()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 179,
+        "startColumn" : 28,
+        "endLine" : 179,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/isValidV4Address(java.net.InetAddress address)" : {
+      "name" : "isValidV4Address",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/isValidV4Address(java.net.InetAddress address)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 148,
+        "startColumn" : 30,
+        "endLine" : 148,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PROTECTED", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "address",
+        "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/isValidV4Address(java.net.InetAddress address)/parameter/address",
+        "type" : "java.net.InetAddress",
+        "displayedType" : "InetAddress",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 148,
+          "startColumn" : 59,
+          "endLine" : 148,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/isValidV4Address(java.net.InetAddress address)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/getLocalAddress()" : {
+      "name" : "getLocalAddress",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/getLocalAddress()",
+      "type" : "java.net.InetAddress",
+      "displayedType" : "InetAddress",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 113,
+        "startColumn" : 32,
+        "endLine" : 113,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/normalizeV6Address(java.net.Inet6Address address)" : {
+      "name" : "normalizeV6Address",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/normalizeV6Address(java.net.Inet6Address address)",
+      "type" : "java.net.InetAddress",
+      "displayedType" : "InetAddress",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 135,
+        "startColumn" : 32,
+        "endLine" : 135,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "address",
+        "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/normalizeV6Address(java.net.Inet6Address address)/parameter/address",
+        "type" : "java.net.Inet6Address",
+        "displayedType" : "Inet6Address",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 135,
+          "startColumn" : 64,
+          "endLine" : 135,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/normalizeV6Address(java.net.Inet6Address address)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/findSuitableNetworkInterface()" : {
+      "name" : "findSuitableNetworkInterface",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/findSuitableNetworkInterface()",
+      "type" : "java.util.List<java.net.NetworkInterface>",
+      "displayedType" : "List<NetworkInterface>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 186,
+        "startColumn" : 43,
+        "endLine" : 186,
+        "endColumn" : 71
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    },
+    "org.apache.dolphinscheduler.common.utils.NetUtils/method/filterByNetworkPriority(java.util.List<java.net.NetworkInterface> validNetworkInterfaces)" : {
+      "name" : "filterByNetworkPriority",
+      "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/filterByNetworkPriority(java.util.List<java.net.NetworkInterface> validNetworkInterfaces)",
+      "type" : "java.util.List<java.net.NetworkInterface>",
+      "displayedType" : "List<NetworkInterface>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 330,
+        "startColumn" : 43,
+        "endLine" : 330,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "validNetworkInterfaces",
+        "key" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/filterByNetworkPriority(java.util.List<java.net.NetworkInterface> validNetworkInterfaces)/parameter/validNetworkInterfaces",
+        "type" : "java.util.List<java.net.NetworkInterface>",
+        "displayedType" : "List<NetworkInterface>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 330,
+          "startColumn" : 90,
+          "endLine" : 330,
+          "endColumn" : 112
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.utils.NetUtils/method/filterByNetworkPriority(java.util.List<java.net.NetworkInterface> validNetworkInterfaces)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.utils.NetUtils"
+    }
+  },
+  "file_path" : "dolphinscheduler-common/src/main/java/org/apache/dolphinscheduler/common/utils/NetUtils.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

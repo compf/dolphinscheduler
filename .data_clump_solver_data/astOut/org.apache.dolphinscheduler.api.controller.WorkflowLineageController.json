@@ -1,0 +1,374 @@
+{
+  "name" : "WorkflowLineageController",
+  "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 67,
+    "startColumn" : 8,
+    "endLine" : 67,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/memberField/workflowLineageService" : {
+      "name" : "workflowLineageService",
+      "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/memberField/workflowLineageService",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.service.WorkflowLineageService",
+      "displayedType" : "WorkflowLineageService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 70,
+        "startColumn" : 36,
+        "endLine" : 70,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineageByName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.String workflowDefinitionName)" : {
+      "name" : "queryWorkFlowLineageByName",
+      "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineageByName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.String workflowDefinitionName)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.util.List<org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.WorkFlowRelationDetail>>",
+      "displayedType" : "Result<List<WorkFlowRelationDetail>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 49,
+        "endLine" : 76,
+        "endColumn" : 75
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineageByName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.String workflowDefinitionName)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 76,
+          "startColumn" : 147,
+          "endLine" : 76,
+          "endColumn" : 156
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineageByName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.String workflowDefinitionName)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineageByName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.String workflowDefinitionName)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 77,
+          "startColumn" : 175,
+          "endLine" : 77,
+          "endColumn" : 186
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineageByName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.String workflowDefinitionName)"
+      }, {
+        "name" : "workflowDefinitionName",
+        "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineageByName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.String workflowDefinitionName)/parameter/workflowDefinitionName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 78,
+          "startColumn" : 149,
+          "endLine" : 78,
+          "endColumn" : 171
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineageByName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.lang.String workflowDefinitionName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController"
+    },
+    "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineageByCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode)" : {
+      "name" : "queryWorkFlowLineageByCode",
+      "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineageByCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.util.Map<java.lang.String, java.lang.Object>>",
+      "displayedType" : "Result<Map<String, Object>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 89,
+        "startColumn" : 40,
+        "endLine" : 89,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineageByCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 89,
+          "startColumn" : 138,
+          "endLine" : 89,
+          "endColumn" : 147
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineageByCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineageByCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 90,
+          "startColumn" : 166,
+          "endLine" : 90,
+          "endColumn" : 177
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineageByCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode)"
+      }, {
+        "name" : "workFlowCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineageByCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode)/parameter/workFlowCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 91,
+          "startColumn" : 110,
+          "endLine" : 91,
+          "endColumn" : 122
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineageByCode(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController"
+    },
+    "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/verifyTaskCanDelete(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, long taskCode)" : {
+      "name" : "verifyTaskCanDelete",
+      "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/verifyTaskCanDelete(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, long taskCode)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.util.Map<java.lang.String, java.lang.Object>>",
+      "displayedType" : "Result<Map<String, Object>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 133,
+        "startColumn" : 40,
+        "endLine" : 133,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/verifyTaskCanDelete(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, long taskCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 133,
+          "startColumn" : 141,
+          "endLine" : 133,
+          "endColumn" : 150
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/verifyTaskCanDelete(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, long taskCode)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/verifyTaskCanDelete(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, long taskCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 134,
+          "startColumn" : 159,
+          "endLine" : 134,
+          "endColumn" : 170
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/verifyTaskCanDelete(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, long taskCode)"
+      }, {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/verifyTaskCanDelete(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, long taskCode)/parameter/workflowDefinitionCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 135,
+          "startColumn" : 113,
+          "endLine" : 135,
+          "endColumn" : 135
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/verifyTaskCanDelete(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, long taskCode)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/verifyTaskCanDelete(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, long taskCode)/parameter/taskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 136,
+          "startColumn" : 99,
+          "endLine" : 136,
+          "endColumn" : 107
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/verifyTaskCanDelete(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, long taskCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController"
+    },
+    "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryDependentTasks(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode, java.lang.Long taskCode)" : {
+      "name" : "queryDependentTasks",
+      "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryDependentTasks(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode, java.lang.Long taskCode)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.util.Map<java.lang.String, java.lang.Object>>",
+      "displayedType" : "Result<Map<String, Object>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 158,
+        "startColumn" : 40,
+        "endLine" : 158,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryDependentTasks(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode, java.lang.Long taskCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 158,
+          "startColumn" : 141,
+          "endLine" : 158,
+          "endColumn" : 150
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryDependentTasks(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode, java.lang.Long taskCode)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryDependentTasks(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode, java.lang.Long taskCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 159,
+          "startColumn" : 159,
+          "endLine" : 159,
+          "endColumn" : 170
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryDependentTasks(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode, java.lang.Long taskCode)"
+      }, {
+        "name" : "workFlowCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryDependentTasks(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode, java.lang.Long taskCode)/parameter/workFlowCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 160,
+          "startColumn" : 103,
+          "endLine" : 160,
+          "endColumn" : 115
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryDependentTasks(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode, java.lang.Long taskCode)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryDependentTasks(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode, java.lang.Long taskCode)/parameter/taskCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 161,
+          "startColumn" : 117,
+          "endLine" : 161,
+          "endColumn" : 125
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryDependentTasks(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workFlowCode, java.lang.Long taskCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController"
+    },
+    "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineage(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)" : {
+      "name" : "queryWorkFlowLineage",
+      "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineage(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.util.Map<java.lang.String, java.lang.Object>>",
+      "displayedType" : "Result<Map<String, Object>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 102,
+        "startColumn" : 40,
+        "endLine" : 102,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineage(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 102,
+          "startColumn" : 132,
+          "endLine" : 102,
+          "endColumn" : 141
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineage(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineage(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 103,
+          "startColumn" : 160,
+          "endLine" : 103,
+          "endColumn" : 171
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController/method/queryWorkFlowLineage(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.WorkflowLineageController"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/controller/WorkflowLineageController.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.controller.BaseController" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

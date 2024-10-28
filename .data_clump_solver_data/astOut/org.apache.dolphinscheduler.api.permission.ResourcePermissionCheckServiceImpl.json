@@ -1,0 +1,2408 @@
+{
+  "name" : "ResourcePermissionCheckServiceImpl",
+  "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 67,
+    "startColumn" : 8,
+    "endLine" : 67,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/memberField/RESOURCE_LIST_MAP" : {
+      "name" : "RESOURCE_LIST_MAP",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/memberField/RESOURCE_LIST_MAP",
+      "type" : "java.util.Map<org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.common.enums.AuthorizationType, org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl$ResourceAcquisitionAndPermissionCheck<?>>",
+      "displayedType" : "Map<AuthorizationType, ResourceAcquisitionAndPermissionCheck<?>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 90,
+        "endLine" : 75,
+        "endColumn" : 107
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/memberField/processService" : {
+      "name" : "processService",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/memberField/processService",
+      "type" : "org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.service.process.ProcessService",
+      "displayedType" : "ProcessService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 73,
+        "startColumn" : 28,
+        "endLine" : 73,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/setApplicationContext(org.apache.dolphinscheduler.api.permission.org.springframework.context.ApplicationContext applicationContext)" : {
+      "name" : "setApplicationContext",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/setApplicationContext(org.apache.dolphinscheduler.api.permission.org.springframework.context.ApplicationContext applicationContext)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 17,
+        "endLine" : 79,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "applicationContext",
+        "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/setApplicationContext(org.apache.dolphinscheduler.api.permission.org.springframework.context.ApplicationContext applicationContext)/parameter/applicationContext",
+        "type" : "org.apache.dolphinscheduler.api.permission.org.springframework.context.ApplicationContext",
+        "displayedType" : "ApplicationContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 79,
+          "startColumn" : 58,
+          "endLine" : 79,
+          "endColumn" : 76
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/setApplicationContext(org.apache.dolphinscheduler.api.permission.org.springframework.context.ApplicationContext applicationContext)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/userOwnedResourceIdsAcquisition(java.lang.Object authorizationType, java.lang.Integer userId, org.slf4j.Logger logger)" : {
+      "name" : "userOwnedResourceIdsAcquisition",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/userOwnedResourceIdsAcquisition(java.lang.Object authorizationType, java.lang.Integer userId, org.slf4j.Logger logger)",
+      "type" : "java.util.Set<java.lang.Object>",
+      "displayedType" : "Set<Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 122,
+        "startColumn" : 24,
+        "endLine" : 122,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "authorizationType",
+        "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/userOwnedResourceIdsAcquisition(java.lang.Object authorizationType, java.lang.Integer userId, org.slf4j.Logger logger)/parameter/authorizationType",
+        "type" : "java.lang.Object",
+        "displayedType" : "Object",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 122,
+          "startColumn" : 63,
+          "endLine" : 122,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/userOwnedResourceIdsAcquisition(java.lang.Object authorizationType, java.lang.Integer userId, org.slf4j.Logger logger)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/userOwnedResourceIdsAcquisition(java.lang.Object authorizationType, java.lang.Integer userId, org.slf4j.Logger logger)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 122,
+          "startColumn" : 90,
+          "endLine" : 122,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/userOwnedResourceIdsAcquisition(java.lang.Object authorizationType, java.lang.Integer userId, org.slf4j.Logger logger)"
+      }, {
+        "name" : "logger",
+        "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/userOwnedResourceIdsAcquisition(java.lang.Object authorizationType, java.lang.Integer userId, org.slf4j.Logger logger)/parameter/logger",
+        "type" : "org.slf4j.Logger",
+        "displayedType" : "Logger",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 122,
+          "startColumn" : 105,
+          "endLine" : 122,
+          "endColumn" : 111
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/userOwnedResourceIdsAcquisition(java.lang.Object authorizationType, java.lang.Integer userId, org.slf4j.Logger logger)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/resourcePermissionCheck(java.lang.Object authorizationType, java.lang.Object[] needChecks, java.lang.Integer userId, org.slf4j.Logger logger)" : {
+      "name" : "resourcePermissionCheck",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/resourcePermissionCheck(java.lang.Object authorizationType, java.lang.Object[] needChecks, java.lang.Integer userId, org.slf4j.Logger logger)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 20,
+        "endLine" : 88,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "authorizationType",
+        "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/resourcePermissionCheck(java.lang.Object authorizationType, java.lang.Object[] needChecks, java.lang.Integer userId, org.slf4j.Logger logger)/parameter/authorizationType",
+        "type" : "java.lang.Object",
+        "displayedType" : "Object",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 88,
+          "startColumn" : 51,
+          "endLine" : 88,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/resourcePermissionCheck(java.lang.Object authorizationType, java.lang.Object[] needChecks, java.lang.Integer userId, org.slf4j.Logger logger)"
+      }, {
+        "name" : "needChecks",
+        "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/resourcePermissionCheck(java.lang.Object authorizationType, java.lang.Object[] needChecks, java.lang.Integer userId, org.slf4j.Logger logger)/parameter/needChecks",
+        "type" : "java.lang.Object[]",
+        "displayedType" : "Object[]",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 88,
+          "startColumn" : 79,
+          "endLine" : 88,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/resourcePermissionCheck(java.lang.Object authorizationType, java.lang.Object[] needChecks, java.lang.Integer userId, org.slf4j.Logger logger)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/resourcePermissionCheck(java.lang.Object authorizationType, java.lang.Object[] needChecks, java.lang.Integer userId, org.slf4j.Logger logger)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 88,
+          "startColumn" : 99,
+          "endLine" : 88,
+          "endColumn" : 105
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/resourcePermissionCheck(java.lang.Object authorizationType, java.lang.Object[] needChecks, java.lang.Integer userId, org.slf4j.Logger logger)"
+      }, {
+        "name" : "logger",
+        "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/resourcePermissionCheck(java.lang.Object authorizationType, java.lang.Object[] needChecks, java.lang.Integer userId, org.slf4j.Logger logger)/parameter/logger",
+        "type" : "org.slf4j.Logger",
+        "displayedType" : "Logger",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 89,
+          "startColumn" : 51,
+          "endLine" : 89,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/resourcePermissionCheck(java.lang.Object authorizationType, java.lang.Object[] needChecks, java.lang.Integer userId, org.slf4j.Logger logger)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/functionDisabled()" : {
+      "name" : "functionDisabled",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/functionDisabled()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 117,
+        "startColumn" : 20,
+        "endLine" : 117,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/operationPermissionCheck(java.lang.Object authorizationType, java.lang.Integer userId, java.lang.String permissionKey, org.slf4j.Logger logger)" : {
+      "name" : "operationPermissionCheck",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/operationPermissionCheck(java.lang.Object authorizationType, java.lang.Integer userId, java.lang.String permissionKey, org.slf4j.Logger logger)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 103,
+        "startColumn" : 20,
+        "endLine" : 103,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "authorizationType",
+        "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/operationPermissionCheck(java.lang.Object authorizationType, java.lang.Integer userId, java.lang.String permissionKey, org.slf4j.Logger logger)/parameter/authorizationType",
+        "type" : "java.lang.Object",
+        "displayedType" : "Object",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 103,
+          "startColumn" : 52,
+          "endLine" : 103,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/operationPermissionCheck(java.lang.Object authorizationType, java.lang.Integer userId, java.lang.String permissionKey, org.slf4j.Logger logger)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/operationPermissionCheck(java.lang.Object authorizationType, java.lang.Integer userId, java.lang.String permissionKey, org.slf4j.Logger logger)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 103,
+          "startColumn" : 79,
+          "endLine" : 103,
+          "endColumn" : 85
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/operationPermissionCheck(java.lang.Object authorizationType, java.lang.Integer userId, java.lang.String permissionKey, org.slf4j.Logger logger)"
+      }, {
+        "name" : "permissionKey",
+        "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/operationPermissionCheck(java.lang.Object authorizationType, java.lang.Integer userId, java.lang.String permissionKey, org.slf4j.Logger logger)/parameter/permissionKey",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 104,
+          "startColumn" : 52,
+          "endLine" : 104,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/operationPermissionCheck(java.lang.Object authorizationType, java.lang.Integer userId, java.lang.String permissionKey, org.slf4j.Logger logger)"
+      }, {
+        "name" : "logger",
+        "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/operationPermissionCheck(java.lang.Object authorizationType, java.lang.Integer userId, java.lang.String permissionKey, org.slf4j.Logger logger)/parameter/logger",
+        "type" : "org.slf4j.Logger",
+        "displayedType" : "Logger",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 104,
+          "startColumn" : 74,
+          "endLine" : 104,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl/method/operationPermissionCheck(java.lang.Object authorizationType, java.lang.Integer userId, java.lang.String permissionKey, org.slf4j.Logger logger)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/permission/ResourcePermissionCheckServiceImpl.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckService<java.lang.Object>", "java.lang.Object", "org.apache.dolphinscheduler.api.permission.org.springframework.context.ApplicationContextAware" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck" : {
+      "name" : "AlertGroupResourcePermissionCheck",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 333,
+        "startColumn" : 19,
+        "endLine" : 333,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/memberField/alertGroupMapper" : {
+          "name" : "alertGroupMapper",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/memberField/alertGroupMapper",
+          "type" : "org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.dao.mapper.AlertGroupMapper",
+          "displayedType" : "AlertGroupMapper",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 335,
+            "startColumn" : 40,
+            "endLine" : 335,
+            "endColumn" : 56
+          },
+          "modifiers" : [ "PRIVATE", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)" : {
+          "name" : "permissionCheck",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)",
+          "type" : "boolean",
+          "displayedType" : "boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 347,
+            "startColumn" : 24,
+            "endLine" : 347,
+            "endColumn" : 39
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 347,
+              "startColumn" : 44,
+              "endLine" : 347,
+              "endColumn" : 50
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          }, {
+            "name" : "url",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/url",
+            "type" : "java.lang.String",
+            "displayedType" : "String",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 347,
+              "startColumn" : 59,
+              "endLine" : 347,
+              "endColumn" : 62
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 347,
+              "startColumn" : 71,
+              "endLine" : 347,
+              "endColumn" : 77
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/method/authorizationTypes()" : {
+          "name" : "authorizationTypes",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/method/authorizationTypes()",
+          "type" : "java.util.List<org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.common.enums.AuthorizationType>",
+          "displayedType" : "List<AuthorizationType>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 342,
+            "startColumn" : 40,
+            "endLine" : 342,
+            "endColumn" : 58
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)" : {
+          "name" : "listAuthorizedResourceIds",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)",
+          "type" : "java.util.Set<java.lang.Integer>",
+          "displayedType" : "Set<Integer>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 352,
+            "startColumn" : 29,
+            "endLine" : 352,
+            "endColumn" : 54
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 352,
+              "startColumn" : 59,
+              "endLine" : 352,
+              "endColumn" : 65
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 352,
+              "startColumn" : 74,
+              "endLine" : 352,
+              "endColumn" : 80
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertGroupResourcePermissionCheck"
+        }
+      },
+      "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/permission/ResourcePermissionCheckServiceImpl.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl$ResourceAcquisitionAndPermissionCheck<java.lang.Integer>", "java.lang.Integer" ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck" : {
+      "name" : "EnvironmentResourcePermissionCheck",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 240,
+        "startColumn" : 19,
+        "endLine" : 240,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/memberField/userDao" : {
+          "name" : "userDao",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/memberField/userDao",
+          "type" : "org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.dao.repository.UserDao",
+          "displayedType" : "UserDao",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 244,
+            "startColumn" : 31,
+            "endLine" : 244,
+            "endColumn" : 38
+          },
+          "modifiers" : [ "PRIVATE", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/memberField/environmentMapper" : {
+          "name" : "environmentMapper",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/memberField/environmentMapper",
+          "type" : "org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.dao.mapper.EnvironmentMapper",
+          "displayedType" : "EnvironmentMapper",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 242,
+            "startColumn" : 41,
+            "endLine" : 242,
+            "endColumn" : 58
+          },
+          "modifiers" : [ "PRIVATE", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)" : {
+          "name" : "listAuthorizedResourceIds",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)",
+          "type" : "java.util.Set<java.lang.Integer>",
+          "displayedType" : "Set<Integer>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 267,
+            "startColumn" : 29,
+            "endLine" : 267,
+            "endColumn" : 54
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 267,
+              "startColumn" : 59,
+              "endLine" : 267,
+              "endColumn" : 65
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 267,
+              "startColumn" : 74,
+              "endLine" : 267,
+              "endColumn" : 80
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)" : {
+          "name" : "permissionCheck",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)",
+          "type" : "boolean",
+          "displayedType" : "boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 257,
+            "startColumn" : 24,
+            "endLine" : 257,
+            "endColumn" : 39
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 257,
+              "startColumn" : 44,
+              "endLine" : 257,
+              "endColumn" : 50
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          }, {
+            "name" : "url",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/url",
+            "type" : "java.lang.String",
+            "displayedType" : "String",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 257,
+              "startColumn" : 59,
+              "endLine" : 257,
+              "endColumn" : 62
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 257,
+              "startColumn" : 71,
+              "endLine" : 257,
+              "endColumn" : 77
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/method/authorizationTypes()" : {
+          "name" : "authorizationTypes",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck/method/authorizationTypes()",
+          "type" : "java.util.List<org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.common.enums.AuthorizationType>",
+          "displayedType" : "List<AuthorizationType>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 252,
+            "startColumn" : 40,
+            "endLine" : 252,
+            "endColumn" : 58
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.EnvironmentResourcePermissionCheck"
+        }
+      },
+      "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/permission/ResourcePermissionCheckServiceImpl.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl$ResourceAcquisitionAndPermissionCheck<java.lang.Integer>", "java.lang.Integer" ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck" : {
+      "name" : "ProjectsResourcePermissionCheck",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 162,
+        "startColumn" : 19,
+        "endLine" : 162,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/memberField/projectMapper" : {
+          "name" : "projectMapper",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/memberField/projectMapper",
+          "type" : "org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.dao.mapper.ProjectMapper",
+          "displayedType" : "ProjectMapper",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 164,
+            "startColumn" : 37,
+            "endLine" : 164,
+            "endColumn" : 50
+          },
+          "modifiers" : [ "PRIVATE", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)" : {
+          "name" : "permissionCheck",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)",
+          "type" : "boolean",
+          "displayedType" : "boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 176,
+            "startColumn" : 24,
+            "endLine" : 176,
+            "endColumn" : 39
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 176,
+              "startColumn" : 44,
+              "endLine" : 176,
+              "endColumn" : 50
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)"
+          }, {
+            "name" : "permissionKey",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)/parameter/permissionKey",
+            "type" : "java.lang.String",
+            "displayedType" : "String",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 176,
+              "startColumn" : 59,
+              "endLine" : 176,
+              "endColumn" : 72
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 176,
+              "startColumn" : 81,
+              "endLine" : 176,
+              "endColumn" : 87
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)" : {
+          "name" : "listAuthorizedResourceIds",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)",
+          "type" : "java.util.Set<java.lang.Integer>",
+          "displayedType" : "Set<Integer>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 182,
+            "startColumn" : 29,
+            "endLine" : 182,
+            "endColumn" : 54
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 182,
+              "startColumn" : 59,
+              "endLine" : 182,
+              "endColumn" : 65
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 182,
+              "startColumn" : 74,
+              "endLine" : 182,
+              "endColumn" : 80
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/method/authorizationTypes()" : {
+          "name" : "authorizationTypes",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck/method/authorizationTypes()",
+          "type" : "java.util.List<org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.common.enums.AuthorizationType>",
+          "displayedType" : "List<AuthorizationType>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 171,
+            "startColumn" : 40,
+            "endLine" : 171,
+            "endColumn" : 58
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ProjectsResourcePermissionCheck"
+        }
+      },
+      "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/permission/ResourcePermissionCheckServiceImpl.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl$ResourceAcquisitionAndPermissionCheck<java.lang.Integer>", "java.lang.Integer" ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck" : {
+      "name" : "QueueResourcePermissionCheck",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 133,
+        "startColumn" : 19,
+        "endLine" : 133,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/memberField/queueMapper" : {
+          "name" : "queueMapper",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/memberField/queueMapper",
+          "type" : "org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.dao.mapper.QueueMapper",
+          "displayedType" : "QueueMapper",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 135,
+            "startColumn" : 35,
+            "endLine" : 135,
+            "endColumn" : 46
+          },
+          "modifiers" : [ "PRIVATE", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/method/authorizationTypes()" : {
+          "name" : "authorizationTypes",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/method/authorizationTypes()",
+          "type" : "java.util.List<org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.common.enums.AuthorizationType>",
+          "displayedType" : "List<AuthorizationType>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 142,
+            "startColumn" : 40,
+            "endLine" : 142,
+            "endColumn" : 58
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)" : {
+          "name" : "listAuthorizedResourceIds",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)",
+          "type" : "java.util.Set<java.lang.Integer>",
+          "displayedType" : "Set<Integer>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 152,
+            "startColumn" : 29,
+            "endLine" : 152,
+            "endColumn" : 54
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 152,
+              "startColumn" : 59,
+              "endLine" : 152,
+              "endColumn" : 65
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 152,
+              "startColumn" : 74,
+              "endLine" : 152,
+              "endColumn" : 80
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)" : {
+          "name" : "permissionCheck",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)",
+          "type" : "boolean",
+          "displayedType" : "boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 147,
+            "startColumn" : 24,
+            "endLine" : 147,
+            "endColumn" : 39
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 147,
+              "startColumn" : 44,
+              "endLine" : 147,
+              "endColumn" : 50
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)"
+          }, {
+            "name" : "permissionKey",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)/parameter/permissionKey",
+            "type" : "java.lang.String",
+            "displayedType" : "String",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 147,
+              "startColumn" : 59,
+              "endLine" : 147,
+              "endColumn" : 72
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 147,
+              "startColumn" : 81,
+              "endLine" : 147,
+              "endColumn" : 87
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.QueueResourcePermissionCheck"
+        }
+      },
+      "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/permission/ResourcePermissionCheckServiceImpl.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl$ResourceAcquisitionAndPermissionCheck<java.lang.Integer>", "java.lang.Integer" ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck" : {
+      "name" : "TaskGroupPermissionCheck",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 188,
+        "startColumn" : 19,
+        "endLine" : 188,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/memberField/taskGroupMapper" : {
+          "name" : "taskGroupMapper",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/memberField/taskGroupMapper",
+          "type" : "org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.dao.mapper.TaskGroupMapper",
+          "displayedType" : "TaskGroupMapper",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 190,
+            "startColumn" : 39,
+            "endLine" : 190,
+            "endColumn" : 54
+          },
+          "modifiers" : [ "PRIVATE", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)" : {
+          "name" : "listAuthorizedResourceIds",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)",
+          "type" : "java.util.Set<java.lang.Integer>",
+          "displayedType" : "Set<Integer>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 202,
+            "startColumn" : 29,
+            "endLine" : 202,
+            "endColumn" : 54
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 202,
+              "startColumn" : 59,
+              "endLine" : 202,
+              "endColumn" : 65
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 202,
+              "startColumn" : 74,
+              "endLine" : 202,
+              "endColumn" : 80
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)" : {
+          "name" : "permissionCheck",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)",
+          "type" : "boolean",
+          "displayedType" : "boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 208,
+            "startColumn" : 24,
+            "endLine" : 208,
+            "endColumn" : 39
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 208,
+              "startColumn" : 44,
+              "endLine" : 208,
+              "endColumn" : 50
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)"
+          }, {
+            "name" : "permissionKey",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)/parameter/permissionKey",
+            "type" : "java.lang.String",
+            "displayedType" : "String",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 208,
+              "startColumn" : 59,
+              "endLine" : 208,
+              "endColumn" : 72
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 208,
+              "startColumn" : 81,
+              "endLine" : 208,
+              "endColumn" : 87
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/method/authorizationTypes()" : {
+          "name" : "authorizationTypes",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck/method/authorizationTypes()",
+          "type" : "java.util.List<org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.common.enums.AuthorizationType>",
+          "displayedType" : "List<AuthorizationType>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 197,
+            "startColumn" : 40,
+            "endLine" : 197,
+            "endColumn" : 58
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TaskGroupPermissionCheck"
+        }
+      },
+      "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/permission/ResourcePermissionCheckServiceImpl.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl$ResourceAcquisitionAndPermissionCheck<java.lang.Integer>", "java.lang.Integer" ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck" : {
+      "name" : "K8sNamespaceResourcePermissionCheck",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 214,
+        "startColumn" : 19,
+        "endLine" : 214,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/memberField/k8sNamespaceMapper" : {
+          "name" : "k8sNamespaceMapper",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/memberField/k8sNamespaceMapper",
+          "type" : "org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.dao.mapper.K8sNamespaceMapper",
+          "displayedType" : "K8sNamespaceMapper",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 216,
+            "startColumn" : 42,
+            "endLine" : 216,
+            "endColumn" : 60
+          },
+          "modifiers" : [ "PRIVATE", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/method/authorizationTypes()" : {
+          "name" : "authorizationTypes",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/method/authorizationTypes()",
+          "type" : "java.util.List<org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.common.enums.AuthorizationType>",
+          "displayedType" : "List<AuthorizationType>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 223,
+            "startColumn" : 40,
+            "endLine" : 223,
+            "endColumn" : 58
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)" : {
+          "name" : "permissionCheck",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)",
+          "type" : "boolean",
+          "displayedType" : "boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 228,
+            "startColumn" : 24,
+            "endLine" : 228,
+            "endColumn" : 39
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 228,
+              "startColumn" : 44,
+              "endLine" : 228,
+              "endColumn" : 50
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          }, {
+            "name" : "url",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/url",
+            "type" : "java.lang.String",
+            "displayedType" : "String",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 228,
+              "startColumn" : 59,
+              "endLine" : 228,
+              "endColumn" : 62
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 228,
+              "startColumn" : 71,
+              "endLine" : 228,
+              "endColumn" : 77
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)" : {
+          "name" : "listAuthorizedResourceIds",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)",
+          "type" : "java.util.Set<java.lang.Integer>",
+          "displayedType" : "Set<Integer>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 233,
+            "startColumn" : 29,
+            "endLine" : 233,
+            "endColumn" : 54
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 233,
+              "startColumn" : 59,
+              "endLine" : 233,
+              "endColumn" : 65
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 233,
+              "startColumn" : 74,
+              "endLine" : 233,
+              "endColumn" : 80
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.K8sNamespaceResourcePermissionCheck"
+        }
+      },
+      "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/permission/ResourcePermissionCheckServiceImpl.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl$ResourceAcquisitionAndPermissionCheck<java.lang.Integer>", "java.lang.Integer" ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck" : {
+      "name" : "DataSourceResourcePermissionCheck",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 391,
+        "startColumn" : 19,
+        "endLine" : 391,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/memberField/dataSourceMapper" : {
+          "name" : "dataSourceMapper",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/memberField/dataSourceMapper",
+          "type" : "org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.dao.mapper.DataSourceMapper",
+          "displayedType" : "DataSourceMapper",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 393,
+            "startColumn" : 40,
+            "endLine" : 393,
+            "endColumn" : 56
+          },
+          "modifiers" : [ "PRIVATE", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/method/authorizationTypes()" : {
+          "name" : "authorizationTypes",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/method/authorizationTypes()",
+          "type" : "java.util.List<org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.common.enums.AuthorizationType>",
+          "displayedType" : "List<AuthorizationType>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 400,
+            "startColumn" : 40,
+            "endLine" : 400,
+            "endColumn" : 58
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)" : {
+          "name" : "permissionCheck",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)",
+          "type" : "boolean",
+          "displayedType" : "boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 405,
+            "startColumn" : 24,
+            "endLine" : 405,
+            "endColumn" : 39
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 405,
+              "startColumn" : 44,
+              "endLine" : 405,
+              "endColumn" : 50
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          }, {
+            "name" : "url",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/url",
+            "type" : "java.lang.String",
+            "displayedType" : "String",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 405,
+              "startColumn" : 59,
+              "endLine" : 405,
+              "endColumn" : 62
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 405,
+              "startColumn" : 71,
+              "endLine" : 405,
+              "endColumn" : 77
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)" : {
+          "name" : "listAuthorizedResourceIds",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)",
+          "type" : "java.util.Set<java.lang.Integer>",
+          "displayedType" : "Set<Integer>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 410,
+            "startColumn" : 29,
+            "endLine" : 410,
+            "endColumn" : 54
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 410,
+              "startColumn" : 59,
+              "endLine" : 410,
+              "endColumn" : 65
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 410,
+              "startColumn" : 74,
+              "endLine" : 410,
+              "endColumn" : 80
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.DataSourceResourcePermissionCheck"
+        }
+      },
+      "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/permission/ResourcePermissionCheckServiceImpl.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl$ResourceAcquisitionAndPermissionCheck<java.lang.Integer>", "java.lang.Integer" ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck" : {
+      "name" : "AlertPluginInstanceResourcePermissionCheck",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 303,
+        "startColumn" : 19,
+        "endLine" : 303,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/memberField/alertPluginInstanceMapper" : {
+          "name" : "alertPluginInstanceMapper",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/memberField/alertPluginInstanceMapper",
+          "type" : "org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.dao.mapper.AlertPluginInstanceMapper",
+          "displayedType" : "AlertPluginInstanceMapper",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 307,
+            "startColumn" : 49,
+            "endLine" : 307,
+            "endColumn" : 74
+          },
+          "modifiers" : [ "PRIVATE", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)" : {
+          "name" : "listAuthorizedResourceIds",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)",
+          "type" : "java.util.Set<java.lang.Integer>",
+          "displayedType" : "Set<Integer>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 324,
+            "startColumn" : 29,
+            "endLine" : 324,
+            "endColumn" : 54
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 324,
+              "startColumn" : 59,
+              "endLine" : 324,
+              "endColumn" : 65
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 324,
+              "startColumn" : 74,
+              "endLine" : 324,
+              "endColumn" : 80
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)" : {
+          "name" : "permissionCheck",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)",
+          "type" : "boolean",
+          "displayedType" : "boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 319,
+            "startColumn" : 24,
+            "endLine" : 319,
+            "endColumn" : 39
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 319,
+              "startColumn" : 44,
+              "endLine" : 319,
+              "endColumn" : 50
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          }, {
+            "name" : "url",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/url",
+            "type" : "java.lang.String",
+            "displayedType" : "String",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 319,
+              "startColumn" : 59,
+              "endLine" : 319,
+              "endColumn" : 62
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 319,
+              "startColumn" : 71,
+              "endLine" : 319,
+              "endColumn" : 77
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/method/authorizationTypes()" : {
+          "name" : "authorizationTypes",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck/method/authorizationTypes()",
+          "type" : "java.util.List<org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.common.enums.AuthorizationType>",
+          "displayedType" : "List<AuthorizationType>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 314,
+            "startColumn" : 40,
+            "endLine" : 314,
+            "endColumn" : 58
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AlertPluginInstanceResourcePermissionCheck"
+        }
+      },
+      "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/permission/ResourcePermissionCheckServiceImpl.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl$ResourceAcquisitionAndPermissionCheck<java.lang.Integer>", "java.lang.Integer" ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck" : {
+      "name" : "AccessTokenResourcePermissionCheck",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 420,
+        "startColumn" : 19,
+        "endLine" : 420,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/memberField/accessTokenMapper" : {
+          "name" : "accessTokenMapper",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/memberField/accessTokenMapper",
+          "type" : "org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.dao.mapper.AccessTokenMapper",
+          "displayedType" : "AccessTokenMapper",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 422,
+            "startColumn" : 41,
+            "endLine" : 422,
+            "endColumn" : 58
+          },
+          "modifiers" : [ "PRIVATE", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/method/authorizationTypes()" : {
+          "name" : "authorizationTypes",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/method/authorizationTypes()",
+          "type" : "java.util.List<org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.common.enums.AuthorizationType>",
+          "displayedType" : "List<AuthorizationType>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 429,
+            "startColumn" : 40,
+            "endLine" : 429,
+            "endColumn" : 58
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)" : {
+          "name" : "listAuthorizedResourceIds",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)",
+          "type" : "java.util.Set<java.lang.Integer>",
+          "displayedType" : "Set<Integer>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 439,
+            "startColumn" : 29,
+            "endLine" : 439,
+            "endColumn" : 54
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 439,
+              "startColumn" : 59,
+              "endLine" : 439,
+              "endColumn" : 65
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 439,
+              "startColumn" : 74,
+              "endLine" : 439,
+              "endColumn" : 80
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)" : {
+          "name" : "permissionCheck",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)",
+          "type" : "boolean",
+          "displayedType" : "boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 434,
+            "startColumn" : 24,
+            "endLine" : 434,
+            "endColumn" : 39
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 434,
+              "startColumn" : 44,
+              "endLine" : 434,
+              "endColumn" : 50
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          }, {
+            "name" : "url",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/url",
+            "type" : "java.lang.String",
+            "displayedType" : "String",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 434,
+              "startColumn" : 59,
+              "endLine" : 434,
+              "endColumn" : 62
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 434,
+              "startColumn" : 71,
+              "endLine" : 434,
+              "endColumn" : 77
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.AccessTokenResourcePermissionCheck"
+        }
+      },
+      "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/permission/ResourcePermissionCheckServiceImpl.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl$ResourceAcquisitionAndPermissionCheck<java.lang.Integer>", "java.lang.Integer" ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck" : {
+      "name" : "WorkerGroupResourcePermissionCheck",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 274,
+        "startColumn" : 19,
+        "endLine" : 274,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/memberField/workerGroupMapper" : {
+          "name" : "workerGroupMapper",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/memberField/workerGroupMapper",
+          "type" : "org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.dao.mapper.WorkerGroupMapper",
+          "displayedType" : "WorkerGroupMapper",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 276,
+            "startColumn" : 41,
+            "endLine" : 276,
+            "endColumn" : 58
+          },
+          "modifiers" : [ "PRIVATE", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)" : {
+          "name" : "permissionCheck",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)",
+          "type" : "boolean",
+          "displayedType" : "boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 288,
+            "startColumn" : 24,
+            "endLine" : 288,
+            "endColumn" : 39
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 288,
+              "startColumn" : 44,
+              "endLine" : 288,
+              "endColumn" : 50
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          }, {
+            "name" : "url",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/url",
+            "type" : "java.lang.String",
+            "displayedType" : "String",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 288,
+              "startColumn" : 59,
+              "endLine" : 288,
+              "endColumn" : 62
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 288,
+              "startColumn" : 71,
+              "endLine" : 288,
+              "endColumn" : 77
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)" : {
+          "name" : "listAuthorizedResourceIds",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)",
+          "type" : "java.util.Set<java.lang.Integer>",
+          "displayedType" : "Set<Integer>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 293,
+            "startColumn" : 29,
+            "endLine" : 293,
+            "endColumn" : 54
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 293,
+              "startColumn" : 59,
+              "endLine" : 293,
+              "endColumn" : 65
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 293,
+              "startColumn" : 74,
+              "endLine" : 293,
+              "endColumn" : 80
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/method/authorizationTypes()" : {
+          "name" : "authorizationTypes",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck/method/authorizationTypes()",
+          "type" : "java.util.List<org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.common.enums.AuthorizationType>",
+          "displayedType" : "List<AuthorizationType>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 283,
+            "startColumn" : 40,
+            "endLine" : 283,
+            "endColumn" : 58
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.WorkerGroupResourcePermissionCheck"
+        }
+      },
+      "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/permission/ResourcePermissionCheckServiceImpl.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl$ResourceAcquisitionAndPermissionCheck<java.lang.Integer>", "java.lang.Integer" ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck" : {
+      "name" : "TenantResourcePermissionCheck",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 362,
+        "startColumn" : 19,
+        "endLine" : 362,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/memberField/tenantMapper" : {
+          "name" : "tenantMapper",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/memberField/tenantMapper",
+          "type" : "org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.dao.mapper.TenantMapper",
+          "displayedType" : "TenantMapper",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 364,
+            "startColumn" : 36,
+            "endLine" : 364,
+            "endColumn" : 48
+          },
+          "modifiers" : [ "PRIVATE", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)" : {
+          "name" : "permissionCheck",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)",
+          "type" : "boolean",
+          "displayedType" : "boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 376,
+            "startColumn" : 24,
+            "endLine" : 376,
+            "endColumn" : 39
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 376,
+              "startColumn" : 44,
+              "endLine" : 376,
+              "endColumn" : 50
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          }, {
+            "name" : "url",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/url",
+            "type" : "java.lang.String",
+            "displayedType" : "String",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 376,
+              "startColumn" : 59,
+              "endLine" : 376,
+              "endColumn" : 62
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 376,
+              "startColumn" : 71,
+              "endLine" : 376,
+              "endColumn" : 77
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/method/permissionCheck(int userId, java.lang.String url, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)" : {
+          "name" : "listAuthorizedResourceIds",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)",
+          "type" : "java.util.Set<java.lang.Integer>",
+          "displayedType" : "Set<Integer>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 381,
+            "startColumn" : 29,
+            "endLine" : 381,
+            "endColumn" : 54
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 381,
+              "startColumn" : 59,
+              "endLine" : 381,
+              "endColumn" : 65
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 381,
+              "startColumn" : 74,
+              "endLine" : 381,
+              "endColumn" : 80
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/method/authorizationTypes()" : {
+          "name" : "authorizationTypes",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck/method/authorizationTypes()",
+          "type" : "java.util.List<org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.common.enums.AuthorizationType>",
+          "displayedType" : "List<AuthorizationType>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 371,
+            "startColumn" : 40,
+            "endLine" : 371,
+            "endColumn" : 58
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.TenantResourcePermissionCheck"
+        }
+      },
+      "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/permission/ResourcePermissionCheckServiceImpl.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl$ResourceAcquisitionAndPermissionCheck<java.lang.Integer>", "java.lang.Integer" ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : {
+    "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck" : {
+      "name" : "ResourceAcquisitionAndPermissionCheck",
+      "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck",
+      "type" : "interface",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 445,
+        "startColumn" : 5,
+        "endLine" : 445,
+        "endColumn" : 14
+      },
+      "modifiers" : [ "ABSTRACT", "STATIC" ],
+      "fields" : { },
+      "methods" : {
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)" : {
+          "name" : "listAuthorizedResourceIds",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)",
+          "type" : "java.util.Set<T>",
+          "displayedType" : "Set<T>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 460,
+            "startColumn" : 16,
+            "endLine" : 460,
+            "endColumn" : 41
+          },
+          "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 460,
+              "startColumn" : 46,
+              "endLine" : 460,
+              "endColumn" : 52
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 460,
+              "startColumn" : 61,
+              "endLine" : 460,
+              "endColumn" : 67
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck/method/listAuthorizedResourceIds(int userId, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck/method/authorizationTypes()" : {
+          "name" : "authorizationTypes",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck/method/authorizationTypes()",
+          "type" : "java.util.List<org.apache.dolphinscheduler.api.permission.org.apache.dolphinscheduler.common.enums.AuthorizationType>",
+          "displayedType" : "List<AuthorizationType>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 452,
+            "startColumn" : 33,
+            "endLine" : 452,
+            "endColumn" : 51
+          },
+          "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck"
+        },
+        "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)" : {
+          "name" : "permissionCheck",
+          "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)",
+          "type" : "boolean",
+          "displayedType" : "boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 468,
+            "startColumn" : 17,
+            "endLine" : 468,
+            "endColumn" : 32
+          },
+          "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "userId",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)/parameter/userId",
+            "type" : "int",
+            "displayedType" : "int",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 468,
+              "startColumn" : 37,
+              "endLine" : 468,
+              "endColumn" : 43
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)"
+          }, {
+            "name" : "permissionKey",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)/parameter/permissionKey",
+            "type" : "java.lang.String",
+            "displayedType" : "String",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 468,
+              "startColumn" : 52,
+              "endLine" : 468,
+              "endColumn" : 65
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)"
+          }, {
+            "name" : "logger",
+            "key" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)/parameter/logger",
+            "type" : "org.slf4j.Logger",
+            "displayedType" : "Logger",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 468,
+              "startColumn" : 74,
+              "endLine" : 468,
+              "endColumn" : 80
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck/method/permissionCheck(int userId, java.lang.String permissionKey, org.slf4j.Logger logger)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl.ResourceAcquisitionAndPermissionCheck"
+        }
+      },
+      "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/permission/ResourcePermissionCheckServiceImpl.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckServiceImpl",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  }
+}

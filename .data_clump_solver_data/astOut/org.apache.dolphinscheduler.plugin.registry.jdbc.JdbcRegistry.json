@@ -1,0 +1,555 @@
+{
+  "name" : "JdbcRegistry",
+  "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 51,
+    "startColumn" : 14,
+    "endLine" : 51,
+    "endColumn" : 19
+  },
+  "modifiers" : [ "PUBLIC", "FINAL" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/memberField/jdbcRegistryClient" : {
+      "name" : "jdbcRegistryClient",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/memberField/jdbcRegistryClient",
+      "type" : "org.apache.dolphinscheduler.plugin.registry.jdbc.org.apache.dolphinscheduler.plugin.registry.jdbc.client.JdbcRegistryClient",
+      "displayedType" : "JdbcRegistryClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 38,
+        "endLine" : 54,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/memberField/jdbcRegistryProperties" : {
+      "name" : "jdbcRegistryProperties",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/memberField/jdbcRegistryProperties",
+      "type" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistryProperties",
+      "displayedType" : "JdbcRegistryProperties",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 42,
+        "endLine" : 53,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/memberField/jdbcRegistryServer" : {
+      "name" : "jdbcRegistryServer",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/memberField/jdbcRegistryServer",
+      "type" : "org.apache.dolphinscheduler.plugin.registry.jdbc.org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer",
+      "displayedType" : "IJdbcRegistryServer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 39,
+        "endLine" : 56,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/releaseLock(java.lang.String key)" : {
+      "name" : "releaseLock",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/releaseLock(java.lang.String key)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 255,
+        "startColumn" : 20,
+        "endLine" : 255,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/releaseLock(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 255,
+          "startColumn" : 39,
+          "endLine" : 255,
+          "endColumn" : 42
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/releaseLock(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/isConnected()" : {
+      "name" : "isConnected",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/isConnected()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 74,
+        "startColumn" : 20,
+        "endLine" : 74,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/get(java.lang.String key)" : {
+      "name" : "get",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/get(java.lang.String key)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 171,
+        "startColumn" : 19,
+        "endLine" : 171,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/get(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 171,
+          "startColumn" : 30,
+          "endLine" : 171,
+          "endColumn" : 33
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/get(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/acquireLock(java.lang.String key)" : {
+      "name" : "acquireLock",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/acquireLock(java.lang.String key)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 232,
+        "startColumn" : 20,
+        "endLine" : 232,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/acquireLock(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 232,
+          "startColumn" : 39,
+          "endLine" : 232,
+          "endColumn" : 42
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/acquireLock(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/acquireLock(java.lang.String key, long timeout)" : {
+      "name" : "acquireLock",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/acquireLock(java.lang.String key, long timeout)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 244,
+        "startColumn" : 20,
+        "endLine" : 244,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/acquireLock(java.lang.String key, long timeout)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 244,
+          "startColumn" : 39,
+          "endLine" : 244,
+          "endColumn" : 42
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/acquireLock(java.lang.String key, long timeout)"
+      }, {
+        "name" : "timeout",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/acquireLock(java.lang.String key, long timeout)/parameter/timeout",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 244,
+          "startColumn" : 49,
+          "endLine" : 244,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/acquireLock(java.lang.String key, long timeout)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/connectUntilTimeout(java.time.Duration timeout)" : {
+      "name" : "connectUntilTimeout",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/connectUntilTimeout(java.time.Duration timeout)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 17,
+        "endLine" : 79,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "timeout",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/connectUntilTimeout(java.time.Duration timeout)/parameter/timeout",
+        "type" : "java.time.Duration",
+        "displayedType" : "Duration",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 79,
+          "startColumn" : 55,
+          "endLine" : 79,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/connectUntilTimeout(java.time.Duration timeout)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/exists(java.lang.String key)" : {
+      "name" : "exists",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/exists(java.lang.String key)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 223,
+        "startColumn" : 20,
+        "endLine" : 223,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/exists(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 223,
+          "startColumn" : 34,
+          "endLine" : 223,
+          "endColumn" : 37
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/exists(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.plugin.registry.jdbc.org.apache.dolphinscheduler.registry.api.SubscribeListener listener)" : {
+      "name" : "subscribe",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.plugin.registry.jdbc.org.apache.dolphinscheduler.registry.api.SubscribeListener listener)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 100,
+        "startColumn" : 17,
+        "endLine" : 100,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "path",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.plugin.registry.jdbc.org.apache.dolphinscheduler.registry.api.SubscribeListener listener)/parameter/path",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 100,
+          "startColumn" : 34,
+          "endLine" : 100,
+          "endColumn" : 38
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.plugin.registry.jdbc.org.apache.dolphinscheduler.registry.api.SubscribeListener listener)"
+      }, {
+        "name" : "listener",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.plugin.registry.jdbc.org.apache.dolphinscheduler.registry.api.SubscribeListener listener)/parameter/listener",
+        "type" : "org.apache.dolphinscheduler.plugin.registry.jdbc.org.apache.dolphinscheduler.registry.api.SubscribeListener",
+        "displayedType" : "SubscribeListener",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 100,
+          "startColumn" : 58,
+          "endLine" : 100,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.plugin.registry.jdbc.org.apache.dolphinscheduler.registry.api.SubscribeListener listener)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 261,
+        "startColumn" : 17,
+        "endLine" : 261,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/put(java.lang.String key, java.lang.String value, boolean deleteOnDisconnect)" : {
+      "name" : "put",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/put(java.lang.String key, java.lang.String value, boolean deleteOnDisconnect)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 188,
+        "startColumn" : 17,
+        "endLine" : 188,
+        "endColumn" : 20
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/put(java.lang.String key, java.lang.String value, boolean deleteOnDisconnect)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 188,
+          "startColumn" : 28,
+          "endLine" : 188,
+          "endColumn" : 31
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/put(java.lang.String key, java.lang.String value, boolean deleteOnDisconnect)"
+      }, {
+        "name" : "value",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/put(java.lang.String key, java.lang.String value, boolean deleteOnDisconnect)/parameter/value",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 188,
+          "startColumn" : 40,
+          "endLine" : 188,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/put(java.lang.String key, java.lang.String value, boolean deleteOnDisconnect)"
+      }, {
+        "name" : "deleteOnDisconnect",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/put(java.lang.String key, java.lang.String value, boolean deleteOnDisconnect)/parameter/deleteOnDisconnect",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 188,
+          "startColumn" : 55,
+          "endLine" : 188,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/put(java.lang.String key, java.lang.String value, boolean deleteOnDisconnect)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/addConnectionStateListener(org.apache.dolphinscheduler.plugin.registry.jdbc.org.apache.dolphinscheduler.registry.api.ConnectionListener listener)" : {
+      "name" : "addConnectionStateListener",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/addConnectionStateListener(org.apache.dolphinscheduler.plugin.registry.jdbc.org.apache.dolphinscheduler.registry.api.ConnectionListener listener)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 149,
+        "startColumn" : 17,
+        "endLine" : 149,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "listener",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/addConnectionStateListener(org.apache.dolphinscheduler.plugin.registry.jdbc.org.apache.dolphinscheduler.registry.api.ConnectionListener listener)/parameter/listener",
+        "type" : "org.apache.dolphinscheduler.plugin.registry.jdbc.org.apache.dolphinscheduler.registry.api.ConnectionListener",
+        "displayedType" : "ConnectionListener",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 149,
+          "startColumn" : 63,
+          "endLine" : 149,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/addConnectionStateListener(org.apache.dolphinscheduler.plugin.registry.jdbc.org.apache.dolphinscheduler.registry.api.ConnectionListener listener)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/start()" : {
+      "name" : "start",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/start()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 17,
+        "endLine" : 66,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/delete(java.lang.String key)" : {
+      "name" : "delete",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/delete(java.lang.String key)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 198,
+        "startColumn" : 17,
+        "endLine" : 198,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/delete(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 198,
+          "startColumn" : 31,
+          "endLine" : 198,
+          "endColumn" : 34
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/delete(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/children(java.lang.String key)" : {
+      "name" : "children",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/children(java.lang.String key)",
+      "type" : "java.util.Collection<java.lang.String>",
+      "displayedType" : "Collection<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 207,
+        "startColumn" : 31,
+        "endLine" : 207,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/children(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 207,
+          "startColumn" : 47,
+          "endLine" : 207,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry/method/children(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.JdbcRegistry"
+    }
+  },
+  "file_path" : "dolphinscheduler-registry/dolphinscheduler-registry-plugins/dolphinscheduler-registry-jdbc/src/main/java/org/apache/dolphinscheduler/plugin/registry/jdbc/JdbcRegistry.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.plugin.registry.jdbc.org.apache.dolphinscheduler.registry.api.Registry" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

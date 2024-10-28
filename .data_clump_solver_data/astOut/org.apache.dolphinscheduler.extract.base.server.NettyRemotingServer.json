@@ -1,0 +1,265 @@
+{
+  "name" : "NettyRemotingServer",
+  "key" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 49,
+    "startColumn" : 1,
+    "endLine" : 49,
+    "endColumn" : 6
+  },
+  "modifiers" : [ ],
+  "fields" : {
+    "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/memberField/serverName" : {
+      "name" : "serverName",
+      "key" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/memberField/serverName",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 26,
+        "endLine" : 54,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer"
+    },
+    "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/memberField/channelHandler" : {
+      "name" : "channelHandler",
+      "key" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/memberField/channelHandler",
+      "type" : "org.apache.dolphinscheduler.extract.base.server.JdkDynamicServerHandler",
+      "displayedType" : "JdkDynamicServerHandler",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 43,
+        "endLine" : 65,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer"
+    },
+    "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/memberField/workGroup" : {
+      "name" : "workGroup",
+      "key" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/memberField/workGroup",
+      "type" : "org.apache.dolphinscheduler.extract.base.server.io.netty.channel.EventLoopGroup",
+      "displayedType" : "EventLoopGroup",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 34,
+        "endLine" : 61,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer"
+    },
+    "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/memberField/serverBootstrap" : {
+      "name" : "serverBootstrap",
+      "key" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/memberField/serverBootstrap",
+      "type" : "org.apache.dolphinscheduler.extract.base.server.io.netty.bootstrap.ServerBootstrap",
+      "displayedType" : "ServerBootstrap",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 35,
+        "endLine" : 51,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer"
+    },
+    "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/memberField/methodInvokerExecutor" : {
+      "name" : "methodInvokerExecutor",
+      "key" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/memberField/methodInvokerExecutor",
+      "type" : "java.util.concurrent.ExecutorService",
+      "displayedType" : "ExecutorService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 35,
+        "endLine" : 57,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer"
+    },
+    "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/memberField/isStarted" : {
+      "name" : "isStarted",
+      "key" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/memberField/isStarted",
+      "type" : "java.util.concurrent.atomic.AtomicBoolean",
+      "displayedType" : "AtomicBoolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 33,
+        "endLine" : 67,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer"
+    },
+    "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/memberField/bossGroup" : {
+      "name" : "bossGroup",
+      "key" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/memberField/bossGroup",
+      "type" : "org.apache.dolphinscheduler.extract.base.server.io.netty.channel.EventLoopGroup",
+      "displayedType" : "EventLoopGroup",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 34,
+        "endLine" : 59,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer"
+    },
+    "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/memberField/serverConfig" : {
+      "name" : "serverConfig",
+      "key" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/memberField/serverConfig",
+      "type" : "org.apache.dolphinscheduler.extract.base.server.org.apache.dolphinscheduler.extract.base.config.NettyServerConfig",
+      "displayedType" : "NettyServerConfig",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 37,
+        "endLine" : 63,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 145,
+        "startColumn" : 10,
+        "endLine" : 145,
+        "endColumn" : 15
+      },
+      "modifiers" : [ ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer"
+    },
+    "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/method/registerMethodInvoker(org.apache.dolphinscheduler.extract.base.server.ServerMethodInvoker methodInvoker)" : {
+      "name" : "registerMethodInvoker",
+      "key" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/method/registerMethodInvoker(org.apache.dolphinscheduler.extract.base.server.ServerMethodInvoker methodInvoker)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 141,
+        "startColumn" : 10,
+        "endLine" : 141,
+        "endColumn" : 31
+      },
+      "modifiers" : [ ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "methodInvoker",
+        "key" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/method/registerMethodInvoker(org.apache.dolphinscheduler.extract.base.server.ServerMethodInvoker methodInvoker)/parameter/methodInvoker",
+        "type" : "org.apache.dolphinscheduler.extract.base.server.ServerMethodInvoker",
+        "displayedType" : "ServerMethodInvoker",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 141,
+          "startColumn" : 52,
+          "endLine" : 141,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/method/registerMethodInvoker(org.apache.dolphinscheduler.extract.base.server.ServerMethodInvoker methodInvoker)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer"
+    },
+    "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/method/initNettyChannel(org.apache.dolphinscheduler.extract.base.server.io.netty.channel.socket.SocketChannel ch)" : {
+      "name" : "initNettyChannel",
+      "key" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/method/initNettyChannel(org.apache.dolphinscheduler.extract.base.server.io.netty.channel.socket.SocketChannel ch)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 132,
+        "startColumn" : 18,
+        "endLine" : 132,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "ch",
+        "key" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/method/initNettyChannel(org.apache.dolphinscheduler.extract.base.server.io.netty.channel.socket.SocketChannel ch)/parameter/ch",
+        "type" : "org.apache.dolphinscheduler.extract.base.server.io.netty.channel.socket.SocketChannel",
+        "displayedType" : "SocketChannel",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 132,
+          "startColumn" : 49,
+          "endLine" : 132,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/method/initNettyChannel(org.apache.dolphinscheduler.extract.base.server.io.netty.channel.socket.SocketChannel ch)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer"
+    },
+    "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/method/start()" : {
+      "name" : "start",
+      "key" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer/method/start()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 10,
+        "endLine" : 88,
+        "endColumn" : 15
+      },
+      "modifiers" : [ ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.extract.base.server.NettyRemotingServer"
+    }
+  },
+  "file_path" : "dolphinscheduler-extract/dolphinscheduler-extract-base/src/main/java/org/apache/dolphinscheduler/extract/base/server/NettyRemotingServer.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

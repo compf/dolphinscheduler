@@ -1,0 +1,678 @@
+{
+  "name" : "HdfsStorageOperator",
+  "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 62,
+    "startColumn" : 8,
+    "endLine" : 62,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/memberField/hdfsProperties" : {
+      "name" : "hdfsProperties",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/memberField/hdfsProperties",
+      "type" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageProperties",
+      "displayedType" : "HdfsStorageProperties",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 41,
+        "endLine" : 64,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/memberField/configuration" : {
+      "name" : "configuration",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/memberField/configuration",
+      "type" : "org.apache.dolphinscheduler.plugin.storage.hdfs.org.apache.hadoop.conf.Configuration",
+      "displayedType" : "Configuration",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 27,
+        "endLine" : 66,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/memberField/fs" : {
+      "name" : "fs",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/memberField/fs",
+      "type" : "org.apache.dolphinscheduler.plugin.storage.hdfs.org.apache.hadoop.fs.FileSystem",
+      "displayedType" : "FileSystem",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 24,
+        "endLine" : 67,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/getStorageBaseDirectory()" : {
+      "name" : "getStorageBaseDirectory",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/getStorageBaseDirectory()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 127,
+        "startColumn" : 19,
+        "endLine" : 127,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/createStorageDir(java.lang.String directoryAbsolutePath)" : {
+      "name" : "createStorageDir",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/createStorageDir(java.lang.String directoryAbsolutePath)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 148,
+        "startColumn" : 17,
+        "endLine" : 148,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "directoryAbsolutePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/createStorageDir(java.lang.String directoryAbsolutePath)/parameter/directoryAbsolutePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 148,
+          "startColumn" : 41,
+          "endLine" : 148,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/createStorageDir(java.lang.String directoryAbsolutePath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/transformFileStatusToResourceMetadata(org.apache.dolphinscheduler.plugin.storage.hdfs.org.apache.hadoop.fs.FileStatus fileStatus)" : {
+      "name" : "transformFileStatusToResourceMetadata",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/transformFileStatusToResourceMetadata(org.apache.dolphinscheduler.plugin.storage.hdfs.org.apache.hadoop.fs.FileStatus fileStatus)",
+      "type" : "org.apache.dolphinscheduler.plugin.storage.hdfs.org.apache.dolphinscheduler.plugin.storage.api.StorageEntity",
+      "displayedType" : "StorageEntity",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 267,
+        "startColumn" : 27,
+        "endLine" : 267,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "fileStatus",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/transformFileStatusToResourceMetadata(org.apache.dolphinscheduler.plugin.storage.hdfs.org.apache.hadoop.fs.FileStatus fileStatus)/parameter/fileStatus",
+        "type" : "org.apache.dolphinscheduler.plugin.storage.hdfs.org.apache.hadoop.fs.FileStatus",
+        "displayedType" : "FileStatus",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 267,
+          "startColumn" : 76,
+          "endLine" : 267,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/transformFileStatusToResourceMetadata(org.apache.dolphinscheduler.plugin.storage.hdfs.org.apache.hadoop.fs.FileStatus fileStatus)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/exists(java.lang.String resourceAbsolutePath)" : {
+      "name" : "exists",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/exists(java.lang.String resourceAbsolutePath)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 205,
+        "startColumn" : 20,
+        "endLine" : 205,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "resourceAbsolutePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/exists(java.lang.String resourceAbsolutePath)/parameter/resourceAbsolutePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 205,
+          "startColumn" : 34,
+          "endLine" : 205,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/exists(java.lang.String resourceAbsolutePath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/listFileStorageEntityRecursively(java.lang.String resourceAbsolutePath)" : {
+      "name" : "listFileStorageEntityRecursively",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/listFileStorageEntityRecursively(java.lang.String resourceAbsolutePath)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.plugin.storage.hdfs.org.apache.dolphinscheduler.plugin.storage.api.StorageEntity>",
+      "displayedType" : "List<StorageEntity>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 225,
+        "startColumn" : 32,
+        "endLine" : 225,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "resourceAbsolutePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/listFileStorageEntityRecursively(java.lang.String resourceAbsolutePath)/parameter/resourceAbsolutePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 225,
+          "startColumn" : 72,
+          "endLine" : 225,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/listFileStorageEntityRecursively(java.lang.String resourceAbsolutePath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 256,
+        "startColumn" : 17,
+        "endLine" : 256,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/init()" : {
+      "name" : "init",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/init()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 90,
+        "startColumn" : 18,
+        "endLine" : 90,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/initHdfsPath()" : {
+      "name" : "initHdfsPath",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/initHdfsPath()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 18,
+        "endLine" : 78,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)" : {
+      "name" : "copy",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 181,
+        "startColumn" : 17,
+        "endLine" : 181,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "srcPath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)/parameter/srcPath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 181,
+          "startColumn" : 29,
+          "endLine" : 181,
+          "endColumn" : 36
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)"
+      }, {
+        "name" : "dstPath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)/parameter/dstPath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 181,
+          "startColumn" : 45,
+          "endLine" : 181,
+          "endColumn" : 52
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)"
+      }, {
+        "name" : "deleteSource",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)/parameter/deleteSource",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 181,
+          "startColumn" : 62,
+          "endLine" : 181,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)"
+      }, {
+        "name" : "overwrite",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)/parameter/overwrite",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 181,
+          "startColumn" : 84,
+          "endLine" : 181,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/download(java.lang.String srcHdfsFilePath, java.lang.String dstFile, boolean overwrite)" : {
+      "name" : "download",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/download(java.lang.String srcHdfsFilePath, java.lang.String dstFile, boolean overwrite)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 158,
+        "startColumn" : 17,
+        "endLine" : 158,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "srcHdfsFilePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/download(java.lang.String srcHdfsFilePath, java.lang.String dstFile, boolean overwrite)/parameter/srcHdfsFilePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 158,
+          "startColumn" : 33,
+          "endLine" : 158,
+          "endColumn" : 48
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/download(java.lang.String srcHdfsFilePath, java.lang.String dstFile, boolean overwrite)"
+      }, {
+        "name" : "dstFile",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/download(java.lang.String srcHdfsFilePath, java.lang.String dstFile, boolean overwrite)/parameter/dstFile",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 158,
+          "startColumn" : 57,
+          "endLine" : 158,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/download(java.lang.String srcHdfsFilePath, java.lang.String dstFile, boolean overwrite)"
+      }, {
+        "name" : "overwrite",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/download(java.lang.String srcHdfsFilePath, java.lang.String dstFile, boolean overwrite)/parameter/overwrite",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 158,
+          "startColumn" : 74,
+          "endLine" : 158,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/download(java.lang.String srcHdfsFilePath, java.lang.String dstFile, boolean overwrite)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/fetchFileContent(java.lang.String hdfsFilePath, int skipLineNums, int limit)" : {
+      "name" : "fetchFileContent",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/fetchFileContent(java.lang.String hdfsFilePath, int skipLineNums, int limit)",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 134,
+        "startColumn" : 25,
+        "endLine" : 134,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "hdfsFilePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/fetchFileContent(java.lang.String hdfsFilePath, int skipLineNums, int limit)/parameter/hdfsFilePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 134,
+          "startColumn" : 49,
+          "endLine" : 134,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/fetchFileContent(java.lang.String hdfsFilePath, int skipLineNums, int limit)"
+      }, {
+        "name" : "skipLineNums",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/fetchFileContent(java.lang.String hdfsFilePath, int skipLineNums, int limit)/parameter/skipLineNums",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 134,
+          "startColumn" : 67,
+          "endLine" : 134,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/fetchFileContent(java.lang.String hdfsFilePath, int skipLineNums, int limit)"
+      }, {
+        "name" : "limit",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/fetchFileContent(java.lang.String hdfsFilePath, int skipLineNums, int limit)/parameter/limit",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 134,
+          "startColumn" : 85,
+          "endLine" : 134,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/fetchFileContent(java.lang.String hdfsFilePath, int skipLineNums, int limit)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/listStorageEntity(java.lang.String resourceAbsolutePath)" : {
+      "name" : "listStorageEntity",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/listStorageEntity(java.lang.String resourceAbsolutePath)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.plugin.storage.hdfs.org.apache.dolphinscheduler.plugin.storage.api.StorageEntity>",
+      "displayedType" : "List<StorageEntity>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 212,
+        "startColumn" : 32,
+        "endLine" : 212,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "resourceAbsolutePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/listStorageEntity(java.lang.String resourceAbsolutePath)/parameter/resourceAbsolutePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 212,
+          "startColumn" : 57,
+          "endLine" : 212,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/listStorageEntity(java.lang.String resourceAbsolutePath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/upload(java.lang.String srcAbsoluteFilePath, java.lang.String dstAbsoluteFilePath, boolean deleteSource, boolean overwrite)" : {
+      "name" : "upload",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/upload(java.lang.String srcAbsoluteFilePath, java.lang.String dstAbsoluteFilePath, boolean deleteSource, boolean overwrite)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 187,
+        "startColumn" : 17,
+        "endLine" : 187,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "srcAbsoluteFilePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/upload(java.lang.String srcAbsoluteFilePath, java.lang.String dstAbsoluteFilePath, boolean deleteSource, boolean overwrite)/parameter/srcAbsoluteFilePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 187,
+          "startColumn" : 31,
+          "endLine" : 187,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/upload(java.lang.String srcAbsoluteFilePath, java.lang.String dstAbsoluteFilePath, boolean deleteSource, boolean overwrite)"
+      }, {
+        "name" : "dstAbsoluteFilePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/upload(java.lang.String srcAbsoluteFilePath, java.lang.String dstAbsoluteFilePath, boolean deleteSource, boolean overwrite)/parameter/dstAbsoluteFilePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 188,
+          "startColumn" : 31,
+          "endLine" : 188,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/upload(java.lang.String srcAbsoluteFilePath, java.lang.String dstAbsoluteFilePath, boolean deleteSource, boolean overwrite)"
+      }, {
+        "name" : "deleteSource",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/upload(java.lang.String srcAbsoluteFilePath, java.lang.String dstAbsoluteFilePath, boolean deleteSource, boolean overwrite)/parameter/deleteSource",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 189,
+          "startColumn" : 32,
+          "endLine" : 189,
+          "endColumn" : 44
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/upload(java.lang.String srcAbsoluteFilePath, java.lang.String dstAbsoluteFilePath, boolean deleteSource, boolean overwrite)"
+      }, {
+        "name" : "overwrite",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/upload(java.lang.String srcAbsoluteFilePath, java.lang.String dstAbsoluteFilePath, boolean deleteSource, boolean overwrite)/parameter/overwrite",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 190,
+          "startColumn" : 32,
+          "endLine" : 190,
+          "endColumn" : 41
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/upload(java.lang.String srcAbsoluteFilePath, java.lang.String dstAbsoluteFilePath, boolean deleteSource, boolean overwrite)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/delete(java.lang.String resourceAbsolutePath, boolean recursive)" : {
+      "name" : "delete",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/delete(java.lang.String resourceAbsolutePath, boolean recursive)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 198,
+        "startColumn" : 17,
+        "endLine" : 198,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "resourceAbsolutePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/delete(java.lang.String resourceAbsolutePath, boolean recursive)/parameter/resourceAbsolutePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 198,
+          "startColumn" : 31,
+          "endLine" : 198,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/delete(java.lang.String resourceAbsolutePath, boolean recursive)"
+      }, {
+        "name" : "recursive",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/delete(java.lang.String resourceAbsolutePath, boolean recursive)/parameter/recursive",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 198,
+          "startColumn" : 61,
+          "endLine" : 198,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/delete(java.lang.String resourceAbsolutePath, boolean recursive)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/getStorageEntity(java.lang.String resourceAbsolutePath)" : {
+      "name" : "getStorageEntity",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/getStorageEntity(java.lang.String resourceAbsolutePath)",
+      "type" : "org.apache.dolphinscheduler.plugin.storage.hdfs.org.apache.dolphinscheduler.plugin.storage.api.StorageEntity",
+      "displayedType" : "StorageEntity",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 249,
+        "startColumn" : 26,
+        "endLine" : 249,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "resourceAbsolutePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/getStorageEntity(java.lang.String resourceAbsolutePath)/parameter/resourceAbsolutePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 249,
+          "startColumn" : 50,
+          "endLine" : 249,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator/method/getStorageEntity(java.lang.String resourceAbsolutePath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.hdfs.HdfsStorageOperator"
+    }
+  },
+  "file_path" : "dolphinscheduler-storage-plugin/dolphinscheduler-storage-hdfs/src/main/java/org/apache/dolphinscheduler/plugin/storage/hdfs/HdfsStorageOperator.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "java.io.Closeable", "org.apache.dolphinscheduler.plugin.storage.hdfs.org.apache.dolphinscheduler.plugin.storage.api.StorageOperator" ],
+  "extends_" : [ "org.apache.dolphinscheduler.plugin.storage.hdfs.org.apache.dolphinscheduler.plugin.storage.api.AbstractStorageOperator" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

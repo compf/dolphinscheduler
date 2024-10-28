@@ -1,0 +1,306 @@
+{
+  "name" : "TaskDefinitionDaoImpl",
+  "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 53,
+    "startColumn" : 8,
+    "endLine" : 53,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/memberField/workflowDefinitionMapper" : {
+      "name" : "workflowDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/memberField/workflowDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.dao.repository.impl.org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionMapper",
+      "displayedType" : "WorkflowDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 38,
+        "endLine" : 56,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl"
+    },
+    "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/memberField/workflowTaskRelationLogMapper" : {
+      "name" : "workflowTaskRelationLogMapper",
+      "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/memberField/workflowTaskRelationLogMapper",
+      "type" : "org.apache.dolphinscheduler.dao.repository.impl.org.apache.dolphinscheduler.dao.mapper.WorkflowTaskRelationLogMapper",
+      "displayedType" : "WorkflowTaskRelationLogMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 43,
+        "endLine" : 59,
+        "endColumn" : 72
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl"
+    },
+    "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/memberField/taskDefinitionLogMapper" : {
+      "name" : "taskDefinitionLogMapper",
+      "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/memberField/taskDefinitionLogMapper",
+      "type" : "org.apache.dolphinscheduler.dao.repository.impl.org.apache.dolphinscheduler.dao.mapper.TaskDefinitionLogMapper",
+      "displayedType" : "TaskDefinitionLogMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 37,
+        "endLine" : 62,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/getTaskDefinitionListByDefinition(long workflowDefinitionCode)" : {
+      "name" : "getTaskDefinitionListByDefinition",
+      "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/getTaskDefinitionListByDefinition(long workflowDefinitionCode)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.dao.repository.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition>",
+      "displayedType" : "List<TaskDefinition>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 33,
+        "endLine" : 69,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/getTaskDefinitionListByDefinition(long workflowDefinitionCode)/parameter/workflowDefinitionCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 69,
+          "startColumn" : 72,
+          "endLine" : 69,
+          "endColumn" : 94
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/getTaskDefinitionListByDefinition(long workflowDefinitionCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl"
+    },
+    "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/queryByCodes(java.util.Collection<java.lang.Long> taskDefinitionCodes)" : {
+      "name" : "queryByCodes",
+      "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/queryByCodes(java.util.Collection<java.lang.Long> taskDefinitionCodes)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.dao.repository.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition>",
+      "displayedType" : "List<TaskDefinition>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 111,
+        "startColumn" : 33,
+        "endLine" : 111,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskDefinitionCodes",
+        "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/queryByCodes(java.util.Collection<java.lang.Long> taskDefinitionCodes)/parameter/taskDefinitionCodes",
+        "type" : "java.util.Collection<java.lang.Long>",
+        "displayedType" : "Collection<Long>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 111,
+          "startColumn" : 63,
+          "endLine" : 111,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/queryByCodes(java.util.Collection<java.lang.Long> taskDefinitionCodes)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl"
+    },
+    "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/queryByCode(long taskCode)" : {
+      "name" : "queryByCode",
+      "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/queryByCode(long taskCode)",
+      "type" : "org.apache.dolphinscheduler.dao.repository.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition",
+      "displayedType" : "TaskDefinition",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 119,
+        "startColumn" : 27,
+        "endLine" : 119,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/queryByCode(long taskCode)/parameter/taskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 119,
+          "startColumn" : 44,
+          "endLine" : 119,
+          "endColumn" : 52
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/queryByCode(long taskCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl"
+    },
+    "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/findTaskDefinition(long taskCode, int taskDefinitionVersion)" : {
+      "name" : "findTaskDefinition",
+      "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/findTaskDefinition(long taskCode, int taskDefinitionVersion)",
+      "type" : "org.apache.dolphinscheduler.dao.repository.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition",
+      "displayedType" : "TaskDefinition",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 93,
+        "startColumn" : 27,
+        "endLine" : 93,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/findTaskDefinition(long taskCode, int taskDefinitionVersion)/parameter/taskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 93,
+          "startColumn" : 51,
+          "endLine" : 93,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/findTaskDefinition(long taskCode, int taskDefinitionVersion)"
+      }, {
+        "name" : "taskDefinitionVersion",
+        "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/findTaskDefinition(long taskCode, int taskDefinitionVersion)/parameter/taskDefinitionVersion",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 93,
+          "startColumn" : 65,
+          "endLine" : 93,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/findTaskDefinition(long taskCode, int taskDefinitionVersion)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl"
+    },
+    "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/deleteByWorkflowDefinitionCodeAndVersion(long workflowDefinitionCode, int workflowDefinitionVersion)" : {
+      "name" : "deleteByWorkflowDefinitionCodeAndVersion",
+      "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/deleteByWorkflowDefinitionCodeAndVersion(long workflowDefinitionCode, int workflowDefinitionVersion)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 17,
+        "endLine" : 98,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/deleteByWorkflowDefinitionCodeAndVersion(long workflowDefinitionCode, int workflowDefinitionVersion)/parameter/workflowDefinitionCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 98,
+          "startColumn" : 63,
+          "endLine" : 98,
+          "endColumn" : 85
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/deleteByWorkflowDefinitionCodeAndVersion(long workflowDefinitionCode, int workflowDefinitionVersion)"
+      }, {
+        "name" : "workflowDefinitionVersion",
+        "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/deleteByWorkflowDefinitionCodeAndVersion(long workflowDefinitionCode, int workflowDefinitionVersion)/parameter/workflowDefinitionVersion",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 98,
+          "startColumn" : 91,
+          "endLine" : 98,
+          "endColumn" : 116
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/deleteByWorkflowDefinitionCodeAndVersion(long workflowDefinitionCode, int workflowDefinitionVersion)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl"
+    },
+    "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/deleteByTaskDefinitionCodes(java.util.Set<java.lang.Long> needToDeleteTaskDefinitionCodes)" : {
+      "name" : "deleteByTaskDefinitionCodes",
+      "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/deleteByTaskDefinitionCodes(java.util.Set<java.lang.Long> needToDeleteTaskDefinitionCodes)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 103,
+        "startColumn" : 17,
+        "endLine" : 103,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "needToDeleteTaskDefinitionCodes",
+        "key" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/deleteByTaskDefinitionCodes(java.util.Set<java.lang.Long> needToDeleteTaskDefinitionCodes)/parameter/needToDeleteTaskDefinitionCodes",
+        "type" : "java.util.Set<java.lang.Long>",
+        "displayedType" : "Set<Long>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 103,
+          "startColumn" : 55,
+          "endLine" : 103,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl/method/deleteByTaskDefinitionCodes(java.util.Set<java.lang.Long> needToDeleteTaskDefinitionCodes)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.impl.TaskDefinitionDaoImpl"
+    }
+  },
+  "file_path" : "dolphinscheduler-dao/src/main/java/org/apache/dolphinscheduler/dao/repository/impl/TaskDefinitionDaoImpl.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.dao.repository.impl.org.apache.dolphinscheduler.dao.repository.TaskDefinitionDao" ],
+  "extends_" : [ "org.apache.dolphinscheduler.dao.repository.impl.org.apache.dolphinscheduler.dao.repository.BaseDao<org.apache.dolphinscheduler.dao.repository.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition, org.apache.dolphinscheduler.dao.repository.impl.org.apache.dolphinscheduler.dao.mapper.TaskDefinitionMapper>", "org.apache.dolphinscheduler.dao.repository.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition", "org.apache.dolphinscheduler.dao.repository.impl.org.apache.dolphinscheduler.dao.mapper.TaskDefinitionMapper" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

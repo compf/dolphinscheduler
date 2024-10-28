@@ -1,0 +1,148 @@
+{
+  "name" : "AbstractEventPendingQueue",
+  "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 22,
+    "startColumn" : 17,
+    "endLine" : 22,
+    "endColumn" : 22
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue/memberField/capacity" : {
+      "name" : "capacity",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue/memberField/capacity",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 26,
+        "startColumn" : 23,
+        "endLine" : 26,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue/memberField/pendingAlertQueue" : {
+      "name" : "pendingAlertQueue",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue/memberField/pendingAlertQueue",
+      "type" : "java.util.concurrent.LinkedBlockingQueue<T>",
+      "displayedType" : "LinkedBlockingQueue<T>",
+      "hasTypeVariable" : true,
+      "position" : {
+        "startLine" : 24,
+        "startColumn" : 42,
+        "endLine" : 24,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue/method/put(T alert)" : {
+      "name" : "put",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue/method/put(T alert)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 34,
+        "startColumn" : 17,
+        "endLine" : 34,
+        "endColumn" : 20
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "alert",
+        "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue/method/put(T alert)/parameter/alert",
+        "type" : "T",
+        "displayedType" : "T",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 34,
+          "startColumn" : 23,
+          "endLine" : 34,
+          "endColumn" : 28
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue/method/put(T alert)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue/method/size()" : {
+      "name" : "size",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue/method/size()",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 16,
+        "endLine" : 44,
+        "endColumn" : 20
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue/method/take()" : {
+      "name" : "take",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue/method/take()",
+      "type" : "T",
+      "displayedType" : "T",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 39,
+        "startColumn" : 14,
+        "endLine" : 39,
+        "endColumn" : 18
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue/method/capacity()" : {
+      "name" : "capacity",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue/method/capacity()",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 16,
+        "endLine" : 49,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventPendingQueue"
+    }
+  },
+  "file_path" : "dolphinscheduler-alert/dolphinscheduler-alert-server/src/main/java/org/apache/dolphinscheduler/alert/service/AbstractEventPendingQueue.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.alert.service.EventPendingQueue<T>", "T" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,298 @@
+{
+  "name" : "ChunJunTask",
+  "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 51,
+    "startColumn" : 8,
+    "endLine" : 51,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/memberField/chunJunParameters" : {
+      "name" : "chunJunParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/memberField/chunJunParameters",
+      "type" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunParameters",
+      "displayedType" : "ChunJunParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 31,
+        "endLine" : 66,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/memberField/taskExecutionContext" : {
+      "name" : "taskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/memberField/taskExecutionContext",
+      "type" : "org.apache.dolphinscheduler.plugin.task.chunjun.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+      "displayedType" : "TaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 34,
+        "endLine" : 76,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/memberField/CHUNJUN_PATH" : {
+      "name" : "CHUNJUN_PATH",
+      "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/memberField/CHUNJUN_PATH",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 33,
+        "endLine" : 56,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/memberField/shellCommandExecutor" : {
+      "name" : "shellCommandExecutor",
+      "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/memberField/shellCommandExecutor",
+      "type" : "org.apache.dolphinscheduler.plugin.task.chunjun.org.apache.dolphinscheduler.plugin.task.api.ShellCommandExecutor",
+      "displayedType" : "ShellCommandExecutor",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 34,
+        "endLine" : 71,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/memberField/CHUNJUN_DIST_DIR" : {
+      "name" : "CHUNJUN_DIST_DIR",
+      "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/memberField/CHUNJUN_DIST_DIR",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 33,
+        "endLine" : 61,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/buildChunJunJsonFile(java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.chunjun.org.apache.dolphinscheduler.plugin.task.api.model.Property> paramsMap)" : {
+      "name" : "buildChunJunJsonFile",
+      "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/buildChunJunJsonFile(java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.chunjun.org.apache.dolphinscheduler.plugin.task.api.model.Property> paramsMap)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 134,
+        "startColumn" : 20,
+        "endLine" : 134,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "paramsMap",
+        "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/buildChunJunJsonFile(java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.chunjun.org.apache.dolphinscheduler.plugin.task.api.model.Property> paramsMap)/parameter/paramsMap",
+        "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.chunjun.org.apache.dolphinscheduler.plugin.task.api.model.Property>",
+        "displayedType" : "Map<String, Property>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 134,
+          "startColumn" : 63,
+          "endLine" : 134,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/buildChunJunJsonFile(java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.chunjun.org.apache.dolphinscheduler.plugin.task.api.model.Property> paramsMap)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/handle(org.apache.dolphinscheduler.plugin.task.chunjun.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)" : {
+      "name" : "handle",
+      "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/handle(org.apache.dolphinscheduler.plugin.task.chunjun.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 101,
+        "startColumn" : 17,
+        "endLine" : 101,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskCallBack",
+        "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/handle(org.apache.dolphinscheduler.plugin.task.chunjun.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)/parameter/taskCallBack",
+        "type" : "org.apache.dolphinscheduler.plugin.task.chunjun.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack",
+        "displayedType" : "TaskCallBack",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 101,
+          "startColumn" : 37,
+          "endLine" : 101,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/handle(org.apache.dolphinscheduler.plugin.task.chunjun.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/getParameters()" : {
+      "name" : "getParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/getParameters()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.chunjun.org.apache.dolphinscheduler.plugin.task.api.parameters.AbstractParameters",
+      "displayedType" : "AbstractParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 207,
+        "startColumn" : 31,
+        "endLine" : 207,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/cancel()" : {
+      "name" : "cancel",
+      "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/cancel()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 217,
+        "startColumn" : 17,
+        "endLine" : 217,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/buildCommand(java.lang.String jobConfigFilePath)" : {
+      "name" : "buildCommand",
+      "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/buildCommand(java.lang.String jobConfigFilePath)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 161,
+        "startColumn" : 20,
+        "endLine" : 161,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "jobConfigFilePath",
+        "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/buildCommand(java.lang.String jobConfigFilePath)/parameter/jobConfigFilePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 161,
+          "startColumn" : 40,
+          "endLine" : 161,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/buildCommand(java.lang.String jobConfigFilePath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/init()" : {
+      "name" : "init",
+      "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/init()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 89,
+        "startColumn" : 17,
+        "endLine" : 89,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/getExecMode(org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunParameters chunJunParameters)" : {
+      "name" : "getExecMode",
+      "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/getExecMode(org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunParameters chunJunParameters)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 194,
+        "startColumn" : 19,
+        "endLine" : 194,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "chunJunParameters",
+        "key" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/getExecMode(org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunParameters chunJunParameters)/parameter/chunJunParameters",
+        "type" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunParameters",
+        "displayedType" : "ChunJunParameters",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 194,
+          "startColumn" : 49,
+          "endLine" : 194,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask/method/getExecMode(org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunParameters chunJunParameters)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.chunjun.ChunJunTask"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-chunjun/src/main/java/org/apache/dolphinscheduler/plugin/task/chunjun/ChunJunTask.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.plugin.task.chunjun.org.apache.dolphinscheduler.plugin.task.api.AbstractTask" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

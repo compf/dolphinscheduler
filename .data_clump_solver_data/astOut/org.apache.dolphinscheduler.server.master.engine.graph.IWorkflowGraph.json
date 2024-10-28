@@ -1,0 +1,194 @@
+{
+  "name" : "IWorkflowGraph",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph",
+  "type" : "interface",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 25,
+    "startColumn" : 8,
+    "endLine" : 25,
+    "endColumn" : 17
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : { },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getAllTaskNodes()" : {
+      "name" : "getAllTaskNodes",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getAllTaskNodes()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.dao.entity.TaskDefinition>",
+      "displayedType" : "List<TaskDefinition>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 26,
+        "endLine" : 57,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getSuccessors(java.lang.String taskName)" : {
+      "name" : "getSuccessors",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getSuccessors(java.lang.String taskName)",
+      "type" : "java.util.Set<java.lang.String>",
+      "displayedType" : "Set<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 17,
+        "endLine" : 42,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskName",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getSuccessors(java.lang.String taskName)/parameter/taskName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 42,
+          "startColumn" : 38,
+          "endLine" : 42,
+          "endColumn" : 46
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getSuccessors(java.lang.String taskName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getTaskNodeByCode(java.lang.Long taskCode)" : {
+      "name" : "getTaskNodeByCode",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getTaskNodeByCode(java.lang.Long taskCode)",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.dao.entity.TaskDefinition",
+      "displayedType" : "TaskDefinition",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 20,
+        "endLine" : 47,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getTaskNodeByCode(java.lang.Long taskCode)/parameter/taskCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 47,
+          "startColumn" : 43,
+          "endLine" : 47,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getTaskNodeByCode(java.lang.Long taskCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getStartNodes()" : {
+      "name" : "getStartNodes",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getStartNodes()",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 31,
+        "startColumn" : 18,
+        "endLine" : 31,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getPredecessors(java.lang.String taskName)" : {
+      "name" : "getPredecessors",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getPredecessors(java.lang.String taskName)",
+      "type" : "java.util.Set<java.lang.String>",
+      "displayedType" : "Set<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 36,
+        "startColumn" : 17,
+        "endLine" : 36,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskName",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getPredecessors(java.lang.String taskName)/parameter/taskName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 36,
+          "startColumn" : 40,
+          "endLine" : 36,
+          "endColumn" : 48
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getPredecessors(java.lang.String taskName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getTaskNodeByName(java.lang.String taskName)" : {
+      "name" : "getTaskNodeByName",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getTaskNodeByName(java.lang.String taskName)",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.dao.entity.TaskDefinition",
+      "displayedType" : "TaskDefinition",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 20,
+        "endLine" : 52,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskName",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getTaskNodeByName(java.lang.String taskName)/parameter/taskName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 52,
+          "startColumn" : 45,
+          "endLine" : 52,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph/method/getTaskNodeByName(java.lang.String taskName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/graph/IWorkflowGraph.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

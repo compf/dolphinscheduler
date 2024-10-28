@@ -1,0 +1,540 @@
+{
+  "name" : "WorkflowOperator",
+  "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 50,
+    "startColumn" : 8,
+    "endLine" : 50,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/memberField/workflowInstanceController" : {
+      "name" : "workflowInstanceController",
+      "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/memberField/workflowInstanceController",
+      "type" : "org.apache.dolphinscheduler.server.master.integration.org.apache.dolphinscheduler.extract.master.IWorkflowControlClient",
+      "displayedType" : "IWorkflowControlClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 36,
+        "endLine" : 53,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator"
+    },
+    "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/memberField/schedulerApi" : {
+      "name" : "schedulerApi",
+      "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/memberField/schedulerApi",
+      "type" : "org.apache.dolphinscheduler.server.master.integration.org.apache.dolphinscheduler.scheduler.api.SchedulerApi",
+      "displayedType" : "SchedulerApi",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 26,
+        "endLine" : 56,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/recoverSuspendWorkflowInstance(java.lang.Integer workflowInstanceId)" : {
+      "name" : "recoverSuspendWorkflowInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/recoverSuspendWorkflowInstance(java.lang.Integer workflowInstanceId)",
+      "type" : "org.apache.dolphinscheduler.server.master.integration.org.apache.dolphinscheduler.extract.master.transportor.workflow.WorkflowInstanceRecoverSuspendTasksResponse",
+      "displayedType" : "WorkflowInstanceRecoverSuspendTasksResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 121,
+        "startColumn" : 56,
+        "endLine" : 121,
+        "endColumn" : 86
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/recoverSuspendWorkflowInstance(java.lang.Integer workflowInstanceId)/parameter/workflowInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 121,
+          "startColumn" : 95,
+          "endLine" : 121,
+          "endColumn" : 113
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/recoverSuspendWorkflowInstance(java.lang.Integer workflowInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator"
+    },
+    "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/stopWorkflowInstance(java.lang.Integer workflowInstanceId)" : {
+      "name" : "stopWorkflowInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/stopWorkflowInstance(java.lang.Integer workflowInstanceId)",
+      "type" : "org.apache.dolphinscheduler.server.master.integration.org.apache.dolphinscheduler.extract.master.transportor.workflow.WorkflowInstanceStopResponse",
+      "displayedType" : "WorkflowInstanceStopResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 130,
+        "startColumn" : 41,
+        "endLine" : 130,
+        "endColumn" : 61
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/stopWorkflowInstance(java.lang.Integer workflowInstanceId)/parameter/workflowInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 130,
+          "startColumn" : 70,
+          "endLine" : 130,
+          "endColumn" : 88
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/stopWorkflowInstance(java.lang.Integer workflowInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator"
+    },
+    "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/manualTriggerWorkflow(org.apache.dolphinscheduler.server.master.integration.WorkflowOperator$WorkflowTriggerDTO workflowTriggerDTO)" : {
+      "name" : "manualTriggerWorkflow",
+      "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/manualTriggerWorkflow(org.apache.dolphinscheduler.server.master.integration.WorkflowOperator$WorkflowTriggerDTO workflowTriggerDTO)",
+      "type" : "java.lang.Integer",
+      "displayedType" : "Integer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 20,
+        "endLine" : 58,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowTriggerDTO",
+        "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/manualTriggerWorkflow(org.apache.dolphinscheduler.server.master.integration.WorkflowOperator$WorkflowTriggerDTO workflowTriggerDTO)/parameter/workflowTriggerDTO",
+        "type" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator$WorkflowTriggerDTO",
+        "displayedType" : "WorkflowTriggerDTO",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 58,
+          "startColumn" : 67,
+          "endLine" : 58,
+          "endColumn" : 85
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/manualTriggerWorkflow(org.apache.dolphinscheduler.server.master.integration.WorkflowOperator$WorkflowTriggerDTO workflowTriggerDTO)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator"
+    },
+    "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/pauseWorkflowInstance(java.lang.Integer workflowInstanceId)" : {
+      "name" : "pauseWorkflowInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/pauseWorkflowInstance(java.lang.Integer workflowInstanceId)",
+      "type" : "org.apache.dolphinscheduler.server.master.integration.org.apache.dolphinscheduler.extract.master.transportor.workflow.WorkflowInstancePauseResponse",
+      "displayedType" : "WorkflowInstancePauseResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 115,
+        "startColumn" : 42,
+        "endLine" : 115,
+        "endColumn" : 63
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/pauseWorkflowInstance(java.lang.Integer workflowInstanceId)/parameter/workflowInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 115,
+          "startColumn" : 72,
+          "endLine" : 115,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/pauseWorkflowInstance(java.lang.Integer workflowInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator"
+    },
+    "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/backfillWorkflow(org.apache.dolphinscheduler.server.master.integration.WorkflowOperator$WorkflowBackfillDTO workflowBackfillDTO)" : {
+      "name" : "backfillWorkflow",
+      "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/backfillWorkflow(org.apache.dolphinscheduler.server.master.integration.WorkflowOperator$WorkflowBackfillDTO workflowBackfillDTO)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 17,
+        "endLine" : 75,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowBackfillDTO",
+        "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/backfillWorkflow(org.apache.dolphinscheduler.server.master.integration.WorkflowOperator$WorkflowBackfillDTO workflowBackfillDTO)/parameter/workflowBackfillDTO",
+        "type" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator$WorkflowBackfillDTO",
+        "displayedType" : "WorkflowBackfillDTO",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 75,
+          "startColumn" : 60,
+          "endLine" : 75,
+          "endColumn" : 79
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/backfillWorkflow(org.apache.dolphinscheduler.server.master.integration.WorkflowOperator$WorkflowBackfillDTO workflowBackfillDTO)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator"
+    },
+    "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/repeatRunningWorkflowInstance(java.lang.Integer workflowInstanceId)" : {
+      "name" : "repeatRunningWorkflowInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/repeatRunningWorkflowInstance(java.lang.Integer workflowInstanceId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 17,
+        "endLine" : 98,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/repeatRunningWorkflowInstance(java.lang.Integer workflowInstanceId)/parameter/workflowInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 98,
+          "startColumn" : 61,
+          "endLine" : 98,
+          "endColumn" : 79
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/repeatRunningWorkflowInstance(java.lang.Integer workflowInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator"
+    },
+    "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/recoverFailureTasks(java.lang.Integer workflowInstanceId)" : {
+      "name" : "recoverFailureTasks",
+      "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/recoverFailureTasks(java.lang.Integer workflowInstanceId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 106,
+        "startColumn" : 17,
+        "endLine" : 106,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/recoverFailureTasks(java.lang.Integer workflowInstanceId)/parameter/workflowInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 106,
+          "startColumn" : 51,
+          "endLine" : 106,
+          "endColumn" : 69
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/recoverFailureTasks(java.lang.Integer workflowInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator"
+    },
+    "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/schedulingWorkflow(org.apache.dolphinscheduler.server.master.integration.WorkflowOperator$WorkflowSchedulingDTO workflowSchedulingDTO)" : {
+      "name" : "schedulingWorkflow",
+      "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/schedulingWorkflow(org.apache.dolphinscheduler.server.master.integration.WorkflowOperator$WorkflowSchedulingDTO workflowSchedulingDTO)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 92,
+        "startColumn" : 17,
+        "endLine" : 92,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowSchedulingDTO",
+        "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/schedulingWorkflow(org.apache.dolphinscheduler.server.master.integration.WorkflowOperator$WorkflowSchedulingDTO workflowSchedulingDTO)/parameter/workflowSchedulingDTO",
+        "type" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator$WorkflowSchedulingDTO",
+        "displayedType" : "WorkflowSchedulingDTO",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 92,
+          "startColumn" : 64,
+          "endLine" : 92,
+          "endColumn" : 85
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator/method/schedulingWorkflow(org.apache.dolphinscheduler.server.master.integration.WorkflowOperator$WorkflowSchedulingDTO workflowSchedulingDTO)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/test/java/org/apache/dolphinscheduler/server/master/integration/WorkflowOperator.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowTriggerDTO" : {
+      "name" : "WorkflowTriggerDTO",
+      "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowTriggerDTO",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 139,
+        "startColumn" : 19,
+        "endLine" : 139,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowTriggerDTO/memberField/runWorkflowCommandParam" : {
+          "name" : "runWorkflowCommandParam",
+          "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowTriggerDTO/memberField/runWorkflowCommandParam",
+          "type" : "org.apache.dolphinscheduler.server.master.integration.org.apache.dolphinscheduler.extract.master.command.RunWorkflowCommandParam",
+          "displayedType" : "RunWorkflowCommandParam",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 143,
+            "startColumn" : 47,
+            "endLine" : 143,
+            "endColumn" : 70
+          },
+          "modifiers" : [ "PRIVATE", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowTriggerDTO"
+        },
+        "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowTriggerDTO/memberField/dryRun" : {
+          "name" : "dryRun",
+          "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowTriggerDTO/memberField/dryRun",
+          "type" : "org.apache.dolphinscheduler.server.master.integration.org.apache.dolphinscheduler.common.enums.Flag",
+          "displayedType" : "Flag",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 146,
+            "startColumn" : 22,
+            "endLine" : 146,
+            "endColumn" : 28
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowTriggerDTO"
+        },
+        "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowTriggerDTO/memberField/workflowDefinition" : {
+          "name" : "workflowDefinition",
+          "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowTriggerDTO/memberField/workflowDefinition",
+          "type" : "org.apache.dolphinscheduler.server.master.integration.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition",
+          "displayedType" : "WorkflowDefinition",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 141,
+            "startColumn" : 42,
+            "endLine" : 141,
+            "endColumn" : 60
+          },
+          "modifiers" : [ "PRIVATE", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowTriggerDTO"
+        }
+      },
+      "methods" : { },
+      "file_path" : "dolphinscheduler-master/src/test/java/org/apache/dolphinscheduler/server/master/integration/WorkflowOperator.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowBackfillDTO" : {
+      "name" : "WorkflowBackfillDTO",
+      "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowBackfillDTO",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 162,
+        "startColumn" : 19,
+        "endLine" : 162,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowBackfillDTO/memberField/workflow" : {
+          "name" : "workflow",
+          "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowBackfillDTO/memberField/workflow",
+          "type" : "org.apache.dolphinscheduler.server.master.integration.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition",
+          "displayedType" : "WorkflowDefinition",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 164,
+            "startColumn" : 36,
+            "endLine" : 164,
+            "endColumn" : 44
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowBackfillDTO"
+        },
+        "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowBackfillDTO/memberField/backfillWorkflowCommandParam" : {
+          "name" : "backfillWorkflowCommandParam",
+          "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowBackfillDTO/memberField/backfillWorkflowCommandParam",
+          "type" : "org.apache.dolphinscheduler.server.master.integration.org.apache.dolphinscheduler.extract.master.command.BackfillWorkflowCommandParam",
+          "displayedType" : "BackfillWorkflowCommandParam",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 165,
+            "startColumn" : 46,
+            "endLine" : 165,
+            "endColumn" : 74
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowBackfillDTO"
+        }
+      },
+      "methods" : { },
+      "file_path" : "dolphinscheduler-master/src/test/java/org/apache/dolphinscheduler/server/master/integration/WorkflowOperator.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowSchedulingDTO" : {
+      "name" : "WorkflowSchedulingDTO",
+      "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowSchedulingDTO",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 152,
+        "startColumn" : 19,
+        "endLine" : 152,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowSchedulingDTO/memberField/schedule" : {
+          "name" : "schedule",
+          "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowSchedulingDTO/memberField/schedule",
+          "type" : "org.apache.dolphinscheduler.server.master.integration.org.apache.dolphinscheduler.dao.entity.Schedule",
+          "displayedType" : "Schedule",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 156,
+            "startColumn" : 26,
+            "endLine" : 156,
+            "endColumn" : 34
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowSchedulingDTO"
+        },
+        "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowSchedulingDTO/memberField/workflow" : {
+          "name" : "workflow",
+          "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowSchedulingDTO/memberField/workflow",
+          "type" : "org.apache.dolphinscheduler.server.master.integration.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition",
+          "displayedType" : "WorkflowDefinition",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 154,
+            "startColumn" : 36,
+            "endLine" : 154,
+            "endColumn" : 44
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowSchedulingDTO"
+        },
+        "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowSchedulingDTO/memberField/project" : {
+          "name" : "project",
+          "key" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowSchedulingDTO/memberField/project",
+          "type" : "org.apache.dolphinscheduler.server.master.integration.org.apache.dolphinscheduler.dao.entity.Project",
+          "displayedType" : "Project",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 155,
+            "startColumn" : 25,
+            "endLine" : 155,
+            "endColumn" : 32
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator.WorkflowSchedulingDTO"
+        }
+      },
+      "methods" : { },
+      "file_path" : "dolphinscheduler-master/src/test/java/org/apache/dolphinscheduler/server/master/integration/WorkflowOperator.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.server.master.integration.WorkflowOperator",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : { }
+}

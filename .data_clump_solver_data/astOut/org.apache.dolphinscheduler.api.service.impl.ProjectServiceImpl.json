@@ -1,0 +1,1840 @@
+{
+  "name" : "ProjectServiceImpl",
+  "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 74,
+    "startColumn" : 8,
+    "endLine" : 74,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/memberField/userMapper" : {
+      "name" : "userMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/memberField/userMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.UserMapper",
+      "displayedType" : "UserMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 90,
+        "startColumn" : 24,
+        "endLine" : 90,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/memberField/taskGroupService" : {
+      "name" : "taskGroupService",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/memberField/taskGroupService",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.TaskGroupService",
+      "displayedType" : "TaskGroupService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 30,
+        "endLine" : 78,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/memberField/projectUserMapper" : {
+      "name" : "projectUserMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/memberField/projectUserMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.ProjectUserMapper",
+      "displayedType" : "ProjectUserMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 84,
+        "startColumn" : 31,
+        "endLine" : 84,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/memberField/workflowDefinitionMapper" : {
+      "name" : "workflowDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/memberField/workflowDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionMapper",
+      "displayedType" : "WorkflowDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 87,
+        "startColumn" : 38,
+        "endLine" : 87,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/memberField/projectMapper" : {
+      "name" : "projectMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/memberField/projectMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.ProjectMapper",
+      "displayedType" : "ProjectMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 27,
+        "endLine" : 81,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectCreatedByUser(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)" : {
+      "name" : "queryProjectCreatedByUser",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectCreatedByUser(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 730,
+        "startColumn" : 32,
+        "endLine" : 730,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectCreatedByUser(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 730,
+          "startColumn" : 63,
+          "endLine" : 730,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectCreatedByUser(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)" : {
+      "name" : "checkProjectAndAuth",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 830,
+        "startColumn" : 17,
+        "endLine" : 830,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "result",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)/parameter/result",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+        "displayedType" : "Result",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 830,
+          "startColumn" : 44,
+          "endLine" : 830,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)"
+      }, {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 830,
+          "startColumn" : 57,
+          "endLine" : 830,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)"
+      }, {
+        "name" : "project",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)/parameter/project",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project",
+        "displayedType" : "Project",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 830,
+          "startColumn" : 76,
+          "endLine" : 830,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 830,
+          "startColumn" : 90,
+          "endLine" : 830,
+          "endColumn" : 101
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)"
+      }, {
+        "name" : "permission",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)/parameter/permission",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 831,
+          "startColumn" : 44,
+          "endLine" : 831,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkHasProjectWritePermissionThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)" : {
+      "name" : "checkHasProjectWritePermissionThrowException",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkHasProjectWritePermissionThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 328,
+        "startColumn" : 17,
+        "endLine" : 328,
+        "endColumn" : 61
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkHasProjectWritePermissionThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 328,
+          "startColumn" : 67,
+          "endLine" : 328,
+          "endColumn" : 76
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkHasProjectWritePermissionThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)"
+      }, {
+        "name" : "project",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkHasProjectWritePermissionThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)/parameter/project",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project",
+        "displayedType" : "Project",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 328,
+          "startColumn" : 86,
+          "endLine" : 328,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkHasProjectWritePermissionThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkHasProjectWritePermissionThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)" : {
+      "name" : "checkHasProjectWritePermissionThrowException",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkHasProjectWritePermissionThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 322,
+        "startColumn" : 17,
+        "endLine" : 322,
+        "endColumn" : 61
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkHasProjectWritePermissionThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 322,
+          "startColumn" : 67,
+          "endLine" : 322,
+          "endColumn" : 76
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkHasProjectWritePermissionThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkHasProjectWritePermissionThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 322,
+          "startColumn" : 83,
+          "endLine" : 322,
+          "endColumn" : 94
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkHasProjectWritePermissionThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/update(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)" : {
+      "name" : "update",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/update(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 544,
+        "startColumn" : 19,
+        "endLine" : 544,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/update(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 544,
+          "startColumn" : 31,
+          "endLine" : 544,
+          "endColumn" : 40
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/update(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/update(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)/parameter/projectCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 544,
+          "startColumn" : 47,
+          "endLine" : 544,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/update(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)"
+      }, {
+        "name" : "projectName",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/update(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)/parameter/projectName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 544,
+          "startColumn" : 67,
+          "endLine" : 544,
+          "endColumn" : 78
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/update(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)"
+      }, {
+        "name" : "desc",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/update(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)/parameter/desc",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 544,
+          "startColumn" : 87,
+          "endLine" : 544,
+          "endColumn" : 91
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/update(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String projectName, java.lang.String desc)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result, java.lang.String permission)" : {
+      "name" : "hasProjectAndPerm",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result, java.lang.String permission)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 251,
+        "startColumn" : 20,
+        "endLine" : 251,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result, java.lang.String permission)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 251,
+          "startColumn" : 43,
+          "endLine" : 251,
+          "endColumn" : 52
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result, java.lang.String permission)"
+      }, {
+        "name" : "project",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result, java.lang.String permission)/parameter/project",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project",
+        "displayedType" : "Project",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 251,
+          "startColumn" : 62,
+          "endLine" : 251,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result, java.lang.String permission)"
+      }, {
+        "name" : "result",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result, java.lang.String permission)/parameter/result",
+        "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+        "displayedType" : "Map<String, Object>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 251,
+          "startColumn" : 91,
+          "endLine" : 251,
+          "endColumn" : 97
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result, java.lang.String permission)"
+      }, {
+        "name" : "permission",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result, java.lang.String permission)/parameter/permission",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 251,
+          "startColumn" : 106,
+          "endLine" : 251,
+          "endColumn" : 116
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result, java.lang.String permission)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAuthorizedUser(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)" : {
+      "name" : "queryAuthorizedUser",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAuthorizedUser(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 706,
+        "startColumn" : 19,
+        "endLine" : 706,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAuthorizedUser(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 706,
+          "startColumn" : 44,
+          "endLine" : 706,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAuthorizedUser(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAuthorizedUser(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)/parameter/projectCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 706,
+          "startColumn" : 60,
+          "endLine" : 706,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAuthorizedUser(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndWritePerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result)" : {
+      "name" : "hasProjectAndWritePerm",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndWritePerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 295,
+        "startColumn" : 20,
+        "endLine" : 295,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndWritePerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 295,
+          "startColumn" : 48,
+          "endLine" : 295,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndWritePerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result)"
+      }, {
+        "name" : "project",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndWritePerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result)/parameter/project",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project",
+        "displayedType" : "Project",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 295,
+          "startColumn" : 67,
+          "endLine" : 295,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndWritePerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result)"
+      }, {
+        "name" : "result",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndWritePerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result)/parameter/result",
+        "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+        "displayedType" : "Map<String, Object>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 295,
+          "startColumn" : 96,
+          "endLine" : 295,
+          "endColumn" : 102
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndWritePerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.util.Map<java.lang.String, java.lang.Object> result)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuthThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.lang.String permission)" : {
+      "name" : "checkProjectAndAuthThrowException",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuthThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.lang.String permission)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 229,
+        "startColumn" : 17,
+        "endLine" : 229,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuthThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.lang.String permission)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 229,
+          "startColumn" : 65,
+          "endLine" : 229,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuthThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.lang.String permission)"
+      }, {
+        "name" : "project",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuthThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.lang.String permission)/parameter/project",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project",
+        "displayedType" : "Project",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 229,
+          "startColumn" : 94,
+          "endLine" : 229,
+          "endColumn" : 101
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuthThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.lang.String permission)"
+      }, {
+        "name" : "permission",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuthThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.lang.String permission)/parameter/permission",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 230,
+          "startColumn" : 58,
+          "endLine" : 230,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuthThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.lang.String permission)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)" : {
+      "name" : "checkProjectAndAuth",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 211,
+        "startColumn" : 32,
+        "endLine" : 211,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 211,
+          "startColumn" : 57,
+          "endLine" : 211,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)"
+      }, {
+        "name" : "project",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)/parameter/project",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project",
+        "displayedType" : "Project",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 211,
+          "startColumn" : 76,
+          "endLine" : 211,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 211,
+          "startColumn" : 90,
+          "endLine" : 211,
+          "endColumn" : 101
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)"
+      }, {
+        "name" : "permission",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)/parameter/permission",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 212,
+          "startColumn" : 59,
+          "endLine" : 212,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuth(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, long projectCode, java.lang.String permission)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, java.lang.String permission)" : {
+      "name" : "hasProjectAndPerm",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, java.lang.String permission)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 348,
+        "startColumn" : 20,
+        "endLine" : 348,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, java.lang.String permission)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 348,
+          "startColumn" : 43,
+          "endLine" : 348,
+          "endColumn" : 52
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, java.lang.String permission)"
+      }, {
+        "name" : "project",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, java.lang.String permission)/parameter/project",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project",
+        "displayedType" : "Project",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 348,
+          "startColumn" : 62,
+          "endLine" : 348,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, java.lang.String permission)"
+      }, {
+        "name" : "result",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, java.lang.String permission)/parameter/result",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+        "displayedType" : "Result",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 348,
+          "startColumn" : 78,
+          "endLine" : 348,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, java.lang.String permission)"
+      }, {
+        "name" : "permission",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, java.lang.String permission)/parameter/permission",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 348,
+          "startColumn" : 93,
+          "endLine" : 348,
+          "endColumn" : 103
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, java.lang.String permission)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuthThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String permission)" : {
+      "name" : "checkProjectAndAuthThrowException",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuthThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String permission)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 242,
+        "startColumn" : 17,
+        "endLine" : 242,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuthThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String permission)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 242,
+          "startColumn" : 56,
+          "endLine" : 242,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuthThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String permission)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuthThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String permission)/parameter/projectCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 242,
+          "startColumn" : 72,
+          "endLine" : 242,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuthThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String permission)"
+      }, {
+        "name" : "permission",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuthThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String permission)/parameter/permission",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 242,
+          "startColumn" : 92,
+          "endLine" : 242,
+          "endColumn" : 102
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkProjectAndAuthThrowException(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String permission)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getAuthorizedProjectCodes(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)" : {
+      "name" : "getAuthorizedProjectCodes",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getAuthorizedProjectCodes(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)",
+      "type" : "java.util.List<java.lang.Long>",
+      "displayedType" : "List<Long>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 860,
+        "startColumn" : 23,
+        "endLine" : 860,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getAuthorizedProjectCodes(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 860,
+          "startColumn" : 54,
+          "endLine" : 860,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getAuthorizedProjectCodes(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)" : {
+      "name" : "queryByCode",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 173,
+        "startColumn" : 19,
+        "endLine" : 173,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 173,
+          "startColumn" : 36,
+          "endLine" : 173,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 173,
+          "startColumn" : 52,
+          "endLine" : 173,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryByCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/deleteProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)" : {
+      "name" : "deleteProject",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/deleteProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 478,
+        "startColumn" : 19,
+        "endLine" : 478,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/deleteProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 478,
+          "startColumn" : 38,
+          "endLine" : 478,
+          "endColumn" : 47
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/deleteProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/deleteProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)/parameter/projectCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 478,
+          "startColumn" : 54,
+          "endLine" : 478,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/deleteProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkDesc(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, java.lang.String desc)" : {
+      "name" : "checkDesc",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkDesc(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, java.lang.String desc)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 157,
+        "startColumn" : 24,
+        "endLine" : 157,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "result",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkDesc(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, java.lang.String desc)/parameter/result",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+        "displayedType" : "Result",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 157,
+          "startColumn" : 41,
+          "endLine" : 157,
+          "endColumn" : 47
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkDesc(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, java.lang.String desc)"
+      }, {
+        "name" : "desc",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkDesc(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, java.lang.String desc)/parameter/desc",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 157,
+          "startColumn" : 56,
+          "endLine" : 157,
+          "endColumn" : 60
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkDesc(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result, java.lang.String desc)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryPermission(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)" : {
+      "name" : "queryPermission",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryPermission(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 784,
+        "startColumn" : 17,
+        "endLine" : 784,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "user",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryPermission(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)/parameter/user",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 784,
+          "startColumn" : 38,
+          "endLine" : 784,
+          "endColumn" : 42
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryPermission(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)"
+      }, {
+        "name" : "project",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryPermission(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)/parameter/project",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project",
+        "displayedType" : "Project",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 784,
+          "startColumn" : 52,
+          "endLine" : 784,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryPermission(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectCreatedAndAuthorizedByUser(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)" : {
+      "name" : "queryProjectCreatedAndAuthorizedByUser",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectCreatedAndAuthorizedByUser(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 747,
+        "startColumn" : 19,
+        "endLine" : 747,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectCreatedAndAuthorizedByUser(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 747,
+          "startColumn" : 63,
+          "endLine" : 747,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectCreatedAndAuthorizedByUser(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getCheckResult(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.lang.String perm)" : {
+      "name" : "getCheckResult",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getCheckResult(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.lang.String perm)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 524,
+        "startColumn" : 33,
+        "endLine" : 524,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getCheckResult(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.lang.String perm)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 524,
+          "startColumn" : 53,
+          "endLine" : 524,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getCheckResult(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.lang.String perm)"
+      }, {
+        "name" : "project",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getCheckResult(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.lang.String perm)/parameter/project",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project",
+        "displayedType" : "Project",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 524,
+          "startColumn" : 72,
+          "endLine" : 524,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getCheckResult(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.lang.String perm)"
+      }, {
+        "name" : "perm",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getCheckResult(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.lang.String perm)/parameter/perm",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 524,
+          "startColumn" : 88,
+          "endLine" : 524,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getCheckResult(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, java.lang.String perm)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAllProjectList(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user)" : {
+      "name" : "queryAllProjectList",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAllProjectList(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 810,
+        "startColumn" : 19,
+        "endLine" : 810,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "user",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAllProjectList(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user)/parameter/user",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 810,
+          "startColumn" : 44,
+          "endLine" : 810,
+          "endColumn" : 48
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAllProjectList(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)" : {
+      "name" : "queryProjectListPaging",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 374,
+        "startColumn" : 19,
+        "endLine" : 374,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 374,
+          "startColumn" : 47,
+          "endLine" : 374,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)/parameter/pageSize",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 374,
+          "startColumn" : 66,
+          "endLine" : 374,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)"
+      }, {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)/parameter/pageNo",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 374,
+          "startColumn" : 84,
+          "endLine" : 374,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)"
+      }, {
+        "name" : "searchVal",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)/parameter/searchVal",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 374,
+          "startColumn" : 99,
+          "endLine" : 374,
+          "endColumn" : 108
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectListPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevelListPaging(java.lang.Integer userId, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)" : {
+      "name" : "queryProjectWithAuthorizedLevelListPaging",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevelListPaging(java.lang.Integer userId, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 430,
+        "startColumn" : 19,
+        "endLine" : 430,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevelListPaging(java.lang.Integer userId, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 430,
+          "startColumn" : 69,
+          "endLine" : 430,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevelListPaging(java.lang.Integer userId, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)"
+      }, {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevelListPaging(java.lang.Integer userId, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 430,
+          "startColumn" : 82,
+          "endLine" : 430,
+          "endColumn" : 91
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevelListPaging(java.lang.Integer userId, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevelListPaging(java.lang.Integer userId, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)/parameter/pageSize",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 430,
+          "startColumn" : 101,
+          "endLine" : 430,
+          "endColumn" : 109
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevelListPaging(java.lang.Integer userId, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)"
+      }, {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevelListPaging(java.lang.Integer userId, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)/parameter/pageNo",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 431,
+          "startColumn" : 69,
+          "endLine" : 431,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevelListPaging(java.lang.Integer userId, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)"
+      }, {
+        "name" : "searchVal",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevelListPaging(java.lang.Integer userId, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)/parameter/searchVal",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 431,
+          "startColumn" : 84,
+          "endLine" : 431,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevelListPaging(java.lang.Integer userId, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageSize, java.lang.Integer pageNo, java.lang.String searchVal)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getUnauthorizedProjects(java.util.Set<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project> projectSet, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project> authedProjectList)" : {
+      "name" : "getUnauthorizedProjects",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getUnauthorizedProjects(java.util.Set<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project> projectSet, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project> authedProjectList)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project>",
+      "displayedType" : "List<Project>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 669,
+        "startColumn" : 27,
+        "endLine" : 669,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectSet",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getUnauthorizedProjects(java.util.Set<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project> projectSet, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project> authedProjectList)/parameter/projectSet",
+        "type" : "java.util.Set<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project>",
+        "displayedType" : "Set<Project>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 669,
+          "startColumn" : 64,
+          "endLine" : 669,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getUnauthorizedProjects(java.util.Set<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project> projectSet, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project> authedProjectList)"
+      }, {
+        "name" : "authedProjectList",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getUnauthorizedProjects(java.util.Set<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project> projectSet, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project> authedProjectList)/parameter/authedProjectList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project>",
+        "displayedType" : "List<Project>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 669,
+          "startColumn" : 90,
+          "endLine" : 669,
+          "endColumn" : 107
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/getUnauthorizedProjects(java.util.Set<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project> projectSet, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project> authedProjectList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevel(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)" : {
+      "name" : "queryProjectWithAuthorizedLevel",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevel(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 591,
+        "startColumn" : 19,
+        "endLine" : 591,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevel(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 591,
+          "startColumn" : 56,
+          "endLine" : 591,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevel(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevel(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 591,
+          "startColumn" : 75,
+          "endLine" : 591,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryProjectWithAuthorizedLevel(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAllProjectListForDependent()" : {
+      "name" : "queryAllProjectListForDependent",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAllProjectListForDependent()",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 850,
+        "startColumn" : 19,
+        "endLine" : 850,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAuthorizedProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)" : {
+      "name" : "queryAuthorizedProject",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAuthorizedProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 688,
+        "startColumn" : 19,
+        "endLine" : 688,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAuthorizedProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 688,
+          "startColumn" : 47,
+          "endLine" : 688,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAuthorizedProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAuthorizedProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 688,
+          "startColumn" : 66,
+          "endLine" : 688,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryAuthorizedProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkReadPermission(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)" : {
+      "name" : "checkReadPermission",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkReadPermission(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 772,
+        "startColumn" : 21,
+        "endLine" : 772,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "user",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkReadPermission(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)/parameter/user",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 772,
+          "startColumn" : 46,
+          "endLine" : 772,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkReadPermission(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)"
+      }, {
+        "name" : "project",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkReadPermission(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)/parameter/project",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project",
+        "displayedType" : "Project",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 772,
+          "startColumn" : 60,
+          "endLine" : 772,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/checkReadPermission(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryUnauthorizedProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)" : {
+      "name" : "queryUnauthorizedProject",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryUnauthorizedProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 634,
+        "startColumn" : 19,
+        "endLine" : 634,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryUnauthorizedProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 634,
+          "startColumn" : 49,
+          "endLine" : 634,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryUnauthorizedProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryUnauthorizedProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 634,
+          "startColumn" : 68,
+          "endLine" : 634,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryUnauthorizedProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/createProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String desc)" : {
+      "name" : "createProject",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/createProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String desc)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 102,
+        "startColumn" : 19,
+        "endLine" : 102,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/createProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String desc)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 102,
+          "startColumn" : 38,
+          "endLine" : 102,
+          "endColumn" : 47
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/createProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String desc)"
+      }, {
+        "name" : "name",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/createProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String desc)/parameter/name",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 102,
+          "startColumn" : 56,
+          "endLine" : 102,
+          "endColumn" : 60
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/createProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String desc)"
+      }, {
+        "name" : "desc",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/createProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String desc)/parameter/desc",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 102,
+          "startColumn" : 69,
+          "endLine" : 102,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/createProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.String desc)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndWritePerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result)" : {
+      "name" : "hasProjectAndWritePerm",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndWritePerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 268,
+        "startColumn" : 20,
+        "endLine" : 268,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndWritePerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 268,
+          "startColumn" : 48,
+          "endLine" : 268,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndWritePerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result)"
+      }, {
+        "name" : "project",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndWritePerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result)/parameter/project",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project",
+        "displayedType" : "Project",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 268,
+          "startColumn" : 67,
+          "endLine" : 268,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndWritePerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result)"
+      }, {
+        "name" : "result",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndWritePerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result)/parameter/result",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+        "displayedType" : "Result",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 268,
+          "startColumn" : 83,
+          "endLine" : 268,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/hasProjectAndWritePerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Project project, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result result)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryByName(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String projectName)" : {
+      "name" : "queryByName",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryByName(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String projectName)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 188,
+        "startColumn" : 32,
+        "endLine" : 188,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryByName(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String projectName)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 188,
+          "startColumn" : 49,
+          "endLine" : 188,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryByName(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String projectName)"
+      }, {
+        "name" : "projectName",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryByName(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String projectName)/parameter/projectName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 188,
+          "startColumn" : 67,
+          "endLine" : 188,
+          "endColumn" : 78
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl/method/queryByName(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String projectName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/service/impl/ProjectServiceImpl.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.ProjectService" ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.service.impl.BaseServiceImpl" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

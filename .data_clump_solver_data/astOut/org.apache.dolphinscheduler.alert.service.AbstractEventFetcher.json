@@ -1,0 +1,216 @@
+{
+  "name" : "AbstractEventFetcher",
+  "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 30,
+    "startColumn" : 17,
+    "endLine" : 30,
+    "endColumn" : 22
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/memberField/eventPendingQueue" : {
+      "name" : "eventPendingQueue",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/memberField/eventPendingQueue",
+      "type" : "org.apache.dolphinscheduler.alert.service.EventPendingQueue<T>",
+      "displayedType" : "EventPendingQueue<T>",
+      "hasTypeVariable" : true,
+      "position" : {
+        "startLine" : 38,
+        "startColumn" : 40,
+        "endLine" : 38,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/memberField/FETCH_SIZE" : {
+      "name" : "FETCH_SIZE",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/memberField/FETCH_SIZE",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 32,
+        "startColumn" : 32,
+        "endLine" : 32,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PROTECTED", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/memberField/runningFlag" : {
+      "name" : "runningFlag",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/memberField/runningFlag",
+      "type" : "java.util.concurrent.atomic.AtomicBoolean",
+      "displayedType" : "AtomicBoolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 40,
+        "startColumn" : 33,
+        "endLine" : 40,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/memberField/eventOffset" : {
+      "name" : "eventOffset",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/memberField/eventOffset",
+      "type" : "java.lang.Integer",
+      "displayedType" : "Integer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 21,
+        "endLine" : 42,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/memberField/FETCH_INTERVAL" : {
+      "name" : "FETCH_INTERVAL",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/memberField/FETCH_INTERVAL",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 34,
+        "startColumn" : 33,
+        "endLine" : 34,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PROTECTED", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/memberField/alertHAServer" : {
+      "name" : "alertHAServer",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/memberField/alertHAServer",
+      "type" : "org.apache.dolphinscheduler.alert.service.AlertHAServer",
+      "displayedType" : "AlertHAServer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 36,
+        "startColumn" : 35,
+        "endLine" : 36,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PROTECTED", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/method/run()" : {
+      "name" : "run",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/method/run()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 17,
+        "endLine" : 64,
+        "endColumn" : 20
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/method/shutdown()" : {
+      "name" : "shutdown",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/method/shutdown()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 94,
+        "startColumn" : 17,
+        "endLine" : 94,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/method/getEventOffset(T event)" : {
+      "name" : "getEventOffset",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/method/getEventOffset(T event)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 28,
+        "endLine" : 91,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PROTECTED", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "event",
+        "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/method/getEventOffset(T event)/parameter/event",
+        "type" : "T",
+        "displayedType" : "T",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 91,
+          "startColumn" : 45,
+          "endLine" : 91,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/method/getEventOffset(T event)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/method/start()" : {
+      "name" : "start",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher/method/start()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 30,
+        "endLine" : 54,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventFetcher"
+    }
+  },
+  "file_path" : "dolphinscheduler-alert/dolphinscheduler-alert-server/src/main/java/org/apache/dolphinscheduler/alert/service/AbstractEventFetcher.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.alert.service.EventFetcher<T>", "T" ],
+  "extends_" : [ "org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.common.thread.BaseDaemonThread" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,213 @@
+{
+  "name" : "AsyncTaskExecutionContext",
+  "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 29,
+    "startColumn" : 8,
+    "endLine" : 29,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/memberField/taskExecutionContext" : {
+      "name" : "taskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/memberField/taskExecutionContext",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.execute.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+      "displayedType" : "TaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 31,
+        "startColumn" : 40,
+        "endLine" : 31,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/memberField/currentStartTime" : {
+      "name" : "currentStartTime",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/memberField/currentStartTime",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 37,
+        "startColumn" : 18,
+        "endLine" : 37,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/memberField/executeTimes" : {
+      "name" : "executeTimes",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/memberField/executeTimes",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 38,
+        "startColumn" : 17,
+        "endLine" : 38,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/memberField/asyncTaskExecuteFunction" : {
+      "name" : "asyncTaskExecuteFunction",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/memberField/asyncTaskExecuteFunction",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecuteFunction",
+      "displayedType" : "AsyncTaskExecuteFunction",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 33,
+        "startColumn" : 44,
+        "endLine" : 33,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/memberField/asyncTaskCallbackFunction" : {
+      "name" : "asyncTaskCallbackFunction",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/memberField/asyncTaskCallbackFunction",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskCallbackFunction",
+      "displayedType" : "AsyncTaskCallbackFunction",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 35,
+        "startColumn" : 45,
+        "endLine" : 35,
+        "endColumn" : 70
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/memberField/executeInterval" : {
+      "name" : "executeInterval",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/memberField/executeInterval",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 39,
+        "startColumn" : 24,
+        "endLine" : 39,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/method/refreshStartTime()" : {
+      "name" : "refreshStartTime",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/method/refreshStartTime()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 30,
+        "endLine" : 52,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/method/getDelay(java.util.concurrent.TimeUnit unit)" : {
+      "name" : "getDelay",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/method/getDelay(java.util.concurrent.TimeUnit unit)",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 17,
+        "endLine" : 61,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "unit",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/method/getDelay(java.util.concurrent.TimeUnit unit)/parameter/unit",
+        "type" : "java.util.concurrent.TimeUnit",
+        "displayedType" : "TimeUnit",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 61,
+          "startColumn" : 35,
+          "endLine" : 61,
+          "endColumn" : 39
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/method/getDelay(java.util.concurrent.TimeUnit unit)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/method/compareTo(java.util.concurrent.Delayed o)" : {
+      "name" : "compareTo",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/method/compareTo(java.util.concurrent.Delayed o)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 16,
+        "endLine" : 67,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "o",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/method/compareTo(java.util.concurrent.Delayed o)/parameter/o",
+        "type" : "java.util.concurrent.Delayed",
+        "displayedType" : "Delayed",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 67,
+          "startColumn" : 34,
+          "endLine" : 67,
+          "endColumn" : 35
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext/method/compareTo(java.util.concurrent.Delayed o)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.AsyncTaskExecutionContext"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/runner/execute/AsyncTaskExecutionContext.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "java.util.concurrent.Delayed" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

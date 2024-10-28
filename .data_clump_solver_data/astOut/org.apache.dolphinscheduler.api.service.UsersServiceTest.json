@@ -1,0 +1,947 @@
+{
+  "name" : "UsersServiceTest",
+  "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 81,
+    "startColumn" : 8,
+    "endLine" : 81,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/resourcePermissionCheckService" : {
+      "name" : "resourcePermissionCheckService",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/resourcePermissionCheckService",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckService",
+      "displayedType" : "ResourcePermissionCheckService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 119,
+        "startColumn" : 44,
+        "endLine" : 119,
+        "endColumn" : 74
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/serviceLogger" : {
+      "name" : "serviceLogger",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/serviceLogger",
+      "type" : "org.slf4j.Logger",
+      "displayedType" : "Logger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 126,
+        "startColumn" : 33,
+        "endLine" : 126,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/userMapper" : {
+      "name" : "userMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/userMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.UserMapper",
+      "displayedType" : "UserMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 89,
+        "startColumn" : 24,
+        "endLine" : 89,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/tenantMapper" : {
+      "name" : "tenantMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/tenantMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.TenantMapper",
+      "displayedType" : "TenantMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 95,
+        "startColumn" : 26,
+        "endLine" : 95,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/alertGroupMapper" : {
+      "name" : "alertGroupMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/alertGroupMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.AlertGroupMapper",
+      "displayedType" : "AlertGroupMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 30,
+        "endLine" : 98,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/projectMapper" : {
+      "name" : "projectMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/projectMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.ProjectMapper",
+      "displayedType" : "ProjectMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 113,
+        "startColumn" : 27,
+        "endLine" : 113,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/storageOperator" : {
+      "name" : "storageOperator",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/storageOperator",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.plugin.storage.api.StorageOperator",
+      "displayedType" : "StorageOperator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 116,
+        "startColumn" : 29,
+        "endLine" : 116,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/projectUserMapper" : {
+      "name" : "projectUserMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/projectUserMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.ProjectUserMapper",
+      "displayedType" : "ProjectUserMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 104,
+        "startColumn" : 31,
+        "endLine" : 104,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/sessionService" : {
+      "name" : "sessionService",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/sessionService",
+      "type" : "org.apache.dolphinscheduler.api.service.SessionService",
+      "displayedType" : "SessionService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 122,
+        "startColumn" : 28,
+        "endLine" : 122,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/usersService" : {
+      "name" : "usersService",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/usersService",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.service.impl.UsersServiceImpl",
+      "displayedType" : "UsersServiceImpl",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 86,
+        "startColumn" : 30,
+        "endLine" : 86,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/accessTokenMapper" : {
+      "name" : "accessTokenMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/accessTokenMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.AccessTokenMapper",
+      "displayedType" : "AccessTokenMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 92,
+        "startColumn" : 31,
+        "endLine" : 92,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/datasourceUserMapper" : {
+      "name" : "datasourceUserMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/datasourceUserMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.DataSourceUserMapper",
+      "displayedType" : "DataSourceUserMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 101,
+        "startColumn" : 34,
+        "endLine" : 101,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/queueName" : {
+      "name" : "queueName",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/queueName",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 124,
+        "startColumn" : 20,
+        "endLine" : 124,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/metricsCleanUpService" : {
+      "name" : "metricsCleanUpService",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/metricsCleanUpService",
+      "type" : "org.apache.dolphinscheduler.api.service.MetricsCleanUpService",
+      "displayedType" : "MetricsCleanUpService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 107,
+        "startColumn" : 35,
+        "endLine" : 107,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/logger" : {
+      "name" : "logger",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/logger",
+      "type" : "org.slf4j.Logger",
+      "displayedType" : "Logger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 33,
+        "endLine" : 83,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/k8sNamespaceUserMapper" : {
+      "name" : "k8sNamespaceUserMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/memberField/k8sNamespaceUserMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.K8sNamespaceUserMapper",
+      "displayedType" : "K8sNamespaceUserMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 110,
+        "startColumn" : 36,
+        "endLine" : 110,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testRevokeProjectById()" : {
+      "name" : "testRevokeProjectById",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testRevokeProjectById()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 507,
+        "startColumn" : 17,
+        "endLine" : 507,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testCreateUser()" : {
+      "name" : "testCreateUser",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testCreateUser()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 147,
+        "startColumn" : 17,
+        "endLine" : 147,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getUserList()" : {
+      "name" : "getUserList",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getUserList()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.User>",
+      "displayedType" : "List<User>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 850,
+        "startColumn" : 24,
+        "endLine" : 850,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testQueryUserListPage()" : {
+      "name" : "testQueryUserListPage",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testQueryUserListPage()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 274,
+        "startColumn" : 17,
+        "endLine" : 274,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testCreateUserIfNotExists()" : {
+      "name" : "testCreateUserIfNotExists",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testCreateUserIfNotExists()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 785,
+        "startColumn" : 17,
+        "endLine" : 785,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testRegisterUser()" : {
+      "name" : "testRegisterUser",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testRegisterUser()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 676,
+        "startColumn" : 17,
+        "endLine" : 676,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testDeleteUserById()" : {
+      "name" : "testDeleteUserById",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testDeleteUserById()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 341,
+        "startColumn" : 17,
+        "endLine" : 341,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testActivateUser()" : {
+      "name" : "testActivateUser",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testActivateUser()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 715,
+        "startColumn" : 17,
+        "endLine" : 715,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testQueryAllGeneralUsers()" : {
+      "name" : "testQueryAllGeneralUsers",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testQueryAllGeneralUsers()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 613,
+        "startColumn" : 17,
+        "endLine" : 613,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testRevokeProject()" : {
+      "name" : "testRevokeProject",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testRevokeProject()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 479,
+        "startColumn" : 17,
+        "endLine" : 479,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testGetUserIdByName()" : {
+      "name" : "testGetUserIdByName",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testGetUserIdByName()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 226,
+        "startColumn" : 17,
+        "endLine" : 226,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testBatchActivateUser()" : {
+      "name" : "testBatchActivateUser",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testBatchActivateUser()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 750,
+        "startColumn" : 17,
+        "endLine" : 750,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testGrantNamespaces()" : {
+      "name" : "testGrantNamespaces",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testGrantNamespaces()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 532,
+        "startColumn" : 17,
+        "endLine" : 532,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getUser()" : {
+      "name" : "getUser",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getUser()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 859,
+        "startColumn" : 18,
+        "endLine" : 859,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testSelectByIds()" : {
+      "name" : "testSelectByIds",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testSelectByIds()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 213,
+        "startColumn" : 17,
+        "endLine" : 213,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getUserInfo()" : {
+      "name" : "getUserInfo",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getUserInfo()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 587,
+        "startColumn" : 17,
+        "endLine" : 587,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testQueryUserList()" : {
+      "name" : "testQueryUserList",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testQueryUserList()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 248,
+        "startColumn" : 17,
+        "endLine" : 248,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getLoginUser()" : {
+      "name" : "getLoginUser",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getLoginUser()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 579,
+        "startColumn" : 18,
+        "endLine" : 579,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getGeneralUser()" : {
+      "name" : "getGeneralUser",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getGeneralUser()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 842,
+        "startColumn" : 18,
+        "endLine" : 842,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getTenant()" : {
+      "name" : "getTenant",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getTenant()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.Tenant",
+      "displayedType" : "Tenant",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 891,
+        "startColumn" : 20,
+        "endLine" : 891,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getAlertGroups()" : {
+      "name" : "getAlertGroups",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getAlertGroups()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.AlertGroup>",
+      "displayedType" : "List<AlertGroup>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 897,
+        "startColumn" : 30,
+        "endLine" : 897,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testVerifyUserName()" : {
+      "name" : "testVerifyUserName",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testVerifyUserName()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 630,
+        "startColumn" : 17,
+        "endLine" : 630,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getNonAdminUser()" : {
+      "name" : "getNonAdminUser",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getNonAdminUser()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 874,
+        "startColumn" : 18,
+        "endLine" : 874,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testQueryUser()" : {
+      "name" : "testQueryUser",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testQueryUser()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 202,
+        "startColumn" : 17,
+        "endLine" : 202,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testGrantProject()" : {
+      "name" : "testGrantProject",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testGrantProject()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 378,
+        "startColumn" : 17,
+        "endLine" : 378,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/after()" : {
+      "name" : "after",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/after()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 134,
+        "startColumn" : 17,
+        "endLine" : 134,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testGrantProjectWithReadPerm()" : {
+      "name" : "testGrantProjectWithReadPerm",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testGrantProjectWithReadPerm()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 407,
+        "startColumn" : 17,
+        "endLine" : 407,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testCreateUserForLdap()" : {
+      "name" : "testCreateUserForLdap",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testCreateUserForLdap()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 139,
+        "startColumn" : 17,
+        "endLine" : 139,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getProject()" : {
+      "name" : "getProject",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getProject()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.Project",
+      "displayedType" : "Project",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 828,
+        "startColumn" : 21,
+        "endLine" : 828,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getDisabledUser()" : {
+      "name" : "getDisabledUser",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/getDisabledUser()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 814,
+        "startColumn" : 18,
+        "endLine" : 814,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testAuthorizedUser()" : {
+      "name" : "testAuthorizedUser",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testAuthorizedUser()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 659,
+        "startColumn" : 17,
+        "endLine" : 659,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testGrantProjectByCode()" : {
+      "name" : "testGrantProjectByCode",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testGrantProjectByCode()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 436,
+        "startColumn" : 17,
+        "endLine" : 436,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/before()" : {
+      "name" : "before",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/before()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 129,
+        "startColumn" : 17,
+        "endLine" : 129,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testUnauthorizedUser()" : {
+      "name" : "testUnauthorizedUser",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testUnauthorizedUser()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 643,
+        "startColumn" : 17,
+        "endLine" : 643,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testUpdateUser()" : {
+      "name" : "testUpdateUser",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testUpdateUser()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 294,
+        "startColumn" : 17,
+        "endLine" : 294,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testGrantDataSource()" : {
+      "name" : "testGrantDataSource",
+      "key" : "org.apache.dolphinscheduler.api.service.UsersServiceTest/method/testGrantDataSource()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 550,
+        "startColumn" : 17,
+        "endLine" : 550,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.UsersServiceTest"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/test/java/org/apache/dolphinscheduler/api/service/UsersServiceTest.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

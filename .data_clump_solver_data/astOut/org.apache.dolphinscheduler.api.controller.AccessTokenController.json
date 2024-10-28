@@ -1,0 +1,452 @@
+{
+  "name" : "AccessTokenController",
+  "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 65,
+    "startColumn" : 8,
+    "endLine" : 65,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.controller.AccessTokenController/memberField/accessTokenService" : {
+      "name" : "accessTokenService",
+      "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/memberField/accessTokenService",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.service.AccessTokenService",
+      "displayedType" : "AccessTokenService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 32,
+        "endLine" : 68,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/generateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime)" : {
+      "name" : "generateToken",
+      "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/generateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.String>",
+      "displayedType" : "Result<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 110,
+        "startColumn" : 27,
+        "endLine" : 110,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/generateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 96,
+          "endLine" : 110,
+          "endColumn" : 105
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/generateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/generateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime)/parameter/userId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 111,
+          "startColumn" : 77,
+          "endLine" : 111,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/generateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime)"
+      }, {
+        "name" : "expireTime",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/generateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime)/parameter/expireTime",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 112,
+          "startColumn" : 84,
+          "endLine" : 112,
+          "endColumn" : 94
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/generateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController"
+    },
+    "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/queryAccessTokenList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.String searchVal, java.lang.Integer pageSize)" : {
+      "name" : "queryAccessTokenList",
+      "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/queryAccessTokenList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.String searchVal, java.lang.Integer pageSize)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.PageInfo<org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.AccessToken>>",
+      "displayedType" : "Result<PageInfo<AccessToken>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 135,
+        "startColumn" : 42,
+        "endLine" : 135,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/queryAccessTokenList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.String searchVal, java.lang.Integer pageSize)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 135,
+          "startColumn" : 144,
+          "endLine" : 135,
+          "endColumn" : 153
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/queryAccessTokenList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.String searchVal, java.lang.Integer pageSize)"
+      }, {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/queryAccessTokenList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.String searchVal, java.lang.Integer pageSize)/parameter/pageNo",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 136,
+          "startColumn" : 95,
+          "endLine" : 136,
+          "endColumn" : 101
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/queryAccessTokenList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.String searchVal, java.lang.Integer pageSize)"
+      }, {
+        "name" : "searchVal",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/queryAccessTokenList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.String searchVal, java.lang.Integer pageSize)/parameter/searchVal",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 137,
+          "startColumn" : 123,
+          "endLine" : 137,
+          "endColumn" : 132
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/queryAccessTokenList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.String searchVal, java.lang.Integer pageSize)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/queryAccessTokenList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.String searchVal, java.lang.Integer pageSize)/parameter/pageSize",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 138,
+          "startColumn" : 97,
+          "endLine" : 138,
+          "endColumn" : 105
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/queryAccessTokenList(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.String searchVal, java.lang.Integer pageSize)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController"
+    },
+    "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/createToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime, java.lang.String token)" : {
+      "name" : "createToken",
+      "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/createToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime, java.lang.String token)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.AccessToken>",
+      "displayedType" : "Result<AccessToken>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 89,
+        "startColumn" : 32,
+        "endLine" : 89,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/createToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime, java.lang.String token)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 89,
+          "startColumn" : 125,
+          "endLine" : 89,
+          "endColumn" : 134
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/createToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime, java.lang.String token)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/createToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime, java.lang.String token)/parameter/userId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 90,
+          "startColumn" : 80,
+          "endLine" : 90,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/createToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime, java.lang.String token)"
+      }, {
+        "name" : "expireTime",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/createToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime, java.lang.String token)/parameter/expireTime",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 91,
+          "startColumn" : 87,
+          "endLine" : 91,
+          "endColumn" : 97
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/createToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime, java.lang.String token)"
+      }, {
+        "name" : "token",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/createToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime, java.lang.String token)/parameter/token",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 92,
+          "startColumn" : 100,
+          "endLine" : 92,
+          "endColumn" : 105
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/createToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int userId, java.lang.String expireTime, java.lang.String token)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController"
+    },
+    "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/delAccessTokenById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)" : {
+      "name" : "delAccessTokenById",
+      "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/delAccessTokenById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Boolean>",
+      "displayedType" : "Result<Boolean>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 180,
+        "startColumn" : 28,
+        "endLine" : 180,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/delAccessTokenById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 180,
+          "startColumn" : 128,
+          "endLine" : 180,
+          "endColumn" : 137
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/delAccessTokenById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/delAccessTokenById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 181,
+          "startColumn" : 79,
+          "endLine" : 181,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/delAccessTokenById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController"
+    },
+    "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/updateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, int userId, java.lang.String expireTime, java.lang.String token)" : {
+      "name" : "updateToken",
+      "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/updateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, int userId, java.lang.String expireTime, java.lang.String token)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.AccessToken>",
+      "displayedType" : "Result<AccessToken>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 207,
+        "startColumn" : 32,
+        "endLine" : 207,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/updateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, int userId, java.lang.String expireTime, java.lang.String token)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 207,
+          "startColumn" : 125,
+          "endLine" : 207,
+          "endColumn" : 134
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/updateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, int userId, java.lang.String expireTime, java.lang.String token)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/updateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, int userId, java.lang.String expireTime, java.lang.String token)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 208,
+          "startColumn" : 76,
+          "endLine" : 208,
+          "endColumn" : 78
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/updateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, int userId, java.lang.String expireTime, java.lang.String token)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/updateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, int userId, java.lang.String expireTime, java.lang.String token)/parameter/userId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 209,
+          "startColumn" : 80,
+          "endLine" : 209,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/updateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, int userId, java.lang.String expireTime, java.lang.String token)"
+      }, {
+        "name" : "expireTime",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/updateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, int userId, java.lang.String expireTime, java.lang.String token)/parameter/expireTime",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 210,
+          "startColumn" : 87,
+          "endLine" : 210,
+          "endColumn" : 97
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/updateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, int userId, java.lang.String expireTime, java.lang.String token)"
+      }, {
+        "name" : "token",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/updateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, int userId, java.lang.String expireTime, java.lang.String token)/parameter/token",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 211,
+          "startColumn" : 100,
+          "endLine" : 211,
+          "endColumn" : 105
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/updateToken(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, int userId, java.lang.String expireTime, java.lang.String token)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController"
+    },
+    "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/queryAccessTokenByUser(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)" : {
+      "name" : "queryAccessTokenByUser",
+      "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/queryAccessTokenByUser(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.util.List<org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.AccessToken>>",
+      "displayedType" : "Result<List<AccessToken>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 161,
+        "startColumn" : 38,
+        "endLine" : 161,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/queryAccessTokenByUser(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 161,
+          "startColumn" : 142,
+          "endLine" : 161,
+          "endColumn" : 151
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/queryAccessTokenByUser(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/queryAccessTokenByUser(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 162,
+          "startColumn" : 93,
+          "endLine" : 162,
+          "endColumn" : 99
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController/method/queryAccessTokenByUser(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.AccessTokenController"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/controller/AccessTokenController.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.controller.BaseController" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}
