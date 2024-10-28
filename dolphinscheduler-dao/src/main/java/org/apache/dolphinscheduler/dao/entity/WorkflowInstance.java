@@ -80,7 +80,7 @@ public class WorkflowInstance {
 
     private String host;
 
-    @Deprecated
+    
     @TableField(exist = false)
 
 
@@ -90,7 +90,7 @@ public class WorkflowInstance {
 
     private TaskDependType taskDependType;
 
-    @Deprecated
+    
     private int maxTryTimes;
 
     private FailureStrategy failureStrategy;
@@ -151,7 +151,7 @@ public class WorkflowInstance {
 
     private String varPool;
 
-    @Deprecated
+    
     private int nextWorkflowInstanceId;
 
     private int dryRun;

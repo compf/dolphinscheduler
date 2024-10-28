@@ -58,11 +58,11 @@ public class PluginDao {
 
 
         PluginDefine currPluginDefine =
-                pluginDefineMapper.queryByNameAndType(pluginDefine.getName(), pluginDefine.getType());
+                pluginDefineMapper.queryByNameAndType(pluginDefine.getPluginName(), pluginDefine.getPluginType());
         if (currPluginDefine == null) {
             try {
-                if (pluginDefineMapper.insert(pluginDefine) == 1 && pluginDefine.getId() != 0) {
-                    return pluginDefine.getId().intValue();
+                if (pluginDefineMapper.insert(pluginDefine) == 1 && pluginDefine.getId() != null) {
+                    return pluginDefine.getId();
                 }
                 throw new TaskPluginException(
                         String.format("Failed to insert plugin definition, pluginName: %s, pluginType: %s",
@@ -71,7 +71,7 @@ public class PluginDao {
                 throw ex;
             } catch (Exception ex) {
                 log.error("Insert plugin definition error, there may already exist a plugin", ex);
-                currPluginDefine = pluginDefineMapper.queryByNameAndType(pluginDefine.getName(),
+                currPluginDefine = pluginDefineMapper.queryByNameAndType(pluginDefine.getPluginName(),
                         pluginDefine.getPluginType());
                 if (currPluginDefine == null) {
                     throw new TaskPluginException(
@@ -80,9 +80,9 @@ public class PluginDao {
                 }
             }
         }
-        if (!Objects.equals(currPluginDefine.getParams(), pluginDefine.getParams())) {
+        if (!Objects.equals(currPluginDefine.getPluginParams(), pluginDefine.getPluginParams())) {
             currPluginDefine.setUpdateTime(pluginDefine.getUpdateTime());
-            currPluginDefine.setParams(pluginDefine.getParams());
+            currPluginDefine.setPluginParams(pluginDefine.getPluginParams());
             pluginDefineMapper.updateById(currPluginDefine);
         }
         return currPluginDefine.getId();

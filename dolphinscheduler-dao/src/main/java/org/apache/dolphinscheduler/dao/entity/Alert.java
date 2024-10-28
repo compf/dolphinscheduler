@@ -57,7 +57,7 @@ public class Alert {
     @TableField(value = "alert_status")
     private AlertStatus alertStatus;
 
-    @TableField(value = "warning_type")
+    
 
 
 
