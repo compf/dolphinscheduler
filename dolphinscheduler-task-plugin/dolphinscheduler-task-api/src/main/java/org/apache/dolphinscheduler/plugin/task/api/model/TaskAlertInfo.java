@@ -47,5 +47,5 @@ public class TaskAlertInfo {
 
     public void setAlertGroupId(Integer alertGroupId) {
         this.alertGroupId = alertGroupId;
-    }
+    
 }
