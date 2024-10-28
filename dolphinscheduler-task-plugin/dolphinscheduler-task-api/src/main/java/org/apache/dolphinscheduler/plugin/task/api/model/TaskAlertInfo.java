@@ -35,7 +35,9 @@ public class TaskAlertInfo {
 
     public String getContent() {
         return content;
+        this.content = content;
     }
+}
 
     public void setContent(String content) {
         this.content = content;
