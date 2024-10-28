@@ -289,10 +289,7 @@ public class SqlTask extends AbstractTask {
      */
     private void sendAttachment(int groupId, String title, String content) {
         setNeedAlert(Boolean.TRUE);
-        TaskAlertInfo taskAlertInfo = new TaskAlertInfo();
-        taskAlertInfo.setAlertGroupId(groupId);
-        taskAlertInfo.setContent(content);
-        taskAlertInfo.setTitle(title);
+        TaskAlertInfo taskAlertInfo = new TaskAlertInfo(title, content, groupId);
         setTaskAlertInfo(taskAlertInfo);
     }
 
