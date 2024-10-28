@@ -40,6 +40,15 @@ import com.baomidou.mybatisplus.annotation.TableName;
 @NoArgsConstructor
 @AllArgsConstructor
 @TableName("t_ds_alert")
+
+    @TableField(value = "title")
+    private String title;
+
+    @TableField(value = "content")
+    private String content;
+
+    @TableField(value = "alertgroup_id")
+    private Integer alertGroupId;
 public class Alert {
 
     @TableId(value = "id", type = IdType.AUTO)
