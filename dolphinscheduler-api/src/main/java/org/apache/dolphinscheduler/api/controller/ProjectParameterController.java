@@ -89,7 +89,6 @@ public class ProjectParameterController extends BaseController {
                 projectParameterValue, projectParameterDataType);
     }
 
-    @Operation(summary = "deleteProjectParametersByCode", description = "DELETE_PROJECT_PARAMETER_NOTES")
     @Parameters({
             @Parameter(name = "code", description = "PROJECT_PARAMETER_CODE", required = true, schema = @Schema(implementation = String.class))
     })
@@ -101,7 +100,7 @@ public class ProjectParameterController extends BaseController {
                                                 @RequestParam("code") long code) {
         return projectParameterService.deleteProjectParametersByCode(loginUser, projectCode, code);
     }
-    })
+
     @PostMapping(value = "/batch-delete")
     @ResponseStatus(HttpStatus.OK)
     @ApiException(DELETE_PROJECT_PARAMETER_ERROR)
@@ -109,10 +108,8 @@ public class ProjectParameterController extends BaseController {
                                                       @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
                                                       @RequestParam("codes") String codes) {
         return projectParameterService.batchDeleteProjectParametersByCodes(loginUser, projectCode, codes);
-    },
-            @Parameter(name = "pageNo", description = "PAGE_NO", required = true, schema = @Schema(implementation = int.class, example = "1")),
-            @Parameter(name = "pageSize", description = "PAGE_SIZE", required = true, schema = @Schema(implementation = int.class, example = "10"))
-    })
+    }
+
     @GetMapping()
     @ResponseStatus(HttpStatus.OK)
     @ApiException(QUERY_PROJECT_PARAMETER_ERROR)
@@ -128,7 +125,7 @@ public class ProjectParameterController extends BaseController {
         return projectParameterService.queryProjectParameterListPaging(loginUser, projectCode, pageSize, pageNo,
                 searchVal, projectParameterDataType);
     }
-    })
+
     @GetMapping(value = "/{code}")
     @ResponseStatus(HttpStatus.OK)
     @ApiException(QUERY_PROJECT_PARAMETER_ERROR)
