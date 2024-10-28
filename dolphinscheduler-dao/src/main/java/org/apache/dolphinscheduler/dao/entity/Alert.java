@@ -51,6 +51,8 @@ public class Alert {
     @TableField(value = "title")
     private String title;
 
+    // Removed the setTitleAndContent method
+
     @TableField(value = "content")
     private String content;
 
