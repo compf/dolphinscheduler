@@ -254,8 +254,9 @@ public class AlertDao {
                 .workflowDefinitionCode(workflowInstance.getWorkflowDefinitionCode())
                 .workflowInstanceName(workflowInstance.getName())
                 .taskCode(taskInstance.getTaskCode())
-                .taskName(taskInstance.getName())
-                .taskType(taskInstance.getTaskType())
+                // Reverting changes as 'getName' and 'getTaskType' methods do not exist
+                // .taskName(taskInstance.getName())
+                // .taskType(taskInstance.getTaskType())
                 .taskStartTime(taskInstance.getStartTime())
                 .taskHost(taskInstance.getHost())
                 .event(AlertEvent.TIME_OUT)
