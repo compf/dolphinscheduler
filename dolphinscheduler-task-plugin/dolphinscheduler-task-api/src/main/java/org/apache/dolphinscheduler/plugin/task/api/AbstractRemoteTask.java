@@ -77,11 +77,11 @@ public abstract class AbstractRemoteTask extends AbstractTask {
      * @return
      * @throws TaskException
      */
-//    public abstract void submitApplication() throws TaskException;
+////    public abstract void submitApplication() throws TaskException;
 
     /**
      * keep checking application status
      * @throws TaskException
      */
-//    public abstract void trackApplicationStatus() throws TaskException;
+////    public abstract void trackApplicationStatus() throws TaskException;
 }

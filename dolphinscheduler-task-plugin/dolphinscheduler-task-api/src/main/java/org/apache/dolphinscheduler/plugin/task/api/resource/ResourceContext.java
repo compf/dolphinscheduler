@@ -42,7 +42,7 @@ public class ResourceContext {
 
     public void addResourceItem(ResourceItem resourceItem) {
         checkNotNull(resourceItem);
-//        resourceItemMap.put(resourceItem.getResourceAbsolutePathInStorage(), resourceItem);
+////        resourceItemMap.put(resourceItem.getResourceAbsolutePathInStorage(), resourceItem);
     }
 
     public ResourceItem getResourceItem(String resourceAbsolutePathInStorage) {

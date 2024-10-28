@@ -37,7 +37,7 @@ public class DataQualityParameters extends AbstractParameters {
     /**
      * rule id
      */
-//    private int ruleId;
+////    private int ruleId;
     /**
      * rule input entry value map
      */
@@ -71,7 +71,7 @@ public class DataQualityParameters extends AbstractParameters {
     @Override
     public boolean checkParameters() {
 
-        if (ruleId == 0) {
+//        if (ruleId == 0) {
             log.error("rule id is null");
             return false;
         }
@@ -81,7 +81,7 @@ public class DataQualityParameters extends AbstractParameters {
             return false;
         }
 
-        return sparkParameters != null;
+//        return sparkParameters != null;
     }
 
     @Override
