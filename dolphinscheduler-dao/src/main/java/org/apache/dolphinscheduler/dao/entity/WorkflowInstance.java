@@ -219,7 +219,7 @@ public class WorkflowInstance {
     public void setStateWithDesc(WorkflowExecutionStatus state, String stateDesc) {
 
             stateDescList = new ArrayList<>();
-        } else if (stateDescList == null) {
+
 
         }
 
@@ -234,4 +234,4 @@ public class WorkflowInstance {
         WorkflowExecutionStatus state;
         String desc;
     }
-}
+

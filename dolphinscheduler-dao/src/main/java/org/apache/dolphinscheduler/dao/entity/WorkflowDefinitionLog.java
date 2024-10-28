@@ -36,22 +36,12 @@ public class WorkflowDefinitionLog extends WorkflowDefinition {
     }
 
 
-        this.setUpdateTime(workflowDefinition.getUpdateTime());
-        this.setFlag(workflowDefinition.getFlag());
-        this.setUserId(workflowDefinition.getUserId());
-        this.setUserName(workflowDefinition.getUserName());
-        this.setProjectName(workflowDefinition.getProjectName());
-        this.setLocations(workflowDefinition.getLocations());
-        this.setScheduleReleaseState(workflowDefinition.getScheduleReleaseState());
-        this.setTimeout(workflowDefinition.getTimeout());
-        this.setModifyBy(workflowDefinition.getModifyBy());
-        this.setWarningGroupId(workflowDefinition.getWarningGroupId());
-        this.setExecutionType(workflowDefinition.getExecutionType());
+
     }
 
     @Override
-    public boolean equals(Object o) {
+
         return super.equals(o);
     }
 
-}
+
