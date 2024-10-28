@@ -71,8 +71,7 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
                                          @RequestParam(value = "projectParameterDataType", defaultValue = "VARCHAR") String projectParameterDataType) {
-        ProjectParameterInfo projectParameterInfo = new ProjectParameterInfo(loginUser, projectCode, null, projectParameterName,
-                projectParameterValue, projectParameterDataType);
+        return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName, projectParameterValue, projectParameterDataType);
         return projectParameterService.createProjectParameter(projectParameterInfo);
     }
 
@@ -92,8 +91,7 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
                                          @RequestParam(value = "projectParameterDataType") String projectParameterDataType) {
-        ProjectParameterInfo projectParameterInfo = new ProjectParameterInfo(loginUser, projectCode, code, projectParameterName,
-                projectParameterValue, projectParameterDataType);
+        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName, projectParameterValue, projectParameterDataType);
         return projectParameterService.updateProjectParameter(projectParameterInfo);
     }
 
@@ -143,7 +141,7 @@ public class ProjectParameterController extends BaseController {
                                                   @RequestParam("pageSize") Integer pageSize) {
 
         checkPageParams(pageNo, pageSize);
-        searchVal = ParameterUtils.handleEscapes(searchVal);
+        searchVal = searchVal.replace("%", "\\%").replace("_", "\\_");
         return projectParameterService.queryProjectParameterListPaging(loginUser, projectCode, pageSize, pageNo,
                 searchVal, projectParameterDataType);
     }
