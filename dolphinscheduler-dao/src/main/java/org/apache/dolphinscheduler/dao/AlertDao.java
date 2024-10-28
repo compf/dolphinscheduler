@@ -218,7 +218,7 @@ public class AlertDao {
         alert.setTitle("Workflow Timeout Warn");
         alert.setProjectCode(projectUser.getProjectCode());
         alert.setWorkflowDefinitionCode(workflowInstance.getWorkflowDefinitionCode());
-        alert.setWorkflowInstanceId(workflowInstance.getId());
+        
         alert.setAlertType(AlertType.WORKFLOW_INSTANCE_TIMEOUT);
         saveTaskTimeoutAlert(alert, content, alertGroupId);
     }
@@ -266,7 +266,7 @@ public class AlertDao {
         alert.setTitle("Task Timeout Warn");
         alert.setProjectCode(projectUser.getProjectCode());
         alert.setWorkflowDefinitionCode(workflowInstance.getWorkflowDefinitionCode());
-        alert.setWorkflowInstanceId(workflowInstance.getId());
+        
         alert.setAlertType(AlertType.TASK_TIMEOUT);
         saveTaskTimeoutAlert(alert, content, workflowInstance.getWarningGroupId());
     }
