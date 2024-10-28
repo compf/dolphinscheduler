@@ -50,8 +50,6 @@ public class TaskInstance implements Serializable {
 
     private Long projectCode;
 
-    private int taskDefinitionVersion;
-
     @TableField(exist = false)
     private String processDefinitionName;
 
