@@ -109,16 +109,7 @@ public class SchedulerController extends BaseController {
     @OperatorLog(auditType = AuditType.SCHEDULE_CREATE)
     public Result createSchedule(@RequestBody ScheduleCreateRequest scheduleCreateRequest) {
         Map<String, Object> result = schedulerService.insertSchedule(scheduleCreateRequest);
-                projectCode,
-                workflowDefinitionCode,
-                schedule,
-                warningType,
-                warningGroupId,
-                failureStrategy,
-                workflowInstancePriority,
-                workerGroup,
-                tenantCode,
-                environmentCode);
+        return returnDataList(result);
 
         return returnDataList(result);
     }
@@ -324,8 +315,7 @@ public class SchedulerController extends BaseController {
     @OperatorLog(auditType = AuditType.SCHEDULE_UPDATE)
     public Result updateScheduleByWorkflowDefinitionCode(@RequestBody ScheduleUpdateRequest scheduleUpdateRequest) {
         Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(scheduleUpdateRequest);
-                warningType, warningGroupId, failureStrategy, workflowInstancePriority, workerGroup, tenantCode,
-                environmentCode);
+        return returnDataList(result);
         return returnDataList(result);
     }
 }
