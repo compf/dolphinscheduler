@@ -38,18 +38,10 @@ public class ExecutorPage {
 
     private String sessionId;
 
-    public HttpResponse startWorkflowInstance(User loginUser,
-                                              long projectCode,
-                                              long workflowDefinitionCode,
-                                              String scheduleTime,
-                                              FailureStrategy failureStrategy,
-                                              WarningType warningType) {
+    public HttpResponse startWorkflowInstance(ExecutionParameters executionParameters,
+                                              long projectCode) {
         Map<String, Object> params = new HashMap<>();
-        params.put("loginUser", loginUser);
-        params.put("workflowDefinitionCode", workflowDefinitionCode);
-        params.put("scheduleTime", scheduleTime);
-        params.put("failureStrategy", failureStrategy);
-        params.put("warningType", warningType);
+        params.putAll(executionParameters.toMap());
         Map<String, String> headers = new HashMap<>();
         headers.put(Constants.SESSION_ID_KEY, sessionId);
 
@@ -69,12 +61,9 @@ public class ExecutorPage {
         return requestClient.get(url, headers, params);
     }
 
-    public HttpResponse execute(User loginUser, long projectCode, int workflowInstanceId, ExecuteType executeType) {
+    public HttpResponse execute(ExecutionParameters executionParameters, long projectCode) {
         Map<String, Object> params = new HashMap<>();
-        params.put("loginUser", loginUser);
-        params.put("projectCode", projectCode);
-        params.put("workflowInstanceId", workflowInstanceId);
-        params.put("executeType", executeType);
+        params.putAll(executionParameters.toMap());
         Map<String, String> headers = new HashMap<>();
         headers.put(Constants.SESSION_ID_KEY, sessionId);
 
@@ -83,13 +72,9 @@ public class ExecutorPage {
         return requestClient.post(url, headers, params);
     }
 
-    public HttpResponse executeTask(User loginUser, long projectCode, int workflowInstanceId, String startNodeList,
+    public HttpResponse executeTask(ExecutionParameters executionParameters, long projectCode,
                                     TaskDependType taskDependType) {
-        Map<String, Object> params = new HashMap<>();
-        params.put("loginUser", loginUser);
-        params.put("workflowInstanceId", workflowInstanceId);
-        params.put("startNodeList", startNodeList);
-        params.put("taskDependType", taskDependType);
+        params.putAll(executionParameters.toMap());
         Map<String, String> headers = new HashMap<>();
         headers.put(Constants.SESSION_ID_KEY, sessionId);
 
