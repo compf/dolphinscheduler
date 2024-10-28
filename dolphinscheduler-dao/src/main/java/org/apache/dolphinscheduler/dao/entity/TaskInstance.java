@@ -46,7 +46,7 @@ public class TaskInstance implements Serializable {
 
     private int workflowInstanceId;
 
-    private String workflowInstanceName;
+    private TaskInstanceInitParams initParams;
 
     private Long projectCode;
 
