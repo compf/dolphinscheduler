@@ -17,6 +17,8 @@
 
 package org.apache.dolphinscheduler.plugin.task.api.model;
 
+import org.apache.dolphinscheduler.plugin.task.api.model.AlertInfo;
+
 public class TaskAlertInfo extends AlertInfo {
 
 
