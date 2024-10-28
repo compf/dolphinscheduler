@@ -59,6 +59,7 @@ public class Alert {
 
     @TableField(value = "warning_type")
     private WarningType warningType;
+    private WarningType warningType;
 
     @TableField(value = "log")
     private String log;
