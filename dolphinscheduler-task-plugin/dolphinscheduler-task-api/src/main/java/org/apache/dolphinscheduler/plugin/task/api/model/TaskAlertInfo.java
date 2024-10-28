@@ -18,11 +18,14 @@
 package org.apache.dolphinscheduler.plugin.task.api.model;
 
 public class TaskAlertInfo {
-
+    private String title;
     private String title;
 
     private String content;
 
+    private Integer alertGroupId;
+
+    private String content;
     private Integer alertGroupId;
 
     public String getTitle() {
