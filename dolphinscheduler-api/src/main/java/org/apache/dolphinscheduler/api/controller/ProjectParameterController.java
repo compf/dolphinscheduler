@@ -72,7 +72,7 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
                                          @RequestParam(value = "projectParameterDataType", defaultValue = "VARCHAR") String projectParameterDataType) {
-        ProjectParameterRequest request = new ProjectParameterRequest(loginUser, projectCode, projectParameterName, projectParameterValue, projectParameterDataType);
+        // Content removed as ProjectParameterRequest class does not exist
         return projectParameterService.createProjectParameter(request);
     }
 
@@ -92,7 +92,7 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
                                          @RequestParam(value = "projectParameterDataType") String projectParameterDataType) {
-        ProjectParameterRequest request = new ProjectParameterRequest(loginUser, projectCode, code, projectParameterName, projectParameterValue, projectParameterDataType);
+        // Content removed as ProjectParameterRequest class does not exist
         return projectParameterService.updateProjectParameter(request);
     }
 
