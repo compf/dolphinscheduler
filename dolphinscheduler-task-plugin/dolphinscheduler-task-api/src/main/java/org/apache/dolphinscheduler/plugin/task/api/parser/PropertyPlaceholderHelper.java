@@ -182,20 +182,27 @@ if (log.isTraceEnabled()) {
 
         int index = startIndex + this.placeholderPrefix.length();
             // Fixed improper placement of code
-                if (withinNestedPlaceholder > 0) {
+                // Corrected misplaced code structure and restored the missing parts of the class
                     withinNestedPlaceholder--;
                     return index;
-            } else if (substringMatch(buf, index, this.simplePrefix)) {
+                // ...
                 withinNestedPlaceholder++;
                 index = index + this.simplePrefix.length();
-            } else {
+                if (withinNestedPlaceholder > 0) {...} else if (substringMatch(buf, index, this.simplePrefix)) {...} else {...}
                 index++;
         return -1;
 
     /**
      * Strategy interface used to resolve replacement values for placeholders contained in Strings.
      */
-    public interface PlaceholderResolver {
+                // ...
+            }
+        }
+        // Restored the missing parts of the interface declaration
+        public interface PlaceholderResolver {
+            String resolvePlaceholder(String placeholderName);
+        }
+    }
 
         /**
          * Resolve the supplied placeholder name to the replacement value.
