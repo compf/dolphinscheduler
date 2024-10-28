@@ -32,7 +32,7 @@ public class TaskInstanceUtils {
         target.setId(source.getId());
         target.setName(source.getName());
         target.setTaskType(source.getTaskType());
-        target.setWorkflowInstanceId(source.getWorkflowInstanceId());
+        target.setWorkflowInstanceId(source.getWorkflowInstance().getId());
         target.setWorkflowInstanceName(source.getWorkflowInstanceName());
         target.setProjectCode(source.getProjectCode());
         target.setTaskCode(source.getTaskCode());
