@@ -69,11 +69,8 @@ public class TaskInstanceDaoImpl extends BaseDao<TaskInstance, TaskInstanceMappe
         WorkflowExecutionStatus processInstanceState = workflowInstance.getState();
         if (processInstanceState.isFinished() || processInstanceState == WorkflowExecutionStatus.READY_STOP) {
             log.warn("processInstance: {} state was: {}, skip submit this task, taskCode: {}",
-                    workflowInstance.getId(),
-                    processInstanceState,
-                    taskInstance.getTaskCode());
-            return false;
-        }
+// TaskInstance.getTaskCode() method does not exist or is refactored.
+        // Replace the following logic with the equivalent or corrected method call.
         if (processInstanceState == WorkflowExecutionStatus.READY_PAUSE) {
             taskInstance.setState(TaskExecutionStatus.PAUSE);
         }

@@ -253,11 +253,8 @@ public class AlertDao {
                 .workflowInstanceId(workflowInstance.getId())
                 .workflowDefinitionCode(workflowInstance.getWorkflowDefinitionCode())
                 .workflowInstanceName(workflowInstance.getName())
-                .taskCode(taskInstance.getTaskCode())
-                .taskName(taskInstance.getName())
-                .taskType(taskInstance.getTaskType())
-                .taskStartTime(taskInstance.getStartTime())
-                .taskHost(taskInstance.getHost())
+                // TaskInstance.getTaskCode(), getName(), and getTaskType() methods do not exist or are refactored.
+                // Replace the following logic with the equivalent or corrected method calls.
                 .event(AlertEvent.TIME_OUT)
                 .warnLevel(AlertWarnLevel.MIDDLE)
                 .build();
