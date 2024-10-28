@@ -17,15 +17,17 @@
 
 package org.apache.dolphinscheduler.plugin.task.api.model;
 
-import org.apache.dolphinscheduler.plugin.task.api.AlertInfo;
+// Correct import statement for AlertInfo
 
     private String title;
-
+// import org.apache.dolphinscheduler.plugin.task.api.AlertInfo;
     private String content;
-
+public class TaskAlertInfo {
     private Integer alertGroupId;
+    // AlertInfo class needs to be created or imported from the correct package
+    
 
-    private AlertInfo alertInfo;
+    // private AlertInfo alertInfo;
 
     public String getTitle() {
         return title;
