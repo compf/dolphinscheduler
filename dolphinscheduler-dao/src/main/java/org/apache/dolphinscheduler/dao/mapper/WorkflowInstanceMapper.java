@@ -304,4 +304,4 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @return
      */
 
-}
+// Properly closed class or interface declaration expected here
