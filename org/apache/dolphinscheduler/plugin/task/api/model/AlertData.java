@@ -5,5 +5,27 @@ public class AlertData {
     private String content;
     private Integer alertGroupId;
 
-    // Constructor, getters, and setters
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public Integer getAlertGroupId() {
+        return alertGroupId;
+    }
+
+    public void setAlertGroupId(Integer alertGroupId) {
+        this.alertGroupId = alertGroupId;
+    }
 }
