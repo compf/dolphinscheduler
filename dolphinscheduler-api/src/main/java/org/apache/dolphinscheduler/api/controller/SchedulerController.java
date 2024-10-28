@@ -119,7 +119,18 @@ public class SchedulerController extends BaseController {
                                  @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") Long environmentCode,
                                  @RequestParam(value = "workflowInstancePriority", required = false, defaultValue = DEFAULT_WORKFLOW_INSTANCE_PRIORITY) Priority workflowInstancePriority) {
         // Content removed as ScheduleRequest class does not exist
-        Map<String, Object> result = schedulerService.insertSchedule(scheduleRequest);
+        Map<String, Object> result = schedulerService.insertSchedule(
+                loginUser,
+                projectCode,
+                workflowDefinitionCode,
+                schedule,
+                warningType,
+                warningGroupId,
+                failureStrategy,
+                workflowInstancePriority,
+                workerGroup,
+                tenantCode,
+                environmentCode);
 
         return returnDataList(result);
     }
@@ -335,7 +346,18 @@ public class SchedulerController extends BaseController {
                                                          @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") long environmentCode,
                                                          @RequestParam(value = "workflowInstancePriority", required = false) Priority workflowInstancePriority) {
         // Content removed as ScheduleRequest class does not exist
-        Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(scheduleRequest);
+        Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(
+                loginUser,
+                projectCode,
+                workflowDefinitionCode,
+                schedule,
+                warningType,
+                warningGroupId,
+                failureStrategy,
+                workflowInstancePriority,
+                workerGroup,
+                tenantCode,
+                environmentCode);
         return returnDataList(result);
     }
 }
