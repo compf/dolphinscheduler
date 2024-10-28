@@ -279,7 +279,12 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
                                                               @Param("startTime") String startTime,
                                                               @Param("state") Integer state,
                                                               @Param("host") String host);
-
+                                                              @Param("workflowDefinitionCode") Long workflowDefinitionCode,
+                                                              @Param("name") String name,
+                                                              @Param("startTime") Date startTime,
+                                                              @Param("endTime") Date endTime,
+                                                              @Param("state") Integer state,
+                                                              @Param("host") String host);
     /**
      * Statistics workflow instance state v2
      * <p>
