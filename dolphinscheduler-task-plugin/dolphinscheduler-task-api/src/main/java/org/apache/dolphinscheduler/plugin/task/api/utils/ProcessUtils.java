@@ -93,7 +93,7 @@ public final class ProcessUtils {
             log.info("Begin kill task instance, processId: {}", request.getProcessId());
             int processId = request.getProcessId();
             if (processId == 0) {
-                log.error("Task instance kill failed, processId is not exist");
+    //            log.error("Task instance kill failed, processId is not exist");
                 return false;
             }
 

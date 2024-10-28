@@ -19,7 +19,7 @@ package org.apache.dolphinscheduler.plugin.task.api;
 
 import org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus;
 import org.apache.dolphinscheduler.plugin.task.api.model.Property;
-import org.apache.dolphinscheduler.plugin.task.api.model.TaskAlertInfo;
+// import org.apache.dolphinscheduler.plugin.task.api.model.TaskAlertInfo;
 import org.apache.dolphinscheduler.plugin.task.api.parameters.AbstractParameters;
 
 import java.util.Map;
@@ -60,7 +60,7 @@ public abstract class AbstractTask {
 
     protected boolean needAlert = false;
 
-    protected TaskAlertInfo taskAlertInfo;
+////    protected TaskAlertInfo taskAlertInfo;
 
     /**
      * constructor
@@ -119,11 +119,11 @@ public abstract class AbstractTask {
         this.needAlert = needAlert;
     }
 
-    public TaskAlertInfo getTaskAlertInfo() {
+//    public TaskAlertInfo getTaskAlertInfo() {
         return taskAlertInfo;
     }
 
-    public void setTaskAlertInfo(TaskAlertInfo taskAlertInfo) {
+//    public void setTaskAlertInfo(TaskAlertInfo taskAlertInfo) {
         this.taskAlertInfo = taskAlertInfo;
     }
 

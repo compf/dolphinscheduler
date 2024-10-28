@@ -35,9 +35,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ConditionsParameters extends AbstractParameters {
 
-    private ConditionDependency dependence;
+//    private ConditionDependency dependence;
 
-    private ConditionResult conditionResult;
+//    private ConditionResult conditionResult;
 
     @Override
     public boolean checkParameters() {

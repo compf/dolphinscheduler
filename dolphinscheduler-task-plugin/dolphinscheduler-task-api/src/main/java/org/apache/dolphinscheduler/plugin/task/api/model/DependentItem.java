@@ -28,14 +28,14 @@ import lombok.Data;
 @Data
 public class DependentItem {
 
-    private long projectCode;
-    private long definitionCode;
-    private long depTaskCode;
-    private String cycle;
-    private String dateValue;
-    private DependResult dependResult;
-    private TaskExecutionStatus status;
-    private Boolean parameterPassing = false;
+//    private long projectCode;
+//    private long definitionCode;
+//    private long depTaskCode;
+//    private String cycle;
+//    private String dateValue;
+//    private DependResult dependResult;
+//    private TaskExecutionStatus status;
+//    private Boolean parameterPassing = false;
 
     public String getKey() {
         return String.format("%d-%d-%s-%s",

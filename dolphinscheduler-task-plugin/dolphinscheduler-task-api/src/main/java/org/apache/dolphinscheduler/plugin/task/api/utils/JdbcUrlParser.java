@@ -105,10 +105,10 @@ public class JdbcUrlParser {
             database = database.substring(0, database.indexOf(SEMICOLON));
         }
 
-        jdbcInfo.setDriverName(driverName);
-        jdbcInfo.setHost(host);
-        jdbcInfo.setPort(port);
-        jdbcInfo.setDatabase(database);
+//        jdbcInfo.setDriverName(driverName);
+//        jdbcInfo.setHost(host);
+//        jdbcInfo.setPort(port);
+//        jdbcInfo.setDatabase(database);
 
         if (StringUtils.isNotEmpty(params)) {
             Map<String, String> others = new HashMap<>();
@@ -121,12 +121,12 @@ public class JdbcUrlParser {
                 String[] kv = param.split(EQUAL_SIGN);
                 others.put(kv[0], kv[1]);
             }
-            jdbcInfo.setParams(others);
+    //        jdbcInfo.setParams(others);
         }
 
         String address = "jdbc:" + driverName + "://" + host + COLON + port;
-        jdbcInfo.setAddress(address);
-        jdbcInfo.setJdbcUrl(address + SINGLE_SLASH + database);
+//        jdbcInfo.setAddress(address);
+//        jdbcInfo.setJdbcUrl(address + SINGLE_SLASH + database);
 
         return jdbcInfo;
     }

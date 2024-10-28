@@ -79,7 +79,7 @@ public abstract class BaseWindowsShellInterceptorBuilder<T extends BaseWindowsSh
 
     protected List<String> generateBootstrapCommand() {
         if (sudoEnable) {
-            log.warn("sudo is not supported in windows");
+//            log.warn("sudo is not supported in windows");
         }
         // todo: support tenant in widnows
         List<String> bootstrapCommand = new ArrayList<>();
