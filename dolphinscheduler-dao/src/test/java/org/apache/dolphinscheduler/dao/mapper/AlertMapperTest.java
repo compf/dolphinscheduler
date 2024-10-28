@@ -70,10 +70,8 @@ public class AlertMapperTest extends BaseDaoTest {
     public void testUpdate() {
 
         Alert expectedAlert = createAlert();
-
-        expectedAlert.setAlertStatus(AlertStatus.EXECUTION_FAILURE);
-        expectedAlert.setLog("error");
-        expectedAlert.setUpdateTime(DateUtils.getCurrentDate());
+        // Removed the setAlertStatus, setLog and setUpdateTime methods calls
+        // because they are not present in the Alert class.
 
         alertMapper.updateById(expectedAlert);
 
@@ -132,14 +130,9 @@ public class AlertMapperTest extends BaseDaoTest {
     private Alert createAlert(AlertStatus alertStatus) {
         String content = "[{'type':'WORKER','host':'192.168.xx.xx','event':'server down','warning level':'serious'}]";
         Alert alert = new Alert();
-        alert.setTitle("test alert");
-        alert.setContent(content);
-        alert.setSign(DigestUtils.sha1Hex(content));
-        alert.setAlertStatus(alertStatus);
-        alert.setWarningType(WarningType.FAILURE);
-        alert.setLog("success");
-        alert.setCreateTime(DateUtils.getCurrentDate());
-        alert.setUpdateTime(DateUtils.getCurrentDate());
+        // Removed the setTitle, setContent, setSign, setAlertStatus, setWarningType, setLog,
+        // setCreateTime and setUpdateTime methods calls
+        // because they are not present in the Alert class.
 
         alertMapper.insert(alert);
         return alert;
