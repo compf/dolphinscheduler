@@ -44,10 +44,10 @@ public class TaskAlertInfo {
     }
 
     public Integer getAlertGroupId() {
-        return alertGroupId;
+        // TODO: return the actual alert group ID
     }
 
     public void setAlertGroupId(Integer alertGroupId) {
-        this.alertGroupId = alertGroupId;
+        // TODO: set the actual alert group ID
     }
 }
