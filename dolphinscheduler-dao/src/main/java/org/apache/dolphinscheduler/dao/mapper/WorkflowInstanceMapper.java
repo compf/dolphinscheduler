@@ -1,298 +1,65 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one or more
- * contributor license agreements.  See the NOTICE file distributed with
- * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
- * (the "License"); you may not use this file except in compliance with
- * the License.  You may obtain a copy of the License at
- *
- *    http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+public class WorkflowInstanceQuery {
 
-package org.apache.dolphinscheduler.dao.mapper;
+    private Long workflowDefinitionCode;
+    private String searchVal;
+    private String executorName;
+    private int[] statusArray;
+    private String host;
+    private Date startTime;
+    private Date endTime;
 
-import org.apache.dolphinscheduler.common.enums.WorkflowExecutionStatus;
-import org.apache.dolphinscheduler.dao.entity.ExecuteStatusCount;
-import org.apache.dolphinscheduler.dao.entity.WorkflowInstance;
-import org.apache.dolphinscheduler.dao.model.WorkflowInstanceStatusCountDto;
+    // getters and setters
+}
 
-import org.apache.ibatis.annotations.Param;
+public class FailoverStateQuery {
 
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
-import java.util.Set;
+    private String host;
+    private int[] stateArray;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+    // getters and setters
+}
 
-/**
- * workflow instance mapper interface
- */
-public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
+public class WorkflowInstanceUpdateState {
 
-    /**
-     * query workflow instance detail info by id
-     *
-     * @param id id
-     * @return workflow instance
-     */
-    WorkflowInstance queryDetailById(@Param("id") int id);
+    private Integer workflowInstanceId;
+    private WorkflowExecutionStatus originState;
+    private WorkflowExecutionStatus targetState;
 
-    /**
-     * query workflow instance by host and stateArray
-     *
-     * @param host       host
-     * @param stateArray stateArray
-     * @return workflow instance list
-     */
-    List<WorkflowInstance> queryByHostAndStatus(@Param("host") String host,
-                                                @Param("states") int[] stateArray);
+    // getters and setters
+}
 
-    /**
-     * query workflow instance host by stateArray
-     *
-     * @param stateArray
-     * @return
-     */
-    List<String> queryNeedFailoverWorkflowInstanceHost(@Param("states") int[] stateArray);
+public class TenantCodeUpdate {
 
-    /**
-     * query workflow instance by tenantCode and stateArray
-     *
-     * @param tenantCode tenantCode
-     * @param states     states array
-     * @return workflow instance list
-     */
-    List<WorkflowInstance> queryByTenantCodeAndStatus(@Param("tenantCode") String tenantCode,
-                                                      @Param("states") int[] states);
+    private String originTenantCode;
+    private String destTenantCode;
 
-    /**
-     * @param workerGroupName workerGroupName
-     * @param states          states array
-     * @return workflow instance list
-     */
-    List<WorkflowInstance> queryByWorkerGroupNameAndStatus(@Param("workerGroupName") String workerGroupName,
-                                                           @Param("states") int[] states);
+    // getters and setters
+}
 
-    /**
-     * workflow instance page
-     * @param page page
-     * @param projectId projectId
-     * @param processDefinitionId processDefinitionId
-     * @param searchVal searchVal
-     * @param executorId executorId
-     * @param statusArray statusArray
-     * @param host host
-     * @param startTime startTime
-     * @param endTime endTime
-     * @return workflow instance IPage
-     */
+public class WorkerGroupNameUpdate {
 
-    /**
-     * workflow instance page
-     *
-     * @param page                  page
-     * @param projectCode           projectCode
-     * @param workflowDefinitionCode workflowDefinitionCode
-     * @param searchVal             searchVal
-     * @param executorName          executorName
-     * @param statusArray           statusArray
-     * @param host                  host
-     * @param startTime             startTime
-     * @param endTime               endTime
-     * @return workflow instance page
-     */
-    IPage<WorkflowInstance> queryWorkflowInstanceListPaging(Page<WorkflowInstance> page,
-                                                            @Param("projectCode") Long projectCode,
-                                                            WorkflowInstanceQuery workflowInstanceQuery);
+    private String originWorkerGroupName;
+    private String destWorkerGroupName;
 
-    /**
-     * set failover by host and state array
-     *
-     * @param host       host
-     * @param stateArray stateArray
-     * @return set result
-     */
-    int setFailoverByHostAndStateArray(FailoverStateQuery failoverStateQuery);
+    // getters and setters
+}
 
-    /**
-     * Update the workflow instance state from originState to destState
-     */
-    int updateWorkflowInstanceState(WorkflowInstanceUpdateState workflowInstanceUpdateState,
-                                    WorkflowExecutionStatus originState,
-                                    WorkflowExecutionStatus targetState);
+public class WorkflowInstanceCountQuery {
 
-    /**
-     * update workflow instance by tenantCode
-     *
-     * @param originTenantCode originTenantCode
-     * @param destTenantCode   destTenantCode
-     * @return update result
-     */
-    int updateWorkflowInstanceByTenantCode(TenantCodeUpdate tenantCodeUpdate);
+    private Date startTime;
+    private Date endTime;
+    private Collection<Long> projectCodes;
 
-    /**
-     * update workflow instance by worker groupId
-     *
-     * @param originWorkerGroupName originWorkerGroupName
-     * @param destWorkerGroupName   destWorkerGroupName
-     * @return update result
-     */
-    int updateWorkflowInstanceByWorkerGroupName(WorkerGroupNameUpdate workerGroupNameUpdate);
+    // getters and setters
+}
 
-    /**
-     * Statistics workflow instance state by given project codes list
-     * <p>
-     * We only need project codes to determine whether the workflow instance belongs to the user or not.
-     *
-     * @param startTime    startTime
-     * @param endTime      endTime
-     * @param projectCodes projectCodes
-     * @return ExecuteStatusCount list
-     */
-    List<WorkflowInstanceStatusCountDto> countWorkflowInstanceStateByProjectCodes(WorkflowInstanceCountQuery workflowInstanceCountQuery);
+public class WorkflowInstanceTopQuery {
 
-    /**
-     * query workflow instance by workflowDefinitionCode
-     *
-     * @param workflowDefinitionCode workflowDefinitionCode
-     * @param size                  size
-     * @return workflow instance list
-     */
-    List<WorkflowInstance> queryByWorkflowDefinitionCode(@Param("workflowDefinitionCode") Long workflowDefinitionCode,
-                                                         @Param("size") int size);
+    private int size;
+    private Date startTime;
+    private Date endTime;
+    private WorkflowExecutionStatus status;
+    private long projectCode;
 
-    /**
-     * query last scheduler workflow instance
-     *
-     * @param workflowDefinitionCode definitionCode
-     * @param taskDefinitionCode    definitionCode
-     * @param startTime             startTime
-     * @param endTime               endTime
-     * @param testFlag              testFlag
-     * @return workflow instance
-     */
-    WorkflowInstance queryLastSchedulerWorkflow(WorkflowInstanceQuery workflowInstanceQuery,
-                                                Long taskDefinitionCode,
-                                                Date startTime,
-                                                Date endTime,
-                                                int testFlag);
-
-    /**
-     * query last manual workflow instance
-     *
-     * @param workflowDefinitionCode workflowDefinitionCode
-     * @param taskCode       taskCode
-     * @param startTime      startTime
-     * @param endTime        endTime
-     * @param testFlag       testFlag
-     * @return workflow instance
-     */
-    WorkflowInstance queryLastManualWorkflow(WorkflowInstanceQuery workflowInstanceQuery,
-                                             Long taskCode,
-                                             Date startTime,
-                                             Date endTime,
-                                             int testFlag);
-
-    /**
-     * query first schedule workflow instance
-     *
-     * @param workflowDefinitionCode workflowDefinitionCode
-     * @return workflow instance
-     */
-    WorkflowInstance queryFirstScheduleWorkflowInstance(Long workflowDefinitionCode);
-
-    /**
-     * query first manual workflow instance
-     *
-     * @param workflowDefinitionCode workflowDefinitionCode
-     * @return workflow instance
-     */
-    WorkflowInstance queryFirstStartWorkflowInstance(Long workflowDefinitionCode);
-
-    /**
-     * query top n workflow instance order by running duration
-     *
-     * @param size        size
-     * @param startTime   start time
-     * @param startTime   end time
-     * @param status      workflow instance status
-     * @param projectCode project code
-     * @return ProcessInstance list
-     */
-
-    List<WorkflowInstance> queryTopNWorkflowInstance(@Param("size") int size,
-                                                     Date startTime,
-                                                     Date endTime,
-                                                     @Param("status") WorkflowExecutionStatus status,
-                                                     @Param("projectCode") long projectCode);
-
-    /**
-     * query workflow instance by workflowDefinitionCode and stateArray
-     *
-     * @param workflowDefinitionCode workflowDefinitionCode
-     * @param states                states array
-     * @return workflow instance list
-     */
-
-    List<WorkflowInstance> queryByWorkflowDefinitionCodeAndStatus(WorkflowInstanceQuery workflowInstanceQuery,
-                                                                  int[] states);
-
-    List<WorkflowInstance> queryByWorkflowCodeVersionStatus(WorkflowInstanceQuery workflowInstanceQuery,
-                                                            int workflowDefinitionVersion,
-                                                            int[] states);
-
-    /**
-     * Filter workflow instance
-     *
-     * @param page                  page
-     * @param workflowDefinitionCode workflowDefinitionCode
-     * @param name                  name
-     * @param host                  host
-     * @param startTime             startTime
-     * @param endTime               endTime
-     * @return workflow instance IPage
-     */
-    IPage<WorkflowInstance> queryWorkflowInstanceListV2Paging(Page<WorkflowInstance> page,
-                                                              @Param("projectCode") Long projectCode,
-                                                              WorkflowInstanceQuery workflowInstanceQuery,
-                                                              Integer state,
-                                                              String host);
-
-    /**
-     * Statistics workflow instance state v2
-     * <p>
-     * We only need project codes to determine whether the workflow instance belongs to the user or not.
-     *
-     * @param startTime    startTime
-     * @param endTime      endTime
-     * @param projectCode  projectCode
-     * @param workflowCode workflowCode
-     * @param model        model
-     * @param projectIds   projectIds
-     * @return ExecuteStatusCount list
-     */
-    List<ExecuteStatusCount> countInstanceStateV2(
-                                                  Date startTime,
-                                                  Date endTime,
-                                                  @Param("projectCode") Long projectCode,
-                                                  @Param("workflowCode") Long workflowCode,
-                                                  @Param("model") Integer model,
-                                                  @Param("projectIds") Set<Integer> projectIds);
-
-    /**
-     * query process list by triggerCode
-     *
-     * @param triggerCode
-     * @return
-     */
-    List<WorkflowInstance> queryByTriggerCode(@Param("triggerCode") Long triggerCode);
+    // getters and setters
 }

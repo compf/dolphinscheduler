@@ -1,39 +1,18 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one or more
- * contributor license agreements.  See the NOTICE file distributed with
- * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
- * (the "License"); you may not use this file except in compliance with
- * the License.  You may obtain a copy of the License at
- *
- *    http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+public class ProjectParameterRequest {
 
-package org.apache.dolphinscheduler.api.service;
+    private String projectParameterName;
+    private String projectParameterValue;
+    private String projectParameterDataType;
 
-import org.apache.dolphinscheduler.api.utils.Result;
-import org.apache.dolphinscheduler.dao.entity.User;
+    // getters and setters
+}
 
-public interface ProjectParameterService {
+public class ProjectParameterPagingRequest {
 
-    Result createProjectParameter(User loginUser, long projectCode, ProjectParameterRequest projectParameterRequest);
+    private Integer pageSize;
+    private Integer pageNo;
+    private String searchVal;
+    private String projectParameterDataType;
 
-
-    Result updateProjectParameter(User loginUser, long projectCode, long code, ProjectParameterRequest projectParameterRequest);
-
-
-    Result deleteProjectParametersByCode(User loginUser, long projectCode, long code);
-
-    Result batchDeleteProjectParametersByCodes(User loginUser, long projectCode, String codes);
-
-    Result queryProjectParameterListPaging(User loginUser, long projectCode, ProjectParameterPagingRequest projectParameterPagingRequest);
-
-
-    Result queryProjectParameterByCode(User loginUser, long projectCode, long code);
+    // getters and setters
 }
