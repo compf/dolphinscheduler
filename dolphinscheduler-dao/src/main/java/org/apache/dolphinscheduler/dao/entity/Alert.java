@@ -88,19 +88,3 @@ public class Alert {
     private final Map<String, Object> info;
 
 }
-    public Alert(String sign, String title, String content, AlertStatus alertStatus, WarningType warningType, String log, Integer alertGroupId, Date createTime, Date updateTime, Long projectCode, Long workflowDefinitionCode, Integer workflowInstanceId, AlertType alertType, Map<String, Object> info) {
-        this.sign = sign;
-        this.title = title;
-        this.content = content;
-        this.alertStatus = alertStatus;
-        this.warningType = warningType;
-        this.log = log;
-        this.alertGroupId = alertGroupId;
-        this.createTime = createTime;
-        this.updateTime = updateTime;
-        this.projectCode = projectCode;
-        this.workflowDefinitionCode = workflowDefinitionCode;
-        this.workflowInstanceId = workflowInstanceId;
-        this.alertType = alertType;
-        this.info = info;
-    }
