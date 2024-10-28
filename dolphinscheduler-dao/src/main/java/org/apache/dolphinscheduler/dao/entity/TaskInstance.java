@@ -38,11 +38,11 @@ import com.baomidou.mybatisplus.annotation.TableName;
 public class TaskInstance implements Serializable {
 
     @TableId(value = "id", type = IdType.AUTO)
-    private TaskIdentity taskIdentity;
+    private Integer id;
 
     private int workflowInstanceId;
 
-    private WorkflowInstanceIdentity workflowInstanceIdentity;
+    private String name;
 
     private int taskDefinitionVersion;
 
@@ -60,7 +60,9 @@ public class TaskInstance implements Serializable {
 
     private Date startTime;
 
-    private ExecutionEnvironment executionEnvironment;
+    private Date endTime;
+    private String host;
+    private String executePath;
 
     private String logPath;
 
@@ -128,8 +130,10 @@ public class TaskInstance implements Serializable {
 
     private int testFlag;
 
-    public void init(ExecutionEnvironment executionEnvironment) {
-        this.executionEnvironment = executionEnvironment;
+    public void init(String host, Date startTime, String executePath) {
+        this.host = host;
+        this.startTime = startTime;
+        this.executePath = executePath;
     }
 
 }
