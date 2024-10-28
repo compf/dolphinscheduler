@@ -107,12 +107,8 @@ public class SchedulerController extends BaseController {
     @ResponseStatus(HttpStatus.CREATED)
     @ApiException(CREATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_CREATE)
-    public Result createSchedule(ScheduleCreationInfo scheduleCreationInfo) {
-        Map<String, Object> result = schedulerService.insertSchedule(
-                loginUser,
-                projectCode,
-                workflowDefinitionCode,
-                schedule,
+    public Result createSchedule(@RequestBody ScheduleCreationInfo scheduleCreationInfo) {
+        return schedulerService.createSchedule(scheduleCreationInfo);
                 warningType,
                 warningGroupId,
                 failureStrategy,
@@ -323,11 +319,7 @@ public class SchedulerController extends BaseController {
     @ResponseStatus(HttpStatus.OK)
     @ApiException(UPDATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_UPDATE)
-    public Result updateScheduleByWorkflowDefinitionCode(ScheduleUpdateInfo scheduleUpdateInfo) {
-        Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(loginUser, projectCode,
-                workflowDefinitionCode, schedule,
-                warningType, warningGroupId, failureStrategy, workflowInstancePriority, workerGroup, tenantCode,
-                environmentCode);
-        return returnDataList(result);
+    public Result updateScheduleByWorkflowDefinitionCode(@RequestBody ScheduleUpdateInfo scheduleUpdateInfo) {
+        return schedulerService.updateScheduleByWorkflowDefinitionCode(scheduleUpdateInfo);
     }
 }
