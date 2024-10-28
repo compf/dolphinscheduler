@@ -78,8 +78,7 @@ public class Alert {
     @TableField("workflow_definition_code")
     private Long workflowDefinitionCode;
 
-    @TableField("workflow_instance_id")
-    private Integer workflowInstanceId;
+    
 
     @TableField("alert_type")
     private AlertType alertType;
