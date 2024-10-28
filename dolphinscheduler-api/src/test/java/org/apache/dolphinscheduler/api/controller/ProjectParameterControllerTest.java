@@ -50,7 +50,7 @@ public class ProjectParameterControllerTest {
 
         Mockito.when(projectParameterService.createProjectParameter(Mockito.any(), Mockito.anyLong(), Mockito.any(),
                 Mockito.any(), Mockito.any())).thenReturn(getSuccessResult());
-        ProjectParameterRequest parameterRequest = new ProjectParameterRequest("key", "value", DataType.VARCHAR.name());
+        Result result = projectParameterController.createProjectParameter(loginUser, 1, "key", "value", DataType.VARCHAR.name());
         Result result = projectParameterController.createProjectParameter(loginUser, 1, parameterRequest);
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
@@ -61,7 +61,7 @@ public class ProjectParameterControllerTest {
 
         Mockito.when(projectParameterService.updateProjectParameter(Mockito.any(), Mockito.anyLong(), Mockito.anyLong(),
                 Mockito.any(), Mockito.any(), Mockito.any())).thenReturn(getSuccessResult());
-        ProjectParameterRequest parameterRequest = new ProjectParameterRequest("key", "value", DataType.LONG.name());
+        Result result = projectParameterController.updateProjectParameter(loginUser, 1, 1L, "key", "value", DataType.LONG.name());
         Result result = projectParameterController.updateProjectParameter(loginUser, 1, 1L, parameterRequest);
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
@@ -72,7 +72,7 @@ public class ProjectParameterControllerTest {
 
         Mockito.when(projectParameterService.deleteProjectParametersByCode(Mockito.any(), Mockito.anyLong(),
                 Mockito.anyLong())).thenReturn(getSuccessResult());
-        ProjectParameterCode parameterCode = new ProjectParameterCode(1);
+        Result result = projectParameterController.deleteProjectParametersByCode(loginUser, 1, 1);
         Result result = projectParameterController.deleteProjectParametersByCode(loginUser, 1, parameterCode);
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
@@ -83,7 +83,7 @@ public class ProjectParameterControllerTest {
 
         Mockito.when(projectParameterService.batchDeleteProjectParametersByCodes(Mockito.any(), Mockito.anyLong(),
                 Mockito.any())).thenReturn(getSuccessResult());
-        ProjectParameterCodes parameterCodes = new ProjectParameterCodes("1");
+        Result result = projectParameterController.batchDeleteProjectParametersByCodes(loginUser, 1, "1");
         Result result = projectParameterController.batchDeleteProjectParametersByCodes(loginUser, 1, parameterCodes);
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
