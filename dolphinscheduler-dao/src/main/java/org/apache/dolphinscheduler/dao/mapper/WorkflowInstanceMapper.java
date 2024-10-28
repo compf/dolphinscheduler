@@ -282,7 +282,6 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
                                                               @Param("endTime") String endTime
                                                               @Param("state") Integer state,
                                                               @Param("host") String host);
-    /**
      * Statistics workflow instance state v2
      * <p>
      * We only need project codes to determine whether the workflow instance belongs to the user or not.
