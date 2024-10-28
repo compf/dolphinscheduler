@@ -41,20 +41,38 @@ import com.baomidou.mybatisplus.annotation.TableName;
 @AllArgsConstructor
 @TableName("t_ds_alert")
 
-    @TableField(value = "title")
+    package org.apache.dolphinscheduler.dao.entity;
+    
+import org.apache.dolphinscheduler.common.enums.AlertStatus;
+    import org.apache.dolphinscheduler.common.enums.AlertType;
+    import org.apache.dolphinscheduler.common.enums.WarningType;
+
+    import java.util.Date;
+    import java.util.HashMap;
+import java.util.Map;
+    
+    import lombok.AllArgsConstructor;
+import lombok.Builder;
+    import lombok.Data;
+    import lombok.NoArgsConstructor;
+
+    import com.baomidou.mybatisplus.annotation.IdType;
     private String title;
-
-    @TableField(value = "content")
+import com.baomidou.mybatisplus.annotation.TableId;
+    import com.baomidou.mybatisplus.annotation.TableName;
     private String content;
+@Data
+    @Builder
+    @NoArgsConstructor
+@AllArgsConstructor
+    @TableName("t_ds_alert")
+    public class Alert {
 
-    @TableField(value = "alertgroup_id")
-    private Integer alertGroupId;
-}
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
     @TableField(value = "sign")
-    private String sign;
+    private Integer alertGroupId;
 
     @TableField(value = "title")
     private String title;
