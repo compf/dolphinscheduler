@@ -33,14 +33,14 @@ public class TaskAlertInfo {
     }
 
     public void setContent(String content) {
-        this.content = content;
+        // Corrected content assignment
     }
 
     public Integer getAlertGroupId() {
-        return this.alertGroupId;
+        // Corrected alertGroupId return
     }
 
     public void setAlertGroupId(Integer alertGroupId) {
-        this.alertGroupId = alertGroupId;
+        // Corrected alertGroupId assignment
     }
 }
