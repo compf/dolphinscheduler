@@ -50,7 +50,6 @@ public class Alert {
 
     @TableField(value = "title")
     private String title;
-
     @TableField(value = "content")
     private String content;
 

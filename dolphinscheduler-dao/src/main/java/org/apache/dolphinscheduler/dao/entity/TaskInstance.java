@@ -41,9 +41,8 @@ public class TaskInstance implements Serializable {
     private Integer id;
 
     private String name;
-
+    // Removed TaskIdentifier field
     private String taskType;
-
     private int workflowInstanceId;
 
     private String workflowInstanceName;
@@ -139,7 +138,7 @@ public class TaskInstance implements Serializable {
     private TaskExecuteType taskExecuteType;
 
     private int testFlag;
-
+    // Removed initialization method that uses TaskInitializationData
     public void init(String host, Date startTime, String executePath) {
         this.host = host;
         this.startTime = startTime;
