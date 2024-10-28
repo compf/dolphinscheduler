@@ -165,13 +165,9 @@ public class WorkflowInstance {
      *
      * @param workflowDefinition processDefinition
      */
-    public WorkflowInstance(WorkflowDefinition workflowDefinition) {
+    public WorkflowInstance(WorkflowDefinition workflowDefinition, String name) {
         this.workflowDefinition = workflowDefinition;
-        // todo: the name is not unique
-        this.name = String.join("-",
-                workflowDefinition.getName(),
-                String.valueOf(workflowDefinition.getVersion()),
-                DateUtils.getCurrentTimeStamp());
+        this.name = name;
     }
 
     /**
@@ -218,14 +214,14 @@ public class WorkflowInstance {
      * @param stateDesc
      */
     public void setStateWithDesc(WorkflowExecutionStatus state, String stateDesc) {
-        this.setState(state);
-        if (StringUtils.isEmpty(this.getStateHistory())) {
+        this.state = state;
+        if (StringUtils.isEmpty(this.stateHistory)) {
             stateDescList = new ArrayList<>();
         } else if (stateDescList == null) {
-            stateDescList = JSONUtils.toList(this.getStateHistory(), StateDesc.class);
+            stateDescList = JSONUtils.toList(this.stateHistory, StateDesc.class);
         }
         stateDescList.add(new StateDesc(new Date(), state, stateDesc));
-        this.setStateHistory(JSONUtils.toJsonString(stateDescList));
+        this.stateHistory = JSONUtils.toJsonString(stateDescList);
     }
 
     @Data

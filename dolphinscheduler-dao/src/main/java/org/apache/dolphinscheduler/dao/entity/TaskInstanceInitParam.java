@@ -1,3 +1,7 @@
+package org.apache.dolphinscheduler.dao.entity;
+
+import java.util.Date;
+
 public class TaskInstanceInitParam {
 
     private String host;
