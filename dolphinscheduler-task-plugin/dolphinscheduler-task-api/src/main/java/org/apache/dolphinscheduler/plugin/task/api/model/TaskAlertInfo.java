@@ -25,12 +25,12 @@ public class TaskAlertInfo {
 
     private Integer alertGroupId;
 
-        this.title = title;
+        this.content = content;
         this.alertGroupId = alertGroupId;
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        this.content = content;
     }
 
     public String getContent() {
@@ -38,7 +38,7 @@ public class TaskAlertInfo {
     }
 
     public void setContent(String content) {
-    public TaskAlertInfo(String title, String content, Integer alertGroupId) {
+    }
     }
 
     public Integer getAlertGroupId() {
