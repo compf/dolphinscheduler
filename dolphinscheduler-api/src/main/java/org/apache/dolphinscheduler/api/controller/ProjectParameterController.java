@@ -39,7 +39,7 @@ import io.swagger.v3.oas.annotations.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 import org.springframework.http.MediaType;
 
-@Api(tags = "PROJECT_PARAMETER_TAG")
+@Tag(name = "PROJECT_PARAMETER_TAG")
 @RestController
 @RequestMapping(value = "projects/{projectCode}/project-parameter", produces = MediaType.APPLICATION_JSON_VALUE)
 @Slf4j
