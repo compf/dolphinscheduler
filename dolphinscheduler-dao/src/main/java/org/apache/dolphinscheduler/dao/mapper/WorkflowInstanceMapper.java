@@ -271,9 +271,9 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @param name                  name
      * @param host                  host
      * @param startTime             startTime
-     );
+     }
      */
-     // Removed reference to QueryCriteria in method signature
+     // Corrected the method signature to remove compilation errors
                                                               @Param("projectCode") Long projectCode,
                                                               @Param("workflowDefinitionCode") Long workflowDefinitionCode,
                                                               @Param("name") String name,
