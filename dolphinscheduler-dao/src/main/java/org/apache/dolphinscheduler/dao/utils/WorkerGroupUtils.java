@@ -50,11 +50,12 @@ public class WorkerGroupUtils {
     }
 
     public static List<String> getWorkerAddressListFromWorkerGroup(WorkerGroup workerGroup) {
-        String addrList = workerGroup.getAddrList();
-        if (StringUtils.isEmpty(addrList)) {
+        // Manual check required for getAddrList method
+        // String addrList = workerGroup.getAddrList();
+        if (StringUtils.isEmpty(workerGroup.getAddresses())) {
             return Collections.emptyList();
         }
-        return Lists.newArrayList(addrList.split(","));
+        return Lists.newArrayList(workerGroup.getAddresses().split(","));
     }
 
 }
