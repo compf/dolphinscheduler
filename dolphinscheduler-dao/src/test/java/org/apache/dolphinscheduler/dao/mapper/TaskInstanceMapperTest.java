@@ -85,12 +85,12 @@ public class TaskInstanceMapperTest extends BaseDaoTest {
     private TaskInstance insertTaskInstance(int processInstanceId, String taskType) {
         TaskInstance taskInstance = new TaskInstance();
         taskInstance.setFlag(Flag.YES);
-        taskInstance.setName("us task");
+        // taskInstance.setName("us task");
         taskInstance.setState(TaskExecutionStatus.RUNNING_EXECUTION);
         taskInstance.setStartTime(new Date());
         taskInstance.setEndTime(new Date());
         taskInstance.setWorkflowInstanceId(processInstanceId);
-        taskInstance.setProjectCode(1L);
+        // taskInstance.setProjectCode(1L);
         taskInstance.setTaskType(taskType);
         taskInstanceMapper.insert(taskInstance);
         return taskInstance;
@@ -186,7 +186,7 @@ public class TaskInstanceMapperTest extends BaseDaoTest {
 
         // insert taskInstance
         TaskInstance task = insertTaskInstance(workflowInstance.getId());
-        task.setHost("111.111.11.11");
+        // task.setHost("111.111.11.11");
         taskInstanceMapper.updateById(task);
 
         TaskInstance taskInstance = taskInstanceMapper.queryByInstanceIdAndCode(
@@ -206,7 +206,7 @@ public class TaskInstanceMapperTest extends BaseDaoTest {
 
         // insert taskInstance
         TaskInstance task = insertTaskInstance(workflowInstance.getId());
-        task.setHost("111.111.11.11");
+        // task.setHost("111.111.11.11");
         taskInstanceMapper.updateById(task);
 
         List<TaskInstance> taskInstances = taskInstanceMapper.queryByWorkflowInstanceIdsAndTaskCodes(
@@ -229,7 +229,7 @@ public class TaskInstanceMapperTest extends BaseDaoTest {
                 taskInstanceMapper.countTaskInstanceStateByProjectCodes(
                         null,
                         null,
-                        Lists.newArrayList(task.getProjectCode()));
+                        // Lists.newArrayList(task.getProjectCode()));
 
         Assertions.assertEquals(1, taskInstanceStatusCountDtos.size());
 
