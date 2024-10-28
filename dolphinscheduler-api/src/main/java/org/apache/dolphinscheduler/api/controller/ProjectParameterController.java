@@ -88,8 +88,6 @@ public class ProjectParameterController extends BaseController {
         return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName,
                 projectParameterValue, projectParameterDataType);
     }
-}
-    }
 
     @Operation(summary = "deleteProjectParametersByCode", description = "DELETE_PROJECT_PARAMETER_NOTES")
     @Parameters({
@@ -103,8 +101,6 @@ public class ProjectParameterController extends BaseController {
                                                 @RequestParam("code") long code) {
         return projectParameterService.deleteProjectParametersByCode(loginUser, projectCode, code);
     }
-    @Parameters({
-            @Parameter(name = "codes", description = "PROJECT_PARAMETER_CODE", required = true, schema = @Schema(implementation = String.class))
     })
     @PostMapping(value = "/batch-delete")
     @ResponseStatus(HttpStatus.OK)
@@ -113,9 +109,7 @@ public class ProjectParameterController extends BaseController {
                                                       @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
                                                       @RequestParam("codes") String codes) {
         return projectParameterService.batchDeleteProjectParametersByCodes(loginUser, projectCode, codes);
-    }
-    @Parameters({
-            @Parameter(name = "searchVal", description = "SEARCH_VAL", required = false, schema = @Schema(implementation = String.class)),
+    },
             @Parameter(name = "pageNo", description = "PAGE_NO", required = true, schema = @Schema(implementation = int.class, example = "1")),
             @Parameter(name = "pageSize", description = "PAGE_SIZE", required = true, schema = @Schema(implementation = int.class, example = "10"))
     })
@@ -134,8 +128,6 @@ public class ProjectParameterController extends BaseController {
         return projectParameterService.queryProjectParameterListPaging(loginUser, projectCode, pageSize, pageNo,
                 searchVal, projectParameterDataType);
     }
-    @Parameters({
-            @Parameter(name = "code", description = "PROJECT_PARAMETER_CODE", schema = @Schema(implementation = long.class, example = "123456"))
     })
     @GetMapping(value = "/{code}")
     @ResponseStatus(HttpStatus.OK)
