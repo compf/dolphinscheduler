@@ -106,6 +106,16 @@ public class SchedulerController extends BaseController {
         Map<String, Object> result = schedulerService.insertSchedule(
                 loginUser,
                 projectCode,
+                createScheduleModel.getWorkflowDefinitionCode(),
+                createScheduleModel.getSchedule(),
+                createScheduleModel.getWarningType(),
+                createScheduleModel.getWarningGroupId(),
+                createScheduleModel.getFailureStrategy(),
+                createScheduleModel.getWorkflowInstancePriority(),
+                createScheduleModel.getWorkerGroup(),
+                createScheduleModel.getTenantCode(),
+                createScheduleModel.getEnvironmentCode());
+                projectCode,
                 createScheduleModel);
 
 
@@ -310,8 +320,17 @@ public class SchedulerController extends BaseController {
                                                          @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
                                                          @PathVariable(value = "code") long workflowDefinitionCode,
                                                          @RequestBody UpdateScheduleModel updateScheduleModel) {
-        Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(loginUser, projectCode,
-                workflowDefinitionCode, updateScheduleModel);
+        Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(loginUser,
+                projectCode,
+                updateScheduleModel.getWorkflowDefinitionCode(),
+                updateScheduleModel.getSchedule(),
+                updateScheduleModel.getWarningType(),
+                updateScheduleModel.getWarningGroupId(),
+                updateScheduleModel.getFailureStrategy(),
+                updateScheduleModel.getWorkflowInstancePriority(),
+                updateScheduleModel.getWorkerGroup(),
+                updateScheduleModel.getTenantCode(),
+                updateScheduleModel.getEnvironmentCode());
 
         return returnDataList(result);
     }
