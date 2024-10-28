@@ -48,7 +48,9 @@ public class Alert {
     @TableField(value = "sign")
     private String sign;
 
-    private AlertInfo alertInfo;
+    private String title;
+    private String content;
+    private Integer alertGroupId;
     private AlertStatus alertStatus;
 
     @TableField(value = "warning_type")
