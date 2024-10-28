@@ -112,7 +112,13 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      */
     IPage<WorkflowInstance> queryWorkflowInstanceListPaging(Page<WorkflowInstance> page,
                                                             @Param("projectCode") Long projectCode,
-                                                            WorkflowInstanceQuery instanceQuery);
+                                                            @Param("workflowDefinitionCode") Long workflowDefinitionCode,
+                                                            @Param("searchVal") String searchVal,
+                                                            @Param("executorName") String executorName,
+                                                            @Param("states") int[] statusArray,
+                                                            @Param("host") String host,
+                                                            @Param("startTime") Date startTime,
+                                                            @Param("endTime") Date endTime);
 
     /**
      * set failover by host and state array
@@ -127,7 +133,10 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
     /**
      * Update the workflow instance state from originState to destState
      */
-    int updateWorkflowInstanceState(WorkflowInstanceUpdateState updateState);
+    int updateWorkflowInstanceState(
+                                    @Param("workflowInstanceId") Integer workflowInstanceId,
+                                    @Param("originState") WorkflowExecutionStatus originState,
+                                    @Param("targetState") WorkflowExecutionStatus targetState);
 
     /**
      * update workflow instance by tenantCode
