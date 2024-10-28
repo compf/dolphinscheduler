@@ -275,7 +275,8 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @return workflow instance IPage
      */
     IPage<WorkflowInstance> queryWorkflowInstanceListV2Paging(Page<WorkflowInstance> page,
-                                                              @Param("searchRequest") WorkflowSearchRequest searchRequest,
+                                                              @Param("name") String name,
+                                                              @Param("host") String host
                                                               @Param("workflowDefinitionCode") Long workflowDefinitionCode,
                                                               @Param("name") String name,
                                                               @Param("startTime") String startTime,

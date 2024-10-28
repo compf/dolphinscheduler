@@ -40,7 +40,9 @@ public class TaskInstance implements Serializable {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private TaskHostInformation taskHostInformation;
+    private String name;
+    private Long projectCode;
+    private String host;
 
     private String taskType;
 
