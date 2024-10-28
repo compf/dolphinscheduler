@@ -71,7 +71,7 @@ public class TaskCacheUtils {
     public static String generateCacheKey(TaskInstance taskInstance, TaskExecutionContext taskExecutionContext,
                                           StorageOperator storageOperator) {
         List<String> keyElements = new ArrayList<>();
-        keyElements.add(String.valueOf(taskInstance.getTaskCode()));
+        keyElements.add(String.valueOf(taskInstance.getId()));
         keyElements.add(String.valueOf(taskInstance.getTaskDefinitionVersion()));
         keyElements.add(String.valueOf(taskInstance.getIsCache().getCode()));
         keyElements.add(String.valueOf(taskInstance.getEnvironmentConfig()));
