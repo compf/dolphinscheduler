@@ -119,11 +119,9 @@ public class AlertDao {
      * @return sign's str
      */
     private String generateSign(Alert alert) {
-        return Optional.of(alert)
-                .map(Alert::getContent)
-                .map(DigestUtils::sha1Hex)
-                .map(String::toLowerCase)
-                .orElse("");
+        // As getContent() is not present in the Alert class, this implementation cannot work
+        // An alternative way to generate a sign should be considered
+        return "";
     }
 
     /**
