@@ -49,7 +49,7 @@ public class WorkerGroupUtils {
         return DEFAULT_WORKER_GROUP;
     }
 
-    public static List<String> getWorkerAddressListFromWorkerGroup(WorkerGroup workerGroup) {
+    // Method getWorkerAddressListFromWorkerGroup has been replaced or removed.
         String addrList = workerGroup.getAddrList();
         if (StringUtils.isEmpty(addrList)) {
             return Collections.emptyList();

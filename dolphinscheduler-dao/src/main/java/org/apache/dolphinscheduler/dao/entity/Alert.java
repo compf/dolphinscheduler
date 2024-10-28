@@ -48,11 +48,6 @@ public class Alert {
     @TableField(value = "sign")
     private String sign;
 
-    @TableField(value = "title")
-    // Fields related to alert grouping refactored into AlertGroupInfo
-
-    @TableField(value = "content")
-
     @TableField(value = "alert_status")
     private AlertStatus alertStatus;
     @TableField(value = "warning_type")
