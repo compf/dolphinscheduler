@@ -65,9 +65,7 @@ public class WorkflowInstance {
 
     private String stateHistory;
 
-    @TableField(exist = false)
-    private List<StateDesc> stateDescList;
-
+    
     private Flag recovery;
     private Date startTime;
 
