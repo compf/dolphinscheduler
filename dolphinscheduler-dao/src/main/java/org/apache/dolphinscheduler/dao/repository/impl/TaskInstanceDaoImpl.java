@@ -71,7 +71,7 @@ public class TaskInstanceDaoImpl extends BaseDao<TaskInstance, TaskInstanceMappe
             log.warn("processInstance: {} state was: {}, skip submit this task, taskCode: {}",
                     workflowInstance.getId(),
                     processInstanceState,
-                    taskInstance.getTaskCode());
+                    taskInstance.getId());
             return false;
         }
         if (processInstanceState == WorkflowExecutionStatus.READY_PAUSE) {
