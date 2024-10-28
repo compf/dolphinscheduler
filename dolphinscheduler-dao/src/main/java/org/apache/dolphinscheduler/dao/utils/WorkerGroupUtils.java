@@ -49,12 +49,6 @@ public class WorkerGroupUtils {
         return DEFAULT_WORKER_GROUP;
     }
 
-    // Method getWorkerAddressListFromWorkerGroup has been replaced or removed.
-        String addrList = workerGroup.getAddrList();
-        if (StringUtils.isEmpty(addrList)) {
-            return Collections.emptyList();
-        }
-        return Lists.newArrayList(addrList.split(","));
-    }
+    // The method getWorkerAddressListFromWorkerGroup has been removed.
 
 }
