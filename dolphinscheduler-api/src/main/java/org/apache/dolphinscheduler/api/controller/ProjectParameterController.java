@@ -67,9 +67,10 @@ public class ProjectParameterController extends BaseController {
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
     @ApiException(CREATE_PROJECT_PARAMETER_ERROR)
-    public Result createProjectParameter(@ModelAttribute ProjectParameterRequest projectParameterRequest) {
-        return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName,
-                projectParameterValue, projectParameterDataType);
+    public Result createProjectParameter(User loginUser, long projectCode, String projectParameterName,
+                                  String projectParameterValue, String projectParameterDataType) {
+        // Implementation here
+}
     }
 
     @Operation(summary = "updateProjectParameter", description = "UPDATE_PROJECT_PARAMETER_NOTES")
@@ -82,9 +83,10 @@ public class ProjectParameterController extends BaseController {
     @PutMapping(value = "/{code}")
     @ResponseStatus(HttpStatus.OK)
     @ApiException(UPDATE_PROJECT_PARAMETER_ERROR)
-    public Result updateProjectParameter(@ModelAttribute ProjectParameterUpdateRequest updateRequest) {
-        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName,
-                projectParameterValue, projectParameterDataType);
+    public Result updateProjectParameter(User loginUser, long projectCode, long code, String projectParameterName,
+                                  String projectParameterValue, String projectParameterDataType) {
+        // Implementation here
+}
     }
 
     @Operation(summary = "deleteProjectParametersByCode", description = "DELETE_PROJECT_PARAMETER_NOTES")
