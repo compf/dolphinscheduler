@@ -17,8 +17,14 @@
 
 package org.apache.dolphinscheduler.plugin.task.api.model;
 
-public class TaskAlertInfo {
+import org.apache.dolphinscheduler.plugin.task.api.model.TaskAlertData;
 
+public class TaskAlertInfo {
+private TaskAlertData taskAlertData;
+
+    public TaskAlertInfo(String title, String content, Integer alertGroupId) {
+        this.taskAlertData = new TaskAlertData(title, content, alertGroupId);
+    }
     // Fields are refactored into TaskAlertData class
 
     public String getTitle() {
