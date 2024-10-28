@@ -107,7 +107,7 @@ public class SchedulerController extends BaseController {
     @ResponseStatus(HttpStatus.CREATED)
     @ApiException(CREATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_CREATE)
-    public Result createSchedule(ScheduleCreationInfo scheduleCreationInfo) {
+    public Result createSchedule(@RequestBody ScheduleCreationInfo scheduleCreationInfo) {
         return schedulerService.createSchedule(scheduleCreationInfo);
     }
 
@@ -310,7 +310,7 @@ public class SchedulerController extends BaseController {
     @ResponseStatus(HttpStatus.OK)
     @ApiException(UPDATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_UPDATE)
-    public Result updateScheduleByWorkflowDefinitionCode(ScheduleUpdateInfo scheduleUpdateInfo) {
+    public Result updateScheduleByWorkflowDefinitionCode(@RequestBody ScheduleUpdateInfo scheduleUpdateInfo) {
         return schedulerService.updateScheduleByWorkflowDefinitionCode(scheduleUpdateInfo);
     }
 }
