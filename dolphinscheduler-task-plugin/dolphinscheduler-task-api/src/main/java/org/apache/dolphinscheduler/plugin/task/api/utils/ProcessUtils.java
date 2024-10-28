@@ -207,8 +207,7 @@ public final class ProcessUtils {
         } catch (Exception e) {
             log.error("Cancel application failed: {}", e.getMessage());
         }
-    }
-
+    
     /**
      * get k8s application status
      *

@@ -187,20 +187,20 @@ public abstract class AbstractTask {
             }
 
             Property prop = paramsPropsMap.get(paramName);
-
+            }
             if (prop == null) {
                 log.error(
                         "setSqlParamsMap: No Property with paramName: {} is found in paramsPropsMap of task instance"
                                 + " with id: {}. So couldn't put Property in sqlParamsMap.",
-                        paramName, taskInstanceId);
-            } else {
-                sqlParamsMap.put(index, prop);
+                        // Missing context for paramName and taskInstanceId
+            sqlParamsMap.put(index, prop);
+                
                 index++;
                 log.info(
                         "setSqlParamsMap: Property with paramName: {} put in sqlParamsMap of content {} successfully.",
                         paramName, content);
             }
 
-        }
+        // End of methods and class
     }
 }

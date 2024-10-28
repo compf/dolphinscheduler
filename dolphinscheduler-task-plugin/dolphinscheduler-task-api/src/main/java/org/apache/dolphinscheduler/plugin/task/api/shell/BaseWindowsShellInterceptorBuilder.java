@@ -86,11 +86,8 @@ public abstract class BaseWindowsShellInterceptorBuilder<T extends BaseWindowsSh
         bootstrapCommand.add(shellInterpreter());
         bootstrapCommand.add(shellAbsolutePath().toString());
         return bootstrapCommand;
-    }
-
-    protected abstract String shellHeader();
-
-    protected abstract String shellInterpreter();
+    // Abstract method definitions are omitted
+}
 
     protected abstract String shellExtension();
 

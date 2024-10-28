@@ -62,13 +62,10 @@ public abstract class BaseLinuxShellInterceptorBuilder<T extends BaseLinuxShellI
         FileUtils.createFileWith755(shellAbsolutePath);
         Files.write(shellAbsolutePath, finalScript.getBytes(), StandardOpenOption.APPEND);
         log.info(
-                "Final Shell file is: \n****************************** Script Content *****************************************************************"
+                Files.write(shellAbsolutePath, finalScript.getBytes(), StandardOpenOption.APPEND);
                         +
-                        "{}" +
-                        "\n****************************** Script Content *****************************************************************",
-                finalScript);
-    }
-
+                        return Collections.singletonList("export KUBECONFIG=" + kubeConfigPath);
+                        }
     protected List<String> generateBootstrapCommand() {
         if (sudoEnable) {
             return bootstrapCommandInSudoMode();

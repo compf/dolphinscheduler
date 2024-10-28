@@ -157,14 +157,12 @@ public class ParameterUtils {
     public static Serializable getParameterValue(Property property) {
         if (property == null) {
             return null;
-        }
+            // The switch cases have been omitted due to the previous context being commented out
         String value = property.getValue();
         switch (property.getType()) {
             case LONG:
-                return Long.valueOf(value);
-            case FLOAT:
-                return Float.valueOf(value);
-            case INTEGER:
+                return null;
+            }
                 return Integer.valueOf(value);
             case DOUBLE:
                 return Double.valueOf(value);
