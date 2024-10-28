@@ -107,29 +107,21 @@ public class SchedulerController extends BaseController {
     @ResponseStatus(HttpStatus.CREATED)
     @ApiException(CREATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_CREATE)
-    public Result createSchedule(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
-                                 @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
-                                 @RequestParam(value = "workflowDefinitionCode") long workflowDefinitionCode,
-                                 @RequestParam(value = "schedule") String schedule,
-                                 @RequestParam(value = "warningType", required = false, defaultValue = DEFAULT_WARNING_TYPE) WarningType warningType,
-                                 @RequestParam(value = "warningGroupId", required = false, defaultValue = DEFAULT_NOTIFY_GROUP_ID) int warningGroupId,
-                                 @RequestParam(value = "failureStrategy", required = false, defaultValue = DEFAULT_FAILURE_POLICY) FailureStrategy failureStrategy,
-                                 @RequestParam(value = "workerGroup", required = false, defaultValue = "default") String workerGroup,
-                                 @RequestParam(value = "tenantCode", required = false, defaultValue = "default") String tenantCode,
-                                 @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") Long environmentCode,
-                                 @RequestParam(value = "workflowInstancePriority", required = false, defaultValue = DEFAULT_WORKFLOW_INSTANCE_PRIORITY) Priority workflowInstancePriority) {
+    public Result createSchedule(SchedulerRequest schedulerRequest,
+                                 
+                                 
         Map<String, Object> result = schedulerService.insertSchedule(
-                loginUser,
-                projectCode,
-                workflowDefinitionCode,
-                schedule,
-                warningType,
-                warningGroupId,
-                failureStrategy,
-                workflowInstancePriority,
-                workerGroup,
-                tenantCode,
-                environmentCode);
+                schedulerRequest.getLoginUser(),
+                schedulerRequest.getProjectCode(),
+                schedulerRequest.getWorkflowDefinitionCode(),
+                schedulerRequest.getSchedule(),
+                schedulerRequest.getWarningType(),
+                schedulerRequest.getWarningGroupId(),
+                schedulerRequest.getFailureStrategy(),
+                schedulerRequest.getWorkflowInstancePriority(),
+                schedulerRequest.getWorkerGroup(),
+                schedulerRequest.getTenantCode(),
+                schedulerRequest.getEnvironmentCode());
 
         return returnDataList(result);
     }
