@@ -16,10 +16,11 @@
  */
 
 package org.apache.dolphinscheduler.plugin.task.api.model;
-    private String content;
 public class TaskAlertInfo {
-    private Integer alertGroupId;
+
     private String title;
+    private String content;
+    private Integer alertGroupId;
 
 
 
