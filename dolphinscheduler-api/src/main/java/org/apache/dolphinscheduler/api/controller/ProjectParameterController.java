@@ -72,8 +72,8 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
                                          @RequestParam(value = "projectParameterDataType", defaultValue = "VARCHAR") String projectParameterDataType) {
-        return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName,
-                projectParameterValue, projectParameterDataType);
+        ProjectParameterInfo projectParameterInfo = new ProjectParameterInfo(loginUser, projectCode, projectParameterName, projectParameterValue, projectParameterDataType);
+                return projectParameterService.createProjectParameter(projectParameterInfo);
     }
 
     @Operation(summary = "updateProjectParameter", description = "UPDATE_PROJECT_PARAMETER_NOTES")
