@@ -51,10 +51,10 @@ public class WorkerGroupUtils {
 
     public static List<String> getWorkerAddressListFromWorkerGroup(WorkerGroup workerGroup) {
 
-        if (StringUtils.isEmpty(addrList)) {
+        if (StringUtils.isEmpty(workerGroup.getAddrList())) {
             return Collections.emptyList();
         }
-        return Lists.newArrayList(addrList.split(","));
+        return Lists.newArrayList(workerGroup.getAddrList().split(","));
     }
 
 }
