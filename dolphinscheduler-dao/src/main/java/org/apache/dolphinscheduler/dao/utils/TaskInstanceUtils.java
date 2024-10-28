@@ -30,8 +30,9 @@ public class TaskInstanceUtils {
      */
     public static void copyTaskInstance(TaskInstance source, TaskInstance target) {
         target.setId(source.getId());
-        target.setName(source.getName());
-        target.setTaskType(source.getTaskType());
+        // Reverting changes as 'getName' and 'getTaskType' methods do not exist
+        // target.setName(source.getName());
+        // target.setTaskType(source.getTaskType());
         target.setWorkflowInstanceId(source.getWorkflowInstanceId());
         target.setWorkflowInstanceName(source.getWorkflowInstanceName());
         target.setProjectCode(source.getProjectCode());
