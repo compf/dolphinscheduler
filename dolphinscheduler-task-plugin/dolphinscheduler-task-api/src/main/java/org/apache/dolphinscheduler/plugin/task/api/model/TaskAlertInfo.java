@@ -17,10 +17,11 @@
 
 package org.apache.dolphinscheduler.plugin.task.api.model;
 
-import org.apache.dolphinscheduler.plugin.task.api.model.TaskAlertData;
+// Corrected the import statement
 
 public class TaskAlertInfo {
-private TaskAlertData taskAlertData;
+// Corrected the declaration with proper instantiation
+private TaskAlertData taskAlertData = new TaskAlertData();
 
     public TaskAlertInfo(String title, String content, Integer alertGroupId) {
         this.taskAlertData = new TaskAlertData(title, content, alertGroupId);
