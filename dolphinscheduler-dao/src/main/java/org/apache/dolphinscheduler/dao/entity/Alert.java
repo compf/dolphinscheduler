@@ -48,8 +48,12 @@ public class Alert {
     @TableField(value = "sign")
     private String sign;
 
-    @TableField(value = "alert_info")
-    private AlertInfo alertInfo;
+    @TableField(value = "title")
+    private String title;
+    @TableField(value = "content")
+    private String content;
+    @TableField(value = "alertgroup_id")
+    private Integer alertGroupId;
 
     @TableField(value = "alert_status")
     private AlertStatus alertStatus;
