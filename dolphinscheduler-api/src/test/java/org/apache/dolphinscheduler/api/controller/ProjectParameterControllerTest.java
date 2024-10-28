@@ -50,8 +50,7 @@ public class ProjectParameterControllerTest {
 
         Mockito.when(projectParameterService.createProjectParameter(Mockito.any(), Mockito.anyLong(), Mockito.any(),
                 Mockito.any(), Mockito.any())).thenReturn(getSuccessResult());
-        ProjectParameterRequest request = new ProjectParameterRequest(loginUser, 1, "key", "value", DataType.VARCHAR.name());
-        Result result = projectParameterController.createProjectParameter(request);
+        Result result = projectParameterController.createProjectParameter(loginUser, 1, "key", "value", DataType.VARCHAR.name());
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
 
