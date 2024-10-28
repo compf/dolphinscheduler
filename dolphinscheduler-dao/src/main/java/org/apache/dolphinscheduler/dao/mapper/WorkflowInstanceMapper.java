@@ -275,10 +275,6 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @return workflow instance IPage
      */
                                                               @Param("instanceQueryParams") InstanceQueryParams instanceQueryParams);
-                                                              @Param("workflowDefinitionCode") Long workflowDefinitionCode,
-                                                              @Param("startTime") String startTime,
-                                                              @Param("endTime") String endTime,
-                                                              @Param("state") Integer state,
 
     /**
      * Statistics workflow instance state v2
@@ -293,7 +289,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @param projectIds   projectIds
      * @return ExecuteStatusCount list
      */
-    List<ExecuteStatusCount> countInstanceStateV2(
+    List<ExecuteStatusCount> countInstanceStateV2(@Param("instanceQueryParams") InstanceQueryParams instanceQueryParams);
                                                   @Param("startTime") Date startTime,
                                                   @Param("endTime") Date endTime,
                                                   @Param("projectCode") Long projectCode,
