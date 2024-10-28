@@ -38,8 +38,8 @@ import org.apache.dolphinscheduler.common.enums.Priority;
 import org.apache.dolphinscheduler.common.enums.WarningType;
 import org.apache.dolphinscheduler.dao.entity.User;
 import org.apache.dolphinscheduler.plugin.task.api.utils.ParameterUtils;
-import org.apache.dolphinscheduler.api.controller.dto.ScheduleCreateRequest;
-import org.apache.dolphinscheduler.api.controller.dto.ScheduleUpdateRequest;
+import org.apache.dolphinscheduler.api.dto.ScheduleCreateRequest;
+import org.apache.dolphinscheduler.api.dto.ScheduleUpdateRequest;
 
 import java.util.Map;
 

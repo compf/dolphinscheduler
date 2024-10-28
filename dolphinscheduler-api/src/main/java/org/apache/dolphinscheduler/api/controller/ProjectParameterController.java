@@ -28,8 +28,8 @@ import org.apache.dolphinscheduler.api.utils.Result;
 import org.apache.dolphinscheduler.common.constants.Constants;
 import org.apache.dolphinscheduler.dao.entity.User;
 import org.apache.dolphinscheduler.plugin.task.api.utils.ParameterUtils;
-import org.apache.dolphinscheduler.api.controller.dto.ProjectParameterRequest;
-import org.apache.dolphinscheduler.api.controller.dto.ProjectParameterUpdateRequest;
+import org.apache.dolphinscheduler.api.dto.ProjectParameterRequest;
+import org.apache.dolphinscheduler.api.dto.ProjectParameterUpdateRequest;
 
 import lombok.extern.slf4j.Slf4j;
 
