@@ -280,6 +280,8 @@ public class SchedulerController extends BaseController {
                                                          @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") long environmentCode,
                                                          @RequestParam(value = "workflowInstancePriority", required = false) Priority workflowInstancePriority
     ) {
+        User loginUser = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        long projectCode = (Long) httpSession.getAttribute(Constants.SESSION_PROJECT_CODE);
         Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(
                 loginUser, projectCode,
                 workflowDefinitionCode, schedule,
