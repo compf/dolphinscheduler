@@ -82,7 +82,7 @@ public class WorkflowInstance {
 
     @Deprecated
     @TableField(exist = false)
-    private WorkflowDefinition workflowDefinition;
+
 
     private CommandType commandType;
 

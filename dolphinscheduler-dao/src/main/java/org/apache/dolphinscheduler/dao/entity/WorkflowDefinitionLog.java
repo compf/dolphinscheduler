@@ -32,7 +32,7 @@ public class WorkflowDefinitionLog extends WorkflowDefinition {
     private Date operateTime;
 
     public WorkflowDefinitionLog() {
-        super();
+
     }
 
     public WorkflowDefinitionLog(WorkflowDefinition workflowDefinition) {
