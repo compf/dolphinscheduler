@@ -74,8 +74,7 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam(value = "projectParameterDataType", defaultValue = "VARCHAR") String projectParameterDataType) {
         return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName,
                 projectParameterValue, projectParameterDataType);
-    }
-
+    
     @Operation(summary = "updateProjectParameter", description = "UPDATE_PROJECT_PARAMETER_NOTES")
     @Parameters({
             @Parameter(name = "code", description = "PROJECT_PARAMETER_CODE", schema = @Schema(implementation = long.class, example = "123456")),
@@ -94,8 +93,7 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam(value = "projectParameterDataType") String projectParameterDataType) {
         return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName,
                 projectParameterValue, projectParameterDataType);
-    }
-
+    
     @Operation(summary = "deleteProjectParametersByCode", description = "DELETE_PROJECT_PARAMETER_NOTES")
     @Parameters({
             @Parameter(name = "code", description = "PROJECT_PARAMETER_CODE", required = true, schema = @Schema(implementation = String.class))
