@@ -69,9 +69,7 @@ public class TaskInstanceDaoImpl extends BaseDao<TaskInstance, TaskInstanceMappe
         WorkflowExecutionStatus processInstanceState = workflowInstance.getState();
         if (processInstanceState.isFinished() || processInstanceState == WorkflowExecutionStatus.READY_STOP) {
             log.warn("processInstance: {} state was: {}, skip submit this task, taskCode: {}",
-// TaskInstance.getTaskCode() method does not exist or is refactored.
-        // Replace the following logic with the equivalent or corrected method call.
-        if (processInstanceState == WorkflowExecutionStatus.READY_PAUSE) {
+if (processInstanceState == WorkflowExecutionStatus.READY_PAUSE) {
             taskInstance.setState(TaskExecutionStatus.PAUSE);
         }
         taskInstance.setExecutorId(workflowInstance.getExecutorId());
@@ -91,15 +89,19 @@ public class TaskInstanceDaoImpl extends BaseDao<TaskInstance, TaskInstanceMappe
         if (CollectionUtils.isEmpty(taskInstances)) {
             return;
         }
+        // logic for marking task instance invalid is missing here
+    }
+        }
         for (TaskInstance taskInstance : taskInstances) {
             taskInstance.setFlag(Flag.NO);
             mybatisMapper.updateById(taskInstance);
         }
-    }
-
-    private TaskExecutionStatus getSubmitTaskState(TaskInstance taskInstance, WorkflowInstance workflowInstance) {
+private TaskExecutionStatus getSubmitTaskState(TaskInstance taskInstance, WorkflowInstance workflowInstance) {
         TaskExecutionStatus state = taskInstance.getState();
-        if (state == TaskExecutionStatus.RUNNING_EXECUTION
+        if (state == TaskExecutionStatus.RUNNING_EXECUTION) {
+            // Rest of the logic to determine the task execution state
+        }
+    }
                 || state == TaskExecutionStatus.DELAY_EXECUTION
                 || state == TaskExecutionStatus.KILL
                 || state == TaskExecutionStatus.DISPATCH) {
