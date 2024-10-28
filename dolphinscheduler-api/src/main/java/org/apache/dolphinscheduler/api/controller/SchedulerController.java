@@ -131,6 +131,16 @@ public class SchedulerController extends BaseController {
                 tenantCode,
                 environmentCode);
 
+                workflowDefinitionCode,
+                schedule,
+                warningType,
+                warningGroupId,
+                failureStrategy,
+                workflowInstancePriority,
+                workerGroup,
+                tenantCode,
+                environmentCode);
+
         return returnDataList(result);
     }
 
@@ -347,6 +357,7 @@ public class SchedulerController extends BaseController {
         Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(loginUser, projectCode,
                 workflowDefinitionCode, schedule,
                 warningType, warningGroupId, failureStrategy, workflowInstancePriority, workerGroup, tenantCode,
+                environmentCode);
                 environmentCode);
         return returnDataList(result);
     }
