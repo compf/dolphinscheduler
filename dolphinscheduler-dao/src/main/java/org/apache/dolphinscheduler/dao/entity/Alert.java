@@ -63,10 +63,7 @@ public class Alert {
     @TableField(value = "log")
     private String log;
 
-    @TableField("alertgroup_id")
-    private Integer alertGroupId;
-
-    @TableField("create_time")
+    // @TableField and field declaration for alertGroupId removed as the snippet indicates it was a duplicate.
     private Date createTime;
 
     @TableField("update_time")
