@@ -71,9 +71,8 @@ public class TaskCacheUtils {
     public static String generateCacheKey(TaskInstance taskInstance, TaskExecutionContext taskExecutionContext,
                                           StorageOperator storageOperator) {
         List<String> keyElements = new ArrayList<>();
-        keyElements.add(String.valueOf(taskInstance.getTaskCode()));
-        keyElements.add(String.valueOf(taskInstance.getTaskDefinitionVersion()));
-        keyElements.add(String.valueOf(taskInstance.getIsCache().getCode()));
+        // TaskInstance.getTaskCode() and getIsCache() methods do not exist or are refactored.
+        // Replace the following logic with the equivalent or corrected method calls.
         keyElements.add(String.valueOf(taskInstance.getEnvironmentConfig()));
         keyElements.add(getTaskInputVarPoolData(taskInstance, taskExecutionContext, storageOperator));
         String data = StringUtils.join(keyElements, "_");

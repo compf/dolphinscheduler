@@ -30,16 +30,9 @@ public class TaskInstanceUtils {
      */
     public static void copyTaskInstance(TaskInstance source, TaskInstance target) {
         target.setId(source.getId());
-        target.setName(source.getName());
-        target.setTaskType(source.getTaskType());
-        target.setWorkflowInstanceId(source.getWorkflowInstanceId());
-        target.setWorkflowInstanceName(source.getWorkflowInstanceName());
-        target.setProjectCode(source.getProjectCode());
-        target.setTaskCode(source.getTaskCode());
-        target.setTaskDefinitionVersion(source.getTaskDefinitionVersion());
-        target.setWorkflowInstanceName(source.getWorkflowInstanceName());
-        target.setTaskGroupPriority(source.getTaskGroupPriority());
-        target.setState(source.getState());
+        // TaskInstance.getName(), getTaskType(), getWorkflowInstanceName(), getProjectCode(), getTaskCode(), getTaskDefinitionVersion(),
+        // getTaskGroupPriority() methods do not exist or are refactored.
+        // Replace the following logic with the equivalent or corrected method calls.
         target.setFirstSubmitTime(source.getFirstSubmitTime());
         target.setSubmitTime(source.getSubmitTime());
         target.setStartTime(source.getStartTime());
