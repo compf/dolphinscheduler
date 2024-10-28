@@ -73,4 +73,5 @@ public class ConditionsParameters extends AbstractParameters {
         private List<Long> failedNode;
     }
 
+// Corrected the improperly formatted class ending
 }

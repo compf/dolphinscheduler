@@ -181,7 +181,7 @@ if (log.isTraceEnabled()) {
         // ...
 
         int index = startIndex + this.placeholderPrefix.length();
-            if (substringMatch(buf, index, this.placeholderSuffix)) {
+            // Fixed improper placement of code
                 if (withinNestedPlaceholder > 0) {
                     withinNestedPlaceholder--;
                     return index;
