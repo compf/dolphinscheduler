@@ -72,7 +72,7 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
                                          @RequestParam(value = "projectParameterDataType", defaultValue = "VARCHAR") String projectParameterDataType) {
-        return projectParameterService.createProjectParameter(new ProjectParameterRequest(loginUser, projectParameterName,
+        return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName,
                 projectParameterValue, projectParameterDataType), projectCode);
     }
 
@@ -92,7 +92,7 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
                                          @RequestParam(value = "projectParameterDataType") String projectParameterDataType) {
-        return projectParameterService.updateProjectParameter(new ProjectParameterRequest(loginUser, projectParameterName,
+        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName,
                 projectParameterValue, projectParameterDataType), projectCode);
     }
 
@@ -121,7 +121,7 @@ public class ProjectParameterController extends BaseController {
                                                       @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
                                                       @RequestParam("codes") String codes) {
 
-        return projectParameterService.batchDeleteProjectParametersByCodes(new ProjectParameterRequest(loginUser, projectCode, codes));
+        return projectParameterService.batchDeleteProjectParametersByCodes(loginUser, projectCode, codes);
     }
 
     @Operation(summary = "queryProjectParameterListPaging", description = "QUERY_PROJECT_PARAMETER_LIST_PAGING_NOTES")
@@ -143,7 +143,7 @@ public class ProjectParameterController extends BaseController {
 
         checkPageParams(pageNo, pageSize);
         searchVal = ParameterUtils.handleEscapes(searchVal);
-        return projectParameterService.queryProjectParameterListPaging(new ProjectParameterRequest(loginUser, projectCode, searchVal, projectParameterDataType),
+        return projectParameterService.queryProjectParameterListPaging(loginUser, projectCode, pageSize, pageNo, searchVal, projectParameterDataType
                 pageSize, pageNo);
     }
 
@@ -157,7 +157,7 @@ public class ProjectParameterController extends BaseController {
     public Result queryProjectParameterByCode(@Parameter(hidden = true) @RequestAttribute(value = Constants.SESSION_USER) User loginUser,
                                               @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
                                               @PathVariable("code") long code) {
-        return projectParameterService.queryProjectParameterByCode(new ProjectParameterRequest(loginUser, projectCode, code));
+        return projectParameterService.queryProjectParameterByCode(loginUser, projectCode, code);
     }
 
 }

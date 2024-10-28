@@ -67,6 +67,7 @@ public class ProjectParameterServiceImpl extends BaseServiceImpl implements Proj
 
     @Override
     @Transactional
+    @Override
     public Result createProjectParameter(User loginUser, long projectCode, String projectParameterName,
                                          String projectParameterValue, String projectParameterDataType) {
         Result result = new Result();
@@ -122,6 +123,7 @@ public class ProjectParameterServiceImpl extends BaseServiceImpl implements Proj
     }
 
     @Override
+    @Override
     public Result updateProjectParameter(User loginUser, long projectCode, long code, String projectParameterName,
                                          String projectParameterValue, String projectParameterDataType) {
         Result result = new Result();
@@ -172,6 +174,7 @@ public class ProjectParameterServiceImpl extends BaseServiceImpl implements Proj
     }
 
     @Override
+    @Override
     public Result deleteProjectParametersByCode(User loginUser, long projectCode, long code) {
         Result result = new Result();
 
@@ -203,6 +206,7 @@ public class ProjectParameterServiceImpl extends BaseServiceImpl implements Proj
         return result;
     }
 
+    @Override
     @Override
     public Result batchDeleteProjectParametersByCodes(User loginUser, long projectCode, String codes) {
         Result result = new Result();
@@ -237,6 +241,7 @@ public class ProjectParameterServiceImpl extends BaseServiceImpl implements Proj
     }
 
     @Override
+    @Override
     public Result queryProjectParameterListPaging(User loginUser, long projectCode, Integer pageSize, Integer pageNo,
                                                   String searchVal, String projectParameterDataType) {
         Result result = new Result();
@@ -263,6 +268,7 @@ public class ProjectParameterServiceImpl extends BaseServiceImpl implements Proj
         return result;
     }
 
+    @Override
     @Override
     public Result queryProjectParameterByCode(User loginUser, long projectCode, long code) {
         Result result = new Result();
