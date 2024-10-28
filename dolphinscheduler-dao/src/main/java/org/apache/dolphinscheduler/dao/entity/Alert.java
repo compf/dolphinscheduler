@@ -48,7 +48,11 @@ public class Alert {
     @TableField(value = "sign")
     private String sign;
 
-    private TaskAlertInfo taskAlertInfo;
+    @TableField(value = "title")
+    private String title;
+
+    @TableField(value = "content")
+    private String content;
 
     @TableField(value = "alert_status")
     private AlertStatus alertStatus;
