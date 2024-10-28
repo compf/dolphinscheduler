@@ -60,7 +60,6 @@ public abstract class AbstractTask {
 
     protected boolean needAlert = false;
 
-    protected TaskAlertInfo taskAlertInfo;
 
     /**
      * constructor
@@ -119,13 +118,6 @@ public abstract class AbstractTask {
         this.needAlert = needAlert;
     }
 
-    public TaskAlertInfo getTaskAlertInfo() {
-        return taskAlertInfo;
-    }
-
-    public void setTaskAlertInfo(TaskAlertInfo taskAlertInfo) {
-        this.taskAlertInfo = taskAlertInfo;
-    }
 
     /**
      * get task parameters
