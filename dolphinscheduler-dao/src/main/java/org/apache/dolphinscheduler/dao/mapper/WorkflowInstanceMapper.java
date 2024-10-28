@@ -262,10 +262,10 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
     List<WorkflowInstance> queryByWorkflowCodeVersionStatus(@Param("workflowDefinitionCode") long workflowDefinitionCode,
                                                             @Param("workflowDefinitionVersion") int workflowDefinitionVersion,
                                                             @Param("states") int[] states);
-
-    /**
+     * @param workflowQuery Workflow query filters
+     * @return IPage of WorkflowInstance
      * Filter workflow instance
-     *
+     
      * @param page                  page
      * @param workflowDefinitionCode workflowDefinitionCode
      * @param name                  name
