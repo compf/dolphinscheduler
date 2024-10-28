@@ -56,21 +56,32 @@ public class TaskInstance implements Serializable {
     
     @TableField(exist = false)
     private String processDefinitionName;
+    @TableField(value = "create_time")
     private Date createTime;
     @TableField(exist = false)
     private int taskGroupPriority;
 
+    @TableField(value = "state")
     private TaskExecutionStatus state;
+    @TableField(value = "project_code")
     private Long projectCode;
+    @TableField(value = "first_submit_time")
     private Date firstSubmitTime;
+    @TableField(value = "submit_time")
     private Date submitTime;
 
+    @TableField(value = "start_time")
     private Date startTime;
+    @TableField(value = "end_time")
     private Date endTime;
+    @TableField(value = "host")
     private String host;
 
+    @TableField(value = "execute_path")
     private String executePath;
+    @TableField(value = "log_path")
     private String logPath;
+    @TableField(value = "retry_times")
     private int retryTimes;
 
     private Flag alertFlag;
