@@ -71,46 +71,5 @@ public class WorkflowTaskRelation {
 
     private Date updateTime;
 
-    public WorkflowTaskRelation(String name,
-                                int workflowDefinitionVersion,
-                                long projectCode,
-                                long workflowDefinitionCode,
-                                long preTaskCode,
-                                int preTaskVersion,
-                                long postTaskCode,
-                                int postTaskVersion,
-                                ConditionType conditionType,
-                                String conditionParams) {
-        this.name = name;
-        this.workflowDefinitionVersion = workflowDefinitionVersion;
-        this.projectCode = projectCode;
-        this.workflowDefinitionCode = workflowDefinitionCode;
-        this.preTaskCode = preTaskCode;
-        this.preTaskVersion = preTaskVersion;
-        this.postTaskCode = postTaskCode;
-        this.postTaskVersion = postTaskVersion;
-        this.conditionType = conditionType;
-        this.conditionParams = conditionParams;
-
-        Date now = new Date();
-        this.createTime = now;
-        this.updateTime = now;
-    }
-
-    public WorkflowTaskRelation(WorkflowTaskRelationLog processTaskRelationLog) {
-        this.name = processTaskRelationLog.getName();
-        this.workflowDefinitionVersion = processTaskRelationLog.getWorkflowDefinitionVersion();
-        this.projectCode = processTaskRelationLog.getProjectCode();
-        this.workflowDefinitionCode = processTaskRelationLog.getWorkflowDefinitionCode();
-        this.preTaskCode = processTaskRelationLog.getPreTaskCode();
-        this.preTaskVersion = processTaskRelationLog.getPreTaskVersion();
-        this.postTaskCode = processTaskRelationLog.getPostTaskCode();
-        this.postTaskVersion = processTaskRelationLog.getPostTaskVersion();
-        this.conditionType = processTaskRelationLog.getConditionType();
-        this.conditionParams = processTaskRelationLog.getConditionParams();
-
-        this.createTime = processTaskRelationLog.getCreateTime();
-        this.updateTime = new Date();
-    }
 
 }

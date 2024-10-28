@@ -36,19 +36,18 @@ public class WorkflowTaskRelationLog extends WorkflowTaskRelation {
     }
 
     public WorkflowTaskRelationLog(WorkflowTaskRelation workflowTaskRelation) {
-        super();
-        this.setName(workflowTaskRelation.getName());
-        this.setWorkflowDefinitionCode(workflowTaskRelation.getWorkflowDefinitionCode());
-        this.setWorkflowDefinitionVersion(workflowTaskRelation.getWorkflowDefinitionVersion());
-        this.setProjectCode(workflowTaskRelation.getProjectCode());
-        this.setPreTaskCode(workflowTaskRelation.getPreTaskCode());
-        this.setPreTaskVersion(workflowTaskRelation.getPreTaskVersion());
-        this.setPostTaskCode(workflowTaskRelation.getPostTaskCode());
-        this.setPostTaskVersion(workflowTaskRelation.getPostTaskVersion());
-        this.setConditionType(workflowTaskRelation.getConditionType());
-        this.setConditionParams(workflowTaskRelation.getConditionParams());
-        this.setCreateTime(workflowTaskRelation.getCreateTime());
-        this.setUpdateTime(workflowTaskRelation.getUpdateTime());
+        super(workflowTaskRelation.getName(),
+                workflowTaskRelation.getWorkflowDefinitionVersion(),
+                workflowTaskRelation.getProjectCode(),
+                workflowTaskRelation.getWorkflowDefinitionCode(),
+                workflowTaskRelation.getPreTaskCode(),
+                workflowTaskRelation.getPreTaskVersion(),
+                workflowTaskRelation.getPostTaskCode(),
+                workflowTaskRelation.getPostTaskVersion(),
+                workflowTaskRelation.getConditionType(),
+                workflowTaskRelation.getConditionParams());
+        this.operator = workflowTaskRelation.getOperator();
+        this.operateTime = workflowTaskRelation.getOperateTime();
     }
 
     @Override

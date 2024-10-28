@@ -47,8 +47,8 @@ public class Alert {
     @TableField(value = "sign")
     private String sign;
 
-    @TableField(value = "title")
-    @TableField(value = "title")
+    
+    
     private String title;
 
     private AlertStatus alertStatus;

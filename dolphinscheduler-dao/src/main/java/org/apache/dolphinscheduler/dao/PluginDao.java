@@ -54,14 +54,14 @@ public class PluginDao {
      * @return plugin id
      */
     public int addOrUpdatePluginDefine(@NonNull PluginDefine pluginDefine) {
-        requireNonNull(pluginDefine.getPluginName(), "pluginName is null");
-        requireNonNull(pluginDefine.getPluginType(), "pluginType is null");
+        requireNonNull(pluginDefine.getName(), "pluginName is null");
+        requireNonNull(pluginDefine.getType(), "pluginType is null");
 
         PluginDefine currPluginDefine =
-                pluginDefineMapper.queryByNameAndType(pluginDefine.getPluginName(), pluginDefine.getPluginType());
+                pluginDefineMapper.queryByNameAndType(pluginDefine.getName(), pluginDefine.getType());
         if (currPluginDefine == null) {
             try {
-                if (pluginDefineMapper.insert(pluginDefine) == 1 && pluginDefine.getId() != null) {
+                if (pluginDefineMapper.insert(pluginDefine) == 1 && pluginDefine.getId() != 0) {
                     return pluginDefine.getId();
                 }
                 throw new TaskPluginException(

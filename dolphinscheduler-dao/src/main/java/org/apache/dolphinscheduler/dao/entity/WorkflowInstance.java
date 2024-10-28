@@ -160,19 +160,7 @@ public class WorkflowInstance {
 
     private int testFlag;
 
-    /**
-     * set the process name with process define version and timestamp
-     *
-     * @param workflowDefinition processDefinition
-     */
-    public WorkflowInstance(WorkflowDefinition workflowDefinition) {
-        this.workflowDefinition = workflowDefinition;
-        // todo: the name is not unique
-        this.name = String.join("-",
-                workflowDefinition.getName(),
-                String.valueOf(workflowDefinition.getVersion()),
-                DateUtils.getCurrentTimeStamp());
-    }
+
 
     /**
      * add command to history
@@ -212,29 +200,6 @@ public class WorkflowInstance {
         return commandType;
     }
 
-    /**
-     * set state with desc
-     * @param state
-     * @param stateDesc
-     */
-    public void setStateWithDesc(WorkflowExecutionStatus state, String stateDesc) {
-        this.setState(state);
-        if (StringUtils.isEmpty(this.getStateHistory())) {
-            stateDescList = new ArrayList<>();
-        } else if (stateDescList == null) {
-            stateDescList = JSONUtils.toList(this.getStateHistory(), StateDesc.class);
-        }
-        stateDescList.add(new StateDesc(new Date(), state, stateDesc));
-        this.setStateHistory(JSONUtils.toJsonString(stateDescList));
-    }
 
-    @Data
-    @NoArgsConstructor
-    @AllArgsConstructor
-    public static class StateDesc {
 
-        Date time;
-        WorkflowExecutionStatus state;
-        String desc;
-    }
 }
