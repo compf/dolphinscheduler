@@ -95,7 +95,7 @@ public class AlertDao {
         }
 
         String sign = generateSign(alert);
-        alert.setSign(sign);
+        alert.sign(sign);
         int count = alertMapper.insert(alert);
         log.info("add alert to db , alert: {}", alert);
         return count;
@@ -111,10 +111,10 @@ public class AlertDao {
      */
     public int updateAlert(AlertStatus alertStatus, String log, int id) {
         Alert alert = new Alert();
-        alert.setId(id);
-        alert.setAlertStatus(alertStatus);
-        alert.setUpdateTime(new Date());
-        alert.setLog(log);
+        alert.id(id);
+        alert.alertStatus(alertStatus);
+        alert.updateTime(new Date());
+        alert.log(log);
         return alertMapper.updateById(alert);
     }
 
@@ -172,15 +172,15 @@ public class AlertDao {
         String content = JSONUtils.toJsonString(Lists.newArrayList(serverStopAlertContent));
 
         Alert alert = new Alert();
-        alert.setTitle("Fault tolerance warning");
-        alert.setWarningType(WarningType.FAILURE);
-        alert.setAlertStatus(AlertStatus.WAIT_EXECUTION);
-        alert.setContent(content);
-        alert.setAlertGroupId(ADMIN_ALERT_GROUP_ID);
-        alert.setCreateTime(new Date());
-        alert.setUpdateTime(new Date());
-        alert.setAlertType(AlertType.FAULT_TOLERANCE_WARNING);
-        alert.setSign(generateSign(alert));
+        alert.title("Fault tolerance warning");
+        alert.warningType(WarningType.FAILURE);
+        alert.alertStatus(AlertStatus.WAIT_EXECUTION);
+        alert.content(content);
+        alert.alertGroupId(ADMIN_ALERT_GROUP_ID);
+        alert.createTime(new Date());
+        alert.updateTime(new Date());
+        alert.alertType(AlertType.FAULT_TOLERANCE_WARNING);
+        alert.sign(generateSign(alert));
         // we use this method to avoid insert duplicate alert(issue #5525)
         // we modified this method to optimize performance(issue #9174)
         Date crashAlarmSuppressionStartTime = Date.from(
@@ -215,22 +215,22 @@ public class AlertDao {
                 .build();
         workflowAlertContentList.add(workflowAlertContent);
         String content = JSONUtils.toJsonString(workflowAlertContentList);
-        alert.setTitle("Workflow Timeout Warn");
-        alert.setProjectCode(projectUser.getProjectCode());
-        alert.setWorkflowDefinitionCode(workflowInstance.getWorkflowDefinitionCode());
-        alert.setWorkflowInstanceId(workflowInstance.getId());
-        alert.setAlertType(AlertType.WORKFLOW_INSTANCE_TIMEOUT);
+        alert.title("Workflow Timeout Warn");
+        alert.projectCode(projectUser.getProjectCode());
+        alert.workflowDefinitionCode(workflowInstance.getWorkflowDefinitionCode());
+        alert.workflowInstanceId(workflowInstance.getId());
+        alert.alertType(AlertType.WORKFLOW_INSTANCE_TIMEOUT);
         saveTaskTimeoutAlert(alert, content, alertGroupId);
     }
 
     private void saveTaskTimeoutAlert(Alert alert, String content, int alertGroupId) {
-        alert.setAlertGroupId(alertGroupId);
-        alert.setWarningType(WarningType.FAILURE);
-        alert.setContent(content);
-        alert.setCreateTime(new Date());
-        alert.setUpdateTime(new Date());
+        alert.alertGroupId(alertGroupId);
+        alert.warningType(WarningType.FAILURE);
+        alert.content(content);
+        alert.createTime(new Date());
+        alert.updateTime(new Date());
         String sign = generateSign(alert);
-        alert.setSign(sign);
+        alert.sign(sign);
         alertMapper.insert(alert);
     }
 
@@ -263,11 +263,11 @@ public class AlertDao {
                 .build();
         workflowAlertContentList.add(workflowAlertContent);
         String content = JSONUtils.toJsonString(workflowAlertContentList);
-        alert.setTitle("Task Timeout Warn");
-        alert.setProjectCode(projectUser.getProjectCode());
-        alert.setWorkflowDefinitionCode(workflowInstance.getWorkflowDefinitionCode());
-        alert.setWorkflowInstanceId(workflowInstance.getId());
-        alert.setAlertType(AlertType.TASK_TIMEOUT);
+        alert.title("Task Timeout Warn");
+        alert.projectCode(projectUser.getProjectCode());
+        alert.workflowDefinitionCode(workflowInstance.getWorkflowDefinitionCode());
+        alert.workflowInstanceId(workflowInstance.getId());
+        alert.alertType(AlertType.TASK_TIMEOUT);
         saveTaskTimeoutAlert(alert, content, workflowInstance.getWarningGroupId());
     }
 
