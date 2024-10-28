@@ -323,7 +323,6 @@ public class TimePlaceholderUtils {
             try {
                 return calculateTime(placeholderName, date);
             } catch (Exception ex) {
-                log.error("resolve placeholder '{}' in [ {} ]", placeholderName, value, ex);
                 return null;
             }
         }
