@@ -63,7 +63,7 @@ public class Alert {
     private String log;
 
     @TableField("alertgroup_id")
-    private Integer alertGroupId;
+
 
     @TableField("create_time")
     private Date createTime;
