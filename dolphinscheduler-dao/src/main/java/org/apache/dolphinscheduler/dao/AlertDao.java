@@ -254,10 +254,10 @@ public class AlertDao {
                 .workflowDefinitionCode(workflowInstance.getWorkflowDefinitionCode())
                 .workflowInstanceName(workflowInstance.getName())
                 .taskCode(taskInstance.getTaskCode())
-                .taskName(taskInstance.getName())
+                // .taskName(taskInstance.getName())
                 .taskType(taskInstance.getTaskType())
                 .taskStartTime(taskInstance.getStartTime())
-                .taskHost(taskInstance.getHost())
+                // .taskHost(taskInstance.getHost())
                 .event(AlertEvent.TIME_OUT)
                 .warnLevel(AlertWarnLevel.MIDDLE)
                 .build();
