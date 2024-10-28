@@ -67,7 +67,7 @@ public class ProjectParameterController extends BaseController {
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
     @ApiException(CREATE_PROJECT_PARAMETER_ERROR)
-    public Result createProjectParameter(@RequestBody ProjectParameterInfo projectParameterInfo) {
+    public Result createProjectParameter(ProjectParameterInfo projectParameterInfo) {
         return projectParameterService.createProjectParameter(projectParameterInfo);
     }
 
@@ -81,7 +81,7 @@ public class ProjectParameterController extends BaseController {
     @PutMapping(value = "/{code}")
     @ResponseStatus(HttpStatus.OK)
     @ApiException(UPDATE_PROJECT_PARAMETER_ERROR)
-    public Result updateProjectParameter(@RequestBody ProjectParameterInfo projectParameterInfo) {
+    public Result updateProjectParameter(ProjectParameterInfo projectParameterInfo) {
         return projectParameterService.updateProjectParameter(projectParameterInfo);
     }
 
