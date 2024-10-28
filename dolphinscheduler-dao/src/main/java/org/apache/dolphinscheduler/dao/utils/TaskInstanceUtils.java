@@ -30,11 +30,10 @@ public class TaskInstanceUtils {
      */
     public static void copyTaskInstance(TaskInstance source, TaskInstance target) {
         target.setId(source.getId());
-        // Assuming 'taskIdentity' contains 'name' and 'taskType'
-        target.setTaskIdentity(source.getTaskIdentity());
+        target.setName(source.getName());
+        target.setTaskType(source.getTaskType());
         target.setWorkflowInstanceId(source.getWorkflowInstanceId());
-        // Assuming 'taskWorkflowInstance' contains 'workflowInstanceName'
-        target.setTaskWorkflowInstance(source.getTaskWorkflowInstance());
+        target.setWorkflowInstanceName(source.getWorkflowInstanceName());
         target.setProjectCode(source.getProjectCode());
         target.setTaskCode(source.getTaskCode());
         target.setTaskDefinitionVersion(source.getTaskDefinitionVersion());
