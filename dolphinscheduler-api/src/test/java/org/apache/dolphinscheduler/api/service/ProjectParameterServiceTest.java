@@ -77,7 +77,8 @@ public class ProjectParameterServiceTest {
         // PERMISSION DENIED
         when(projectService.hasProjectAndWritePerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class)))
                 .thenReturn(false);
-        Result result = projectParameterService.createProjectParameter(loginUser, projectCode, "key", "value",
+        ProjectParameterRequest parameter = new ProjectParameterRequest(loginUser, projectCode, "key", "value", DataType.VARCHAR.name());
+        Result result = projectParameterService.createProjectParameter(parameter);
                 DataType.VARCHAR.name());
         assertNull(result.getData());
         assertNull(result.getCode());

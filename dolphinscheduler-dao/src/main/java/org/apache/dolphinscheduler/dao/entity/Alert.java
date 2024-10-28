@@ -43,48 +43,64 @@ import com.baomidou.mybatisplus.annotation.TableName;
 public class Alert {
 
     @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
+    private final Integer id;
 
     @TableField(value = "sign")
-    private String sign;
+    private final String sign;
 
     @TableField(value = "title")
-    private String title;
+    private final String title;
 
     @TableField(value = "content")
-    private String content;
+    private final String content;
 
     @TableField(value = "alert_status")
-    private AlertStatus alertStatus;
+    private final AlertStatus alertStatus;
 
     @TableField(value = "warning_type")
-    private WarningType warningType;
+    private final WarningType warningType;
 
     @TableField(value = "log")
-    private String log;
+    private final String log;
 
     @TableField("alertgroup_id")
-    private Integer alertGroupId;
+    private final Integer alertGroupId;
 
     @TableField("create_time")
-    private Date createTime;
+    private final Date createTime;
 
     @TableField("update_time")
-    private Date updateTime;
+    private final Date updateTime;
 
     @TableField("project_code")
-    private Long projectCode;
+    private final Long projectCode;
 
     @TableField("workflow_definition_code")
-    private Long workflowDefinitionCode;
+    private final Long workflowDefinitionCode;
 
     @TableField("workflow_instance_id")
-    private Integer workflowInstanceId;
+    private final Integer workflowInstanceId;
 
     @TableField("alert_type")
-    private AlertType alertType;
+    private final AlertType alertType;
 
     @TableField(exist = false)
-    private Map<String, Object> info = new HashMap<>();
+    private final Map<String, Object> info;
 
 }
+    public Alert(String sign, String title, String content, AlertStatus alertStatus, WarningType warningType, String log, Integer alertGroupId, Date createTime, Date updateTime, Long projectCode, Long workflowDefinitionCode, Integer workflowInstanceId, AlertType alertType, Map<String, Object> info) {
+        this.sign = sign;
+        this.title = title;
+        this.content = content;
+        this.alertStatus = alertStatus;
+        this.warningType = warningType;
+        this.log = log;
+        this.alertGroupId = alertGroupId;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
+        this.projectCode = projectCode;
+        this.workflowDefinitionCode = workflowDefinitionCode;
+        this.workflowInstanceId = workflowInstanceId;
+        this.alertType = alertType;
+        this.info = info;
+    }
