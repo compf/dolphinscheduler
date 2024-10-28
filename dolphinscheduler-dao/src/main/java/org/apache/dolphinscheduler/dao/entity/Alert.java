@@ -50,7 +50,9 @@ public class Alert {
 
     @TableField(value = "title")
     private String title;
+private String content;
 
+    private Integer alertGroupId;
     @TableField(value = "content")
     private String content;
 
