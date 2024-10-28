@@ -262,7 +262,12 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
     List<WorkflowInstance> queryByWorkflowCodeVersionStatus(@Param("workflowDefinitionCode") long workflowDefinitionCode,
                                                             @Param("workflowDefinitionVersion") int workflowDefinitionVersion,
                                                             @Param("states") int[] states);
-
+                                                              @Param("workflowDefinitionCode") Long workflowDefinitionCode,
+                                                              @Param("name") String name,
+                                                              @Param("startTime") Date startTime,
+                                                              @Param("endTime") Date endTime,
+                                                              @Param("state") WorkflowExecutionStatus state,
+                                                              @Param("host") String host);
     /**
      * Filter workflow instance
      *
@@ -272,7 +277,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @param host                  host
      * @param startTime             startTime
      */
-    IPage<WorkflowInstance> queryWorkflowInstanceListV2Paging(Page<WorkflowInstance> page,
+     IPage<WorkflowInstance> queryWorkflowInstanceListV2Paging(Page<WorkflowInstance> page,
                                                               @Param("projectCode") Long projectCode,
                                                               @Param("workflowDefinitionCode") Long workflowDefinitionCode,
                                                               @Param("name") String name,
