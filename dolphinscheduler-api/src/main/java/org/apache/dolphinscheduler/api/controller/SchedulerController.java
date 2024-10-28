@@ -108,9 +108,18 @@ public class SchedulerController extends BaseController {
     @ApiException(CREATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_CREATE)
     public Result createSchedule(User loginUser, long projectCode, long workflowDefinitionCode, String schedule,
-                                 Map<String, Object> result = schedulerService.insertSchedule(
+                                 WarningType warningType, int warningGroupId, FailureStrategy failureStrategy,
+                                 Priority workflowInstancePriority, String workerGroup, String tenantCode, Long environmentCode) {
+                Map<String, Object> result = schedulerService.insertSchedule(
                 loginUser,
-                projectCode,
+                workflowDefinitionCode,
+                schedule,
+                warningType,
+                warningGroupId,
+                failureStrategy,
+                workerGroup,
+                tenantCode,
+                environmentCode,
                 workflowDefinitionCode,
                 schedule,
                 warningType,
@@ -123,7 +132,6 @@ public class SchedulerController extends BaseController {
 
         return returnDataList(result);
     }
-    /**
      * updateWorkflowInstance schedule
      *
      * @param loginUser login user
@@ -165,14 +173,6 @@ public class SchedulerController extends BaseController {
                                  @RequestParam(value = "tenantCode", required = false, defaultValue = "default") String tenantCode,
                                  @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") Long environmentCode,
                                  @RequestParam(value = "workflowInstancePriority", required = false, defaultValue = "MEDIUM") Priority workflowInstancePriority) {
-
-        Map<String, Object> result = schedulerService.updateSchedule(loginUser, projectCode, id, schedule,
-                warningType, warningGroupId, failureStrategy, workflowInstancePriority, workerGroup, tenantCode,
-                environmentCode);
-        return returnDataList(result);
-    }
-
-    @Operation(summary = "online", description = "ONLINE_SCHEDULE_NOTES")
     @Parameters({
             @Parameter(name = "id", description = "SCHEDULE_ID", required = true, schema = @Schema(implementation = int.class, example = "100"))
     })
@@ -185,8 +185,6 @@ public class SchedulerController extends BaseController {
         schedulerService.onlineScheduler(loginUser, projectCode, id);
         return Result.success(true);
     }
-    @Parameters({
-            @Parameter(name = "id", description = "SCHEDULE_ID", required = true, schema = @Schema(implementation = int.class, example = "100"))
     })
     @PostMapping("/{id}/offline")
     @ApiException(OFFLINE_SCHEDULE_ERROR)
@@ -197,8 +195,6 @@ public class SchedulerController extends BaseController {
         schedulerService.offlineScheduler(loginUser, projectCode, id);
         return Result.success(true);
     }
-    @Operation(summary = "queryScheduleListPaging", description = "QUERY_SCHEDULE_LIST_PAGING_NOTES")
-    @Parameters({
 
             @Parameter(name = "searchVal", description = "SEARCH_VAL", schema = @Schema(implementation = String.class)),
             @Parameter(name = "pageNo", description = "PAGE_NO", schema = @Schema(implementation = int.class, example = "1")),
@@ -241,8 +237,6 @@ public class SchedulerController extends BaseController {
         schedulerService.deleteSchedulesById(loginUser, id);
         return new Result(Status.SUCCESS);
     }
-
-    /**
      * query schedule list
      *
      * @param loginUser login user
@@ -310,7 +304,7 @@ public class SchedulerController extends BaseController {
     @OperatorLog(auditType = AuditType.SCHEDULE_UPDATE)
     public Result updateScheduleByWorkflowDefinitionCode(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
                                                          @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
-                                                         @PathVariable(value = "code") long workflowDefinitionCode,
+                                                         @RequestParam(value = "workflowDefinitionCode") long workflowDefinitionCode,
                                                          @RequestParam(value = "schedule") String schedule,
                                                          @RequestParam(value = "warningType", required = false, defaultValue = "NONE") WarningType warningType,
                                                          @RequestParam(value = "warningGroupId", required = false, defaultValue = "0") int warningGroupId,
