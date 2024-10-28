@@ -40,7 +40,7 @@ public class TaskInstance implements Serializable {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private String name;
+    private TaskInstanceIdentity identity;
 
     private String taskType;
 
@@ -48,7 +48,6 @@ public class TaskInstance implements Serializable {
 
     private String workflowInstanceName;
 
-    private Long projectCode;
 
     private long taskCode;
 

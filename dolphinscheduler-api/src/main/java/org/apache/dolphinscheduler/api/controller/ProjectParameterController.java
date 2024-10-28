@@ -67,13 +67,10 @@ public class ProjectParameterController extends BaseController {
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
     @ApiException(CREATE_PROJECT_PARAMETER_ERROR)
-    public Result createProjectParameter(@Parameter(hidden = true) @RequestAttribute(value = Constants.SESSION_USER) User loginUser,
-                                         @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
-                                         @RequestParam("projectParameterName") String projectParameterName,
-                                         @RequestParam(value = "projectParameterValue") String projectParameterValue,
-                                         @RequestParam(value = "projectParameterDataType", defaultValue = "VARCHAR") String projectParameterDataType) {
-        return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName,
-                projectParameterValue, projectParameterDataType);
+    public Result createProjectParameter(ProjectParameterRequest parameterRequest) {
+                                         return projectParameterService.createProjectParameter(parameterRequest);
+                                         public Result updateProjectParameter(ProjectParameterUpdateRequest updateRequest) {
+                                         return projectParameterService.updateProjectParameter(updateRequest);
     }
 
     @Operation(summary = "updateProjectParameter", description = "UPDATE_PROJECT_PARAMETER_NOTES")
