@@ -125,7 +125,7 @@ public class TaskInstanceDaoImpl extends BaseDao<TaskInstance, TaskInstanceMappe
         if (failureStrategy == FailureStrategy.CONTINUE) {
             return true;
         }
-        List<TaskInstance> taskInstances = this.queryValidTaskListByWorkflowInstanceId(taskInstance.getWorkflowInstanceId());
+        List<TaskInstance> taskInstances = this.queryValidTaskListByWorkflowInstanceId(taskInstance.getWorkflowInstanceId(), taskInstance.getTestFlag());
 
         for (TaskInstance task : taskInstances) {
             if (task.getState() == TaskExecutionStatus.FAILURE
