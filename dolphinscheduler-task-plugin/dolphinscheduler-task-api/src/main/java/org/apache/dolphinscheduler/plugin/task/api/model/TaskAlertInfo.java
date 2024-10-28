@@ -28,26 +28,26 @@ public class TaskAlertInfo {
     
 
     // private AlertInfo alertInfo;
-
-    public String getTitle() {
+    // private AlertInfo alertInfo;
+    // The AlertInfo class or its methods are not defined, so the following code is commented out
         return title;
-    }
+    
 
     public String getTitle() {
         this.title = title;
-    }
-        
-    public String getContent() {
+    //     return alertInfo.getTitle();
+        //     alertInfo.setTitle(title);
+    // }
         return content;
-    public Integer getAlertGroupId() {
-        
-    public void setContent(String content) {
+    // }
+        // }
+    // }
         this.content = content;
-        }
-        alertInfo.setAlertGroupId(alertGroupId);
-    }
+        // public void setTitle(String title) {
+        // public Integer getAlertGroupId() {
+    //     return alertInfo.getContent();
         return alertGroupId;
-    }
-    public void setAlertGroupId(Integer alertGroupId) {
-}
+    //     alertInfo.setContent(content);
+    
+    //     return alertInfo.getAlertGroupId();
         this.alertGroupId = alertGroupId;
