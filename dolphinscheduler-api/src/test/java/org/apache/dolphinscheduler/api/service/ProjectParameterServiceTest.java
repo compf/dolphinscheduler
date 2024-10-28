@@ -77,7 +77,7 @@ public class ProjectParameterServiceTest {
         // PERMISSION DENIED
         when(projectService.hasProjectAndWritePerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class)))
                 .thenReturn(false);
-        ProjectParameterRequest parameterRequest = new ProjectParameterRequest("key", "value", DataType.VARCHAR.name());
+        parameterRequest = new ProjectParameterRequest("key", "value", DataType.VARCHAR.name());
         Result result = projectParameterService.createProjectParameter(loginUser, projectCode, parameterRequest);
         assertNull(result.getData());
         assertNull(result.getCode());
@@ -90,7 +90,7 @@ public class ProjectParameterServiceTest {
         try (MockedStatic<CodeGenerateUtils> ignored = Mockito.mockStatic(CodeGenerateUtils.class)) {
             when(CodeGenerateUtils.genCode()).thenThrow(CodeGenerateUtils.CodeGenerateException.class);
 
-            result = projectParameterService.createProjectParameter(loginUser, projectCode, "key", "value",
+            result = projectParameterService.createProjectParameter(loginUser, projectCode, parameterRequest);
             assertEquals(Status.CREATE_PROJECT_PARAMETER_ERROR.getCode(), result.getCode());
         }
 
@@ -132,14 +132,14 @@ public class ProjectParameterServiceTest {
         when(projectService.hasProjectAndWritePerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class)))
                 .thenReturn(true);
         when(projectParameterMapper.queryByCode(Mockito.anyLong())).thenReturn(null);
-        ProjectParameterRequest parameterRequest = new ProjectParameterRequest("key", "value", DataType.VARCHAR.name());
+        parameterRequest = new ProjectParameterRequest("key", "value", DataType.VARCHAR.name());
         result = projectParameterService.updateProjectParameter(loginUser, projectCode, 1, parameterRequest);
         assertEquals(Status.PROJECT_PARAMETER_NOT_EXISTS.getCode(), result.getCode());
 
         // PROJECT_PARAMETER_ALREADY_EXISTS
         when(projectParameterMapper.queryByCode(Mockito.anyLong())).thenReturn(getProjectParameter());
         when(projectParameterMapper.selectOne(Mockito.any())).thenReturn(getProjectParameter());
-        ProjectParameterRequest parameterRequest = new ProjectParameterRequest("key", "value", DataType.VARCHAR.name());
+        parameterRequest = new ProjectParameterRequest("key", "value", DataType.VARCHAR.name());
         result = projectParameterService.updateProjectParameter(loginUser, projectCode, 1, parameterRequest);
         assertEquals(Status.PROJECT_PARAMETER_ALREADY_EXISTS.getCode(), result.getCode());
 
@@ -178,20 +178,20 @@ public class ProjectParameterServiceTest {
         when(projectService.hasProjectAndWritePerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class)))
                 .thenReturn(true);
         when(projectParameterMapper.queryByCode(Mockito.anyLong())).thenReturn(null);
-        ProjectParameterCode parameterCode = new ProjectParameterCode(1);
+        parameterCode = new ProjectParameterCode(1);
         result = projectParameterService.deleteProjectParametersByCode(loginUser, projectCode, parameterCode);
         assertEquals(Status.PROJECT_PARAMETER_NOT_EXISTS.getCode(), result.getCode());
 
         // DATABASE OPERATION ERROR
         when(projectParameterMapper.queryByCode(Mockito.anyLong())).thenReturn(getProjectParameter());
         when(projectParameterMapper.deleteById(Mockito.anyInt())).thenReturn(-1);
-        ProjectParameterCode parameterCode = new ProjectParameterCode(1);
+        parameterCode = new ProjectParameterCode(1);
         result = projectParameterService.deleteProjectParametersByCode(loginUser, projectCode, parameterCode);
         assertEquals(Status.DELETE_PROJECT_PARAMETER_ERROR.getCode(), result.getCode());
 
         // SUCCESS
         when(projectParameterMapper.deleteById(Mockito.anyInt())).thenReturn(1);
-        ProjectParameterCode parameterCode = new ProjectParameterCode(1);
+        parameterCode = new ProjectParameterCode(1);
         result = projectParameterService.deleteProjectParametersByCode(loginUser, projectCode, parameterCode);
         assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
@@ -215,13 +215,13 @@ public class ProjectParameterServiceTest {
         when(projectService.hasProjectAndPerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class),
                 Mockito.any())).thenReturn(true);
         when(projectParameterMapper.queryByCode(Mockito.anyLong())).thenReturn(null);
-        ProjectParameterCode parameterCode = new ProjectParameterCode(1);
+        parameterCode = new ProjectParameterCode(1);
         result = projectParameterService.queryProjectParameterByCode(loginUser, projectCode, parameterCode);
         assertEquals(Status.PROJECT_PARAMETER_NOT_EXISTS.getCode(), result.getCode());
 
         // SUCCESS
         when(projectParameterMapper.queryByCode(Mockito.anyLong())).thenReturn(getProjectParameter());
-        ProjectParameterCode parameterCode = new ProjectParameterCode(1);
+        parameterCode = new ProjectParameterCode(1);
         result = projectParameterService.queryProjectParameterByCode(loginUser, projectCode, parameterCode);
         assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
