@@ -43,48 +43,48 @@ import com.baomidou.mybatisplus.annotation.TableName;
 public class Alert {
 
     @TableId(value = "id", type = IdType.AUTO)
-    private final Integer id;
+    private Integer id;
 
     @TableField(value = "sign")
-    private final String sign;
+    private String sign;
 
     @TableField(value = "title")
-    private final String title;
+    private String title;
 
     @TableField(value = "content")
-    private final String content;
+    private String content;
 
     @TableField(value = "alert_status")
-    private final AlertStatus alertStatus;
+    private AlertStatus alertStatus;
 
     @TableField(value = "warning_type")
-    private final WarningType warningType;
+    private WarningType warningType;
 
     @TableField(value = "log")
-    private final String log;
+    private String log;
 
     @TableField("alertgroup_id")
-    private final Integer alertGroupId;
+    private Integer alertGroupId;
 
     @TableField("create_time")
-    private final Date createTime;
+    private Date createTime;
 
     @TableField("update_time")
-    private final Date updateTime;
+    private Date updateTime;
 
     @TableField("project_code")
-    private final Long projectCode;
+    private Long projectCode;
 
     @TableField("workflow_definition_code")
-    private final Long workflowDefinitionCode;
+    private Long workflowDefinitionCode;
 
     @TableField("workflow_instance_id")
-    private final Integer workflowInstanceId;
+    private Integer workflowInstanceId;
 
     @TableField("alert_type")
-    private final AlertType alertType;
+    private AlertType alertType;
 
     @TableField(exist = false)
-    private final Map<String, Object> info;
+    private Map<String, Object> info;
 
 }
