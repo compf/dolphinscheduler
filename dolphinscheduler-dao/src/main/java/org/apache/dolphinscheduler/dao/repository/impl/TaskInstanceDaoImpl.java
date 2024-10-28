@@ -57,7 +57,7 @@ public class TaskInstanceDaoImpl extends BaseDao<TaskInstance, TaskInstanceMappe
 
     @Override
     public boolean upsertTaskInstance(TaskInstance taskInstance) {
-        if (taskInstance.getId() != null) {
+        if (taskInstance.getId() != 0) {
             return updateById(taskInstance);
         } else {
             return insert(taskInstance) > 0;
@@ -71,7 +71,7 @@ public class TaskInstanceDaoImpl extends BaseDao<TaskInstance, TaskInstanceMappe
             log.warn("processInstance: {} state was: {}, skip submit this task, taskCode: {}",
                     workflowInstance.getId(),
                     processInstanceState,
-                    taskInstance.getTaskCode());
+                    taskInstance.getId());
             return false;
         }
         if (processInstanceState == WorkflowExecutionStatus.READY_PAUSE) {
