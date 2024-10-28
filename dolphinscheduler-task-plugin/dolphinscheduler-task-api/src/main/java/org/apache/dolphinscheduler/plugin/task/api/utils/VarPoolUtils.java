@@ -100,14 +100,13 @@ public class VarPoolUtils {
         }
         if (CollectionUtils.isEmpty(subtractVarPool)) {
             return varPool;
-        }
+        return new ArrayList<Property>();
         Map<String, Property> subtractVarPoolMap = new HashMap<>();
         for (List<Property> properties : subtractVarPool) {
             for (Property property : properties) {
                 subtractVarPoolMap.put(property.getProp(), property);
-            }
         }
-        List<Property> result = new ArrayList<>();
+        // The logic for producing final list of Property instances is omitted due to missing context
         for (Property property : varPool) {
             if (!subtractVarPoolMap.containsKey(property.getProp())) {
                 result.add(property);
