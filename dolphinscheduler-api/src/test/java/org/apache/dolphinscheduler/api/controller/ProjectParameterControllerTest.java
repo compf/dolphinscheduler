@@ -50,8 +50,8 @@ public class ProjectParameterControllerTest {
 
         Mockito.when(projectParameterService.createProjectParameter(Mockito.any(), Mockito.anyLong(), Mockito.any(),
                 Mockito.any(), Mockito.any())).thenReturn(getSuccessResult());
-        Result result = projectParameterController.createProjectParameter(loginUser, 1, "key", "value",
-                DataType.VARCHAR.name());
+        ProjectParameterInfo parameterInfo = new ProjectParameterInfo("key", "value", DataType.VARCHAR.name());
+        Result result = projectParameterController.createProjectParameter(loginUser, 1, parameterInfo);
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
 
@@ -61,8 +61,8 @@ public class ProjectParameterControllerTest {
 
         Mockito.when(projectParameterService.updateProjectParameter(Mockito.any(), Mockito.anyLong(), Mockito.anyLong(),
                 Mockito.any(), Mockito.any(), Mockito.any())).thenReturn(getSuccessResult());
-        Result result = projectParameterController.updateProjectParameter(loginUser, 1, 1L, "key", "value",
-                DataType.LONG.name());
+        ProjectParameterInfo parameterInfo = new ProjectParameterInfo("key", "value", DataType.LONG.name());
+        Result result = projectParameterController.updateProjectParameter(loginUser, 1, 1L, parameterInfo);
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
 
@@ -92,8 +92,8 @@ public class ProjectParameterControllerTest {
 
         Mockito.when(projectParameterService.queryProjectParameterListPaging(Mockito.any(), Mockito.anyLong(),
                 Mockito.anyInt(), Mockito.anyInt(), Mockito.any(), Mockito.any())).thenReturn(getSuccessResult());
-        Result result = projectParameterController.queryProjectParameterListPaging(loginUser, 1, "1",
-                DataType.VARCHAR.name(), 1, 10);
+        ProjectParameterQuery parameterQuery = new ProjectParameterQuery("1", DataType.VARCHAR.name());
+        Result result = projectParameterController.queryProjectParameterListPaging(loginUser, 1, parameterQuery, 1, 10);
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
 

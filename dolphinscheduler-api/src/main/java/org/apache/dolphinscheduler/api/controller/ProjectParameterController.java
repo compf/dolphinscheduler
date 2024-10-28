@@ -72,8 +72,8 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
                                          @RequestParam(value = "projectParameterDataType", defaultValue = "VARCHAR") String projectParameterDataType) {
-        return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName,
-                projectParameterValue, projectParameterDataType);
+        ProjectParameterInfo parameterInfo = new ProjectParameterInfo(projectParameterName, projectParameterValue, projectParameterDataType);
+        return projectParameterService.createProjectParameter(loginUser, projectCode, parameterInfo);
     }
 
     @Operation(summary = "updateProjectParameter", description = "UPDATE_PROJECT_PARAMETER_NOTES")
@@ -92,8 +92,8 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
                                          @RequestParam(value = "projectParameterDataType") String projectParameterDataType) {
-        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName,
-                projectParameterValue, projectParameterDataType);
+        ProjectParameterInfo parameterInfo = new ProjectParameterInfo(projectParameterName, projectParameterValue, projectParameterDataType);
+        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, parameterInfo);
     }
 
     @Operation(summary = "deleteProjectParametersByCode", description = "DELETE_PROJECT_PARAMETER_NOTES")
@@ -143,8 +143,8 @@ public class ProjectParameterController extends BaseController {
 
         checkPageParams(pageNo, pageSize);
         searchVal = ParameterUtils.handleEscapes(searchVal);
-        return projectParameterService.queryProjectParameterListPaging(loginUser, projectCode, pageSize, pageNo,
-                searchVal, projectParameterDataType);
+        ProjectParameterQuery parameterQuery = new ProjectParameterQuery(searchVal, projectParameterDataType);
+        return projectParameterService.queryProjectParameterListPaging(loginUser, projectCode, pageSize, pageNo, parameterQuery);
     }
 
     @Operation(summary = "queryProjectParameterByCode", description = "QUERY_PROJECT_PARAMETER_NOTES")
