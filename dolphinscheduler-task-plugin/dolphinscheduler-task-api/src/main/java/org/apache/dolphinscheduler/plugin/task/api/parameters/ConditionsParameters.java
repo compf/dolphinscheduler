@@ -66,6 +66,7 @@ public class ConditionsParameters extends AbstractParameters {
     @NoArgsConstructor
     @AllArgsConstructor
     public static class ConditionResult {
+// Other necessary class members and methods
 }
         private boolean conditionSuccess;
         private List<Long> successNode;

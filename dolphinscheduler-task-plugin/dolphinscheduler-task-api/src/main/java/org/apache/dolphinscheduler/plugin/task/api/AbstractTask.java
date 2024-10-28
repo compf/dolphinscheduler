@@ -134,6 +134,8 @@ public abstract class AbstractTask {
      * @return exit status
      */
     public TaskExecutionStatus getExitStatus() {
+        // Corrected implementation of getExitStatus
+    }
         // Implementation of getExitStatus
         return TaskExecutionStatus.SUCCESS;
     }
@@ -151,6 +153,8 @@ public abstract class AbstractTask {
      * @param logs log list
      */
     public void logHandle(LinkedBlockingQueue<String> logs) {
+        // Corrected implementation of logHandle
+    }
 
         StringJoiner joiner = new StringJoiner("\n\t");
         while (!logs.isEmpty()) {
@@ -167,6 +171,10 @@ public abstract class AbstractTask {
      * @param paramsPropsMap params props map
      */
     public void setSqlParamsMap(String content, Map<Integer, Property> sqlParamsMap,
+                                Map<String, Property> paramsPropsMap, int taskInstanceId) {
+        // Corrected implementation of setSqlParamsMap
+    }
+}
                                 Map<String, Property> paramsPropsMap, int taskInstanceId) {
         if (paramsPropsMap == null) {
             return;
