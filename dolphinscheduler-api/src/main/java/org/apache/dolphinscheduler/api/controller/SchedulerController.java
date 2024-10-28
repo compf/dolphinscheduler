@@ -109,15 +109,6 @@ public class SchedulerController extends BaseController {
     @OperatorLog(auditType = AuditType.SCHEDULE_CREATE)
     public Result createSchedule(@RequestBody ScheduleCreationInfo scheduleCreationInfo) {
         return schedulerService.createSchedule(scheduleCreationInfo);
-                warningType,
-                warningGroupId,
-                failureStrategy,
-                workflowInstancePriority,
-                workerGroup,
-                tenantCode,
-                environmentCode);
-
-        return returnDataList(result);
     }
 
     /**
