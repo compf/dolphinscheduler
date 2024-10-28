@@ -24,7 +24,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 
 @Data
 @TableName("t_ds_workflow_definition_log")
-// Unable to refactor WorkflowDefinitionLog class automatically
+public class WorkflowDefinitionLog extends WorkflowDefinition {
 
     private int operator;
 
@@ -32,6 +32,8 @@ import com.baomidou.mybatisplus.annotation.TableName;
 
     public WorkflowDefinitionLog() {
         super();
+    }
+
     public WorkflowDefinitionLog(WorkflowDefinition workflowDefinition) {
         this.setCode(workflowDefinition.getCode());
         this.setName(workflowDefinition.getName());
@@ -55,6 +57,13 @@ import com.baomidou.mybatisplus.annotation.TableName;
         this.setWarningGroupId(workflowDefinition.getWarningGroupId());
         this.setExecutionType(workflowDefinition.getExecutionType());
     }
+
+    @Override
+    public boolean equals(Object o) {
+        return super.equals(o);
+    }
+
+}
 
     @Override
     public boolean equals(Object o) {
