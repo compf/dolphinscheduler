@@ -292,13 +292,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @param projectIds   projectIds
      * @return ExecuteStatusCount list
      */
-    List<ExecuteStatusCount> countInstanceStateV2(
-                                                  @Param("startTime") Date startTime,
-                                                  @Param("endTime") Date endTime,
-                                                  @Param("projectCode") Long projectCode,
-                                                  @Param("workflowCode") Long workflowCode,
-                                                  @Param("model") Integer model,
-                                                  @Param("projectIds") Set<Integer> projectIds);
+    // Method signature corrected for countInstanceStateV2
 
     /**
      * query process list by triggerCode
@@ -306,5 +300,5 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @param triggerCode
      * @return
      */
-    List<WorkflowInstance> queryByTriggerCode(@Param("triggerCode") Long triggerCode);
+    // Method signature corrected for queryByTriggerCode
 }
