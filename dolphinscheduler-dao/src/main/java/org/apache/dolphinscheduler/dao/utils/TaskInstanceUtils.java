@@ -30,11 +30,9 @@ public class TaskInstanceUtils {
      */
     public static void copyTaskInstance(TaskInstance source, TaskInstance target) {
         target.setId(source.getId());
-        target.setName(source.getName());
         target.setTaskType(source.getTaskType());
         target.setWorkflowInstanceId(source.getWorkflowInstanceId());
         target.setWorkflowInstanceName(source.getWorkflowInstanceName());
-        target.setProjectCode(source.getProjectCode());
         target.setTaskCode(source.getTaskCode());
         target.setTaskDefinitionVersion(source.getTaskDefinitionVersion());
         target.setWorkflowInstanceName(source.getWorkflowInstanceName());
@@ -44,7 +42,6 @@ public class TaskInstanceUtils {
         target.setSubmitTime(source.getSubmitTime());
         target.setStartTime(source.getStartTime());
         target.setEndTime(source.getEndTime());
-        target.setHost(source.getHost());
         target.setExecutePath(source.getExecutePath());
         target.setLogPath(source.getLogPath());
         target.setRetryTimes(source.getRetryTimes());
