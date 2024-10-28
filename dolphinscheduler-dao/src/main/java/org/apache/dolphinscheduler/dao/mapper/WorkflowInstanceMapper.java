@@ -259,39 +259,24 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
     List<WorkflowInstance> queryByWorkflowDefinitionCodeAndStatus(@Param("workflowDefinitionCode") Long workflowDefinitionCode,
                                                                   @Param("states") int[] states);
 
-    List<WorkflowInstance> queryByWorkflowCodeVersionStatus(@Param("workflowDefinitionCode") long workflowDefinitionCode,
-                                                            @Param("workflowDefinitionVersion") int workflowDefinitionVersion,
-                                                            @Param("states") int[] states);
+    List<WorkflowInstance> queryByWorkflowCodeVersionStatus(@Param("workflowCodeVersionStatus") WorkflowCodeVersionStatus workflowCodeVersionStatus);
 
     /**
      * Filter workflow instance
      *
      * @param page                  page
-     * @param workflowDefinitionCode workflowDefinitionCode
-     * @param name                  name
-     * @param host                  host
-     * @param startTime             startTime
-     * @param endTime               endTime
+     * @param workflowInstanceFilter workflowInstanceFilter
      * @return workflow instance IPage
      */
     IPage<WorkflowInstance> queryWorkflowInstanceListV2Paging(Page<WorkflowInstance> page,
-                                                              @Param("projectCode") Long projectCode,
-                                                              @Param("workflowDefinitionCode") Long workflowDefinitionCode,
-                                                              @Param("name") String name,
-                                                              @Param("startTime") String startTime,
-                                                              @Param("endTime") String endTime,
-                                                              @Param("state") Integer state,
-                                                              @Param("host") String host);
+                                                              @Param("workflowInstanceFilter") WorkflowInstanceFilter workflowInstanceFilter);
 
     /**
      * Statistics workflow instance state v2
      * <p>
      * We only need project codes to determine whether the workflow instance belongs to the user or not.
      *
-     * @param startTime    startTime
-     * @param endTime      endTime
-     * @param projectCode  projectCode
-     * @param workflowCode workflowCode
+     * @param workflowStateStatisticsFilter workflowStateStatisticsFilter
      * @param model        model
      * @param projectIds   projectIds
      * @return ExecuteStatusCount list

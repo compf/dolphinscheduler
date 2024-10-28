@@ -51,31 +51,26 @@ public class TaskInstance implements Serializable {
     private Long projectCode;
 
     private long taskCode;
-
+    
     private int taskDefinitionVersion;
-
+    
     @TableField(exist = false)
     private String processDefinitionName;
-
+    private Date createTime;
     @TableField(exist = false)
     private int taskGroupPriority;
 
     private TaskExecutionStatus state;
-
+    private Long projectCode;
     private Date firstSubmitTime;
-
     private Date submitTime;
 
     private Date startTime;
-
     private Date endTime;
-
     private String host;
 
     private String executePath;
-
     private String logPath;
-
     private int retryTimes;
 
     private Flag alertFlag;
