@@ -48,8 +48,8 @@ public class ProjectParameterControllerTest {
     public void testCreateProjectParameter() {
         User loginUser = getGeneralUser();
 
-        Mockito.when(projectParameterService.createProjectParameter(Mockito.any(), Mockito.anyLong(), Mockito.any(),
-                Mockito.any(), Mockito.any())).thenReturn(getSuccessResult());
+        Mockito.when(projectParameterService.createProjectParameter(Mockito.any(ProjectParameterRequest.class),
+
         Result result = projectParameterController.createProjectParameter(loginUser, 1, "key", "value",
                 DataType.VARCHAR.name());
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
@@ -59,8 +59,8 @@ public class ProjectParameterControllerTest {
     public void testUpdateProjectParameter() {
         User loginUser = getGeneralUser();
 
-        Mockito.when(projectParameterService.updateProjectParameter(Mockito.any(), Mockito.anyLong(), Mockito.anyLong(),
-                Mockito.any(), Mockito.any(), Mockito.any())).thenReturn(getSuccessResult());
+        Mockito.when(projectParameterService.updateProjectParameter(Mockito.any(ProjectParameterRequest.class),
+                Mockito.anyLong(), Mockito.anyLong())).thenReturn(getSuccessResult());
         Result result = projectParameterController.updateProjectParameter(loginUser, 1, 1L, "key", "value",
                 DataType.LONG.name());
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
@@ -71,7 +71,7 @@ public class ProjectParameterControllerTest {
         User loginUser = getGeneralUser();
 
         Mockito.when(projectParameterService.deleteProjectParametersByCode(Mockito.any(), Mockito.anyLong(),
-                Mockito.anyLong())).thenReturn(getSuccessResult());
+
         Result result = projectParameterController.deleteProjectParametersByCode(loginUser, 1, 1);
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
@@ -80,8 +80,8 @@ public class ProjectParameterControllerTest {
     public void testBatchDeleteProjectParametersByCodes() {
         User loginUser = getGeneralUser();
 
-        Mockito.when(projectParameterService.batchDeleteProjectParametersByCodes(Mockito.any(), Mockito.anyLong(),
-                Mockito.any())).thenReturn(getSuccessResult());
+        Mockito.when(projectParameterService.batchDeleteProjectParametersByCodes(Mockito.any(ProjectParameterRequest.class))).thenReturn(getSuccessResult());
+
         Result result = projectParameterController.batchDeleteProjectParametersByCodes(loginUser, 1, "1");
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
@@ -90,8 +90,8 @@ public class ProjectParameterControllerTest {
     public void testQueryProjectParameterListPaging() {
         User loginUser = getGeneralUser();
 
-        Mockito.when(projectParameterService.queryProjectParameterListPaging(Mockito.any(), Mockito.anyLong(),
-                Mockito.anyInt(), Mockito.anyInt(), Mockito.any(), Mockito.any())).thenReturn(getSuccessResult());
+        Mockito.when(projectParameterService.queryProjectParameterListPaging(Mockito.any(ProjectParameterRequest.class),
+                Mockito.anyInt(), Mockito.anyInt())).thenReturn(getSuccessResult());
         Result result = projectParameterController.queryProjectParameterListPaging(loginUser, 1, "1",
                 DataType.VARCHAR.name(), 1, 10);
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
@@ -101,8 +101,8 @@ public class ProjectParameterControllerTest {
     public void testQueryProjectParameterByCode() {
         User loginUser = getGeneralUser();
 
-        Mockito.when(projectParameterService.queryProjectParameterByCode(Mockito.any(), Mockito.anyLong(),
-                Mockito.anyLong())).thenReturn(getSuccessResult());
+        Mockito.when(projectParameterService.queryProjectParameterByCode(Mockito.any(ProjectParameterRequest.class))).thenReturn(getSuccessResult());
+
         Result result = projectParameterController.queryProjectParameterByCode(loginUser, 1, 1);
         Assertions.assertEquals(Status.SUCCESS.getCode(), result.getCode());
     }
