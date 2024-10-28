@@ -50,7 +50,7 @@ public class WorkerGroupUtils {
     }
 
     public static List<String> getWorkerAddressListFromWorkerGroup(WorkerGroup workerGroup) {
-        String addrList = workerGroup.getAddrList();
+
         if (StringUtils.isEmpty(addrList)) {
             return Collections.emptyList();
         }
