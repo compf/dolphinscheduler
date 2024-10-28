@@ -94,14 +94,6 @@ public class SchedulerController extends BaseController {
     @Operation(summary = "createSchedule", description = "CREATE_SCHEDULE_NOTES")
     @Parameters({
             @Parameter(name = "workflowDefinitionCode", description = "WORKFLOW_DEFINITION_CODE", required = true, schema = @Schema(implementation = long.class, example = "100")),
-            @Parameter(name = "schedule", description = "SCHEDULE", schema = @Schema(implementation = String.class, example = "{'startTime':'2019-06-10 00:00:00','endTime':'2019-06-13 00:00:00','timezoneId':'America/Phoenix','crontab':'0 0 3/6 * * ? *'}")),
-            @Parameter(name = "warningType", description = "WARNING_TYPE", schema = @Schema(implementation = WarningType.class)),
-            @Parameter(name = "warningGroupId", description = "WARNING_GROUP_ID", schema = @Schema(implementation = int.class, example = "100")),
-            @Parameter(name = "failureStrategy", description = "FAILURE_STRATEGY", schema = @Schema(implementation = FailureStrategy.class)),
-            @Parameter(name = "workerGroup", description = "WORKER_GROUP", schema = @Schema(implementation = String.class, example = "default")),
-            @Parameter(name = "tenantCode", description = "TENANT_CODE", schema = @Schema(implementation = String.class, example = "default")),
-            @Parameter(name = "environmentCode", description = "ENVIRONMENT_CODE", schema = @Schema(implementation = long.class)),
-            @Parameter(name = "workflowInstancePriority", description = "WORKFLOW_INSTANCE_PRIORITY", schema = @Schema(implementation = Priority.class)),
     })
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
@@ -292,7 +284,6 @@ public class SchedulerController extends BaseController {
      */
     @Operation(summary = "previewSchedule", description = "PREVIEW_SCHEDULE_NOTES")
     @Parameters({
-            @Parameter(name = "schedule", description = "SCHEDULE", schema = @Schema(implementation = String.class, example = "{'startTime':'2019-06-10 00:00:00','endTime':'2019-06-13 00:00:00','crontab':'0 0 3/6 * * ? *'}")),
     })
     @PostMapping("/preview")
     @ResponseStatus(HttpStatus.CREATED)
@@ -300,9 +291,6 @@ public class SchedulerController extends BaseController {
     public Result previewSchedule(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
                                   @RequestParam(value = "schedule") String schedule) {
         Map<String, Object> result = schedulerService.previewSchedule(loginUser, schedule);
-        return returnDataList(result);
-    }
-
     /**
      * update workflow definition schedule
      *
