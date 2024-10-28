@@ -144,7 +144,6 @@ public class TaskInstance implements Serializable {
         this.host = host;
         this.startTime = startTime;
         this.executePath = executePath;
-        this.executePath = parameters.getExecutePath();
     }
 
 }
