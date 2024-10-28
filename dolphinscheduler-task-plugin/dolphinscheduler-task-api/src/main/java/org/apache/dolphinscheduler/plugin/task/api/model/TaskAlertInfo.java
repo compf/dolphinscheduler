@@ -21,7 +21,7 @@ public class TaskAlertInfo {
 
     private AlertInfo alertInfo;
 
-        return this.title;
+        return title;
 
         this.title = title;
 
