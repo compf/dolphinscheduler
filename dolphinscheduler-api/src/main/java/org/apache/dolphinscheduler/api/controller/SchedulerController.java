@@ -108,16 +108,11 @@ public class SchedulerController extends BaseController {
     @ApiException(CREATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_CREATE)
     public Result createSchedule(User loginUser, long projectCode, long workflowDefinitionCode, String schedule,
-                                 WarningType warningType, int warningGroupId, FailureStrategy failureStrategy,
-                                 Priority workflowInstancePriority, String workerGroup, String tenantCode, Long environmentCode) {
+                                 Map<String, Object> result = schedulerService.insertSchedule(
                 loginUser,
                 projectCode,
                 workflowDefinitionCode,
                 schedule,
-                warningType,
-                warningGroupId,
-                failureStrategy,
-                workflowInstancePriority,
                 warningType,
                 warningGroupId,
                 failureStrategy,
@@ -202,16 +197,6 @@ public class SchedulerController extends BaseController {
         schedulerService.offlineScheduler(loginUser, projectCode, id);
         return Result.success(true);
     }
-     * query schedule list paging
-     *
-     * @param loginUser login user
-     * @param projectCode project code
-     * @param workflowDefinitionCode workflow definition code
-     * @param pageNo page number
-     * @param pageSize page size
-     * @param searchVal search value
-     * @return schedule list page
-     */
     @Operation(summary = "queryScheduleListPaging", description = "QUERY_SCHEDULE_LIST_PAGING_NOTES")
     @Parameters({
 
@@ -334,9 +319,8 @@ public class SchedulerController extends BaseController {
                                                          @RequestParam(value = "tenantCode", required = false, defaultValue = "default") String tenantCode,
                                                          @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") Long environmentCode,
                                                          @RequestParam(value = "workflowInstancePriority", required = false, defaultValue = "MEDIUM") Priority workflowInstancePriority) {
-        // Implementation here
-}
+        Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(loginUser, projectCode,
+                workflowDefinitionCode, schedule,
                 warningType, warningGroupId, failureStrategy, workerGroup, tenantCode, environmentCode, workflowInstancePriority);
         return returnDataList(result);
     }
-}
