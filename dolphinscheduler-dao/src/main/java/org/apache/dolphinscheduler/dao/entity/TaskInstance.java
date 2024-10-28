@@ -21,6 +21,7 @@ import org.apache.dolphinscheduler.common.enums.Flag;
 import org.apache.dolphinscheduler.common.enums.Priority;
 import org.apache.dolphinscheduler.common.enums.TaskExecuteType;
 import org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus;
+import org.apache.dolphinscheduler.dao.entity.TaskInstanceDetails;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -133,9 +134,9 @@ public class TaskInstance implements Serializable {
     private TaskExecuteType taskExecuteType;
 
     private int testFlag;
-
     public void init(TaskInstanceDetails details, String executePath) {
         this.details = details;
+        this.executePath = executePath;
         this.executePath = executePath;
         this.executePath = executePath;
     }
