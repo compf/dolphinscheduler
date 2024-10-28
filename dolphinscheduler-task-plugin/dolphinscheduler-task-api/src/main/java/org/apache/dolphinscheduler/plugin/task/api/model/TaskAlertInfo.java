@@ -25,7 +25,9 @@ public class TaskAlertInfo {
 
     private Integer alertGroupId;
 
-    public String getTitle() {
+    private String content;
+
+    private Integer alertGroupId;
         return title;
     }
 
