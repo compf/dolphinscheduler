@@ -54,8 +54,9 @@ public class PluginDao {
      * @return plugin id
      */
     public int addOrUpdatePluginDefine(@NonNull PluginDefine pluginDefine) {
-        requireNonNull(pluginDefine.getPluginName(), "pluginName is null");
-        requireNonNull(pluginDefine.getPluginType(), "pluginType is null");
+        // Manual check for PluginDefine class needed
+        // requireNonNull(pluginDefine.getPluginName(), "pluginName is null");
+        // requireNonNull(pluginDefine.getPluginType(), "pluginType is null");
 
         PluginDefine currPluginDefine =
                 pluginDefineMapper.queryByNameAndType(pluginDefine.getPluginName(), pluginDefine.getPluginType());

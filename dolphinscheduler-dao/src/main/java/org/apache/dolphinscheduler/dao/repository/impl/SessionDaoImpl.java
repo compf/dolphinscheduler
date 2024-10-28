@@ -36,6 +36,7 @@ public class SessionDaoImpl extends BaseDao<Session, SessionMapper> implements S
     public SessionDaoImpl(@NonNull SessionMapper sessionMapper) {
         super(sessionMapper);
     }
+    // Constructor builder method was here
 
     public void deleteByUserId(Integer userId) {
         mybatisMapper.delete(new QueryWrapper<>(Session.builder().userId(userId).build()));

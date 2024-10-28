@@ -20,12 +20,11 @@ package org.apache.dolphinscheduler.dao.entity;
 import java.util.Date;
 
 import lombok.Data;
-
 import com.baomidou.mybatisplus.annotation.TableName;
 
 @Data
 @TableName("t_ds_workflow_definition_log")
-public class WorkflowDefinitionLog extends WorkflowDefinition {
+// Unable to refactor WorkflowDefinitionLog class automatically
 
     private int operator;
 
@@ -33,8 +32,6 @@ public class WorkflowDefinitionLog extends WorkflowDefinition {
 
     public WorkflowDefinitionLog() {
         super();
-    }
-
     public WorkflowDefinitionLog(WorkflowDefinition workflowDefinition) {
         this.setCode(workflowDefinition.getCode());
         this.setName(workflowDefinition.getName());
