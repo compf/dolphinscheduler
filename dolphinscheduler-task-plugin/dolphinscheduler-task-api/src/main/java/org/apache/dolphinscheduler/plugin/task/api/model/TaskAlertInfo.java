@@ -17,13 +17,13 @@
 
 package org.apache.dolphinscheduler.plugin.task.api.model;
 
-public // class TaskAlertInfo {
+public class TaskAlertInfo {
 
-//    private String title;
+    private String title;
 
-//    private String content;
+    private String content;
 
-//    private Integer alertGroupId;
+    private Integer alertGroupId;
 
     public String getTitle() {
         return title;
