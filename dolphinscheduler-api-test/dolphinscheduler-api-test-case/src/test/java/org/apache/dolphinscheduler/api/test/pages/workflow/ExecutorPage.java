@@ -69,9 +69,9 @@ public class ExecutorPage {
         return requestClient.get(url, headers, params);
     }
 
-    public HttpResponse execute(User loginUser, long projectCode, int workflowInstanceId, ExecuteType executeType) {
+    public HttpResponse execute(ExecutorParameters parameters) {
         Map<String, Object> params = new HashMap<>();
-        params.put("loginUser", loginUser);
+        params.put("loginUser", parameters.getLoginUser());
         params.put("projectCode", projectCode);
         params.put("workflowInstanceId", workflowInstanceId);
         params.put("executeType", executeType);
@@ -83,8 +83,7 @@ public class ExecutorPage {
         return requestClient.post(url, headers, params);
     }
 
-    public HttpResponse executeTask(User loginUser, long projectCode, int workflowInstanceId, String startNodeList,
-                                    TaskDependType taskDependType) {
+    public HttpResponse executeTask(ExecutorTaskParameters parameters) {
         Map<String, Object> params = new HashMap<>();
         params.put("loginUser", loginUser);
         params.put("workflowInstanceId", workflowInstanceId);

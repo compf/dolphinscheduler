@@ -1,0 +1,8 @@
+public class ExecutorTaskParameters {
+    private User loginUser;
+    private long projectCode;
+    private int workflowInstanceId;
+    private String startNodeList;
+    private TaskDependType taskDependType;
+    // Getters and Setters
+}
