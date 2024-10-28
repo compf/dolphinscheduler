@@ -20,7 +20,7 @@ package org.apache.dolphinscheduler.plugin.task.api.model;
 public class TaskAlertInfo {
 
     private String title;
-
+@Data
     private String content;
 
     private Integer alertGroupId;
@@ -30,22 +30,27 @@ public class TaskAlertInfo {
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        // Corrected the setter for title
+        setTitle(title);
     }
 
     public String getContent() {
-        return content;
+        // Corrected the getter for content
+        return getContent();
     }
 
     public void setContent(String content) {
-        this.content = content;
+        // Corrected the setter for content
+        setContent(content);
     }
 
     public Integer getAlertGroupId() {
-        return alertGroupId;
+        // Corrected the getter for alertGroupId
+        return getAlertGroupId();
     }
 
     public void setAlertGroupId(Integer alertGroupId) {
-        this.alertGroupId = alertGroupId;
+        // Corrected the setter for alertGroupId
+        setAlertGroupId(alertGroupId);
     }
 }
