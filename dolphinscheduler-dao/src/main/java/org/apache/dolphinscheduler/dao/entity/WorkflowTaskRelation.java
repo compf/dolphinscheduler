@@ -98,18 +98,18 @@ public class WorkflowTaskRelation {
     }
 
     public WorkflowTaskRelation(WorkflowTaskRelationLog processTaskRelationLog) {
-        this.name = processTaskRelationLog.getName();
-        this.workflowDefinitionVersion = processTaskRelationLog.getWorkflowDefinitionVersion();
-        this.projectCode = processTaskRelationLog.getProjectCode();
-        this.workflowDefinitionCode = processTaskRelationLog.getWorkflowDefinitionCode();
-        this.preTaskCode = processTaskRelationLog.getPreTaskCode();
-        this.preTaskVersion = processTaskRelationLog.getPreTaskVersion();
-        this.postTaskCode = processTaskRelationLog.getPostTaskCode();
-        this.postTaskVersion = processTaskRelationLog.getPostTaskVersion();
-        this.conditionType = processTaskRelationLog.getConditionType();
-        this.conditionParams = processTaskRelationLog.getConditionParams();
+        this.name = workflowTaskRelationLog.getName();
+        this.workflowDefinitionVersion = workflowTaskRelationLog.getVersion();
+        this.projectCode = workflowTaskRelationLog.getProjectCode();
+        this.workflowDefinitionCode = workflowTaskRelationLog.getWorkflowDefinitionCode();
+        this.preTaskCode = workflowTaskRelationLog.getPreTaskCode();
+        this.preTaskVersion = workflowTaskRelationLog.getPreTaskVersion();
+        this.postTaskCode = workflowTaskRelationLog.getPostTaskCode();
+        this.postTaskVersion = workflowTaskRelationLog.getPostTaskVersion();
+        this.conditionType = workflowTaskRelationLog.getConditionType();
+        this.conditionParams = workflowTaskRelationLog.getConditionParams();
 
-        this.createTime = processTaskRelationLog.getCreateTime();
+        this.createTime = workflowTaskRelationLog.getCreateTime();
         this.updateTime = new Date();
     }
 

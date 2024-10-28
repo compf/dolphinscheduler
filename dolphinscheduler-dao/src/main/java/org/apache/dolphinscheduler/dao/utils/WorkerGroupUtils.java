@@ -50,7 +50,7 @@ public class WorkerGroupUtils {
     }
 
     public static List<String> getWorkerAddressListFromWorkerGroup(WorkerGroup workerGroup) {
-        String addrList = workerGroup.getAddrList();
+        List<String> addrList = workerGroup.getAddrList() != null ? JSONUtils.toList(workerGroup.getAddrList(), String.class) : Collections.emptyList();
         if (StringUtils.isEmpty(addrList)) {
             return Collections.emptyList();
         }

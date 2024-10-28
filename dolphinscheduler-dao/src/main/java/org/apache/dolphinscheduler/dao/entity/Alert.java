@@ -49,11 +49,13 @@ public class Alert {
     private String sign;
 
     @TableField(value = "title")
-    private AlertGroupingInfo alertGroupingInfo;
+    private String title;
+    private String content;
+    private Integer alertGroupId;
 
     @TableField(value = "content")
 
-    @TableField(value = "alert_status")
+    @TableField(value = "alert_status", updateStrategy = FieldStrategy.IGNORED)
     private AlertStatus alertStatus;
 
     @TableField(value = "warning_type")

@@ -36,19 +36,18 @@ public class WorkflowTaskRelationLog extends WorkflowTaskRelation {
     }
 
     public WorkflowTaskRelationLog(WorkflowTaskRelation workflowTaskRelation) {
-        super();
-        this.setName(workflowTaskRelation.getName());
-        this.setWorkflowDefinitionCode(workflowTaskRelation.getWorkflowDefinitionCode());
-        this.setWorkflowDefinitionVersion(workflowTaskRelation.getWorkflowDefinitionVersion());
-        this.setProjectCode(workflowTaskRelation.getProjectCode());
-        this.setPreTaskCode(workflowTaskRelation.getPreTaskCode());
-        this.setPreTaskVersion(workflowTaskRelation.getPreTaskVersion());
-        this.setPostTaskCode(workflowTaskRelation.getPostTaskCode());
-        this.setPostTaskVersion(workflowTaskRelation.getPostTaskVersion());
-        this.setConditionType(workflowTaskRelation.getConditionType());
-        this.setConditionParams(workflowTaskRelation.getConditionParams());
-        this.setCreateTime(workflowTaskRelation.getCreateTime());
-        this.setUpdateTime(workflowTaskRelation.getUpdateTime());
+        this.name = workflowTaskRelation.getName();
+        this.workflowDefinitionCode = workflowTaskRelation.getWorkflowDefinitionCode();
+        this.workflowDefinitionVersion = workflowTaskRelation.getWorkflowDefinitionVersion();
+        this.projectCode = workflowTaskRelation.getProjectCode();
+        this.preTaskCode = workflowTaskRelation.getPreTaskCode();
+        this.preTaskVersion = workflowTaskRelation.getPreTaskVersion();
+        this.postTaskCode = workflowTaskRelation.getPostTaskCode();
+        this.postTaskVersion = workflowTaskRelation.getPostTaskVersion();
+        this.conditionType = workflowTaskRelation.getConditionType();
+        this.conditionParams = workflowTaskRelation.getConditionParams();
+        this.createTime = workflowTaskRelation.getCreateTime();
+        this.updateTime = workflowTaskRelation.getUpdateTime();
     }
 
     @Override
