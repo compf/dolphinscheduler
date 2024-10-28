@@ -7,6 +7,6 @@ public class WorkflowInstanceQuery {
     private String host;
     private Date startTime;
     private Date endTime;
-
+import java.util.Date;
     // Constructor, getters and setters
 }
