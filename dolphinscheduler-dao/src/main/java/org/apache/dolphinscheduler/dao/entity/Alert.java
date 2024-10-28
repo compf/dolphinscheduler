@@ -49,8 +49,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 
     @TableField(value = "alertgroup_id")
     private Integer alertGroupId;
-public class Alert {
-
+}
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
