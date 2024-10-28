@@ -290,12 +290,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @return ExecuteStatusCount list
      */
     List<ExecuteStatusCount> countInstanceStateV2(@Param("instanceQueryParams") InstanceQueryParams instanceQueryParams);
-                                                  @Param("startTime") Date startTime,
-                                                  @Param("endTime") Date endTime,
-                                                  @Param("projectCode") Long projectCode,
-                                                  @Param("workflowCode") Long workflowCode,
-                                                  @Param("model") Integer model,
-                                                  @Param("projectIds") Set<Integer> projectIds);
+                                                  @Param("instanceQueryParams") InstanceQueryParams instanceQueryParams);
 
     /**
      * query process list by triggerCode
