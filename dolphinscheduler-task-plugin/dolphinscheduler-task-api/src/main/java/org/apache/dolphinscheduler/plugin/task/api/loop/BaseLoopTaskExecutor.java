@@ -117,7 +117,7 @@ public abstract class BaseLoopTaskExecutor extends AbstractRemoteTask {
     /**
      * Cancel the loop task, if cancel failed, directly throw exception
      */
-//    public abstract void cancelLoopTaskInstance(@Nullable LoopTaskInstanceInfo taskInstanceInfo) throws TaskException;
+////    public abstract void cancelLoopTaskInstance(@Nullable LoopTaskInstanceInfo taskInstanceInfo) throws TaskException;
 
     @Override
     public void cancelApplication() throws TaskException {

@@ -36,18 +36,18 @@ import lombok.extern.slf4j.Slf4j;
 @UtilityClass
 public class VarPoolUtils {
 
-    public List<Property> deserializeVarPool(String varPoolJson) {
+//    public List<Property> deserializeVarPool(String varPoolJson) {
         return JSONUtils.toList(varPoolJson, Property.class);
     }
 
     /**
      * @see #mergeVarPool(List)
      */
-    public String mergeVarPoolJsonString(List<String> varPoolJsons) {
+//    public String mergeVarPoolJsonString(List<String> varPoolJsons) {
         if (CollectionUtils.isEmpty(varPoolJsons)) {
             return null;
         }
-        List<List<Property>> varPools = varPoolJsons.stream()
+//        List<List<Property>> varPools = varPoolJsons.stream()
                 .map(VarPoolUtils::deserializeVarPool)
                 .collect(Collectors.toList());
         List<Property> finalVarPool = mergeVarPool(varPools);
