@@ -272,9 +272,23 @@ public class SchedulerController extends BaseController {
     public Result queryScheduleList(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
                                     @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode) {
         Map<String, Object> result = schedulerService.queryScheduleList(loginUser, projectCode);
+                                                         @RequestParam(value = "schedule") String schedule,
+                                                         @RequestParam(value = "warningType", required = false, defaultValue = DEFAULT_WARNING_TYPE) WarningType warningType,
+                                                         @RequestParam(value = "failureStrategy", required = false, defaultValue = "END") FailureStrategy failureStrategy,
+                                                         @RequestParam(value = "workerGroup", required = false, defaultValue = "default") String workerGroup,
+                                                         @RequestParam(value = "tenantCode", required = false, defaultValue = "default") String tenantCode,
+                                                         @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") long environmentCode,
+                                                         @RequestParam(value = "workflowInstancePriority", required = false) Priority workflowInstancePriority
+    ) {
+        Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(
+                loginUser, projectCode,
+                workflowDefinitionCode, schedule,
+                warningType, warningGroupId, failureStrategy, workflowInstancePriority, workerGroup, tenantCode,
+                environmentCode
+        );
         return returnDataList(result);
     }
-
+}
     /**
      * preview schedule
      *
