@@ -3,6 +3,8 @@ public class TaskAlertData {
     private String content;
     private Integer alertGroupId;
 
+    public TaskAlertData() {}
+
     public TaskAlertData(String title, String content, Integer alertGroupId) {
         this.title = title;
         this.content = content;
