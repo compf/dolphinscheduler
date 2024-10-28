@@ -199,6 +199,5 @@ public abstract class AbstractTask {
                         paramName, content);
             }
 
-        }
+        // Removed incorrect closing braces
     }
-}
