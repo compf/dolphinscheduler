@@ -279,7 +279,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
                                                               @Param("workflowDefinitionCode") Long workflowDefinitionCode,
                                                               @Param("name") String name,
                                                               @Param("startTime") String startTime,
-                                                              @Param("endTime") String endTime,
+                                                              @Param("instanceQuery") InstanceQuery instanceQuery,
                                                               @Param("state") Integer state,
                                                               @Param("host") String host);
 
@@ -297,7 +297,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @return ExecuteStatusCount list
      */
     List<ExecuteStatusCount> countInstanceStateV2(
-                                                  @Param("startTime") Date startTime,
+                                                  @Param("instanceQuery") InstanceQuery instanceQuery,
                                                   @Param("endTime") Date endTime,
                                                   @Param("projectCode") Long projectCode,
                                                   @Param("workflowCode") Long workflowCode,
