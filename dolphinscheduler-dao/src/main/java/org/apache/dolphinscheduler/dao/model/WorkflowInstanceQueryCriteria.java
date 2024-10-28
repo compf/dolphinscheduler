@@ -9,6 +9,8 @@ public class WorkflowInstanceQueryCriteria {
     private String name;
     private String host;
     private Date startTime;
+    private Date endTime;
+    private Integer state;
 
     // Constructor, getters and setters
 }
