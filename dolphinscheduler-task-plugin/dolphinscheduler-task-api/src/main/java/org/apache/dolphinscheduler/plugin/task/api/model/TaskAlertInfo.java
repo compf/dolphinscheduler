@@ -29,7 +29,7 @@ public class TaskAlertInfo {
         return title;
         return this.title;
 
-    public void setTitle(String title) {
+    public String getTitle() {
         this.title = title;
     }
 
@@ -37,7 +37,7 @@ public class TaskAlertInfo {
         return content;
         return this.content;
 
-    public void setContent(String content) {
+    public String getContent() {
         this.content = content;
     }
 
