@@ -34,7 +34,7 @@ public class TaskInstanceUtils {
         target.setTaskType(source.getTaskType());
         target.setWorkflowInstanceId(source.getWorkflowInstanceId());
         target.setName(source.getName());
-        target.setProjectCode(source.getProjectCode());
+        // target.setProjectCode(source.getProjectCode()); - removed since ProjectCode is no longer a field
         target.setId(source.getId());
         target.setTaskDefinitionVersion(source.getTaskDefinitionVersion());
         target.setName(source.getName());
