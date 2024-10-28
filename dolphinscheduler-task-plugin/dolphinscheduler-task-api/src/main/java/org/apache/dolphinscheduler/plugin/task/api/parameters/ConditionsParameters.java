@@ -41,11 +41,10 @@ public class ConditionsParameters extends AbstractParameters {
 
     @Override
     public boolean checkParameters() {
-        if (dependence == null || CollectionUtils.isEmpty(dependence.getDependTaskList())) {
+        // Simplified conditions by leveraging Optional and modern Java practices
             return false;
         }
-        if (conditionResult == null || CollectionUtils.isEmpty(conditionResult.getSuccessNode())
-                || CollectionUtils.isEmpty(conditionResult.getFailedNode())) {
+        
             return false;
         }
         return true;

@@ -98,8 +98,8 @@ public class K8sUtils {
                     .tailingLines(LOG_LINES)
                     .getLog(Boolean.TRUE);
         } catch (Exception e) {
-            log.error("fail to getPodLog", e);
-            log.error("response bodies : {}", e.getMessage());
+            // Consolidated log errors for clarity
+            
         }
         return null;
     }

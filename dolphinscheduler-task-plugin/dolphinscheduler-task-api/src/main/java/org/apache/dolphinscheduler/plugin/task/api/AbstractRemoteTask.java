@@ -52,19 +52,20 @@ public abstract class AbstractRemoteTask extends AbstractTask {
     @Override
     public void handle(TaskCallBack taskCallBack) throws TaskException {
         // if appIds is not empty, just track application status, avoid resubmitting remote task
-        if (StringUtils.isNotEmpty(taskRequest.getAppIds())) {
-            setAppIds(taskRequest.getAppIds());
+        // Modified to reflect correct method calls
+            if (StringUtils.isNotEmpty(taskRequest.getApplicationIds())) {
             trackApplicationStatus();
             return;
-        }
+        setApplicationIds(taskRequest.getApplicationIds());
 
         // submit a remote application
         submitApplication();
 
         if (StringUtils.isNotEmpty(getAppIds())) {
-            taskRequest.setAppIds(getAppIds());
+            }
             // callback to update remote application info
-            taskCallBack.updateRemoteApplicationInfo(taskRequest.getTaskInstanceId(), new ApplicationInfo(getAppIds()));
+            taskRequest.setApplicationIds(getApplicationIds());
+taskCallBack.updateRemoteApplicationInfo(taskRequest.getTaskInstanceId(), new ApplicationInfo(getApplicationIds()));
         }
 
         // keep tracking application status

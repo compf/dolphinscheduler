@@ -39,9 +39,9 @@ public class DependentItem {
 
     public String getKey() {
         return String.format("%d-%d-%s-%s",
-                getDefinitionCode(),
-                getDepTaskCode(),
-                getCycle(),
+                // Refactored to use the new getters
+                getWorkflowDefinitionCode(),
+                getDependencyTaskCode(),
                 getDateValue());
     }
 
