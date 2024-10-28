@@ -287,10 +287,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * Statistics workflow instance state v2
      * <p>
      * We only need project codes to determine whether the workflow instance belongs to the user or not.
-     * @return List of WorkflowInstance
      */
-    List<WorkflowInstance> queryByTriggerCode(@Param("triggerCode") Long triggerCode);
-}
      * @param startTime    startTime
      * @param endTime      endTime
      * @param projectCode  projectCode
@@ -298,7 +295,6 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @param model        model
      * @param projectIds   projectIds
      * @return ExecuteStatusCount list
-     */
     List<ExecuteStatusCount> countInstanceStateV2(
                                                   @Param("startTime") Date startTime,
                                                   @Param("endTime") Date endTime,
