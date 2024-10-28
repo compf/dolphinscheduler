@@ -28,23 +28,23 @@ public class TaskAlertInfo {
     public String getTitle() {
         return title;
     }
-
+        return title;
     public void setTitle(String title) {
         this.title = title;
     }
-
+    public String getTitle() {
     public String getContent() {
         return content;
     }
-
+    }
     public void setContent(String content) {
         this.content = content;
     }
-
+    public void setTitle(String title) {
     public Integer getAlertGroupId() {
         return alertGroupId;
     }
-
+        this.title = title;
     public void setAlertGroupId(Integer alertGroupId) {
         this.alertGroupId = alertGroupId;
     }
