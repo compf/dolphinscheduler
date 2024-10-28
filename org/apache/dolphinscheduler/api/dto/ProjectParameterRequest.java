@@ -10,10 +10,11 @@ public class ProjectParameterRequest {
     private String projectParameterValue;
     private String projectParameterDataType;
 
-    public ProjectParameterRequest(User loginUser, long projectCode, String projectParameterName,
+    public ProjectParameterRequest(User loginUser, long projectCode, long parameterCode, String projectParameterName,
                                    String projectParameterValue, String projectParameterDataType) {
         this.loginUser = loginUser;
         this.projectCode = projectCode;
+        this.parameterCode = parameterCode;
         this.projectParameterName = projectParameterName;
         this.projectParameterValue = projectParameterValue;
         this.projectParameterDataType = projectParameterDataType;
@@ -41,9 +42,5 @@ public class ProjectParameterRequest {
 
     public String getProjectParameterDataType() {
         return projectParameterDataType;
-    }
-
-    public void setParameterCode(long parameterCode) {
-        this.parameterCode = parameterCode;
     }
 }
