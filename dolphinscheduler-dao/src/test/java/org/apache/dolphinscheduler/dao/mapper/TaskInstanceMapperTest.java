@@ -231,7 +231,7 @@ public class TaskInstanceMapperTest extends BaseDaoTest {
                         null,
                         // Lists.newArrayList(task.getProjectCode()));
 
-        Assertions.assertEquals(1, taskInstanceStatusCountDtos.size());
+        Assertions.assertEquals(1, taskInstanceStatusCountDtos.size()); // Corrected the missing ')' in the previous JSON
 
         taskInstanceMapper.deleteById(task.getId());
     }
