@@ -25,9 +25,7 @@ import org.apache.dolphinscheduler.common.enums.FailureStrategy;
 import org.apache.dolphinscheduler.common.enums.TaskDependType;
 import org.apache.dolphinscheduler.common.enums.WarningType;
 import org.apache.dolphinscheduler.dao.entity.User;
-
-import java.util.HashMap;
-import java.util.Map;
+import org.apache.dolphinscheduler.api.test.data.ExecutorInfo;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -69,7 +67,7 @@ public class ExecutorPage {
         return requestClient.get(url, headers, params);
     }
 
-    public HttpResponse execute(User loginUser, long projectCode, int workflowInstanceId, ExecuteType executeType) {
+    public HttpResponse execute(ExecutorInfo executorInfo) {
         Map<String, Object> params = new HashMap<>();
         params.put("loginUser", loginUser);
         params.put("projectCode", projectCode);
@@ -83,7 +81,7 @@ public class ExecutorPage {
         return requestClient.post(url, headers, params);
     }
 
-    public HttpResponse executeTask(User loginUser, long projectCode, int workflowInstanceId, String startNodeList,
+    public HttpResponse executeTask(ExecutorInfo executorInfo, String startNodeList,
                                     TaskDependType taskDependType) {
         Map<String, Object> params = new HashMap<>();
         params.put("loginUser", loginUser);
