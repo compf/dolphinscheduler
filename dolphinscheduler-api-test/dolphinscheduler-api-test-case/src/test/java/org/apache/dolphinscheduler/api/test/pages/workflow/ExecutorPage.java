@@ -68,8 +68,7 @@ public class ExecutorPage {
         String url = String.format("/projects/%s/executors/query-executing-workflow", projectCode);
         return requestClient.get(url, headers, params);
     }
-
-    public HttpResponse execute(User loginUser, long projectCode, int workflowInstanceId, ExecuteType executeType) {
+    public HttpResponse execute(ExecutionRequest request) {
         Map<String, Object> params = new HashMap<>();
         params.put("loginUser", loginUser);
         params.put("projectCode", projectCode);
@@ -82,9 +81,7 @@ public class ExecutorPage {
         String url = String.format("/projects/%s/executors/execute", projectCode);
         return requestClient.post(url, headers, params);
     }
-
-    public HttpResponse executeTask(User loginUser, long projectCode, int workflowInstanceId, String startNodeList,
-                                    TaskDependType taskDependType) {
+    public HttpResponse executeTask(TaskExecutionRequest request) {
         Map<String, Object> params = new HashMap<>();
         params.put("loginUser", loginUser);
         params.put("workflowInstanceId", workflowInstanceId);
