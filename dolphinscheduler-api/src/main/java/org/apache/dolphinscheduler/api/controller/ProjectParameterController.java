@@ -27,7 +27,7 @@ import org.apache.dolphinscheduler.api.service.ProjectParameterService;
 import org.apache.dolphinscheduler.api.utils.Result;
 import org.apache.dolphinscheduler.common.constants.Constants;
 import org.apache.dolphinscheduler.dao.entity.User;
-import org.apache.dolphinscheduler.plugin.task.api.utils.ParameterUtils;
+import org.apache.dolphinscheduler.api.data.ProjectParameterInfo;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -72,8 +72,9 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
                                          @RequestParam(value = "projectParameterDataType", defaultValue = "VARCHAR") String projectParameterDataType) {
-        return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName,
+        ProjectParameterInfo projectParameterInfo = new ProjectParameterInfo(loginUser, projectCode, null, projectParameterName,
                 projectParameterValue, projectParameterDataType);
+        return projectParameterService.createProjectParameter(projectParameterInfo);
     }
 
     @Operation(summary = "updateProjectParameter", description = "UPDATE_PROJECT_PARAMETER_NOTES")
@@ -92,8 +93,9 @@ public class ProjectParameterController extends BaseController {
                                          @RequestParam("projectParameterName") String projectParameterName,
                                          @RequestParam(value = "projectParameterValue") String projectParameterValue,
                                          @RequestParam(value = "projectParameterDataType") String projectParameterDataType) {
-        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName,
+        ProjectParameterInfo projectParameterInfo = new ProjectParameterInfo(loginUser, projectCode, code, projectParameterName,
                 projectParameterValue, projectParameterDataType);
+        return projectParameterService.updateProjectParameter(projectParameterInfo);
     }
 
     @Operation(summary = "deleteProjectParametersByCode", description = "DELETE_PROJECT_PARAMETER_NOTES")
