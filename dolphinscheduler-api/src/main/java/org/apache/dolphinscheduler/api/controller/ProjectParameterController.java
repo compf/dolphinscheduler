@@ -69,9 +69,7 @@ public class ProjectParameterController extends BaseController {
     @ApiException(CREATE_PROJECT_PARAMETER_ERROR)
     public Result createProjectParameter(@Parameter(hidden = true) @RequestAttribute(value = Constants.SESSION_USER) User loginUser,
                                          @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
-                                         @RequestParam("projectParameterName") String projectParameterName,
-                                         @RequestParam(value = "projectParameterValue") String projectParameterValue,
-                                         @RequestParam(value = "projectParameterDataType", defaultValue = "VARCHAR") String projectParameterDataType) {
+                                         @RequestBody ProjectParameterRequest request) {
         return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName,
                 projectParameterValue, projectParameterDataType);
     }
@@ -89,9 +87,7 @@ public class ProjectParameterController extends BaseController {
     public Result updateProjectParameter(@Parameter(hidden = true) @RequestAttribute(value = Constants.SESSION_USER) User loginUser,
                                          @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
                                          @PathVariable("code") Long code,
-                                         @RequestParam("projectParameterName") String projectParameterName,
-                                         @RequestParam(value = "projectParameterValue") String projectParameterValue,
-                                         @RequestParam(value = "projectParameterDataType") String projectParameterDataType) {
+                                         @RequestBody ProjectParameterUpdateRequest request) {
         return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName,
                 projectParameterValue, projectParameterDataType);
     }

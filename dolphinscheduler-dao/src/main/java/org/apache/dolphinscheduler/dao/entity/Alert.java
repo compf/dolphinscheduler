@@ -24,36 +24,31 @@ import org.apache.dolphinscheduler.common.enums.WarningType;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-
+import org.apache.dolphinscheduler.plugin.task.api.model.AlertInfo;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
+@EqualsAndHashCode(callSuper = true)
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
+@NoArgsConstructor
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @TableName("t_ds_alert")
-public class Alert {
-
+public class Alert extends AlertInfo {
+@AllArgsConstructor
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
-
+@ToString(callSuper = true)
     @TableField(value = "sign")
     private String sign;
 
     @TableField(value = "title")
-    private String title;
-
-    @TableField(value = "content")
-    private String content;
-
     @TableField(value = "alert_status")
     private AlertStatus alertStatus;
 
@@ -63,8 +58,6 @@ public class Alert {
     @TableField(value = "log")
     private String log;
 
-    @TableField("alertgroup_id")
-    private Integer alertGroupId;
 
     @TableField("create_time")
     private Date createTime;
