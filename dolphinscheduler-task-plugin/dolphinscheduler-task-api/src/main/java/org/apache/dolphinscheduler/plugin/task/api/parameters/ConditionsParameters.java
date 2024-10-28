@@ -45,10 +45,9 @@ public class ConditionsParameters extends AbstractParameters {
             return false;
         }
         
-            return false;
+            // Fixed the misplaced code blocks
         }
-        return true;
-    }
+        // ...
 
     @Data
     @Builder
