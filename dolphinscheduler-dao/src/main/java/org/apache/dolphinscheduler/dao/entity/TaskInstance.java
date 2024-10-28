@@ -63,8 +63,8 @@ public class TaskInstance implements Serializable {
 
     @TableField(value = "state")
     private TaskExecutionStatus state;
-    @TableField(value = "project_code")
-    private Long projectCode;
+    // @TableField(value = "project_code")
+    // private Long projectCode;
     @TableField(value = "first_submit_time")
     private Date firstSubmitTime;
     @TableField(value = "submit_time")
