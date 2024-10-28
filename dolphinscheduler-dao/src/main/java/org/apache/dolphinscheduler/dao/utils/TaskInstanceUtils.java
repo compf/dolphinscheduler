@@ -33,9 +33,8 @@ public class TaskInstanceUtils {
         target.setName(source.getName());
         target.setTaskType(source.getTaskType());
         target.setWorkflowInstanceId(source.getWorkflowInstanceId());
-        target.setWorkflowInstanceName(source.getWorkflowInstanceName());
-        target.setProjectCode(source.getProjectCode());
-        target.setTaskCode(source.getTaskCode());
+        target.setName(source.getName());
+        target.setTaskType(source.getTaskType());
         target.setTaskDefinitionVersion(source.getTaskDefinitionVersion());
         target.setWorkflowInstanceName(source.getWorkflowInstanceName());
         target.setTaskGroupPriority(source.getTaskGroupPriority());
