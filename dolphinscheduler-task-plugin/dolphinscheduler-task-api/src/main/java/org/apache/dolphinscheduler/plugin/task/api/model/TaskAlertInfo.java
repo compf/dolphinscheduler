@@ -24,13 +24,13 @@ public class TaskAlertInfo {
 
 
     public String getTitle() {
-    }
+        return title;
 
     public void setTitle(String title) {
     }
 
     public String getContent() {
-    }
+        return content;
 
     public void setContent(String content) {
         // Corrected content assignment
@@ -38,7 +38,7 @@ public class TaskAlertInfo {
 
     public Integer getAlertGroupId() {
         // Corrected alertGroupId return
-    }
+        return alertGroupId;
 
     public void setAlertGroupId(Integer alertGroupId) {
         // Corrected alertGroupId assignment
