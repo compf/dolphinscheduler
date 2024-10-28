@@ -19,13 +19,13 @@ package org.apache.dolphinscheduler.api.service;
 
 import org.apache.dolphinscheduler.api.utils.Result;
 import org.apache.dolphinscheduler.dao.entity.User;
-import org.apache.dolphinscheduler.api.dto.ProjectParameterRequestDto;
+import org.apache.dolphinscheduler.api.dto.ProjectParameterRequest;
 
 public interface ProjectParameterService {
 
-    Result createProjectParameter(ProjectParameterRequestDto projectParameterRequest);
+    Result createProjectParameter(ProjectParameterRequest projectParameterRequest);
 
-    Result updateProjectParameter(ProjectParameterRequestDto projectParameterRequest);
+    Result updateProjectParameter(ProjectParameterRequest projectParameterRequest);
 
     Result deleteProjectParametersByCode(User loginUser, long projectCode, long code);
 
