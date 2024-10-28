@@ -223,8 +223,8 @@ public class AlertDao {
         saveTaskTimeoutAlert(alert, content, alertGroupId);
     }
 
-    private void saveTaskTimeoutAlert(Alert alert, String content, AlertGroup alertGroup) {
-        alert.setAlertGroup(alertGroup);
+    private void saveTaskTimeoutAlert(Alert alert, String content, int alertGroupId) {
+        alert.setAlertGroupId(alertGroupId);
         alert.setWarningType(WarningType.FAILURE);
         alert.setContent(content);
         alert.setCreateTime(new Date());
