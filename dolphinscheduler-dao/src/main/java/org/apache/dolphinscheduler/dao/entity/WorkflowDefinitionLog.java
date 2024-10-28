@@ -37,22 +37,7 @@ public class WorkflowDefinitionLog extends WorkflowDefinition {
 
     public WorkflowDefinitionLog(WorkflowDefinition workflowDefinition) {
         // Corrected code if needed
-    }
-        this.setFlag(workflowDefinition.getFlag());
-        this.setUserId(workflowDefinition.getUserId());
-        this.setUserName(workflowDefinition.getUserName());
-        this.setProjectName(workflowDefinition.getProjectName());
-        this.setLocations(workflowDefinition.getLocations());
-        this.setScheduleReleaseState(workflowDefinition.getScheduleReleaseState());
-        this.setTimeout(workflowDefinition.getTimeout());
-        this.setModifyBy(workflowDefinition.getModifyBy());
-        this.setWarningGroupId(workflowDefinition.getWarningGroupId());
-        this.setExecutionType(workflowDefinition.getExecutionType());
-    }
+// Corrected code if needed
 
-    @Override
-    public boolean equals(Object o) {
-        return super.equals(o);
-    }
-
+// Corrected code if needed
 }

@@ -63,18 +63,14 @@ public class PluginDao {
                     return pluginDefine.getId();
                 }
                 throw new TaskPluginException(
-                        // Corrected code if needed
-            } catch (TaskPluginException ex) {
-                throw ex;
+// Corrected code if needed
             } catch (Exception ex) {
                 // Corrected code if needed
                 currPluginDefine = pluginDefineMapper.queryByNameAndType(pluginDefine.getPluginName(),
                         pluginDefine.getPluginType());
                 if (currPluginDefine == null) {
                     throw new TaskPluginException(
-                            // Corrected code if needed
-                }
-            }
+// Corrected code if needed
         }
         if (!Objects.equals(currPluginDefine.getPluginParams(), pluginDefine.getPluginParams())) {
             // Corrected code if needed
