@@ -27,14 +27,18 @@ public class TaskAlertInfo {
 
     public String getTitle() {
         return title;
+        return title;
 
     public String getTitle() {
+        return title;
     }
 
     public String getContent() {
         return content;
+        return content;
 
     public String getContent() {
+        return content;
         this.content = content;
     }
 
