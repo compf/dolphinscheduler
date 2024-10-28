@@ -54,6 +54,12 @@ public class Alert {
     @TableField(value = "content")
     private String content;
 
+    @TableField(value = "content")
+    private String content;
+
+    @TableField(value = "alertgroup_id")
+    private Integer alertGroupId;
+
     @TableField(value = "alert_status")
     private AlertStatus alertStatus;
 
