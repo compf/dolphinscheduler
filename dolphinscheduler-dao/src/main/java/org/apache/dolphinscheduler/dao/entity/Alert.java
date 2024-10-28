@@ -49,9 +49,9 @@ public class Alert {
     private String sign;
 
     @TableField(value = "title")
-    private AlertInfo alertInfo;
+    private String title;
 
-    @TableField(value = "content")
+
 
 
     @TableField(value = "alert_status")
@@ -63,7 +63,7 @@ public class Alert {
     @TableField(value = "log")
     private String log;
 
-    @TableField("alertgroup_id")
+    private Integer alertGroupId;
 
 
     @TableField("create_time")
