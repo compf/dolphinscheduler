@@ -273,7 +273,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @param startTime             startTime
      * @param endTime               endTime
      * @return workflow instance IPage
-     */
+            @Param("workflowCode") Long workflowCode,
     IPage<WorkflowInstance> queryWorkflowInstanceListV2Paging(Page<WorkflowInstance> page,
                                                               @Param("projectCode") Long projectCode,
                                                               @Param("workflowDefinitionCode") Long workflowDefinitionCode,
@@ -282,12 +282,15 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
                                                               @Param("endTime") String endTime,
                                                               @Param("state") Integer state,
                                                               @Param("host") String host);
-
     /**
+     *
      * Statistics workflow instance state v2
      * <p>
      * We only need project codes to determine whether the workflow instance belongs to the user or not.
-     *
+     * @return List of WorkflowInstance
+     */
+    List<WorkflowInstance> queryByTriggerCode(@Param("triggerCode") Long triggerCode);
+}
      * @param startTime    startTime
      * @param endTime      endTime
      * @param projectCode  projectCode
