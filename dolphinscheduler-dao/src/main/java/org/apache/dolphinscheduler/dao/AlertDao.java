@@ -126,8 +126,8 @@ public class AlertDao {
      */
     private String generateSign(Alert alert) {
         return Optional.of(alert)
-                .map(alert -> alert.getAlertInfo().getContent())
-                .map(DigestUtils::sha1Hex)
+                .map(Alert::getContent)
+                .map(content -> DigestUtils.sha1Hex(content))
                 .map(String::toLowerCase)
                 .orElse("");
     }
@@ -175,7 +175,7 @@ public class AlertDao {
         alert.setTitle("Fault tolerance warning");
         alert.setWarningType(WarningType.FAILURE);
         alert.setAlertStatus(AlertStatus.WAIT_EXECUTION);
-        alert.getAlertInfo().setContent(content);
+        alert.setContent(content);
         alert.setAlertGroupId(ADMIN_ALERT_GROUP_ID);
         alert.setCreateTime(new Date());
         alert.setUpdateTime(new Date());
@@ -226,7 +226,7 @@ public class AlertDao {
     private void saveTaskTimeoutAlert(Alert alert, String content, int alertGroupId) {
         alert.setAlertGroupId(alertGroupId);
         alert.setWarningType(WarningType.FAILURE);
-        alert.getAlertInfo().setContent(content);
+        alert.setContent(content);
         alert.setCreateTime(new Date());
         alert.setUpdateTime(new Date());
         String sign = generateSign(alert);
