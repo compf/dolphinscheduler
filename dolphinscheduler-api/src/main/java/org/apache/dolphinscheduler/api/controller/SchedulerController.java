@@ -181,7 +181,6 @@ public class SchedulerController extends BaseController {
         Map<String, Object> result = schedulerService.updateSchedule(loginUser, projectCode, id, schedule,
                 warningType, warningGroupId, failureStrategy, workflowInstancePriority, workerGroup, tenantCode,
                 environmentCode);
-        Map<String, Object> result = schedulerService.updateSchedule(loginUser, projectCode, scheduleUpdateRequest);
         return returnDataList(result);
     }
 
