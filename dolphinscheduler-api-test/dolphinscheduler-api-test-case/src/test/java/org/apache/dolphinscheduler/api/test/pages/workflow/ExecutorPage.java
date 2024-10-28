@@ -38,7 +38,7 @@ public class ExecutorPage {
 
     private String sessionId;
 
-    public HttpResponse startWorkflowInstance(User loginUser,
+    public HttpResponse startWorkflowInstance(ExecutorParameter executorParameter,
                                               long projectCode,
                                               long workflowDefinitionCode,
                                               String scheduleTime,
@@ -54,7 +54,7 @@ public class ExecutorPage {
         headers.put(Constants.SESSION_ID_KEY, sessionId);
 
         RequestClient requestClient = new RequestClient();
-        String url = String.format("/projects/%s/executors/start-workflow-instance", projectCode);
+        String url = String.format("/projects/%s/executors/start-workflow-instance", executorParameter.getProjectCode());
         return requestClient.post(url, headers, params);
     }
 
@@ -71,7 +71,7 @@ public class ExecutorPage {
 
     public HttpResponse execute(User loginUser, long projectCode, int workflowInstanceId, ExecuteType executeType) {
         Map<String, Object> params = new HashMap<>();
-        params.put("loginUser", loginUser);
+        params.put("loginUser", executorParameter.getLoginUser());
         params.put("projectCode", projectCode);
         params.put("workflowInstanceId", workflowInstanceId);
         params.put("executeType", executeType);
