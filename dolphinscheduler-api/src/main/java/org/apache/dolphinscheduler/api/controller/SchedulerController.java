@@ -107,8 +107,13 @@ public class SchedulerController extends BaseController {
     @ResponseStatus(HttpStatus.CREATED)
     @ApiException(CREATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_CREATE)
-    public Result createSchedule(@RequestBody ScheduleCreateRequest scheduleCreateRequest) {
-        Map<String, Object> result = schedulerService.insertSchedule(scheduleCreateRequest);
+    public Result createSchedule(User loginUser, long projectCode, long workflowDefinitionCode, String schedule,
+                                 WarningType warningType, int warningGroupId, FailureStrategy failureStrategy,
+                                 Priority workflowInstancePriority, String workerGroup, String tenantCode,
+                                 Long environmentCode) {
+        Map<String, Object> result = schedulerService.insertSchedule(loginUser, projectCode, workflowDefinitionCode, schedule,
+                warningType, warningGroupId, failureStrategy, workflowInstancePriority, workerGroup, tenantCode,
+                environmentCode);
         return returnDataList(result);
 
         return returnDataList(result);
@@ -313,8 +318,13 @@ public class SchedulerController extends BaseController {
     @ResponseStatus(HttpStatus.OK)
     @ApiException(UPDATE_SCHEDULE_ERROR)
     @OperatorLog(auditType = AuditType.SCHEDULE_UPDATE)
-    public Result updateScheduleByWorkflowDefinitionCode(@RequestBody ScheduleUpdateRequest scheduleUpdateRequest) {
-        Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(scheduleUpdateRequest);
+    public Result updateScheduleByWorkflowDefinitionCode(User loginUser, long projectCode, long workflowDefinitionCode, String schedule,
+                                                         WarningType warningType, int warningGroupId, FailureStrategy failureStrategy,
+                                                         Priority workflowInstancePriority, String workerGroup, String tenantCode,
+                                                         Long environmentCode) {
+        Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(loginUser, projectCode, workflowDefinitionCode, schedule,
+                warningType, warningGroupId, failureStrategy, workflowInstancePriority, workerGroup, tenantCode,
+                environmentCode);
         return returnDataList(result);
         return returnDataList(result);
     }
