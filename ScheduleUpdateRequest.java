@@ -1,3 +1,8 @@
+import org.apache.dolphinscheduler.dao.entity.User;
+import org.apache.dolphinscheduler.common.enums.WarningType;
+import org.apache.dolphinscheduler.common.enums.FailureStrategy;
+import org.apache.dolphinscheduler.common.enums.Priority;
+
 public class ScheduleUpdateRequest {
     private User loginUser;
     private long projectCode;

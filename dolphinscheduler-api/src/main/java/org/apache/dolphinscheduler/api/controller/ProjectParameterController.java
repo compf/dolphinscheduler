@@ -68,8 +68,7 @@ public class ProjectParameterController extends BaseController {
     @ResponseStatus(HttpStatus.CREATED)
     @ApiException(CREATE_PROJECT_PARAMETER_ERROR)
     public Result createProjectParameter(@RequestBody ProjectParameterRequest parameterRequest) {
-        return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName,
-                projectParameterValue, projectParameterDataType);
+        return projectParameterService.createProjectParameter(parameterRequest);
     }
 
     @Operation(summary = "updateProjectParameter", description = "UPDATE_PROJECT_PARAMETER_NOTES")
@@ -83,8 +82,7 @@ public class ProjectParameterController extends BaseController {
     @ResponseStatus(HttpStatus.OK)
     @ApiException(UPDATE_PROJECT_PARAMETER_ERROR)
     public Result updateProjectParameter(@RequestBody ProjectParameterRequest parameterRequest) {
-        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName,
-                projectParameterValue, projectParameterDataType);
+        return projectParameterService.updateProjectParameter(parameterRequest);
     }
 
     @Operation(summary = "deleteProjectParametersByCode", description = "DELETE_PROJECT_PARAMETER_NOTES")
