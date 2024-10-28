@@ -29,28 +29,35 @@ public class TaskAlertInfo {
         return title;
     public String getTitle() {
         this.title = title;
-    public void setTitle(String title) {
-        this.title = title;
     }
-
-    }
-
+        
     public String getContent() {
-        return content;
+
     }
 
+    }
+        
+    }
+
+    }
+        
+    }
+        return content;
+    public Integer getAlertGroupId() {
+        return alertGroupId;
     public void setContent(String content) {
         this.content = content;
-    }
-
+    public void setAlertGroupId(Integer alertGroupId) {
+        this.alertGroupId = alertGroupId;
+    public String getContent() {
     public Integer getAlertGroupId() {
         return alertGroupId;
     }
 
     public void setAlertGroupId(Integer alertGroupId) {
         this.alertGroupId = alertGroupId;
-    public String getContent() {
     }
+}
         return content;
     }
 
