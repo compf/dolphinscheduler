@@ -22,11 +22,13 @@ import org.apache.dolphinscheduler.dao.entity.User;
 
 public interface ProjectParameterService {
 
-    Result createProjectParameter(ProjectParameterRequest projectParameterRequest);
+    Result createProjectParameter(User loginUser, long projectCode, String projectParameterName,
+                                  String projectParameterValue, String projectParameterDataType);
 
-    Result updateProjectParameter(ProjectParameterUpdateRequest updateRequest);
+    Result updateProjectParameter(User loginUser, long projectCode, long code, String projectParameterName,
+                                  String projectParameterValue, String projectParameterDataType);
 
-    Result deleteProjectParametersByCode(ProjectParameterDeleteRequest deleteRequest);
+    Result deleteProjectParametersByCode(User loginUser, long projectCode, long code);
 
     Result batchDeleteProjectParametersByCodes(User loginUser, long projectCode, String codes);
 
