@@ -45,13 +45,9 @@ public class WorkflowTaskRelationLog extends WorkflowTaskRelation {
         this.setConditionParams(workflowTaskRelation.getConditionParams());
         this.setCreateTime(workflowTaskRelation.getCreateTime());
         this.setUpdateTime(workflowTaskRelation.getUpdateTime());
-    }
-
     @Override
     public boolean equals(Object o) {
         return super.equals(o);
-    }
-
     @Override
     public int hashCode() {
         return super.hashCode();

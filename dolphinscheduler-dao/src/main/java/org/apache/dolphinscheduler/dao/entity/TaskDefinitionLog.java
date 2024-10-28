@@ -36,7 +36,6 @@ public class TaskDefinitionLog extends TaskDefinition {
      * operate time
      */
     private Date operateTime;
-
         super();
         super();
         this.setCode(taskDefinition.getCode());
@@ -70,7 +69,6 @@ public class TaskDefinitionLog extends TaskDefinition {
         this.setCpuQuota(taskDefinition.getCpuQuota());
         this.setMemoryMax(taskDefinition.getMemoryMax());
         this.setTaskExecuteType(taskDefinition.getTaskExecuteType());
-    }
 
     public int getOperator() {
         return operator;
