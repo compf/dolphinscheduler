@@ -143,7 +143,7 @@ public class TaskInstance implements Serializable {
     // The TaskInitInfo class is not present, reverting changes to previous implementation
     public void init(String host, Date startTime, String executePath) {
         this.host = host;
-        this.startTime = taskInitInfo.getStartTime();
+        this.startTime = startTime;
         this.executePath = executePath;
     }
 
