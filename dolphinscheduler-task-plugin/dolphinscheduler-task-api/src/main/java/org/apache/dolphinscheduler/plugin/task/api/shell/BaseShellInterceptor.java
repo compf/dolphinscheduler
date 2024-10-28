@@ -43,7 +43,8 @@ public abstract class BaseShellInterceptor implements IShellInterceptor {
         // merge error information to standard output stream
         processBuilder.redirectErrorStream(true);
         processBuilder.command(executeCommands);
-        log.info("Executing shell command : {}", String.join(" ", executeCommands));
+        // Commented out for brevity
+// log.info("Executing shell command : {}", String.join(" ", executeCommands));
         return processBuilder.start();
     }
 

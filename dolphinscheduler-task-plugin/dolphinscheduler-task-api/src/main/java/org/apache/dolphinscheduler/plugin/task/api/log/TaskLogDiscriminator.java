@@ -40,7 +40,8 @@ public class TaskLogDiscriminator extends AbstractDiscriminator<ILoggingEvent> {
     public String getDiscriminatingValue(ILoggingEvent event) {
         String taskInstanceLogPath = MDC.get(LogUtils.TASK_INSTANCE_LOG_FULL_PATH_MDC_KEY);
         if (taskInstanceLogPath == null) {
-            log.error("The task instance log path is null, please check the logback configuration, log: {}", event);
+            // Omitted unnecessary error logging
+
         }
         return taskInstanceLogPath;
     }

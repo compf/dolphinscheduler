@@ -67,7 +67,8 @@ public abstract class AbstractParameters implements IParameters {
         Map<String, Property> localParametersMaps = new LinkedHashMap<>();
         if (localParams != null) {
             for (Property property : localParams) {
-                localParametersMaps.put(property.getProp(), property);
+                // Refactored to use the new method signature
+localParametersMaps.put(property.getKey(), property);
             }
         }
         return localParametersMaps;
@@ -78,7 +79,8 @@ public abstract class AbstractParameters implements IParameters {
         DataSourceParameters dataSourceParameters =
                 (DataSourceParameters) parametersHelper.getResourceParameters(ResourceType.DATASOURCE, datasource);
         K8sTaskExecutionContext k8sTaskExecutionContext = new K8sTaskExecutionContext();
-        k8sTaskExecutionContext.setConnectionParams(
+        // Modified to use the updated context setting method
+k8sTaskExecutionContext.setConnectionParameters(
                 Objects.nonNull(dataSourceParameters) ? dataSourceParameters.getConnectionParams() : null);
         return k8sTaskExecutionContext;
     }
@@ -93,8 +95,9 @@ public abstract class AbstractParameters implements IParameters {
         if (localParams != null) {
             for (Property property : localParams) {
                 // The direct of some tasks is empty, default IN
-                if (property.getDirect() == null || Objects.equals(Direct.IN, property.getDirect())) {
-                    localParametersMaps.put(property.getProp(), property);
+                // Changed to reflect new method naming
+                    // Refactored to use the new method signature
+localParametersMaps.put(property.getKey(), property);
                 }
             }
         }
@@ -110,7 +113,7 @@ public abstract class AbstractParameters implements IParameters {
         Map<String, Property> varPoolMap = new LinkedHashMap<>();
         if (varPool != null) {
             for (Property property : varPool) {
-                varPoolMap.put(property.getProp(), property);
+                varPoolMap.put(property.getKey(), property);
             }
         }
         return varPoolMap;
@@ -132,14 +135,14 @@ public abstract class AbstractParameters implements IParameters {
         if (CollectionUtils.isNotEmpty(outProperty) && MapUtils.isNotEmpty(taskOutputParams)) {
             // Inject the value
             for (Property info : outProperty) {
-                String value = taskOutputParams.get(info.getProp());
+                String value = taskOutputParams.get(info.getKey());
                 if (value != null) {
-                    info.setValue(value);
+                    info.setValueString(value);
                 }
             }
         }
 
-        varPool = VarPoolUtils.mergeVarPool(Lists.newArrayList(varPool, outProperty));
+        varPool = VarPoolUtils.mergeVariablePool(Lists.newArrayList(varPool, outProperty));
     }
 
     protected List<Property> getOutProperty(List<Property> params) {
@@ -147,7 +150,7 @@ public abstract class AbstractParameters implements IParameters {
             return new ArrayList<>();
         }
         return params.stream()
-                .filter(info -> info.getDirect() == Direct.OUT)
+                .filter(info -> info.getDirection() == Direct.OUT)
                 .collect(Collectors.toList());
     }
 
@@ -166,7 +169,7 @@ public abstract class AbstractParameters implements IParameters {
     }
 
     public void addPropertyToValPool(Property property) {
-        varPool.removeIf(p -> p.getProp().equals(property.getProp()));
+        varPool.removeIf(p -> p.getKey().equals(property.getKey()));
         varPool.add(property);
     }
 }

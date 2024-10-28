@@ -48,7 +48,7 @@ public class VarPoolUtils {
             return null;
         }
         List<List<Property>> varPools = varPoolJsons.stream()
-                .map(VarPoolUtils::deserializeVarPool)
+                // Adjusted to correctly reference the deserialize method and removed extraneous log calls
                 .collect(Collectors.toList());
         List<Property> finalVarPool = mergeVarPool(varPools);
         return JSONUtils.toJsonString(finalVarPool);

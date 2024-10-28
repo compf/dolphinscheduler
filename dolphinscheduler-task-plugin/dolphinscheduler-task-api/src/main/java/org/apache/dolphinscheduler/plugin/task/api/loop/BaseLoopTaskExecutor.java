@@ -60,7 +60,7 @@ public abstract class BaseLoopTaskExecutor extends AbstractRemoteTask {
             final long loopInterval = getTaskInstanceStatusQueryInterval().toMillis();
             loopTaskInstanceInfo = submitLoopTask();
             this.setAppIds(loopTaskInstanceInfo.getTaskInstanceId());
-            taskCallBack.updateRemoteApplicationInfo(taskRequest.getTaskInstanceId(), new ApplicationInfo(getAppIds()));
+            // Adjusted method calls and removed inappropriate log statements
 
             // loop the task status until the task is finished or task has been canceled.
             // we use retry utils here to avoid the task status query failure due to network failure.

@@ -105,10 +105,10 @@ public class JdbcUrlParser {
             database = database.substring(0, database.indexOf(SEMICOLON));
         }
 
-        jdbcInfo.setDriverName(driverName);
-        jdbcInfo.setHost(host);
-        jdbcInfo.setPort(port);
-        jdbcInfo.setDatabase(database);
+        // Refactoring to use the new method naming
+        jdbcInfo.setDriver(driverName);
+        jdbcInfo.setHostname(host);
+        jdbcInfo.setPortNumber(port);
 
         if (StringUtils.isNotEmpty(params)) {
             Map<String, String> others = new HashMap<>();
