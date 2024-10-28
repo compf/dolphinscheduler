@@ -68,8 +68,11 @@ public class ProjectParameterController extends BaseController {
     @ResponseStatus(HttpStatus.CREATED)
     @ApiException(CREATE_PROJECT_PARAMETER_ERROR)
     public Result createProjectParameter(@Parameter(hidden = true) @RequestAttribute(value = Constants.SESSION_USER) User loginUser,
-                                         ProjectParameterCreationParameters creationParameters) {
-        return projectParameterService.createProjectParameter(creationParameters);
+                                         @RequestParam("projectCode") long projectCode,
+                                         @RequestParam("projectParameterName") String projectParameterName,
+                                         @RequestParam("projectParameterValue") String projectParameterValue,
+                                         @RequestParam("projectParameterDataType") String projectParameterDataType) {
+        return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName, projectParameterValue, projectParameterDataType);
     }
 
     @Operation(summary = "updateProjectParameter", description = "UPDATE_PROJECT_PARAMETER_NOTES")
@@ -83,8 +86,12 @@ public class ProjectParameterController extends BaseController {
     @ResponseStatus(HttpStatus.OK)
     @ApiException(UPDATE_PROJECT_PARAMETER_ERROR)
     public Result updateProjectParameter(@Parameter(hidden = true) @RequestAttribute(value = Constants.SESSION_USER) User loginUser,
-                                         ProjectParameterUpdateParameters updateParameters) {
-        return projectParameterService.updateProjectParameter(updateParameters);
+                                         @PathVariable("projectCode") long projectCode,
+                                         @PathVariable("code") long code,
+                                         @RequestParam("projectParameterName") String projectParameterName,
+                                         @RequestParam("projectParameterValue") String projectParameterValue,
+                                         @RequestParam("projectParameterDataType") String projectParameterDataType) {
+        return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName, projectParameterValue, projectParameterDataType);
     }
 
     @Operation(summary = "deleteProjectParametersByCode", description = "DELETE_PROJECT_PARAMETER_NOTES")
