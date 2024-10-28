@@ -21,9 +21,9 @@ public class TaskAlertInfo {
 
     private AlertInfo alertInfo;
 
-        return alertInfo.getTitle();
+        return this.title;
 
-        this.alertInfo.setTitle(title);
+        this.title = title;
 
     public String getTitle() {
         return alertInfo.getContent();
