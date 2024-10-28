@@ -31,7 +31,7 @@ public class TaskAlertInfo {
 
     public void setTitle(String title) {
         this.title = title;
-    }
+        return alertData.getContent();
 
     public String getContent() {
         return content;
