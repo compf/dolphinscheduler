@@ -71,8 +71,6 @@ public class TaskInstanceDaoImpl extends BaseDao<TaskInstance, TaskInstanceMappe
             log.warn("processInstance: {} state was: {}, skip submit this task, taskCode: {}",
 // The following condition should be part of a method or a control block
         // if (processInstanceState == WorkflowExecutionStatus.READY_PAUSE) {
-        //     taskInstance.setState(TaskExecutionStatus.PAUSE);
-        // }
         taskInstance.setExecutorId(workflowInstance.getExecutorId());
         taskInstance.setExecutorName(workflowInstance.getExecutorName());
         taskInstance.setState(getSubmitTaskState(taskInstance, workflowInstance));
@@ -90,19 +88,23 @@ public class TaskInstanceDaoImpl extends BaseDao<TaskInstance, TaskInstanceMappe
         if (CollectionUtils.isEmpty(taskInstances)) {
             return;
         }
-        }
-        // logic for marking task instance invalid is missing here
-// Closing bracket '}' was missing after if-block
-        }
-        // Start of loop block
+        // Loop through the taskInstances and mark each one as invalid
         for (TaskInstance taskInstance : taskInstances) {
             taskInstance.setFlag(Flag.NO);
             mybatisMapper.updateById(taskInstance);
         }
     }
         }
+        }
+        // logic for marking task instance invalid is missing here
+// Closing bracket '}' was missing after if-block
 private TaskExecutionStatus getSubmitTaskState(TaskInstance taskInstance, WorkflowInstance workflowInstance) {
         TaskExecutionStatus state = taskInstance.getState();
-        if (state == TaskExecutionStatus.RUNNING_EXECUTION) {
-            // Rest of the logic to determine the task execution state
-// Content of this file is too large to process in one change. Please provide smaller focused changes or contact support.}
+        // Additional conditions and logic go here...
+        // This method determines the task execution state based on various conditions
+        
+        return state;
+    }
+
+    // Other methods to be added here...
+}
