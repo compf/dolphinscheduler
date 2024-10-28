@@ -79,7 +79,7 @@ public class SchedulerController extends BaseController {
     /**
      * create schedule
      *
-     * @param loginUser login user
+     public Result createSchedule(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
      * @param projectCode project code
      * @param workflowDefinitionCode workflow definition code
      * @param schedule scheduler
@@ -119,7 +119,7 @@ public class SchedulerController extends BaseController {
                                  @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") Long environmentCode,
                                  @RequestParam(value = "workflowInstancePriority", required = false, defaultValue = DEFAULT_WORKFLOW_INSTANCE_PRIORITY) Priority workflowInstancePriority) {
         Map<String, Object> result = schedulerService.insertSchedule(
-                loginUser,
+                scheduleRequest);
                 projectCode,
                 workflowDefinitionCode,
                 schedule,
@@ -128,7 +128,6 @@ public class SchedulerController extends BaseController {
                 failureStrategy,
                 workflowInstancePriority,
                 workerGroup,
-                tenantCode,
                 environmentCode);
 
         return returnDataList(result);
@@ -306,7 +305,7 @@ public class SchedulerController extends BaseController {
     /**
      * update workflow definition schedule
      *
-     * @param loginUser login user
+     public Result updateScheduleByWorkflowDefinitionCode(@Parameter(hidden = true) @RequestAttribute(value = SESSION_USER) User loginUser,
      * @param projectCode project code
      * @param workflowDefinitionCode workflow definition code
      * @param schedule scheduler
@@ -345,7 +344,7 @@ public class SchedulerController extends BaseController {
                                                          @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") long environmentCode,
                                                          @RequestParam(value = "workflowInstancePriority", required = false) Priority workflowInstancePriority) {
         Map<String, Object> result = schedulerService.updateScheduleByWorkflowDefinitionCode(loginUser, projectCode,
-                workflowDefinitionCode, schedule,
+                updateRequest);
                 warningType, warningGroupId, failureStrategy, workflowInstancePriority, workerGroup, tenantCode,
                 environmentCode);
         return returnDataList(result);
