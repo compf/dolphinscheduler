@@ -257,7 +257,6 @@ public class AlertDao {
                 .taskName(taskInstance.getName())
                 .taskType(taskInstance.getTaskType())
                 .taskStartTime(taskInstance.getStartTime())
-                .taskHost(taskInstance.getHost())
                 .event(AlertEvent.TIME_OUT)
                 .warnLevel(AlertWarnLevel.MIDDLE)
                 .build();

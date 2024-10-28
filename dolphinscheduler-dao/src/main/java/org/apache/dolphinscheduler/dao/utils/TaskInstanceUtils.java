@@ -44,7 +44,6 @@ public class TaskInstanceUtils {
         target.setSubmitTime(source.getSubmitTime());
         target.setStartTime(source.getStartTime());
         target.setEndTime(source.getEndTime());
-        target.setHost(source.getHost());
         target.setExecutePath(source.getExecutePath());
         target.setLogPath(source.getLogPath());
         target.setRetryTimes(source.getRetryTimes());
