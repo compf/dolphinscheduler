@@ -41,7 +41,6 @@ public class WorkflowDefinitionLog extends WorkflowDefinition {
 
     @Override
 
-        return super.equals(o);
-    }
+
 
 
