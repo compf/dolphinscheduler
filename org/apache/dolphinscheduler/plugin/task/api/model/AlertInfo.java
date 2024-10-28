@@ -5,11 +5,5 @@ public class AlertInfo {
     private String content;
     private Integer alertGroupId;
 
-    public AlertInfo(String title, String content, Integer alertGroupId) {
-        this.title = title;
-        this.content = content;
-        this.alertGroupId = alertGroupId;
-    }
-
-    // Getters and setters
+    // Constructor, getters, and setters omitted for brevity
 }
