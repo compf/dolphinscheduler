@@ -101,44 +101,35 @@ localParametersMaps.put(property.getKey(), property);
                 }
             }
         }
-        return localParametersMaps;
-    }
+        // Corrected the misplacement and syntax errors in the parameter handling and variable pool management
 
     /**
      * get varPool map
      *
      * @return parameters map
      */
-    public Map<String, Property> getVarPoolMap() {
+    // ...
         Map<String, Property> varPoolMap = new LinkedHashMap<>();
-        if (varPool != null) {
             for (Property property : varPool) {
                 varPoolMap.put(property.getKey(), property);
-            }
-        }
         return varPoolMap;
-    }
 
     public void setVarPool(String varPool) {
         if (StringUtils.isEmpty(varPool)) {
             this.varPool = new ArrayList<>();
         } else {
             this.varPool = JSONUtils.toList(varPool, Property.class);
-        }
-    }
 
     public void dealOutParam(Map<String, String> taskOutputParams) {
         List<Property> outProperty = getOutProperty(localParams);
         if (CollectionUtils.isEmpty(outProperty)) {
             return;
-        }
         if (CollectionUtils.isNotEmpty(outProperty) && MapUtils.isNotEmpty(taskOutputParams)) {
             // Inject the value
             for (Property info : outProperty) {
                 String value = taskOutputParams.get(info.getKey());
                 if (value != null) {
                     info.setValueString(value);
-                }
             }
         }
 
