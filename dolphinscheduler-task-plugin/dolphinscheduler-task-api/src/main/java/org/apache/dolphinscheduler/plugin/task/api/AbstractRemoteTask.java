@@ -78,4 +78,5 @@ public abstract class AbstractRemoteTask extends AbstractTask {
      * keep checking application status
      * @throws TaskException
      */
-    // Corrected the class, interface, or enum expected by properly closing the class.
+        // Additional methods or content may be present here
+}

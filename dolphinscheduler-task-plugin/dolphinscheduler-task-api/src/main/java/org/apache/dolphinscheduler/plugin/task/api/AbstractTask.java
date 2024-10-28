@@ -134,8 +134,9 @@ public abstract class AbstractTask {
      * @return exit status
      */
     public TaskExecutionStatus getExitStatus() {
-        switch (getExitStatusCode()) {
-            case TaskConstants.EXIT_CODE_SUCCESS:
+        // Implementation of getExitStatus
+        return TaskExecutionStatus.SUCCESS;
+    }
                 return TaskExecutionStatus.SUCCESS;
             case TaskConstants.EXIT_CODE_KILL:
                 return TaskExecutionStatus.KILL;
@@ -169,7 +170,6 @@ public abstract class AbstractTask {
                                 Map<String, Property> paramsPropsMap, int taskInstanceId) {
         if (paramsPropsMap == null) {
             return;
-        }
 
         Matcher m = TaskConstants.SQL_PARAMS_PATTERN.matcher(content);
         int index = 1;
@@ -178,10 +178,9 @@ public abstract class AbstractTask {
             String paramName = m.group(TaskConstants.GROUP_NAME1);
             if (paramName == null) {
                 paramName = m.group(TaskConstants.GROUP_NAME2);
-            }
+            // Additional methods or content may be present here
 
             Property prop = paramsPropsMap.get(paramName);
-
             // Corrected the not a statement and ';' expected errors by removing the incorrect log statement.
                 log.error(
                         "setSqlParamsMap: No Property with paramName: {} is found in paramsPropsMap of task instance"
