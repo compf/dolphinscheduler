@@ -77,8 +77,8 @@ public class ProjectParameterServiceTest {
         // PERMISSION DENIED
         when(projectService.hasProjectAndWritePerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class)))
                 .thenReturn(false);
-        Result result = projectParameterService.createProjectParameter(loginUser, projectCode, "key", "value",
-                DataType.VARCHAR.name());
+        ProjectParameterInfo projectParameterInfo = new ProjectParameterInfo(loginUser, projectCode, "key", "value", DataType.VARCHAR.name());
+        Result result = projectParameterService.createProjectParameter(projectParameterInfo);
         assertNull(result.getData());
         assertNull(result.getCode());
         assertNull(result.getMsg());
@@ -90,8 +90,8 @@ public class ProjectParameterServiceTest {
         try (MockedStatic<CodeGenerateUtils> ignored = Mockito.mockStatic(CodeGenerateUtils.class)) {
             when(CodeGenerateUtils.genCode()).thenThrow(CodeGenerateUtils.CodeGenerateException.class);
 
-            result = projectParameterService.createProjectParameter(loginUser, projectCode, "key", "value",
-                    DataType.VARCHAR.name());
+            projectParameterInfo = new ProjectParameterInfo(loginUser, projectCode, "key", "value", DataType.VARCHAR.name());
+            result = projectParameterService.createProjectParameter(projectParameterInfo);
             assertEquals(Status.CREATE_PROJECT_PARAMETER_ERROR.getCode(), result.getCode());
         }
 
@@ -123,8 +123,8 @@ public class ProjectParameterServiceTest {
         // NO PERMISSION
         when(projectService.hasProjectAndWritePerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class)))
                 .thenReturn(false);
-        Result result = projectParameterService.updateProjectParameter(loginUser, projectCode, 1, "key", "value",
-                DataType.VARCHAR.name());
+        ProjectParameterInfo projectParameterInfo = new ProjectParameterInfo(loginUser, projectCode, 1, "key", "value", DataType.VARCHAR.name());
+        Result result = projectParameterService.updateProjectParameter(projectParameterInfo);
         assertNull(result.getData());
         assertNull(result.getCode());
         assertNull(result.getMsg());
