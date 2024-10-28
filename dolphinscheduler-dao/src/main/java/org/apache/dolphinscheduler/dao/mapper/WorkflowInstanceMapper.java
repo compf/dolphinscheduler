@@ -262,7 +262,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
     List<WorkflowInstance> queryByWorkflowCodeVersionStatus(@Param("workflowDefinitionCode") long workflowDefinitionCode,
                                                             @Param("workflowDefinitionVersion") int workflowDefinitionVersion,
                                                             @Param("states") int[] states);
-
+     
     /**
      * Filter workflow instance
      *
@@ -279,11 +279,12 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
                                                               @Param("workflowDefinitionCode") Long workflowDefinitionCode,
                                                               @Param("name") String name,
                                                               @Param("startTime") String startTime,
-                                                              @Param("endTime") String endTime,
+                                                              */
                                                               @Param("state") Integer state,
                                                               @Param("host") String host);
 
-    /**
+    IPage<WorkflowInstance> queryWorkflowInstanceListV2Paging(Page<WorkflowInstance> page,
+                                                              @Param("endTime") String endTime);
      * Statistics workflow instance state v2
      * <p>
      * We only need project codes to determine whether the workflow instance belongs to the user or not.
@@ -296,8 +297,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @param projectIds   projectIds
      * @return ExecuteStatusCount list
      */
-    List<ExecuteStatusCount> countInstanceStateV2(
-                                                  @Param("startTime") Date startTime,
+    List<ExecuteStatusCount> countInstanceStateV2(@Param("startTime") Date startTime);
                                                   @Param("endTime") Date endTime,
                                                   @Param("projectCode") Long projectCode,
                                                   @Param("workflowCode") Long workflowCode,
