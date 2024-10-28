@@ -50,8 +50,6 @@ public class TaskInstance implements Serializable {
 
     private Long projectCode;
 
-    private long taskCode;
-
     private int taskDefinitionVersion;
 
     @TableField(exist = false)
