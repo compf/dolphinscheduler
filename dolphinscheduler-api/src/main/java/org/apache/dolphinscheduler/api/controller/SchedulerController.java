@@ -118,7 +118,7 @@ public class SchedulerController extends BaseController {
                                  @RequestParam(value = "tenantCode", required = false, defaultValue = "default") String tenantCode,
                                  @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") Long environmentCode,
                                  @RequestParam(value = "workflowInstancePriority", required = false, defaultValue = DEFAULT_WORKFLOW_INSTANCE_PRIORITY) Priority workflowInstancePriority) {
-        Map<String, Object> result = schedulerService.insertSchedule(
+        Map<String, Object> result = schedulerService.insertSchedule(createRequest);
                 loginUser,
                 projectCode,
                 workflowDefinitionCode,
@@ -130,10 +130,7 @@ public class SchedulerController extends BaseController {
                 workerGroup,
                 tenantCode,
                 environmentCode);
-
-        return returnDataList(result);
     }
-
     /**
      * updateWorkflowInstance schedule
      *
