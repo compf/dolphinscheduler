@@ -303,5 +303,5 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @param triggerCode
      * @return
      */
-    List<WorkflowInstance> queryByTriggerCode(@Param("triggerCode") Long triggerCode);
+
 }
