@@ -274,7 +274,6 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @param endTime               endTime
      * @return workflow instance IPage
      */
-                                                              @Param("instanceQuery") InstanceQuery instanceQuery,
                                                               
 
     /**
