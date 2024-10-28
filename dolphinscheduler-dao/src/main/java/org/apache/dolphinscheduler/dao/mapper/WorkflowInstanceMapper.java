@@ -275,7 +275,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
                                                               @Param("projectCode") Long projectCode,
                                                               @Param("workflowDefinitionCode") Long workflowDefinitionCode,
                                                               @Param("name") String name,
-                                                              @Param("startTime") String startTime,
+                                                              @Param("startTime") String startTime
                                                               );
 
     /**
