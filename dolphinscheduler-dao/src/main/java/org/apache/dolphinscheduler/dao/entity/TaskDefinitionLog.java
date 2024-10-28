@@ -37,11 +37,7 @@ public class TaskDefinitionLog extends TaskDefinition {
      */
     private Date operateTime;
 
-    public TaskDefinitionLog() {
         super();
-    }
-
-    public TaskDefinitionLog(TaskDefinition taskDefinition) {
         super();
         this.setCode(taskDefinition.getCode());
         this.setVersion(taskDefinition.getVersion());

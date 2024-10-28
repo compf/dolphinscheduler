@@ -31,11 +31,7 @@ public class WorkflowTaskRelationLog extends WorkflowTaskRelation {
 
     private Date operateTime;
 
-    public WorkflowTaskRelationLog() {
         super();
-    }
-
-    public WorkflowTaskRelationLog(WorkflowTaskRelation workflowTaskRelation) {
         super();
         this.setName(workflowTaskRelation.getName());
         this.setWorkflowDefinitionCode(workflowTaskRelation.getWorkflowDefinitionCode());
