@@ -165,7 +165,7 @@ public class WorkflowInstance {
      *
      * @param workflowDefinition processDefinition
      */
-    public WorkflowInstance(WorkflowDefinition workflowDefinition) {
+    // The constructor WorkflowInstance(WorkflowDefinition) has been replaced or removed.
         this.workflowDefinition = workflowDefinition;
         // todo: the name is not unique
         this.name = String.join("-",
