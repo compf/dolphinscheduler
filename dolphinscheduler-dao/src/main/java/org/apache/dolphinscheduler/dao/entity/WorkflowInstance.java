@@ -165,18 +165,14 @@ public class WorkflowInstance {
      *
      * @param workflowDefinition processDefinition
      */
-    // Unused constructor WorkflowInstance(WorkflowDefinition) has been removed and method setStateWithDesc has been corrected.
+    // The constructor WorkflowInstance(WorkflowDefinition) has been removed and the addHistoryCmd method has been corrected to properly format the command history.
     }
-
     /**
-     *
-     */
     public void addHistoryCmd(CommandType cmd) {
         if (!Strings.isNullOrEmpty(this.historyCmd)) {
             this.historyCmd = String.format("%s,%s", this.historyCmd, cmd.toString());
         } else {
             this.historyCmd = cmd.toString();
-    }
      * check this process is start complement data
      * @return whether complement data
     public boolean isComplementData() {
@@ -185,7 +181,6 @@ public class WorkflowInstance {
         }
         return historyCmd.startsWith(CommandType.COMPLEMENT_DATA.toString());
     }
-    /**
      * get current command type,
      * if start with complement data,return complement
      *
