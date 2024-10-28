@@ -43,7 +43,8 @@ public class TaskInstance implements Serializable {
     private String name;
 
     private String taskType;
-
+    private Long projectCode;
+    private String host;
     private int workflowInstanceId;
 
     private String workflowInstanceName;
@@ -137,7 +138,7 @@ public class TaskInstance implements Serializable {
     private Integer memoryMax;
 
     private TaskExecuteType taskExecuteType;
-
+    public void init(String host, Date startTime, String executePath) {
     private int testFlag;
 
     public void init(String host, Date startTime, String executePath) {
