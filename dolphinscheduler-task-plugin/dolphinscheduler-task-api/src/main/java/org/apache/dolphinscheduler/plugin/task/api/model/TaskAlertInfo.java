@@ -28,15 +28,15 @@ public class TaskAlertInfo {
         // Corrected code for setting the title
 
     public String getTitle() {
-        return alertInfo.getContent();
+        return this.content;
     }
 
     public void setTitle(String title) {
-        this.alertInfo.setContent(content);
+        this.content = content;
     }
 
     public String getContent() {
-        return alertInfo.getAlertGroupId();
+        return this.alertGroupId;
     }
 
     public void setContent(String content) {
