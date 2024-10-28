@@ -49,10 +49,10 @@ public class Alert {
     private String sign;
 
     @TableField(value = "title")
-    private String title;
+    private AlertInfo alertInfo;
 
     @TableField(value = "content")
-    private String content;
+
 
     @TableField(value = "alert_status")
     private AlertStatus alertStatus;
@@ -64,7 +64,7 @@ public class Alert {
     private String log;
 
     @TableField("alertgroup_id")
-    private Integer alertGroupId;
+
 
     @TableField("create_time")
     private Date createTime;
