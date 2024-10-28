@@ -29,7 +29,7 @@ public class TaskAlertInfo {
         return title;
     }
 
-    public void setTitle(String title) {
+    public String getTitle() {
         this.title = title;
     }
 
@@ -39,12 +39,18 @@ public class TaskAlertInfo {
 
     public void setContent(String content) {
         this.content = content;
-    }
+    
 
     public Integer getAlertGroupId() {
         return alertGroupId;
+    public Integer getAlertGroupId() {
     }
 
+    public void setAlertGroupId(Integer alertGroupId) {
+        alertInfo.setAlertGroupId(alertGroupId);
+    }
+
+}
     public void setAlertGroupId(Integer alertGroupId) {
         this.alertGroupId = alertGroupId;
     }
