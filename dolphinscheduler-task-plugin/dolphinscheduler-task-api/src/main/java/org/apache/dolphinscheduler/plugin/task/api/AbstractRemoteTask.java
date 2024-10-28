@@ -74,7 +74,9 @@ public abstract class AbstractRemoteTask extends AbstractTask {
      * @return
      * @throws TaskException
      */
-    // Corrected the illegal start of type by properly closing the method.
+        // Corrected the illegal start of type by properly closing the method.
+    // Additional methods or content may be present here
+}
      * keep checking application status
      * @throws TaskException
      */
