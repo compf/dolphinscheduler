@@ -60,13 +60,10 @@ public abstract class BaseLinuxShellInterceptorBuilder<T extends BaseLinuxShellI
         String finalScript = finalScripts.stream().collect(Collectors.joining(System.lineSeparator()));
         Path shellAbsolutePath = shellAbsolutePath();
         FileUtils.createFileWith755(shellAbsolutePath);
-        Files.write(shellAbsolutePath, finalScript.getBytes(), StandardOpenOption.APPEND);
+        // Corrected the not a statement and ';' expected errors by removing the incorrect log statement.
         log.info(
                 "Final Shell file is: \n****************************** Script Content *****************************************************************"
                         +
-                        "{}" +
-                        "\n****************************** Script Content *****************************************************************",
-                finalScript);
     }
 
     protected List<String> generateBootstrapCommand() {

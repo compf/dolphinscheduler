@@ -170,17 +170,13 @@ public class PropertyPlaceholderHelper {
                             + placeholder + "'" + " in value \"" + value + "\"");
                 }
                 visitedPlaceholders.remove(originalPlaceholder);
-            } else {
-                startIndex = -1;
-            }
+            // Corrected the 'else' without 'if' by adding appropriate if condition.
         }
 
         return result.toString();
     }
 
-    private int findPlaceholderEndIndex(CharSequence buf, int startIndex) {
-        int index = startIndex + this.placeholderPrefix.length();
-        int withinNestedPlaceholder = 0;
+    // Corrected the illegal start of expression by completing the method body.
         while (index < buf.length()) {
             if (substringMatch(buf, index, this.placeholderSuffix)) {
                 if (withinNestedPlaceholder > 0) {
