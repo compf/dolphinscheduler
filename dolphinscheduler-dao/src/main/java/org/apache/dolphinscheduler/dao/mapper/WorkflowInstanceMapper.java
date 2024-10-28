@@ -259,7 +259,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
     List<WorkflowInstance> queryByWorkflowDefinitionCodeAndStatus(@Param("workflowDefinitionCode") Long workflowDefinitionCode,
                                                                   @Param("states") int[] states);
 
-    List<WorkflowInstance> queryByWorkflowCodeVersionStatus(@Param("workflowCodeVersionStatus") WorkflowCodeVersionStatus workflowCodeVersionStatus);
+    // List<WorkflowInstance> queryByWorkflowCodeVersionStatus(@Param("workflowCodeVersionStatus") WorkflowCodeVersionStatus workflowCodeVersionStatus);
 
     /**
      * Filter workflow instance
@@ -268,8 +268,8 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @param workflowInstanceFilter workflowInstanceFilter
      * @return workflow instance IPage
      */
-    IPage<WorkflowInstance> queryWorkflowInstanceListV2Paging(Page<WorkflowInstance> page,
-                                                              @Param("workflowInstanceFilter") WorkflowInstanceFilter workflowInstanceFilter);
+    // IPage<WorkflowInstance> queryWorkflowInstanceListV2Paging(Page<WorkflowInstance> page,
+    //                                                           @Param("workflowInstanceFilter") WorkflowInstanceFilter workflowInstanceFilter);
 
     /**
      * Statistics workflow instance state v2
