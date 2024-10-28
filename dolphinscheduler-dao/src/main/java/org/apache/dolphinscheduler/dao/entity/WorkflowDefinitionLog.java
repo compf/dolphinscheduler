@@ -44,19 +44,19 @@ public class WorkflowDefinitionLog extends WorkflowDefinition {
         this.setDescription(workflowDefinition.getDescription());
         this.setGlobalParams(workflowDefinition.getGlobalParams());
         this.setGlobalParamList(workflowDefinition.getGlobalParamList());
-        this.setGlobalParamMap(workflowDefinition.getGlobalParamMap());
-        this.setCreateTime(workflowDefinition.getCreateTime());
-        this.setUpdateTime(workflowDefinition.getUpdateTime());
-        this.setFlag(workflowDefinition.getFlag());
-        this.setUserId(workflowDefinition.getUserId());
-        this.setUserName(workflowDefinition.getUserName());
-        this.setProjectName(workflowDefinition.getProjectName());
-        this.setLocations(workflowDefinition.getLocations());
-        this.setScheduleReleaseState(workflowDefinition.getScheduleReleaseState());
-        this.setTimeout(workflowDefinition.getTimeout());
-        this.setModifyBy(workflowDefinition.getModifyBy());
-        this.setWarningGroupId(workflowDefinition.getWarningGroupId());
-        this.setExecutionType(workflowDefinition.getExecutionType());
+        this.globalParamMap = workflowDefinition.globalParamMap;
+        this.createTime = workflowDefinition.createTime;
+        this.updateTime = workflowDefinition.updateTime;
+        this.flag = workflowDefinition.flag;
+        this.userId = workflowDefinition.userId;
+        this.userName = workflowDefinition.userName;
+        this.projectName = workflowDefinition.projectName;
+        this.locations = workflowDefinition.locations;
+        this.scheduleReleaseState = workflowDefinition.scheduleReleaseState;
+        this.timeout = workflowDefinition.timeout;
+        this.modifyBy = workflowDefinition.modifyBy;
+        this.warningGroupId = workflowDefinition.warningGroupId;
+        this.executionType = workflowDefinition.executionType;
     }
 
     @Override
