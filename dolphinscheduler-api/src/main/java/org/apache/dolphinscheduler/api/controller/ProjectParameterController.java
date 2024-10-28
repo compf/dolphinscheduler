@@ -69,7 +69,9 @@ public class ProjectParameterController extends BaseController {
     @ApiException(CREATE_PROJECT_PARAMETER_ERROR)
     public Result createProjectParameter(@Parameter(hidden = true) @RequestAttribute(value = Constants.SESSION_USER) User loginUser,
                                          @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
-                                         ProjectParameterRequest parameterRequest) {
+                                         @RequestParam("projectParameterName") String projectParameterName,
+                                         @RequestParam(value = "projectParameterValue") String projectParameterValue,
+                                         @RequestParam(value = "projectParameterDataType", defaultValue = "VARCHAR") String projectParameterDataType) {
         return projectParameterService.createProjectParameter(loginUser, projectCode, projectParameterName,
                 projectParameterValue, projectParameterDataType);
     }
@@ -87,7 +89,9 @@ public class ProjectParameterController extends BaseController {
     public Result updateProjectParameter(@Parameter(hidden = true) @RequestAttribute(value = Constants.SESSION_USER) User loginUser,
                                          @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
                                          @PathVariable("code") Long code,
-                                         ProjectParameterRequest parameterRequest) {
+                                         @RequestParam("projectParameterName") String projectParameterName,
+                                         @RequestParam(value = "projectParameterValue") String projectParameterValue,
+                                         @RequestParam(value = "projectParameterDataType") String projectParameterDataType) {
         return projectParameterService.updateProjectParameter(loginUser, projectCode, code, projectParameterName,
                 projectParameterValue, projectParameterDataType);
     }
@@ -101,7 +105,7 @@ public class ProjectParameterController extends BaseController {
     @ApiException(DELETE_PROJECT_PARAMETER_ERROR)
     public Result deleteProjectParametersByCode(@Parameter(hidden = true) @RequestAttribute(value = Constants.SESSION_USER) User loginUser,
                                                 @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
-                                                @RequestParam("code") ProjectParameterCode parameterCode) {
+                                                @RequestParam("code") long code) {
 
         return projectParameterService.deleteProjectParametersByCode(loginUser, projectCode, code);
     }
@@ -115,7 +119,7 @@ public class ProjectParameterController extends BaseController {
     @ApiException(DELETE_PROJECT_PARAMETER_ERROR)
     public Result batchDeleteProjectParametersByCodes(@Parameter(hidden = true) @RequestAttribute(value = Constants.SESSION_USER) User loginUser,
                                                       @Parameter(name = "projectCode", description = "PROJECT_CODE", required = true) @PathVariable long projectCode,
-                                                      @RequestParam("codes") ProjectParameterCodes parameterCodes) {
+                                                      @RequestParam("codes") String codes) {
 
         return projectParameterService.batchDeleteProjectParametersByCodes(loginUser, projectCode, codes);
     }
