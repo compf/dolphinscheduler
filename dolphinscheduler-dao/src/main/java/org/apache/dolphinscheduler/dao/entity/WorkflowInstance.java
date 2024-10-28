@@ -165,13 +165,7 @@ public class WorkflowInstance {
      *
      * @param workflowDefinition processDefinition
      */
-    // The constructor WorkflowInstance(WorkflowDefinition) has been replaced or removed.
-        this.workflowDefinition = workflowDefinition;
-        // todo: the name is not unique
-        this.name = String.join("-",
-                workflowDefinition.getName(),
-                String.valueOf(workflowDefinition.getVersion()),
-                DateUtils.getCurrentTimeStamp());
+    // Unused constructor WorkflowInstance(WorkflowDefinition) has been removed.
     }
 
     /**
