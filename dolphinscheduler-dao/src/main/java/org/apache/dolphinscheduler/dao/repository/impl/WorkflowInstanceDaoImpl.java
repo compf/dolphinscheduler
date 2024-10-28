@@ -96,8 +96,8 @@ public class WorkflowInstanceDaoImpl extends BaseDao<WorkflowInstance, WorkflowI
         return mybatisMapper.queryLastSchedulerWorkflow(
                 workflowDefinitionCode,
                 taskDefinitionCode,
-                dateInterval.getStartTime(),
-                dateInterval.getEndTime(),
+                dateInterval.getStartTime().toString(),
+                dateInterval.getEndTime().toString(),
                 testFlag);
     }
 
@@ -115,8 +115,8 @@ public class WorkflowInstanceDaoImpl extends BaseDao<WorkflowInstance, WorkflowI
                                                             int testFlag) {
         return mybatisMapper.queryLastManualWorkflow(definitionCode,
                 taskCode,
-                dateInterval.getStartTime(),
-                dateInterval.getEndTime(),
+                dateInterval.getStartTime().toString(),
+                dateInterval.getEndTime().toString(),
                 testFlag);
     }
 

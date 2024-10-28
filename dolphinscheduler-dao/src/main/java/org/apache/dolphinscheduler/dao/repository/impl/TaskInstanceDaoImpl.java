@@ -126,7 +126,7 @@ public class TaskInstanceDaoImpl extends BaseDao<TaskInstance, TaskInstanceMappe
             return true;
         }
         List<TaskInstance> taskInstances =
-                this.queryValidTaskListByWorkflowInstanceId(taskInstance.getWorkflowInstanceId(),
+                this.queryValidTaskListByWorkflowInstanceId(taskInstance.getWorkflowInstance().getId(),
                         taskInstance.getTestFlag());
 
         for (TaskInstance task : taskInstances) {
