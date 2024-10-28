@@ -1,7 +1,11 @@
 public class TaskInstanceInitInfo {
 
     private String host;
-    import java.util.Date;
+    package org.apache.dolphinscheduler.dao.entity;
+
+import java.util.Date;
+
+public class TaskInstanceInitInfo {
 
     private String host;
     private Date startTime;
