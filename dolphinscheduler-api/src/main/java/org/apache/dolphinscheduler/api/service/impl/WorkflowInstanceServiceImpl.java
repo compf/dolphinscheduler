@@ -399,7 +399,7 @@ public class WorkflowInstanceServiceImpl extends BaseServiceImpl implements Work
                 workflowInstance.getName(),
                 workflowInstanceQueryRequest.getStartTime(),
                 workflowInstanceQueryRequest.getEndTime(),
-                workflowInstanceQueryRequest.getState(),
+                Integer.parseInt(workflowInstanceQueryRequest.getState()),
                 workflowInstance.getHost());
 
         List<WorkflowInstance> workflowInstances = workflowInstanceList.getRecords();
