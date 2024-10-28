@@ -23,7 +23,7 @@ public class TaskAlertInfo {
 
     private String content;
 
-    private Integer alertGroupId;
+    private AlertGroup alertGroup;
 
     public String getTitle() {
         return title;
@@ -42,10 +42,10 @@ public class TaskAlertInfo {
     }
 
     public Integer getAlertGroupId() {
-        return alertGroup.getId();
+        return alertGroupId;
     }
 
     public void setAlertGroupId(Integer alertGroupId) {
-        this.alertGroup = new AlertGroup(alertGroupId);
+        this.alertGroupId = alertGroupId;
     }
 }
