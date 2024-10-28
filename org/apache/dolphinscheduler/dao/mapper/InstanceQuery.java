@@ -1,9 +1,10 @@
 public class InstanceQuery {
+    private Date startTime;
+    private Date endTime;
     private Long projectCode;
-    private Long workflowDefinitionCode;
-    private String startTime;
-    private String endTime;
-    private Integer state;
+    private Long workflowCode;
+    private Integer model;
+    private Set<Integer> projectIds;
 
     // Constructor, getters, and setters
 }
