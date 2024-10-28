@@ -49,20 +49,15 @@ public class TaskAlertInfo {
 
     public void setAlertGroupId(Integer alertGroupId) {
         this.alertGroupId = alertGroupId;
+    public String getContent() {
     }
-}
         return content;
     }
 
     public void setContent(String content) {
         this.content = content;
     }
-
-    public Integer getAlertGroupId() {
         return alertGroupId;
     }
 
-    public void setAlertGroupId(Integer alertGroupId) {
         this.alertGroupId = alertGroupId;
-    }
-}
