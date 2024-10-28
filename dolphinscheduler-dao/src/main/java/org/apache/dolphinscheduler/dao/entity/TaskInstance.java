@@ -40,15 +40,12 @@ public class TaskInstance implements Serializable {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private String name;
+    private TaskInstanceDetails taskInstanceDetails;
 
     private String taskType;
 
     private int workflowInstanceId;
-
     private String workflowInstanceName;
-
-    private Long projectCode;
 
     private long taskCode;
 
@@ -140,8 +137,8 @@ public class TaskInstance implements Serializable {
 
     private int testFlag;
 
-    public void init(String host, Date startTime, String executePath) {
-        this.host = host;
+    public void init(TaskInstanceDetails taskInstanceDetails, Date startTime, String executePath) {
+        this.taskInstanceDetails = taskInstanceDetails;
         this.startTime = startTime;
         this.executePath = executePath;
     }
