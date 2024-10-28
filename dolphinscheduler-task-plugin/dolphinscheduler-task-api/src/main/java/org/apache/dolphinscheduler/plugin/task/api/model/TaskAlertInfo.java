@@ -19,7 +19,9 @@ package org.apache.dolphinscheduler.plugin.task.api.model;
 
 public class TaskAlertInfo {
 
-    private AlertDetails details;
+    private String title;
+    private String content;
+    private Integer alertGroupId;
 
 
 
