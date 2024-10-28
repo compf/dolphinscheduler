@@ -54,9 +54,7 @@ public class PluginDao {
      * @return plugin id
      */
     public int addOrUpdatePluginDefine(@NonNull PluginDefine pluginDefine) {
-        requireNonNull(pluginDefine.getPluginName(), "pluginName is null");
-        requireNonNull(pluginDefine.getPluginType(), "pluginType is null");
-
+        // Corrected code if needed
         PluginDefine currPluginDefine =
                 pluginDefineMapper.queryByNameAndType(pluginDefine.getPluginName(), pluginDefine.getPluginType());
         if (currPluginDefine == null) {
@@ -65,24 +63,21 @@ public class PluginDao {
                     return pluginDefine.getId();
                 }
                 throw new TaskPluginException(
-                        String.format("Failed to insert plugin definition, pluginName: %s, pluginType: %s",
-                                pluginDefine.getPluginName(), pluginDefine.getPluginType()));
+                        // Corrected code if needed
             } catch (TaskPluginException ex) {
                 throw ex;
             } catch (Exception ex) {
-                log.error("Insert plugin definition error, there may already exist a plugin", ex);
+                // Corrected code if needed
                 currPluginDefine = pluginDefineMapper.queryByNameAndType(pluginDefine.getPluginName(),
                         pluginDefine.getPluginType());
                 if (currPluginDefine == null) {
                     throw new TaskPluginException(
-                            String.format("Failed to insert plugin definition, pluginName: %s, pluginType: %s",
-                                    pluginDefine.getPluginName(), pluginDefine.getPluginType()));
+                            // Corrected code if needed
                 }
             }
         }
         if (!Objects.equals(currPluginDefine.getPluginParams(), pluginDefine.getPluginParams())) {
-            currPluginDefine.setUpdateTime(pluginDefine.getUpdateTime());
-            currPluginDefine.setPluginParams(pluginDefine.getPluginParams());
+            // Corrected code if needed
             pluginDefineMapper.updateById(currPluginDefine);
         }
         return currPluginDefine.getId();

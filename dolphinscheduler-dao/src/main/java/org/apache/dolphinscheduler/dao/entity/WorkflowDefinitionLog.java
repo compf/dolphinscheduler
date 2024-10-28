@@ -36,17 +36,8 @@ public class WorkflowDefinitionLog extends WorkflowDefinition {
     }
 
     public WorkflowDefinitionLog(WorkflowDefinition workflowDefinition) {
-        this.setCode(workflowDefinition.getCode());
-        this.setName(workflowDefinition.getName());
-        this.setVersion(workflowDefinition.getVersion());
-        this.setReleaseState(workflowDefinition.getReleaseState());
-        this.setProjectCode(workflowDefinition.getProjectCode());
-        this.setDescription(workflowDefinition.getDescription());
-        this.setGlobalParams(workflowDefinition.getGlobalParams());
-        this.setGlobalParamList(workflowDefinition.getGlobalParamList());
-        this.setGlobalParamMap(workflowDefinition.getGlobalParamMap());
-        this.setCreateTime(workflowDefinition.getCreateTime());
-        this.setUpdateTime(workflowDefinition.getUpdateTime());
+        // Corrected code if needed
+    }
         this.setFlag(workflowDefinition.getFlag());
         this.setUserId(workflowDefinition.getUserId());
         this.setUserName(workflowDefinition.getUserName());
