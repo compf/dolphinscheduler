@@ -137,9 +137,9 @@ public class TaskInstance implements Serializable {
     private Integer memoryMax;
 
     private TaskExecuteType taskExecuteType;
-
-    private int testFlag;
-    public void init(TaskInitializationData initializationData) {
+    public void init(String host, Date startTime, String executePath) {
+        this.host = host;
+        this.startTime = startTime;
+        this.executePath = executePath;
     }
-
 }

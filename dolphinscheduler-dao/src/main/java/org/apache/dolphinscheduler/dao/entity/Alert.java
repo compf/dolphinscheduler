@@ -46,8 +46,8 @@ public class Alert {
     private Integer id;
 
     @TableField(value = "sign")
-    private String sign;
-
+    private String title;
+    private String content;
     @TableField(value = "title")
     private String title;
 
