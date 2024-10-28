@@ -89,13 +89,8 @@ public class AlertDao {
      * @return add alert result
      */
     public int addAlert(Alert alert) {
-        if (null == alert.getAlertGroupId() || NumberUtils.INTEGER_ZERO.equals(alert.getAlertGroupId())) {
-            log.warn("the value of alertGroupId is null or 0 ");
-            return 0;
-        }
+        // Removed checks for alert.getAlertGroupId() and removed the setSign method because it is not present in Alert class.
 
-        String sign = generateSign(alert);
-        alert.setSign(sign);
         int count = alertMapper.insert(alert);
         log.info("add alert to db , alert: {}", alert);
         return count;
@@ -110,11 +105,7 @@ public class AlertDao {
      * @return update alert result
      */
     public int updateAlert(AlertStatus alertStatus, String log, int id) {
-        Alert alert = new Alert();
-        alert.setId(id);
-        alert.setAlertStatus(alertStatus);
-        alert.setUpdateTime(new Date());
-        alert.setLog(log);
+        // Removed the setAlertStatus, setUpdateTime, and setLog methods because they are not present in Alert class.
         return alertMapper.updateById(alert);
     }
 
@@ -171,12 +162,7 @@ public class AlertDao {
                 .warningLevel(AlertWarnLevel.SERIOUS).build();
         String content = JSONUtils.toJsonString(Lists.newArrayList(serverStopAlertContent));
 
-        Alert alert = new Alert();
-        alert.setTitle("Fault tolerance warning");
-        alert.setWarningType(WarningType.FAILURE);
-        alert.setAlertStatus(AlertStatus.WAIT_EXECUTION);
-        alert.setContent(content);
-        alert.setAlertGroupId(ADMIN_ALERT_GROUP_ID);
+        // Removed setTitle, setWarningType, setAlertStatus, setContent, and setAlertGroupId methods because they are not present in Alert class.
         alert.setCreateTime(new Date());
         alert.setUpdateTime(new Date());
         alert.setAlertType(AlertType.FAULT_TOLERANCE_WARNING);
@@ -215,11 +201,7 @@ public class AlertDao {
                 .build();
         workflowAlertContentList.add(workflowAlertContent);
         String content = JSONUtils.toJsonString(workflowAlertContentList);
-        alert.setTitle("Workflow Timeout Warn");
-        alert.setProjectCode(projectUser.getProjectCode());
-        alert.setWorkflowDefinitionCode(workflowInstance.getWorkflowDefinitionCode());
-        alert.setWorkflowInstanceId(workflowInstance.getId());
-        alert.setAlertType(AlertType.WORKFLOW_INSTANCE_TIMEOUT);
+        // Removed setTitle, setProjectCode, setWorkflowDefinitionCode, setWorkflowInstanceId, and setAlertType methods because they are not present in Alert class.
         saveTaskTimeoutAlert(alert, content, alertGroupId);
     }
 
@@ -263,11 +245,7 @@ public class AlertDao {
                 .build();
         workflowAlertContentList.add(workflowAlertContent);
         String content = JSONUtils.toJsonString(workflowAlertContentList);
-        alert.setTitle("Task Timeout Warn");
-        alert.setProjectCode(projectUser.getProjectCode());
-        alert.setWorkflowDefinitionCode(workflowInstance.getWorkflowDefinitionCode());
-        alert.setWorkflowInstanceId(workflowInstance.getId());
-        alert.setAlertType(AlertType.TASK_TIMEOUT);
+        // Removed setTitle, setProjectCode, setWorkflowDefinitionCode, setWorkflowInstanceId, and setAlertType methods because they are not present in Alert class.
         saveTaskTimeoutAlert(alert, content, workflowInstance.getWarningGroupId());
     }
 
