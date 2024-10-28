@@ -1,0 +1,908 @@
+{
+  "name" : "DingTalkSender",
+  "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 62,
+    "startColumn" : 14,
+    "endLine" : 62,
+    "endColumn" : 19
+  },
+  "modifiers" : [ "PUBLIC", "FINAL" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/atDingtalkIds" : {
+      "name" : "atDingtalkIds",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/atDingtalkIds",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 70,
+        "startColumn" : 26,
+        "endLine" : 70,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/msgType" : {
+      "name" : "msgType",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/msgType",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 20,
+        "endLine" : 67,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/atMobiles" : {
+      "name" : "atMobiles",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/atMobiles",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 26,
+        "endLine" : 69,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/url" : {
+      "name" : "url",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/url",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 26,
+        "endLine" : 64,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/keyword" : {
+      "name" : "keyword",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/keyword",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 26,
+        "endLine" : 65,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/secret" : {
+      "name" : "secret",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/secret",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 26,
+        "endLine" : 66,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/password" : {
+      "name" : "password",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/password",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 20,
+        "endLine" : 81,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/enableProxy" : {
+      "name" : "enableProxy",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/enableProxy",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 73,
+        "startColumn" : 27,
+        "endLine" : 73,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/atAll" : {
+      "name" : "atAll",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/atAll",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 27,
+        "endLine" : 71,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/port" : {
+      "name" : "port",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/port",
+      "type" : "java.lang.Integer",
+      "displayedType" : "Integer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 21,
+        "endLine" : 77,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/user" : {
+      "name" : "user",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/user",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 20,
+        "endLine" : 79,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/proxy" : {
+      "name" : "proxy",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/memberField/proxy",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 20,
+        "endLine" : 75,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/sendDingTalkMsg(java.lang.String title, java.lang.String content)" : {
+      "name" : "sendDingTalkMsg",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/sendDingTalkMsg(java.lang.String title, java.lang.String content)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.org.apache.dolphinscheduler.alert.api.AlertResult",
+      "displayedType" : "AlertResult",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 159,
+        "startColumn" : 24,
+        "endLine" : 159,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "title",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/sendDingTalkMsg(java.lang.String title, java.lang.String content)/parameter/title",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 159,
+          "startColumn" : 47,
+          "endLine" : 159,
+          "endColumn" : 52
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/sendDingTalkMsg(java.lang.String title, java.lang.String content)"
+      }, {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/sendDingTalkMsg(java.lang.String title, java.lang.String content)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 159,
+          "startColumn" : 61,
+          "endLine" : 159,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/sendDingTalkMsg(java.lang.String title, java.lang.String content)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)" : {
+      "name" : "getProxyClient",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.org.apache.http.impl.client.CloseableHttpClient",
+      "displayedType" : "CloseableHttpClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 110,
+        "startColumn" : 40,
+        "endLine" : 110,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "proxy",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)/parameter/proxy",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 62,
+          "endLine" : 110,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)"
+      }, {
+        "name" : "port",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)/parameter/port",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 73,
+          "endLine" : 110,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)"
+      }, {
+        "name" : "user",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)/parameter/user",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 86,
+          "endLine" : 110,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)"
+      }, {
+        "name" : "password",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)/parameter/password",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 99,
+          "endLine" : 110,
+          "endColumn" : 107
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getProxyClient(java.lang.String proxy, int port, java.lang.String user, java.lang.String password)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/checkSendDingTalkSendMsgResult(java.lang.String result)" : {
+      "name" : "checkSendDingTalkSendMsgResult",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/checkSendDingTalkSendMsgResult(java.lang.String result)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.org.apache.dolphinscheduler.alert.api.AlertResult",
+      "displayedType" : "AlertResult",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 127,
+        "startColumn" : 25,
+        "endLine" : 127,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "result",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/checkSendDingTalkSendMsgResult(java.lang.String result)/parameter/result",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 127,
+          "startColumn" : 63,
+          "endLine" : 127,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/checkSendDingTalkSendMsgResult(java.lang.String result)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateSignedUrl()" : {
+      "name" : "generateSignedUrl",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateSignedUrl()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 316,
+        "startColumn" : 20,
+        "endLine" : 316,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getProxyConfig(java.lang.String proxy, int port)" : {
+      "name" : "getProxyConfig",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getProxyConfig(java.lang.String proxy, int port)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.org.apache.http.client.config.RequestConfig",
+      "displayedType" : "RequestConfig",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 122,
+        "startColumn" : 34,
+        "endLine" : 122,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "proxy",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getProxyConfig(java.lang.String proxy, int port)/parameter/proxy",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 122,
+          "startColumn" : 56,
+          "endLine" : 122,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getProxyConfig(java.lang.String proxy, int port)"
+      }, {
+        "name" : "port",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getProxyConfig(java.lang.String proxy, int port)/parameter/port",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 122,
+          "startColumn" : 67,
+          "endLine" : 122,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getProxyConfig(java.lang.String proxy, int port)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/sendMsg(java.lang.String title, java.lang.String content)" : {
+      "name" : "sendMsg",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/sendMsg(java.lang.String title, java.lang.String content)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 173,
+        "startColumn" : 20,
+        "endLine" : 173,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "title",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/sendMsg(java.lang.String title, java.lang.String content)/parameter/title",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 173,
+          "startColumn" : 35,
+          "endLine" : 173,
+          "endColumn" : 40
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/sendMsg(java.lang.String title, java.lang.String content)"
+      }, {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/sendMsg(java.lang.String title, java.lang.String content)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 173,
+          "startColumn" : 49,
+          "endLine" : 173,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/sendMsg(java.lang.String title, java.lang.String content)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateTextMsg(java.lang.String title, java.lang.String content, java.util.Map<java.lang.String, java.lang.Object> text)" : {
+      "name" : "generateTextMsg",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateTextMsg(java.lang.String title, java.lang.String content, java.util.Map<java.lang.String, java.lang.Object> text)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 240,
+        "startColumn" : 18,
+        "endLine" : 240,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "title",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateTextMsg(java.lang.String title, java.lang.String content, java.util.Map<java.lang.String, java.lang.Object> text)/parameter/title",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 240,
+          "startColumn" : 41,
+          "endLine" : 240,
+          "endColumn" : 46
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateTextMsg(java.lang.String title, java.lang.String content, java.util.Map<java.lang.String, java.lang.Object> text)"
+      }, {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateTextMsg(java.lang.String title, java.lang.String content, java.util.Map<java.lang.String, java.lang.Object> text)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 240,
+          "startColumn" : 55,
+          "endLine" : 240,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateTextMsg(java.lang.String title, java.lang.String content, java.util.Map<java.lang.String, java.lang.Object> text)"
+      }, {
+        "name" : "text",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateTextMsg(java.lang.String title, java.lang.String content, java.util.Map<java.lang.String, java.lang.Object> text)/parameter/text",
+        "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+        "displayedType" : "Map<String, Object>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 240,
+          "startColumn" : 84,
+          "endLine" : 240,
+          "endColumn" : 88
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateTextMsg(java.lang.String title, java.lang.String content, java.util.Map<java.lang.String, java.lang.Object> text)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateMarkdownMsg(java.lang.String title, java.lang.String content, java.util.Map<java.lang.String, java.lang.Object> text)" : {
+      "name" : "generateMarkdownMsg",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateMarkdownMsg(java.lang.String title, java.lang.String content, java.util.Map<java.lang.String, java.lang.Object> text)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 260,
+        "startColumn" : 18,
+        "endLine" : 260,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "title",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateMarkdownMsg(java.lang.String title, java.lang.String content, java.util.Map<java.lang.String, java.lang.Object> text)/parameter/title",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 260,
+          "startColumn" : 45,
+          "endLine" : 260,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateMarkdownMsg(java.lang.String title, java.lang.String content, java.util.Map<java.lang.String, java.lang.Object> text)"
+      }, {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateMarkdownMsg(java.lang.String title, java.lang.String content, java.util.Map<java.lang.String, java.lang.Object> text)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 260,
+          "startColumn" : 59,
+          "endLine" : 260,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateMarkdownMsg(java.lang.String title, java.lang.String content, java.util.Map<java.lang.String, java.lang.Object> text)"
+      }, {
+        "name" : "text",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateMarkdownMsg(java.lang.String title, java.lang.String content, java.util.Map<java.lang.String, java.lang.Object> text)/parameter/text",
+        "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+        "displayedType" : "Map<String, Object>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 260,
+          "startColumn" : 88,
+          "endLine" : 260,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateMarkdownMsg(java.lang.String title, java.lang.String content, java.util.Map<java.lang.String, java.lang.Object> text)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateMsgJson(java.lang.String title, java.lang.String content)" : {
+      "name" : "generateMsgJson",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateMsgJson(java.lang.String title, java.lang.String content)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 213,
+        "startColumn" : 20,
+        "endLine" : 213,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "title",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateMsgJson(java.lang.String title, java.lang.String content)/parameter/title",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 213,
+          "startColumn" : 43,
+          "endLine" : 213,
+          "endColumn" : 48
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateMsgJson(java.lang.String title, java.lang.String content)"
+      }, {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateMsgJson(java.lang.String title, java.lang.String content)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 213,
+          "startColumn" : 57,
+          "endLine" : 213,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/generateMsgJson(java.lang.String title, java.lang.String content)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getDefaultClient()" : {
+      "name" : "getDefaultClient",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/getDefaultClient()",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.org.apache.http.impl.client.CloseableHttpClient",
+      "displayedType" : "CloseableHttpClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 118,
+        "startColumn" : 40,
+        "endLine" : 118,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/setMsgAt(java.util.Map<java.lang.String, java.lang.Object> items)" : {
+      "name" : "setMsgAt",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/setMsgAt(java.util.Map<java.lang.String, java.lang.Object> items)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 293,
+        "startColumn" : 18,
+        "endLine" : 293,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "items",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/setMsgAt(java.util.Map<java.lang.String, java.lang.Object> items)/parameter/items",
+        "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+        "displayedType" : "Map<String, Object>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 293,
+          "startColumn" : 47,
+          "endLine" : 293,
+          "endColumn" : 52
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/setMsgAt(java.util.Map<java.lang.String, java.lang.Object> items)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    },
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/constructHttpPost(java.lang.String url, java.lang.String msg)" : {
+      "name" : "constructHttpPost",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/constructHttpPost(java.lang.String url, java.lang.String msg)",
+      "type" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.org.apache.http.client.methods.HttpPost",
+      "displayedType" : "HttpPost",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 102,
+        "startColumn" : 29,
+        "endLine" : 102,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "url",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/constructHttpPost(java.lang.String url, java.lang.String msg)/parameter/url",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 102,
+          "startColumn" : 54,
+          "endLine" : 102,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/constructHttpPost(java.lang.String url, java.lang.String msg)"
+      }, {
+        "name" : "msg",
+        "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/constructHttpPost(java.lang.String url, java.lang.String msg)/parameter/msg",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 102,
+          "startColumn" : 66,
+          "endLine" : 102,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender/method/constructHttpPost(java.lang.String url, java.lang.String msg)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender"
+    }
+  },
+  "file_path" : "dolphinscheduler-alert/dolphinscheduler-alert-plugins/dolphinscheduler-alert-dingtalk/src/main/java/org/apache/dolphinscheduler/plugin/alert/dingtalk/DingTalkSender.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse" : {
+      "name" : "DingTalkSendMsgResponse",
+      "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 333,
+        "startColumn" : 18,
+        "endLine" : 333,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "STATIC", "FINAL" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse/memberField/errcode" : {
+          "name" : "errcode",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse/memberField/errcode",
+          "type" : "java.lang.Integer",
+          "displayedType" : "Integer",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 335,
+            "startColumn" : 25,
+            "endLine" : 335,
+            "endColumn" : 32
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse/memberField/errmsg" : {
+          "name" : "errmsg",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse/memberField/errmsg",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 336,
+            "startColumn" : 24,
+            "endLine" : 336,
+            "endColumn" : 30
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse/method/hashCode()" : {
+          "name" : "hashCode",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse/method/hashCode()",
+          "type" : "int",
+          "displayedType" : "int",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 364,
+            "startColumn" : 20,
+            "endLine" : 364,
+            "endColumn" : 28
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse/method/toString()" : {
+          "name" : "toString",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse/method/toString()",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 375,
+            "startColumn" : 23,
+            "endLine" : 375,
+            "endColumn" : 31
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse"
+        },
+        "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse/method/equals(java.lang.Object o)" : {
+          "name" : "equals",
+          "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse/method/equals(java.lang.Object o)",
+          "type" : "boolean",
+          "displayedType" : "boolean",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 342,
+            "startColumn" : 24,
+            "endLine" : 342,
+            "endColumn" : 30
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "o",
+            "key" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse/method/equals(java.lang.Object o)/parameter/o",
+            "type" : "java.lang.Object",
+            "displayedType" : "Object",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 342,
+              "startColumn" : 44,
+              "endLine" : 342,
+              "endColumn" : 45
+            },
+            "modifiers" : [ "FINAL" ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse/method/equals(java.lang.Object o)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender.DingTalkSendMsgResponse"
+        }
+      },
+      "file_path" : "dolphinscheduler-alert/dolphinscheduler-alert-plugins/dolphinscheduler-alert-dingtalk/src/main/java/org/apache/dolphinscheduler/plugin/alert/dingtalk/DingTalkSender.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.plugin.alert.dingtalk.DingTalkSender",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : { }
+}

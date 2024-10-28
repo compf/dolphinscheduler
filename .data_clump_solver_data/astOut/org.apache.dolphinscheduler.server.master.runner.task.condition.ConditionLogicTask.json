@@ -1,0 +1,145 @@
+{
+  "name" : "ConditionLogicTask",
+  "key" : "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 43,
+    "startColumn" : 8,
+    "endLine" : 43,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask/memberField/TASK_TYPE" : {
+      "name" : "TASK_TYPE",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask/memberField/TASK_TYPE",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 45,
+        "startColumn" : 32,
+        "endLine" : 45,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask/memberField/taskInstanceDao" : {
+      "name" : "taskInstanceDao",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask/memberField/taskInstanceDao",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.dao.repository.TaskInstanceDao",
+      "displayedType" : "TaskInstanceDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 35,
+        "endLine" : 47,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask/method/getDependResultForItem(org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.plugin.task.api.model.DependentItem item, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstanceMap)" : {
+      "name" : "getDependResultForItem",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask/method/getDependResultForItem(org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.plugin.task.api.model.DependentItem item, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstanceMap)",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.plugin.task.api.enums.DependResult",
+      "displayedType" : "DependResult",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 86,
+        "startColumn" : 26,
+        "endLine" : 86,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "item",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask/method/getDependResultForItem(org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.plugin.task.api.model.DependentItem item, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstanceMap)/parameter/item",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.plugin.task.api.model.DependentItem",
+        "displayedType" : "DependentItem",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 86,
+          "startColumn" : 63,
+          "endLine" : 86,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask/method/getDependResultForItem(org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.plugin.task.api.model.DependentItem item, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstanceMap)"
+      }, {
+        "name" : "taskInstanceMap",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask/method/getDependResultForItem(org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.plugin.task.api.model.DependentItem item, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstanceMap)/parameter/taskInstanceMap",
+        "type" : "java.util.Map<java.lang.Long, org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.dao.entity.TaskInstance>",
+        "displayedType" : "Map<Long, TaskInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 86,
+          "startColumn" : 93,
+          "endLine" : 86,
+          "endColumn" : 108
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask/method/getDependResultForItem(org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.plugin.task.api.model.DependentItem item, java.util.Map<java.lang.Long, org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstanceMap)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask/method/calculateConditionResult()" : {
+      "name" : "calculateConditionResult",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask/method/calculateConditionResult()",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.plugin.task.api.enums.DependResult",
+      "displayedType" : "DependResult",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 26,
+        "endLine" : 67,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask/method/handle()" : {
+      "name" : "handle",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask/method/handle()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 17,
+        "endLine" : 59,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.task.condition.ConditionLogicTask"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/runner/task/condition/ConditionLogicTask.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.server.master.runner.task.BaseSyncLogicTask<org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.plugin.task.api.parameters.ConditionsParameters>", "org.apache.dolphinscheduler.server.master.runner.task.condition.org.apache.dolphinscheduler.plugin.task.api.parameters.ConditionsParameters" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

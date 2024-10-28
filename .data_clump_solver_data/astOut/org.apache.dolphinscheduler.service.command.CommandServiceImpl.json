@@ -1,0 +1,335 @@
+{
+  "name" : "CommandServiceImpl",
+  "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 63,
+    "startColumn" : 8,
+    "endLine" : 63,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.service.command.CommandServiceImpl/memberField/scheduleMapper" : {
+      "name" : "scheduleMapper",
+      "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/memberField/scheduleMapper",
+      "type" : "org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.mapper.ScheduleMapper",
+      "displayedType" : "ScheduleMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 28,
+        "endLine" : 72,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl"
+    },
+    "org.apache.dolphinscheduler.service.command.CommandServiceImpl/memberField/processDefineMapper" : {
+      "name" : "processDefineMapper",
+      "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/memberField/processDefineMapper",
+      "type" : "org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionMapper",
+      "displayedType" : "WorkflowDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 38,
+        "endLine" : 75,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl"
+    },
+    "org.apache.dolphinscheduler.service.command.CommandServiceImpl/memberField/errorCommandMapper" : {
+      "name" : "errorCommandMapper",
+      "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/memberField/errorCommandMapper",
+      "type" : "org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.mapper.ErrorCommandMapper",
+      "displayedType" : "ErrorCommandMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 32,
+        "endLine" : 66,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl"
+    },
+    "org.apache.dolphinscheduler.service.command.CommandServiceImpl/memberField/commandMapper" : {
+      "name" : "commandMapper",
+      "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/memberField/commandMapper",
+      "type" : "org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.mapper.CommandMapper",
+      "displayedType" : "CommandMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 27,
+        "endLine" : 69,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/createCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command command)" : {
+      "name" : "createCommand",
+      "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/createCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command command)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 86,
+        "startColumn" : 16,
+        "endLine" : 86,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "command",
+        "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/createCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command command)/parameter/command",
+        "type" : "org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command",
+        "displayedType" : "Command",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 86,
+          "startColumn" : 38,
+          "endLine" : 86,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/createCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command command)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl"
+    },
+    "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/verifyIsNeedCreateCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command command)" : {
+      "name" : "verifyIsNeedCreateCommand",
+      "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/verifyIsNeedCreateCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command command)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 106,
+        "startColumn" : 20,
+        "endLine" : 106,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "command",
+        "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/verifyIsNeedCreateCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command command)/parameter/command",
+        "type" : "org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command",
+        "displayedType" : "Command",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 106,
+          "startColumn" : 54,
+          "endLine" : 106,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/verifyIsNeedCreateCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command command)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl"
+    },
+    "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/moveToErrorCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command command, java.lang.String message)" : {
+      "name" : "moveToErrorCommand",
+      "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/moveToErrorCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command command, java.lang.String message)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 17,
+        "endLine" : 78,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "command",
+        "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/moveToErrorCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command command, java.lang.String message)/parameter/command",
+        "type" : "org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command",
+        "displayedType" : "Command",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 78,
+          "startColumn" : 44,
+          "endLine" : 78,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/moveToErrorCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command command, java.lang.String message)"
+      }, {
+        "name" : "message",
+        "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/moveToErrorCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command command, java.lang.String message)/parameter/message",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 78,
+          "startColumn" : 60,
+          "endLine" : 78,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/moveToErrorCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command command, java.lang.String message)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl"
+    },
+    "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/createSubProcessCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance parentWorkflowInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance childInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstanceRelation instanceMap, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.TaskInstance task)" : {
+      "name" : "createSubProcessCommand",
+      "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/createSubProcessCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance parentWorkflowInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance childInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstanceRelation instanceMap, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.TaskInstance task)",
+      "type" : "org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.Command",
+      "displayedType" : "Command",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 138,
+        "startColumn" : 20,
+        "endLine" : 138,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "parentWorkflowInstance",
+        "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/createSubProcessCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance parentWorkflowInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance childInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstanceRelation instanceMap, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.TaskInstance task)/parameter/parentWorkflowInstance",
+        "type" : "org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 138,
+          "startColumn" : 61,
+          "endLine" : 138,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/createSubProcessCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance parentWorkflowInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance childInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstanceRelation instanceMap, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.TaskInstance task)"
+      }, {
+        "name" : "childInstance",
+        "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/createSubProcessCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance parentWorkflowInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance childInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstanceRelation instanceMap, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.TaskInstance task)/parameter/childInstance",
+        "type" : "org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 138,
+          "startColumn" : 102,
+          "endLine" : 138,
+          "endColumn" : 115
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/createSubProcessCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance parentWorkflowInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance childInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstanceRelation instanceMap, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.TaskInstance task)"
+      }, {
+        "name" : "instanceMap",
+        "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/createSubProcessCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance parentWorkflowInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance childInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstanceRelation instanceMap, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.TaskInstance task)/parameter/instanceMap",
+        "type" : "org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstanceRelation",
+        "displayedType" : "WorkflowInstanceRelation",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 139,
+          "startColumn" : 69,
+          "endLine" : 139,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/createSubProcessCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance parentWorkflowInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance childInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstanceRelation instanceMap, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.TaskInstance task)"
+      }, {
+        "name" : "task",
+        "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/createSubProcessCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance parentWorkflowInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance childInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstanceRelation instanceMap, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.TaskInstance task)/parameter/task",
+        "type" : "org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 139,
+          "startColumn" : 95,
+          "endLine" : 139,
+          "endColumn" : 99
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/createSubProcessCommand(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance parentWorkflowInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance childInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstanceRelation instanceMap, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.TaskInstance task)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl"
+    },
+    "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/getSubCommandType(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance parentWorkflowInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance childInstance)" : {
+      "name" : "getSubCommandType",
+      "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/getSubCommandType(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance parentWorkflowInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance childInstance)",
+      "type" : "org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.common.enums.CommandType",
+      "displayedType" : "CommandType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 194,
+        "startColumn" : 25,
+        "endLine" : 194,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "parentWorkflowInstance",
+        "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/getSubCommandType(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance parentWorkflowInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance childInstance)/parameter/parentWorkflowInstance",
+        "type" : "org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 194,
+          "startColumn" : 60,
+          "endLine" : 194,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/getSubCommandType(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance parentWorkflowInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance childInstance)"
+      }, {
+        "name" : "childInstance",
+        "key" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/getSubCommandType(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance parentWorkflowInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance childInstance)/parameter/childInstance",
+        "type" : "org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 194,
+          "startColumn" : 101,
+          "endLine" : 194,
+          "endColumn" : 114
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl/method/getSubCommandType(org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance parentWorkflowInstance, org.apache.dolphinscheduler.service.command.org.apache.dolphinscheduler.dao.entity.WorkflowInstance childInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.service.command.CommandServiceImpl"
+    }
+  },
+  "file_path" : "dolphinscheduler-service/src/main/java/org/apache/dolphinscheduler/service/command/CommandServiceImpl.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.service.command.CommandService" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

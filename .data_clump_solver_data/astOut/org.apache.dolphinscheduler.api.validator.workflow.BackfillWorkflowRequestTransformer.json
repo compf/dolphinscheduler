@@ -1,0 +1,177 @@
+{
+  "name" : "BackfillWorkflowRequestTransformer",
+  "key" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 47,
+    "startColumn" : 8,
+    "endLine" : 47,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/memberField/processService" : {
+      "name" : "processService",
+      "key" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/memberField/processService",
+      "type" : "org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.service.process.ProcessService",
+      "displayedType" : "ProcessService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 50,
+        "startColumn" : 28,
+        "endLine" : 50,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer"
+    },
+    "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/memberField/projectDao" : {
+      "name" : "projectDao",
+      "key" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/memberField/projectDao",
+      "type" : "org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.dao.repository.ProjectDao",
+      "displayedType" : "ProjectDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 24,
+        "endLine" : 53,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer"
+    },
+    "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/memberField/workflowDefinitionDao" : {
+      "name" : "workflowDefinitionDao",
+      "key" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/memberField/workflowDefinitionDao",
+      "type" : "org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.dao.repository.WorkflowDefinitionDao",
+      "displayedType" : "WorkflowDefinitionDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 35,
+        "endLine" : 56,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/method/parseBackfillDateList(org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest workflowBackFillRequest)" : {
+      "name" : "parseBackfillDateList",
+      "key" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/method/parseBackfillDateList(org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest workflowBackFillRequest)",
+      "type" : "java.util.List<java.time.ZonedDateTime>",
+      "displayedType" : "List<ZonedDateTime>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 106,
+        "startColumn" : 33,
+        "endLine" : 106,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowBackFillRequest",
+        "key" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/method/parseBackfillDateList(org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest workflowBackFillRequest)/parameter/workflowBackFillRequest",
+        "type" : "org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest",
+        "displayedType" : "WorkflowBackFillRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 106,
+          "startColumn" : 79,
+          "endLine" : 106,
+          "endColumn" : 102
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/method/parseBackfillDateList(org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest workflowBackFillRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer"
+    },
+    "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/method/transform(org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest workflowBackFillRequest)" : {
+      "name" : "transform",
+      "key" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/method/transform(org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest workflowBackFillRequest)",
+      "type" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO",
+      "displayedType" : "BackfillWorkflowDTO",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 32,
+        "endLine" : 59,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowBackFillRequest",
+        "key" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/method/transform(org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest workflowBackFillRequest)/parameter/workflowBackFillRequest",
+        "type" : "org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest",
+        "displayedType" : "WorkflowBackFillRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 59,
+          "startColumn" : 66,
+          "endLine" : 59,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/method/transform(org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest workflowBackFillRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer"
+    },
+    "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/method/transformBackfillParamsDTO(org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest workflowBackFillRequest)" : {
+      "name" : "transformBackfillParamsDTO",
+      "key" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/method/transformBackfillParamsDTO(org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest workflowBackFillRequest)",
+      "type" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO.BackfillParamsDTO",
+      "displayedType" : "BackfillWorkflowDTO.BackfillParamsDTO",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 93,
+        "startColumn" : 51,
+        "endLine" : 93,
+        "endColumn" : 77
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowBackFillRequest",
+        "key" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/method/transformBackfillParamsDTO(org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest workflowBackFillRequest)/parameter/workflowBackFillRequest",
+        "type" : "org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest",
+        "displayedType" : "WorkflowBackFillRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 93,
+          "startColumn" : 102,
+          "endLine" : 93,
+          "endColumn" : 125
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer/method/transformBackfillParamsDTO(org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest workflowBackFillRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowRequestTransformer"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/validator/workflow/BackfillWorkflowRequestTransformer.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.validator.ITransformer<org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest, org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO>", "org.apache.dolphinscheduler.api.validator.workflow.org.apache.dolphinscheduler.api.dto.workflow.WorkflowBackFillRequest", "org.apache.dolphinscheduler.api.validator.workflow.BackfillWorkflowDTO" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

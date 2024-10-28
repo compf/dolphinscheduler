@@ -1,0 +1,444 @@
+{
+  "name" : "DatasyncHook",
+  "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 57,
+    "startColumn" : 8,
+    "endLine" : 57,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/memberField/taskExecArn" : {
+      "name" : "taskExecArn",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/memberField/taskExecArn",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 20,
+        "endLine" : 66,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/memberField/taskArn" : {
+      "name" : "taskArn",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/memberField/taskArn",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 20,
+        "endLine" : 65,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/memberField/client" : {
+      "name" : "client",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/memberField/client",
+      "type" : "org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.DataSyncClient",
+      "displayedType" : "DataSyncClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 28,
+        "endLine" : 64,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/memberField/taskFinishFlags" : {
+      "name" : "taskFinishFlags",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/memberField/taskFinishFlags",
+      "type" : "org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskStatus[]",
+      "displayedType" : "TaskStatus[]",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 32,
+        "endLine" : 61,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/memberField/log" : {
+      "name" : "log",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/memberField/log",
+      "type" : "org.slf4j.Logger",
+      "displayedType" : "Logger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 28,
+        "endLine" : 62,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PROTECTED", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/memberField/doneStatus" : {
+      "name" : "doneStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/memberField/doneStatus",
+      "type" : "org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus[]",
+      "displayedType" : "TaskExecutionStatus[]",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 41,
+        "endLine" : 59,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckFinishStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus expectStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus[] stopStatus)" : {
+      "name" : "doubleCheckFinishStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckFinishStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus expectStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus[] stopStatus)",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 191,
+        "startColumn" : 20,
+        "endLine" : 191,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "expectStatus",
+        "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckFinishStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus expectStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus[] stopStatus)/parameter/expectStatus",
+        "type" : "org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus",
+        "displayedType" : "TaskExecutionStatus",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 191,
+          "startColumn" : 64,
+          "endLine" : 191,
+          "endColumn" : 76
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckFinishStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus expectStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus[] stopStatus)"
+      }, {
+        "name" : "stopStatus",
+        "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckFinishStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus expectStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus[] stopStatus)/parameter/stopStatus",
+        "type" : "org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus[]",
+        "displayedType" : "TaskExecutionStatus[]",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 191,
+          "startColumn" : 100,
+          "endLine" : 191,
+          "endColumn" : 110
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckFinishStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus expectStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus[] stopStatus)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/queryDatasyncTaskStatus()" : {
+      "name" : "queryDatasyncTaskStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/queryDatasyncTaskStatus()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskStatus",
+      "displayedType" : "TaskStatus",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 118,
+        "startColumn" : 23,
+        "endLine" : 118,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/startDatasyncTask()" : {
+      "name" : "startDatasyncTask",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/startDatasyncTask()",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 20,
+        "endLine" : 98,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/queryDatasyncTaskExecStatus()" : {
+      "name" : "queryDatasyncTaskExecStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/queryDatasyncTaskExecStatus()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus",
+      "displayedType" : "TaskExecutionStatus",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 131,
+        "startColumn" : 32,
+        "endLine" : 131,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/castParamPropertyPackage(org.apache.dolphinscheduler.plugin.task.datasync.DatasyncParameters parameters, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.CreateTaskRequest#org.apache.dolphinscheduler.plugin.task.datasync.Builder builder)" : {
+      "name" : "castParamPropertyPackage",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/castParamPropertyPackage(org.apache.dolphinscheduler.plugin.task.datasync.DatasyncParameters parameters, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.CreateTaskRequest#org.apache.dolphinscheduler.plugin.task.datasync.Builder builder)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 214,
+        "startColumn" : 25,
+        "endLine" : 214,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "parameters",
+        "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/castParamPropertyPackage(org.apache.dolphinscheduler.plugin.task.datasync.DatasyncParameters parameters, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.CreateTaskRequest#org.apache.dolphinscheduler.plugin.task.datasync.Builder builder)/parameter/parameters",
+        "type" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncParameters",
+        "displayedType" : "DatasyncParameters",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 214,
+          "startColumn" : 69,
+          "endLine" : 214,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/castParamPropertyPackage(org.apache.dolphinscheduler.plugin.task.datasync.DatasyncParameters parameters, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.CreateTaskRequest#org.apache.dolphinscheduler.plugin.task.datasync.Builder builder)"
+      }, {
+        "name" : "builder",
+        "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/castParamPropertyPackage(org.apache.dolphinscheduler.plugin.task.datasync.DatasyncParameters parameters, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.CreateTaskRequest#org.apache.dolphinscheduler.plugin.task.datasync.Builder builder)/parameter/builder",
+        "type" : "org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.CreateTaskRequest#org.apache.dolphinscheduler.plugin.task.datasync.Builder",
+        "displayedType" : "CreateTaskRequest.Builder",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 214,
+          "startColumn" : 107,
+          "endLine" : 214,
+          "endColumn" : 114
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/castParamPropertyPackage(org.apache.dolphinscheduler.plugin.task.datasync.DatasyncParameters parameters, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.CreateTaskRequest#org.apache.dolphinscheduler.plugin.task.datasync.Builder builder)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/createDatasyncTask(org.apache.dolphinscheduler.plugin.task.datasync.DatasyncParameters parameters)" : {
+      "name" : "createDatasyncTask",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/createDatasyncTask(org.apache.dolphinscheduler.plugin.task.datasync.DatasyncParameters parameters)",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 20,
+        "endLine" : 77,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "parameters",
+        "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/createDatasyncTask(org.apache.dolphinscheduler.plugin.task.datasync.DatasyncParameters parameters)/parameter/parameters",
+        "type" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncParameters",
+        "displayedType" : "DatasyncParameters",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 77,
+          "startColumn" : 58,
+          "endLine" : 77,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/createDatasyncTask(org.apache.dolphinscheduler.plugin.task.datasync.DatasyncParameters parameters)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/createClient()" : {
+      "name" : "createClient",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/createClient()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.DataSyncClient",
+      "displayedType" : "DataSyncClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 37,
+        "endLine" : 72,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PROTECTED", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckTaskStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskStatus exceptStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskStatus[] stopStatus)" : {
+      "name" : "doubleCheckTaskStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckTaskStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskStatus exceptStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskStatus[] stopStatus)",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 144,
+        "startColumn" : 20,
+        "endLine" : 144,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "exceptStatus",
+        "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckTaskStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskStatus exceptStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskStatus[] stopStatus)/parameter/exceptStatus",
+        "type" : "org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskStatus",
+        "displayedType" : "TaskStatus",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 144,
+          "startColumn" : 53,
+          "endLine" : 144,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckTaskStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskStatus exceptStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskStatus[] stopStatus)"
+      }, {
+        "name" : "stopStatus",
+        "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckTaskStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskStatus exceptStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskStatus[] stopStatus)/parameter/stopStatus",
+        "type" : "org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskStatus[]",
+        "displayedType" : "TaskStatus[]",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 144,
+          "startColumn" : 80,
+          "endLine" : 144,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckTaskStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskStatus exceptStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskStatus[] stopStatus)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckExecStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus exceptStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus[] stopStatus)" : {
+      "name" : "doubleCheckExecStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckExecStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus exceptStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus[] stopStatus)",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 167,
+        "startColumn" : 20,
+        "endLine" : 167,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "exceptStatus",
+        "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckExecStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus exceptStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus[] stopStatus)/parameter/exceptStatus",
+        "type" : "org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus",
+        "displayedType" : "TaskExecutionStatus",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 167,
+          "startColumn" : 62,
+          "endLine" : 167,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckExecStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus exceptStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus[] stopStatus)"
+      }, {
+        "name" : "stopStatus",
+        "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckExecStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus exceptStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus[] stopStatus)/parameter/stopStatus",
+        "type" : "org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus[]",
+        "displayedType" : "TaskExecutionStatus[]",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 167,
+          "startColumn" : 98,
+          "endLine" : 167,
+          "endColumn" : 108
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/doubleCheckExecStatus(org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus exceptStatus, org.apache.dolphinscheduler.plugin.task.datasync.software.amazon.awssdk.services.datasync.model.TaskExecutionStatus[] stopStatus)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/cancelDatasyncTask()" : {
+      "name" : "cancelDatasyncTask",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook/method/cancelDatasyncTask()",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 108,
+        "startColumn" : 20,
+        "endLine" : 108,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datasync.DatasyncHook"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-datasync/src/main/java/org/apache/dolphinscheduler/plugin/task/datasync/DatasyncHook.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

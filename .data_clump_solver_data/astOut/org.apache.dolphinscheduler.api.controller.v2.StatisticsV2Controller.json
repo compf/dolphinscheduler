@@ -1,0 +1,395 @@
+{
+  "name" : "StatisticsV2Controller",
+  "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 55,
+    "startColumn" : 8,
+    "endLine" : 55,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/memberField/dataAnalysisService" : {
+      "name" : "dataAnalysisService",
+      "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/memberField/dataAnalysisService",
+      "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.service.DataAnalysisService",
+      "displayedType" : "DataAnalysisService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 33,
+        "endLine" : 58,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUserId(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)" : {
+      "name" : "countDefinitionByUserId",
+      "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUserId(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)",
+      "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.utils.Result<org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.DefineUserDto>",
+      "displayedType" : "Result<DefineUserDto>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 156,
+        "startColumn" : 34,
+        "endLine" : 156,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUserId(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 156,
+          "startColumn" : 139,
+          "endLine" : 156,
+          "endColumn" : 148
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUserId(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUserId(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 157,
+          "startColumn" : 90,
+          "endLine" : 157,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUserId(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller"
+    },
+    "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryOneWorkflowStates(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long workflowCode)" : {
+      "name" : "queryOneWorkflowStates",
+      "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryOneWorkflowStates(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long workflowCode)",
+      "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.utils.Result<org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.TaskCountDto>",
+      "displayedType" : "Result<TaskCountDto>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 33,
+        "endLine" : 88,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryOneWorkflowStates(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long workflowCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 88,
+          "startColumn" : 137,
+          "endLine" : 88,
+          "endColumn" : 146
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryOneWorkflowStates(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long workflowCode)"
+      }, {
+        "name" : "workflowCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryOneWorkflowStates(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long workflowCode)/parameter/workflowCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 89,
+          "startColumn" : 91,
+          "endLine" : 89,
+          "endColumn" : 103
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryOneWorkflowStates(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long workflowCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller"
+    },
+    "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUser(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)" : {
+      "name" : "countDefinitionByUser",
+      "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUser(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)",
+      "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.utils.Result<org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.DefineUserDto>",
+      "displayedType" : "Result<DefineUserDto>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 139,
+        "startColumn" : 34,
+        "endLine" : 139,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUser(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 139,
+          "startColumn" : 137,
+          "endLine" : 139,
+          "endColumn" : 146
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUser(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)"
+      }, {
+        "name" : "statisticsStateRequest",
+        "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUser(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)/parameter/statisticsStateRequest",
+        "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest",
+        "displayedType" : "StatisticsStateRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 140,
+          "startColumn" : 110,
+          "endLine" : 140,
+          "endColumn" : 132
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUser(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller"
+    },
+    "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUserState(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId, java.lang.Integer releaseState)" : {
+      "name" : "countDefinitionByUserState",
+      "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUserState(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId, java.lang.Integer releaseState)",
+      "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.utils.Result<org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.DefineUserDto>",
+      "displayedType" : "Result<DefineUserDto>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 174,
+        "startColumn" : 34,
+        "endLine" : 174,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUserState(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId, java.lang.Integer releaseState)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 174,
+          "startColumn" : 142,
+          "endLine" : 174,
+          "endColumn" : 151
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUserState(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId, java.lang.Integer releaseState)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUserState(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId, java.lang.Integer releaseState)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 175,
+          "startColumn" : 93,
+          "endLine" : 175,
+          "endColumn" : 99
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUserState(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId, java.lang.Integer releaseState)"
+      }, {
+        "name" : "releaseState",
+        "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUserState(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId, java.lang.Integer releaseState)/parameter/releaseState",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 176,
+          "startColumn" : 99,
+          "endLine" : 176,
+          "endColumn" : 111
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/countDefinitionByUserState(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId, java.lang.Integer releaseState)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller"
+    },
+    "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryOneTaskStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long taskCode)" : {
+      "name" : "queryOneTaskStatesCounts",
+      "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryOneTaskStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long taskCode)",
+      "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.utils.Result<org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.TaskCountDto>",
+      "displayedType" : "Result<TaskCountDto>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 122,
+        "startColumn" : 33,
+        "endLine" : 122,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryOneTaskStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long taskCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 122,
+          "startColumn" : 139,
+          "endLine" : 122,
+          "endColumn" : 148
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryOneTaskStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long taskCode)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryOneTaskStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long taskCode)/parameter/taskCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 123,
+          "startColumn" : 89,
+          "endLine" : 123,
+          "endColumn" : 97
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryOneTaskStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long taskCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller"
+    },
+    "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryTaskStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)" : {
+      "name" : "queryTaskStatesCounts",
+      "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryTaskStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)",
+      "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.utils.Result<org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.TaskCountDto>",
+      "displayedType" : "Result<TaskCountDto>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 105,
+        "startColumn" : 33,
+        "endLine" : 105,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryTaskStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 105,
+          "startColumn" : 136,
+          "endLine" : 105,
+          "endColumn" : 145
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryTaskStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)"
+      }, {
+        "name" : "statisticsStateRequest",
+        "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryTaskStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)/parameter/statisticsStateRequest",
+        "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest",
+        "displayedType" : "StatisticsStateRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 106,
+          "startColumn" : 109,
+          "endLine" : 106,
+          "endColumn" : 131
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryTaskStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller"
+    },
+    "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryWorkflowStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)" : {
+      "name" : "queryWorkflowStatesCounts",
+      "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryWorkflowStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)",
+      "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.utils.Result<org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.TaskCountDto>",
+      "displayedType" : "Result<TaskCountDto>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 33,
+        "endLine" : 71,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryWorkflowStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 71,
+          "startColumn" : 140,
+          "endLine" : 71,
+          "endColumn" : 149
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryWorkflowStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)"
+      }, {
+        "name" : "statisticsStateRequest",
+        "key" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryWorkflowStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)/parameter/statisticsStateRequest",
+        "type" : "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest",
+        "displayedType" : "StatisticsStateRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 72,
+          "startColumn" : 113,
+          "endLine" : 72,
+          "endColumn" : 135
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller/method/queryWorkflowStatesCounts(org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.v2.StatisticsV2Controller"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/controller/v2/StatisticsV2Controller.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.controller.v2.org.apache.dolphinscheduler.api.controller.BaseController" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

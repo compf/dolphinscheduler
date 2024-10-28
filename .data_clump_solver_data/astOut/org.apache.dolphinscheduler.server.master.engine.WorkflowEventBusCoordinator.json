@@ -1,0 +1,179 @@
+{
+  "name" : "WorkflowEventBusCoordinator",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 32,
+    "startColumn" : 8,
+    "endLine" : 32,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/memberField/workflowEventBusFireWorkers" : {
+      "name" : "workflowEventBusFireWorkers",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/memberField/workflowEventBusFireWorkers",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers",
+      "displayedType" : "WorkflowEventBusFireWorkers",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 36,
+        "startColumn" : 41,
+        "endLine" : 36,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/method/start()" : {
+      "name" : "start",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/method/start()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 38,
+        "startColumn" : 17,
+        "endLine" : 38,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/method/unRegisterWorkflowEventBus(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable)" : {
+      "name" : "unRegisterWorkflowEventBus",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/method/unRegisterWorkflowEventBus(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 17,
+        "endLine" : 57,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/method/unRegisterWorkflowEventBus(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 57,
+          "startColumn" : 71,
+          "endLine" : 57,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/method/unRegisterWorkflowEventBus(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/method/calculateWorkflowEventBusFireWorkerSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable)" : {
+      "name" : "calculateWorkflowEventBusFireWorkerSlot",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/method/calculateWorkflowEventBusFireWorkerSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 17,
+        "endLine" : 69,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/method/calculateWorkflowEventBusFireWorkerSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 69,
+          "startColumn" : 84,
+          "endLine" : 69,
+          "endColumn" : 109
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/method/calculateWorkflowEventBusFireWorkerSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/method/registerWorkflowEventBus(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable)" : {
+      "name" : "registerWorkflowEventBus",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/method/registerWorkflowEventBus(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 17,
+        "endLine" : 47,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/method/registerWorkflowEventBus(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 47,
+          "startColumn" : 69,
+          "endLine" : 47,
+          "endColumn" : 94
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/method/registerWorkflowEventBus(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 17,
+        "endLine" : 77,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/WorkflowEventBusCoordinator.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "java.lang.AutoCloseable" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

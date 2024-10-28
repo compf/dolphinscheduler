@@ -1,0 +1,184 @@
+{
+  "name" : "AlertPluginManager",
+  "key" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 46,
+    "startColumn" : 14,
+    "endLine" : 46,
+    "endColumn" : 19
+  },
+  "modifiers" : [ "PUBLIC", "FINAL" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/memberField/pluginDao" : {
+      "name" : "pluginDao",
+      "key" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/memberField/pluginDao",
+      "type" : "org.apache.dolphinscheduler.alert.plugin.org.apache.dolphinscheduler.dao.PluginDao",
+      "displayedType" : "PluginDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 48,
+        "startColumn" : 29,
+        "endLine" : 48,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager"
+    },
+    "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/memberField/alertPluginMap" : {
+      "name" : "alertPluginMap",
+      "key" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/memberField/alertPluginMap",
+      "type" : "java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.alert.plugin.org.apache.dolphinscheduler.alert.api.AlertChannel>",
+      "displayedType" : "Map<Integer, AlertChannel>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 46,
+        "endLine" : 54,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/method/getAlertChannel(int id)" : {
+      "name" : "getAlertChannel",
+      "key" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/method/getAlertChannel(int id)",
+      "type" : "java.util.Optional<org.apache.dolphinscheduler.alert.plugin.org.apache.dolphinscheduler.alert.api.AlertChannel>",
+      "displayedType" : "Optional<AlertChannel>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 35,
+        "endLine" : 63,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/method/getAlertChannel(int id)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 63,
+          "startColumn" : 55,
+          "endLine" : 63,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/method/getAlertChannel(int id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager"
+    },
+    "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/method/installAlertPlugin()" : {
+      "name" : "installAlertPlugin",
+      "key" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/method/installAlertPlugin()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 18,
+        "endLine" : 78,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager"
+    },
+    "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/method/size()" : {
+      "name" : "size",
+      "key" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/method/size()",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 16,
+        "endLine" : 67,
+        "endColumn" : 20
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager"
+    },
+    "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/method/checkAlertPluginExist()" : {
+      "name" : "checkAlertPluginExist",
+      "key" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/method/checkAlertPluginExist()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 18,
+        "endLine" : 71,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager"
+    },
+    "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/method/start()" : {
+      "name" : "start",
+      "key" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/method/start()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 17,
+        "endLine" : 56,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager"
+    },
+    "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/method/getWarningTypeParams()" : {
+      "name" : "getWarningTypeParams",
+      "key" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager/method/getWarningTypeParams()",
+      "type" : "org.apache.dolphinscheduler.alert.plugin.org.apache.dolphinscheduler.spi.params.base.PluginParams",
+      "displayedType" : "PluginParams",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 103,
+        "startColumn" : 26,
+        "endLine" : 103,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.plugin.AlertPluginManager"
+    }
+  },
+  "file_path" : "dolphinscheduler-alert/dolphinscheduler-alert-server/src/main/java/org/apache/dolphinscheduler/alert/plugin/AlertPluginManager.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

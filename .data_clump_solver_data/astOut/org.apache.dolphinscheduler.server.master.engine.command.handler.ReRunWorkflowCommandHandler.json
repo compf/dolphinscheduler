@@ -1,0 +1,212 @@
+{
+  "name" : "ReRunWorkflowCommandHandler",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 41,
+    "startColumn" : 8,
+    "endLine" : 41,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/memberField/applicationContext" : {
+      "name" : "applicationContext",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/memberField/applicationContext",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.springframework.context.ApplicationContext",
+      "displayedType" : "ApplicationContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 50,
+        "startColumn" : 32,
+        "endLine" : 50,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/memberField/workflowInstanceDao" : {
+      "name" : "workflowInstanceDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/memberField/workflowInstanceDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.repository.WorkflowInstanceDao",
+      "displayedType" : "WorkflowInstanceDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 33,
+        "endLine" : 44,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/memberField/masterConfig" : {
+      "name" : "masterConfig",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/memberField/masterConfig",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.config.MasterConfig",
+      "displayedType" : "MasterConfig",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 26,
+        "endLine" : 53,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/memberField/taskInstanceDao" : {
+      "name" : "taskInstanceDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/memberField/taskInstanceDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.dao.repository.TaskInstanceDao",
+      "displayedType" : "TaskInstanceDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 29,
+        "endLine" : 47,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/method/assembleWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)" : {
+      "name" : "assembleWorkflowInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/method/assembleWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 20,
+        "endLine" : 69,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecuteContextBuilder",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/method/assembleWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)/parameter/workflowExecuteContextBuilder",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder",
+        "displayedType" : "WorkflowExecuteContextBuilder",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 69,
+          "startColumn" : 81,
+          "endLine" : 69,
+          "endColumn" : 110
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/method/assembleWorkflowInstance(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/method/assembleWorkflowExecutionGraph(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)" : {
+      "name" : "assembleWorkflowExecutionGraph",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/method/assembleWorkflowExecutionGraph(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 20,
+        "endLine" : 91,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecuteContextBuilder",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/method/assembleWorkflowExecutionGraph(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)/parameter/workflowExecuteContextBuilder",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder",
+        "displayedType" : "WorkflowExecuteContextBuilder",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 91,
+          "startColumn" : 87,
+          "endLine" : 91,
+          "endColumn" : 116
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/method/assembleWorkflowExecutionGraph(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/method/commandType()" : {
+      "name" : "commandType",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/method/commandType()",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.common.enums.CommandType",
+      "displayedType" : "CommandType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 103,
+        "startColumn" : 24,
+        "endLine" : 103,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/method/markAllTaskInstanceInvalid(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)" : {
+      "name" : "markAllTaskInstanceInvalid",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/method/markAllTaskInstanceInvalid(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 18,
+        "endLine" : 96,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecuteContextBuilder",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/method/markAllTaskInstanceInvalid(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)/parameter/workflowExecuteContextBuilder",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder",
+        "displayedType" : "WorkflowExecuteContextBuilder",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 96,
+          "startColumn" : 81,
+          "endLine" : 96,
+          "endColumn" : 110
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler/method/markAllTaskInstanceInvalid(org.apache.dolphinscheduler.server.master.engine.command.handler.org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContext.WorkflowExecuteContextBuilder workflowExecuteContextBuilder)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.handler.ReRunWorkflowCommandHandler"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/command/handler/ReRunWorkflowCommandHandler.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.master.engine.command.handler.RunWorkflowCommandHandler" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,325 @@
+{
+  "name" : "UpgradeDao",
+  "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 41,
+    "startColumn" : 8,
+    "endLine" : 41,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/memberField/T_VERSION_NAME" : {
+      "name" : "T_VERSION_NAME",
+      "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/memberField/T_VERSION_NAME",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 33,
+        "endLine" : 43,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao"
+    },
+    "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/memberField/dataSource" : {
+      "name" : "dataSource",
+      "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/memberField/dataSource",
+      "type" : "javax.sql.DataSource",
+      "displayedType" : "DataSource",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 24,
+        "endLine" : 47,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao"
+    },
+    "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/memberField/databaseDialect" : {
+      "name" : "databaseDialect",
+      "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/memberField/databaseDialect",
+      "type" : "org.apache.dolphinscheduler.tools.datasource.upgrader.org.apache.dolphinscheduler.dao.plugin.api.dialect.DatabaseDialect",
+      "displayedType" : "DatabaseDialect",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 29,
+        "endLine" : 53,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao"
+    },
+    "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/memberField/T_NEW_VERSION_NAME" : {
+      "name" : "T_NEW_VERSION_NAME",
+      "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/memberField/T_NEW_VERSION_NAME",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 33,
+        "endLine" : 44,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao"
+    },
+    "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/memberField/dbType" : {
+      "name" : "dbType",
+      "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/memberField/dbType",
+      "type" : "org.apache.dolphinscheduler.tools.datasource.upgrader.com.baomidou.mybatisplus.annotation.DbType",
+      "displayedType" : "DbType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 50,
+        "startColumn" : 20,
+        "endLine" : 50,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/upgradeDolphinScheduler(java.lang.String schemaDir)" : {
+      "name" : "upgradeDolphinScheduler",
+      "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/upgradeDolphinScheduler(java.lang.String schemaDir)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 87,
+        "startColumn" : 17,
+        "endLine" : 87,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "schemaDir",
+        "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/upgradeDolphinScheduler(java.lang.String schemaDir)/parameter/schemaDir",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 87,
+          "startColumn" : 48,
+          "endLine" : 87,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/upgradeDolphinScheduler(java.lang.String schemaDir)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao"
+    },
+    "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/initSchema()" : {
+      "name" : "initSchema",
+      "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/initSchema()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 17,
+        "endLine" : 58,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao"
+    },
+    "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/upgradeDolphinSchedulerDDL(java.lang.String schemaDir, java.lang.String scriptFile)" : {
+      "name" : "upgradeDolphinSchedulerDDL",
+      "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/upgradeDolphinSchedulerDDL(java.lang.String schemaDir, java.lang.String scriptFile)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 132,
+        "startColumn" : 17,
+        "endLine" : 132,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "schemaDir",
+        "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/upgradeDolphinSchedulerDDL(java.lang.String schemaDir, java.lang.String scriptFile)/parameter/schemaDir",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 132,
+          "startColumn" : 51,
+          "endLine" : 132,
+          "endColumn" : 60
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/upgradeDolphinSchedulerDDL(java.lang.String schemaDir, java.lang.String scriptFile)"
+      }, {
+        "name" : "scriptFile",
+        "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/upgradeDolphinSchedulerDDL(java.lang.String schemaDir, java.lang.String scriptFile)/parameter/scriptFile",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 132,
+          "startColumn" : 69,
+          "endLine" : 132,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/upgradeDolphinSchedulerDDL(java.lang.String schemaDir, java.lang.String scriptFile)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao"
+    },
+    "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/upgradeDolphinSchedulerDML(java.lang.String schemaDir, java.lang.String scriptFile)" : {
+      "name" : "upgradeDolphinSchedulerDML",
+      "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/upgradeDolphinSchedulerDML(java.lang.String schemaDir, java.lang.String scriptFile)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 92,
+        "startColumn" : 18,
+        "endLine" : 92,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "schemaDir",
+        "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/upgradeDolphinSchedulerDML(java.lang.String schemaDir, java.lang.String scriptFile)/parameter/schemaDir",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 92,
+          "startColumn" : 52,
+          "endLine" : 92,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/upgradeDolphinSchedulerDML(java.lang.String schemaDir, java.lang.String scriptFile)"
+      }, {
+        "name" : "scriptFile",
+        "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/upgradeDolphinSchedulerDML(java.lang.String schemaDir, java.lang.String scriptFile)/parameter/scriptFile",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 92,
+          "startColumn" : 70,
+          "endLine" : 92,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/upgradeDolphinSchedulerDML(java.lang.String schemaDir, java.lang.String scriptFile)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao"
+    },
+    "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/getCurrentVersion(java.lang.String versionName)" : {
+      "name" : "getCurrentVersion",
+      "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/getCurrentVersion(java.lang.String versionName)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 70,
+        "startColumn" : 19,
+        "endLine" : 70,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "versionName",
+        "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/getCurrentVersion(java.lang.String versionName)/parameter/versionName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 70,
+          "startColumn" : 44,
+          "endLine" : 70,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/getCurrentVersion(java.lang.String versionName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao"
+    },
+    "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/updateVersion(java.lang.String version)" : {
+      "name" : "updateVersion",
+      "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/updateVersion(java.lang.String version)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 155,
+        "startColumn" : 17,
+        "endLine" : 155,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "version",
+        "key" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/updateVersion(java.lang.String version)/parameter/version",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 155,
+          "startColumn" : 38,
+          "endLine" : 155,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao/method/updateVersion(java.lang.String version)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.tools.datasource.upgrader.UpgradeDao"
+    }
+  },
+  "file_path" : "dolphinscheduler-tools/src/main/java/org/apache/dolphinscheduler/tools/datasource/upgrader/UpgradeDao.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

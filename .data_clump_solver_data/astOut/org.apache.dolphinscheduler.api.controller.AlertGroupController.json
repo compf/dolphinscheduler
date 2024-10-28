@@ -1,0 +1,470 @@
+{
+  "name" : "AlertGroupController",
+  "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 69,
+    "startColumn" : 8,
+    "endLine" : 69,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.controller.AlertGroupController/memberField/alertGroupService" : {
+      "name" : "alertGroupService",
+      "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/memberField/alertGroupService",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.service.AlertGroupService",
+      "displayedType" : "AlertGroupService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 31,
+        "endLine" : 72,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/updateAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)" : {
+      "name" : "updateAlertGroupById",
+      "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/updateAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.AlertGroup>",
+      "displayedType" : "Result<AlertGroup>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 186,
+        "startColumn" : 31,
+        "endLine" : 186,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/updateAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 186,
+          "startColumn" : 133,
+          "endLine" : 186,
+          "endColumn" : 142
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/updateAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/updateAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 187,
+          "startColumn" : 84,
+          "endLine" : 187,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/updateAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)"
+      }, {
+        "name" : "groupName",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/updateAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)/parameter/groupName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 188,
+          "startColumn" : 94,
+          "endLine" : 188,
+          "endColumn" : 103
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/updateAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)"
+      }, {
+        "name" : "description",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/updateAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)/parameter/description",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 189,
+          "startColumn" : 114,
+          "endLine" : 189,
+          "endColumn" : 125
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/updateAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)"
+      }, {
+        "name" : "alertInstanceIds",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/updateAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)/parameter/alertInstanceIds",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 190,
+          "startColumn" : 101,
+          "endLine" : 190,
+          "endColumn" : 117
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/updateAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController"
+    },
+    "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/list(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser)" : {
+      "name" : "list",
+      "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/list(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.util.List<org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.AlertGroup>>",
+      "displayedType" : "Result<List<AlertGroup>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 110,
+        "startColumn" : 37,
+        "endLine" : 110,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/list(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 123,
+          "endLine" : 110,
+          "endColumn" : 132
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/list(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController"
+    },
+    "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/deleteAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)" : {
+      "name" : "deleteAlertGroupById",
+      "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/deleteAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<java.lang.Boolean>",
+      "displayedType" : "Result<Boolean>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 211,
+        "startColumn" : 28,
+        "endLine" : 211,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/deleteAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 211,
+          "startColumn" : 130,
+          "endLine" : 211,
+          "endColumn" : 139
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/deleteAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/deleteAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 212,
+          "startColumn" : 81,
+          "endLine" : 212,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/deleteAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController"
+    },
+    "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/createAlertGroup(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)" : {
+      "name" : "createAlertGroup",
+      "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/createAlertGroup(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.AlertGroup>",
+      "displayedType" : "Result<AlertGroup>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 92,
+        "startColumn" : 31,
+        "endLine" : 92,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/createAlertGroup(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 92,
+          "startColumn" : 129,
+          "endLine" : 92,
+          "endColumn" : 138
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/createAlertGroup(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)"
+      }, {
+        "name" : "groupName",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/createAlertGroup(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)/parameter/groupName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 93,
+          "startColumn" : 90,
+          "endLine" : 93,
+          "endColumn" : 99
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/createAlertGroup(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)"
+      }, {
+        "name" : "description",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/createAlertGroup(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)/parameter/description",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 94,
+          "startColumn" : 110,
+          "endLine" : 94,
+          "endColumn" : 121
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/createAlertGroup(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)"
+      }, {
+        "name" : "alertInstanceIds",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/createAlertGroup(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)/parameter/alertInstanceIds",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 95,
+          "startColumn" : 97,
+          "endLine" : 95,
+          "endColumn" : 113
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/createAlertGroup(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String groupName, java.lang.String description, java.lang.String alertInstanceIds)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController"
+    },
+    "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/verifyGroupName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String groupName)" : {
+      "name" : "verifyGroupName",
+      "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/verifyGroupName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String groupName)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 230,
+        "startColumn" : 19,
+        "endLine" : 230,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/verifyGroupName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String groupName)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 230,
+          "startColumn" : 116,
+          "endLine" : 230,
+          "endColumn" : 125
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/verifyGroupName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String groupName)"
+      }, {
+        "name" : "groupName",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/verifyGroupName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String groupName)/parameter/groupName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 231,
+          "startColumn" : 77,
+          "endLine" : 231,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/verifyGroupName(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String groupName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController"
+    },
+    "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/listPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)" : {
+      "name" : "listPaging",
+      "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/listPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.PageInfo<org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.AlertGroup>>",
+      "displayedType" : "Result<PageInfo<AlertGroup>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 134,
+        "startColumn" : 41,
+        "endLine" : 134,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/listPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 134,
+          "startColumn" : 133,
+          "endLine" : 134,
+          "endColumn" : 142
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/listPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "searchVal",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/listPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/searchVal",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 135,
+          "startColumn" : 112,
+          "endLine" : 135,
+          "endColumn" : 121
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/listPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/listPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/pageNo",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 136,
+          "startColumn" : 84,
+          "endLine" : 136,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/listPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/listPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/pageSize",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 137,
+          "startColumn" : 86,
+          "endLine" : 137,
+          "endColumn" : 94
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/listPaging(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String searchVal, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController"
+    },
+    "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/queryAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id)" : {
+      "name" : "queryAlertGroupById",
+      "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/queryAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id)",
+      "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.api.utils.Result<org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.AlertGroup>",
+      "displayedType" : "Result<AlertGroup>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 159,
+        "startColumn" : 31,
+        "endLine" : 159,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/queryAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 159,
+          "startColumn" : 132,
+          "endLine" : 159,
+          "endColumn" : 141
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/queryAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/queryAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id)/parameter/id",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 160,
+          "startColumn" : 79,
+          "endLine" : 160,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController/method/queryAlertGroupById(org.apache.dolphinscheduler.api.controller.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.controller.AlertGroupController"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/controller/AlertGroupController.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.controller.BaseController" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

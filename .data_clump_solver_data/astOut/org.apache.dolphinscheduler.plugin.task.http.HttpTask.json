@@ -1,0 +1,391 @@
+{
+  "name" : "HttpTask",
+  "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 45,
+    "startColumn" : 8,
+    "endLine" : 45,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/memberField/taskExecutionContext" : {
+      "name" : "taskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/memberField/taskExecutionContext",
+      "type" : "org.apache.dolphinscheduler.plugin.task.http.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+      "displayedType" : "TaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 34,
+        "endLine" : 49,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/memberField/httpParameters" : {
+      "name" : "httpParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/memberField/httpParameters",
+      "type" : "org.apache.dolphinscheduler.plugin.task.http.HttpParameters",
+      "displayedType" : "HttpParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 28,
+        "endLine" : 47,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/getRequestParams()" : {
+      "name" : "getRequestParams",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/getRequestParams()",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 233,
+        "startColumn" : 33,
+        "endLine" : 233,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/sendGetRequest()" : {
+      "name" : "sendGetRequest",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/sendGetRequest()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.http.org.apache.dolphinscheduler.common.model.OkHttpResponse",
+      "displayedType" : "OkHttpResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 144,
+        "startColumn" : 28,
+        "endLine" : 144,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/sendPostRequest()" : {
+      "name" : "sendPostRequest",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/sendPostRequest()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.http.org.apache.dolphinscheduler.common.model.OkHttpResponse",
+      "displayedType" : "OkHttpResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 158,
+        "startColumn" : 28,
+        "endLine" : 158,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/handle(org.apache.dolphinscheduler.plugin.task.http.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)" : {
+      "name" : "handle",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/handle(org.apache.dolphinscheduler.plugin.task.http.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 17,
+        "endLine" : 72,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskCallBack",
+        "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/handle(org.apache.dolphinscheduler.plugin.task.http.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)/parameter/taskCallBack",
+        "type" : "org.apache.dolphinscheduler.plugin.task.http.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack",
+        "displayedType" : "TaskCallBack",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 72,
+          "startColumn" : 37,
+          "endLine" : 72,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/handle(org.apache.dolphinscheduler.plugin.task.http.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/sendPutRequest()" : {
+      "name" : "sendPutRequest",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/sendPutRequest()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.http.org.apache.dolphinscheduler.common.model.OkHttpResponse",
+      "displayedType" : "OkHttpResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 172,
+        "startColumn" : 28,
+        "endLine" : 172,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/getContentType()" : {
+      "name" : "getContentType",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/getContentType()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.http.org.apache.dolphinscheduler.common.model.OkHttpRequestHeaderContentType",
+      "displayedType" : "OkHttpRequestHeaderContentType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 216,
+        "startColumn" : 44,
+        "endLine" : 216,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/cancel()" : {
+      "name" : "cancel",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/cancel()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 17,
+        "endLine" : 80,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/addDefaultOutput(java.lang.String response)" : {
+      "name" : "addDefaultOutput",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/addDefaultOutput(java.lang.String response)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 266,
+        "startColumn" : 17,
+        "endLine" : 266,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "response",
+        "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/addDefaultOutput(java.lang.String response)/parameter/response",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 266,
+          "startColumn" : 41,
+          "endLine" : 266,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/addDefaultOutput(java.lang.String response)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/init()" : {
+      "name" : "init",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/init()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 17,
+        "endLine" : 62,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/sendRequest()" : {
+      "name" : "sendRequest",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/sendRequest()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.http.org.apache.dolphinscheduler.common.model.OkHttpResponse",
+      "displayedType" : "OkHttpResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 127,
+        "startColumn" : 28,
+        "endLine" : 127,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/sendDeleteRequest()" : {
+      "name" : "sendDeleteRequest",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/sendDeleteRequest()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.http.org.apache.dolphinscheduler.common.model.OkHttpResponse",
+      "displayedType" : "OkHttpResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 186,
+        "startColumn" : 28,
+        "endLine" : 186,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/getHeaders()" : {
+      "name" : "getHeaders",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/getHeaders()",
+      "type" : "java.util.Map<java.lang.String, java.lang.String>",
+      "displayedType" : "Map<String, String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 198,
+        "startColumn" : 33,
+        "endLine" : 198,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/getRequestBody()" : {
+      "name" : "getRequestBody",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/getRequestBody()",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 249,
+        "startColumn" : 33,
+        "endLine" : 249,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/validateResponse(java.lang.String body, int statusCode)" : {
+      "name" : "validateResponse",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/validateResponse(java.lang.String body, int statusCode)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 18,
+        "endLine" : 83,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "body",
+        "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/validateResponse(java.lang.String body, int statusCode)/parameter/body",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 83,
+          "startColumn" : 42,
+          "endLine" : 83,
+          "endColumn" : 46
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/validateResponse(java.lang.String body, int statusCode)"
+      }, {
+        "name" : "statusCode",
+        "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/validateResponse(java.lang.String body, int statusCode)/parameter/statusCode",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 83,
+          "startColumn" : 52,
+          "endLine" : 83,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/validateResponse(java.lang.String body, int statusCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/getParameters()" : {
+      "name" : "getParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask/method/getParameters()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.http.org.apache.dolphinscheduler.plugin.task.api.parameters.AbstractParameters",
+      "displayedType" : "AbstractParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 262,
+        "startColumn" : 31,
+        "endLine" : 262,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.http.HttpTask"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-http/src/main/java/org/apache/dolphinscheduler/plugin/task/http/HttpTask.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.plugin.task.http.org.apache.dolphinscheduler.plugin.task.api.AbstractTask" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

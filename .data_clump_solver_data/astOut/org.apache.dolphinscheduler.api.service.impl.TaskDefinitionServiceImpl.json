@@ -1,0 +1,1725 @@
+{
+  "name" : "TaskDefinitionServiceImpl",
+  "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 100,
+    "startColumn" : 8,
+    "endLine" : 100,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/taskDefinitionLogMapper" : {
+      "name" : "taskDefinitionLogMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/taskDefinitionLogMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.TaskDefinitionLogMapper",
+      "displayedType" : "TaskDefinitionLogMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 115,
+        "startColumn" : 37,
+        "endLine" : 115,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/workflowDefinitionMapper" : {
+      "name" : "workflowDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/workflowDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionMapper",
+      "displayedType" : "WorkflowDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 127,
+        "startColumn" : 38,
+        "endLine" : 127,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/workflowTaskRelationLogDao" : {
+      "name" : "workflowTaskRelationLogDao",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/workflowTaskRelationLogDao",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.repository.WorkflowTaskRelationLogDao",
+      "displayedType" : "WorkflowTaskRelationLogDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 121,
+        "startColumn" : 40,
+        "endLine" : 121,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/processService" : {
+      "name" : "processService",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/processService",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.service.process.ProcessService",
+      "displayedType" : "ProcessService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 130,
+        "startColumn" : 28,
+        "endLine" : 130,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/taskDefinitionMapper" : {
+      "name" : "taskDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/taskDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.TaskDefinitionMapper",
+      "displayedType" : "TaskDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 109,
+        "startColumn" : 34,
+        "endLine" : 109,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/projectMapper" : {
+      "name" : "projectMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/projectMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.ProjectMapper",
+      "displayedType" : "ProjectMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 103,
+        "startColumn" : 27,
+        "endLine" : 103,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/projectService" : {
+      "name" : "projectService",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/projectService",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.ProjectService",
+      "displayedType" : "ProjectService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 106,
+        "startColumn" : 28,
+        "endLine" : 106,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/taskDefinitionDao" : {
+      "name" : "taskDefinitionDao",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/taskDefinitionDao",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.repository.TaskDefinitionDao",
+      "displayedType" : "TaskDefinitionDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 112,
+        "startColumn" : 31,
+        "endLine" : 112,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/workflowDefinitionLogMapper" : {
+      "name" : "workflowDefinitionLogMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/workflowDefinitionLogMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper",
+      "displayedType" : "WorkflowDefinitionLogMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 136,
+        "startColumn" : 41,
+        "endLine" : 136,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/workflowTaskRelationMapper" : {
+      "name" : "workflowTaskRelationMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/workflowTaskRelationMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkflowTaskRelationMapper",
+      "displayedType" : "WorkflowTaskRelationMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 118,
+        "startColumn" : 40,
+        "endLine" : 118,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/workflowTaskRelationService" : {
+      "name" : "workflowTaskRelationService",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/workflowTaskRelationService",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.WorkflowTaskRelationService",
+      "displayedType" : "WorkflowTaskRelationService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 124,
+        "startColumn" : 41,
+        "endLine" : 124,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/workflowDefinitionService" : {
+      "name" : "workflowDefinitionService",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/memberField/workflowDefinitionService",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.WorkflowDefinitionService",
+      "displayedType" : "WorkflowDefinitionService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 133,
+        "startColumn" : 39,
+        "endLine" : 133,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateDag(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long workflowDefinitionCode, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation> workflowTaskRelationList, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinitionLog> taskDefinitionLogs)" : {
+      "name" : "updateDag",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateDag(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long workflowDefinitionCode, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation> workflowTaskRelationList, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinitionLog> taskDefinitionLogs)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 240,
+        "startColumn" : 17,
+        "endLine" : 240,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateDag(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long workflowDefinitionCode, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation> workflowTaskRelationList, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinitionLog> taskDefinitionLogs)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 240,
+          "startColumn" : 32,
+          "endLine" : 240,
+          "endColumn" : 41
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateDag(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long workflowDefinitionCode, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation> workflowTaskRelationList, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinitionLog> taskDefinitionLogs)"
+      }, {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateDag(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long workflowDefinitionCode, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation> workflowTaskRelationList, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinitionLog> taskDefinitionLogs)/parameter/workflowDefinitionCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 240,
+          "startColumn" : 48,
+          "endLine" : 240,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateDag(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long workflowDefinitionCode, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation> workflowTaskRelationList, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinitionLog> taskDefinitionLogs)"
+      }, {
+        "name" : "workflowTaskRelationList",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateDag(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long workflowDefinitionCode, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation> workflowTaskRelationList, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinitionLog> taskDefinitionLogs)/parameter/workflowTaskRelationList",
+        "type" : "java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation>",
+        "displayedType" : "List<WorkflowTaskRelation>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 241,
+          "startColumn" : 54,
+          "endLine" : 241,
+          "endColumn" : 78
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateDag(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long workflowDefinitionCode, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation> workflowTaskRelationList, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinitionLog> taskDefinitionLogs)"
+      }, {
+        "name" : "taskDefinitionLogs",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateDag(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long workflowDefinitionCode, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation> workflowTaskRelationList, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinitionLog> taskDefinitionLogs)/parameter/taskDefinitionLogs",
+        "type" : "java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinitionLog>",
+        "displayedType" : "List<TaskDefinitionLog>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 242,
+          "startColumn" : 51,
+          "endLine" : 242,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateDag(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long workflowDefinitionCode, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation> workflowTaskRelationList, java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinitionLog> taskDefinitionLogs)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/fillWorkflowInfo(long projectCode, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskMainInfo> taskMainInfoIPage)" : {
+      "name" : "fillWorkflowInfo",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/fillWorkflowInfo(long projectCode, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskMainInfo> taskMainInfoIPage)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 852,
+        "startColumn" : 18,
+        "endLine" : 852,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/fillWorkflowInfo(long projectCode, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskMainInfo> taskMainInfoIPage)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 852,
+          "startColumn" : 40,
+          "endLine" : 852,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/fillWorkflowInfo(long projectCode, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskMainInfo> taskMainInfoIPage)"
+      }, {
+        "name" : "taskMainInfoIPage",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/fillWorkflowInfo(long projectCode, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskMainInfo> taskMainInfoIPage)/parameter/taskMainInfoIPage",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskMainInfo>",
+        "displayedType" : "IPage<TaskMainInfo>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 852,
+          "startColumn" : 73,
+          "endLine" : 852,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/fillWorkflowInfo(long projectCode, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskMainInfo> taskMainInfoIPage)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/persist2TaskDefinitionLog(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition)" : {
+      "name" : "persist2TaskDefinitionLog",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/persist2TaskDefinitionLog(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinitionLog",
+      "displayedType" : "TaskDefinitionLog",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 138,
+        "startColumn" : 31,
+        "endLine" : 138,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "user",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/persist2TaskDefinitionLog(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition)/parameter/user",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 138,
+          "startColumn" : 62,
+          "endLine" : 138,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/persist2TaskDefinitionLog(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition)"
+      }, {
+        "name" : "taskDefinition",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/persist2TaskDefinitionLog(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition)/parameter/taskDefinition",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition",
+        "displayedType" : "TaskDefinition",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 138,
+          "startColumn" : 83,
+          "endLine" : 138,
+          "endColumn" : 97
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/persist2TaskDefinitionLog(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/checkTaskDefinitionValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, java.lang.String permissions)" : {
+      "name" : "checkTaskDefinitionValid",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/checkTaskDefinitionValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, java.lang.String permissions)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 149,
+        "startColumn" : 18,
+        "endLine" : 149,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "user",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/checkTaskDefinitionValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, java.lang.String permissions)/parameter/user",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 149,
+          "startColumn" : 48,
+          "endLine" : 149,
+          "endColumn" : 52
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/checkTaskDefinitionValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, java.lang.String permissions)"
+      }, {
+        "name" : "taskDefinition",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/checkTaskDefinitionValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, java.lang.String permissions)/parameter/taskDefinition",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition",
+        "displayedType" : "TaskDefinition",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 149,
+          "startColumn" : 69,
+          "endLine" : 149,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/checkTaskDefinitionValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, java.lang.String permissions)"
+      }, {
+        "name" : "permissions",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/checkTaskDefinitionValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, java.lang.String permissions)/parameter/permissions",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 149,
+          "startColumn" : 92,
+          "endLine" : 149,
+          "endColumn" : 103
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/checkTaskDefinitionValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, java.lang.String permissions)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/switchVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)" : {
+      "name" : "switchVersion",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/switchVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 664,
+        "startColumn" : 32,
+        "endLine" : 664,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/switchVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 664,
+          "startColumn" : 51,
+          "endLine" : 664,
+          "endColumn" : 60
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/switchVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/switchVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 664,
+          "startColumn" : 67,
+          "endLine" : 664,
+          "endColumn" : 78
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/switchVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/switchVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)/parameter/taskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 664,
+          "startColumn" : 85,
+          "endLine" : 664,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/switchVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)"
+      }, {
+        "name" : "version",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/switchVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)/parameter/version",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 664,
+          "startColumn" : 99,
+          "endLine" : 664,
+          "endColumn" : 106
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/switchVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionVersions(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int pageNo, int pageSize)" : {
+      "name" : "queryTaskDefinitionVersions",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionVersions(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int pageNo, int pageSize)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 717,
+        "startColumn" : 19,
+        "endLine" : 717,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionVersions(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int pageNo, int pageSize)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 717,
+          "startColumn" : 52,
+          "endLine" : 717,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionVersions(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int pageNo, int pageSize)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionVersions(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int pageNo, int pageSize)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 718,
+          "startColumn" : 52,
+          "endLine" : 718,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionVersions(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int pageNo, int pageSize)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionVersions(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int pageNo, int pageSize)/parameter/taskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 719,
+          "startColumn" : 52,
+          "endLine" : 719,
+          "endColumn" : 60
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionVersions(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int pageNo, int pageSize)"
+      }, {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionVersions(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int pageNo, int pageSize)/parameter/pageNo",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 720,
+          "startColumn" : 51,
+          "endLine" : 720,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionVersions(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int pageNo, int pageSize)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionVersions(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int pageNo, int pageSize)/parameter/pageSize",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 721,
+          "startColumn" : 51,
+          "endLine" : 721,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionVersions(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int pageNo, int pageSize)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionByName(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String taskName)" : {
+      "name" : "queryTaskDefinitionByName",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionByName(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String taskName)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 186,
+        "startColumn" : 32,
+        "endLine" : 186,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionByName(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String taskName)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 186,
+          "startColumn" : 63,
+          "endLine" : 186,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionByName(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String taskName)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionByName(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String taskName)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 186,
+          "startColumn" : 79,
+          "endLine" : 186,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionByName(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String taskName)"
+      }, {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionByName(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String taskName)/parameter/workflowDefinitionCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 186,
+          "startColumn" : 97,
+          "endLine" : 186,
+          "endColumn" : 119
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionByName(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String taskName)"
+      }, {
+        "name" : "taskName",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionByName(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String taskName)/parameter/taskName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 187,
+          "startColumn" : 65,
+          "endLine" : 187,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionByName(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long workflowDefinitionCode, java.lang.String taskName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskWithUpstream(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.lang.String upstreamCodes)" : {
+      "name" : "updateTaskWithUpstream",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskWithUpstream(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.lang.String upstreamCodes)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 492,
+        "startColumn" : 32,
+        "endLine" : 492,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskWithUpstream(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.lang.String upstreamCodes)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 492,
+          "startColumn" : 60,
+          "endLine" : 492,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskWithUpstream(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.lang.String upstreamCodes)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskWithUpstream(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.lang.String upstreamCodes)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 492,
+          "startColumn" : 76,
+          "endLine" : 492,
+          "endColumn" : 87
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskWithUpstream(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.lang.String upstreamCodes)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskWithUpstream(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.lang.String upstreamCodes)/parameter/taskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 492,
+          "startColumn" : 94,
+          "endLine" : 492,
+          "endColumn" : 102
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskWithUpstream(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.lang.String upstreamCodes)"
+      }, {
+        "name" : "taskDefinitionJsonObj",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskWithUpstream(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.lang.String upstreamCodes)/parameter/taskDefinitionJsonObj",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 493,
+          "startColumn" : 62,
+          "endLine" : 493,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskWithUpstream(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.lang.String upstreamCodes)"
+      }, {
+        "name" : "upstreamCodes",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskWithUpstream(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.lang.String upstreamCodes)/parameter/upstreamCodes",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 493,
+          "startColumn" : 92,
+          "endLine" : 493,
+          "endColumn" : 105
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskWithUpstream(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.lang.String upstreamCodes)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateUpstreamTask(java.util.Set<java.lang.Long> allPreTaskCodeSet, long taskCode, long projectCode, long workflowDefinitionCode, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)" : {
+      "name" : "updateUpstreamTask",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateUpstreamTask(java.util.Set<java.lang.Long> allPreTaskCodeSet, long taskCode, long projectCode, long workflowDefinitionCode, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 568,
+        "startColumn" : 18,
+        "endLine" : 568,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "allPreTaskCodeSet",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateUpstreamTask(java.util.Set<java.lang.Long> allPreTaskCodeSet, long taskCode, long projectCode, long workflowDefinitionCode, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/allPreTaskCodeSet",
+        "type" : "java.util.Set<java.lang.Long>",
+        "displayedType" : "Set<Long>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 568,
+          "startColumn" : 47,
+          "endLine" : 568,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateUpstreamTask(java.util.Set<java.lang.Long> allPreTaskCodeSet, long taskCode, long projectCode, long workflowDefinitionCode, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateUpstreamTask(java.util.Set<java.lang.Long> allPreTaskCodeSet, long taskCode, long projectCode, long workflowDefinitionCode, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/taskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 568,
+          "startColumn" : 71,
+          "endLine" : 568,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateUpstreamTask(java.util.Set<java.lang.Long> allPreTaskCodeSet, long taskCode, long projectCode, long workflowDefinitionCode, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateUpstreamTask(java.util.Set<java.lang.Long> allPreTaskCodeSet, long taskCode, long projectCode, long workflowDefinitionCode, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 568,
+          "startColumn" : 86,
+          "endLine" : 568,
+          "endColumn" : 97
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateUpstreamTask(java.util.Set<java.lang.Long> allPreTaskCodeSet, long taskCode, long projectCode, long workflowDefinitionCode, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      }, {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateUpstreamTask(java.util.Set<java.lang.Long> allPreTaskCodeSet, long taskCode, long projectCode, long workflowDefinitionCode, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/workflowDefinitionCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 569,
+          "startColumn" : 42,
+          "endLine" : 569,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateUpstreamTask(java.util.Set<java.lang.Long> allPreTaskCodeSet, long taskCode, long projectCode, long workflowDefinitionCode, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      }, {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateUpstreamTask(java.util.Set<java.lang.Long> allPreTaskCodeSet, long taskCode, long projectCode, long workflowDefinitionCode, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 569,
+          "startColumn" : 71,
+          "endLine" : 569,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateUpstreamTask(java.util.Set<java.lang.Long> allPreTaskCodeSet, long taskCode, long projectCode, long workflowDefinitionCode, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/deleteByCodeAndVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)" : {
+      "name" : "deleteByCodeAndVersion",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/deleteByCodeAndVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 746,
+        "startColumn" : 32,
+        "endLine" : 746,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/deleteByCodeAndVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 746,
+          "startColumn" : 60,
+          "endLine" : 746,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/deleteByCodeAndVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/deleteByCodeAndVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 746,
+          "startColumn" : 76,
+          "endLine" : 746,
+          "endColumn" : 87
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/deleteByCodeAndVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/deleteByCodeAndVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)/parameter/taskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 746,
+          "startColumn" : 94,
+          "endLine" : 746,
+          "endColumn" : 102
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/deleteByCodeAndVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)"
+      }, {
+        "name" : "version",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/deleteByCodeAndVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)/parameter/version",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 746,
+          "startColumn" : 108,
+          "endLine" : 746,
+          "endColumn" : 115
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/deleteByCodeAndVersion(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, int version)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/createWorkflowTaskRelationLog(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation workflowTaskRelation)" : {
+      "name" : "createWorkflowTaskRelationLog",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/createWorkflowTaskRelationLog(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation workflowTaskRelation)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelationLog",
+      "displayedType" : "WorkflowTaskRelationLog",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 643,
+        "startColumn" : 37,
+        "endLine" : 643,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/createWorkflowTaskRelationLog(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation workflowTaskRelation)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 643,
+          "startColumn" : 72,
+          "endLine" : 643,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/createWorkflowTaskRelationLog(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation workflowTaskRelation)"
+      }, {
+        "name" : "workflowTaskRelation",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/createWorkflowTaskRelationLog(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation workflowTaskRelation)/parameter/workflowTaskRelation",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation",
+        "displayedType" : "WorkflowTaskRelation",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 644,
+          "startColumn" : 88,
+          "endLine" : 644,
+          "endColumn" : 108
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/createWorkflowTaskRelationLog(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation workflowTaskRelation)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionDetail(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode)" : {
+      "name" : "queryTaskDefinitionDetail",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionDetail(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 783,
+        "startColumn" : 32,
+        "endLine" : 783,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionDetail(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 783,
+          "startColumn" : 63,
+          "endLine" : 783,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionDetail(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionDetail(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 783,
+          "startColumn" : 79,
+          "endLine" : 783,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionDetail(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionDetail(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode)/parameter/taskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 783,
+          "startColumn" : 97,
+          "endLine" : 783,
+          "endColumn" : 105
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/queryTaskDefinitionDetail(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/TaskDefinitionUpdateValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinitionOriginal, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinitionUpdate)" : {
+      "name" : "TaskDefinitionUpdateValid",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/TaskDefinitionUpdateValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinitionOriginal, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinitionUpdate)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 274,
+        "startColumn" : 18,
+        "endLine" : 274,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskDefinitionOriginal",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/TaskDefinitionUpdateValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinitionOriginal, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinitionUpdate)/parameter/taskDefinitionOriginal",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition",
+        "displayedType" : "TaskDefinition",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 274,
+          "startColumn" : 59,
+          "endLine" : 274,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/TaskDefinitionUpdateValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinitionOriginal, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinitionUpdate)"
+      }, {
+        "name" : "taskDefinitionUpdate",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/TaskDefinitionUpdateValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinitionOriginal, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinitionUpdate)/parameter/taskDefinitionUpdate",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition",
+        "displayedType" : "TaskDefinition",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 274,
+          "startColumn" : 98,
+          "endLine" : 274,
+          "endColumn" : 118
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/TaskDefinitionUpdateValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinitionOriginal, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinitionUpdate)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskUpstreams(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, long workflowCode, long taskCode, java.lang.String upstreamCodes)" : {
+      "name" : "updateTaskUpstreams",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskUpstreams(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, long workflowCode, long taskCode, java.lang.String upstreamCodes)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation>",
+      "displayedType" : "List<WorkflowTaskRelation>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 159,
+        "startColumn" : 40,
+        "endLine" : 159,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "user",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskUpstreams(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, long workflowCode, long taskCode, java.lang.String upstreamCodes)/parameter/user",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 159,
+          "startColumn" : 65,
+          "endLine" : 159,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskUpstreams(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, long workflowCode, long taskCode, java.lang.String upstreamCodes)"
+      }, {
+        "name" : "workflowCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskUpstreams(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, long workflowCode, long taskCode, java.lang.String upstreamCodes)/parameter/workflowCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 159,
+          "startColumn" : 76,
+          "endLine" : 159,
+          "endColumn" : 88
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskUpstreams(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, long workflowCode, long taskCode, java.lang.String upstreamCodes)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskUpstreams(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, long workflowCode, long taskCode, java.lang.String upstreamCodes)/parameter/taskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 159,
+          "startColumn" : 95,
+          "endLine" : 159,
+          "endColumn" : 103
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskUpstreams(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, long workflowCode, long taskCode, java.lang.String upstreamCodes)"
+      }, {
+        "name" : "upstreamCodes",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskUpstreams(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, long workflowCode, long taskCode, java.lang.String upstreamCodes)/parameter/upstreamCodes",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 160,
+          "startColumn" : 67,
+          "endLine" : 160,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTaskUpstreams(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, long workflowCode, long taskCode, java.lang.String upstreamCodes)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/releaseTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long code, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.common.enums.ReleaseState releaseState)" : {
+      "name" : "releaseTaskDefinition",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/releaseTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long code, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.common.enums.ReleaseState releaseState)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 890,
+        "startColumn" : 32,
+        "endLine" : 890,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/releaseTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long code, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.common.enums.ReleaseState releaseState)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 890,
+          "startColumn" : 59,
+          "endLine" : 890,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/releaseTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long code, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.common.enums.ReleaseState releaseState)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/releaseTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long code, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.common.enums.ReleaseState releaseState)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 890,
+          "startColumn" : 75,
+          "endLine" : 890,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/releaseTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long code, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.common.enums.ReleaseState releaseState)"
+      }, {
+        "name" : "code",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/releaseTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long code, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.common.enums.ReleaseState releaseState)/parameter/code",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 890,
+          "startColumn" : 93,
+          "endLine" : 890,
+          "endColumn" : 97
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/releaseTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long code, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.common.enums.ReleaseState releaseState)"
+      }, {
+        "name" : "releaseState",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/releaseTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long code, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.common.enums.ReleaseState releaseState)/parameter/releaseState",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.common.enums.ReleaseState",
+        "displayedType" : "ReleaseState",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 891,
+          "startColumn" : 67,
+          "endLine" : 891,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/releaseTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long code, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.common.enums.ReleaseState releaseState)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateWorkflowLocation(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition workflowDefinition)" : {
+      "name" : "updateWorkflowLocation",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateWorkflowLocation(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition workflowDefinition)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition",
+      "displayedType" : "WorkflowDefinition",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 170,
+        "startColumn" : 32,
+        "endLine" : 170,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "user",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateWorkflowLocation(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition workflowDefinition)/parameter/user",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 170,
+          "startColumn" : 60,
+          "endLine" : 170,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateWorkflowLocation(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition workflowDefinition)"
+      }, {
+        "name" : "workflowDefinition",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateWorkflowLocation(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition workflowDefinition)/parameter/workflowDefinition",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition",
+        "displayedType" : "WorkflowDefinition",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 170,
+          "startColumn" : 85,
+          "endLine" : 170,
+          "endColumn" : 103
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateWorkflowLocation(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition workflowDefinition)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/fillRecords(long projectCode, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskMainInfo> taskMainInfoIPage)" : {
+      "name" : "fillRecords",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/fillRecords(long projectCode, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskMainInfo> taskMainInfoIPage)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 811,
+        "startColumn" : 18,
+        "endLine" : 811,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/fillRecords(long projectCode, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskMainInfo> taskMainInfoIPage)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 811,
+          "startColumn" : 35,
+          "endLine" : 811,
+          "endColumn" : 46
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/fillRecords(long projectCode, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskMainInfo> taskMainInfoIPage)"
+      }, {
+        "name" : "taskMainInfoIPage",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/fillRecords(long projectCode, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskMainInfo> taskMainInfoIPage)/parameter/taskMainInfoIPage",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskMainInfo>",
+        "displayedType" : "IPage<TaskMainInfo>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 811,
+          "startColumn" : 68,
+          "endLine" : 811,
+          "endColumn" : 85
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/fillRecords(long projectCode, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskMainInfo> taskMainInfoIPage)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/taskCanDeleteValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)" : {
+      "name" : "taskCanDeleteValid",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/taskCanDeleteValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 211,
+        "startColumn" : 18,
+        "endLine" : 211,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "user",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/taskCanDeleteValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/user",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 211,
+          "startColumn" : 42,
+          "endLine" : 211,
+          "endColumn" : 46
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/taskCanDeleteValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      }, {
+        "name" : "taskDefinition",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/taskCanDeleteValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/taskDefinition",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition",
+        "displayedType" : "TaskDefinition",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 211,
+          "startColumn" : 63,
+          "endLine" : 211,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/taskCanDeleteValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      }, {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/taskCanDeleteValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 211,
+          "startColumn" : 84,
+          "endLine" : 211,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/taskCanDeleteValid(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User user, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition taskDefinition, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/filterTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.task.TaskFilterRequest taskFilterRequest)" : {
+      "name" : "filterTaskDefinition",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/filterTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.task.TaskFilterRequest taskFilterRequest)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.PageInfo<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition>",
+      "displayedType" : "PageInfo<TaskDefinition>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 323,
+        "startColumn" : 37,
+        "endLine" : 323,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/filterTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.task.TaskFilterRequest taskFilterRequest)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 323,
+          "startColumn" : 63,
+          "endLine" : 323,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/filterTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.task.TaskFilterRequest taskFilterRequest)"
+      }, {
+        "name" : "taskFilterRequest",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/filterTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.task.TaskFilterRequest taskFilterRequest)/parameter/taskFilterRequest",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.task.TaskFilterRequest",
+        "displayedType" : "TaskFilterRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 324,
+          "startColumn" : 76,
+          "endLine" : 324,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/filterTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.task.TaskFilterRequest taskFilterRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/deleteTaskByWorkflowDefinitionCode(long workflowDefinitionCode, int workflowDefinitionVersion)" : {
+      "name" : "deleteTaskByWorkflowDefinitionCode",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/deleteTaskByWorkflowDefinitionCode(long workflowDefinitionCode, int workflowDefinitionVersion)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 957,
+        "startColumn" : 17,
+        "endLine" : 957,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/deleteTaskByWorkflowDefinitionCode(long workflowDefinitionCode, int workflowDefinitionVersion)/parameter/workflowDefinitionCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 957,
+          "startColumn" : 57,
+          "endLine" : 957,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/deleteTaskByWorkflowDefinitionCode(long workflowDefinitionCode, int workflowDefinitionVersion)"
+      }, {
+        "name" : "workflowDefinitionVersion",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/deleteTaskByWorkflowDefinitionCode(long workflowDefinitionCode, int workflowDefinitionVersion)/parameter/workflowDefinitionVersion",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 957,
+          "startColumn" : 85,
+          "endLine" : 957,
+          "endColumn" : 110
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/deleteTaskByWorkflowDefinitionCode(long workflowDefinitionCode, int workflowDefinitionVersion)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/getTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long taskCode)" : {
+      "name" : "getTaskDefinition",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/getTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long taskCode)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinition",
+      "displayedType" : "TaskDefinition",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 304,
+        "startColumn" : 27,
+        "endLine" : 304,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/getTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long taskCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 304,
+          "startColumn" : 50,
+          "endLine" : 304,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/getTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long taskCode)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/getTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long taskCode)/parameter/taskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 305,
+          "startColumn" : 50,
+          "endLine" : 305,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/getTaskDefinition(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long taskCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.util.Map<java.lang.String, java.lang.Object> result)" : {
+      "name" : "updateTask",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.util.Map<java.lang.String, java.lang.Object> result)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskDefinitionLog",
+      "displayedType" : "TaskDefinitionLog",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 345,
+        "startColumn" : 31,
+        "endLine" : 345,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.util.Map<java.lang.String, java.lang.Object> result)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 345,
+          "startColumn" : 47,
+          "endLine" : 345,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.util.Map<java.lang.String, java.lang.Object> result)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.util.Map<java.lang.String, java.lang.Object> result)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 345,
+          "startColumn" : 63,
+          "endLine" : 345,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.util.Map<java.lang.String, java.lang.Object> result)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.util.Map<java.lang.String, java.lang.Object> result)/parameter/taskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 345,
+          "startColumn" : 81,
+          "endLine" : 345,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.util.Map<java.lang.String, java.lang.Object> result)"
+      }, {
+        "name" : "taskDefinitionJsonObj",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.util.Map<java.lang.String, java.lang.Object> result)/parameter/taskDefinitionJsonObj",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 345,
+          "startColumn" : 98,
+          "endLine" : 345,
+          "endColumn" : 119
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.util.Map<java.lang.String, java.lang.Object> result)"
+      }, {
+        "name" : "result",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.util.Map<java.lang.String, java.lang.Object> result)/parameter/result",
+        "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+        "displayedType" : "Map<String, Object>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 346,
+          "startColumn" : 62,
+          "endLine" : 346,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/updateTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, long taskCode, java.lang.String taskDefinitionJsonObj, java.util.Map<java.lang.String, java.lang.Object> result)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/genTaskCodeList(java.lang.Integer genNum)" : {
+      "name" : "genTaskCodeList",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/genTaskCodeList(java.lang.Integer genNum)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 857,
+        "startColumn" : 32,
+        "endLine" : 857,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "genNum",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/genTaskCodeList(java.lang.Integer genNum)/parameter/genNum",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 857,
+          "startColumn" : 56,
+          "endLine" : 857,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl/method/genTaskCodeList(java.lang.Integer genNum)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskDefinitionServiceImpl"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/service/impl/TaskDefinitionServiceImpl.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.TaskDefinitionService" ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.service.impl.BaseServiceImpl" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,177 @@
+{
+  "name" : "MasterTaskExecutorThreadPoolManager",
+  "key" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 29,
+    "startColumn" : 8,
+    "endLine" : 29,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/memberField/logicTaskInstanceExecutionEventSenderManager" : {
+      "name" : "logicTaskInstanceExecutionEventSenderManager",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/memberField/logicTaskInstanceExecutionEventSenderManager",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.execute.org.apache.dolphinscheduler.server.master.runner.message.LogicTaskInstanceExecutionEventSenderManager",
+      "displayedType" : "LogicTaskInstanceExecutionEventSenderManager",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 38,
+        "startColumn" : 58,
+        "endLine" : 38,
+        "endColumn" : 102
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/memberField/masterSyncTaskExecutorThreadPool" : {
+      "name" : "masterSyncTaskExecutorThreadPool",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/memberField/masterSyncTaskExecutorThreadPool",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterSyncTaskExecutorThreadPool",
+      "displayedType" : "MasterSyncTaskExecutorThreadPool",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 32,
+        "startColumn" : 46,
+        "endLine" : 32,
+        "endColumn" : 78
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/memberField/masterAsyncTaskExecutorThreadPool" : {
+      "name" : "masterAsyncTaskExecutorThreadPool",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/memberField/masterAsyncTaskExecutorThreadPool",
+      "type" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterAsyncTaskExecutorThreadPool",
+      "displayedType" : "MasterAsyncTaskExecutorThreadPool",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 35,
+        "startColumn" : 47,
+        "endLine" : 35,
+        "endColumn" : 80
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/method/sendDispatchedEvent(org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor masterTaskExecutor)" : {
+      "name" : "sendDispatchedEvent",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/method/sendDispatchedEvent(org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor masterTaskExecutor)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 18,
+        "endLine" : 66,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "masterTaskExecutor",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/method/sendDispatchedEvent(org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor masterTaskExecutor)/parameter/masterTaskExecutor",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor",
+        "displayedType" : "MasterTaskExecutor",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 66,
+          "startColumn" : 63,
+          "endLine" : 66,
+          "endColumn" : 81
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/method/sendDispatchedEvent(org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor masterTaskExecutor)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/method/submitMasterTaskExecutor(org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor masterTaskExecutor)" : {
+      "name" : "submitMasterTaskExecutor",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/method/submitMasterTaskExecutor(org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor masterTaskExecutor)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 40,
+        "startColumn" : 20,
+        "endLine" : 40,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "masterTaskExecutor",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/method/submitMasterTaskExecutor(org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor masterTaskExecutor)/parameter/masterTaskExecutor",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor",
+        "displayedType" : "MasterTaskExecutor",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 40,
+          "startColumn" : 70,
+          "endLine" : 40,
+          "endColumn" : 88
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/method/submitMasterTaskExecutor(org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor masterTaskExecutor)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager"
+    },
+    "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/method/removeMasterTaskExecutor(org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor masterTaskExecutor)" : {
+      "name" : "removeMasterTaskExecutor",
+      "key" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/method/removeMasterTaskExecutor(org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor masterTaskExecutor)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 20,
+        "endLine" : 54,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "masterTaskExecutor",
+        "key" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/method/removeMasterTaskExecutor(org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor masterTaskExecutor)/parameter/masterTaskExecutor",
+        "type" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor",
+        "displayedType" : "MasterTaskExecutor",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 54,
+          "startColumn" : 70,
+          "endLine" : 54,
+          "endColumn" : 88
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager/method/removeMasterTaskExecutor(org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor masterTaskExecutor)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutorThreadPoolManager"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/runner/execute/MasterTaskExecutorThreadPoolManager.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

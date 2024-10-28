@@ -1,0 +1,1084 @@
+{
+  "name" : "DataAnalysisServiceImpl",
+  "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 87,
+    "startColumn" : 8,
+    "endLine" : 87,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/memberField/taskInstanceMapper" : {
+      "name" : "taskInstanceMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/memberField/taskInstanceMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.TaskInstanceMapper",
+      "displayedType" : "TaskInstanceMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 108,
+        "startColumn" : 32,
+        "endLine" : 108,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/memberField/taskDefinitionMapper" : {
+      "name" : "taskDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/memberField/taskDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.TaskDefinitionMapper",
+      "displayedType" : "TaskDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 111,
+        "startColumn" : 34,
+        "endLine" : 111,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/memberField/workflowInstanceMapper" : {
+      "name" : "workflowInstanceMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/memberField/workflowInstanceMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkflowInstanceMapper",
+      "displayedType" : "WorkflowInstanceMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 36,
+        "endLine" : 96,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/memberField/projectService" : {
+      "name" : "projectService",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/memberField/projectService",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.ProjectService",
+      "displayedType" : "ProjectService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 93,
+        "startColumn" : 28,
+        "endLine" : 93,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/memberField/workflowDefinitionMapper" : {
+      "name" : "workflowDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/memberField/workflowDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionMapper",
+      "displayedType" : "WorkflowDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 99,
+        "startColumn" : 38,
+        "endLine" : 99,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/memberField/errorCommandMapper" : {
+      "name" : "errorCommandMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/memberField/errorCommandMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.ErrorCommandMapper",
+      "displayedType" : "ErrorCommandMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 105,
+        "startColumn" : 32,
+        "endLine" : 105,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/memberField/projectMapper" : {
+      "name" : "projectMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/memberField/projectMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.ProjectMapper",
+      "displayedType" : "ProjectMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 90,
+        "startColumn" : 27,
+        "endLine" : 90,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/memberField/commandMapper" : {
+      "name" : "commandMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/memberField/commandMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.CommandMapper",
+      "displayedType" : "CommandMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 102,
+        "startColumn" : 27,
+        "endLine" : 102,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllWorkflowDefinitionCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)" : {
+      "name" : "getAllWorkflowDefinitionCount",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllWorkflowDefinitionCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.vo.WorkflowDefinitionCountVO",
+      "displayedType" : "WorkflowDefinitionCountVO",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 179,
+        "startColumn" : 38,
+        "endLine" : 179,
+        "endColumn" : 67
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllWorkflowDefinitionCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 179,
+          "startColumn" : 73,
+          "endLine" : 179,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllWorkflowDefinitionCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getTaskInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)" : {
+      "name" : "getTaskInstanceStateCountByProject",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getTaskInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.vo.TaskInstanceCountVO",
+      "displayedType" : "TaskInstanceCountVO",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 114,
+        "startColumn" : 32,
+        "endLine" : 114,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getTaskInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 114,
+          "startColumn" : 72,
+          "endLine" : 114,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getTaskInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getTaskInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)/parameter/projectCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 115,
+          "startColumn" : 72,
+          "endLine" : 115,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getTaskInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)"
+      }, {
+        "name" : "startDate",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getTaskInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)/parameter/startDate",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 116,
+          "startColumn" : 74,
+          "endLine" : 116,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getTaskInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)"
+      }, {
+        "name" : "endDate",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getTaskInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)/parameter/endDate",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 117,
+          "startColumn" : 74,
+          "endLine" : 117,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getTaskInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllWorkflowInstanceStateCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String startDate, java.lang.String endDate)" : {
+      "name" : "getAllWorkflowInstanceStateCount",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllWorkflowInstanceStateCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String startDate, java.lang.String endDate)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.vo.WorkflowInstanceCountVO",
+      "displayedType" : "WorkflowInstanceCountVO",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 155,
+        "startColumn" : 36,
+        "endLine" : 155,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllWorkflowInstanceStateCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String startDate, java.lang.String endDate)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 155,
+          "startColumn" : 74,
+          "endLine" : 155,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllWorkflowInstanceStateCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String startDate, java.lang.String endDate)"
+      }, {
+        "name" : "startDate",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllWorkflowInstanceStateCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String startDate, java.lang.String endDate)/parameter/startDate",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 156,
+          "startColumn" : 76,
+          "endLine" : 156,
+          "endColumn" : 85
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllWorkflowInstanceStateCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String startDate, java.lang.String endDate)"
+      }, {
+        "name" : "endDate",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllWorkflowInstanceStateCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String startDate, java.lang.String endDate)/parameter/endDate",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 157,
+          "startColumn" : 76,
+          "endLine" : 157,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllWorkflowInstanceStateCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String startDate, java.lang.String endDate)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countQueueState(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)" : {
+      "name" : "countQueueState",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countQueueState(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Integer>",
+      "displayedType" : "Map<String, Integer>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 219,
+        "startColumn" : 33,
+        "endLine" : 219,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countQueueState(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 219,
+          "startColumn" : 54,
+          "endLine" : 219,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countQueueState(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listErrorCommand(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)" : {
+      "name" : "listErrorCommand",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listErrorCommand(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.PageInfo<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.ErrorCommand>",
+      "displayedType" : "PageInfo<ErrorCommand>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 409,
+        "startColumn" : 35,
+        "endLine" : 409,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listErrorCommand(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 409,
+          "startColumn" : 57,
+          "endLine" : 409,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listErrorCommand(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listErrorCommand(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/projectCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 409,
+          "startColumn" : 73,
+          "endLine" : 409,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listErrorCommand(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listErrorCommand(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/pageNo",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 409,
+          "startColumn" : 94,
+          "endLine" : 409,
+          "endColumn" : 100
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listErrorCommand(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listErrorCommand(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/pageSize",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 409,
+          "startColumn" : 110,
+          "endLine" : 409,
+          "endColumn" : 118
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listErrorCommand(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllTaskInstanceStateCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String startDate, java.lang.String endDate)" : {
+      "name" : "getAllTaskInstanceStateCount",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllTaskInstanceStateCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String startDate, java.lang.String endDate)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.vo.TaskInstanceCountVO",
+      "displayedType" : "TaskInstanceCountVO",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 127,
+        "startColumn" : 32,
+        "endLine" : 127,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllTaskInstanceStateCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String startDate, java.lang.String endDate)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 127,
+          "startColumn" : 66,
+          "endLine" : 127,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllTaskInstanceStateCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String startDate, java.lang.String endDate)"
+      }, {
+        "name" : "startDate",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllTaskInstanceStateCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String startDate, java.lang.String endDate)/parameter/startDate",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 128,
+          "startColumn" : 68,
+          "endLine" : 128,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllTaskInstanceStateCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String startDate, java.lang.String endDate)"
+      }, {
+        "name" : "endDate",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllTaskInstanceStateCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String startDate, java.lang.String endDate)/parameter/endDate",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 129,
+          "startColumn" : 68,
+          "endLine" : 129,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAllTaskInstanceStateCount(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String startDate, java.lang.String endDate)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/setOptional(java.util.Optional<java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.ExecuteStatusCount>> startTimeStates)" : {
+      "name" : "setOptional",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/setOptional(java.util.Optional<java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.ExecuteStatusCount>> startTimeStates)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus>",
+      "displayedType" : "List<TaskExecutionStatus>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 477,
+        "startColumn" : 39,
+        "endLine" : 477,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "startTimeStates",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/setOptional(java.util.Optional<java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.ExecuteStatusCount>> startTimeStates)/parameter/startTimeStates",
+        "type" : "java.util.Optional<java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.ExecuteStatusCount>>",
+        "displayedType" : "Optional<List<ExecuteStatusCount>>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 477,
+          "startColumn" : 86,
+          "endLine" : 477,
+          "endColumn" : 101
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/setOptional(java.util.Optional<java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.ExecuteStatusCount>> startTimeStates)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countOneTaskStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long taskCode)" : {
+      "name" : "countOneTaskStates",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countOneTaskStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long taskCode)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.TaskCountDto",
+      "displayedType" : "TaskCountDto",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 367,
+        "startColumn" : 25,
+        "endLine" : 367,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countOneTaskStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long taskCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 367,
+          "startColumn" : 49,
+          "endLine" : 367,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countOneTaskStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long taskCode)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countOneTaskStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long taskCode)/parameter/taskCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 367,
+          "startColumn" : 65,
+          "endLine" : 367,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countOneTaskStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long taskCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listPendingCommands(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)" : {
+      "name" : "listPendingCommands",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listPendingCommands(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.PageInfo<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.Command>",
+      "displayedType" : "PageInfo<Command>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 390,
+        "startColumn" : 30,
+        "endLine" : 390,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listPendingCommands(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 390,
+          "startColumn" : 55,
+          "endLine" : 390,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listPendingCommands(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listPendingCommands(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/projectCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 390,
+          "startColumn" : 71,
+          "endLine" : 390,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listPendingCommands(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listPendingCommands(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/pageNo",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 390,
+          "startColumn" : 92,
+          "endLine" : 390,
+          "endColumn" : 98
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listPendingCommands(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listPendingCommands(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)/parameter/pageSize",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 390,
+          "startColumn" : 108,
+          "endLine" : 390,
+          "endColumn" : 116
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/listPendingCommands(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.Integer pageNo, java.lang.Integer pageSize)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getWorkflowInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)" : {
+      "name" : "getWorkflowInstanceStateCountByProject",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getWorkflowInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.vo.WorkflowInstanceCountVO",
+      "displayedType" : "WorkflowInstanceCountVO",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 142,
+        "startColumn" : 36,
+        "endLine" : 142,
+        "endColumn" : 74
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getWorkflowInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 142,
+          "startColumn" : 80,
+          "endLine" : 142,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getWorkflowInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getWorkflowInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)/parameter/projectCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 143,
+          "startColumn" : 80,
+          "endLine" : 143,
+          "endColumn" : 91
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getWorkflowInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)"
+      }, {
+        "name" : "startDate",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getWorkflowInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)/parameter/startDate",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 144,
+          "startColumn" : 82,
+          "endLine" : 144,
+          "endColumn" : 91
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getWorkflowInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)"
+      }, {
+        "name" : "endDate",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getWorkflowInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)/parameter/endDate",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 145,
+          "startColumn" : 82,
+          "endLine" : 145,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getWorkflowInstanceStateCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String startDate, java.lang.String endDate)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countWorkflowStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)" : {
+      "name" : "countWorkflowStates",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countWorkflowStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.TaskCountDto",
+      "displayedType" : "TaskCountDto",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 237,
+        "startColumn" : 25,
+        "endLine" : 237,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countWorkflowStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 237,
+          "startColumn" : 50,
+          "endLine" : 237,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countWorkflowStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)"
+      }, {
+        "name" : "statisticsStateRequest",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countWorkflowStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)/parameter/statisticsStateRequest",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest",
+        "displayedType" : "StatisticsStateRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 238,
+          "startColumn" : 68,
+          "endLine" : 238,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countWorkflowStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countCommandState(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)" : {
+      "name" : "countCommandState",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countCommandState(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.CommandStateCount>",
+      "displayedType" : "List<CommandStateCount>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 188,
+        "startColumn" : 36,
+        "endLine" : 188,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countCommandState(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 188,
+          "startColumn" : 59,
+          "endLine" : 188,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countCommandState(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAuthDefinitionCodes(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)" : {
+      "name" : "getAuthDefinitionCodes",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAuthDefinitionCodes(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)",
+      "type" : "java.util.List<java.lang.Long>",
+      "displayedType" : "List<Long>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 427,
+        "startColumn" : 24,
+        "endLine" : 427,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAuthDefinitionCodes(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 427,
+          "startColumn" : 52,
+          "endLine" : 427,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAuthDefinitionCodes(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAuthDefinitionCodes(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)/parameter/projectCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 427,
+          "startColumn" : 68,
+          "endLine" : 427,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getAuthDefinitionCodes(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countTaskStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)" : {
+      "name" : "countTaskStates",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countTaskStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.TaskCountDto",
+      "displayedType" : "TaskCountDto",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 304,
+        "startColumn" : 25,
+        "endLine" : 304,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countTaskStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 304,
+          "startColumn" : 46,
+          "endLine" : 304,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countTaskStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)"
+      }, {
+        "name" : "statisticsStateRequest",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countTaskStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)/parameter/statisticsStateRequest",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest",
+        "displayedType" : "StatisticsStateRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 304,
+          "startColumn" : 80,
+          "endLine" : 304,
+          "endColumn" : 102
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countTaskStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.project.StatisticsStateRequest statisticsStateRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countOneWorkflowStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long workflowCode)" : {
+      "name" : "countOneWorkflowStates",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countOneWorkflowStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long workflowCode)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.TaskCountDto",
+      "displayedType" : "TaskCountDto",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 284,
+        "startColumn" : 25,
+        "endLine" : 284,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countOneWorkflowStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long workflowCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 284,
+          "startColumn" : 53,
+          "endLine" : 284,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countOneWorkflowStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long workflowCode)"
+      }, {
+        "name" : "workflowCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countOneWorkflowStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long workflowCode)/parameter/workflowCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 284,
+          "startColumn" : 69,
+          "endLine" : 284,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countOneWorkflowStates(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long workflowCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countDefinitionByUserV2(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId, java.lang.Integer releaseState)" : {
+      "name" : "countDefinitionByUserV2",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countDefinitionByUserV2(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId, java.lang.Integer releaseState)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.dto.DefineUserDto",
+      "displayedType" : "DefineUserDto",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 458,
+        "startColumn" : 26,
+        "endLine" : 458,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countDefinitionByUserV2(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId, java.lang.Integer releaseState)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 458,
+          "startColumn" : 55,
+          "endLine" : 458,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countDefinitionByUserV2(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId, java.lang.Integer releaseState)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countDefinitionByUserV2(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId, java.lang.Integer releaseState)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 459,
+          "startColumn" : 58,
+          "endLine" : 459,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countDefinitionByUserV2(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId, java.lang.Integer releaseState)"
+      }, {
+        "name" : "releaseState",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countDefinitionByUserV2(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId, java.lang.Integer releaseState)/parameter/releaseState",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 460,
+          "startColumn" : 58,
+          "endLine" : 460,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/countDefinitionByUserV2(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer userId, java.lang.Integer releaseState)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getWorkflowDefinitionCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)" : {
+      "name" : "getWorkflowDefinitionCountByProject",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getWorkflowDefinitionCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.vo.WorkflowDefinitionCountVO",
+      "displayedType" : "WorkflowDefinitionCountVO",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 171,
+        "startColumn" : 38,
+        "endLine" : 171,
+        "endColumn" : 73
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getWorkflowDefinitionCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 171,
+          "startColumn" : 79,
+          "endLine" : 171,
+          "endColumn" : 88
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getWorkflowDefinitionCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getWorkflowDefinitionCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)/parameter/projectCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 171,
+          "startColumn" : 95,
+          "endLine" : 171,
+          "endColumn" : 106
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl/method/getWorkflowDefinitionCountByProject(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.DataAnalysisServiceImpl"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/service/impl/DataAnalysisServiceImpl.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.DataAnalysisService" ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.service.impl.BaseServiceImpl" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

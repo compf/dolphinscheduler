@@ -1,0 +1,166 @@
+{
+  "name" : "AbstractEmrTask",
+  "key" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 47,
+    "startColumn" : 17,
+    "endLine" : 47,
+    "endColumn" : 22
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask/memberField/emrParameters" : {
+      "name" : "emrParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask/memberField/emrParameters",
+      "type" : "org.apache.dolphinscheduler.plugin.task.emr.EmrParameters",
+      "displayedType" : "EmrParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 50,
+        "startColumn" : 19,
+        "endLine" : 50,
+        "endColumn" : 32
+      },
+      "modifiers" : [ ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask/memberField/taskExecutionContext" : {
+      "name" : "taskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask/memberField/taskExecutionContext",
+      "type" : "org.apache.dolphinscheduler.plugin.task.emr.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+      "displayedType" : "TaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 32,
+        "endLine" : 49,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask/memberField/emrClient" : {
+      "name" : "emrClient",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask/memberField/emrClient",
+      "type" : "org.apache.dolphinscheduler.plugin.task.emr.com.amazonaws.services.elasticmapreduce.AmazonElasticMapReduce",
+      "displayedType" : "AmazonElasticMapReduce",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 28,
+        "endLine" : 51,
+        "endColumn" : 37
+      },
+      "modifiers" : [ ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask/memberField/clusterId" : {
+      "name" : "clusterId",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask/memberField/clusterId",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 12,
+        "endLine" : 52,
+        "endColumn" : 21
+      },
+      "modifiers" : [ ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask/memberField/objectMapper" : {
+      "name" : "objectMapper",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask/memberField/objectMapper",
+      "type" : "com.fasterxml.jackson.databind.ObjectMapper",
+      "displayedType" : "ObjectMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 60,
+        "startColumn" : 31,
+        "endLine" : 60,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask/method/createEmrClient()" : {
+      "name" : "createEmrClient",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask/method/createEmrClient()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.emr.com.amazonaws.services.elasticmapreduce.AmazonElasticMapReduce",
+      "displayedType" : "AmazonElasticMapReduce",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 94,
+        "startColumn" : 38,
+        "endLine" : 94,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask/method/getParameters()" : {
+      "name" : "getParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask/method/getParameters()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.emr.org.apache.dolphinscheduler.plugin.task.api.parameters.AbstractParameters",
+      "displayedType" : "AbstractParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 90,
+        "startColumn" : 31,
+        "endLine" : 90,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask/method/init()" : {
+      "name" : "init",
+      "key" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask/method/init()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 17,
+        "endLine" : 79,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.emr.AbstractEmrTask"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-emr/src/main/java/org/apache/dolphinscheduler/plugin/task/emr/AbstractEmrTask.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.plugin.task.emr.org.apache.dolphinscheduler.plugin.task.api.AbstractRemoteTask" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

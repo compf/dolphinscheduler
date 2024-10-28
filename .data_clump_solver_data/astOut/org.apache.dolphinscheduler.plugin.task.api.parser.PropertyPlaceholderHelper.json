@@ -1,0 +1,507 @@
+{
+  "name" : "PropertyPlaceholderHelper",
+  "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 39,
+    "startColumn" : 8,
+    "endLine" : 39,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/memberField/placeholderPrefix" : {
+      "name" : "placeholderPrefix",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/memberField/placeholderPrefix",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 26,
+        "endLine" : 49,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/memberField/placeholderSuffix" : {
+      "name" : "placeholderSuffix",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/memberField/placeholderSuffix",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 26,
+        "endLine" : 51,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/memberField/wellKnownSimplePrefixes" : {
+      "name" : "wellKnownSimplePrefixes",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/memberField/wellKnownSimplePrefixes",
+      "type" : "java.util.Map<java.lang.String, java.lang.String>",
+      "displayedType" : "Map<String, String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 41,
+        "startColumn" : 46,
+        "endLine" : 41,
+        "endColumn" : 69
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/memberField/simplePrefix" : {
+      "name" : "simplePrefix",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/memberField/simplePrefix",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 26,
+        "endLine" : 53,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/memberField/valueSeparator" : {
+      "name" : "valueSeparator",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/memberField/valueSeparator",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 55,
+        "startColumn" : 26,
+        "endLine" : 55,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/memberField/ignoreUnresolvablePlaceholders" : {
+      "name" : "ignoreUnresolvablePlaceholders",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/memberField/ignoreUnresolvablePlaceholders",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 27,
+        "endLine" : 57,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/replacePlaceholders(java.lang.String value, org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper$PlaceholderResolver placeholderResolver)" : {
+      "name" : "replacePlaceholders",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/replacePlaceholders(java.lang.String value, org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper$PlaceholderResolver placeholderResolver)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 120,
+        "startColumn" : 19,
+        "endLine" : 120,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "value",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/replacePlaceholders(java.lang.String value, org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper$PlaceholderResolver placeholderResolver)/parameter/value",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 120,
+          "startColumn" : 46,
+          "endLine" : 120,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/replacePlaceholders(java.lang.String value, org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper$PlaceholderResolver placeholderResolver)"
+      }, {
+        "name" : "placeholderResolver",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/replacePlaceholders(java.lang.String value, org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper$PlaceholderResolver placeholderResolver)/parameter/placeholderResolver",
+        "type" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper$PlaceholderResolver",
+        "displayedType" : "PlaceholderResolver",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 120,
+          "startColumn" : 73,
+          "endLine" : 120,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/replacePlaceholders(java.lang.String value, org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper$PlaceholderResolver placeholderResolver)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/notNull(java.lang.Object object, java.lang.String message)" : {
+      "name" : "notNull",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/notNull(java.lang.Object object, java.lang.String message)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 240,
+        "startColumn" : 24,
+        "endLine" : 240,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "object",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/notNull(java.lang.Object object, java.lang.String message)/parameter/object",
+        "type" : "java.lang.Object",
+        "displayedType" : "Object",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 240,
+          "startColumn" : 39,
+          "endLine" : 240,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/notNull(java.lang.Object object, java.lang.String message)"
+      }, {
+        "name" : "message",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/notNull(java.lang.Object object, java.lang.String message)/parameter/message",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 240,
+          "startColumn" : 54,
+          "endLine" : 240,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/notNull(java.lang.Object object, java.lang.String message)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/replacePlaceholders(java.lang.String value, java.util.Properties properties)" : {
+      "name" : "replacePlaceholders",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/replacePlaceholders(java.lang.String value, java.util.Properties properties)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 102,
+        "startColumn" : 19,
+        "endLine" : 102,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "value",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/replacePlaceholders(java.lang.String value, java.util.Properties properties)/parameter/value",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 102,
+          "startColumn" : 46,
+          "endLine" : 102,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/replacePlaceholders(java.lang.String value, java.util.Properties properties)"
+      }, {
+        "name" : "properties",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/replacePlaceholders(java.lang.String value, java.util.Properties properties)/parameter/properties",
+        "type" : "java.util.Properties",
+        "displayedType" : "Properties",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 102,
+          "startColumn" : 70,
+          "endLine" : 102,
+          "endColumn" : 80
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/replacePlaceholders(java.lang.String value, java.util.Properties properties)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/findPlaceholderEndIndex(java.lang.CharSequence buf, int startIndex)" : {
+      "name" : "findPlaceholderEndIndex",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/findPlaceholderEndIndex(java.lang.CharSequence buf, int startIndex)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 181,
+        "startColumn" : 17,
+        "endLine" : 181,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "buf",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/findPlaceholderEndIndex(java.lang.CharSequence buf, int startIndex)/parameter/buf",
+        "type" : "java.lang.CharSequence",
+        "displayedType" : "CharSequence",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 181,
+          "startColumn" : 54,
+          "endLine" : 181,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/findPlaceholderEndIndex(java.lang.CharSequence buf, int startIndex)"
+      }, {
+        "name" : "startIndex",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/findPlaceholderEndIndex(java.lang.CharSequence buf, int startIndex)/parameter/startIndex",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 181,
+          "startColumn" : 63,
+          "endLine" : 181,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/findPlaceholderEndIndex(java.lang.CharSequence buf, int startIndex)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/parseStringValue(java.lang.String value, org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper$PlaceholderResolver placeholderResolver, java.util.Set<java.lang.String> visitedPlaceholders)" : {
+      "name" : "parseStringValue",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/parseStringValue(java.lang.String value, org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper$PlaceholderResolver placeholderResolver, java.util.Set<java.lang.String> visitedPlaceholders)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 125,
+        "startColumn" : 22,
+        "endLine" : 125,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "value",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/parseStringValue(java.lang.String value, org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper$PlaceholderResolver placeholderResolver, java.util.Set<java.lang.String> visitedPlaceholders)/parameter/value",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 126,
+          "startColumn" : 46,
+          "endLine" : 126,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/parseStringValue(java.lang.String value, org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper$PlaceholderResolver placeholderResolver, java.util.Set<java.lang.String> visitedPlaceholders)"
+      }, {
+        "name" : "placeholderResolver",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/parseStringValue(java.lang.String value, org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper$PlaceholderResolver placeholderResolver, java.util.Set<java.lang.String> visitedPlaceholders)/parameter/placeholderResolver",
+        "type" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper$PlaceholderResolver",
+        "displayedType" : "PlaceholderResolver",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 126,
+          "startColumn" : 73,
+          "endLine" : 126,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/parseStringValue(java.lang.String value, org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper$PlaceholderResolver placeholderResolver, java.util.Set<java.lang.String> visitedPlaceholders)"
+      }, {
+        "name" : "visitedPlaceholders",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/parseStringValue(java.lang.String value, org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper$PlaceholderResolver placeholderResolver, java.util.Set<java.lang.String> visitedPlaceholders)/parameter/visitedPlaceholders",
+        "type" : "java.util.Set<java.lang.String>",
+        "displayedType" : "Set<String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 127,
+          "startColumn" : 51,
+          "endLine" : 127,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/parseStringValue(java.lang.String value, org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper$PlaceholderResolver placeholderResolver, java.util.Set<java.lang.String> visitedPlaceholders)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/substringMatch(java.lang.CharSequence str, int index, java.lang.CharSequence substring)" : {
+      "name" : "substringMatch",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/substringMatch(java.lang.CharSequence str, int index, java.lang.CharSequence substring)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 223,
+        "startColumn" : 27,
+        "endLine" : 223,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "str",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/substringMatch(java.lang.CharSequence str, int index, java.lang.CharSequence substring)/parameter/str",
+        "type" : "java.lang.CharSequence",
+        "displayedType" : "CharSequence",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 223,
+          "startColumn" : 55,
+          "endLine" : 223,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/substringMatch(java.lang.CharSequence str, int index, java.lang.CharSequence substring)"
+      }, {
+        "name" : "index",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/substringMatch(java.lang.CharSequence str, int index, java.lang.CharSequence substring)/parameter/index",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 223,
+          "startColumn" : 64,
+          "endLine" : 223,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/substringMatch(java.lang.CharSequence str, int index, java.lang.CharSequence substring)"
+      }, {
+        "name" : "substring",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/substringMatch(java.lang.CharSequence str, int index, java.lang.CharSequence substring)/parameter/substring",
+        "type" : "java.lang.CharSequence",
+        "displayedType" : "CharSequence",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 223,
+          "startColumn" : 84,
+          "endLine" : 223,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper/method/substringMatch(java.lang.CharSequence str, int index, java.lang.CharSequence substring)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-api/src/main/java/org/apache/dolphinscheduler/plugin/task/api/parser/PropertyPlaceholderHelper.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : {
+    "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper.PlaceholderResolver" : {
+      "name" : "PlaceholderResolver",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper.PlaceholderResolver",
+      "type" : "interface",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 205,
+        "startColumn" : 12,
+        "endLine" : 205,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT", "STATIC" ],
+      "fields" : { },
+      "methods" : {
+        "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper.PlaceholderResolver/method/resolvePlaceholder(java.lang.String placeholderName)" : {
+          "name" : "resolvePlaceholder",
+          "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper.PlaceholderResolver/method/resolvePlaceholder(java.lang.String placeholderName)",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 212,
+            "startColumn" : 16,
+            "endLine" : 212,
+            "endColumn" : 34
+          },
+          "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "placeholderName",
+            "key" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper.PlaceholderResolver/method/resolvePlaceholder(java.lang.String placeholderName)/parameter/placeholderName",
+            "type" : "java.lang.String",
+            "displayedType" : "String",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 212,
+              "startColumn" : 42,
+              "endLine" : 212,
+              "endColumn" : 57
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper.PlaceholderResolver/method/resolvePlaceholder(java.lang.String placeholderName)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper.PlaceholderResolver"
+        }
+      },
+      "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-api/src/main/java/org/apache/dolphinscheduler/plugin/task/api/parser/PropertyPlaceholderHelper.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.plugin.task.api.parser.PropertyPlaceholderHelper",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  }
+}

@@ -1,0 +1,810 @@
+{
+  "name" : "CosStorageOperator",
+  "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 76,
+    "startColumn" : 8,
+    "endLine" : 76,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/memberField/MIN_UPLOAD_PART_BYTES" : {
+      "name" : "MIN_UPLOAD_PART_BYTES",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/memberField/MIN_UPLOAD_PART_BYTES",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 31,
+        "endLine" : 81,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/memberField/cosTransferManager" : {
+      "name" : "cosTransferManager",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/memberField/cosTransferManager",
+      "type" : "org.apache.dolphinscheduler.plugin.storage.cos.com.qcloud.cos.transfer.TransferManager",
+      "displayedType" : "TransferManager",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 87,
+        "startColumn" : 35,
+        "endLine" : 87,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/memberField/bucketName" : {
+      "name" : "bucketName",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/memberField/bucketName",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 26,
+        "endLine" : 83,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/memberField/MULTIPART_UPLOAD_BYTES_THRESHOLD" : {
+      "name" : "MULTIPART_UPLOAD_BYTES_THRESHOLD",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/memberField/MULTIPART_UPLOAD_BYTES_THRESHOLD",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 31,
+        "endLine" : 80,
+        "endColumn" : 63
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/memberField/cosClient" : {
+      "name" : "cosClient",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/memberField/cosClient",
+      "type" : "org.apache.dolphinscheduler.plugin.storage.cos.com.qcloud.cos.COSClient",
+      "displayedType" : "COSClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 85,
+        "startColumn" : 29,
+        "endLine" : 85,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/memberField/TRANSFER_THREAD_POOL_SIZE" : {
+      "name" : "TRANSFER_THREAD_POOL_SIZE",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/memberField/TRANSFER_THREAD_POOL_SIZE",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 30,
+        "endLine" : 78,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/exists(java.lang.String fileName)" : {
+      "name" : "exists",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/exists(java.lang.String fileName)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 160,
+        "startColumn" : 20,
+        "endLine" : 160,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "fileName",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/exists(java.lang.String fileName)/parameter/fileName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 160,
+          "startColumn" : 34,
+          "endLine" : 160,
+          "endColumn" : 42
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/exists(java.lang.String fileName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/listStorageEntity(java.lang.String resourceAbsolutePath)" : {
+      "name" : "listStorageEntity",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/listStorageEntity(java.lang.String resourceAbsolutePath)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.plugin.storage.cos.org.apache.dolphinscheduler.plugin.storage.api.StorageEntity>",
+      "displayedType" : "List<StorageEntity>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 224,
+        "startColumn" : 32,
+        "endLine" : 224,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "resourceAbsolutePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/listStorageEntity(java.lang.String resourceAbsolutePath)/parameter/resourceAbsolutePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 224,
+          "startColumn" : 57,
+          "endLine" : 224,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/listStorageEntity(java.lang.String resourceAbsolutePath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/upload(java.lang.String srcFile, java.lang.String dstPath, boolean deleteSource, boolean overwrite)" : {
+      "name" : "upload",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/upload(java.lang.String srcFile, java.lang.String dstPath, boolean deleteSource, boolean overwrite)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 187,
+        "startColumn" : 17,
+        "endLine" : 187,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "srcFile",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/upload(java.lang.String srcFile, java.lang.String dstPath, boolean deleteSource, boolean overwrite)/parameter/srcFile",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 187,
+          "startColumn" : 31,
+          "endLine" : 187,
+          "endColumn" : 38
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/upload(java.lang.String srcFile, java.lang.String dstPath, boolean deleteSource, boolean overwrite)"
+      }, {
+        "name" : "dstPath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/upload(java.lang.String srcFile, java.lang.String dstPath, boolean deleteSource, boolean overwrite)/parameter/dstPath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 187,
+          "startColumn" : 47,
+          "endLine" : 187,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/upload(java.lang.String srcFile, java.lang.String dstPath, boolean deleteSource, boolean overwrite)"
+      }, {
+        "name" : "deleteSource",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/upload(java.lang.String srcFile, java.lang.String dstPath, boolean deleteSource, boolean overwrite)/parameter/deleteSource",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 187,
+          "startColumn" : 64,
+          "endLine" : 187,
+          "endColumn" : 76
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/upload(java.lang.String srcFile, java.lang.String dstPath, boolean deleteSource, boolean overwrite)"
+      }, {
+        "name" : "overwrite",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/upload(java.lang.String srcFile, java.lang.String dstPath, boolean deleteSource, boolean overwrite)/parameter/overwrite",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 187,
+          "startColumn" : 86,
+          "endLine" : 187,
+          "endColumn" : 95
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/upload(java.lang.String srcFile, java.lang.String dstPath, boolean deleteSource, boolean overwrite)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/getStorageEntity(java.lang.String resourceAbsolutePath)" : {
+      "name" : "getStorageEntity",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/getStorageEntity(java.lang.String resourceAbsolutePath)",
+      "type" : "org.apache.dolphinscheduler.plugin.storage.cos.org.apache.dolphinscheduler.plugin.storage.api.StorageEntity",
+      "displayedType" : "StorageEntity",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 276,
+        "startColumn" : 26,
+        "endLine" : 276,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "resourceAbsolutePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/getStorageEntity(java.lang.String resourceAbsolutePath)/parameter/resourceAbsolutePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 276,
+          "startColumn" : 50,
+          "endLine" : 276,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/getStorageEntity(java.lang.String resourceAbsolutePath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/getStorageBaseDirectory()" : {
+      "name" : "getStorageBaseDirectory",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/getStorageBaseDirectory()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 109,
+        "startColumn" : 19,
+        "endLine" : 109,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 104,
+        "startColumn" : 17,
+        "endLine" : 104,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/download(java.lang.String srcFilePath, java.lang.String dstFilePath, boolean overwrite)" : {
+      "name" : "download",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/download(java.lang.String srcFilePath, java.lang.String dstFilePath, boolean overwrite)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 138,
+        "startColumn" : 17,
+        "endLine" : 138,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "srcFilePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/download(java.lang.String srcFilePath, java.lang.String dstFilePath, boolean overwrite)/parameter/srcFilePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 138,
+          "startColumn" : 33,
+          "endLine" : 138,
+          "endColumn" : 44
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/download(java.lang.String srcFilePath, java.lang.String dstFilePath, boolean overwrite)"
+      }, {
+        "name" : "dstFilePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/download(java.lang.String srcFilePath, java.lang.String dstFilePath, boolean overwrite)/parameter/dstFilePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 138,
+          "startColumn" : 53,
+          "endLine" : 138,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/download(java.lang.String srcFilePath, java.lang.String dstFilePath, boolean overwrite)"
+      }, {
+        "name" : "overwrite",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/download(java.lang.String srcFilePath, java.lang.String dstFilePath, boolean overwrite)/parameter/overwrite",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 138,
+          "startColumn" : 74,
+          "endLine" : 138,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/download(java.lang.String srcFilePath, java.lang.String dstFilePath, boolean overwrite)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/getCosTransferManager()" : {
+      "name" : "getCosTransferManager",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/getCosTransferManager()",
+      "type" : "org.apache.dolphinscheduler.plugin.storage.cos.com.qcloud.cos.transfer.TransferManager",
+      "displayedType" : "TransferManager",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 329,
+        "startColumn" : 29,
+        "endLine" : 329,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/transformCOSObjectToStorageEntity(org.apache.dolphinscheduler.plugin.storage.cos.com.qcloud.cos.model.COSObject object)" : {
+      "name" : "transformCOSObjectToStorageEntity",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/transformCOSObjectToStorageEntity(org.apache.dolphinscheduler.plugin.storage.cos.com.qcloud.cos.model.COSObject object)",
+      "type" : "org.apache.dolphinscheduler.plugin.storage.cos.org.apache.dolphinscheduler.plugin.storage.api.StorageEntity",
+      "displayedType" : "StorageEntity",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 296,
+        "startColumn" : 29,
+        "endLine" : 296,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "object",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/transformCOSObjectToStorageEntity(org.apache.dolphinscheduler.plugin.storage.cos.com.qcloud.cos.model.COSObject object)/parameter/object",
+        "type" : "org.apache.dolphinscheduler.plugin.storage.cos.com.qcloud.cos.model.COSObject",
+        "displayedType" : "COSObject",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 296,
+          "startColumn" : 73,
+          "endLine" : 296,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/transformCOSObjectToStorageEntity(org.apache.dolphinscheduler.plugin.storage.cos.com.qcloud.cos.model.COSObject object)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/fetchFileContent(java.lang.String filePath, int skipLineNums, int limit)" : {
+      "name" : "fetchFileContent",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/fetchFileContent(java.lang.String filePath, int skipLineNums, int limit)",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 208,
+        "startColumn" : 25,
+        "endLine" : 208,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "filePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/fetchFileContent(java.lang.String filePath, int skipLineNums, int limit)/parameter/filePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 208,
+          "startColumn" : 49,
+          "endLine" : 208,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/fetchFileContent(java.lang.String filePath, int skipLineNums, int limit)"
+      }, {
+        "name" : "skipLineNums",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/fetchFileContent(java.lang.String filePath, int skipLineNums, int limit)/parameter/skipLineNums",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 208,
+          "startColumn" : 63,
+          "endLine" : 208,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/fetchFileContent(java.lang.String filePath, int skipLineNums, int limit)"
+      }, {
+        "name" : "limit",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/fetchFileContent(java.lang.String filePath, int skipLineNums, int limit)/parameter/limit",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 208,
+          "startColumn" : 81,
+          "endLine" : 208,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/fetchFileContent(java.lang.String filePath, int skipLineNums, int limit)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/delete(java.lang.String filePath, boolean recursive)" : {
+      "name" : "delete",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/delete(java.lang.String filePath, boolean recursive)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 166,
+        "startColumn" : 17,
+        "endLine" : 166,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "filePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/delete(java.lang.String filePath, boolean recursive)/parameter/filePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 166,
+          "startColumn" : 31,
+          "endLine" : 166,
+          "endColumn" : 39
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/delete(java.lang.String filePath, boolean recursive)"
+      }, {
+        "name" : "recursive",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/delete(java.lang.String filePath, boolean recursive)/parameter/recursive",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 166,
+          "startColumn" : 49,
+          "endLine" : 166,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/delete(java.lang.String filePath, boolean recursive)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/listFileStorageEntityRecursively(java.lang.String resourceAbsolutePath)" : {
+      "name" : "listFileStorageEntityRecursively",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/listFileStorageEntityRecursively(java.lang.String resourceAbsolutePath)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.plugin.storage.cos.org.apache.dolphinscheduler.plugin.storage.api.StorageEntity>",
+      "displayedType" : "List<StorageEntity>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 249,
+        "startColumn" : 32,
+        "endLine" : 249,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "resourceAbsolutePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/listFileStorageEntityRecursively(java.lang.String resourceAbsolutePath)/parameter/resourceAbsolutePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 249,
+          "startColumn" : 72,
+          "endLine" : 249,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/listFileStorageEntityRecursively(java.lang.String resourceAbsolutePath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)" : {
+      "name" : "copy",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 173,
+        "startColumn" : 17,
+        "endLine" : 173,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "srcPath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)/parameter/srcPath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 173,
+          "startColumn" : 29,
+          "endLine" : 173,
+          "endColumn" : 36
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)"
+      }, {
+        "name" : "dstPath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)/parameter/dstPath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 173,
+          "startColumn" : 45,
+          "endLine" : 173,
+          "endColumn" : 52
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)"
+      }, {
+        "name" : "deleteSource",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)/parameter/deleteSource",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 173,
+          "startColumn" : 62,
+          "endLine" : 173,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)"
+      }, {
+        "name" : "overwrite",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)/parameter/overwrite",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 173,
+          "startColumn" : 84,
+          "endLine" : 173,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/copy(java.lang.String srcPath, java.lang.String dstPath, boolean deleteSource, boolean overwrite)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/createStorageDir(java.lang.String directoryAbsolutePath)" : {
+      "name" : "createStorageDir",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/createStorageDir(java.lang.String directoryAbsolutePath)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 124,
+        "startColumn" : 17,
+        "endLine" : 124,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "directoryAbsolutePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/createStorageDir(java.lang.String directoryAbsolutePath)/parameter/directoryAbsolutePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 124,
+          "startColumn" : 41,
+          "endLine" : 124,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/createStorageDir(java.lang.String directoryAbsolutePath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/ensureBucketSuccessfullyCreated(java.lang.String bucketName)" : {
+      "name" : "ensureBucketSuccessfullyCreated",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/ensureBucketSuccessfullyCreated(java.lang.String bucketName)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 283,
+        "startColumn" : 17,
+        "endLine" : 283,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "bucketName",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/ensureBucketSuccessfullyCreated(java.lang.String bucketName)/parameter/bucketName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 283,
+          "startColumn" : 56,
+          "endLine" : 283,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/ensureBucketSuccessfullyCreated(java.lang.String bucketName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/transformCOSKeyToAbsolutePath(java.lang.String cosKey)" : {
+      "name" : "transformCOSKeyToAbsolutePath",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/transformCOSKeyToAbsolutePath(java.lang.String cosKey)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 322,
+        "startColumn" : 20,
+        "endLine" : 322,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "cosKey",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/transformCOSKeyToAbsolutePath(java.lang.String cosKey)/parameter/cosKey",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 322,
+          "startColumn" : 57,
+          "endLine" : 322,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/transformCOSKeyToAbsolutePath(java.lang.String cosKey)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    },
+    "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/transformAbsolutePathToCOSKey(java.lang.String absolutePath)" : {
+      "name" : "transformAbsolutePathToCOSKey",
+      "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/transformAbsolutePathToCOSKey(java.lang.String absolutePath)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 314,
+        "startColumn" : 20,
+        "endLine" : 314,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "absolutePath",
+        "key" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/transformAbsolutePathToCOSKey(java.lang.String absolutePath)/parameter/absolutePath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 314,
+          "startColumn" : 57,
+          "endLine" : 314,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator/method/transformAbsolutePathToCOSKey(java.lang.String absolutePath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.storage.cos.CosStorageOperator"
+    }
+  },
+  "file_path" : "dolphinscheduler-storage-plugin/dolphinscheduler-storage-cos/src/main/java/org/apache/dolphinscheduler/plugin/storage/cos/CosStorageOperator.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "java.io.Closeable", "org.apache.dolphinscheduler.plugin.storage.cos.org.apache.dolphinscheduler.plugin.storage.api.StorageOperator" ],
+  "extends_" : [ "org.apache.dolphinscheduler.plugin.storage.cos.org.apache.dolphinscheduler.plugin.storage.api.AbstractStorageOperator" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

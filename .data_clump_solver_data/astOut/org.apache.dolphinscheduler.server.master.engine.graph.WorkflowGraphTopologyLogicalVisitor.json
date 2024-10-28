@@ -1,0 +1,464 @@
+{
+  "name" : "WorkflowGraphTopologyLogicalVisitor",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 37,
+    "startColumn" : 8,
+    "endLine" : 37,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/memberField/workflowGraph" : {
+      "name" : "workflowGraph",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/memberField/workflowGraph",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph",
+      "displayedType" : "IWorkflowGraph",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 39,
+        "startColumn" : 34,
+        "endLine" : 39,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/memberField/taskDependType" : {
+      "name" : "taskDependType",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/memberField/taskDependType",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.common.enums.TaskDependType",
+      "displayedType" : "TaskDependType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 41,
+        "startColumn" : 34,
+        "endLine" : 41,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/memberField/visitFunction" : {
+      "name" : "visitFunction",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/memberField/visitFunction",
+      "type" : "java.util.function.BiConsumer<java.lang.String, java.util.Set<java.lang.String>>",
+      "displayedType" : "BiConsumer<String, Set<String>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 45,
+        "startColumn" : 51,
+        "endLine" : 45,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/memberField/startNodes" : {
+      "name" : "startNodes",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/memberField/startNodes",
+      "type" : "java.util.Set<java.lang.String>",
+      "displayedType" : "Set<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 31,
+        "endLine" : 43,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/method/doVisitationInSubGraph(java.util.Set<java.lang.String> subGraphNodes)" : {
+      "name" : "doVisitationInSubGraph",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/method/doVisitationInSubGraph(java.util.Set<java.lang.String> subGraphNodes)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 121,
+        "startColumn" : 18,
+        "endLine" : 121,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "subGraphNodes",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/method/doVisitationInSubGraph(java.util.Set<java.lang.String> subGraphNodes)/parameter/subGraphNodes",
+        "type" : "java.util.Set<java.lang.String>",
+        "displayedType" : "Set<String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 121,
+          "startColumn" : 53,
+          "endLine" : 121,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/method/doVisitationInSubGraph(java.util.Set<java.lang.String> subGraphNodes)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/method/visitFromStartNodes()" : {
+      "name" : "visitFromStartNodes",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/method/visitFromStartNodes()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 106,
+        "startColumn" : 18,
+        "endLine" : 106,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/method/visitStartNodesOnly()" : {
+      "name" : "visitStartNodesOnly",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/method/visitStartNodesOnly()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 18,
+        "endLine" : 81,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/method/visitToStartNodes()" : {
+      "name" : "visitToStartNodes",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/method/visitToStartNodes()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 18,
+        "endLine" : 88,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/method/builder()" : {
+      "name" : "builder",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/method/builder()",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor$WorkflowGraphBfsVisitorBuilder",
+      "displayedType" : "WorkflowGraphBfsVisitorBuilder",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 50,
+        "endLine" : 58,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/method/visit()" : {
+      "name" : "visit",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor/method/visit()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 17,
+        "endLine" : 62,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/graph/WorkflowGraphTopologyLogicalVisitor.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder" : {
+      "name" : "WorkflowGraphBfsVisitorBuilder",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 151,
+        "startColumn" : 19,
+        "endLine" : 151,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/memberField/visitFunction" : {
+          "name" : "visitFunction",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/memberField/visitFunction",
+          "type" : "java.util.function.BiConsumer<java.lang.String, java.util.Set<java.lang.String>>",
+          "displayedType" : "BiConsumer<String, Set<String>>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 159,
+            "startColumn" : 49,
+            "endLine" : 159,
+            "endColumn" : 62
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder"
+        },
+        "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/memberField/taskDependType" : {
+          "name" : "taskDependType",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/memberField/taskDependType",
+          "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.common.enums.TaskDependType",
+          "displayedType" : "TaskDependType",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 157,
+            "startColumn" : 32,
+            "endLine" : 157,
+            "endColumn" : 46
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder"
+        },
+        "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/memberField/workflowGraph" : {
+          "name" : "workflowGraph",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/memberField/workflowGraph",
+          "type" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph",
+          "displayedType" : "IWorkflowGraph",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 153,
+            "startColumn" : 32,
+            "endLine" : 153,
+            "endColumn" : 45
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder"
+        },
+        "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/memberField/startNodes" : {
+          "name" : "startNodes",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/memberField/startNodes",
+          "type" : "java.util.List<java.lang.String>",
+          "displayedType" : "List<String>",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 155,
+            "startColumn" : 30,
+            "endLine" : 155,
+            "endColumn" : 40
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/build()" : {
+          "name" : "build",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/build()",
+          "type" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor",
+          "displayedType" : "WorkflowGraphTopologyLogicalVisitor",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 181,
+            "startColumn" : 52,
+            "endLine" : 181,
+            "endColumn" : 57
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder"
+        },
+        "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/taskDependType(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.common.enums.TaskDependType taskDependType)" : {
+          "name" : "taskDependType",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/taskDependType(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.common.enums.TaskDependType taskDependType)",
+          "type" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor$WorkflowGraphBfsVisitorBuilder",
+          "displayedType" : "WorkflowGraphBfsVisitorBuilder",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 166,
+            "startColumn" : 47,
+            "endLine" : 166,
+            "endColumn" : 61
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "taskDependType",
+            "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/taskDependType(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.common.enums.TaskDependType taskDependType)/parameter/taskDependType",
+            "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.common.enums.TaskDependType",
+            "displayedType" : "TaskDependType",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 166,
+              "startColumn" : 77,
+              "endLine" : 166,
+              "endColumn" : 91
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/taskDependType(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.common.enums.TaskDependType taskDependType)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder"
+        },
+        "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/onWorkflowGraph(org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph workflowGraph)" : {
+          "name" : "onWorkflowGraph",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/onWorkflowGraph(org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph workflowGraph)",
+          "type" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor$WorkflowGraphBfsVisitorBuilder",
+          "displayedType" : "WorkflowGraphBfsVisitorBuilder",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 161,
+            "startColumn" : 47,
+            "endLine" : 161,
+            "endColumn" : 62
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "workflowGraph",
+            "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/onWorkflowGraph(org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph workflowGraph)/parameter/workflowGraph",
+            "type" : "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph",
+            "displayedType" : "IWorkflowGraph",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 161,
+              "startColumn" : 78,
+              "endLine" : 161,
+              "endColumn" : 91
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/onWorkflowGraph(org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowGraph workflowGraph)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder"
+        },
+        "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/doVisitFunction(java.util.function.BiConsumer<java.lang.String, java.util.Set<java.lang.String>> visitFunction)" : {
+          "name" : "doVisitFunction",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/doVisitFunction(java.util.function.BiConsumer<java.lang.String, java.util.Set<java.lang.String>> visitFunction)",
+          "type" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor$WorkflowGraphBfsVisitorBuilder",
+          "displayedType" : "WorkflowGraphBfsVisitorBuilder",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 176,
+            "startColumn" : 47,
+            "endLine" : 176,
+            "endColumn" : 62
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "visitFunction",
+            "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/doVisitFunction(java.util.function.BiConsumer<java.lang.String, java.util.Set<java.lang.String>> visitFunction)/parameter/visitFunction",
+            "type" : "java.util.function.BiConsumer<java.lang.String, java.util.Set<java.lang.String>>",
+            "displayedType" : "BiConsumer<String, Set<String>>",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 176,
+              "startColumn" : 95,
+              "endLine" : 176,
+              "endColumn" : 108
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/doVisitFunction(java.util.function.BiConsumer<java.lang.String, java.util.Set<java.lang.String>> visitFunction)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder"
+        },
+        "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/fromTask(java.util.List<java.lang.String> startNodes)" : {
+          "name" : "fromTask",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/fromTask(java.util.List<java.lang.String> startNodes)",
+          "type" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor$WorkflowGraphBfsVisitorBuilder",
+          "displayedType" : "WorkflowGraphBfsVisitorBuilder",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 171,
+            "startColumn" : 47,
+            "endLine" : 171,
+            "endColumn" : 55
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "startNodes",
+            "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/fromTask(java.util.List<java.lang.String> startNodes)/parameter/startNodes",
+            "type" : "java.util.List<java.lang.String>",
+            "displayedType" : "List<String>",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 171,
+              "startColumn" : 69,
+              "endLine" : 171,
+              "endColumn" : 79
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder/method/fromTask(java.util.List<java.lang.String> startNodes)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor.WorkflowGraphBfsVisitorBuilder"
+        }
+      },
+      "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/graph/WorkflowGraphTopologyLogicalVisitor.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowGraphTopologyLogicalVisitor",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : { }
+}

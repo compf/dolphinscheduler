@@ -1,0 +1,410 @@
+{
+  "name" : "KubernetesApplicationManager",
+  "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 51,
+    "startColumn" : 8,
+    "endLine" : 51,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/memberField/FAILED" : {
+      "name" : "FAILED",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/memberField/FAILED",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 33,
+        "endLine" : 56,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/memberField/PENDING" : {
+      "name" : "PENDING",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/memberField/PENDING",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 33,
+        "endLine" : 53,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/memberField/MAX_RETRY_TIMES" : {
+      "name" : "MAX_RETRY_TIMES",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/memberField/MAX_RETRY_TIMES",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 30,
+        "endLine" : 59,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/memberField/cacheClientMap" : {
+      "name" : "cacheClientMap",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/memberField/cacheClientMap",
+      "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.KubernetesClient>",
+      "displayedType" : "Map<String, KubernetesClient>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 49,
+        "endLine" : 64,
+        "endColumn" : 63
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/memberField/RUNNING" : {
+      "name" : "RUNNING",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/memberField/RUNNING",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 33,
+        "endLine" : 54,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/memberField/FINISH" : {
+      "name" : "FINISH",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/memberField/FINISH",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 55,
+        "startColumn" : 33,
+        "endLine" : 55,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/memberField/UNKNOWN" : {
+      "name" : "UNKNOWN",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/memberField/UNKNOWN",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 33,
+        "endLine" : 57,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getApplicationStatus(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.FilterWatchListDeletable<org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.api.model.Pod, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.api.model.PodList, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.PodResource> watchList)" : {
+      "name" : "getApplicationStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getApplicationStatus(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.FilterWatchListDeletable<org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.api.model.Pod, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.api.model.PodList, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.PodResource> watchList)",
+      "type" : "org.apache.dolphinscheduler.plugin.task.api.am.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus",
+      "displayedType" : "TaskExecutionStatus",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 164,
+        "startColumn" : 33,
+        "endLine" : 164,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "kubernetesApplicationManagerContext",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getApplicationStatus(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.FilterWatchListDeletable<org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.api.model.Pod, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.api.model.PodList, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.PodResource> watchList)/parameter/kubernetesApplicationManagerContext",
+        "type" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext",
+        "displayedType" : "KubernetesApplicationManagerContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 164,
+          "startColumn" : 90,
+          "endLine" : 164,
+          "endColumn" : 125
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getApplicationStatus(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.FilterWatchListDeletable<org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.api.model.Pod, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.api.model.PodList, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.PodResource> watchList)"
+      }, {
+        "name" : "watchList",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getApplicationStatus(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.FilterWatchListDeletable<org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.api.model.Pod, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.api.model.PodList, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.PodResource> watchList)/parameter/watchList",
+        "type" : "org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.FilterWatchListDeletable<org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.api.model.Pod, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.api.model.PodList, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.PodResource>",
+        "displayedType" : "FilterWatchListDeletable<Pod, PodList, PodResource>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 165,
+          "startColumn" : 106,
+          "endLine" : 165,
+          "endColumn" : 115
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getApplicationStatus(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.FilterWatchListDeletable<org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.api.model.Pod, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.api.model.PodList, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.PodResource> watchList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getPodLogWatcher(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext)" : {
+      "name" : "getPodLogWatcher",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getPodLogWatcher(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext)",
+      "type" : "org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.LogWatch",
+      "displayedType" : "LogWatch",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 195,
+        "startColumn" : 21,
+        "endLine" : 195,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "kubernetesApplicationManagerContext",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getPodLogWatcher(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext)/parameter/kubernetesApplicationManagerContext",
+        "type" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext",
+        "displayedType" : "KubernetesApplicationManagerContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 195,
+          "startColumn" : 74,
+          "endLine" : 195,
+          "endColumn" : 109
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getPodLogWatcher(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/removeCache(java.lang.String cacheKey)" : {
+      "name" : "removeCache",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/removeCache(java.lang.String cacheKey)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 140,
+        "startColumn" : 17,
+        "endLine" : 140,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "cacheKey",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/removeCache(java.lang.String cacheKey)/parameter/cacheKey",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 140,
+          "startColumn" : 36,
+          "endLine" : 140,
+          "endColumn" : 44
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/removeCache(java.lang.String cacheKey)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getResourceManagerType()" : {
+      "name" : "getResourceManagerType",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getResourceManagerType()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.api.am.org.apache.dolphinscheduler.plugin.task.api.enums.ResourceManagerType",
+      "displayedType" : "ResourceManagerType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 94,
+        "startColumn" : 32,
+        "endLine" : 94,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getApplicationStatus(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext)" : {
+      "name" : "getApplicationStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getApplicationStatus(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext)",
+      "type" : "org.apache.dolphinscheduler.plugin.task.api.am.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus",
+      "displayedType" : "TaskExecutionStatus",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 152,
+        "startColumn" : 32,
+        "endLine" : 152,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "kubernetesApplicationManagerContext",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getApplicationStatus(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext)/parameter/kubernetesApplicationManagerContext",
+        "type" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext",
+        "displayedType" : "KubernetesApplicationManagerContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 152,
+          "startColumn" : 89,
+          "endLine" : 152,
+          "endColumn" : 124
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getApplicationStatus(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getListenPod(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext)" : {
+      "name" : "getListenPod",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getListenPod(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext)",
+      "type" : "org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.FilterWatchListDeletable<org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.api.model.Pod, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.api.model.PodList, org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.dsl.PodResource>",
+      "displayedType" : "FilterWatchListDeletable<Pod, PodList, PodResource>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 105,
+        "startColumn" : 65,
+        "endLine" : 105,
+        "endColumn" : 77
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "kubernetesApplicationManagerContext",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getListenPod(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext)/parameter/kubernetesApplicationManagerContext",
+        "type" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext",
+        "displayedType" : "KubernetesApplicationManagerContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 105,
+          "startColumn" : 114,
+          "endLine" : 105,
+          "endColumn" : 149
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getListenPod(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/killApplication(org.apache.dolphinscheduler.plugin.task.api.am.ApplicationManagerContext applicationManagerContext)" : {
+      "name" : "killApplication",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/killApplication(org.apache.dolphinscheduler.plugin.task.api.am.ApplicationManagerContext applicationManagerContext)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 20,
+        "endLine" : 67,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "applicationManagerContext",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/killApplication(org.apache.dolphinscheduler.plugin.task.api.am.ApplicationManagerContext applicationManagerContext)/parameter/applicationManagerContext",
+        "type" : "org.apache.dolphinscheduler.plugin.task.api.am.ApplicationManagerContext",
+        "displayedType" : "ApplicationManagerContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 67,
+          "startColumn" : 62,
+          "endLine" : 67,
+          "endColumn" : 87
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/killApplication(org.apache.dolphinscheduler.plugin.task.api.am.ApplicationManagerContext applicationManagerContext)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager"
+    },
+    "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getClient(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext)" : {
+      "name" : "getClient",
+      "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getClient(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext)",
+      "type" : "org.apache.dolphinscheduler.plugin.task.api.am.io.fabric8.kubernetes.client.KubernetesClient",
+      "displayedType" : "KubernetesClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 132,
+        "startColumn" : 30,
+        "endLine" : 132,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "kubernetesApplicationManagerContext",
+        "key" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getClient(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext)/parameter/kubernetesApplicationManagerContext",
+        "type" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext",
+        "displayedType" : "KubernetesApplicationManagerContext",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 132,
+          "startColumn" : 76,
+          "endLine" : 132,
+          "endColumn" : 111
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager/method/getClient(org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManagerContext kubernetesApplicationManagerContext)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.api.am.KubernetesApplicationManager"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-api/src/main/java/org/apache/dolphinscheduler/plugin/task/api/am/KubernetesApplicationManager.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.plugin.task.api.am.ApplicationManager" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

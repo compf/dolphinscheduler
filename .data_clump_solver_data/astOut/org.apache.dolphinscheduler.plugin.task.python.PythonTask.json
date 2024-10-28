@@ -1,0 +1,332 @@
+{
+  "name" : "PythonTask",
+  "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 48,
+    "startColumn" : 8,
+    "endLine" : 48,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.python.PythonTask/memberField/PYTHON_LAUNCHER" : {
+      "name" : "PYTHON_LAUNCHER",
+      "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/memberField/PYTHON_LAUNCHER",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 35,
+        "endLine" : 56,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PROTECTED", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.python.PythonTask/memberField/shellCommandExecutor" : {
+      "name" : "shellCommandExecutor",
+      "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/memberField/shellCommandExecutor",
+      "type" : "org.apache.dolphinscheduler.plugin.task.python.org.apache.dolphinscheduler.plugin.task.api.ShellCommandExecutor",
+      "displayedType" : "ShellCommandExecutor",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 34,
+        "endLine" : 52,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.python.PythonTask/memberField/taskRequest" : {
+      "name" : "taskRequest",
+      "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/memberField/taskRequest",
+      "type" : "org.apache.dolphinscheduler.plugin.task.python.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+      "displayedType" : "TaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 36,
+        "endLine" : 54,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.python.PythonTask/memberField/pythonParameters" : {
+      "name" : "pythonParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/memberField/pythonParameters",
+      "type" : "org.apache.dolphinscheduler.plugin.task.python.PythonParameters",
+      "displayedType" : "PythonParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 50,
+        "startColumn" : 32,
+        "endLine" : 50,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/handle(org.apache.dolphinscheduler.plugin.task.python.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)" : {
+      "name" : "handle",
+      "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/handle(org.apache.dolphinscheduler.plugin.task.python.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 17,
+        "endLine" : 83,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskCallBack",
+        "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/handle(org.apache.dolphinscheduler.plugin.task.python.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)/parameter/taskCallBack",
+        "type" : "org.apache.dolphinscheduler.plugin.task.python.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack",
+        "displayedType" : "TaskCallBack",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 83,
+          "startColumn" : 37,
+          "endLine" : 83,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/handle(org.apache.dolphinscheduler.plugin.task.python.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/createPythonCommandFileIfNotExists(java.lang.String pythonScript, java.lang.String pythonScriptFile)" : {
+      "name" : "createPythonCommandFileIfNotExists",
+      "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/createPythonCommandFileIfNotExists(java.lang.String pythonScript, java.lang.String pythonScriptFile)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 130,
+        "startColumn" : 20,
+        "endLine" : 130,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "pythonScript",
+        "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/createPythonCommandFileIfNotExists(java.lang.String pythonScript, java.lang.String pythonScriptFile)/parameter/pythonScript",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 130,
+          "startColumn" : 62,
+          "endLine" : 130,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/createPythonCommandFileIfNotExists(java.lang.String pythonScript, java.lang.String pythonScriptFile)"
+      }, {
+        "name" : "pythonScriptFile",
+        "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/createPythonCommandFileIfNotExists(java.lang.String pythonScript, java.lang.String pythonScriptFile)/parameter/pythonScriptFile",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 130,
+          "startColumn" : 83,
+          "endLine" : 130,
+          "endColumn" : 99
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/createPythonCommandFileIfNotExists(java.lang.String pythonScript, java.lang.String pythonScriptFile)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/buildPythonScriptContent()" : {
+      "name" : "buildPythonScriptContent",
+      "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/buildPythonScriptContent()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 164,
+        "startColumn" : 22,
+        "endLine" : 164,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/buildPythonCommandFilePath()" : {
+      "name" : "buildPythonCommandFilePath",
+      "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/buildPythonCommandFilePath()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 155,
+        "startColumn" : 22,
+        "endLine" : 155,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/mergeParamsWithContext(org.apache.dolphinscheduler.plugin.task.python.org.apache.dolphinscheduler.plugin.task.api.parameters.AbstractParameters parameters)" : {
+      "name" : "mergeParamsWithContext",
+      "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/mergeParamsWithContext(org.apache.dolphinscheduler.plugin.task.python.org.apache.dolphinscheduler.plugin.task.api.parameters.AbstractParameters parameters)",
+      "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.python.org.apache.dolphinscheduler.plugin.task.api.model.Property>",
+      "displayedType" : "Map<String, Property>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 171,
+        "startColumn" : 37,
+        "endLine" : 171,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "parameters",
+        "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/mergeParamsWithContext(org.apache.dolphinscheduler.plugin.task.python.org.apache.dolphinscheduler.plugin.task.api.parameters.AbstractParameters parameters)/parameter/parameters",
+        "type" : "org.apache.dolphinscheduler.plugin.task.python.org.apache.dolphinscheduler.plugin.task.api.parameters.AbstractParameters",
+        "displayedType" : "AbstractParameters",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 171,
+          "startColumn" : 79,
+          "endLine" : 171,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/mergeParamsWithContext(org.apache.dolphinscheduler.plugin.task.python.org.apache.dolphinscheduler.plugin.task.api.parameters.AbstractParameters parameters)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/cancel()" : {
+      "name" : "cancel",
+      "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/cancel()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 109,
+        "startColumn" : 17,
+        "endLine" : 109,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/getParameters()" : {
+      "name" : "getParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/getParameters()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.python.org.apache.dolphinscheduler.plugin.task.api.parameters.AbstractParameters",
+      "displayedType" : "AbstractParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 119,
+        "startColumn" : 31,
+        "endLine" : 119,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/buildPythonExecuteCommand(java.lang.String pythonFile)" : {
+      "name" : "buildPythonExecuteCommand",
+      "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/buildPythonExecuteCommand(java.lang.String pythonFile)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 184,
+        "startColumn" : 22,
+        "endLine" : 184,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "pythonFile",
+        "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/buildPythonExecuteCommand(java.lang.String pythonFile)/parameter/pythonFile",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 184,
+          "startColumn" : 55,
+          "endLine" : 184,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/buildPythonExecuteCommand(java.lang.String pythonFile)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/init()" : {
+      "name" : "init",
+      "key" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask/method/init()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 17,
+        "endLine" : 71,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.python.PythonTask"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-python/src/main/java/org/apache/dolphinscheduler/plugin/task/python/PythonTask.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.plugin.task.python.org.apache.dolphinscheduler.plugin.task.api.AbstractTask" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,825 @@
+{
+  "name" : "RemoteExecutor",
+  "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 50,
+    "startColumn" : 8,
+    "endLine" : 50,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/memberField/sshClient" : {
+      "name" : "sshClient",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/memberField/sshClient",
+      "type" : "org.apache.dolphinscheduler.plugin.task.remoteshell.org.apache.sshd.client.SshClient",
+      "displayedType" : "SshClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 23,
+        "endLine" : 57,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/memberField/REMOTE_SHELL_HOME" : {
+      "name" : "REMOTE_SHELL_HOME",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/memberField/REMOTE_SHELL_HOME",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 25,
+        "endLine" : 52,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/memberField/TRACK_INTERVAL" : {
+      "name" : "TRACK_INTERVAL",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/memberField/TRACK_INTERVAL",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 22,
+        "endLine" : 54,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/memberField/session" : {
+      "name" : "session",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/memberField/session",
+      "type" : "org.apache.dolphinscheduler.plugin.task.remoteshell.org.apache.sshd.client.session.ClientSession",
+      "displayedType" : "ClientSession",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 27,
+        "endLine" : 58,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/memberField/taskOutputParams" : {
+      "name" : "taskOutputParams",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/memberField/taskOutputParams",
+      "type" : "java.util.Map<java.lang.String, java.lang.String>",
+      "displayedType" : "Map<String, String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 35,
+        "endLine" : 56,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/memberField/STATUS_TAG_MESSAGE" : {
+      "name" : "STATUS_TAG_MESSAGE",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/memberField/STATUS_TAG_MESSAGE",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 25,
+        "endLine" : 53,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/memberField/sshConnectionParam" : {
+      "name" : "sshConnectionParam",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/memberField/sshConnectionParam",
+      "type" : "org.apache.dolphinscheduler.plugin.task.remoteshell.org.apache.dolphinscheduler.plugin.datasource.ssh.param.SSHConnectionParam",
+      "displayedType" : "SSHConnectionParam",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 32,
+        "endLine" : 59,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/initClient()" : {
+      "name" : "initClient",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/initClient()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 18,
+        "endLine" : 67,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getSession()" : {
+      "name" : "getSession",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getSession()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.remoteshell.org.apache.sshd.client.session.ClientSession",
+      "displayedType" : "ClientSession",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 27,
+        "endLine" : 72,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getTaskExitCode(java.lang.String taskId)" : {
+      "name" : "getTaskExitCode",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getTaskExitCode(java.lang.String taskId)",
+      "type" : "java.lang.Integer",
+      "displayedType" : "Integer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 128,
+        "startColumn" : 20,
+        "endLine" : 128,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getTaskExitCode(java.lang.String taskId)/parameter/taskId",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 128,
+          "startColumn" : 43,
+          "endLine" : 128,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getTaskExitCode(java.lang.String taskId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/runRemote(java.lang.String command)" : {
+      "name" : "runRemote",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/runRemote(java.lang.String command)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 222,
+        "startColumn" : 19,
+        "endLine" : 222,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "command",
+        "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/runRemote(java.lang.String command)/parameter/command",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 222,
+          "startColumn" : 36,
+          "endLine" : 222,
+          "endColumn" : 43
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/runRemote(java.lang.String command)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/cleanData(java.lang.String taskId)" : {
+      "name" : "cleanData",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/cleanData(java.lang.String taskId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 147,
+        "startColumn" : 17,
+        "endLine" : 147,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/cleanData(java.lang.String taskId)/parameter/taskId",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 147,
+          "startColumn" : 34,
+          "endLine" : 147,
+          "endColumn" : 40
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/cleanData(java.lang.String taskId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getTaskPid(java.lang.String taskId)" : {
+      "name" : "getTaskPid",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getTaskPid(java.lang.String taskId)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 198,
+        "startColumn" : 19,
+        "endLine" : 198,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getTaskPid(java.lang.String taskId)/parameter/taskId",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 198,
+          "startColumn" : 37,
+          "endLine" : 198,
+          "endColumn" : 43
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getTaskPid(java.lang.String taskId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getRemoteShellHome()" : {
+      "name" : "getRemoteShellHome",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getRemoteShellHome()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 243,
+        "startColumn" : 20,
+        "endLine" : 243,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/run(java.lang.String taskId, java.lang.String localFile)" : {
+      "name" : "run",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/run(java.lang.String taskId, java.lang.String localFile)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 87,
+        "startColumn" : 16,
+        "endLine" : 87,
+        "endColumn" : 19
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/run(java.lang.String taskId, java.lang.String localFile)/parameter/taskId",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 87,
+          "startColumn" : 27,
+          "endLine" : 87,
+          "endColumn" : 33
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/run(java.lang.String taskId, java.lang.String localFile)"
+      }, {
+        "name" : "localFile",
+        "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/run(java.lang.String taskId, java.lang.String localFile)/parameter/localFile",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 87,
+          "startColumn" : 42,
+          "endLine" : 87,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/run(java.lang.String taskId, java.lang.String localFile)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getTaskOutputParams()" : {
+      "name" : "getTaskOutputParams",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getTaskOutputParams()",
+      "type" : "java.util.Map<java.lang.String, java.lang.String>",
+      "displayedType" : "Map<String, String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 124,
+        "startColumn" : 32,
+        "endLine" : 124,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/track(java.lang.String taskId)" : {
+      "name" : "track",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/track(java.lang.String taskId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 104,
+        "startColumn" : 17,
+        "endLine" : 104,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/track(java.lang.String taskId)/parameter/taskId",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 104,
+          "startColumn" : 30,
+          "endLine" : 104,
+          "endColumn" : 36
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/track(java.lang.String taskId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/uploadScript(java.lang.String taskId, java.lang.String localFile)" : {
+      "name" : "uploadScript",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/uploadScript(java.lang.String taskId, java.lang.String localFile)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 212,
+        "startColumn" : 17,
+        "endLine" : 212,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/uploadScript(java.lang.String taskId, java.lang.String localFile)/parameter/taskId",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 212,
+          "startColumn" : 37,
+          "endLine" : 212,
+          "endColumn" : 43
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/uploadScript(java.lang.String taskId, java.lang.String localFile)"
+      }, {
+        "name" : "localFile",
+        "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/uploadScript(java.lang.String taskId, java.lang.String localFile)/parameter/localFile",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 212,
+          "startColumn" : 52,
+          "endLine" : 212,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/uploadScript(java.lang.String taskId, java.lang.String localFile)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/kill(java.lang.String taskId)" : {
+      "name" : "kill",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/kill(java.lang.String taskId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 157,
+        "startColumn" : 17,
+        "endLine" : 157,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/kill(java.lang.String taskId)/parameter/taskId",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 157,
+          "startColumn" : 29,
+          "endLine" : 157,
+          "endColumn" : 35
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/kill(java.lang.String taskId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getAllRemotePidStr(java.lang.String pid)" : {
+      "name" : "getAllRemotePidStr",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getAllRemotePidStr(java.lang.String pid)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 178,
+        "startColumn" : 22,
+        "endLine" : 178,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "pid",
+        "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getAllRemotePidStr(java.lang.String pid)/parameter/pid",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 178,
+          "startColumn" : 48,
+          "endLine" : 178,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/getAllRemotePidStr(java.lang.String pid)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/saveCommand(java.lang.String taskId, java.lang.String localFile)" : {
+      "name" : "saveCommand",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/saveCommand(java.lang.String taskId, java.lang.String localFile)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 203,
+        "startColumn" : 17,
+        "endLine" : 203,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/saveCommand(java.lang.String taskId, java.lang.String localFile)/parameter/taskId",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 203,
+          "startColumn" : 36,
+          "endLine" : 203,
+          "endColumn" : 42
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/saveCommand(java.lang.String taskId, java.lang.String localFile)"
+      }, {
+        "name" : "localFile",
+        "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/saveCommand(java.lang.String taskId, java.lang.String localFile)/parameter/localFile",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 203,
+          "startColumn" : 51,
+          "endLine" : 203,
+          "endColumn" : 60
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/saveCommand(java.lang.String taskId, java.lang.String localFile)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    },
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 249,
+        "startColumn" : 17,
+        "endLine" : 249,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-remoteshell/src/main/java/org/apache/dolphinscheduler/plugin/task/remoteshell/RemoteExecutor.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "java.lang.AutoCloseable" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND" : {
+      "name" : "COMMAND",
+      "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 259,
+        "startColumn" : 12,
+        "endLine" : 259,
+        "endColumn" : 17
+      },
+      "modifiers" : [ "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/CAT_FINAL_SCRIPT" : {
+          "name" : "CAT_FINAL_SCRIPT",
+          "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/CAT_FINAL_SCRIPT",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 278,
+            "startColumn" : 29,
+            "endLine" : 278,
+            "endColumn" : 45
+          },
+          "modifiers" : [ "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND"
+        },
+        "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/GET_PID_COMMAND" : {
+          "name" : "GET_PID_COMMAND",
+          "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/GET_PID_COMMAND",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 270,
+            "startColumn" : 29,
+            "endLine" : 270,
+            "endColumn" : 44
+          },
+          "modifiers" : [ "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND"
+        },
+        "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/RUN_COMMAND" : {
+          "name" : "RUN_COMMAND",
+          "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/RUN_COMMAND",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 266,
+            "startColumn" : 29,
+            "endLine" : 266,
+            "endColumn" : 40
+          },
+          "modifiers" : [ "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND"
+        },
+        "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/KILL_COMMAND" : {
+          "name" : "KILL_COMMAND",
+          "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/KILL_COMMAND",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 271,
+            "startColumn" : 29,
+            "endLine" : 271,
+            "endColumn" : 41
+          },
+          "modifiers" : [ "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND"
+        },
+        "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/CHECK_DIR" : {
+          "name" : "CHECK_DIR",
+          "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/CHECK_DIR",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 265,
+            "startColumn" : 29,
+            "endLine" : 265,
+            "endColumn" : 38
+          },
+          "modifiers" : [ "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND"
+        },
+        "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/PSTREE_COMMAND" : {
+          "name" : "PSTREE_COMMAND",
+          "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/PSTREE_COMMAND",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 280,
+            "startColumn" : 29,
+            "endLine" : 280,
+            "endColumn" : 43
+          },
+          "modifiers" : [ "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND"
+        },
+        "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/LOG_TAIL_COMMAND" : {
+          "name" : "LOG_TAIL_COMMAND",
+          "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/LOG_TAIL_COMMAND",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 269,
+            "startColumn" : 29,
+            "endLine" : 269,
+            "endColumn" : 45
+          },
+          "modifiers" : [ "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND"
+        },
+        "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/CLEAN_COMMAND" : {
+          "name" : "CLEAN_COMMAND",
+          "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/CLEAN_COMMAND",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 272,
+            "startColumn" : 29,
+            "endLine" : 272,
+            "endColumn" : 42
+          },
+          "modifiers" : [ "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND"
+        },
+        "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/TRACK_COMMAND" : {
+          "name" : "TRACK_COMMAND",
+          "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/TRACK_COMMAND",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 267,
+            "startColumn" : 29,
+            "endLine" : 267,
+            "endColumn" : 42
+          },
+          "modifiers" : [ "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND"
+        },
+        "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/HEADER" : {
+          "name" : "HEADER",
+          "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/HEADER",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 274,
+            "startColumn" : 29,
+            "endLine" : 274,
+            "endColumn" : 35
+          },
+          "modifiers" : [ "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND"
+        },
+        "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/ADD_STATUS_COMMAND" : {
+          "name" : "ADD_STATUS_COMMAND",
+          "key" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND/memberField/ADD_STATUS_COMMAND",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 276,
+            "startColumn" : 29,
+            "endLine" : 276,
+            "endColumn" : 47
+          },
+          "modifiers" : [ "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor.COMMAND"
+        }
+      },
+      "methods" : { },
+      "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-remoteshell/src/main/java/org/apache/dolphinscheduler/plugin/task/remoteshell/RemoteExecutor.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.plugin.task.remoteshell.RemoteExecutor",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : { }
+}

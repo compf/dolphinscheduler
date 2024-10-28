@@ -1,0 +1,391 @@
+{
+  "name" : "AbstractDataSourceProcessor",
+  "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 44,
+    "startColumn" : 17,
+    "endLine" : 44,
+    "endColumn" : 22
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/memberField/IPV4_PATTERN" : {
+      "name" : "IPV4_PATTERN",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/memberField/IPV4_PATTERN",
+      "type" : "java.util.regex.Pattern",
+      "displayedType" : "Pattern",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 46,
+        "startColumn" : 34,
+        "endLine" : 46,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/memberField/DATABASE_PATTER" : {
+      "name" : "DATABASE_PATTER",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/memberField/DATABASE_PATTER",
+      "type" : "java.util.regex.Pattern",
+      "displayedType" : "Pattern",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 50,
+        "startColumn" : 34,
+        "endLine" : 50,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/memberField/IPV6_PATTERN" : {
+      "name" : "IPV6_PATTERN",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/memberField/IPV6_PATTERN",
+      "type" : "java.util.regex.Pattern",
+      "displayedType" : "Pattern",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 48,
+        "startColumn" : 34,
+        "endLine" : 48,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/memberField/POSSIBLE_MALICIOUS_KEYS" : {
+      "name" : "POSSIBLE_MALICIOUS_KEYS",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/memberField/POSSIBLE_MALICIOUS_KEYS",
+      "type" : "java.util.Set<java.lang.String>",
+      "displayedType" : "Set<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 38,
+        "endLine" : 54,
+        "endColumn" : 61
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/memberField/PARAMS_PATTER" : {
+      "name" : "PARAMS_PATTER",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/memberField/PARAMS_PATTER",
+      "type" : "java.util.regex.Pattern",
+      "displayedType" : "Pattern",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 34,
+        "endLine" : 52,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/splitAndRemoveComment(java.lang.String sql)" : {
+      "name" : "splitAndRemoveComment",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/splitAndRemoveComment(java.lang.String sql)",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 136,
+        "startColumn" : 25,
+        "endLine" : 136,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "sql",
+        "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/splitAndRemoveComment(java.lang.String sql)/parameter/sql",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 136,
+          "startColumn" : 54,
+          "endLine" : 136,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/splitAndRemoveComment(java.lang.String sql)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkOther(java.util.Map<java.lang.String, java.lang.String> other)" : {
+      "name" : "checkOther",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkOther(java.util.Map<java.lang.String, java.lang.String> other)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 94,
+        "startColumn" : 20,
+        "endLine" : 94,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "other",
+        "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkOther(java.util.Map<java.lang.String, java.lang.String> other)/parameter/other",
+        "type" : "java.util.Map<java.lang.String, java.lang.String>",
+        "displayedType" : "Map<String, String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 94,
+          "startColumn" : 51,
+          "endLine" : 94,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkOther(java.util.Map<java.lang.String, java.lang.String> other)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkDatasourceParam(org.apache.dolphinscheduler.plugin.datasource.api.datasource.BaseDataSourceParamDTO baseDataSourceParamDTO)" : {
+      "name" : "checkDatasourceParam",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkDatasourceParam(org.apache.dolphinscheduler.plugin.datasource.api.datasource.BaseDataSourceParamDTO baseDataSourceParamDTO)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 17,
+        "endLine" : 57,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "baseDataSourceParamDTO",
+        "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkDatasourceParam(org.apache.dolphinscheduler.plugin.datasource.api.datasource.BaseDataSourceParamDTO baseDataSourceParamDTO)/parameter/baseDataSourceParamDTO",
+        "type" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.BaseDataSourceParamDTO",
+        "displayedType" : "BaseDataSourceParamDTO",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 57,
+          "startColumn" : 61,
+          "endLine" : 57,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkDatasourceParam(org.apache.dolphinscheduler.plugin.datasource.api.datasource.BaseDataSourceParamDTO baseDataSourceParamDTO)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/transformOtherParamToMap(java.lang.String other)" : {
+      "name" : "transformOtherParamToMap",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/transformOtherParamToMap(java.lang.String other)",
+      "type" : "java.util.Map<java.lang.String, java.lang.String>",
+      "displayedType" : "Map<String, String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 110,
+        "startColumn" : 35,
+        "endLine" : 110,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "other",
+        "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/transformOtherParamToMap(java.lang.String other)/parameter/other",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 67,
+          "endLine" : 110,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/transformOtherParamToMap(java.lang.String other)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkHost(java.lang.String host)" : {
+      "name" : "checkHost",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkHost(java.lang.String host)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 20,
+        "endLine" : 71,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "host",
+        "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkHost(java.lang.String host)/parameter/host",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 71,
+          "startColumn" : 37,
+          "endLine" : 71,
+          "endColumn" : 41
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkHost(java.lang.String host)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/getDatasourceUniqueId(org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.datasource.ConnectionParam connectionParam, org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.enums.DbType dbType)" : {
+      "name" : "getDatasourceUniqueId",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/getDatasourceUniqueId(org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.datasource.ConnectionParam connectionParam, org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.enums.DbType dbType)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 119,
+        "startColumn" : 19,
+        "endLine" : 119,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "connectionParam",
+        "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/getDatasourceUniqueId(org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.datasource.ConnectionParam connectionParam, org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.enums.DbType dbType)/parameter/connectionParam",
+        "type" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.datasource.ConnectionParam",
+        "displayedType" : "ConnectionParam",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 119,
+          "startColumn" : 57,
+          "endLine" : 119,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/getDatasourceUniqueId(org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.datasource.ConnectionParam connectionParam, org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.enums.DbType dbType)"
+      }, {
+        "name" : "dbType",
+        "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/getDatasourceUniqueId(org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.datasource.ConnectionParam connectionParam, org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.enums.DbType dbType)/parameter/dbType",
+        "type" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.enums.DbType",
+        "displayedType" : "DbType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 119,
+          "startColumn" : 81,
+          "endLine" : 119,
+          "endColumn" : 87
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/getDatasourceUniqueId(org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.datasource.ConnectionParam connectionParam, org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.enums.DbType dbType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkDataSourceConnectivity(org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.datasource.ConnectionParam connectionParam)" : {
+      "name" : "checkDataSourceConnectivity",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkDataSourceConnectivity(org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.datasource.ConnectionParam connectionParam)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 126,
+        "startColumn" : 20,
+        "endLine" : 126,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "connectionParam",
+        "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkDataSourceConnectivity(org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.datasource.ConnectionParam connectionParam)/parameter/connectionParam",
+        "type" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.datasource.ConnectionParam",
+        "displayedType" : "ConnectionParam",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 126,
+          "startColumn" : 64,
+          "endLine" : 126,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkDataSourceConnectivity(org.apache.dolphinscheduler.plugin.datasource.api.datasource.org.apache.dolphinscheduler.spi.datasource.ConnectionParam connectionParam)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor"
+    },
+    "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkDatabasePatter(java.lang.String database)" : {
+      "name" : "checkDatabasePatter",
+      "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkDatabasePatter(java.lang.String database)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 20,
+        "endLine" : 83,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "database",
+        "key" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkDatabasePatter(java.lang.String database)/parameter/database",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 83,
+          "startColumn" : 47,
+          "endLine" : 83,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor/method/checkDatabasePatter(java.lang.String database)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor"
+    }
+  },
+  "file_path" : "dolphinscheduler-datasource-plugin/dolphinscheduler-datasource-api/src/main/java/org/apache/dolphinscheduler/plugin/datasource/api/datasource/AbstractDataSourceProcessor.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.plugin.datasource.api.datasource.DataSourceProcessor" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

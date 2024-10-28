@@ -1,0 +1,231 @@
+{
+  "name" : "AlertServerMetrics",
+  "key" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 28,
+    "startColumn" : 8,
+    "endLine" : 28,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/memberField/alertSuccessCounter" : {
+      "name" : "alertSuccessCounter",
+      "key" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/memberField/alertSuccessCounter",
+      "type" : "org.apache.dolphinscheduler.alert.metrics.io.micrometer.core.instrument.Counter",
+      "displayedType" : "Counter",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 30,
+        "startColumn" : 27,
+        "endLine" : 30,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics"
+    },
+    "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/memberField/alertHeartBeatCounter" : {
+      "name" : "alertHeartBeatCounter",
+      "key" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/memberField/alertHeartBeatCounter",
+      "type" : "org.apache.dolphinscheduler.alert.metrics.io.micrometer.core.instrument.Counter",
+      "displayedType" : "Counter",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 27,
+        "endLine" : 42,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics"
+    },
+    "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/memberField/alertFailCounter" : {
+      "name" : "alertFailCounter",
+      "key" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/memberField/alertFailCounter",
+      "type" : "org.apache.dolphinscheduler.alert.metrics.io.micrometer.core.instrument.Counter",
+      "displayedType" : "Counter",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 36,
+        "startColumn" : 27,
+        "endLine" : 36,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/registerSendingAlertGauge(java.util.function.Supplier<java.lang.Number> supplier)" : {
+      "name" : "registerSendingAlertGauge",
+      "key" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/registerSendingAlertGauge(java.util.function.Supplier<java.lang.Number> supplier)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 17,
+        "endLine" : 53,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "supplier",
+        "key" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/registerSendingAlertGauge(java.util.function.Supplier<java.lang.Number> supplier)/parameter/supplier",
+        "type" : "java.util.function.Supplier<java.lang.Number>",
+        "displayedType" : "Supplier<Number>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 53,
+          "startColumn" : 66,
+          "endLine" : 53,
+          "endColumn" : 74
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/registerSendingAlertGauge(java.util.function.Supplier<java.lang.Number> supplier)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics"
+    },
+    "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/registerPendingAlertGauge(java.util.function.Supplier<java.lang.Number> supplier)" : {
+      "name" : "registerPendingAlertGauge",
+      "key" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/registerPendingAlertGauge(java.util.function.Supplier<java.lang.Number> supplier)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 17,
+        "endLine" : 47,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "supplier",
+        "key" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/registerPendingAlertGauge(java.util.function.Supplier<java.lang.Number> supplier)/parameter/supplier",
+        "type" : "java.util.function.Supplier<java.lang.Number>",
+        "displayedType" : "Supplier<Number>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 47,
+          "startColumn" : 66,
+          "endLine" : 47,
+          "endColumn" : 74
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/registerPendingAlertGauge(java.util.function.Supplier<java.lang.Number> supplier)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics"
+    },
+    "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/incAlertHeartbeatCount()" : {
+      "name" : "incAlertHeartbeatCount",
+      "key" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/incAlertHeartbeatCount()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 73,
+        "startColumn" : 17,
+        "endLine" : 73,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics"
+    },
+    "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/registerUncachedException(java.util.function.Supplier<java.lang.Number> supplier)" : {
+      "name" : "registerUncachedException",
+      "key" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/registerUncachedException(java.util.function.Supplier<java.lang.Number> supplier)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 59,
+        "startColumn" : 24,
+        "endLine" : 59,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "supplier",
+        "key" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/registerUncachedException(java.util.function.Supplier<java.lang.Number> supplier)/parameter/supplier",
+        "type" : "java.util.function.Supplier<java.lang.Number>",
+        "displayedType" : "Supplier<Number>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 59,
+          "startColumn" : 73,
+          "endLine" : 59,
+          "endColumn" : 81
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/registerUncachedException(java.util.function.Supplier<java.lang.Number> supplier)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics"
+    },
+    "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/incAlertSuccessCount()" : {
+      "name" : "incAlertSuccessCount",
+      "key" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/incAlertSuccessCount()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 17,
+        "endLine" : 65,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics"
+    },
+    "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/incAlertFailCount()" : {
+      "name" : "incAlertFailCount",
+      "key" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics/method/incAlertFailCount()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 17,
+        "endLine" : 69,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.metrics.AlertServerMetrics"
+    }
+  },
+  "file_path" : "dolphinscheduler-alert/dolphinscheduler-alert-server/src/main/java/org/apache/dolphinscheduler/alert/metrics/AlertServerMetrics.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,341 @@
+{
+  "name" : "WorkerGroupChangeNotifier",
+  "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 44,
+    "startColumn" : 8,
+    "endLine" : 44,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/memberField/workerGroupMap" : {
+      "name" : "workerGroupMap",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/memberField/workerGroupMap",
+      "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup>",
+      "displayedType" : "Map<String, WorkerGroup>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 38,
+        "endLine" : 51,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/memberField/listeners" : {
+      "name" : "listeners",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/memberField/listeners",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier$WorkerGroupListener>",
+      "displayedType" : "List<WorkerGroupListener>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 45,
+        "endLine" : 49,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/memberField/DEFAULT_REFRESH_WORKER_INTERVAL" : {
+      "name" : "DEFAULT_REFRESH_WORKER_INTERVAL",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/memberField/DEFAULT_REFRESH_WORKER_INTERVAL",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 46,
+        "startColumn" : 31,
+        "endLine" : 46,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/memberField/workerGroupDao" : {
+      "name" : "workerGroupDao",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/memberField/workerGroupDao",
+      "type" : "org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.repository.WorkerGroupDao",
+      "displayedType" : "WorkerGroupDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 48,
+        "startColumn" : 34,
+        "endLine" : 48,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/method/triggerListeners(org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.common.utils.MapComparator<java.lang.String, org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> mapComparator)" : {
+      "name" : "triggerListeners",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/method/triggerListeners(org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.common.utils.MapComparator<java.lang.String, org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> mapComparator)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 18,
+        "endLine" : 88,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "mapComparator",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/method/triggerListeners(org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.common.utils.MapComparator<java.lang.String, org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> mapComparator)/parameter/mapComparator",
+        "type" : "org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.common.utils.MapComparator<java.lang.String, org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup>",
+        "displayedType" : "MapComparator<String, WorkerGroup>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 88,
+          "startColumn" : 70,
+          "endLine" : 88,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/method/triggerListeners(org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.common.utils.MapComparator<java.lang.String, org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> mapComparator)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/method/subscribeWorkerGroupsChange(org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier$WorkerGroupListener listener)" : {
+      "name" : "subscribeWorkerGroupsChange",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/method/subscribeWorkerGroupsChange(org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier$WorkerGroupListener listener)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 17,
+        "endLine" : 63,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "listener",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/method/subscribeWorkerGroupsChange(org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier$WorkerGroupListener listener)/parameter/listener",
+        "type" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier$WorkerGroupListener",
+        "displayedType" : "WorkerGroupListener",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 63,
+          "startColumn" : 65,
+          "endLine" : 63,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/method/subscribeWorkerGroupsChange(org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier$WorkerGroupListener listener)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/method/detectChangedWorkerGroups()" : {
+      "name" : "detectChangedWorkerGroups",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/method/detectChangedWorkerGroups()",
+      "type" : "org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.common.utils.MapComparator<java.lang.String, org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup>",
+      "displayedType" : "MapComparator<String, WorkerGroup>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 48,
+        "endLine" : 81,
+        "endColumn" : 73
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/method/getWorkerGroupMap()" : {
+      "name" : "getWorkerGroupMap",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/method/getWorkerGroupMap()",
+      "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup>",
+      "displayedType" : "Map<String, WorkerGroup>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 30,
+        "endLine" : 77,
+        "endColumn" : 47
+      },
+      "modifiers" : [ ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/method/detectWorkerGroupChanges()" : {
+      "name" : "detectWorkerGroupChanges",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier/method/detectWorkerGroupChanges()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 10,
+        "endLine" : 67,
+        "endColumn" : 34
+      },
+      "modifiers" : [ ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/cluster/WorkerGroupChangeNotifier.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : {
+    "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener" : {
+      "name" : "WorkerGroupListener",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener",
+      "type" : "interface",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 108,
+        "startColumn" : 12,
+        "endLine" : 108,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT", "STATIC" ],
+      "fields" : { },
+      "methods" : {
+        "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener/method/onWorkerGroupChange(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)" : {
+          "name" : "onWorkerGroupChange",
+          "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener/method/onWorkerGroupChange(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)",
+          "type" : "void",
+          "displayedType" : "void",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 114,
+            "startColumn" : 14,
+            "endLine" : 114,
+            "endColumn" : 33
+          },
+          "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "workerGroups",
+            "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener/method/onWorkerGroupChange(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)/parameter/workerGroups",
+            "type" : "java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup>",
+            "displayedType" : "List<WorkerGroup>",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 114,
+              "startColumn" : 52,
+              "endLine" : 114,
+              "endColumn" : 64
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener/method/onWorkerGroupChange(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener"
+        },
+        "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener/method/onWorkerGroupAdd(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)" : {
+          "name" : "onWorkerGroupAdd",
+          "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener/method/onWorkerGroupAdd(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)",
+          "type" : "void",
+          "displayedType" : "void",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 112,
+            "startColumn" : 14,
+            "endLine" : 112,
+            "endColumn" : 30
+          },
+          "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "workerGroups",
+            "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener/method/onWorkerGroupAdd(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)/parameter/workerGroups",
+            "type" : "java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup>",
+            "displayedType" : "List<WorkerGroup>",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 112,
+              "startColumn" : 49,
+              "endLine" : 112,
+              "endColumn" : 61
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener/method/onWorkerGroupAdd(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener"
+        },
+        "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener/method/onWorkerGroupDelete(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)" : {
+          "name" : "onWorkerGroupDelete",
+          "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener/method/onWorkerGroupDelete(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)",
+          "type" : "void",
+          "displayedType" : "void",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 110,
+            "startColumn" : 14,
+            "endLine" : 110,
+            "endColumn" : 33
+          },
+          "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "workerGroups",
+            "key" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener/method/onWorkerGroupDelete(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)/parameter/workerGroups",
+            "type" : "java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup>",
+            "displayedType" : "List<WorkerGroup>",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 110,
+              "startColumn" : 52,
+              "endLine" : 110,
+              "endColumn" : 64
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener/method/onWorkerGroupDelete(java.util.List<org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.dao.entity.WorkerGroup> workerGroups)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier.WorkerGroupListener"
+        }
+      },
+      "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/cluster/WorkerGroupChangeNotifier.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.server.master.cluster.WorkerGroupChangeNotifier",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  }
+}

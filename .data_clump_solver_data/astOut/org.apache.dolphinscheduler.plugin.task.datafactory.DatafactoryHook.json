@@ -1,0 +1,329 @@
+{
+  "name" : "DatafactoryHook",
+  "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 45,
+    "startColumn" : 8,
+    "endLine" : 45,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/memberField/runId" : {
+      "name" : "runId",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/memberField/runId",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 55,
+        "startColumn" : 20,
+        "endLine" : 55,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/memberField/log" : {
+      "name" : "log",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/memberField/log",
+      "type" : "org.slf4j.Logger",
+      "displayedType" : "Logger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 28,
+        "endLine" : 49,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PROTECTED", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/memberField/taskFinishFlags" : {
+      "name" : "taskFinishFlags",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/memberField/taskFinishFlags",
+      "type" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryStatus[]",
+      "displayedType" : "DatafactoryStatus[]",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 39,
+        "endLine" : 47,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/memberField/profile" : {
+      "name" : "profile",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/memberField/profile",
+      "type" : "org.apache.dolphinscheduler.plugin.task.datafactory.com.azure.core.management.profile.AzureProfile",
+      "displayedType" : "AzureProfile",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 33,
+        "endLine" : 53,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/memberField/client" : {
+      "name" : "client",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/memberField/client",
+      "type" : "org.apache.dolphinscheduler.plugin.task.datafactory.com.azure.resourcemanager.datafactory.DataFactoryManager",
+      "displayedType" : "DataFactoryManager",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 32,
+        "endLine" : 52,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/memberField/QUERY_INTERVAL" : {
+      "name" : "QUERY_INTERVAL",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/memberField/QUERY_INTERVAL",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 23,
+        "endLine" : 51,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/memberField/credential" : {
+      "name" : "credential",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/memberField/credential",
+      "type" : "org.apache.dolphinscheduler.plugin.task.datafactory.com.azure.identity.ClientSecretCredential",
+      "displayedType" : "ClientSecretCredential",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 43,
+        "endLine" : 54,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/cancelDatafactoryTask(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)" : {
+      "name" : "cancelDatafactoryTask",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/cancelDatafactoryTask(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 94,
+        "startColumn" : 20,
+        "endLine" : 94,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "parameters",
+        "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/cancelDatafactoryTask(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)/parameter/parameters",
+        "type" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters",
+        "displayedType" : "DatafactoryParameters",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 94,
+          "startColumn" : 64,
+          "endLine" : 94,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/cancelDatafactoryTask(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/getPipelineResource(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)" : {
+      "name" : "getPipelineResource",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/getPipelineResource(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)",
+      "type" : "org.apache.dolphinscheduler.plugin.task.datafactory.com.azure.resourcemanager.datafactory.models.PipelineResource",
+      "displayedType" : "PipelineResource",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 120,
+        "startColumn" : 30,
+        "endLine" : 120,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "parameters",
+        "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/getPipelineResource(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)/parameter/parameters",
+        "type" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters",
+        "displayedType" : "DatafactoryParameters",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 120,
+          "startColumn" : 72,
+          "endLine" : 120,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/getPipelineResource(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/startDatafactoryTask(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)" : {
+      "name" : "startDatafactoryTask",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/startDatafactoryTask(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 20,
+        "endLine" : 78,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "parameters",
+        "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/startDatafactoryTask(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)/parameter/parameters",
+        "type" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters",
+        "displayedType" : "DatafactoryParameters",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 78,
+          "startColumn" : 63,
+          "endLine" : 78,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/startDatafactoryTask(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/queryDatafactoryTaskStatus(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)" : {
+      "name" : "queryDatafactoryTaskStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/queryDatafactoryTaskStatus(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)",
+      "type" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryStatus",
+      "displayedType" : "DatafactoryStatus",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 106,
+        "startColumn" : 30,
+        "endLine" : 106,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "parameters",
+        "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/queryDatafactoryTaskStatus(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)/parameter/parameters",
+        "type" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters",
+        "displayedType" : "DatafactoryParameters",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 106,
+          "startColumn" : 79,
+          "endLine" : 106,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/queryDatafactoryTaskStatus(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/createClient()" : {
+      "name" : "createClient",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/createClient()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.datafactory.com.azure.resourcemanager.datafactory.DataFactoryManager",
+      "displayedType" : "DataFactoryManager",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 41,
+        "endLine" : 62,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PROTECTED", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/queryStatus(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)" : {
+      "name" : "queryStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/queryStatus(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 126,
+        "startColumn" : 20,
+        "endLine" : 126,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "parameters",
+        "key" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/queryStatus(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)/parameter/parameters",
+        "type" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters",
+        "displayedType" : "DatafactoryParameters",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 126,
+          "startColumn" : 54,
+          "endLine" : 126,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook/method/queryStatus(org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryParameters parameters)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.datafactory.DatafactoryHook"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-datafactory/src/main/java/org/apache/dolphinscheduler/plugin/task/datafactory/DatafactoryHook.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

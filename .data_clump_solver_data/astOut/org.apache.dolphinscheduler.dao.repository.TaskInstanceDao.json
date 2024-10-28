@@ -1,0 +1,590 @@
+{
+  "name" : "TaskInstanceDao",
+  "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao",
+  "type" : "interface",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 30,
+    "startColumn" : 8,
+    "endLine" : 30,
+    "endColumn" : 17
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : { },
+  "methods" : {
+    "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/submitTaskInstanceToDB(org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)" : {
+      "name" : "submitTaskInstanceToDB",
+      "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/submitTaskInstanceToDB(org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 13,
+        "endLine" : 49,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/submitTaskInstanceToDB(org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 49,
+          "startColumn" : 49,
+          "endLine" : 49,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/submitTaskInstanceToDB(org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)"
+      }, {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/submitTaskInstanceToDB(org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 49,
+          "startColumn" : 80,
+          "endLine" : 49,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/submitTaskInstanceToDB(org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/updateTaskInstanceState(java.lang.Integer taskInstanceId, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus originState, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus targetState)" : {
+      "name" : "updateTaskInstanceState",
+      "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/updateTaskInstanceState(java.lang.Integer taskInstanceId, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus originState, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus targetState)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 124,
+        "startColumn" : 10,
+        "endLine" : 124,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstanceId",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/updateTaskInstanceState(java.lang.Integer taskInstanceId, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus originState, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus targetState)/parameter/taskInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 124,
+          "startColumn" : 42,
+          "endLine" : 124,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/updateTaskInstanceState(java.lang.Integer taskInstanceId, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus originState, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus targetState)"
+      }, {
+        "name" : "originState",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/updateTaskInstanceState(java.lang.Integer taskInstanceId, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus originState, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus targetState)/parameter/originState",
+        "type" : "org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus",
+        "displayedType" : "TaskExecutionStatus",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 124,
+          "startColumn" : 78,
+          "endLine" : 124,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/updateTaskInstanceState(java.lang.Integer taskInstanceId, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus originState, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus targetState)"
+      }, {
+        "name" : "targetState",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/updateTaskInstanceState(java.lang.Integer taskInstanceId, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus originState, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus targetState)/parameter/targetState",
+        "type" : "org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus",
+        "displayedType" : "TaskExecutionStatus",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 125,
+          "startColumn" : 54,
+          "endLine" : 125,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/updateTaskInstanceState(java.lang.Integer taskInstanceId, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus originState, org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus targetState)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryByWorkflowInstanceId(java.lang.Integer workflowInstanceId)" : {
+      "name" : "queryByWorkflowInstanceId",
+      "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryByWorkflowInstanceId(java.lang.Integer workflowInstanceId)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance>",
+      "displayedType" : "List<TaskInstance>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 100,
+        "startColumn" : 24,
+        "endLine" : 100,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryByWorkflowInstanceId(java.lang.Integer workflowInstanceId)/parameter/workflowInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 100,
+          "startColumn" : 58,
+          "endLine" : 100,
+          "endColumn" : 76
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryByWorkflowInstanceId(java.lang.Integer workflowInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryByWorkflowInstanceIdAndTaskCode(java.lang.Integer workflowInstanceId, java.lang.Long taskCode)" : {
+      "name" : "queryByWorkflowInstanceIdAndTaskCode",
+      "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryByWorkflowInstanceIdAndTaskCode(java.lang.Integer workflowInstanceId, java.lang.Long taskCode)",
+      "type" : "org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+      "displayedType" : "TaskInstance",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 18,
+        "endLine" : 72,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryByWorkflowInstanceIdAndTaskCode(java.lang.Integer workflowInstanceId, java.lang.Long taskCode)/parameter/workflowInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 72,
+          "startColumn" : 63,
+          "endLine" : 72,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryByWorkflowInstanceIdAndTaskCode(java.lang.Integer workflowInstanceId, java.lang.Long taskCode)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryByWorkflowInstanceIdAndTaskCode(java.lang.Integer workflowInstanceId, java.lang.Long taskCode)/parameter/taskCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 72,
+          "startColumn" : 88,
+          "endLine" : 72,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryByWorkflowInstanceIdAndTaskCode(java.lang.Integer workflowInstanceId, java.lang.Long taskCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryValidTaskListByWorkflowInstanceId(java.lang.Integer workflowInstanceId, int testFlag)" : {
+      "name" : "queryValidTaskListByWorkflowInstanceId",
+      "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryValidTaskListByWorkflowInstanceId(java.lang.Integer workflowInstanceId, int testFlag)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance>",
+      "displayedType" : "List<TaskInstance>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 24,
+        "endLine" : 63,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryValidTaskListByWorkflowInstanceId(java.lang.Integer workflowInstanceId, int testFlag)/parameter/workflowInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 63,
+          "startColumn" : 71,
+          "endLine" : 63,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryValidTaskListByWorkflowInstanceId(java.lang.Integer workflowInstanceId, int testFlag)"
+      }, {
+        "name" : "testFlag",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryValidTaskListByWorkflowInstanceId(java.lang.Integer workflowInstanceId, int testFlag)/parameter/testFlag",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 63,
+          "startColumn" : 95,
+          "endLine" : 63,
+          "endColumn" : 103
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryValidTaskListByWorkflowInstanceId(java.lang.Integer workflowInstanceId, int testFlag)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryLastTaskInstanceListIntervalInWorkflowInstance(java.lang.Integer workflowInstanceId, java.util.Set<java.lang.Long> taskCodes, int testFlag)" : {
+      "name" : "queryLastTaskInstanceListIntervalInWorkflowInstance",
+      "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryLastTaskInstanceListIntervalInWorkflowInstance(java.lang.Integer workflowInstanceId, java.util.Set<java.lang.Long> taskCodes, int testFlag)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance>",
+      "displayedType" : "List<TaskInstance>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 110,
+        "startColumn" : 24,
+        "endLine" : 110,
+        "endColumn" : 75
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryLastTaskInstanceListIntervalInWorkflowInstance(java.lang.Integer workflowInstanceId, java.util.Set<java.lang.Long> taskCodes, int testFlag)/parameter/workflowInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 84,
+          "endLine" : 110,
+          "endColumn" : 102
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryLastTaskInstanceListIntervalInWorkflowInstance(java.lang.Integer workflowInstanceId, java.util.Set<java.lang.Long> taskCodes, int testFlag)"
+      }, {
+        "name" : "taskCodes",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryLastTaskInstanceListIntervalInWorkflowInstance(java.lang.Integer workflowInstanceId, java.util.Set<java.lang.Long> taskCodes, int testFlag)/parameter/taskCodes",
+        "type" : "java.util.Set<java.lang.Long>",
+        "displayedType" : "Set<Long>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 111,
+          "startColumn" : 86,
+          "endLine" : 111,
+          "endColumn" : 95
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryLastTaskInstanceListIntervalInWorkflowInstance(java.lang.Integer workflowInstanceId, java.util.Set<java.lang.Long> taskCodes, int testFlag)"
+      }, {
+        "name" : "testFlag",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryLastTaskInstanceListIntervalInWorkflowInstance(java.lang.Integer workflowInstanceId, java.util.Set<java.lang.Long> taskCodes, int testFlag)/parameter/testFlag",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 111,
+          "startColumn" : 101,
+          "endLine" : 111,
+          "endColumn" : 109
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryLastTaskInstanceListIntervalInWorkflowInstance(java.lang.Integer workflowInstanceId, java.util.Set<java.lang.Long> taskCodes, int testFlag)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/deleteByWorkflowInstanceId(int workflowInstanceId)" : {
+      "name" : "deleteByWorkflowInstanceId",
+      "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/deleteByWorkflowInstanceId(int workflowInstanceId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 10,
+        "endLine" : 98,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/deleteByWorkflowInstanceId(int workflowInstanceId)/parameter/workflowInstanceId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 98,
+          "startColumn" : 41,
+          "endLine" : 98,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/deleteByWorkflowInstanceId(int workflowInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/upsertTaskInstance(org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)" : {
+      "name" : "upsertTaskInstance",
+      "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/upsertTaskInstance(org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 40,
+        "startColumn" : 13,
+        "endLine" : 40,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/upsertTaskInstance(org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 40,
+          "startColumn" : 45,
+          "endLine" : 40,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/upsertTaskInstance(org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryLastTaskInstanceIntervalInWorkflowInstance(java.lang.Integer workflowInstanceId, long depTaskCode, int testFlag)" : {
+      "name" : "queryLastTaskInstanceIntervalInWorkflowInstance",
+      "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryLastTaskInstanceIntervalInWorkflowInstance(java.lang.Integer workflowInstanceId, long depTaskCode, int testFlag)",
+      "type" : "org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+      "displayedType" : "TaskInstance",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 121,
+        "startColumn" : 18,
+        "endLine" : 121,
+        "endColumn" : 65
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryLastTaskInstanceIntervalInWorkflowInstance(java.lang.Integer workflowInstanceId, long depTaskCode, int testFlag)/parameter/workflowInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 121,
+          "startColumn" : 74,
+          "endLine" : 121,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryLastTaskInstanceIntervalInWorkflowInstance(java.lang.Integer workflowInstanceId, long depTaskCode, int testFlag)"
+      }, {
+        "name" : "depTaskCode",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryLastTaskInstanceIntervalInWorkflowInstance(java.lang.Integer workflowInstanceId, long depTaskCode, int testFlag)/parameter/depTaskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 122,
+          "startColumn" : 71,
+          "endLine" : 122,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryLastTaskInstanceIntervalInWorkflowInstance(java.lang.Integer workflowInstanceId, long depTaskCode, int testFlag)"
+      }, {
+        "name" : "testFlag",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryLastTaskInstanceIntervalInWorkflowInstance(java.lang.Integer workflowInstanceId, long depTaskCode, int testFlag)/parameter/testFlag",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 122,
+          "startColumn" : 88,
+          "endLine" : 122,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryLastTaskInstanceIntervalInWorkflowInstance(java.lang.Integer workflowInstanceId, long depTaskCode, int testFlag)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryByCacheKey(java.lang.String cacheKey)" : {
+      "name" : "queryByCacheKey",
+      "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryByCacheKey(java.lang.String cacheKey)",
+      "type" : "org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+      "displayedType" : "TaskInstance",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 18,
+        "endLine" : 88,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "cacheKey",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryByCacheKey(java.lang.String cacheKey)/parameter/cacheKey",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 88,
+          "startColumn" : 41,
+          "endLine" : 88,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryByCacheKey(java.lang.String cacheKey)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/clearCacheByCacheKey(java.lang.String cacheKey)" : {
+      "name" : "clearCacheByCacheKey",
+      "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/clearCacheByCacheKey(java.lang.String cacheKey)",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 13,
+        "endLine" : 96,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "cacheKey",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/clearCacheByCacheKey(java.lang.String cacheKey)/parameter/cacheKey",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 96,
+          "startColumn" : 41,
+          "endLine" : 96,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/clearCacheByCacheKey(java.lang.String cacheKey)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/markTaskInstanceInvalid(java.util.List<org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances)" : {
+      "name" : "markTaskInstanceInvalid",
+      "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/markTaskInstanceInvalid(java.util.List<org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 10,
+        "endLine" : 54,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstances",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/markTaskInstanceInvalid(java.util.List<org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances)/parameter/taskInstances",
+        "type" : "java.util.List<org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance>",
+        "displayedType" : "List<TaskInstance>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 54,
+          "startColumn" : 53,
+          "endLine" : 54,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/markTaskInstanceInvalid(java.util.List<org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance> taskInstances)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao"
+    },
+    "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryPreviousTaskListByWorkflowInstanceId(java.lang.Integer workflowInstanceId)" : {
+      "name" : "queryPreviousTaskListByWorkflowInstanceId",
+      "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryPreviousTaskListByWorkflowInstanceId(java.lang.Integer workflowInstanceId)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance>",
+      "displayedType" : "List<TaskInstance>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 24,
+        "endLine" : 80,
+        "endColumn" : 65
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstanceId",
+        "key" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryPreviousTaskListByWorkflowInstanceId(java.lang.Integer workflowInstanceId)/parameter/workflowInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 80,
+          "startColumn" : 74,
+          "endLine" : 80,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao/method/queryPreviousTaskListByWorkflowInstanceId(java.lang.Integer workflowInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.repository.TaskInstanceDao"
+    }
+  },
+  "file_path" : "dolphinscheduler-dao/src/main/java/org/apache/dolphinscheduler/dao/repository/TaskInstanceDao.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.dao.repository.IDao<org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance>", "org.apache.dolphinscheduler.dao.repository.org.apache.dolphinscheduler.dao.entity.TaskInstance" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

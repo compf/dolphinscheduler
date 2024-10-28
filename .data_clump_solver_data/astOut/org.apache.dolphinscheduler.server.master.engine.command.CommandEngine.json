@@ -1,0 +1,381 @@
+{
+  "name" : "CommandEngine",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 60,
+    "startColumn" : 8,
+    "endLine" : 60,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/commandHandleThreadPool" : {
+      "name" : "commandHandleThreadPool",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/commandHandleThreadPool",
+      "type" : "java.util.concurrent.ExecutorService",
+      "displayedType" : "ExecutorService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 29,
+        "endLine" : 83,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/flag" : {
+      "name" : "flag",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/flag",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 85,
+        "startColumn" : 21,
+        "endLine" : 85,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/workflowRepository" : {
+      "name" : "workflowRepository",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/workflowRepository",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.server.master.engine.IWorkflowRepository",
+      "displayedType" : "IWorkflowRepository",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 33,
+        "endLine" : 72,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/metricsProvider" : {
+      "name" : "metricsProvider",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/metricsProvider",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.meter.metrics.MetricsProvider",
+      "displayedType" : "MetricsProvider",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 29,
+        "endLine" : 78,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/commandFetcher" : {
+      "name" : "commandFetcher",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/commandFetcher",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.ICommandFetcher",
+      "displayedType" : "ICommandFetcher",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 29,
+        "endLine" : 63,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/masterConfig" : {
+      "name" : "masterConfig",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/masterConfig",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.server.master.config.MasterConfig",
+      "displayedType" : "MasterConfig",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 26,
+        "endLine" : 69,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/commandService" : {
+      "name" : "commandService",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/commandService",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.service.command.CommandService",
+      "displayedType" : "CommandService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 28,
+        "endLine" : 66,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/workflowExecutionRunnableFactory" : {
+      "name" : "workflowExecutionRunnableFactory",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/workflowExecutionRunnableFactory",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.WorkflowExecutionRunnableFactory",
+      "displayedType" : "WorkflowExecutionRunnableFactory",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 46,
+        "endLine" : 75,
+        "endColumn" : 78
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/workflowEventBusCoordinator" : {
+      "name" : "workflowEventBusCoordinator",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/memberField/workflowEventBusCoordinator",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusCoordinator",
+      "displayedType" : "WorkflowEventBusCoordinator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 41,
+        "endLine" : 81,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 102,
+        "startColumn" : 17,
+        "endLine" : 102,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/run()" : {
+      "name" : "run",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/run()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 109,
+        "startColumn" : 17,
+        "endLine" : 109,
+        "endColumn" : 20
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapWorkflowExecutionRunnable(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable)" : {
+      "name" : "bootstrapWorkflowExecutionRunnable",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapWorkflowExecutionRunnable(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable)",
+      "type" : "java.util.concurrent.CompletableFuture<java.lang.Void>",
+      "displayedType" : "CompletableFuture<Void>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 154,
+        "startColumn" : 37,
+        "endLine" : 154,
+        "endColumn" : 71
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapWorkflowExecutionRunnable(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable)/parameter/workflowExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable",
+        "displayedType" : "IWorkflowExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 154,
+          "startColumn" : 99,
+          "endLine" : 154,
+          "endColumn" : 124
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapWorkflowExecutionRunnable(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable workflowExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapCommand(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command command)" : {
+      "name" : "bootstrapCommand",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapCommand(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command command)",
+      "type" : "java.util.concurrent.CompletableFuture<org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.server.master.engine.workflow.runnable.IWorkflowExecutionRunnable>",
+      "displayedType" : "CompletableFuture<IWorkflowExecutionRunnable>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 149,
+        "startColumn" : 59,
+        "endLine" : 149,
+        "endColumn" : 75
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "command",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapCommand(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command command)/parameter/command",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command",
+        "displayedType" : "Command",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 149,
+          "startColumn" : 84,
+          "endLine" : 149,
+          "endColumn" : 91
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapCommand(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command command)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapSuccess(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command command)" : {
+      "name" : "bootstrapSuccess",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapSuccess(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command command)",
+      "type" : "java.util.concurrent.CompletableFuture<java.lang.Void>",
+      "displayedType" : "CompletableFuture<Void>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 171,
+        "startColumn" : 37,
+        "endLine" : 171,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "command",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapSuccess(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command command)/parameter/command",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command",
+        "displayedType" : "Command",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 171,
+          "startColumn" : 62,
+          "endLine" : 171,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapSuccess(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command command)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapError(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command command, java.lang.Throwable throwable)" : {
+      "name" : "bootstrapError",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapError(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command command, java.lang.Throwable throwable)",
+      "type" : "java.lang.Void",
+      "displayedType" : "Void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 177,
+        "startColumn" : 18,
+        "endLine" : 177,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "command",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapError(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command command, java.lang.Throwable throwable)/parameter/command",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command",
+        "displayedType" : "Command",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 177,
+          "startColumn" : 41,
+          "endLine" : 177,
+          "endColumn" : 48
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapError(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command command, java.lang.Throwable throwable)"
+      }, {
+        "name" : "throwable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapError(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command command, java.lang.Throwable throwable)/parameter/throwable",
+        "type" : "java.lang.Throwable",
+        "displayedType" : "Throwable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 177,
+          "startColumn" : 60,
+          "endLine" : 177,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/bootstrapError(org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.dao.entity.Command command, java.lang.Throwable throwable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/start()" : {
+      "name" : "start",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine/method/start()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 92,
+        "startColumn" : 30,
+        "endLine" : 92,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.command.CommandEngine"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/command/CommandEngine.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "java.lang.AutoCloseable" ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.master.engine.command.org.apache.dolphinscheduler.common.thread.BaseDaemonThread" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

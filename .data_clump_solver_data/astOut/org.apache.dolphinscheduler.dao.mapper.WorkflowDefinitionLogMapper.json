@@ -1,0 +1,365 @@
+{
+  "name" : "WorkflowDefinitionLogMapper",
+  "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper",
+  "type" : "interface",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 37,
+    "startColumn" : 8,
+    "endLine" : 37,
+    "endColumn" : 17
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : { },
+  "methods" : {
+    "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryByDefinitionCode(long code)" : {
+      "name" : "queryByDefinitionCode",
+      "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryByDefinitionCode(long code)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.WorkflowDefinitionLog>",
+      "displayedType" : "List<WorkflowDefinitionLog>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 33,
+        "endLine" : 65,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "code",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryByDefinitionCode(long code)/parameter/code",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 65,
+          "startColumn" : 75,
+          "endLine" : 65,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryByDefinitionCode(long code)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper"
+    },
+    "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryMaxVersionDefinitionLog(long code)" : {
+      "name" : "queryMaxVersionDefinitionLog",
+      "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryMaxVersionDefinitionLog(long code)",
+      "type" : "org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.WorkflowDefinitionLog",
+      "displayedType" : "WorkflowDefinitionLog",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 27,
+        "endLine" : 75,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "code",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryMaxVersionDefinitionLog(long code)/parameter/code",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 75,
+          "startColumn" : 76,
+          "endLine" : 75,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryMaxVersionDefinitionLog(long code)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper"
+    },
+    "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/deleteByWorkflowDefinitionCodeAndVersion(long code, int version)" : {
+      "name" : "deleteByWorkflowDefinitionCodeAndVersion",
+      "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/deleteByWorkflowDefinitionCodeAndVersion(long code, int version)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 96,
+        "startColumn" : 9,
+        "endLine" : 96,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "code",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/deleteByWorkflowDefinitionCodeAndVersion(long code, int version)/parameter/code",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 96,
+          "startColumn" : 70,
+          "endLine" : 96,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/deleteByWorkflowDefinitionCodeAndVersion(long code, int version)"
+      }, {
+        "name" : "version",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/deleteByWorkflowDefinitionCodeAndVersion(long code, int version)/parameter/version",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 96,
+          "startColumn" : 98,
+          "endLine" : 96,
+          "endColumn" : 105
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/deleteByWorkflowDefinitionCodeAndVersion(long code, int version)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper"
+    },
+    "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryWorkflowDefinitionVersionsPaging(org.apache.dolphinscheduler.dao.mapper.com.baomidou.mybatisplus.extension.plugins.pagination.Page<org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.WorkflowDefinitionLog> page, long code, long projectCode)" : {
+      "name" : "queryWorkflowDefinitionVersionsPaging",
+      "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryWorkflowDefinitionVersionsPaging(org.apache.dolphinscheduler.dao.mapper.com.baomidou.mybatisplus.extension.plugins.pagination.Page<org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.WorkflowDefinitionLog> page, long code, long projectCode)",
+      "type" : "org.apache.dolphinscheduler.dao.mapper.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.WorkflowDefinitionLog>",
+      "displayedType" : "IPage<WorkflowDefinitionLog>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 85,
+        "startColumn" : 34,
+        "endLine" : 85,
+        "endColumn" : 71
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "page",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryWorkflowDefinitionVersionsPaging(org.apache.dolphinscheduler.dao.mapper.com.baomidou.mybatisplus.extension.plugins.pagination.Page<org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.WorkflowDefinitionLog> page, long code, long projectCode)/parameter/page",
+        "type" : "org.apache.dolphinscheduler.dao.mapper.com.baomidou.mybatisplus.extension.plugins.pagination.Page<org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.WorkflowDefinitionLog>",
+        "displayedType" : "Page<WorkflowDefinitionLog>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 85,
+          "startColumn" : 100,
+          "endLine" : 85,
+          "endColumn" : 104
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryWorkflowDefinitionVersionsPaging(org.apache.dolphinscheduler.dao.mapper.com.baomidou.mybatisplus.extension.plugins.pagination.Page<org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.WorkflowDefinitionLog> page, long code, long projectCode)"
+      }, {
+        "name" : "code",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryWorkflowDefinitionVersionsPaging(org.apache.dolphinscheduler.dao.mapper.com.baomidou.mybatisplus.extension.plugins.pagination.Page<org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.WorkflowDefinitionLog> page, long code, long projectCode)/parameter/code",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 86,
+          "startColumn" : 92,
+          "endLine" : 86,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryWorkflowDefinitionVersionsPaging(org.apache.dolphinscheduler.dao.mapper.com.baomidou.mybatisplus.extension.plugins.pagination.Page<org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.WorkflowDefinitionLog> page, long code, long projectCode)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryWorkflowDefinitionVersionsPaging(org.apache.dolphinscheduler.dao.mapper.com.baomidou.mybatisplus.extension.plugins.pagination.Page<org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.WorkflowDefinitionLog> page, long code, long projectCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 87,
+          "startColumn" : 99,
+          "endLine" : 87,
+          "endColumn" : 110
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryWorkflowDefinitionVersionsPaging(org.apache.dolphinscheduler.dao.mapper.com.baomidou.mybatisplus.extension.plugins.pagination.Page<org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.WorkflowDefinitionLog> page, long code, long projectCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper"
+    },
+    "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryByDefinitionCodeAndVersion(long code, int version)" : {
+      "name" : "queryByDefinitionCodeAndVersion",
+      "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryByDefinitionCodeAndVersion(long code, int version)",
+      "type" : "org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.WorkflowDefinitionLog",
+      "displayedType" : "WorkflowDefinitionLog",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 27,
+        "endLine" : 47,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "code",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryByDefinitionCodeAndVersion(long code, int version)/parameter/code",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 47,
+          "startColumn" : 79,
+          "endLine" : 47,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryByDefinitionCodeAndVersion(long code, int version)"
+      }, {
+        "name" : "version",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryByDefinitionCodeAndVersion(long code, int version)/parameter/version",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 47,
+          "startColumn" : 107,
+          "endLine" : 47,
+          "endColumn" : 114
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryByDefinitionCodeAndVersion(long code, int version)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper"
+    },
+    "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryByDefinitionName(long projectCode, java.lang.String name)" : {
+      "name" : "queryByDefinitionName",
+      "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryByDefinitionName(long projectCode, java.lang.String name)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.WorkflowDefinitionLog>",
+      "displayedType" : "List<WorkflowDefinitionLog>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 33,
+        "endLine" : 56,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryByDefinitionName(long projectCode, java.lang.String name)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 56,
+          "startColumn" : 82,
+          "endLine" : 56,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryByDefinitionName(long projectCode, java.lang.String name)"
+      }, {
+        "name" : "name",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryByDefinitionName(long projectCode, java.lang.String name)/parameter/name",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 57,
+          "startColumn" : 77,
+          "endLine" : 57,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryByDefinitionName(long projectCode, java.lang.String name)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper"
+    },
+    "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryMaxVersionForDefinition(long code)" : {
+      "name" : "queryMaxVersionForDefinition",
+      "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryMaxVersionForDefinition(long code)",
+      "type" : "java.lang.Integer",
+      "displayedType" : "Integer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 70,
+        "startColumn" : 13,
+        "endLine" : 70,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "code",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryMaxVersionForDefinition(long code)/parameter/code",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 70,
+          "startColumn" : 62,
+          "endLine" : 70,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/queryMaxVersionForDefinition(long code)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper"
+    },
+    "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/deleteByWorkflowDefinitionCode(long workflowDefinitionCode)" : {
+      "name" : "deleteByWorkflowDefinitionCode",
+      "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/deleteByWorkflowDefinitionCode(long workflowDefinitionCode)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 10,
+        "endLine" : 98,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/deleteByWorkflowDefinitionCode(long workflowDefinitionCode)/parameter/workflowDefinitionCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 98,
+          "startColumn" : 79,
+          "endLine" : 98,
+          "endColumn" : 101
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper/method/deleteByWorkflowDefinitionCode(long workflowDefinitionCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionLogMapper"
+    }
+  },
+  "file_path" : "dolphinscheduler-dao/src/main/java/org/apache/dolphinscheduler/dao/mapper/WorkflowDefinitionLogMapper.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.dao.mapper.com.baomidou.mybatisplus.core.mapper.BaseMapper<org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.WorkflowDefinitionLog>", "org.apache.dolphinscheduler.dao.mapper.org.apache.dolphinscheduler.dao.entity.WorkflowDefinitionLog" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,410 @@
+{
+  "name" : "WorkerTaskExecutor",
+  "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 72,
+    "startColumn" : 17,
+    "endLine" : 72,
+    "endColumn" : 22
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/memberField/workerMessageSender" : {
+      "name" : "workerMessageSender",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/memberField/workerMessageSender",
+      "type" : "org.apache.dolphinscheduler.server.worker.runner.org.apache.dolphinscheduler.server.worker.rpc.WorkerMessageSender",
+      "displayedType" : "WorkerMessageSender",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 41,
+        "endLine" : 78,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PROTECTED", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/memberField/log" : {
+      "name" : "log",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/memberField/log",
+      "type" : "org.slf4j.Logger",
+      "displayedType" : "Logger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 74,
+        "startColumn" : 35,
+        "endLine" : 74,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PROTECTED", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/memberField/workerConfig" : {
+      "name" : "workerConfig",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/memberField/workerConfig",
+      "type" : "org.apache.dolphinscheduler.server.worker.runner.org.apache.dolphinscheduler.server.worker.config.WorkerConfig",
+      "displayedType" : "WorkerConfig",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 34,
+        "endLine" : 77,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PROTECTED", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/memberField/storageOperator" : {
+      "name" : "storageOperator",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/memberField/storageOperator",
+      "type" : "org.apache.dolphinscheduler.server.worker.runner.org.apache.dolphinscheduler.plugin.storage.api.StorageOperator",
+      "displayedType" : "StorageOperator",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 47,
+        "endLine" : 79,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PROTECTED", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/memberField/workerRegistryClient" : {
+      "name" : "workerRegistryClient",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/memberField/workerRegistryClient",
+      "type" : "org.apache.dolphinscheduler.server.worker.runner.org.apache.dolphinscheduler.server.worker.registry.WorkerRegistryClient",
+      "displayedType" : "WorkerRegistryClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 42,
+        "endLine" : 80,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PROTECTED", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/memberField/taskExecutionContext" : {
+      "name" : "taskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/memberField/taskExecutionContext",
+      "type" : "org.apache.dolphinscheduler.server.worker.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+      "displayedType" : "TaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 42,
+        "endLine" : 76,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PROTECTED", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/memberField/task" : {
+      "name" : "task",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/memberField/task",
+      "type" : "org.apache.dolphinscheduler.server.worker.runner.org.apache.dolphinscheduler.plugin.task.api.AbstractTask",
+      "displayedType" : "AbstractTask",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 82,
+        "startColumn" : 38,
+        "endLine" : 82,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/beforeExecute()" : {
+      "name" : "beforeExecute",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/beforeExecute()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 203,
+        "startColumn" : 20,
+        "endLine" : 203,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/closeLogAppender()" : {
+      "name" : "closeLogAppender",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/closeLogAppender()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 351,
+        "startColumn" : 20,
+        "endLine" : 351,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/sendTaskResult()" : {
+      "name" : "sendTaskResult",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/sendTaskResult()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 278,
+        "startColumn" : 20,
+        "endLine" : 278,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/afterThrowing(java.lang.Throwable throwable)" : {
+      "name" : "afterThrowing",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/afterThrowing(java.lang.Throwable throwable)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 114,
+        "startColumn" : 20,
+        "endLine" : 114,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "throwable",
+        "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/afterThrowing(java.lang.Throwable throwable)/parameter/throwable",
+        "type" : "java.lang.Throwable",
+        "displayedType" : "Throwable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 114,
+          "startColumn" : 44,
+          "endLine" : 114,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/afterThrowing(java.lang.Throwable throwable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/executeTask(org.apache.dolphinscheduler.server.worker.runner.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)" : {
+      "name" : "executeTask",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/executeTask(org.apache.dolphinscheduler.server.worker.runner.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 29,
+        "endLine" : 98,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PROTECTED", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskCallBack",
+        "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/executeTask(org.apache.dolphinscheduler.server.worker.runner.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)/parameter/taskCallBack",
+        "type" : "org.apache.dolphinscheduler.server.worker.runner.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack",
+        "displayedType" : "TaskCallBack",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 98,
+          "startColumn" : 54,
+          "endLine" : 98,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/executeTask(org.apache.dolphinscheduler.server.worker.runner.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/sendAlertIfNeeded()" : {
+      "name" : "sendAlertIfNeeded",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/sendAlertIfNeeded()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 247,
+        "startColumn" : 20,
+        "endLine" : 247,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/getTaskExecutionContext()" : {
+      "name" : "getTaskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/getTaskExecutionContext()",
+      "type" : "org.apache.dolphinscheduler.server.worker.runner.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+      "displayedType" : "TaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 365,
+        "startColumn" : 42,
+        "endLine" : 365,
+        "endColumn" : 65
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/getTask()" : {
+      "name" : "getTask",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/getTask()",
+      "type" : "org.apache.dolphinscheduler.server.worker.runner.org.apache.dolphinscheduler.plugin.task.api.AbstractTask",
+      "displayedType" : "AbstractTask",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 369,
+        "startColumn" : 35,
+        "endLine" : 369,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/afterExecute()" : {
+      "name" : "afterExecute",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/afterExecute()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 100,
+        "startColumn" : 20,
+        "endLine" : 100,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/initializeTask()" : {
+      "name" : "initializeTask",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/initializeTask()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 188,
+        "startColumn" : 20,
+        "endLine" : 188,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/clearTaskExecPathIfNeeded()" : {
+      "name" : "clearTaskExecPathIfNeeded",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/clearTaskExecPathIfNeeded()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 317,
+        "startColumn" : 20,
+        "endLine" : 317,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/cancelTask()" : {
+      "name" : "cancelTask",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/cancelTask()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 128,
+        "startColumn" : 23,
+        "endLine" : 128,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    },
+    "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/run()" : {
+      "name" : "run",
+      "key" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor/method/run()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 145,
+        "startColumn" : 17,
+        "endLine" : 145,
+        "endColumn" : 20
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor"
+    }
+  },
+  "file_path" : "dolphinscheduler-worker/src/main/java/org/apache/dolphinscheduler/server/worker/runner/WorkerTaskExecutor.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "java.lang.Runnable" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

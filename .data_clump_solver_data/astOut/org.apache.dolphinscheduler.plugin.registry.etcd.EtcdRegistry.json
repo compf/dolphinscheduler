@@ -1,0 +1,730 @@
+{
+  "name" : "EtcdRegistry",
+  "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 72,
+    "startColumn" : 8,
+    "endLine" : 72,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/memberField/client" : {
+      "name" : "client",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/memberField/client",
+      "type" : "org.apache.dolphinscheduler.plugin.registry.etcd.io.etcd.jetcd.Client",
+      "displayedType" : "Client",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 26,
+        "endLine" : 75,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/memberField/etcdKeepAliveLeaseManager" : {
+      "name" : "etcdKeepAliveLeaseManager",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/memberField/etcdKeepAliveLeaseManager",
+      "type" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager",
+      "displayedType" : "EtcdKeepAliveLeaseManager",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 39,
+        "endLine" : 78,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/memberField/watcherMap" : {
+      "name" : "watcherMap",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/memberField/watcherMap",
+      "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.registry.etcd.io.etcd.jetcd.Watch#org.apache.dolphinscheduler.plugin.registry.etcd.Watcher>",
+      "displayedType" : "Map<String, Watch.Watcher>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 85,
+        "startColumn" : 46,
+        "endLine" : 85,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/memberField/FOLDER_SEPARATOR" : {
+      "name" : "FOLDER_SEPARATOR",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/memberField/FOLDER_SEPARATOR",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 32,
+        "endLine" : 80,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/memberField/etcdRegistryProperties" : {
+      "name" : "etcdRegistryProperties",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/memberField/etcdRegistryProperties",
+      "type" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistryProperties",
+      "displayedType" : "EtcdRegistryProperties",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 74,
+        "startColumn" : 42,
+        "endLine" : 74,
+        "endColumn" : 64
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/memberField/etcdConnectionStateListener" : {
+      "name" : "etcdConnectionStateListener",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/memberField/etcdConnectionStateListener",
+      "type" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdConnectionStateListener",
+      "displayedType" : "EtcdConnectionStateListener",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 41,
+        "endLine" : 76,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/memberField/threadLocalLockMap" : {
+      "name" : "threadLocalLockMap",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/memberField/threadLocalLockMap",
+      "type" : "java.lang.ThreadLocal<java.util.Map<java.lang.String, java.lang.Long>>",
+      "displayedType" : "ThreadLocal<Map<String, Long>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 57,
+        "endLine" : 83,
+        "endColumn" : 75
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/put(java.lang.String key, java.lang.String value, boolean deleteOnDisconnect)" : {
+      "name" : "put",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/put(java.lang.String key, java.lang.String value, boolean deleteOnDisconnect)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 195,
+        "startColumn" : 17,
+        "endLine" : 195,
+        "endColumn" : 20
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/put(java.lang.String key, java.lang.String value, boolean deleteOnDisconnect)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 195,
+          "startColumn" : 28,
+          "endLine" : 195,
+          "endColumn" : 31
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/put(java.lang.String key, java.lang.String value, boolean deleteOnDisconnect)"
+      }, {
+        "name" : "value",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/put(java.lang.String key, java.lang.String value, boolean deleteOnDisconnect)/parameter/value",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 195,
+          "startColumn" : 40,
+          "endLine" : 195,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/put(java.lang.String key, java.lang.String value, boolean deleteOnDisconnect)"
+      }, {
+        "name" : "deleteOnDisconnect",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/put(java.lang.String key, java.lang.String value, boolean deleteOnDisconnect)/parameter/deleteOnDisconnect",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 195,
+          "startColumn" : 55,
+          "endLine" : 195,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/put(java.lang.String key, java.lang.String value, boolean deleteOnDisconnect)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/children(java.lang.String key)" : {
+      "name" : "children",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/children(java.lang.String key)",
+      "type" : "java.util.Collection<java.lang.String>",
+      "displayedType" : "Collection<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 234,
+        "startColumn" : 31,
+        "endLine" : 234,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/children(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 234,
+          "startColumn" : 47,
+          "endLine" : 234,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/children(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/getSubNodeKeyName(java.lang.String prefix, java.lang.String fullPath)" : {
+      "name" : "getSubNodeKeyName",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/getSubNodeKeyName(java.lang.String prefix, java.lang.String fullPath)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 255,
+        "startColumn" : 20,
+        "endLine" : 255,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "prefix",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/getSubNodeKeyName(java.lang.String prefix, java.lang.String fullPath)/parameter/prefix",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 255,
+          "startColumn" : 51,
+          "endLine" : 255,
+          "endColumn" : 57
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/getSubNodeKeyName(java.lang.String prefix, java.lang.String fullPath)"
+      }, {
+        "name" : "fullPath",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/getSubNodeKeyName(java.lang.String prefix, java.lang.String fullPath)/parameter/fullPath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 255,
+          "startColumn" : 72,
+          "endLine" : 255,
+          "endColumn" : 80
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/getSubNodeKeyName(java.lang.String prefix, java.lang.String fullPath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/start()" : {
+      "name" : "start",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/start()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 133,
+        "startColumn" : 17,
+        "endLine" : 133,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.SubscribeListener listener)" : {
+      "name" : "subscribe",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.SubscribeListener listener)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 153,
+        "startColumn" : 17,
+        "endLine" : 153,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "path",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.SubscribeListener listener)/parameter/path",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 153,
+          "startColumn" : 34,
+          "endLine" : 153,
+          "endColumn" : 38
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.SubscribeListener listener)"
+      }, {
+        "name" : "listener",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.SubscribeListener listener)/parameter/listener",
+        "type" : "org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.SubscribeListener",
+        "displayedType" : "SubscribeListener",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 153,
+          "startColumn" : 58,
+          "endLine" : 153,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.SubscribeListener listener)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/releaseLock(java.lang.String key)" : {
+      "name" : "releaseLock",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/releaseLock(java.lang.String key)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 352,
+        "startColumn" : 20,
+        "endLine" : 352,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/releaseLock(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 352,
+          "startColumn" : 39,
+          "endLine" : 352,
+          "endColumn" : 42
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/releaseLock(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/exists(java.lang.String key)" : {
+      "name" : "exists",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/exists(java.lang.String key)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 263,
+        "startColumn" : 20,
+        "endLine" : 263,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/exists(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 263,
+          "startColumn" : 34,
+          "endLine" : 263,
+          "endColumn" : 37
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/exists(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/acquireLock(java.lang.String key)" : {
+      "name" : "acquireLock",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/acquireLock(java.lang.String key)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 282,
+        "startColumn" : 20,
+        "endLine" : 282,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/acquireLock(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 282,
+          "startColumn" : 39,
+          "endLine" : 282,
+          "endColumn" : 42
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/acquireLock(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/byteSequence(java.lang.String val)" : {
+      "name" : "byteSequence",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/byteSequence(java.lang.String val)",
+      "type" : "org.apache.dolphinscheduler.plugin.registry.etcd.io.etcd.jetcd.ByteSequence",
+      "displayedType" : "ByteSequence",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 372,
+        "startColumn" : 33,
+        "endLine" : 372,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "val",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/byteSequence(java.lang.String val)/parameter/val",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 372,
+          "startColumn" : 53,
+          "endLine" : 372,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/byteSequence(java.lang.String val)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/connectUntilTimeout(java.time.Duration timeout)" : {
+      "name" : "connectUntilTimeout",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/connectUntilTimeout(java.time.Duration timeout)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 143,
+        "startColumn" : 17,
+        "endLine" : 143,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "timeout",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/connectUntilTimeout(java.time.Duration timeout)/parameter/timeout",
+        "type" : "java.time.Duration",
+        "displayedType" : "Duration",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 143,
+          "startColumn" : 55,
+          "endLine" : 143,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/connectUntilTimeout(java.time.Duration timeout)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/addConnectionStateListener(org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionListener listener)" : {
+      "name" : "addConnectionStateListener",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/addConnectionStateListener(org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionListener listener)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 170,
+        "startColumn" : 17,
+        "endLine" : 170,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "listener",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/addConnectionStateListener(org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionListener listener)/parameter/listener",
+        "type" : "org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionListener",
+        "displayedType" : "ConnectionListener",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 170,
+          "startColumn" : 63,
+          "endLine" : 170,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/addConnectionStateListener(org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.ConnectionListener listener)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/get(java.lang.String key)" : {
+      "name" : "get",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/get(java.lang.String key)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 179,
+        "startColumn" : 19,
+        "endLine" : 179,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/get(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 179,
+          "startColumn" : 30,
+          "endLine" : 179,
+          "endColumn" : 33
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/get(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/acquireLock(java.lang.String key, long timeout)" : {
+      "name" : "acquireLock",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/acquireLock(java.lang.String key, long timeout)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 314,
+        "startColumn" : 20,
+        "endLine" : 314,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/acquireLock(java.lang.String key, long timeout)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 314,
+          "startColumn" : 39,
+          "endLine" : 314,
+          "endColumn" : 42
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/acquireLock(java.lang.String key, long timeout)"
+      }, {
+        "name" : "timeout",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/acquireLock(java.lang.String key, long timeout)/parameter/timeout",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 314,
+          "startColumn" : 49,
+          "endLine" : 314,
+          "endColumn" : 56
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/acquireLock(java.lang.String key, long timeout)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/delete(java.lang.String key)" : {
+      "name" : "delete",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/delete(java.lang.String key)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 218,
+        "startColumn" : 17,
+        "endLine" : 218,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/delete(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 218,
+          "startColumn" : 31,
+          "endLine" : 218,
+          "endColumn" : 34
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/delete(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/isConnected()" : {
+      "name" : "isConnected",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/isConnected()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 138,
+        "startColumn" : 20,
+        "endLine" : 138,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 367,
+        "startColumn" : 17,
+        "endLine" : 367,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry"
+    }
+  },
+  "file_path" : "dolphinscheduler-registry/dolphinscheduler-registry-plugins/dolphinscheduler-registry-etcd/src/main/java/org/apache/dolphinscheduler/plugin/registry/etcd/EtcdRegistry.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.Registry" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry.EventAdaptor" : {
+      "name" : "EventAdaptor",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry.EventAdaptor",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 376,
+        "startColumn" : 18,
+        "endLine" : 376,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "STATIC", "FINAL" ],
+      "fields" : { },
+      "methods" : { },
+      "file_path" : "dolphinscheduler-registry/dolphinscheduler-registry-plugins/dolphinscheduler-registry-etcd/src/main/java/org/apache/dolphinscheduler/plugin/registry/etcd/EtcdRegistry.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ "org.apache.dolphinscheduler.plugin.registry.etcd.org.apache.dolphinscheduler.registry.api.Event" ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdRegistry",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : { }
+}

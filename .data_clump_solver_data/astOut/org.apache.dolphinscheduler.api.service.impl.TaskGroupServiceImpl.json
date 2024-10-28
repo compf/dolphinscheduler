@@ -1,0 +1,1099 @@
+{
+  "name" : "TaskGroupServiceImpl",
+  "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 63,
+    "startColumn" : 8,
+    "endLine" : 63,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/memberField/executorService" : {
+      "name" : "executorService",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/memberField/executorService",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.ExecutorService",
+      "displayedType" : "ExecutorService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 29,
+        "endLine" : 78,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/memberField/projectUserMapper" : {
+      "name" : "projectUserMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/memberField/projectUserMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.ProjectUserMapper",
+      "displayedType" : "ProjectUserMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 31,
+        "endLine" : 72,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/memberField/taskGroupQueueService" : {
+      "name" : "taskGroupQueueService",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/memberField/taskGroupQueueService",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.TaskGroupQueueService",
+      "displayedType" : "TaskGroupQueueService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 35,
+        "endLine" : 75,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/memberField/projectMapper" : {
+      "name" : "projectMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/memberField/projectMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.ProjectMapper",
+      "displayedType" : "ProjectMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 27,
+        "endLine" : 69,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/memberField/taskGroupMapper" : {
+      "name" : "taskGroupMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/memberField/taskGroupMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.TaskGroupMapper",
+      "displayedType" : "TaskGroupMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 29,
+        "endLine" : 66,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/getStringObjectMap(int pageNo, int pageSize, java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskGroup> taskGroupPaging)" : {
+      "name" : "getStringObjectMap",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/getStringObjectMap(int pageNo, int pageSize, java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskGroup> taskGroupPaging)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 257,
+        "startColumn" : 33,
+        "endLine" : 257,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/getStringObjectMap(int pageNo, int pageSize, java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskGroup> taskGroupPaging)/parameter/pageNo",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 257,
+          "startColumn" : 56,
+          "endLine" : 257,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/getStringObjectMap(int pageNo, int pageSize, java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskGroup> taskGroupPaging)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/getStringObjectMap(int pageNo, int pageSize, java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskGroup> taskGroupPaging)/parameter/pageSize",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 257,
+          "startColumn" : 68,
+          "endLine" : 257,
+          "endColumn" : 76
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/getStringObjectMap(int pageNo, int pageSize, java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskGroup> taskGroupPaging)"
+      }, {
+        "name" : "result",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/getStringObjectMap(int pageNo, int pageSize, java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskGroup> taskGroupPaging)/parameter/result",
+        "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+        "displayedType" : "Map<String, Object>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 257,
+          "startColumn" : 98,
+          "endLine" : 257,
+          "endColumn" : 104
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/getStringObjectMap(int pageNo, int pageSize, java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskGroup> taskGroupPaging)"
+      }, {
+        "name" : "taskGroupPaging",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/getStringObjectMap(int pageNo, int pageSize, java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskGroup> taskGroupPaging)/parameter/taskGroupPaging",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskGroup>",
+        "displayedType" : "IPage<TaskGroup>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 258,
+          "startColumn" : 69,
+          "endLine" : 258,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/getStringObjectMap(int pageNo, int pageSize, java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.impl.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.TaskGroup> taskGroupPaging)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/hasProjectPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.util.Map<java.lang.String, java.lang.Object> result, boolean writePermission)" : {
+      "name" : "hasProjectPerm",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/hasProjectPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.util.Map<java.lang.String, java.lang.Object> result, boolean writePermission)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 422,
+        "startColumn" : 21,
+        "endLine" : 422,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/hasProjectPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.util.Map<java.lang.String, java.lang.Object> result, boolean writePermission)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 422,
+          "startColumn" : 41,
+          "endLine" : 422,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/hasProjectPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.util.Map<java.lang.String, java.lang.Object> result, boolean writePermission)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/hasProjectPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.util.Map<java.lang.String, java.lang.Object> result, boolean writePermission)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 422,
+          "startColumn" : 57,
+          "endLine" : 422,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/hasProjectPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.util.Map<java.lang.String, java.lang.Object> result, boolean writePermission)"
+      }, {
+        "name" : "result",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/hasProjectPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.util.Map<java.lang.String, java.lang.Object> result, boolean writePermission)/parameter/result",
+        "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+        "displayedType" : "Map<String, Object>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 422,
+          "startColumn" : 90,
+          "endLine" : 422,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/hasProjectPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.util.Map<java.lang.String, java.lang.Object> result, boolean writePermission)"
+      }, {
+        "name" : "writePermission",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/hasProjectPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.util.Map<java.lang.String, java.lang.Object> result, boolean writePermission)/parameter/writePermission",
+        "type" : "boolean",
+        "displayedType" : "boolean",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 423,
+          "startColumn" : 44,
+          "endLine" : 423,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/hasProjectPerm(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, long projectCode, java.util.Map<java.lang.String, java.lang.Object> result, boolean writePermission)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByProjectCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, java.lang.Long projectCode)" : {
+      "name" : "queryTaskGroupByProjectCode",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByProjectCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, java.lang.Long projectCode)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 245,
+        "startColumn" : 32,
+        "endLine" : 245,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByProjectCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, java.lang.Long projectCode)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 245,
+          "startColumn" : 65,
+          "endLine" : 245,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByProjectCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, java.lang.Long projectCode)"
+      }, {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByProjectCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, java.lang.Long projectCode)/parameter/pageNo",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 245,
+          "startColumn" : 80,
+          "endLine" : 245,
+          "endColumn" : 86
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByProjectCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, java.lang.Long projectCode)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByProjectCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, java.lang.Long projectCode)/parameter/pageSize",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 245,
+          "startColumn" : 92,
+          "endLine" : 245,
+          "endColumn" : 100
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByProjectCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, java.lang.Long projectCode)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByProjectCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, java.lang.Long projectCode)/parameter/projectCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 245,
+          "startColumn" : 107,
+          "endLine" : 245,
+          "endColumn" : 118
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByProjectCode(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, java.lang.Long projectCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/modifyPriority(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer queueId, java.lang.Integer priority)" : {
+      "name" : "modifyPriority",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/modifyPriority(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer queueId, java.lang.Integer priority)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 394,
+        "startColumn" : 32,
+        "endLine" : 394,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/modifyPriority(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer queueId, java.lang.Integer priority)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 394,
+          "startColumn" : 52,
+          "endLine" : 394,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/modifyPriority(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer queueId, java.lang.Integer priority)"
+      }, {
+        "name" : "queueId",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/modifyPriority(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer queueId, java.lang.Integer priority)/parameter/queueId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 394,
+          "startColumn" : 71,
+          "endLine" : 394,
+          "endColumn" : 78
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/modifyPriority(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer queueId, java.lang.Integer priority)"
+      }, {
+        "name" : "priority",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/modifyPriority(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer queueId, java.lang.Integer priority)/parameter/priority",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 394,
+          "startColumn" : 88,
+          "endLine" : 394,
+          "endColumn" : 96
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/modifyPriority(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer queueId, java.lang.Integer priority)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/closeTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)" : {
+      "name" : "closeTaskGroup",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/closeTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 315,
+        "startColumn" : 32,
+        "endLine" : 315,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/closeTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 315,
+          "startColumn" : 52,
+          "endLine" : 315,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/closeTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/closeTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 315,
+          "startColumn" : 67,
+          "endLine" : 315,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/closeTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByStatus(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int status)" : {
+      "name" : "queryTaskGroupByStatus",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByStatus(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int status)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 231,
+        "startColumn" : 32,
+        "endLine" : 231,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByStatus(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int status)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 231,
+          "startColumn" : 60,
+          "endLine" : 231,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByStatus(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int status)"
+      }, {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByStatus(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int status)/parameter/pageNo",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 231,
+          "startColumn" : 75,
+          "endLine" : 231,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByStatus(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int status)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByStatus(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int status)/parameter/pageSize",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 231,
+          "startColumn" : 87,
+          "endLine" : 231,
+          "endColumn" : 95
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByStatus(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int status)"
+      }, {
+        "name" : "status",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByStatus(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int status)/parameter/status",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 231,
+          "startColumn" : 101,
+          "endLine" : 231,
+          "endColumn" : 107
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupByStatus(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int status)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/doQuery(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int userId, java.lang.String name, java.lang.Integer status)" : {
+      "name" : "doQuery",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/doQuery(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int userId, java.lang.String name, java.lang.Integer status)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 297,
+        "startColumn" : 32,
+        "endLine" : 297,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/doQuery(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int userId, java.lang.String name, java.lang.Integer status)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 297,
+          "startColumn" : 45,
+          "endLine" : 297,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/doQuery(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int userId, java.lang.String name, java.lang.Integer status)"
+      }, {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/doQuery(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int userId, java.lang.String name, java.lang.Integer status)/parameter/pageNo",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 297,
+          "startColumn" : 60,
+          "endLine" : 297,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/doQuery(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int userId, java.lang.String name, java.lang.Integer status)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/doQuery(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int userId, java.lang.String name, java.lang.Integer status)/parameter/pageSize",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 297,
+          "startColumn" : 72,
+          "endLine" : 297,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/doQuery(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int userId, java.lang.String name, java.lang.Integer status)"
+      }, {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/doQuery(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int userId, java.lang.String name, java.lang.Integer status)/parameter/userId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 297,
+          "startColumn" : 86,
+          "endLine" : 297,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/doQuery(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int userId, java.lang.String name, java.lang.Integer status)"
+      }, {
+        "name" : "name",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/doQuery(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int userId, java.lang.String name, java.lang.Integer status)/parameter/name",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 297,
+          "startColumn" : 101,
+          "endLine" : 297,
+          "endColumn" : 105
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/doQuery(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int userId, java.lang.String name, java.lang.Integer status)"
+      }, {
+        "name" : "status",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/doQuery(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int userId, java.lang.String name, java.lang.Integer status)/parameter/status",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 298,
+          "startColumn" : 48,
+          "endLine" : 298,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/doQuery(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int pageNo, int pageSize, int userId, java.lang.String name, java.lang.Integer status)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/forceStartTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int queueId)" : {
+      "name" : "forceStartTask",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/forceStartTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int queueId)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 382,
+        "startColumn" : 32,
+        "endLine" : 382,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/forceStartTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int queueId)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 382,
+          "startColumn" : 52,
+          "endLine" : 382,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/forceStartTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int queueId)"
+      }, {
+        "name" : "queueId",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/forceStartTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int queueId)/parameter/queueId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 382,
+          "startColumn" : 67,
+          "endLine" : 382,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/forceStartTask(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int queueId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/updateTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String description, int groupSize)" : {
+      "name" : "updateTaskGroup",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/updateTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String description, int groupSize)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 153,
+        "startColumn" : 32,
+        "endLine" : 153,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/updateTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String description, int groupSize)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 153,
+          "startColumn" : 53,
+          "endLine" : 153,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/updateTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String description, int groupSize)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/updateTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String description, int groupSize)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 153,
+          "startColumn" : 68,
+          "endLine" : 153,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/updateTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String description, int groupSize)"
+      }, {
+        "name" : "name",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/updateTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String description, int groupSize)/parameter/name",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 153,
+          "startColumn" : 79,
+          "endLine" : 153,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/updateTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String description, int groupSize)"
+      }, {
+        "name" : "description",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/updateTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String description, int groupSize)/parameter/description",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 153,
+          "startColumn" : 92,
+          "endLine" : 153,
+          "endColumn" : 103
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/updateTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String description, int groupSize)"
+      }, {
+        "name" : "groupSize",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/updateTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String description, int groupSize)/parameter/groupSize",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 153,
+          "startColumn" : 109,
+          "endLine" : 153,
+          "endColumn" : 118
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/updateTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String description, int groupSize)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/deleteTaskGroupByProjectCode(long projectCode)" : {
+      "name" : "deleteTaskGroupByProjectCode",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/deleteTaskGroupByProjectCode(long projectCode)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 410,
+        "startColumn" : 17,
+        "endLine" : 410,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/deleteTaskGroupByProjectCode(long projectCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 410,
+          "startColumn" : 51,
+          "endLine" : 410,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/deleteTaskGroupByProjectCode(long projectCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryAllTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.Integer status, int pageNo, int pageSize)" : {
+      "name" : "queryAllTaskGroup",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryAllTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.Integer status, int pageNo, int pageSize)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 216,
+        "startColumn" : 32,
+        "endLine" : 216,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryAllTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.Integer status, int pageNo, int pageSize)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 216,
+          "startColumn" : 55,
+          "endLine" : 216,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryAllTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.Integer status, int pageNo, int pageSize)"
+      }, {
+        "name" : "name",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryAllTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.Integer status, int pageNo, int pageSize)/parameter/name",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 216,
+          "startColumn" : 73,
+          "endLine" : 216,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryAllTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.Integer status, int pageNo, int pageSize)"
+      }, {
+        "name" : "status",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryAllTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.Integer status, int pageNo, int pageSize)/parameter/status",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 216,
+          "startColumn" : 87,
+          "endLine" : 216,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryAllTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.Integer status, int pageNo, int pageSize)"
+      }, {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryAllTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.Integer status, int pageNo, int pageSize)/parameter/pageNo",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 216,
+          "startColumn" : 99,
+          "endLine" : 216,
+          "endColumn" : 105
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryAllTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.Integer status, int pageNo, int pageSize)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryAllTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.Integer status, int pageNo, int pageSize)/parameter/pageSize",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 217,
+          "startColumn" : 54,
+          "endLine" : 217,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryAllTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String name, java.lang.Integer status, int pageNo, int pageSize)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/startTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)" : {
+      "name" : "startTaskGroup",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/startTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 348,
+        "startColumn" : 32,
+        "endLine" : 348,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/startTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 348,
+          "startColumn" : 52,
+          "endLine" : 348,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/startTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/startTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 348,
+          "startColumn" : 67,
+          "endLine" : 348,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/startTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/createTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String name, java.lang.String description, int groupSize)" : {
+      "name" : "createTaskGroup",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/createTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String name, java.lang.String description, int groupSize)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 32,
+        "endLine" : 91,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/createTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String name, java.lang.String description, int groupSize)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 91,
+          "startColumn" : 53,
+          "endLine" : 91,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/createTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String name, java.lang.String description, int groupSize)"
+      }, {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/createTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String name, java.lang.String description, int groupSize)/parameter/projectCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 91,
+          "startColumn" : 69,
+          "endLine" : 91,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/createTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String name, java.lang.String description, int groupSize)"
+      }, {
+        "name" : "name",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/createTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String name, java.lang.String description, int groupSize)/parameter/name",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 91,
+          "startColumn" : 89,
+          "endLine" : 91,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/createTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String name, java.lang.String description, int groupSize)"
+      }, {
+        "name" : "description",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/createTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String name, java.lang.String description, int groupSize)/parameter/description",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 91,
+          "startColumn" : 102,
+          "endLine" : 91,
+          "endColumn" : 113
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/createTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String name, java.lang.String description, int groupSize)"
+      }, {
+        "name" : "groupSize",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/createTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String name, java.lang.String description, int groupSize)/parameter/groupSize",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 92,
+          "startColumn" : 52,
+          "endLine" : 92,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/createTaskGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Long projectCode, java.lang.String name, java.lang.String description, int groupSize)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)" : {
+      "name" : "queryTaskGroupById",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 278,
+        "startColumn" : 32,
+        "endLine" : 278,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 278,
+          "startColumn" : 56,
+          "endLine" : 278,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 278,
+          "startColumn" : 71,
+          "endLine" : 278,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl/method/queryTaskGroupById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.TaskGroupServiceImpl"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/service/impl/TaskGroupServiceImpl.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.TaskGroupService" ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.service.impl.BaseServiceImpl" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

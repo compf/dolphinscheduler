@@ -1,0 +1,1024 @@
+{
+  "name" : "DmsHook",
+  "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 61,
+    "startColumn" : 8,
+    "endLine" : 61,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/sourceEndpointArn" : {
+      "name" : "sourceEndpointArn",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/sourceEndpointArn",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 20,
+        "endLine" : 67,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/resourceIdentifier" : {
+      "name" : "resourceIdentifier",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/resourceIdentifier",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 20,
+        "endLine" : 78,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/replicationTaskArn" : {
+      "name" : "replicationTaskArn",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/replicationTaskArn",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 20,
+        "endLine" : 79,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/replicationTaskIdentifier" : {
+      "name" : "replicationTaskIdentifier",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/replicationTaskIdentifier",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 20,
+        "endLine" : 66,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/cdcStartTime" : {
+      "name" : "cdcStartTime",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/cdcStartTime",
+      "type" : "java.util.Date",
+      "displayedType" : "Date",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 73,
+        "startColumn" : 18,
+        "endLine" : 73,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/cdcStopPosition" : {
+      "name" : "cdcStopPosition",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/cdcStopPosition",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 20,
+        "endLine" : 75,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/log" : {
+      "name" : "log",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/log",
+      "type" : "org.slf4j.Logger",
+      "displayedType" : "Logger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 28,
+        "endLine" : 63,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PROTECTED", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/cdcStartPosition" : {
+      "name" : "cdcStartPosition",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/cdcStartPosition",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 74,
+        "startColumn" : 20,
+        "endLine" : 74,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/targetEndpointArn" : {
+      "name" : "targetEndpointArn",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/targetEndpointArn",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 20,
+        "endLine" : 68,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/migrationType" : {
+      "name" : "migrationType",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/migrationType",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 70,
+        "startColumn" : 20,
+        "endLine" : 70,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/replicationTaskSettings" : {
+      "name" : "replicationTaskSettings",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/replicationTaskSettings",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 20,
+        "endLine" : 72,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/tags" : {
+      "name" : "tags",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/tags",
+      "type" : "java.util.List<org.apache.dolphinscheduler.plugin.task.dms.com.amazonaws.services.databasemigrationservice.model.Tag>",
+      "displayedType" : "List<Tag>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 23,
+        "endLine" : 76,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/replicationInstanceArn" : {
+      "name" : "replicationInstanceArn",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/replicationInstanceArn",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 20,
+        "endLine" : 69,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/tableMappings" : {
+      "name" : "tableMappings",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/tableMappings",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 20,
+        "endLine" : 71,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/client" : {
+      "name" : "client",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/client",
+      "type" : "org.apache.dolphinscheduler.plugin.task.dms.com.amazonaws.services.databasemigrationservice.AWSDatabaseMigrationService",
+      "displayedType" : "AWSDatabaseMigrationService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 41,
+        "endLine" : 65,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/startReplicationTaskType" : {
+      "name" : "startReplicationTaskType",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/startReplicationTaskType",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 80,
+        "startColumn" : 20,
+        "endLine" : 80,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/taskData" : {
+      "name" : "taskData",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/memberField/taskData",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 20,
+        "endLine" : 77,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/startReplicationTask()" : {
+      "name" : "startReplicationTask",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/startReplicationTask()",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 119,
+        "startColumn" : 20,
+        "endLine" : 119,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/stopReplicationTask()" : {
+      "name" : "stopReplicationTask",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/stopReplicationTask()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 139,
+        "startColumn" : 17,
+        "endLine" : 139,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/awaitReplicationTaskStatus(java.lang.String exceptStatus, java.lang.String[] stopStatus)" : {
+      "name" : "awaitReplicationTaskStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/awaitReplicationTaskStatus(java.lang.String exceptStatus, java.lang.String[] stopStatus)",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 231,
+        "startColumn" : 20,
+        "endLine" : 231,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "exceptStatus",
+        "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/awaitReplicationTaskStatus(java.lang.String exceptStatus, java.lang.String[] stopStatus)/parameter/exceptStatus",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 231,
+          "startColumn" : 54,
+          "endLine" : 231,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/awaitReplicationTaskStatus(java.lang.String exceptStatus, java.lang.String[] stopStatus)"
+      }, {
+        "name" : "stopStatus",
+        "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/awaitReplicationTaskStatus(java.lang.String exceptStatus, java.lang.String[] stopStatus)/parameter/stopStatus",
+        "type" : "java.lang.String[]",
+        "displayedType" : "String[]",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 231,
+          "startColumn" : 78,
+          "endLine" : 231,
+          "endColumn" : 88
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/awaitReplicationTaskStatus(java.lang.String exceptStatus, java.lang.String[] stopStatus)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/testConnection(java.lang.String replicationInstanceArn, java.lang.String endpointArn)" : {
+      "name" : "testConnection",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/testConnection(java.lang.String replicationInstanceArn, java.lang.String endpointArn)",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 169,
+        "startColumn" : 20,
+        "endLine" : 169,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "replicationInstanceArn",
+        "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/testConnection(java.lang.String replicationInstanceArn, java.lang.String endpointArn)/parameter/replicationInstanceArn",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 169,
+          "startColumn" : 42,
+          "endLine" : 169,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/testConnection(java.lang.String replicationInstanceArn, java.lang.String endpointArn)"
+      }, {
+        "name" : "endpointArn",
+        "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/testConnection(java.lang.String replicationInstanceArn, java.lang.String endpointArn)/parameter/endpointArn",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 169,
+          "startColumn" : 73,
+          "endLine" : 169,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/testConnection(java.lang.String replicationInstanceArn, java.lang.String endpointArn)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/testConnectionEndpoint()" : {
+      "name" : "testConnectionEndpoint",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/testConnectionEndpoint()",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 164,
+        "startColumn" : 20,
+        "endLine" : 164,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/createReplicationTask()" : {
+      "name" : "createReplicationTask",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/createReplicationTask()",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 20,
+        "endLine" : 91,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/createClient()" : {
+      "name" : "createClient",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/createClient()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.dms.com.amazonaws.services.databasemigrationservice.AWSDatabaseMigrationService",
+      "displayedType" : "AWSDatabaseMigrationService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 86,
+        "startColumn" : 47,
+        "endLine" : 86,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/replaceFileParameters(java.lang.String parameter)" : {
+      "name" : "replaceFileParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/replaceFileParameters(java.lang.String parameter)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 265,
+        "startColumn" : 19,
+        "endLine" : 265,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "parameter",
+        "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/replaceFileParameters(java.lang.String parameter)/parameter/parameter",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 265,
+          "startColumn" : 48,
+          "endLine" : 265,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/replaceFileParameters(java.lang.String parameter)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/describeReplicationTasks()" : {
+      "name" : "describeReplicationTasks",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/describeReplicationTasks()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.dms.com.amazonaws.services.databasemigrationservice.model.ReplicationTask",
+      "displayedType" : "ReplicationTask",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 204,
+        "startColumn" : 28,
+        "endLine" : 204,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/checkFinishedReplicationTask()" : {
+      "name" : "checkFinishedReplicationTask",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/checkFinishedReplicationTask()",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 132,
+        "startColumn" : 20,
+        "endLine" : 132,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/getApplicationIds()" : {
+      "name" : "getApplicationIds",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/getApplicationIds()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook$ApplicationIds",
+      "displayedType" : "ApplicationIds",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 280,
+        "startColumn" : 27,
+        "endLine" : 280,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/awaitConnectSuccess(java.lang.String replicationInstanceArn, java.lang.String endpointArn)" : {
+      "name" : "awaitConnectSuccess",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/awaitConnectSuccess(java.lang.String replicationInstanceArn, java.lang.String endpointArn)",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 182,
+        "startColumn" : 20,
+        "endLine" : 182,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "replicationInstanceArn",
+        "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/awaitConnectSuccess(java.lang.String replicationInstanceArn, java.lang.String endpointArn)/parameter/replicationInstanceArn",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 182,
+          "startColumn" : 47,
+          "endLine" : 182,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/awaitConnectSuccess(java.lang.String replicationInstanceArn, java.lang.String endpointArn)"
+      }, {
+        "name" : "endpointArn",
+        "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/awaitConnectSuccess(java.lang.String replicationInstanceArn, java.lang.String endpointArn)/parameter/endpointArn",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 182,
+          "startColumn" : 78,
+          "endLine" : 182,
+          "endColumn" : 89
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/awaitConnectSuccess(java.lang.String replicationInstanceArn, java.lang.String endpointArn)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/deleteReplicationTask()" : {
+      "name" : "deleteReplicationTask",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook/method/deleteReplicationTask()",
+      "type" : "java.lang.Boolean",
+      "displayedType" : "Boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 150,
+        "startColumn" : 20,
+        "endLine" : 150,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-dms/src/main/java/org/apache/dolphinscheduler/plugin/task/dms/DmsHook.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.CONSTANTS" : {
+      "name" : "CONSTANTS",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.CONSTANTS",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 316,
+        "startColumn" : 19,
+        "endLine" : 316,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.CONSTANTS/memberField/CHECK_INTERVAL" : {
+          "name" : "CHECK_INTERVAL",
+          "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.CONSTANTS/memberField/CHECK_INTERVAL",
+          "type" : "int",
+          "displayedType" : "int",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 318,
+            "startColumn" : 33,
+            "endLine" : 318,
+            "endColumn" : 47
+          },
+          "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.CONSTANTS"
+        }
+      },
+      "methods" : { },
+      "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-dms/src/main/java/org/apache/dolphinscheduler/plugin/task/dms/DmsHook.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.AWS_KEY" : {
+      "name" : "AWS_KEY",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.AWS_KEY",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 303,
+        "startColumn" : 19,
+        "endLine" : 303,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.AWS_KEY/memberField/REPLICATION_INSTANCE_ARN" : {
+          "name" : "REPLICATION_INSTANCE_ARN",
+          "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.AWS_KEY/memberField/REPLICATION_INSTANCE_ARN",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 306,
+            "startColumn" : 36,
+            "endLine" : 306,
+            "endColumn" : 60
+          },
+          "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.AWS_KEY"
+        },
+        "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.AWS_KEY/memberField/REPLICATION_TASK_ARN" : {
+          "name" : "REPLICATION_TASK_ARN",
+          "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.AWS_KEY/memberField/REPLICATION_TASK_ARN",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 305,
+            "startColumn" : 36,
+            "endLine" : 305,
+            "endColumn" : 56
+          },
+          "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.AWS_KEY"
+        },
+        "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.AWS_KEY/memberField/ENDPOINT_ARN" : {
+          "name" : "ENDPOINT_ARN",
+          "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.AWS_KEY/memberField/ENDPOINT_ARN",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 307,
+            "startColumn" : 36,
+            "endLine" : 307,
+            "endColumn" : 48
+          },
+          "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.AWS_KEY"
+        }
+      },
+      "methods" : { },
+      "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-dms/src/main/java/org/apache/dolphinscheduler/plugin/task/dms/DmsHook.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.ApplicationIds" : {
+      "name" : "ApplicationIds",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.ApplicationIds",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 287,
+        "startColumn" : 19,
+        "endLine" : 287,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.ApplicationIds/memberField/replicationTaskArn" : {
+          "name" : "replicationTaskArn",
+          "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.ApplicationIds/memberField/replicationTaskArn",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 289,
+            "startColumn" : 24,
+            "endLine" : 289,
+            "endColumn" : 42
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.ApplicationIds"
+        }
+      },
+      "methods" : { },
+      "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-dms/src/main/java/org/apache/dolphinscheduler/plugin/task/dms/DmsHook.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.START_TYPE" : {
+      "name" : "START_TYPE",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.START_TYPE",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 310,
+        "startColumn" : 19,
+        "endLine" : 310,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.START_TYPE/memberField/START_REPLICATION" : {
+          "name" : "START_REPLICATION",
+          "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.START_TYPE/memberField/START_REPLICATION",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 312,
+            "startColumn" : 36,
+            "endLine" : 312,
+            "endColumn" : 53
+          },
+          "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.START_TYPE"
+        },
+        "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.START_TYPE/memberField/RELOAD_TARGET" : {
+          "name" : "RELOAD_TARGET",
+          "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.START_TYPE/memberField/RELOAD_TARGET",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 313,
+            "startColumn" : 36,
+            "endLine" : 313,
+            "endColumn" : 49
+          },
+          "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.START_TYPE"
+        }
+      },
+      "methods" : { },
+      "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-dms/src/main/java/org/apache/dolphinscheduler/plugin/task/dms/DmsHook.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    },
+    "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS" : {
+      "name" : "STATUS",
+      "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 292,
+        "startColumn" : 19,
+        "endLine" : 292,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS/memberField/TESTING" : {
+          "name" : "TESTING",
+          "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS/memberField/TESTING",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 299,
+            "startColumn" : 36,
+            "endLine" : 299,
+            "endColumn" : 43
+          },
+          "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS"
+        },
+        "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS/memberField/FINISH_END_TOKEN" : {
+          "name" : "FINISH_END_TOKEN",
+          "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS/memberField/FINISH_END_TOKEN",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 300,
+            "startColumn" : 36,
+            "endLine" : 300,
+            "endColumn" : 52
+          },
+          "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS"
+        },
+        "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS/memberField/STOPPED" : {
+          "name" : "STOPPED",
+          "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS/memberField/STOPPED",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 297,
+            "startColumn" : 36,
+            "endLine" : 297,
+            "endColumn" : 43
+          },
+          "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS"
+        },
+        "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS/memberField/DELETE" : {
+          "name" : "DELETE",
+          "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS/memberField/DELETE",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 294,
+            "startColumn" : 36,
+            "endLine" : 294,
+            "endColumn" : 42
+          },
+          "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS"
+        },
+        "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS/memberField/READY" : {
+          "name" : "READY",
+          "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS/memberField/READY",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 295,
+            "startColumn" : 36,
+            "endLine" : 295,
+            "endColumn" : 41
+          },
+          "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS"
+        },
+        "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS/memberField/SUCCESSFUL" : {
+          "name" : "SUCCESSFUL",
+          "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS/memberField/SUCCESSFUL",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 298,
+            "startColumn" : 36,
+            "endLine" : 298,
+            "endColumn" : 46
+          },
+          "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS"
+        },
+        "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS/memberField/RUNNING" : {
+          "name" : "RUNNING",
+          "key" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS/memberField/RUNNING",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 296,
+            "startColumn" : 36,
+            "endLine" : 296,
+            "endColumn" : 43
+          },
+          "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook.STATUS"
+        }
+      },
+      "methods" : { },
+      "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-dms/src/main/java/org/apache/dolphinscheduler/plugin/task/dms/DmsHook.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.plugin.task.dms.DmsHook",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : { }
+}

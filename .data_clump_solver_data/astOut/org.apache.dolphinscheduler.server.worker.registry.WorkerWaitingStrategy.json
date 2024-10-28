@@ -1,0 +1,167 @@
+{
+  "name" : "WorkerWaitingStrategy",
+  "key" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 42,
+    "startColumn" : 8,
+    "endLine" : 42,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy/memberField/workerManagerThread" : {
+      "name" : "workerManagerThread",
+      "key" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy/memberField/workerManagerThread",
+      "type" : "org.apache.dolphinscheduler.server.worker.registry.org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutorThreadPool",
+      "displayedType" : "WorkerTaskExecutorThreadPool",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 42,
+        "endLine" : 54,
+        "endColumn" : 61
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy"
+    },
+    "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy/memberField/workerConfig" : {
+      "name" : "workerConfig",
+      "key" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy/memberField/workerConfig",
+      "type" : "org.apache.dolphinscheduler.server.worker.registry.org.apache.dolphinscheduler.server.worker.config.WorkerConfig",
+      "displayedType" : "WorkerConfig",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 45,
+        "startColumn" : 26,
+        "endLine" : 45,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy"
+    },
+    "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy/memberField/registryClient" : {
+      "name" : "registryClient",
+      "key" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy/memberField/registryClient",
+      "type" : "org.apache.dolphinscheduler.server.worker.registry.org.apache.dolphinscheduler.registry.api.RegistryClient",
+      "displayedType" : "RegistryClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 48,
+        "startColumn" : 28,
+        "endLine" : 48,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy"
+    },
+    "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy/memberField/messageRetryRunner" : {
+      "name" : "messageRetryRunner",
+      "key" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy/memberField/messageRetryRunner",
+      "type" : "org.apache.dolphinscheduler.server.worker.registry.org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner",
+      "displayedType" : "MessageRetryRunner",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 32,
+        "endLine" : 51,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy/method/disconnect()" : {
+      "name" : "disconnect",
+      "key" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy/method/disconnect()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 17,
+        "endLine" : 67,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy"
+    },
+    "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy/method/getStrategyType()" : {
+      "name" : "getStrategyType",
+      "key" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy/method/getStrategyType()",
+      "type" : "org.apache.dolphinscheduler.server.worker.registry.org.apache.dolphinscheduler.registry.api.StrategyType",
+      "displayedType" : "StrategyType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 119,
+        "startColumn" : 25,
+        "endLine" : 119,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy"
+    },
+    "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy/method/reconnect()" : {
+      "name" : "reconnect",
+      "key" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy/method/reconnect()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 99,
+        "startColumn" : 17,
+        "endLine" : 99,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy"
+    },
+    "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy/method/clearWorkerResource()" : {
+      "name" : "clearWorkerResource",
+      "key" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy/method/clearWorkerResource()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 123,
+        "startColumn" : 18,
+        "endLine" : 123,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.worker.registry.WorkerWaitingStrategy"
+    }
+  },
+  "file_path" : "dolphinscheduler-worker/src/main/java/org/apache/dolphinscheduler/server/worker/registry/WorkerWaitingStrategy.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.worker.registry.WorkerConnectStrategy" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

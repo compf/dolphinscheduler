@@ -1,0 +1,358 @@
+{
+  "name" : "SagemakerTask",
+  "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 56,
+    "startColumn" : 8,
+    "endLine" : 56,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/memberField/sagemakerConnectionParam" : {
+      "name" : "sagemakerConnectionParam",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/memberField/sagemakerConnectionParam",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.org.apache.dolphinscheduler.plugin.datasource.sagemaker.param.SagemakerConnectionParam",
+      "displayedType" : "SagemakerConnectionParam",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 73,
+        "startColumn" : 38,
+        "endLine" : 73,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/memberField/parameters" : {
+      "name" : "parameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/memberField/parameters",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerParameters",
+      "displayedType" : "SagemakerParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 33,
+        "endLine" : 68,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/memberField/pipelineId" : {
+      "name" : "pipelineId",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/memberField/pipelineId",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils.PipelineId",
+      "displayedType" : "PipelineUtils.PipelineId",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 38,
+        "endLine" : 72,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/memberField/taskExecutionContext" : {
+      "name" : "taskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/memberField/taskExecutionContext",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+      "displayedType" : "TaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 34,
+        "endLine" : 75,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/memberField/client" : {
+      "name" : "client",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/memberField/client",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker",
+      "displayedType" : "AmazonSageMaker",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 70,
+        "startColumn" : 29,
+        "endLine" : 70,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/memberField/sagemakerTaskExecutionContext" : {
+      "name" : "sagemakerTaskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/memberField/sagemakerTaskExecutionContext",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTaskExecutionContext",
+      "displayedType" : "SagemakerTaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 74,
+        "startColumn" : 43,
+        "endLine" : 74,
+        "endColumn" : 72
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/memberField/objectMapper" : {
+      "name" : "objectMapper",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/memberField/objectMapper",
+      "type" : "com.fasterxml.jackson.databind.ObjectMapper",
+      "displayedType" : "ObjectMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 39,
+        "endLine" : 58,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/memberField/utils" : {
+      "name" : "utils",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/memberField/utils",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils",
+      "displayedType" : "PipelineUtils",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 27,
+        "endLine" : 71,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/cancelApplication()" : {
+      "name" : "cancelApplication",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/cancelApplication()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 128,
+        "startColumn" : 17,
+        "endLine" : 128,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/createClient()" : {
+      "name" : "createClient",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/createClient()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker",
+      "displayedType" : "AmazonSageMaker",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 186,
+        "startColumn" : 31,
+        "endLine" : 186,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/submitApplication()" : {
+      "name" : "submitApplication",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/submitApplication()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 112,
+        "startColumn" : 17,
+        "endLine" : 112,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/getApplicationIds()" : {
+      "name" : "getApplicationIds",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/getApplicationIds()",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 25,
+        "endLine" : 83,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/trackApplicationStatus()" : {
+      "name" : "trackApplicationStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/trackApplicationStatus()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 139,
+        "startColumn" : 17,
+        "endLine" : 139,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/parseRequstJson(java.lang.String requestJson)" : {
+      "name" : "parseRequstJson",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/parseRequstJson(java.lang.String requestJson)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 181,
+        "startColumn" : 20,
+        "endLine" : 181,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "requestJson",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/parseRequstJson(java.lang.String requestJson)/parameter/requestJson",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 181,
+          "startColumn" : 43,
+          "endLine" : 181,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/parseRequstJson(java.lang.String requestJson)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/createStartPipelineRequest()" : {
+      "name" : "createStartPipelineRequest",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/createStartPipelineRequest()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.model.StartPipelineExecutionRequest",
+      "displayedType" : "StartPipelineExecutionRequest",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 159,
+        "startColumn" : 42,
+        "endLine" : 159,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/initPipelineId()" : {
+      "name" : "initPipelineId",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/initPipelineId()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 148,
+        "startColumn" : 18,
+        "endLine" : 148,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/init()" : {
+      "name" : "init",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/init()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 17,
+        "endLine" : 88,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/getParameters()" : {
+      "name" : "getParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask/method/getParameters()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerParameters",
+      "displayedType" : "SagemakerParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 177,
+        "startColumn" : 32,
+        "endLine" : 177,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.SagemakerTask"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-sagemaker/src/main/java/org/apache/dolphinscheduler/plugin/task/sagemaker/SagemakerTask.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.plugin.task.sagemaker.org.apache.dolphinscheduler.plugin.task.api.AbstractRemoteTask" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

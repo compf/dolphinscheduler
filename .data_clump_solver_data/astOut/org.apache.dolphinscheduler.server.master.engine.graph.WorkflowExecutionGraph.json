@@ -1,0 +1,1261 @@
+{
+  "name" : "WorkflowExecutionGraph",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 35,
+    "startColumn" : 8,
+    "endLine" : 35,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/memberField/successors" : {
+      "name" : "successors",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/memberField/successors",
+      "type" : "java.util.Map<java.lang.String, java.util.Set<java.lang.String>>",
+      "displayedType" : "Map<String, Set<String>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 44,
+        "endLine" : 49,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/memberField/predecessors" : {
+      "name" : "predecessors",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/memberField/predecessors",
+      "type" : "java.util.Map<java.lang.String, java.util.Set<java.lang.String>>",
+      "displayedType" : "Map<String, Set<String>>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 44,
+        "endLine" : 47,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/memberField/killedTaskChains" : {
+      "name" : "killedTaskChains",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/memberField/killedTaskChains",
+      "type" : "java.util.Set<java.lang.String>",
+      "displayedType" : "Set<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 31,
+        "endLine" : 43,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/memberField/pausedTaskChains" : {
+      "name" : "pausedTaskChains",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/memberField/pausedTaskChains",
+      "type" : "java.util.Set<java.lang.String>",
+      "displayedType" : "Set<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 41,
+        "startColumn" : 31,
+        "endLine" : 41,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/memberField/totalTaskExecuteRunnableMap" : {
+      "name" : "totalTaskExecuteRunnableMap",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/memberField/totalTaskExecuteRunnableMap",
+      "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable>",
+      "displayedType" : "Map<String, ITaskExecutionRunnable>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 37,
+        "startColumn" : 55,
+        "endLine" : 37,
+        "endColumn" : 82
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/memberField/skippedTask" : {
+      "name" : "skippedTask",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/memberField/skippedTask",
+      "type" : "java.util.Set<java.lang.String>",
+      "displayedType" : "Set<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 45,
+        "startColumn" : 31,
+        "endLine" : 45,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/memberField/activeTaskExecutionRunnable" : {
+      "name" : "activeTaskExecutionRunnable",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/memberField/activeTaskExecutionRunnable",
+      "type" : "java.util.Set<java.lang.String>",
+      "displayedType" : "Set<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 51,
+        "startColumn" : 31,
+        "endLine" : 51,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/memberField/failureTaskChains" : {
+      "name" : "failureTaskChains",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/memberField/failureTaskChains",
+      "type" : "java.util.Set<java.lang.String>",
+      "displayedType" : "Set<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 39,
+        "startColumn" : 31,
+        "endLine" : 39,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isExistKillTaskExecutionRunnableChain()" : {
+      "name" : "isExistKillTaskExecutionRunnableChain",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isExistKillTaskExecutionRunnableChain()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 199,
+        "startColumn" : 20,
+        "endLine" : 199,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableActive(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "markTaskExecutionRunnableActive",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableActive(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 204,
+        "startColumn" : 17,
+        "endLine" : 204,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableActive(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 204,
+          "startColumn" : 78,
+          "endLine" : 204,
+          "endColumn" : 99
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableActive(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskKilled(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "isTaskKilled",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskKilled(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 295,
+        "startColumn" : 21,
+        "endLine" : 295,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskKilled(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 295,
+          "startColumn" : 63,
+          "endLine" : 295,
+          "endColumn" : 84
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskKilled(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getSuccessors(java.lang.String taskName)" : {
+      "name" : "getSuccessors",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getSuccessors(java.lang.String taskName)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable>",
+      "displayedType" : "List<ITaskExecutionRunnable>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 99,
+        "startColumn" : 41,
+        "endLine" : 99,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskName",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getSuccessors(java.lang.String taskName)/parameter/taskName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 99,
+          "startColumn" : 68,
+          "endLine" : 99,
+          "endColumn" : 76
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getSuccessors(java.lang.String taskName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isAllTaskExecutionRunnableChainSuccess()" : {
+      "name" : "isAllTaskExecutionRunnableChainSuccess",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isAllTaskExecutionRunnableChainSuccess()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 179,
+        "startColumn" : 20,
+        "endLine" : 179,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableInActive(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "markTaskExecutionRunnableInActive",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableInActive(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 209,
+        "startColumn" : 17,
+        "endLine" : 209,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableInActive(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 209,
+          "startColumn" : 80,
+          "endLine" : 209,
+          "endColumn" : 101
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableInActive(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getAllTaskExecutionRunnable()" : {
+      "name" : "getAllTaskExecutionRunnable",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getAllTaskExecutionRunnable()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable>",
+      "displayedType" : "List<ITaskExecutionRunnable>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 159,
+        "startColumn" : 41,
+        "endLine" : 159,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTriggerConditionMet(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "isTriggerConditionMet",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTriggerConditionMet(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 164,
+        "startColumn" : 20,
+        "endLine" : 164,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTriggerConditionMet(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 164,
+          "startColumn" : 71,
+          "endLine" : 164,
+          "endColumn" : 92
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTriggerConditionMet(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getTaskExecutionRunnableById(java.lang.Integer taskInstanceId)" : {
+      "name" : "getTaskExecutionRunnableById",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getTaskExecutionRunnableById(java.lang.Integer taskInstanceId)",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+      "displayedType" : "ITaskExecutionRunnable",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 121,
+        "startColumn" : 35,
+        "endLine" : 121,
+        "endColumn" : 63
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstanceId",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getTaskExecutionRunnableById(java.lang.Integer taskInstanceId)/parameter/taskInstanceId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 121,
+          "startColumn" : 78,
+          "endLine" : 121,
+          "endColumn" : 92
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getTaskExecutionRunnableById(java.lang.Integer taskInstanceId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskExecutionRunnableForbidden(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "isTaskExecutionRunnableForbidden",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskExecutionRunnableForbidden(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 254,
+        "startColumn" : 20,
+        "endLine" : 254,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskExecutionRunnableForbidden(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 254,
+          "startColumn" : 82,
+          "endLine" : 254,
+          "endColumn" : 103
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskExecutionRunnableForbidden(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskSkipped(java.lang.String taskName)" : {
+      "name" : "markTaskSkipped",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskSkipped(java.lang.String taskName)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 237,
+        "startColumn" : 17,
+        "endLine" : 237,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskName",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskSkipped(java.lang.String taskName)/parameter/taskName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 237,
+          "startColumn" : 46,
+          "endLine" : 237,
+          "endColumn" : 54
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskSkipped(java.lang.String taskName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getStartNodes()" : {
+      "name" : "getStartNodes",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getStartNodes()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable>",
+      "displayedType" : "List<ITaskExecutionRunnable>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 78,
+        "startColumn" : 41,
+        "endLine" : 78,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getPredecessors(java.lang.String taskName)" : {
+      "name" : "getPredecessors",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getPredecessors(java.lang.String taskName)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable>",
+      "displayedType" : "List<ITaskExecutionRunnable>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 87,
+        "startColumn" : 41,
+        "endLine" : 87,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskName",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getPredecessors(java.lang.String taskName)/parameter/taskName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 87,
+          "startColumn" : 70,
+          "endLine" : 87,
+          "endColumn" : 78
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getPredecessors(java.lang.String taskName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskExecutionRunnableSkipped(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "isTaskExecutionRunnableSkipped",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskExecutionRunnableSkipped(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 249,
+        "startColumn" : 20,
+        "endLine" : 249,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskExecutionRunnableSkipped(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 249,
+          "startColumn" : 80,
+          "endLine" : 249,
+          "endColumn" : 101
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskExecutionRunnableSkipped(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableChainPause(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "markTaskExecutionRunnableChainPause",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableChainPause(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 220,
+        "startColumn" : 17,
+        "endLine" : 220,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableChainPause(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 220,
+          "startColumn" : 82,
+          "endLine" : 220,
+          "endColumn" : 103
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableChainPause(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/addNode(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "addNode",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/addNode(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 17,
+        "endLine" : 65,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/addNode(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 65,
+          "startColumn" : 54,
+          "endLine" : 65,
+          "endColumn" : 75
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/addNode(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableChainKill(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "markTaskExecutionRunnableChainKill",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableChainKill(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 226,
+        "startColumn" : 17,
+        "endLine" : 226,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableChainKill(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 226,
+          "startColumn" : 81,
+          "endLine" : 226,
+          "endColumn" : 102
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableChainKill(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/assertTaskExecutionRunnableState(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus taskExecutionStatus)" : {
+      "name" : "assertTaskExecutionRunnableState",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/assertTaskExecutionRunnableState(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus taskExecutionStatus)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 299,
+        "startColumn" : 18,
+        "endLine" : 299,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/assertTaskExecutionRunnableState(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus taskExecutionStatus)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 299,
+          "startColumn" : 80,
+          "endLine" : 299,
+          "endColumn" : 101
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/assertTaskExecutionRunnableState(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus taskExecutionStatus)"
+      }, {
+        "name" : "taskExecutionStatus",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/assertTaskExecutionRunnableState(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus taskExecutionStatus)/parameter/taskExecutionStatus",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus",
+        "displayedType" : "TaskExecutionStatus",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 300,
+          "startColumn" : 77,
+          "endLine" : 300,
+          "endColumn" : 96
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/assertTaskExecutionRunnableState(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable, org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.plugin.task.api.enums.TaskExecutionStatus taskExecutionStatus)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isExistFailureTaskExecutionRunnableChain()" : {
+      "name" : "isExistFailureTaskExecutionRunnableChain",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isExistFailureTaskExecutionRunnableChain()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 189,
+        "startColumn" : 20,
+        "endLine" : 189,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getTaskExecutionRunnableByTaskCode(java.lang.Long taskCode)" : {
+      "name" : "getTaskExecutionRunnableByTaskCode",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getTaskExecutionRunnableByTaskCode(java.lang.Long taskCode)",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+      "displayedType" : "ITaskExecutionRunnable",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 131,
+        "startColumn" : 35,
+        "endLine" : 131,
+        "endColumn" : 69
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getTaskExecutionRunnableByTaskCode(java.lang.Long taskCode)/parameter/taskCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 131,
+          "startColumn" : 81,
+          "endLine" : 131,
+          "endColumn" : 89
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getTaskExecutionRunnableByTaskCode(java.lang.Long taskCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getActiveTaskExecutionRunnable()" : {
+      "name" : "getActiveTaskExecutionRunnable",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getActiveTaskExecutionRunnable()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable>",
+      "displayedType" : "List<ITaskExecutionRunnable>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 151,
+        "startColumn" : 41,
+        "endLine" : 151,
+        "endColumn" : 71
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isAllPredecessorsSkipped(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "isAllPredecessorsSkipped",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isAllPredecessorsSkipped(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 263,
+        "startColumn" : 20,
+        "endLine" : 263,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isAllPredecessorsSkipped(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 263,
+          "startColumn" : 74,
+          "endLine" : 263,
+          "endColumn" : 95
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isAllPredecessorsSkipped(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskFinish(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "isTaskFinish",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskFinish(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 283,
+        "startColumn" : 21,
+        "endLine" : 283,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskFinish(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 283,
+          "startColumn" : 63,
+          "endLine" : 283,
+          "endColumn" : 84
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskFinish(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isAllSuccessorsAreConditionTask(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "isAllSuccessorsAreConditionTask",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isAllSuccessorsAreConditionTask(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 273,
+        "startColumn" : 20,
+        "endLine" : 273,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isAllSuccessorsAreConditionTask(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 273,
+          "startColumn" : 81,
+          "endLine" : 273,
+          "endColumn" : 102
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isAllSuccessorsAreConditionTask(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskSkipped(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "markTaskSkipped",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskSkipped(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 232,
+        "startColumn" : 17,
+        "endLine" : 232,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskSkipped(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 232,
+          "startColumn" : 62,
+          "endLine" : 232,
+          "endColumn" : 83
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskSkipped(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskPaused(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "isTaskPaused",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskPaused(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 291,
+        "startColumn" : 21,
+        "endLine" : 291,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskPaused(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 291,
+          "startColumn" : 63,
+          "endLine" : 291,
+          "endColumn" : 84
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskPaused(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableChainFailure(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "markTaskExecutionRunnableChainFailure",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableChainFailure(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 214,
+        "startColumn" : 17,
+        "endLine" : 214,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableChainFailure(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 214,
+          "startColumn" : 84,
+          "endLine" : 214,
+          "endColumn" : 105
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/markTaskExecutionRunnableChainFailure(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getSuccessors(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "getSuccessors",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getSuccessors(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable>",
+      "displayedType" : "List<ITaskExecutionRunnable>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 111,
+        "startColumn" : 41,
+        "endLine" : 111,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getSuccessors(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 111,
+          "startColumn" : 84,
+          "endLine" : 111,
+          "endColumn" : 105
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getSuccessors(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/addEdge(java.lang.String fromTaskName, java.util.Set<java.lang.String> toTaskNames)" : {
+      "name" : "addEdge",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/addEdge(java.lang.String fromTaskName, java.util.Set<java.lang.String> toTaskNames)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 17,
+        "endLine" : 72,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "fromTaskName",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/addEdge(java.lang.String fromTaskName, java.util.Set<java.lang.String> toTaskNames)/parameter/fromTaskName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 72,
+          "startColumn" : 32,
+          "endLine" : 72,
+          "endColumn" : 44
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/addEdge(java.lang.String fromTaskName, java.util.Set<java.lang.String> toTaskNames)"
+      }, {
+        "name" : "toTaskNames",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/addEdge(java.lang.String fromTaskName, java.util.Set<java.lang.String> toTaskNames)/parameter/toTaskNames",
+        "type" : "java.util.Set<java.lang.String>",
+        "displayedType" : "Set<String>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 72,
+          "startColumn" : 58,
+          "endLine" : 72,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/addEdge(java.lang.String fromTaskName, java.util.Set<java.lang.String> toTaskNames)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isAllTaskExecutionRunnableChainFinish()" : {
+      "name" : "isAllTaskExecutionRunnableChainFinish",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isAllTaskExecutionRunnableChainFinish()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 174,
+        "startColumn" : 20,
+        "endLine" : 174,
+        "endColumn" : 57
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isEndOfTaskChain(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "isEndOfTaskChain",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isEndOfTaskChain(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 242,
+        "startColumn" : 20,
+        "endLine" : 242,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isEndOfTaskChain(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 242,
+          "startColumn" : 66,
+          "endLine" : 242,
+          "endColumn" : 87
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isEndOfTaskChain(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getTaskExecutionRunnableByName(java.lang.String taskName)" : {
+      "name" : "getTaskExecutionRunnableByName",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getTaskExecutionRunnableByName(java.lang.String taskName)",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+      "displayedType" : "ITaskExecutionRunnable",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 116,
+        "startColumn" : 35,
+        "endLine" : 116,
+        "endColumn" : 65
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskName",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getTaskExecutionRunnableByName(java.lang.String taskName)/parameter/taskName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 116,
+          "startColumn" : 79,
+          "endLine" : 116,
+          "endColumn" : 87
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/getTaskExecutionRunnableByName(java.lang.String taskName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskExecutionRunnableActive(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "isTaskExecutionRunnableActive",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskExecutionRunnableActive(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 141,
+        "startColumn" : 20,
+        "endLine" : 141,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskExecutionRunnableActive(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 141,
+          "startColumn" : 79,
+          "endLine" : 141,
+          "endColumn" : 100
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskExecutionRunnableActive(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskFailure(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "isTaskFailure",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskFailure(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 287,
+        "startColumn" : 21,
+        "endLine" : 287,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskFailure(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 287,
+          "startColumn" : 64,
+          "endLine" : 287,
+          "endColumn" : 85
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskFailure(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isExistPauseTaskExecutionRunnableChain()" : {
+      "name" : "isExistPauseTaskExecutionRunnableChain",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isExistPauseTaskExecutionRunnableChain()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 194,
+        "startColumn" : 20,
+        "endLine" : 194,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskExecutionRunnableKilled(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)" : {
+      "name" : "isTaskExecutionRunnableKilled",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskExecutionRunnableKilled(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 146,
+        "startColumn" : 20,
+        "endLine" : 146,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskExecutionRunnable",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskExecutionRunnableKilled(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)/parameter/taskExecutionRunnable",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable",
+        "displayedType" : "ITaskExecutionRunnable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 146,
+          "startColumn" : 79,
+          "endLine" : 146,
+          "endColumn" : 100
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph/method/isTaskExecutionRunnableKilled(org.apache.dolphinscheduler.server.master.engine.graph.org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskExecutionRunnable taskExecutionRunnable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.graph.WorkflowExecutionGraph"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/graph/WorkflowExecutionGraph.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.master.engine.graph.IWorkflowExecutionGraph" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

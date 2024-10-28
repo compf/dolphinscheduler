@@ -1,0 +1,246 @@
+{
+  "name" : "WorkflowEventBus",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 34,
+    "startColumn" : 8,
+    "endLine" : 34,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus/memberField/workflowEventBusSummary" : {
+      "name" : "workflowEventBusSummary",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus/memberField/workflowEventBusSummary",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus$WorkflowEventBusSummary",
+      "displayedType" : "WorkflowEventBusSummary",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 36,
+        "startColumn" : 43,
+        "endLine" : 36,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus/method/publish(org.apache.dolphinscheduler.server.master.engine.AbstractLifecycleEvent event)" : {
+      "name" : "publish",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus/method/publish(org.apache.dolphinscheduler.server.master.engine.AbstractLifecycleEvent event)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 38,
+        "startColumn" : 17,
+        "endLine" : 38,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "event",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus/method/publish(org.apache.dolphinscheduler.server.master.engine.AbstractLifecycleEvent event)/parameter/event",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.AbstractLifecycleEvent",
+        "displayedType" : "AbstractLifecycleEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 38,
+          "startColumn" : 54,
+          "endLine" : 38,
+          "endColumn" : 59
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus/method/publish(org.apache.dolphinscheduler.server.master.engine.AbstractLifecycleEvent event)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/WorkflowEventBus.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.eventbus.AbstractDelayEventBus<org.apache.dolphinscheduler.server.master.engine.AbstractLifecycleEvent>", "org.apache.dolphinscheduler.server.master.engine.AbstractLifecycleEvent" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary" : {
+      "name" : "WorkflowEventBusSummary",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 46,
+        "startColumn" : 25,
+        "endLine" : 46,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary/memberField/fireSuccessEventCount" : {
+          "name" : "fireSuccessEventCount",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary/memberField/fireSuccessEventCount",
+          "type" : "java.util.concurrent.atomic.AtomicInteger",
+          "displayedType" : "AtomicInteger",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 49,
+            "startColumn" : 31,
+            "endLine" : 49,
+            "endColumn" : 52
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary"
+        },
+        "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary/memberField/fireFailedEventCount" : {
+          "name" : "fireFailedEventCount",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary/memberField/fireFailedEventCount",
+          "type" : "java.util.concurrent.atomic.AtomicInteger",
+          "displayedType" : "AtomicInteger",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 50,
+            "startColumn" : 31,
+            "endLine" : 50,
+            "endColumn" : 51
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary"
+        },
+        "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary/memberField/eventCount" : {
+          "name" : "eventCount",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary/memberField/eventCount",
+          "type" : "java.util.concurrent.atomic.AtomicInteger",
+          "displayedType" : "AtomicInteger",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 48,
+            "startColumn" : 31,
+            "endLine" : 48,
+            "endColumn" : 41
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary/method/increaseFireSuccessEventCount()" : {
+          "name" : "increaseFireSuccessEventCount",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary/method/increaseFireSuccessEventCount()",
+          "type" : "java.lang.Integer",
+          "displayedType" : "Integer",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 56,
+            "startColumn" : 24,
+            "endLine" : 56,
+            "endColumn" : 53
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary"
+        },
+        "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary/method/toString()" : {
+          "name" : "toString",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary/method/toString()",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 69,
+            "startColumn" : 23,
+            "endLine" : 69,
+            "endColumn" : 31
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary"
+        },
+        "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary/method/increaseEventCount()" : {
+          "name" : "increaseEventCount",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary/method/increaseEventCount()",
+          "type" : "java.lang.Integer",
+          "displayedType" : "Integer",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 52,
+            "startColumn" : 24,
+            "endLine" : 52,
+            "endColumn" : 42
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary"
+        },
+        "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary/method/increaseFireFailedEventCount()" : {
+          "name" : "increaseFireFailedEventCount",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary/method/increaseFireFailedEventCount()",
+          "type" : "java.lang.Integer",
+          "displayedType" : "Integer",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 64,
+            "startColumn" : 24,
+            "endLine" : 64,
+            "endColumn" : 52
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary"
+        },
+        "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary/method/decreaseFireSuccessEventCount()" : {
+          "name" : "decreaseFireSuccessEventCount",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary/method/decreaseFireSuccessEventCount()",
+          "type" : "java.lang.Integer",
+          "displayedType" : "Integer",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 60,
+            "startColumn" : 24,
+            "endLine" : 60,
+            "endColumn" : 53
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus.WorkflowEventBusSummary"
+        }
+      },
+      "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/WorkflowEventBus.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBus",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : { }
+}

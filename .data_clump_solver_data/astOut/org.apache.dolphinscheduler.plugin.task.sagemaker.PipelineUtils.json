@@ -1,0 +1,362 @@
+{
+  "name" : "PipelineUtils",
+  "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 43,
+    "startColumn" : 8,
+    "endLine" : 43,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/memberField/EXECUTING" : {
+      "name" : "EXECUTING",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/memberField/EXECUTING",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 45,
+        "startColumn" : 33,
+        "endLine" : 45,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/memberField/SUCCEEDED" : {
+      "name" : "SUCCEEDED",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/memberField/SUCCEEDED",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 46,
+        "startColumn" : 33,
+        "endLine" : 46,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/stopPipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)" : {
+      "name" : "stopPipelineExecution",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/stopPipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 17,
+        "endLine" : 57,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "client",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/stopPipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)/parameter/client",
+        "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker",
+        "displayedType" : "AmazonSageMaker",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 57,
+          "startColumn" : 55,
+          "endLine" : 57,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/stopPipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)"
+      }, {
+        "name" : "pipelineId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/stopPipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)/parameter/pipelineId",
+        "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId",
+        "displayedType" : "PipelineId",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 57,
+          "startColumn" : 74,
+          "endLine" : 57,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/stopPipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/describePipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)" : {
+      "name" : "describePipelineExecution",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/describePipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 20,
+        "endLine" : 83,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "client",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/describePipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)/parameter/client",
+        "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker",
+        "displayedType" : "AmazonSageMaker",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 83,
+          "startColumn" : 62,
+          "endLine" : 83,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/describePipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)"
+      }, {
+        "name" : "pipelineId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/describePipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)/parameter/pipelineId",
+        "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId",
+        "displayedType" : "PipelineId",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 83,
+          "startColumn" : 81,
+          "endLine" : 83,
+          "endColumn" : 91
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/describePipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/checkPipelineExecutionStatus(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)" : {
+      "name" : "checkPipelineExecutionStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/checkPipelineExecutionStatus(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 16,
+        "endLine" : 66,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "client",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/checkPipelineExecutionStatus(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)/parameter/client",
+        "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker",
+        "displayedType" : "AmazonSageMaker",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 66,
+          "startColumn" : 61,
+          "endLine" : 66,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/checkPipelineExecutionStatus(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)"
+      }, {
+        "name" : "pipelineId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/checkPipelineExecutionStatus(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)/parameter/pipelineId",
+        "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId",
+        "displayedType" : "PipelineId",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 66,
+          "startColumn" : 80,
+          "endLine" : 66,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/checkPipelineExecutionStatus(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/startPipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.model.StartPipelineExecutionRequest request)" : {
+      "name" : "startPipelineExecution",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/startPipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.model.StartPipelineExecutionRequest request)",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId",
+      "displayedType" : "PipelineId",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 48,
+        "startColumn" : 23,
+        "endLine" : 48,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "client",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/startPipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.model.StartPipelineExecutionRequest request)/parameter/client",
+        "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker",
+        "displayedType" : "AmazonSageMaker",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 48,
+          "startColumn" : 62,
+          "endLine" : 48,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/startPipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.model.StartPipelineExecutionRequest request)"
+      }, {
+        "name" : "request",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/startPipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.model.StartPipelineExecutionRequest request)/parameter/request",
+        "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.model.StartPipelineExecutionRequest",
+        "displayedType" : "StartPipelineExecutionRequest",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 48,
+          "startColumn" : 100,
+          "endLine" : 48,
+          "endColumn" : 107
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/startPipelineExecution(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.model.StartPipelineExecutionRequest request)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/listPipelineExecutionSteps(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)" : {
+      "name" : "listPipelineExecutionSteps",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/listPipelineExecutionSteps(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 18,
+        "endLine" : 91,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "client",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/listPipelineExecutionSteps(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)/parameter/client",
+        "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker",
+        "displayedType" : "AmazonSageMaker",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 91,
+          "startColumn" : 61,
+          "endLine" : 91,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/listPipelineExecutionSteps(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)"
+      }, {
+        "name" : "pipelineId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/listPipelineExecutionSteps(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)/parameter/pipelineId",
+        "type" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId",
+        "displayedType" : "PipelineId",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 91,
+          "startColumn" : 80,
+          "endLine" : 91,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils/method/listPipelineExecutionSteps(org.apache.dolphinscheduler.plugin.task.sagemaker.com.amazonaws.services.sagemaker.AmazonSageMaker client, org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils$PipelineId pipelineId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-sagemaker/src/main/java/org/apache/dolphinscheduler/plugin/task/sagemaker/PipelineUtils.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils.PipelineId" : {
+      "name" : "PipelineId",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils.PipelineId",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 108,
+        "startColumn" : 19,
+        "endLine" : 108,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils.PipelineId/memberField/clientRequestToken" : {
+          "name" : "clientRequestToken",
+          "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils.PipelineId/memberField/clientRequestToken",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 111,
+            "startColumn" : 24,
+            "endLine" : 111,
+            "endColumn" : 42
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils.PipelineId"
+        },
+        "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils.PipelineId/memberField/pipelineExecutionArn" : {
+          "name" : "pipelineExecutionArn",
+          "key" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils.PipelineId/memberField/pipelineExecutionArn",
+          "type" : "java.lang.String",
+          "displayedType" : "String",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 110,
+            "startColumn" : 24,
+            "endLine" : 110,
+            "endColumn" : 44
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils.PipelineId"
+        }
+      },
+      "methods" : { },
+      "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-sagemaker/src/main/java/org/apache/dolphinscheduler/plugin/task/sagemaker/PipelineUtils.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.plugin.task.sagemaker.PipelineUtils",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : { }
+}

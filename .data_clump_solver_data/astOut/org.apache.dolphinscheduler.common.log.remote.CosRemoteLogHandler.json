@@ -1,0 +1,213 @@
+{
+  "name" : "CosRemoteLogHandler",
+  "key" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 41,
+    "startColumn" : 8,
+    "endLine" : 41,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/memberField/bucketName" : {
+      "name" : "bucketName",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/memberField/bucketName",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 45,
+        "startColumn" : 26,
+        "endLine" : 45,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/memberField/cosClient" : {
+      "name" : "cosClient",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/memberField/cosClient",
+      "type" : "org.apache.dolphinscheduler.common.log.remote.com.qcloud.cos.COSClient",
+      "displayedType" : "COSClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 29,
+        "endLine" : 43,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/memberField/instance" : {
+      "name" : "instance",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/memberField/instance",
+      "type" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler",
+      "displayedType" : "CosRemoteLogHandler",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 40,
+        "endLine" : 47,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/method/sendRemoteLog(java.lang.String logPath)" : {
+      "name" : "sendRemoteLog",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/method/sendRemoteLog(java.lang.String logPath)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 17,
+        "endLine" : 69,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "logPath",
+        "key" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/method/sendRemoteLog(java.lang.String logPath)/parameter/logPath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 69,
+          "startColumn" : 38,
+          "endLine" : 69,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/method/sendRemoteLog(java.lang.String logPath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/method/getInstance()" : {
+      "name" : "getInstance",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/method/getInstance()",
+      "type" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler",
+      "displayedType" : "CosRemoteLogHandler",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 61,
+        "startColumn" : 52,
+        "endLine" : 61,
+        "endColumn" : 63
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/method/checkBucketNameExists(java.lang.String bucketName)" : {
+      "name" : "checkBucketNameExists",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/method/checkBucketNameExists(java.lang.String bucketName)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 100,
+        "startColumn" : 18,
+        "endLine" : 100,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "bucketName",
+        "key" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/method/checkBucketNameExists(java.lang.String bucketName)/parameter/bucketName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 100,
+          "startColumn" : 47,
+          "endLine" : 100,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/method/checkBucketNameExists(java.lang.String bucketName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/method/getRemoteLog(java.lang.String logPath)" : {
+      "name" : "getRemoteLog",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/method/getRemoteLog(java.lang.String logPath)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 82,
+        "startColumn" : 17,
+        "endLine" : 82,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "logPath",
+        "key" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/method/getRemoteLog(java.lang.String logPath)/parameter/logPath",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 82,
+          "startColumn" : 37,
+          "endLine" : 82,
+          "endColumn" : 44
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/method/getRemoteLog(java.lang.String logPath)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler"
+    },
+    "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 94,
+        "startColumn" : 17,
+        "endLine" : 94,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.remote.CosRemoteLogHandler"
+    }
+  },
+  "file_path" : "dolphinscheduler-common/src/main/java/org/apache/dolphinscheduler/common/log/remote/CosRemoteLogHandler.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.common.log.remote.RemoteLogHandler", "java.io.Closeable" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

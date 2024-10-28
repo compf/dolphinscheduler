@@ -1,0 +1,375 @@
+{
+  "name" : "LinkisTask",
+  "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 47,
+    "startColumn" : 8,
+    "endLine" : 47,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/memberField/shellCommandExecutor" : {
+      "name" : "shellCommandExecutor",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/memberField/shellCommandExecutor",
+      "type" : "org.apache.dolphinscheduler.plugin.task.linkis.org.apache.dolphinscheduler.plugin.task.api.ShellCommandExecutor",
+      "displayedType" : "ShellCommandExecutor",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 34,
+        "endLine" : 57,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/memberField/LINKIS_TASK_ID_REGEX" : {
+      "name" : "LINKIS_TASK_ID_REGEX",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/memberField/LINKIS_TASK_ID_REGEX",
+      "type" : "java.util.regex.Pattern",
+      "displayedType" : "Pattern",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 36,
+        "endLine" : 66,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PROTECTED", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/memberField/taskId" : {
+      "name" : "taskId",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/memberField/taskId",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 20,
+        "endLine" : 64,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/memberField/linkisParameters" : {
+      "name" : "linkisParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/memberField/linkisParameters",
+      "type" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisParameters",
+      "displayedType" : "LinkisParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 30,
+        "endLine" : 52,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/memberField/taskExecutionContext" : {
+      "name" : "taskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/memberField/taskExecutionContext",
+      "type" : "org.apache.dolphinscheduler.plugin.task.linkis.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+      "displayedType" : "TaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 42,
+        "endLine" : 62,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PROTECTED", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/memberField/LINKIS_STATUS_REGEX" : {
+      "name" : "LINKIS_STATUS_REGEX",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/memberField/LINKIS_STATUS_REGEX",
+      "type" : "java.util.regex.Pattern",
+      "displayedType" : "Pattern",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 36,
+        "endLine" : 68,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PROTECTED", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/findStatus(java.lang.String line)" : {
+      "name" : "findStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/findStatus(java.lang.String line)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 234,
+        "startColumn" : 22,
+        "endLine" : 234,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "line",
+        "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/findStatus(java.lang.String line)/parameter/line",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 234,
+          "startColumn" : 40,
+          "endLine" : 234,
+          "endColumn" : 44
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/findStatus(java.lang.String line)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/buildOptions()" : {
+      "name" : "buildOptions",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/buildOptions()",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 190,
+        "startColumn" : 28,
+        "endLine" : 190,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/submitApplication()" : {
+      "name" : "submitApplication",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/submitApplication()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 17,
+        "endLine" : 98,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/findTaskId(java.lang.String line)" : {
+      "name" : "findTaskId",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/findTaskId(java.lang.String line)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 225,
+        "startColumn" : 22,
+        "endLine" : 225,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "line",
+        "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/findTaskId(java.lang.String line)/parameter/line",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 225,
+          "startColumn" : 40,
+          "endLine" : 225,
+          "endColumn" : 44
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/findTaskId(java.lang.String line)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/getApplicationIds()" : {
+      "name" : "getApplicationIds",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/getApplicationIds()",
+      "type" : "java.util.List<java.lang.String>",
+      "displayedType" : "List<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 25,
+        "endLine" : 83,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/buildParamConfigContent()" : {
+      "name" : "buildParamConfigContent",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/buildParamConfigContent()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 202,
+        "startColumn" : 20,
+        "endLine" : 202,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/init()" : {
+      "name" : "init",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/init()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 17,
+        "endLine" : 88,
+        "endColumn" : 21
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/initTaskId()" : {
+      "name" : "initTaskId",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/initTaskId()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 214,
+        "startColumn" : 18,
+        "endLine" : 214,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/buildCommand()" : {
+      "name" : "buildCommand",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/buildCommand()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 179,
+        "startColumn" : 20,
+        "endLine" : 179,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/getParameters()" : {
+      "name" : "getParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/getParameters()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.linkis.org.apache.dolphinscheduler.plugin.task.api.parameters.AbstractParameters",
+      "displayedType" : "AbstractParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 244,
+        "startColumn" : 31,
+        "endLine" : 244,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/trackApplicationStatus()" : {
+      "name" : "trackApplicationStatus",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/trackApplicationStatus()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 122,
+        "startColumn" : 17,
+        "endLine" : 122,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/cancelApplication()" : {
+      "name" : "cancelApplication",
+      "key" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask/method/cancelApplication()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 156,
+        "startColumn" : 17,
+        "endLine" : 156,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.linkis.LinkisTask"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-linkis/src/main/java/org/apache/dolphinscheduler/plugin/task/linkis/LinkisTask.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.plugin.task.linkis.org.apache.dolphinscheduler.plugin.task.api.AbstractRemoteTask" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

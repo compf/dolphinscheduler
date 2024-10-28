@@ -1,0 +1,208 @@
+{
+  "name" : "FailoverTaskInstanceFactory",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 33,
+    "startColumn" : 8,
+    "endLine" : 33,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory/memberField/taskInstanceDao" : {
+      "name" : "taskInstanceDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory/memberField/taskInstanceDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.repository.TaskInstanceDao",
+      "displayedType" : "TaskInstanceDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 36,
+        "startColumn" : 29,
+        "endLine" : 36,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory/method/createTaskInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory$FailoverTaskInstanceBuilder builder)" : {
+      "name" : "createTaskInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory/method/createTaskInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory$FailoverTaskInstanceBuilder builder)",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+      "displayedType" : "TaskInstance",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 45,
+        "startColumn" : 25,
+        "endLine" : 45,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "builder",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory/method/createTaskInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory$FailoverTaskInstanceBuilder builder)/parameter/builder",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory$FailoverTaskInstanceBuilder",
+        "displayedType" : "FailoverTaskInstanceBuilder",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 45,
+          "startColumn" : 72,
+          "endLine" : 45,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory/method/createTaskInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory$FailoverTaskInstanceBuilder builder)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory/method/builder()" : {
+      "name" : "builder",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory/method/builder()",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory$FailoverTaskInstanceBuilder",
+      "displayedType" : "FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 39,
+        "startColumn" : 68,
+        "endLine" : 39,
+        "endColumn" : 75
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/task/runnable/FailoverTaskInstanceFactory.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.master.engine.task.runnable.AbstractTaskInstanceFactory<org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory$FailoverTaskInstanceBuilder>", "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory$FailoverTaskInstanceBuilder" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : {
+    "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder" : {
+      "name" : "FailoverTaskInstanceBuilder",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder",
+      "type" : "class",
+      "displayedType" : null,
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 63,
+        "startColumn" : 19,
+        "endLine" : 63,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "fields" : {
+        "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder/memberField/needFailoverTaskInstance" : {
+          "name" : "needFailoverTaskInstance",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder/memberField/needFailoverTaskInstance",
+          "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+          "displayedType" : "TaskInstance",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 67,
+            "startColumn" : 30,
+            "endLine" : 67,
+            "endColumn" : 54
+          },
+          "modifiers" : [ "PRIVATE" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder"
+        },
+        "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder/memberField/failoverTaskInstanceFactory" : {
+          "name" : "failoverTaskInstanceFactory",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder/memberField/failoverTaskInstanceFactory",
+          "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory",
+          "displayedType" : "FailoverTaskInstanceFactory",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 65,
+            "startColumn" : 51,
+            "endLine" : 65,
+            "endColumn" : 78
+          },
+          "modifiers" : [ "PRIVATE", "FINAL" ],
+          "ignore" : false,
+          "memberFieldKey" : null,
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder"
+        }
+      },
+      "methods" : {
+        "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder/method/build()" : {
+          "name" : "build",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder/method/build()",
+          "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+          "displayedType" : "TaskInstance",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 79,
+            "startColumn" : 29,
+            "endLine" : 79,
+            "endColumn" : 34
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : true,
+          "returnType" : null,
+          "parameters" : [ ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder"
+        },
+        "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder/method/withTaskInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance needFailoverTaskInstance)" : {
+          "name" : "withTaskInstance",
+          "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder/method/withTaskInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance needFailoverTaskInstance)",
+          "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory$FailoverTaskInstanceBuilder",
+          "displayedType" : "FailoverTaskInstanceBuilder",
+          "hasTypeVariable" : false,
+          "position" : {
+            "startLine" : 73,
+            "startColumn" : 44,
+            "endLine" : 73,
+            "endColumn" : 60
+          },
+          "modifiers" : [ "PUBLIC" ],
+          "overrideAnnotation" : false,
+          "returnType" : null,
+          "parameters" : [ {
+            "name" : "needFailoverTaskInstance",
+            "key" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder/method/withTaskInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance needFailoverTaskInstance)/parameter/needFailoverTaskInstance",
+            "type" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+            "displayedType" : "TaskInstance",
+            "hasTypeVariable" : false,
+            "position" : {
+              "startLine" : 73,
+              "startColumn" : 74,
+              "endLine" : 73,
+              "endColumn" : 98
+            },
+            "modifiers" : [ ],
+            "ignore" : false,
+            "methodKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder/method/withTaskInstance(org.apache.dolphinscheduler.server.master.engine.task.runnable.org.apache.dolphinscheduler.dao.entity.TaskInstance needFailoverTaskInstance)"
+          } ],
+          "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory.FailoverTaskInstanceBuilder"
+        }
+      },
+      "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/task/runnable/FailoverTaskInstanceFactory.java",
+      "imports" : [ ],
+      "anonymous" : false,
+      "auxclass" : false,
+      "implements_" : [ "org.apache.dolphinscheduler.server.master.engine.task.runnable.ITaskInstanceFactory.ITaskInstanceBuilder" ],
+      "extends_" : [ ],
+      "definedInClassOrInterfaceTypeKey" : "org.apache.dolphinscheduler.server.master.engine.task.runnable.FailoverTaskInstanceFactory",
+      "innerDefinedClasses" : { },
+      "innerDefinedInterfaces" : { }
+    }
+  },
+  "innerDefinedInterfaces" : { }
+}

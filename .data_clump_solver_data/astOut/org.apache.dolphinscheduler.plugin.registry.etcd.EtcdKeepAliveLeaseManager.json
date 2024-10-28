@@ -1,0 +1,142 @@
+{
+  "name" : "EtcdKeepAliveLeaseManager",
+  "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 33,
+    "startColumn" : 8,
+    "endLine" : 33,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager/memberField/client" : {
+      "name" : "client",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager/memberField/client",
+      "type" : "org.apache.dolphinscheduler.plugin.registry.etcd.io.etcd.jetcd.Client",
+      "displayedType" : "Client",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 37,
+        "startColumn" : 26,
+        "endLine" : 37,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager/memberField/keyLeaseCache" : {
+      "name" : "keyLeaseCache",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager/memberField/keyLeaseCache",
+      "type" : "java.util.Map<java.lang.String, java.lang.Long>",
+      "displayedType" : "Map<String, Long>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 35,
+        "startColumn" : 37,
+        "endLine" : 35,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager/method/getKeepAliveLease(java.lang.String key)" : {
+      "name" : "getKeepAliveLease",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager/method/getKeepAliveLease(java.lang.String key)",
+      "type" : "java.util.Optional<java.lang.Long>",
+      "displayedType" : "Optional<Long>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 20,
+        "endLine" : 76,
+        "endColumn" : 37
+      },
+      "modifiers" : [ ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager/method/getKeepAliveLease(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 76,
+          "startColumn" : 45,
+          "endLine" : 76,
+          "endColumn" : 48
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager/method/getKeepAliveLease(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager/method/getOrCreateKeepAliveLease(java.lang.String key, long timeToLive)" : {
+      "name" : "getOrCreateKeepAliveLease",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager/method/getOrCreateKeepAliveLease(java.lang.String key, long timeToLive)",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 10,
+        "endLine" : 43,
+        "endColumn" : 35
+      },
+      "modifiers" : [ ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager/method/getOrCreateKeepAliveLease(java.lang.String key, long timeToLive)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 43,
+          "startColumn" : 43,
+          "endLine" : 43,
+          "endColumn" : 46
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager/method/getOrCreateKeepAliveLease(java.lang.String key, long timeToLive)"
+      }, {
+        "name" : "timeToLive",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager/method/getOrCreateKeepAliveLease(java.lang.String key, long timeToLive)/parameter/timeToLive",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 43,
+          "startColumn" : 53,
+          "endLine" : 43,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager/method/getOrCreateKeepAliveLease(java.lang.String key, long timeToLive)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.etcd.EtcdKeepAliveLeaseManager"
+    }
+  },
+  "file_path" : "dolphinscheduler-registry/dolphinscheduler-registry-plugins/dolphinscheduler-registry-etcd/src/main/java/org/apache/dolphinscheduler/plugin/registry/etcd/EtcdKeepAliveLeaseManager.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

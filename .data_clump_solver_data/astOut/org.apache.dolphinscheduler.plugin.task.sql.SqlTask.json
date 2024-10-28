@@ -1,0 +1,853 @@
+{
+  "name" : "SqlTask",
+  "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 64,
+    "startColumn" : 8,
+    "endLine" : 64,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/memberField/dbType" : {
+      "name" : "dbType",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/memberField/dbType",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.spi.enums.DbType",
+      "displayedType" : "DbType",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 26,
+        "endLine" : 88,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/memberField/baseConnectionParam" : {
+      "name" : "baseConnectionParam",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/memberField/baseConnectionParam",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.spi.datasource.BaseConnectionParam",
+      "displayedType" : "BaseConnectionParam",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 70,
+        "startColumn" : 33,
+        "endLine" : 70,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/memberField/CREATE_OR_REPLACE_FUNCTION_FORMAT" : {
+      "name" : "CREATE_OR_REPLACE_FUNCTION_FORMAT",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/memberField/CREATE_OR_REPLACE_FUNCTION_FORMAT",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 33,
+        "endLine" : 76,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/memberField/taskExecutionContext" : {
+      "name" : "taskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/memberField/taskExecutionContext",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.TaskExecutionContext",
+      "displayedType" : "TaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 40,
+        "endLine" : 66,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/memberField/QUERY_LIMIT" : {
+      "name" : "QUERY_LIMIT",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/memberField/QUERY_LIMIT",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 82,
+        "startColumn" : 30,
+        "endLine" : 82,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/memberField/sqlParameters" : {
+      "name" : "sqlParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/memberField/sqlParameters",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.parameters.SqlParameters",
+      "displayedType" : "SqlParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 68,
+        "startColumn" : 33,
+        "endLine" : 68,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/memberField/sqlTaskExecutionContext" : {
+      "name" : "sqlTaskExecutionContext",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/memberField/sqlTaskExecutionContext",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.SQLTaskExecutionContext",
+      "displayedType" : "SQLTaskExecutionContext",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 84,
+        "startColumn" : 37,
+        "endLine" : 84,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/memberField/TEST_FLAG_YES" : {
+      "name" : "TEST_FLAG_YES",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/memberField/TEST_FLAG_YES",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 86,
+        "startColumn" : 29,
+        "endLine" : 86,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeQuery(java.sql.Connection connection, org.apache.dolphinscheduler.plugin.task.sql.SqlBinds sqlBinds, java.lang.String handlerType)" : {
+      "name" : "executeQuery",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeQuery(java.sql.Connection connection, org.apache.dolphinscheduler.plugin.task.sql.SqlBinds sqlBinds, java.lang.String handlerType)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 299,
+        "startColumn" : 20,
+        "endLine" : 299,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "connection",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeQuery(java.sql.Connection connection, org.apache.dolphinscheduler.plugin.task.sql.SqlBinds sqlBinds, java.lang.String handlerType)/parameter/connection",
+        "type" : "java.sql.Connection",
+        "displayedType" : "Connection",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 299,
+          "startColumn" : 44,
+          "endLine" : 299,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeQuery(java.sql.Connection connection, org.apache.dolphinscheduler.plugin.task.sql.SqlBinds sqlBinds, java.lang.String handlerType)"
+      }, {
+        "name" : "sqlBinds",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeQuery(java.sql.Connection connection, org.apache.dolphinscheduler.plugin.task.sql.SqlBinds sqlBinds, java.lang.String handlerType)/parameter/sqlBinds",
+        "type" : "org.apache.dolphinscheduler.plugin.task.sql.SqlBinds",
+        "displayedType" : "SqlBinds",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 299,
+          "startColumn" : 65,
+          "endLine" : 299,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeQuery(java.sql.Connection connection, org.apache.dolphinscheduler.plugin.task.sql.SqlBinds sqlBinds, java.lang.String handlerType)"
+      }, {
+        "name" : "handlerType",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeQuery(java.sql.Connection connection, org.apache.dolphinscheduler.plugin.task.sql.SqlBinds sqlBinds, java.lang.String handlerType)/parameter/handlerType",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 299,
+          "startColumn" : 82,
+          "endLine" : 299,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeQuery(java.sql.Connection connection, org.apache.dolphinscheduler.plugin.task.sql.SqlBinds sqlBinds, java.lang.String handlerType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeFuncAndSql(java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> mainStatementsBinds, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> preStatementsBinds, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> postStatementsBinds)" : {
+      "name" : "executeFuncAndSql",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeFuncAndSql(java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> mainStatementsBinds, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> preStatementsBinds, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> postStatementsBinds)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 174,
+        "startColumn" : 17,
+        "endLine" : 174,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "mainStatementsBinds",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeFuncAndSql(java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> mainStatementsBinds, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> preStatementsBinds, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> postStatementsBinds)/parameter/mainStatementsBinds",
+        "type" : "java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds>",
+        "displayedType" : "List<SqlBinds>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 174,
+          "startColumn" : 50,
+          "endLine" : 174,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeFuncAndSql(java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> mainStatementsBinds, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> preStatementsBinds, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> postStatementsBinds)"
+      }, {
+        "name" : "preStatementsBinds",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeFuncAndSql(java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> mainStatementsBinds, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> preStatementsBinds, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> postStatementsBinds)/parameter/preStatementsBinds",
+        "type" : "java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds>",
+        "displayedType" : "List<SqlBinds>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 175,
+          "startColumn" : 50,
+          "endLine" : 175,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeFuncAndSql(java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> mainStatementsBinds, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> preStatementsBinds, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> postStatementsBinds)"
+      }, {
+        "name" : "postStatementsBinds",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeFuncAndSql(java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> mainStatementsBinds, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> preStatementsBinds, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> postStatementsBinds)/parameter/postStatementsBinds",
+        "type" : "java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds>",
+        "displayedType" : "List<SqlBinds>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 176,
+          "startColumn" : 50,
+          "endLine" : 176,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeFuncAndSql(java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> mainStatementsBinds, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> preStatementsBinds, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> postStatementsBinds)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/printReplacedSql(java.lang.String content, java.lang.String formatSql, java.lang.String rgex, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)" : {
+      "name" : "printReplacedSql",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/printReplacedSql(java.lang.String content, java.lang.String formatSql, java.lang.String rgex, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 377,
+        "startColumn" : 18,
+        "endLine" : 377,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/printReplacedSql(java.lang.String content, java.lang.String formatSql, java.lang.String rgex, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 377,
+          "startColumn" : 42,
+          "endLine" : 377,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/printReplacedSql(java.lang.String content, java.lang.String formatSql, java.lang.String rgex, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)"
+      }, {
+        "name" : "formatSql",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/printReplacedSql(java.lang.String content, java.lang.String formatSql, java.lang.String rgex, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)/parameter/formatSql",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 377,
+          "startColumn" : 58,
+          "endLine" : 377,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/printReplacedSql(java.lang.String content, java.lang.String formatSql, java.lang.String rgex, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)"
+      }, {
+        "name" : "rgex",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/printReplacedSql(java.lang.String content, java.lang.String formatSql, java.lang.String rgex, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)/parameter/rgex",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 377,
+          "startColumn" : 76,
+          "endLine" : 377,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/printReplacedSql(java.lang.String content, java.lang.String formatSql, java.lang.String rgex, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)"
+      }, {
+        "name" : "sqlParamsMap",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/printReplacedSql(java.lang.String content, java.lang.String formatSql, java.lang.String rgex, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)/parameter/sqlParamsMap",
+        "type" : "java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property>",
+        "displayedType" : "Map<Integer, Property>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 377,
+          "startColumn" : 105,
+          "endLine" : 377,
+          "endColumn" : 117
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/printReplacedSql(java.lang.String content, java.lang.String formatSql, java.lang.String rgex, java.util.Map<java.lang.Integer, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/handle(org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)" : {
+      "name" : "handle",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/handle(org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 113,
+        "startColumn" : 17,
+        "endLine" : 113,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskCallBack",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/handle(org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)/parameter/taskCallBack",
+        "type" : "org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack",
+        "displayedType" : "TaskCallBack",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 113,
+          "startColumn" : 37,
+          "endLine" : 113,
+          "endColumn" : 49
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/handle(org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.TaskCallBack taskCallBack)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/replaceOriginalValue(java.lang.String content, java.lang.String rgex, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)" : {
+      "name" : "replaceOriginalValue",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/replaceOriginalValue(java.lang.String content, java.lang.String rgex, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 434,
+        "startColumn" : 20,
+        "endLine" : 434,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/replaceOriginalValue(java.lang.String content, java.lang.String rgex, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 434,
+          "startColumn" : 48,
+          "endLine" : 434,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/replaceOriginalValue(java.lang.String content, java.lang.String rgex, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)"
+      }, {
+        "name" : "rgex",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/replaceOriginalValue(java.lang.String content, java.lang.String rgex, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)/parameter/rgex",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 434,
+          "startColumn" : 64,
+          "endLine" : 434,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/replaceOriginalValue(java.lang.String content, java.lang.String rgex, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)"
+      }, {
+        "name" : "sqlParamsMap",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/replaceOriginalValue(java.lang.String content, java.lang.String rgex, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)/parameter/sqlParamsMap",
+        "type" : "java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property>",
+        "displayedType" : "Map<String, Property>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 434,
+          "startColumn" : 92,
+          "endLine" : 434,
+          "endColumn" : 104
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/replaceOriginalValue(java.lang.String content, java.lang.String rgex, java.util.Map<java.lang.String, org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> sqlParamsMap)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/generateEmptyRow(java.sql.ResultSet resultSet)" : {
+      "name" : "generateEmptyRow",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/generateEmptyRow(java.sql.ResultSet resultSet)",
+      "type" : "com.fasterxml.jackson.databind.node.ArrayNode",
+      "displayedType" : "ArrayNode",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 267,
+        "startColumn" : 23,
+        "endLine" : 267,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "resultSet",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/generateEmptyRow(java.sql.ResultSet resultSet)/parameter/resultSet",
+        "type" : "java.sql.ResultSet",
+        "displayedType" : "ResultSet",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 267,
+          "startColumn" : 50,
+          "endLine" : 267,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/generateEmptyRow(java.sql.ResultSet resultSet)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/cancel()" : {
+      "name" : "cancel",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/cancel()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 163,
+        "startColumn" : 17,
+        "endLine" : 163,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/getSqlAndSqlParamsMap(java.lang.String sql)" : {
+      "name" : "getSqlAndSqlParamsMap",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/getSqlAndSqlParamsMap(java.lang.String sql)",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sql.SqlBinds",
+      "displayedType" : "SqlBinds",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 397,
+        "startColumn" : 22,
+        "endLine" : 397,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "sql",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/getSqlAndSqlParamsMap(java.lang.String sql)/parameter/sql",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 397,
+          "startColumn" : 51,
+          "endLine" : 397,
+          "endColumn" : 54
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/getSqlAndSqlParamsMap(java.lang.String sql)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/getParameters()" : {
+      "name" : "getParameters",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/getParameters()",
+      "type" : "org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.parameters.AbstractParameters",
+      "displayedType" : "AbstractParameters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 108,
+        "startColumn" : 31,
+        "endLine" : 108,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/setNonQuerySqlReturn(java.lang.String updateResult, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> properties)" : {
+      "name" : "setNonQuerySqlReturn",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/setNonQuerySqlReturn(java.lang.String updateResult, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> properties)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 207,
+        "startColumn" : 20,
+        "endLine" : 207,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "updateResult",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/setNonQuerySqlReturn(java.lang.String updateResult, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> properties)/parameter/updateResult",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 207,
+          "startColumn" : 48,
+          "endLine" : 207,
+          "endColumn" : 60
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/setNonQuerySqlReturn(java.lang.String updateResult, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> properties)"
+      }, {
+        "name" : "properties",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/setNonQuerySqlReturn(java.lang.String updateResult, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> properties)/parameter/properties",
+        "type" : "java.util.List<org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property>",
+        "displayedType" : "List<Property>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 207,
+          "startColumn" : 77,
+          "endLine" : 207,
+          "endColumn" : 87
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/setNonQuerySqlReturn(java.lang.String updateResult, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.model.Property> properties)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeUpdate(java.sql.Connection connection, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> statementsBinds, java.lang.String handlerType)" : {
+      "name" : "executeUpdate",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeUpdate(java.sql.Connection connection, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> statementsBinds, java.lang.String handlerType)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 307,
+        "startColumn" : 20,
+        "endLine" : 307,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "connection",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeUpdate(java.sql.Connection connection, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> statementsBinds, java.lang.String handlerType)/parameter/connection",
+        "type" : "java.sql.Connection",
+        "displayedType" : "Connection",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 307,
+          "startColumn" : 45,
+          "endLine" : 307,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeUpdate(java.sql.Connection connection, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> statementsBinds, java.lang.String handlerType)"
+      }, {
+        "name" : "statementsBinds",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeUpdate(java.sql.Connection connection, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> statementsBinds, java.lang.String handlerType)/parameter/statementsBinds",
+        "type" : "java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds>",
+        "displayedType" : "List<SqlBinds>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 307,
+          "startColumn" : 72,
+          "endLine" : 307,
+          "endColumn" : 87
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeUpdate(java.sql.Connection connection, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> statementsBinds, java.lang.String handlerType)"
+      }, {
+        "name" : "handlerType",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeUpdate(java.sql.Connection connection, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> statementsBinds, java.lang.String handlerType)/parameter/handlerType",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 308,
+          "startColumn" : 41,
+          "endLine" : 308,
+          "endColumn" : 52
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/executeUpdate(java.sql.Connection connection, java.util.List<org.apache.dolphinscheduler.plugin.task.sql.SqlBinds> statementsBinds, java.lang.String handlerType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/close(java.sql.Connection connection)" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/close(java.sql.Connection connection)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 325,
+        "startColumn" : 18,
+        "endLine" : 325,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "connection",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/close(java.sql.Connection connection)/parameter/connection",
+        "type" : "java.sql.Connection",
+        "displayedType" : "Connection",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 325,
+          "startColumn" : 35,
+          "endLine" : 325,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/close(java.sql.Connection connection)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/resultProcess(java.sql.ResultSet resultSet)" : {
+      "name" : "resultProcess",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/resultProcess(java.sql.ResultSet resultSet)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 228,
+        "startColumn" : 20,
+        "endLine" : 228,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "resultSet",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/resultProcess(java.sql.ResultSet resultSet)/parameter/resultSet",
+        "type" : "java.sql.ResultSet",
+        "displayedType" : "ResultSet",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 228,
+          "startColumn" : 44,
+          "endLine" : 228,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/resultProcess(java.sql.ResultSet resultSet)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/sendAttachment(int groupId, java.lang.String title, java.lang.String content)" : {
+      "name" : "sendAttachment",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/sendAttachment(int groupId, java.lang.String title, java.lang.String content)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 290,
+        "startColumn" : 18,
+        "endLine" : 290,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "groupId",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/sendAttachment(int groupId, java.lang.String title, java.lang.String content)/parameter/groupId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 290,
+          "startColumn" : 37,
+          "endLine" : 290,
+          "endColumn" : 44
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/sendAttachment(int groupId, java.lang.String title, java.lang.String content)"
+      }, {
+        "name" : "title",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/sendAttachment(int groupId, java.lang.String title, java.lang.String content)/parameter/title",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 290,
+          "startColumn" : 53,
+          "endLine" : 290,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/sendAttachment(int groupId, java.lang.String title, java.lang.String content)"
+      }, {
+        "name" : "content",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/sendAttachment(int groupId, java.lang.String title, java.lang.String content)/parameter/content",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 290,
+          "startColumn" : 67,
+          "endLine" : 290,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/sendAttachment(int groupId, java.lang.String title, java.lang.String content)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    },
+    "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/prepareStatementAndBind(java.sql.Connection connection, org.apache.dolphinscheduler.plugin.task.sql.SqlBinds sqlBinds)" : {
+      "name" : "prepareStatementAndBind",
+      "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/prepareStatementAndBind(java.sql.Connection connection, org.apache.dolphinscheduler.plugin.task.sql.SqlBinds sqlBinds)",
+      "type" : "java.sql.PreparedStatement",
+      "displayedType" : "PreparedStatement",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 343,
+        "startColumn" : 31,
+        "endLine" : 343,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "connection",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/prepareStatementAndBind(java.sql.Connection connection, org.apache.dolphinscheduler.plugin.task.sql.SqlBinds sqlBinds)/parameter/connection",
+        "type" : "java.sql.Connection",
+        "displayedType" : "Connection",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 343,
+          "startColumn" : 66,
+          "endLine" : 343,
+          "endColumn" : 76
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/prepareStatementAndBind(java.sql.Connection connection, org.apache.dolphinscheduler.plugin.task.sql.SqlBinds sqlBinds)"
+      }, {
+        "name" : "sqlBinds",
+        "key" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/prepareStatementAndBind(java.sql.Connection connection, org.apache.dolphinscheduler.plugin.task.sql.SqlBinds sqlBinds)/parameter/sqlBinds",
+        "type" : "org.apache.dolphinscheduler.plugin.task.sql.SqlBinds",
+        "displayedType" : "SqlBinds",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 343,
+          "startColumn" : 87,
+          "endLine" : 343,
+          "endColumn" : 95
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask/method/prepareStatementAndBind(java.sql.Connection connection, org.apache.dolphinscheduler.plugin.task.sql.SqlBinds sqlBinds)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.task.sql.SqlTask"
+    }
+  },
+  "file_path" : "dolphinscheduler-task-plugin/dolphinscheduler-task-sql/src/main/java/org/apache/dolphinscheduler/plugin/task/sql/SqlTask.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.plugin.task.sql.org.apache.dolphinscheduler.plugin.task.api.AbstractTask" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

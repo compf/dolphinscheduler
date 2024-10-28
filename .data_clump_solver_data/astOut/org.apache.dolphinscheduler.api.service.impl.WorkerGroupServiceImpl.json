@@ -1,0 +1,706 @@
+{
+  "name" : "WorkerGroupServiceImpl",
+  "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 73,
+    "startColumn" : 8,
+    "endLine" : 73,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/memberField/workflowInstanceMapper" : {
+      "name" : "workflowInstanceMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/memberField/workflowInstanceMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkflowInstanceMapper",
+      "displayedType" : "WorkflowInstanceMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 36,
+        "endLine" : 79,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/memberField/processService" : {
+      "name" : "processService",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/memberField/processService",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.service.process.ProcessService",
+      "displayedType" : "ProcessService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 28,
+        "endLine" : 88,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/memberField/taskDefinitionMapper" : {
+      "name" : "taskDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/memberField/taskDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.TaskDefinitionMapper",
+      "displayedType" : "TaskDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 94,
+        "startColumn" : 34,
+        "endLine" : 94,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/memberField/workflowDefinitionMapper" : {
+      "name" : "workflowDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/memberField/workflowDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionMapper",
+      "displayedType" : "WorkflowDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 97,
+        "startColumn" : 38,
+        "endLine" : 97,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/memberField/workerGroupMapper" : {
+      "name" : "workerGroupMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/memberField/workerGroupMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkerGroupMapper",
+      "displayedType" : "WorkerGroupMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 31,
+        "endLine" : 76,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/memberField/environmentWorkerGroupRelationMapper" : {
+      "name" : "environmentWorkerGroupRelationMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/memberField/environmentWorkerGroupRelationMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.EnvironmentWorkerGroupRelationMapper",
+      "displayedType" : "EnvironmentWorkerGroupRelationMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 85,
+        "startColumn" : 50,
+        "endLine" : 85,
+        "endColumn" : 86
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/memberField/scheduleMapper" : {
+      "name" : "scheduleMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/memberField/scheduleMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.ScheduleMapper",
+      "displayedType" : "ScheduleMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 28,
+        "endLine" : 91,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/memberField/registryClient" : {
+      "name" : "registryClient",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/memberField/registryClient",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.registry.api.RegistryClient",
+      "displayedType" : "RegistryClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 82,
+        "startColumn" : 28,
+        "endLine" : 82,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryAllGroupPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)" : {
+      "name" : "queryAllGroupPaging",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryAllGroupPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)",
+      "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.utils.Result",
+      "displayedType" : "Result",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 271,
+        "startColumn" : 19,
+        "endLine" : 271,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryAllGroupPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 271,
+          "startColumn" : 44,
+          "endLine" : 271,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryAllGroupPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)"
+      }, {
+        "name" : "pageNo",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryAllGroupPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)/parameter/pageNo",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 271,
+          "startColumn" : 63,
+          "endLine" : 271,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryAllGroupPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)"
+      }, {
+        "name" : "pageSize",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryAllGroupPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)/parameter/pageSize",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 271,
+          "startColumn" : 79,
+          "endLine" : 271,
+          "endColumn" : 87
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryAllGroupPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)"
+      }, {
+        "name" : "searchVal",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryAllGroupPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)/parameter/searchVal",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 271,
+          "startColumn" : 96,
+          "endLine" : 271,
+          "endColumn" : 105
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryAllGroupPaging(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer pageNo, java.lang.Integer pageSize, java.lang.String searchVal)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/getWorkerAddressList()" : {
+      "name" : "getWorkerAddressList",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/getWorkerAddressList()",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 424,
+        "startColumn" : 32,
+        "endLine" : 424,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/deleteWorkerGroupById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id)" : {
+      "name" : "deleteWorkerGroupById",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/deleteWorkerGroupById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 382,
+        "startColumn" : 32,
+        "endLine" : 382,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/deleteWorkerGroupById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 382,
+          "startColumn" : 59,
+          "endLine" : 382,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/deleteWorkerGroupById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/deleteWorkerGroupById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id)/parameter/id",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 382,
+          "startColumn" : 78,
+          "endLine" : 382,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/deleteWorkerGroupById(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.Integer id)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/saveWorkerGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String addrList, java.lang.String description, java.lang.String otherParamsJson)" : {
+      "name" : "saveWorkerGroup",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/saveWorkerGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String addrList, java.lang.String description, java.lang.String otherParamsJson)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 110,
+        "startColumn" : 32,
+        "endLine" : 110,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/saveWorkerGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String addrList, java.lang.String description, java.lang.String otherParamsJson)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 53,
+          "endLine" : 110,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/saveWorkerGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String addrList, java.lang.String description, java.lang.String otherParamsJson)"
+      }, {
+        "name" : "id",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/saveWorkerGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String addrList, java.lang.String description, java.lang.String otherParamsJson)/parameter/id",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 68,
+          "endLine" : 110,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/saveWorkerGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String addrList, java.lang.String description, java.lang.String otherParamsJson)"
+      }, {
+        "name" : "name",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/saveWorkerGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String addrList, java.lang.String description, java.lang.String otherParamsJson)/parameter/name",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 79,
+          "endLine" : 110,
+          "endColumn" : 83
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/saveWorkerGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String addrList, java.lang.String description, java.lang.String otherParamsJson)"
+      }, {
+        "name" : "addrList",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/saveWorkerGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String addrList, java.lang.String description, java.lang.String otherParamsJson)/parameter/addrList",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 92,
+          "endLine" : 110,
+          "endColumn" : 100
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/saveWorkerGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String addrList, java.lang.String description, java.lang.String otherParamsJson)"
+      }, {
+        "name" : "description",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/saveWorkerGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String addrList, java.lang.String description, java.lang.String otherParamsJson)/parameter/description",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 109,
+          "endLine" : 110,
+          "endColumn" : 120
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/saveWorkerGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String addrList, java.lang.String description, java.lang.String otherParamsJson)"
+      }, {
+        "name" : "otherParamsJson",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/saveWorkerGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String addrList, java.lang.String description, java.lang.String otherParamsJson)/parameter/otherParamsJson",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 111,
+          "startColumn" : 55,
+          "endLine" : 111,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/saveWorkerGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, int id, java.lang.String name, java.lang.String addrList, java.lang.String description, java.lang.String otherParamsJson)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryWorkerGroupByWorkflowDefinitionCodes(java.util.List<java.lang.Long> workflowDefinitionCodeList)" : {
+      "name" : "queryWorkerGroupByWorkflowDefinitionCodes",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryWorkerGroupByWorkflowDefinitionCodes(java.util.List<java.lang.Long> workflowDefinitionCodeList)",
+      "type" : "java.util.Map<java.lang.Long, java.lang.String>",
+      "displayedType" : "Map<Long, String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 433,
+        "startColumn" : 30,
+        "endLine" : 433,
+        "endColumn" : 71
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowDefinitionCodeList",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryWorkerGroupByWorkflowDefinitionCodes(java.util.List<java.lang.Long> workflowDefinitionCodeList)/parameter/workflowDefinitionCodeList",
+        "type" : "java.util.List<java.lang.Long>",
+        "displayedType" : "List<Long>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 433,
+          "startColumn" : 83,
+          "endLine" : 433,
+          "endColumn" : 109
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryWorkerGroupByWorkflowDefinitionCodes(java.util.List<java.lang.Long> workflowDefinitionCodeList)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/handleDefaultWorkGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkerGroupMapper workerGroupMapper, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String otherParamsJson)" : {
+      "name" : "handleDefaultWorkGroup",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/handleDefaultWorkGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkerGroupMapper workerGroupMapper, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String otherParamsJson)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 161,
+        "startColumn" : 20,
+        "endLine" : 161,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerGroupMapper",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/handleDefaultWorkGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkerGroupMapper workerGroupMapper, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String otherParamsJson)/parameter/workerGroupMapper",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkerGroupMapper",
+        "displayedType" : "WorkerGroupMapper",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 161,
+          "startColumn" : 61,
+          "endLine" : 161,
+          "endColumn" : 78
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/handleDefaultWorkGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkerGroupMapper workerGroupMapper, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String otherParamsJson)"
+      }, {
+        "name" : "workerGroup",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/handleDefaultWorkGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkerGroupMapper workerGroupMapper, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String otherParamsJson)/parameter/workerGroup",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup",
+        "displayedType" : "WorkerGroup",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 161,
+          "startColumn" : 92,
+          "endLine" : 161,
+          "endColumn" : 103
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/handleDefaultWorkGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkerGroupMapper workerGroupMapper, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String otherParamsJson)"
+      }, {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/handleDefaultWorkGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkerGroupMapper workerGroupMapper, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String otherParamsJson)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 161,
+          "startColumn" : 110,
+          "endLine" : 161,
+          "endColumn" : 119
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/handleDefaultWorkGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkerGroupMapper workerGroupMapper, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String otherParamsJson)"
+      }, {
+        "name" : "otherParamsJson",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/handleDefaultWorkGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkerGroupMapper workerGroupMapper, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String otherParamsJson)/parameter/otherParamsJson",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 162,
+          "startColumn" : 50,
+          "endLine" : 162,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/handleDefaultWorkGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.mapper.WorkerGroupMapper workerGroupMapper, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup, org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser, java.lang.String otherParamsJson)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryAllGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)" : {
+      "name" : "queryAllGroup",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryAllGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)",
+      "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+      "displayedType" : "Map<String, Object>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 326,
+        "startColumn" : 32,
+        "endLine" : 326,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "loginUser",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryAllGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)/parameter/loginUser",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User",
+        "displayedType" : "User",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 326,
+          "startColumn" : 51,
+          "endLine" : 326,
+          "endColumn" : 60
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/queryAllGroup(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.User loginUser)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/checkWorkerGroupNameExists(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup)" : {
+      "name" : "checkWorkerGroupNameExists",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/checkWorkerGroupNameExists(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 176,
+        "startColumn" : 21,
+        "endLine" : 176,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerGroup",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/checkWorkerGroupNameExists(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup)/parameter/workerGroup",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup",
+        "displayedType" : "WorkerGroup",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 176,
+          "startColumn" : 60,
+          "endLine" : 176,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/checkWorkerGroupNameExists(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/checkWorkerGroupAddrList(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup)" : {
+      "name" : "checkWorkerGroupAddrList",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/checkWorkerGroupAddrList(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 248,
+        "startColumn" : 20,
+        "endLine" : 248,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerGroup",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/checkWorkerGroupAddrList(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup)/parameter/workerGroup",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup",
+        "displayedType" : "WorkerGroup",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 248,
+          "startColumn" : 57,
+          "endLine" : 248,
+          "endColumn" : 68
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/checkWorkerGroupAddrList(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/getWorkerGroups(java.util.List<java.lang.Integer> ids)" : {
+      "name" : "getWorkerGroups",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/getWorkerGroups(java.util.List<java.lang.Integer> ids)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup>",
+      "displayedType" : "List<WorkerGroup>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 349,
+        "startColumn" : 31,
+        "endLine" : 349,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "ids",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/getWorkerGroups(java.util.List<java.lang.Integer> ids)/parameter/ids",
+        "type" : "java.util.List<java.lang.Integer>",
+        "displayedType" : "List<Integer>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 349,
+          "startColumn" : 61,
+          "endLine" : 349,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/getWorkerGroups(java.util.List<java.lang.Integer> ids)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    },
+    "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/checkWorkerGroupDependencies(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup, java.util.Map<java.lang.String, java.lang.Object> result)" : {
+      "name" : "checkWorkerGroupDependencies",
+      "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/checkWorkerGroupDependencies(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup, java.util.Map<java.lang.String, java.lang.Object> result)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 200,
+        "startColumn" : 21,
+        "endLine" : 200,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerGroup",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/checkWorkerGroupDependencies(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup, java.util.Map<java.lang.String, java.lang.Object> result)/parameter/workerGroup",
+        "type" : "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup",
+        "displayedType" : "WorkerGroup",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 200,
+          "startColumn" : 62,
+          "endLine" : 200,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/checkWorkerGroupDependencies(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup, java.util.Map<java.lang.String, java.lang.Object> result)"
+      }, {
+        "name" : "result",
+        "key" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/checkWorkerGroupDependencies(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup, java.util.Map<java.lang.String, java.lang.Object> result)/parameter/result",
+        "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+        "displayedType" : "Map<String, Object>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 200,
+          "startColumn" : 95,
+          "endLine" : 200,
+          "endColumn" : 101
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl/method/checkWorkerGroupDependencies(org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.dao.entity.WorkerGroup workerGroup, java.util.Map<java.lang.String, java.lang.Object> result)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.impl.WorkerGroupServiceImpl"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/service/impl/WorkerGroupServiceImpl.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.api.service.impl.org.apache.dolphinscheduler.api.service.WorkerGroupService" ],
+  "extends_" : [ "org.apache.dolphinscheduler.api.service.impl.BaseServiceImpl" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

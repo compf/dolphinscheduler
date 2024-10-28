@@ -1,0 +1,413 @@
+{
+  "name" : "WorkflowLineageService",
+  "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService",
+  "type" : "interface",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 29,
+    "startColumn" : 8,
+    "endLine" : 29,
+    "endColumn" : 17
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : { },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryDownstreamDependentWorkflowDefinitions(java.lang.Long workflowDefinitionCode)" : {
+      "name" : "queryDownstreamDependentWorkflowDefinitions",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryDownstreamDependentWorkflowDefinitions(java.lang.Long workflowDefinitionCode)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.DependentWorkflowDefinition>",
+      "displayedType" : "List<DependentWorkflowDefinition>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 39,
+        "endLine" : 43,
+        "endColumn" : 82
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryDownstreamDependentWorkflowDefinitions(java.lang.Long workflowDefinitionCode)/parameter/workflowDefinitionCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 43,
+          "startColumn" : 88,
+          "endLine" : 43,
+          "endColumn" : 110
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryDownstreamDependentWorkflowDefinitions(java.lang.Long workflowDefinitionCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryWorkFlowLineage(long projectCode)" : {
+      "name" : "queryWorkFlowLineage",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryWorkFlowLineage(long projectCode)",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkFlowLineage",
+      "displayedType" : "WorkFlowLineage",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 35,
+        "startColumn" : 21,
+        "endLine" : 35,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryWorkFlowLineage(long projectCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 35,
+          "startColumn" : 47,
+          "endLine" : 35,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryWorkFlowLineage(long projectCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryDependentWorkflowDefinitions(long projectCode, long workflowDefinitionCode, java.lang.Long taskCode)" : {
+      "name" : "queryDependentWorkflowDefinitions",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryDependentWorkflowDefinitions(long projectCode, long workflowDefinitionCode, java.lang.Long taskCode)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.DependentLineageTask>",
+      "displayedType" : "List<DependentLineageTask>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 55,
+        "startColumn" : 32,
+        "endLine" : 55,
+        "endColumn" : 65
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryDependentWorkflowDefinitions(long projectCode, long workflowDefinitionCode, java.lang.Long taskCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 55,
+          "startColumn" : 71,
+          "endLine" : 55,
+          "endColumn" : 82
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryDependentWorkflowDefinitions(long projectCode, long workflowDefinitionCode, java.lang.Long taskCode)"
+      }, {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryDependentWorkflowDefinitions(long projectCode, long workflowDefinitionCode, java.lang.Long taskCode)/parameter/workflowDefinitionCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 55,
+          "startColumn" : 89,
+          "endLine" : 55,
+          "endColumn" : 111
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryDependentWorkflowDefinitions(long projectCode, long workflowDefinitionCode, java.lang.Long taskCode)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryDependentWorkflowDefinitions(long projectCode, long workflowDefinitionCode, java.lang.Long taskCode)/parameter/taskCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 56,
+          "startColumn" : 71,
+          "endLine" : 56,
+          "endColumn" : 79
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryDependentWorkflowDefinitions(long projectCode, long workflowDefinitionCode, java.lang.Long taskCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/taskDependentMsg(long projectCode, long workflowDefinitionCode, long taskCode)" : {
+      "name" : "taskDependentMsg",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/taskDependentMsg(long projectCode, long workflowDefinitionCode, long taskCode)",
+      "type" : "java.util.Optional<java.lang.String>",
+      "displayedType" : "Optional<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 53,
+        "startColumn" : 22,
+        "endLine" : 53,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/taskDependentMsg(long projectCode, long workflowDefinitionCode, long taskCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 53,
+          "startColumn" : 44,
+          "endLine" : 53,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/taskDependentMsg(long projectCode, long workflowDefinitionCode, long taskCode)"
+      }, {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/taskDependentMsg(long projectCode, long workflowDefinitionCode, long taskCode)/parameter/workflowDefinitionCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 53,
+          "startColumn" : 62,
+          "endLine" : 53,
+          "endColumn" : 84
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/taskDependentMsg(long projectCode, long workflowDefinitionCode, long taskCode)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/taskDependentMsg(long projectCode, long workflowDefinitionCode, long taskCode)/parameter/taskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 53,
+          "startColumn" : 91,
+          "endLine" : 53,
+          "endColumn" : 99
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/taskDependentMsg(long projectCode, long workflowDefinitionCode, long taskCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/createWorkflowLineage(java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage> workflowTaskLineages)" : {
+      "name" : "createWorkflowLineage",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/createWorkflowLineage(java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage> workflowTaskLineages)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 9,
+        "endLine" : 58,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowTaskLineages",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/createWorkflowLineage(java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage> workflowTaskLineages)/parameter/workflowTaskLineages",
+        "type" : "java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage>",
+        "displayedType" : "List<WorkflowTaskLineage>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 58,
+          "startColumn" : 57,
+          "endLine" : 58,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/createWorkflowLineage(java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage> workflowTaskLineages)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/deleteWorkflowLineage(java.util.List<java.lang.Long> workflowDefinitionCodes)" : {
+      "name" : "deleteWorkflowLineage",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/deleteWorkflowLineage(java.util.List<java.lang.Long> workflowDefinitionCodes)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 9,
+        "endLine" : 62,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowDefinitionCodes",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/deleteWorkflowLineage(java.util.List<java.lang.Long> workflowDefinitionCodes)/parameter/workflowDefinitionCodes",
+        "type" : "java.util.List<java.lang.Long>",
+        "displayedType" : "List<Long>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 62,
+          "startColumn" : 42,
+          "endLine" : 62,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/deleteWorkflowLineage(java.util.List<java.lang.Long> workflowDefinitionCodes)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryWorkFlowLineageByCode(long projectCode, long workflowDefinitionCode)" : {
+      "name" : "queryWorkFlowLineageByCode",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryWorkFlowLineageByCode(long projectCode, long workflowDefinitionCode)",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkFlowLineage",
+      "displayedType" : "WorkFlowLineage",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 33,
+        "startColumn" : 21,
+        "endLine" : 33,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryWorkFlowLineageByCode(long projectCode, long workflowDefinitionCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 33,
+          "startColumn" : 53,
+          "endLine" : 33,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryWorkFlowLineageByCode(long projectCode, long workflowDefinitionCode)"
+      }, {
+        "name" : "workflowDefinitionCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryWorkFlowLineageByCode(long projectCode, long workflowDefinitionCode)/parameter/workflowDefinitionCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 33,
+          "startColumn" : 71,
+          "endLine" : 33,
+          "endColumn" : 93
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryWorkFlowLineageByCode(long projectCode, long workflowDefinitionCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/updateWorkflowLineage(java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage> workflowTaskLineages)" : {
+      "name" : "updateWorkflowLineage",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/updateWorkflowLineage(java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage> workflowTaskLineages)",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 60,
+        "startColumn" : 9,
+        "endLine" : 60,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowTaskLineages",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/updateWorkflowLineage(java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage> workflowTaskLineages)/parameter/workflowTaskLineages",
+        "type" : "java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage>",
+        "displayedType" : "List<WorkflowTaskLineage>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 60,
+          "startColumn" : 57,
+          "endLine" : 60,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/updateWorkflowLineage(java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowTaskLineage> workflowTaskLineages)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryWorkFlowLineageByName(long projectCode, java.lang.String workflowDefinitionName)" : {
+      "name" : "queryWorkFlowLineageByName",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryWorkFlowLineageByName(long projectCode, java.lang.String workflowDefinitionName)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkFlowRelationDetail>",
+      "displayedType" : "List<WorkFlowRelationDetail>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 31,
+        "startColumn" : 34,
+        "endLine" : 31,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryWorkFlowLineageByName(long projectCode, java.lang.String workflowDefinitionName)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 31,
+          "startColumn" : 66,
+          "endLine" : 31,
+          "endColumn" : 77
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryWorkFlowLineageByName(long projectCode, java.lang.String workflowDefinitionName)"
+      }, {
+        "name" : "workflowDefinitionName",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryWorkFlowLineageByName(long projectCode, java.lang.String workflowDefinitionName)/parameter/workflowDefinitionName",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 31,
+          "startColumn" : 86,
+          "endLine" : 31,
+          "endColumn" : 108
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService/method/queryWorkFlowLineageByName(long projectCode, java.lang.String workflowDefinitionName)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowLineageService"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/main/java/org/apache/dolphinscheduler/api/service/WorkflowLineageService.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

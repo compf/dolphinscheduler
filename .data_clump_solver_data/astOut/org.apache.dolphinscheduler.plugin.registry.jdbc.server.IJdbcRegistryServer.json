@@ -1,0 +1,581 @@
+{
+  "name" : "IJdbcRegistryServer",
+  "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer",
+  "type" : "interface",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 30,
+    "startColumn" : 8,
+    "endLine" : 30,
+    "endColumn" : 17
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : { },
+  "methods" : {
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/getJdbcRegistryDataByKey(java.lang.String key)" : {
+      "name" : "getJdbcRegistryDataByKey",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/getJdbcRegistryDataByKey(java.lang.String key)",
+      "type" : "java.util.Optional<org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.model.DTO.JdbcRegistryDataDTO>",
+      "displayedType" : "Optional<JdbcRegistryDataDTO>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 67,
+        "startColumn" : 35,
+        "endLine" : 67,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/getJdbcRegistryDataByKey(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 67,
+          "startColumn" : 67,
+          "endLine" : 67,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/getJdbcRegistryDataByKey(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/releaseJdbcRegistryLock(java.lang.Long clientId, java.lang.String key)" : {
+      "name" : "releaseJdbcRegistryLock",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/releaseJdbcRegistryLock(java.lang.Long clientId, java.lang.String key)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 103,
+        "startColumn" : 10,
+        "endLine" : 103,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "clientId",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/releaseJdbcRegistryLock(java.lang.Long clientId, java.lang.String key)/parameter/clientId",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 103,
+          "startColumn" : 39,
+          "endLine" : 103,
+          "endColumn" : 47
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/releaseJdbcRegistryLock(java.lang.Long clientId, java.lang.String key)"
+      }, {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/releaseJdbcRegistryLock(java.lang.Long clientId, java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 103,
+          "startColumn" : 56,
+          "endLine" : 103,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/releaseJdbcRegistryLock(java.lang.Long clientId, java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/deregisterClient(org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.client.IJdbcRegistryClient jdbcRegistryClient)" : {
+      "name" : "deregisterClient",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/deregisterClient(org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.client.IJdbcRegistryClient jdbcRegistryClient)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 42,
+        "startColumn" : 10,
+        "endLine" : 42,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "jdbcRegistryClient",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/deregisterClient(org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.client.IJdbcRegistryClient jdbcRegistryClient)/parameter/jdbcRegistryClient",
+        "type" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.client.IJdbcRegistryClient",
+        "displayedType" : "IJdbcRegistryClient",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 42,
+          "startColumn" : 47,
+          "endLine" : 42,
+          "endColumn" : 65
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/deregisterClient(org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.client.IJdbcRegistryClient jdbcRegistryClient)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String key)" : {
+      "name" : "acquireJdbcRegistryLock",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String key)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 93,
+        "startColumn" : 10,
+        "endLine" : 93,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "clientId",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String key)/parameter/clientId",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 93,
+          "startColumn" : 39,
+          "endLine" : 93,
+          "endColumn" : 47
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String key)"
+      }, {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 93,
+          "startColumn" : 56,
+          "endLine" : 93,
+          "endColumn" : 59
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String key, long timeout)" : {
+      "name" : "acquireJdbcRegistryLock",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String key, long timeout)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 98,
+        "startColumn" : 13,
+        "endLine" : 98,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "clientId",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String key, long timeout)/parameter/clientId",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 98,
+          "startColumn" : 42,
+          "endLine" : 98,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String key, long timeout)"
+      }, {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String key, long timeout)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 98,
+          "startColumn" : 59,
+          "endLine" : 98,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String key, long timeout)"
+      }, {
+        "name" : "timeout",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String key, long timeout)/parameter/timeout",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 98,
+          "startColumn" : 69,
+          "endLine" : 98,
+          "endColumn" : 76
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/acquireJdbcRegistryLock(java.lang.Long clientId, java.lang.String key, long timeout)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/registerClient(org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.client.IJdbcRegistryClient jdbcRegistryClient)" : {
+      "name" : "registerClient",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/registerClient(org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.client.IJdbcRegistryClient jdbcRegistryClient)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 37,
+        "startColumn" : 10,
+        "endLine" : 37,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "jdbcRegistryClient",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/registerClient(org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.client.IJdbcRegistryClient jdbcRegistryClient)/parameter/jdbcRegistryClient",
+        "type" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.client.IJdbcRegistryClient",
+        "displayedType" : "IJdbcRegistryClient",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 37,
+          "startColumn" : 45,
+          "endLine" : 37,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/registerClient(org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.client.IJdbcRegistryClient jdbcRegistryClient)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 109,
+        "startColumn" : 10,
+        "endLine" : 109,
+        "endColumn" : 15
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/getServerState()" : {
+      "name" : "getServerState",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/getServerState()",
+      "type" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryServerState",
+      "displayedType" : "JdbcRegistryServerState",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 29,
+        "endLine" : 47,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/existJdbcRegistryDataKey(java.lang.String key)" : {
+      "name" : "existJdbcRegistryDataKey",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/existJdbcRegistryDataKey(java.lang.String key)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 62,
+        "startColumn" : 13,
+        "endLine" : 62,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/existJdbcRegistryDataKey(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 62,
+          "startColumn" : 45,
+          "endLine" : 62,
+          "endColumn" : 48
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/existJdbcRegistryDataKey(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/deleteJdbcRegistryDataByKey(java.lang.String key)" : {
+      "name" : "deleteJdbcRegistryDataByKey",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/deleteJdbcRegistryDataByKey(java.lang.String key)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 10,
+        "endLine" : 88,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/deleteJdbcRegistryDataByKey(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 88,
+          "startColumn" : 45,
+          "endLine" : 88,
+          "endColumn" : 48
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/deleteJdbcRegistryDataByKey(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/listJdbcRegistryDataChildren(java.lang.String key)" : {
+      "name" : "listJdbcRegistryDataChildren",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/listJdbcRegistryDataChildren(java.lang.String key)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.model.DTO.JdbcRegistryDataDTO>",
+      "displayedType" : "List<JdbcRegistryDataDTO>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 31,
+        "endLine" : 76,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/listJdbcRegistryDataChildren(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 76,
+          "startColumn" : 67,
+          "endLine" : 76,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/listJdbcRegistryDataChildren(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/subscribeConnectionStateChange(org.apache.dolphinscheduler.plugin.registry.jdbc.server.ConnectionStateListener connectionStateListener)" : {
+      "name" : "subscribeConnectionStateChange",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/subscribeConnectionStateChange(org.apache.dolphinscheduler.plugin.registry.jdbc.server.ConnectionStateListener connectionStateListener)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 52,
+        "startColumn" : 10,
+        "endLine" : 52,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "connectionStateListener",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/subscribeConnectionStateChange(org.apache.dolphinscheduler.plugin.registry.jdbc.server.ConnectionStateListener connectionStateListener)/parameter/connectionStateListener",
+        "type" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.ConnectionStateListener",
+        "displayedType" : "ConnectionStateListener",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 52,
+          "startColumn" : 65,
+          "endLine" : 52,
+          "endColumn" : 88
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/subscribeConnectionStateChange(org.apache.dolphinscheduler.plugin.registry.jdbc.server.ConnectionStateListener connectionStateListener)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/subscribeJdbcRegistryDataChange(org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryDataChangeListener jdbcRegistryDataChangeListener)" : {
+      "name" : "subscribeJdbcRegistryDataChange",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/subscribeJdbcRegistryDataChange(org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryDataChangeListener jdbcRegistryDataChangeListener)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 10,
+        "endLine" : 57,
+        "endColumn" : 41
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "jdbcRegistryDataChangeListener",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/subscribeJdbcRegistryDataChange(org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryDataChangeListener jdbcRegistryDataChangeListener)/parameter/jdbcRegistryDataChangeListener",
+        "type" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryDataChangeListener",
+        "displayedType" : "JdbcRegistryDataChangeListener",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 57,
+          "startColumn" : 73,
+          "endLine" : 57,
+          "endColumn" : 103
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/subscribeJdbcRegistryDataChange(org.apache.dolphinscheduler.plugin.registry.jdbc.server.JdbcRegistryDataChangeListener jdbcRegistryDataChangeListener)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/putJdbcRegistryData(java.lang.Long clientId, java.lang.String key, java.lang.String value, org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.model.DTO.DataType dataType)" : {
+      "name" : "putJdbcRegistryData",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/putJdbcRegistryData(java.lang.Long clientId, java.lang.String key, java.lang.String value, org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.model.DTO.DataType dataType)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 83,
+        "startColumn" : 10,
+        "endLine" : 83,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "clientId",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/putJdbcRegistryData(java.lang.Long clientId, java.lang.String key, java.lang.String value, org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.model.DTO.DataType dataType)/parameter/clientId",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 83,
+          "startColumn" : 35,
+          "endLine" : 83,
+          "endColumn" : 43
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/putJdbcRegistryData(java.lang.Long clientId, java.lang.String key, java.lang.String value, org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.model.DTO.DataType dataType)"
+      }, {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/putJdbcRegistryData(java.lang.Long clientId, java.lang.String key, java.lang.String value, org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.model.DTO.DataType dataType)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 83,
+          "startColumn" : 52,
+          "endLine" : 83,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/putJdbcRegistryData(java.lang.Long clientId, java.lang.String key, java.lang.String value, org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.model.DTO.DataType dataType)"
+      }, {
+        "name" : "value",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/putJdbcRegistryData(java.lang.Long clientId, java.lang.String key, java.lang.String value, org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.model.DTO.DataType dataType)/parameter/value",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 83,
+          "startColumn" : 64,
+          "endLine" : 83,
+          "endColumn" : 69
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/putJdbcRegistryData(java.lang.Long clientId, java.lang.String key, java.lang.String value, org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.model.DTO.DataType dataType)"
+      }, {
+        "name" : "dataType",
+        "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/putJdbcRegistryData(java.lang.Long clientId, java.lang.String key, java.lang.String value, org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.model.DTO.DataType dataType)/parameter/dataType",
+        "type" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.model.DTO.DataType",
+        "displayedType" : "DataType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 83,
+          "startColumn" : 80,
+          "endLine" : 83,
+          "endColumn" : 88
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/putJdbcRegistryData(java.lang.Long clientId, java.lang.String key, java.lang.String value, org.apache.dolphinscheduler.plugin.registry.jdbc.server.org.apache.dolphinscheduler.plugin.registry.jdbc.model.DTO.DataType dataType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer"
+    },
+    "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/start()" : {
+      "name" : "start",
+      "key" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer/method/start()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 32,
+        "startColumn" : 10,
+        "endLine" : 32,
+        "endColumn" : 15
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.plugin.registry.jdbc.server.IJdbcRegistryServer"
+    }
+  },
+  "file_path" : "dolphinscheduler-registry/dolphinscheduler-registry-plugins/dolphinscheduler-registry-jdbc/src/main/java/org/apache/dolphinscheduler/plugin/registry/jdbc/server/IJdbcRegistryServer.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "java.lang.AutoCloseable" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

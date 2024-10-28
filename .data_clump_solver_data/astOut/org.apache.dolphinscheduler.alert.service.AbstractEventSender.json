@@ -1,0 +1,433 @@
+{
+  "name" : "AbstractEventSender",
+  "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 52,
+    "startColumn" : 17,
+    "endLine" : 52,
+    "endColumn" : 22
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.alert.service.AbstractEventSender/memberField/alertPluginManager" : {
+      "name" : "alertPluginManager",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/memberField/alertPluginManager",
+      "type" : "org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.alert.plugin.AlertPluginManager",
+      "displayedType" : "AlertPluginManager",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 40,
+        "endLine" : 54,
+        "endColumn" : 58
+      },
+      "modifiers" : [ "PROTECTED", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventSender/memberField/sendEventTimeout" : {
+      "name" : "sendEventTimeout",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/memberField/sendEventTimeout",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 56,
+        "startColumn" : 24,
+        "endLine" : 56,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/sendEvent(T event)" : {
+      "name" : "sendEvent",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/sendEvent(T event)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 17,
+        "endLine" : 64,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "event",
+        "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/sendEvent(T event)/parameter/event",
+        "type" : "T",
+        "displayedType" : "T",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 64,
+          "startColumn" : 29,
+          "endLine" : 64,
+          "endColumn" : 34
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/sendEvent(T event)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onPartialSuccess(T event, java.lang.String log)" : {
+      "name" : "onPartialSuccess",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onPartialSuccess(T event, java.lang.String log)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 110,
+        "startColumn" : 26,
+        "endLine" : 110,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "event",
+        "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onPartialSuccess(T event, java.lang.String log)/parameter/event",
+        "type" : "T",
+        "displayedType" : "T",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 45,
+          "endLine" : 110,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onPartialSuccess(T event, java.lang.String log)"
+      }, {
+        "name" : "log",
+        "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onPartialSuccess(T event, java.lang.String log)/parameter/log",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 110,
+          "startColumn" : 59,
+          "endLine" : 110,
+          "endColumn" : 62
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onPartialSuccess(T event, java.lang.String log)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/getAlertPluginInstanceList(T event)" : {
+      "name" : "getAlertPluginInstanceList",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/getAlertPluginInstanceList(T event)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.entity.AlertPluginInstance>",
+      "displayedType" : "List<AlertPluginInstance>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 102,
+        "startColumn" : 47,
+        "endLine" : 102,
+        "endColumn" : 73
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "event",
+        "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/getAlertPluginInstanceList(T event)/parameter/event",
+        "type" : "T",
+        "displayedType" : "T",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 102,
+          "startColumn" : 76,
+          "endLine" : 102,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/getAlertPluginInstanceList(T event)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onSuccess(T event, java.lang.String log)" : {
+      "name" : "onSuccess",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onSuccess(T event, java.lang.String log)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 112,
+        "startColumn" : 26,
+        "endLine" : 112,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "event",
+        "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onSuccess(T event, java.lang.String log)/parameter/event",
+        "type" : "T",
+        "displayedType" : "T",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 112,
+          "startColumn" : 38,
+          "endLine" : 112,
+          "endColumn" : 43
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onSuccess(T event, java.lang.String log)"
+      }, {
+        "name" : "log",
+        "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onSuccess(T event, java.lang.String log)/parameter/log",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 112,
+          "startColumn" : 52,
+          "endLine" : 112,
+          "endColumn" : 55
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onSuccess(T event, java.lang.String log)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onError(T event, java.lang.String log)" : {
+      "name" : "onError",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onError(T event, java.lang.String log)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 108,
+        "startColumn" : 26,
+        "endLine" : 108,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "event",
+        "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onError(T event, java.lang.String log)/parameter/event",
+        "type" : "T",
+        "displayedType" : "T",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 108,
+          "startColumn" : 36,
+          "endLine" : 108,
+          "endColumn" : 41
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onError(T event, java.lang.String log)"
+      }, {
+        "name" : "log",
+        "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onError(T event, java.lang.String log)/parameter/log",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 108,
+          "startColumn" : 50,
+          "endLine" : 108,
+          "endColumn" : 53
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/onError(T event, java.lang.String log)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/getAlertData(T event)" : {
+      "name" : "getAlertData",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/getAlertData(T event)",
+      "type" : "org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.alert.api.AlertData",
+      "displayedType" : "AlertData",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 104,
+        "startColumn" : 31,
+        "endLine" : 104,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "event",
+        "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/getAlertData(T event)/parameter/event",
+        "type" : "T",
+        "displayedType" : "T",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 104,
+          "startColumn" : 46,
+          "endLine" : 104,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/getAlertData(T event)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/syncTestSend(int pluginDefineId, java.lang.String pluginInstanceParams)" : {
+      "name" : "syncTestSend",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/syncTestSend(int pluginDefineId, java.lang.String pluginInstanceParams)",
+      "type" : "org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.extract.alert.request.AlertSendResponse",
+      "displayedType" : "AlertSendResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 157,
+        "startColumn" : 30,
+        "endLine" : 157,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "pluginDefineId",
+        "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/syncTestSend(int pluginDefineId, java.lang.String pluginInstanceParams)/parameter/pluginDefineId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 157,
+          "startColumn" : 47,
+          "endLine" : 157,
+          "endColumn" : 61
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/syncTestSend(int pluginDefineId, java.lang.String pluginInstanceParams)"
+      }, {
+        "name" : "pluginInstanceParams",
+        "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/syncTestSend(int pluginDefineId, java.lang.String pluginInstanceParams)/parameter/pluginInstanceParams",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 157,
+          "startColumn" : 70,
+          "endLine" : 157,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/syncTestSend(int pluginDefineId, java.lang.String pluginInstanceParams)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/getEventId(T event)" : {
+      "name" : "getEventId",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/getEventId(T event)",
+      "type" : "java.lang.Integer",
+      "displayedType" : "Integer",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 106,
+        "startColumn" : 29,
+        "endLine" : 106,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "event",
+        "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/getEventId(T event)/parameter/event",
+        "type" : "T",
+        "displayedType" : "T",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 106,
+          "startColumn" : 42,
+          "endLine" : 106,
+          "endColumn" : 47
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/getEventId(T event)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender"
+    },
+    "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/doSendEvent(org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.entity.AlertPluginInstance instance, org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.alert.api.AlertData alertData)" : {
+      "name" : "doSendEvent",
+      "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/doSendEvent(org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.entity.AlertPluginInstance instance, org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.alert.api.AlertData alertData)",
+      "type" : "org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.alert.api.AlertResult",
+      "displayedType" : "AlertResult",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 115,
+        "startColumn" : 24,
+        "endLine" : 115,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "instance",
+        "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/doSendEvent(org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.entity.AlertPluginInstance instance, org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.alert.api.AlertData alertData)/parameter/instance",
+        "type" : "org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.entity.AlertPluginInstance",
+        "displayedType" : "AlertPluginInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 115,
+          "startColumn" : 56,
+          "endLine" : 115,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/doSendEvent(org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.entity.AlertPluginInstance instance, org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.alert.api.AlertData alertData)"
+      }, {
+        "name" : "alertData",
+        "key" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/doSendEvent(org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.entity.AlertPluginInstance instance, org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.alert.api.AlertData alertData)/parameter/alertData",
+        "type" : "org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.alert.api.AlertData",
+        "displayedType" : "AlertData",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 115,
+          "startColumn" : 76,
+          "endLine" : 115,
+          "endColumn" : 85
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender/method/doSendEvent(org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.dao.entity.AlertPluginInstance instance, org.apache.dolphinscheduler.alert.service.org.apache.dolphinscheduler.alert.api.AlertData alertData)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.alert.service.AbstractEventSender"
+    }
+  },
+  "file_path" : "dolphinscheduler-alert/dolphinscheduler-alert-server/src/main/java/org/apache/dolphinscheduler/alert/service/AbstractEventSender.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.alert.service.EventSender<T>", "T" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

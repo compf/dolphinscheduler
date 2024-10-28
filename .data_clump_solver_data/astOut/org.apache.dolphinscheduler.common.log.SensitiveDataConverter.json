@@ -1,0 +1,160 @@
+{
+  "name" : "SensitiveDataConverter",
+  "key" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 38,
+    "startColumn" : 8,
+    "endLine" : 38,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.common.log.SensitiveDataConverter/memberField/multilinePattern" : {
+      "name" : "multilinePattern",
+      "key" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter/memberField/multilinePattern",
+      "type" : "java.util.regex.Pattern",
+      "displayedType" : "Pattern",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 40,
+        "startColumn" : 28,
+        "endLine" : 40,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter"
+    },
+    "org.apache.dolphinscheduler.common.log.SensitiveDataConverter/memberField/maskPatterns" : {
+      "name" : "maskPatterns",
+      "key" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter/memberField/maskPatterns",
+      "type" : "java.util.HashSet<java.lang.String>",
+      "displayedType" : "HashSet<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 41,
+        "startColumn" : 36,
+        "endLine" : 41,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.common.log.SensitiveDataConverter/method/addMaskPattern(java.lang.String maskPattern)" : {
+      "name" : "addMaskPattern",
+      "key" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter/method/addMaskPattern(java.lang.String maskPattern)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 24,
+        "endLine" : 54,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "maskPattern",
+        "key" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter/method/addMaskPattern(java.lang.String maskPattern)/parameter/maskPattern",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 54,
+          "startColumn" : 46,
+          "endLine" : 54,
+          "endColumn" : 57
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter/method/addMaskPattern(java.lang.String maskPattern)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter"
+    },
+    "org.apache.dolphinscheduler.common.log.SensitiveDataConverter/method/maskSensitiveData(java.lang.String logMsg)" : {
+      "name" : "maskSensitiveData",
+      "key" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter/method/maskSensitiveData(java.lang.String logMsg)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 58,
+        "startColumn" : 26,
+        "endLine" : 58,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC", "STATIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "logMsg",
+        "key" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter/method/maskSensitiveData(java.lang.String logMsg)/parameter/logMsg",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 58,
+          "startColumn" : 57,
+          "endLine" : 58,
+          "endColumn" : 63
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter/method/maskSensitiveData(java.lang.String logMsg)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter"
+    },
+    "org.apache.dolphinscheduler.common.log.SensitiveDataConverter/method/convert(org.apache.dolphinscheduler.common.log.ch.qos.logback.classic.spi.ILoggingEvent event)" : {
+      "name" : "convert",
+      "key" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter/method/convert(org.apache.dolphinscheduler.common.log.ch.qos.logback.classic.spi.ILoggingEvent event)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 45,
+        "startColumn" : 19,
+        "endLine" : 45,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "event",
+        "key" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter/method/convert(org.apache.dolphinscheduler.common.log.ch.qos.logback.classic.spi.ILoggingEvent event)/parameter/event",
+        "type" : "org.apache.dolphinscheduler.common.log.ch.qos.logback.classic.spi.ILoggingEvent",
+        "displayedType" : "ILoggingEvent",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 45,
+          "startColumn" : 41,
+          "endLine" : 45,
+          "endColumn" : 46
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter/method/convert(org.apache.dolphinscheduler.common.log.ch.qos.logback.classic.spi.ILoggingEvent event)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.common.log.SensitiveDataConverter"
+    }
+  },
+  "file_path" : "dolphinscheduler-common/src/main/java/org/apache/dolphinscheduler/common/log/SensitiveDataConverter.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ "org.apache.dolphinscheduler.common.log.ch.qos.logback.classic.pattern.MessageConverter" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,536 @@
+{
+  "name" : "TaskGroupCoordinator",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 82,
+    "startColumn" : 8,
+    "endLine" : 82,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/memberField/registryClient" : {
+      "name" : "registryClient",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/memberField/registryClient",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.registry.api.RegistryClient",
+      "displayedType" : "RegistryClient",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 85,
+        "startColumn" : 28,
+        "endLine" : 85,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/memberField/flag" : {
+      "name" : "flag",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/memberField/flag",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 99,
+        "startColumn" : 21,
+        "endLine" : 99,
+        "endColumn" : 25
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/memberField/taskGroupQueueDao" : {
+      "name" : "taskGroupQueueDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/memberField/taskGroupQueueDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.repository.TaskGroupQueueDao",
+      "displayedType" : "TaskGroupQueueDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 31,
+        "endLine" : 91,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/memberField/taskGroupDao" : {
+      "name" : "taskGroupDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/memberField/taskGroupDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.repository.TaskGroupDao",
+      "displayedType" : "TaskGroupDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 26,
+        "endLine" : 88,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/memberField/taskInstanceDao" : {
+      "name" : "taskInstanceDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/memberField/taskInstanceDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.repository.TaskInstanceDao",
+      "displayedType" : "TaskInstanceDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 94,
+        "startColumn" : 29,
+        "endLine" : 94,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/memberField/DEFAULT_LIMIT" : {
+      "name" : "DEFAULT_LIMIT",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/memberField/DEFAULT_LIMIT",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 101,
+        "startColumn" : 24,
+        "endLine" : 101,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE", "STATIC" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/memberField/workflowInstanceDao" : {
+      "name" : "workflowInstanceDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/memberField/workflowInstanceDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.repository.WorkflowInstanceDao",
+      "displayedType" : "WorkflowInstanceDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 97,
+        "startColumn" : 33,
+        "endLine" : 97,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/amendTaskGroupQueueStatus()" : {
+      "name" : "amendTaskGroupQueueStatus",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/amendTaskGroupQueueStatus()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 170,
+        "startColumn" : 18,
+        "endLine" : 170,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/deleteTaskGroupQueueSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue taskGroupQueue)" : {
+      "name" : "deleteTaskGroupQueueSlot",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/deleteTaskGroupQueueSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue taskGroupQueue)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 485,
+        "startColumn" : 18,
+        "endLine" : 485,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskGroupQueue",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/deleteTaskGroupQueueSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue taskGroupQueue)/parameter/taskGroupQueue",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue",
+        "displayedType" : "TaskGroupQueue",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 485,
+          "startColumn" : 58,
+          "endLine" : 485,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/deleteTaskGroupQueueSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue taskGroupQueue)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/acquireTaskGroupSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)" : {
+      "name" : "acquireTaskGroupSlot",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/acquireTaskGroupSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 366,
+        "startColumn" : 17,
+        "endLine" : 366,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/acquireTaskGroupSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 366,
+          "startColumn" : 51,
+          "endLine" : 366,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/acquireTaskGroupSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/dealWithWaitingTaskGroupQueue()" : {
+      "name" : "dealWithWaitingTaskGroupQueue",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/dealWithWaitingTaskGroupQueue()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 274,
+        "startColumn" : 18,
+        "endLine" : 274,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/dealWithForceStartTaskGroupQueue()" : {
+      "name" : "dealWithForceStartTaskGroupQueue",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/dealWithForceStartTaskGroupQueue()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 220,
+        "startColumn" : 18,
+        "endLine" : 220,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/run()" : {
+      "name" : "run",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/run()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 116,
+        "startColumn" : 17,
+        "endLine" : 116,
+        "endColumn" : 20
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/needToReleaseTaskGroupSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)" : {
+      "name" : "needToReleaseTaskGroupSlot",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/needToReleaseTaskGroupSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 402,
+        "startColumn" : 20,
+        "endLine" : 402,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/needToReleaseTaskGroupSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 402,
+          "startColumn" : 60,
+          "endLine" : 402,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/needToReleaseTaskGroupSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 491,
+        "startColumn" : 17,
+        "endLine" : 491,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/amendTaskGroupQueueStatus(java.util.List<org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue> taskGroupQueues)" : {
+      "name" : "amendTaskGroupQueueStatus",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/amendTaskGroupQueueStatus(java.util.List<org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue> taskGroupQueues)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 192,
+        "startColumn" : 18,
+        "endLine" : 192,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskGroupQueues",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/amendTaskGroupQueueStatus(java.util.List<org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue> taskGroupQueues)/parameter/taskGroupQueues",
+        "type" : "java.util.List<org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue>",
+        "displayedType" : "List<TaskGroupQueue>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 192,
+          "startColumn" : 65,
+          "endLine" : 192,
+          "endColumn" : 80
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/amendTaskGroupQueueStatus(java.util.List<org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue> taskGroupQueues)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/start()" : {
+      "name" : "start",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/start()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 108,
+        "startColumn" : 30,
+        "endLine" : 108,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC", "SYNCHRONIZED" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/amendTaskGroupUseSize()" : {
+      "name" : "amendTaskGroupUseSize",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/amendTaskGroupUseSize()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 145,
+        "startColumn" : 18,
+        "endLine" : 145,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/needAcquireTaskGroupSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)" : {
+      "name" : "needAcquireTaskGroupSlot",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/needAcquireTaskGroupSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 340,
+        "startColumn" : 20,
+        "endLine" : 340,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/needAcquireTaskGroupSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 340,
+          "startColumn" : 58,
+          "endLine" : 340,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/needAcquireTaskGroupSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/releaseTaskGroupSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)" : {
+      "name" : "releaseTaskGroupSlot",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/releaseTaskGroupSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 422,
+        "startColumn" : 17,
+        "endLine" : 422,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/releaseTaskGroupSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)/parameter/taskInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance",
+        "displayedType" : "TaskInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 422,
+          "startColumn" : 51,
+          "endLine" : 422,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/releaseTaskGroupSlot(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskInstance taskInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/notifyWaitingTaskInstance(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue taskGroupQueue)" : {
+      "name" : "notifyWaitingTaskInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/notifyWaitingTaskInstance(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue taskGroupQueue)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 436,
+        "startColumn" : 18,
+        "endLine" : 436,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskGroupQueue",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/notifyWaitingTaskInstance(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue taskGroupQueue)/parameter/taskGroupQueue",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue",
+        "displayedType" : "TaskGroupQueue",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 436,
+          "startColumn" : 59,
+          "endLine" : 436,
+          "endColumn" : 73
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/notifyWaitingTaskInstance(org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue taskGroupQueue)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/dealWithForceStartTaskGroupQueue(java.util.List<org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue> taskGroupQueues)" : {
+      "name" : "dealWithForceStartTaskGroupQueue",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/dealWithForceStartTaskGroupQueue(java.util.List<org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue> taskGroupQueues)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 244,
+        "startColumn" : 18,
+        "endLine" : 244,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "taskGroupQueues",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/dealWithForceStartTaskGroupQueue(java.util.List<org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue> taskGroupQueues)/parameter/taskGroupQueues",
+        "type" : "java.util.List<org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue>",
+        "displayedType" : "List<TaskGroupQueue>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 244,
+          "startColumn" : 72,
+          "endLine" : 244,
+          "endColumn" : 87
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator/method/dealWithForceStartTaskGroupQueue(java.util.List<org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.dao.entity.TaskGroupQueue> taskGroupQueues)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.TaskGroupCoordinator"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/TaskGroupCoordinator.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "java.lang.AutoCloseable" ],
+  "extends_" : [ "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.common.thread.BaseDaemonThread" ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

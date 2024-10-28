@@ -1,0 +1,182 @@
+{
+  "name" : "MasterSlotManager",
+  "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 30,
+    "startColumn" : 8,
+    "endLine" : 30,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/memberField/masterClusters" : {
+      "name" : "masterClusters",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/memberField/masterClusters",
+      "type" : "org.apache.dolphinscheduler.server.master.cluster.MasterClusters",
+      "displayedType" : "MasterClusters",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 32,
+        "startColumn" : 34,
+        "endLine" : 32,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/memberField/masterConfig" : {
+      "name" : "masterConfig",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/memberField/masterConfig",
+      "type" : "org.apache.dolphinscheduler.server.master.cluster.org.apache.dolphinscheduler.server.master.config.MasterConfig",
+      "displayedType" : "MasterConfig",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 34,
+        "startColumn" : 32,
+        "endLine" : 34,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/memberField/totalSlots" : {
+      "name" : "totalSlots",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/memberField/totalSlots",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 38,
+        "startColumn" : 26,
+        "endLine" : 38,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE", "VOLATILE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/memberField/currentSlot" : {
+      "name" : "currentSlot",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/memberField/currentSlot",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 36,
+        "startColumn" : 26,
+        "endLine" : 36,
+        "endColumn" : 37
+      },
+      "modifiers" : [ "PRIVATE", "VOLATILE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/method/getCurrentMasterSlot()" : {
+      "name" : "getCurrentMasterSlot",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/method/getCurrentMasterSlot()",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 65,
+        "startColumn" : 16,
+        "endLine" : 65,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/method/doReBalance(java.util.List<org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata> normalMasterServers)" : {
+      "name" : "doReBalance",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/method/doReBalance(java.util.List<org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata> normalMasterServers)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 17,
+        "endLine" : 81,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "normalMasterServers",
+        "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/method/doReBalance(java.util.List<org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata> normalMasterServers)/parameter/normalMasterServers",
+        "type" : "java.util.List<org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata>",
+        "displayedType" : "List<MasterServerMetadata>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 81,
+          "startColumn" : 56,
+          "endLine" : 81,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/method/doReBalance(java.util.List<org.apache.dolphinscheduler.server.master.cluster.MasterServerMetadata> normalMasterServers)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/method/checkSlotValid()" : {
+      "name" : "checkSlotValid",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/method/checkSlotValid()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 20,
+        "endLine" : 76,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager"
+    },
+    "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/method/getTotalMasterSlots()" : {
+      "name" : "getTotalMasterSlots",
+      "key" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager/method/getTotalMasterSlots()",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 16,
+        "endLine" : 72,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.cluster.MasterSlotManager"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/cluster/MasterSlotManager.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.master.cluster.IMasterSlotReBalancer" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

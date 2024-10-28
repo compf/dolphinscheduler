@@ -1,0 +1,852 @@
+{
+  "name" : "WorkflowTaskRelationServiceTest",
+  "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 73,
+    "startColumn" : 8,
+    "endLine" : 73,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/projectService" : {
+      "name" : "projectService",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/projectService",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl",
+      "displayedType" : "ProjectServiceImpl",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 82,
+        "startColumn" : 32,
+        "endLine" : 82,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/taskDefinitionMapper" : {
+      "name" : "taskDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/taskDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.TaskDefinitionMapper",
+      "displayedType" : "TaskDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 94,
+        "startColumn" : 34,
+        "endLine" : 94,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/workflowTaskRelationLogMapper" : {
+      "name" : "workflowTaskRelationLogMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/workflowTaskRelationLogMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.WorkflowTaskRelationLogMapper",
+      "displayedType" : "WorkflowTaskRelationLogMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 97,
+        "startColumn" : 43,
+        "endLine" : 97,
+        "endColumn" : 72
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/PROJECT_CODE" : {
+      "name" : "PROJECT_CODE",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/PROJECT_CODE",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 102,
+        "startColumn" : 31,
+        "endLine" : 102,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/projectMapper" : {
+      "name" : "projectMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/projectMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.ProjectMapper",
+      "displayedType" : "ProjectMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 27,
+        "endLine" : 79,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/workflowDefinitionMapper" : {
+      "name" : "workflowDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/workflowDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionMapper",
+      "displayedType" : "WorkflowDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 38,
+        "endLine" : 91,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/WORKFLOW_DEFINITION_CODE" : {
+      "name" : "WORKFLOW_DEFINITION_CODE",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/WORKFLOW_DEFINITION_CODE",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 103,
+        "startColumn" : 31,
+        "endLine" : 103,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/user" : {
+      "name" : "user",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/user",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 106,
+        "startColumn" : 20,
+        "endLine" : 106,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/workflowTaskRelationMapper" : {
+      "name" : "workflowTaskRelationMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/workflowTaskRelationMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.WorkflowTaskRelationMapper",
+      "displayedType" : "WorkflowTaskRelationMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 85,
+        "startColumn" : 40,
+        "endLine" : 85,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/exception" : {
+      "name" : "exception",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/exception",
+      "type" : "java.lang.Exception",
+      "displayedType" : "Exception",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 107,
+        "startColumn" : 25,
+        "endLine" : 107,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/workflowTaskRelationService" : {
+      "name" : "workflowTaskRelationService",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/workflowTaskRelationService",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.service.impl.WorkflowTaskRelationServiceImpl",
+      "displayedType" : "WorkflowTaskRelationServiceImpl",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 37,
+        "endLine" : 76,
+        "endColumn" : 64
+      },
+      "modifiers" : [ ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/taskDefinitionLogMapper" : {
+      "name" : "taskDefinitionLogMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/taskDefinitionLogMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.TaskDefinitionLogMapper",
+      "displayedType" : "TaskDefinitionLogMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 37,
+        "endLine" : 88,
+        "endColumn" : 60
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/processService" : {
+      "name" : "processService",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/processService",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.service.process.ProcessService",
+      "displayedType" : "ProcessService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 100,
+        "startColumn" : 28,
+        "endLine" : 100,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/UPSTREAM_TASK_CODE" : {
+      "name" : "UPSTREAM_TASK_CODE",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/UPSTREAM_TASK_CODE",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 104,
+        "startColumn" : 31,
+        "endLine" : 104,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/DOWNSTREAM_TASK_CODE" : {
+      "name" : "DOWNSTREAM_TASK_CODE",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/memberField/DOWNSTREAM_TASK_CODE",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 105,
+        "startColumn" : 31,
+        "endLine" : 105,
+        "endColumn" : 51
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/buildTaskDefinitionLog(long projectCode, long code, int version)" : {
+      "name" : "buildTaskDefinitionLog",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/buildTaskDefinitionLog(long projectCode, long code, int version)",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.TaskDefinitionLog",
+      "displayedType" : "TaskDefinitionLog",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 143,
+        "startColumn" : 31,
+        "endLine" : 143,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/buildTaskDefinitionLog(long projectCode, long code, int version)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 143,
+          "startColumn" : 59,
+          "endLine" : 143,
+          "endColumn" : 70
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/buildTaskDefinitionLog(long projectCode, long code, int version)"
+      }, {
+        "name" : "code",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/buildTaskDefinitionLog(long projectCode, long code, int version)/parameter/code",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 143,
+          "startColumn" : 77,
+          "endLine" : 143,
+          "endColumn" : 81
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/buildTaskDefinitionLog(long projectCode, long code, int version)"
+      }, {
+        "name" : "version",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/buildTaskDefinitionLog(long projectCode, long code, int version)/parameter/version",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 143,
+          "startColumn" : 87,
+          "endLine" : 143,
+          "endColumn" : 94
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/buildTaskDefinitionLog(long projectCode, long code, int version)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testCreateWorkflowTaskRelation()" : {
+      "name" : "testCreateWorkflowTaskRelation",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testCreateWorkflowTaskRelation()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 271,
+        "startColumn" : 17,
+        "endLine" : 271,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testQueryDownstreamRelation()" : {
+      "name" : "testQueryDownstreamRelation",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testQueryDownstreamRelation()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 307,
+        "startColumn" : 17,
+        "endLine" : 307,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getProject(long projectCode)" : {
+      "name" : "getProject",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getProject(long projectCode)",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.Project",
+      "displayedType" : "Project",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 125,
+        "startColumn" : 21,
+        "endLine" : 125,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getProject(long projectCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 125,
+          "startColumn" : 37,
+          "endLine" : 125,
+          "endColumn" : 48
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getProject(long projectCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/before()" : {
+      "name" : "before",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/before()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 110,
+        "startColumn" : 17,
+        "endLine" : 110,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getOneWorkflowTaskRelation()" : {
+      "name" : "getOneWorkflowTaskRelation",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getOneWorkflowTaskRelation()",
+      "type" : "org.apache.dolphinscheduler.api.service.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation>",
+      "displayedType" : "IPage<WorkflowTaskRelation>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 593,
+        "startColumn" : 41,
+        "endLine" : 593,
+        "endColumn" : 67
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testCreateWorkflowTaskRelationV2()" : {
+      "name" : "testCreateWorkflowTaskRelationV2",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testCreateWorkflowTaskRelationV2()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 526,
+        "startColumn" : 17,
+        "endLine" : 526,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testDeleteEdge()" : {
+      "name" : "testDeleteEdge",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testDeleteEdge()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 495,
+        "startColumn" : 17,
+        "endLine" : 495,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getWorkflowTaskUpstreamRelationList(long projectCode, long taskCode)" : {
+      "name" : "getWorkflowTaskUpstreamRelationList",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getWorkflowTaskUpstreamRelationList(long projectCode, long taskCode)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation>",
+      "displayedType" : "List<WorkflowTaskRelation>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 201,
+        "startColumn" : 40,
+        "endLine" : 201,
+        "endColumn" : 75
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getWorkflowTaskUpstreamRelationList(long projectCode, long taskCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 201,
+          "startColumn" : 81,
+          "endLine" : 201,
+          "endColumn" : 92
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getWorkflowTaskUpstreamRelationList(long projectCode, long taskCode)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getWorkflowTaskUpstreamRelationList(long projectCode, long taskCode)/parameter/taskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 201,
+          "startColumn" : 99,
+          "endLine" : 201,
+          "endColumn" : 107
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getWorkflowTaskUpstreamRelationList(long projectCode, long taskCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testDeleteTaskWorkflowRelationV2()" : {
+      "name" : "testDeleteTaskWorkflowRelationV2",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testDeleteTaskWorkflowRelationV2()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 572,
+        "startColumn" : 17,
+        "endLine" : 572,
+        "endColumn" : 49
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/buildTaskDefinition(long projectCode, long code, int version)" : {
+      "name" : "buildTaskDefinition",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/buildTaskDefinition(long projectCode, long code, int version)",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.TaskDefinition",
+      "displayedType" : "TaskDefinition",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 172,
+        "startColumn" : 28,
+        "endLine" : 172,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/buildTaskDefinition(long projectCode, long code, int version)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 172,
+          "startColumn" : 53,
+          "endLine" : 172,
+          "endColumn" : 64
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/buildTaskDefinition(long projectCode, long code, int version)"
+      }, {
+        "name" : "code",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/buildTaskDefinition(long projectCode, long code, int version)/parameter/code",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 172,
+          "startColumn" : 71,
+          "endLine" : 172,
+          "endColumn" : 75
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/buildTaskDefinition(long projectCode, long code, int version)"
+      }, {
+        "name" : "version",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/buildTaskDefinition(long projectCode, long code, int version)/parameter/version",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 172,
+          "startColumn" : 81,
+          "endLine" : 172,
+          "endColumn" : 88
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/buildTaskDefinition(long projectCode, long code, int version)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getWorkflowDefinition()" : {
+      "name" : "getWorkflowDefinition",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getWorkflowDefinition()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition",
+      "displayedType" : "WorkflowDefinition",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 250,
+        "startColumn" : 32,
+        "endLine" : 250,
+        "endColumn" : 53
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testDeleteTaskWorkflowRelation()" : {
+      "name" : "testDeleteTaskWorkflowRelation",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testDeleteTaskWorkflowRelation()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 455,
+        "startColumn" : 17,
+        "endLine" : 455,
+        "endColumn" : 47
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getMultiWorkflowTaskRelations()" : {
+      "name" : "getMultiWorkflowTaskRelations",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getMultiWorkflowTaskRelations()",
+      "type" : "org.apache.dolphinscheduler.api.service.com.baomidou.mybatisplus.core.metadata.IPage<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation>",
+      "displayedType" : "IPage<WorkflowTaskRelation>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 603,
+        "startColumn" : 41,
+        "endLine" : 603,
+        "endColumn" : 70
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testQueryUpstreamRelation()" : {
+      "name" : "testQueryUpstreamRelation",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testQueryUpstreamRelation()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 351,
+        "startColumn" : 17,
+        "endLine" : 351,
+        "endColumn" : 42
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getTaskDefinition()" : {
+      "name" : "getTaskDefinition",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getTaskDefinition()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.TaskDefinition",
+      "displayedType" : "TaskDefinition",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 261,
+        "startColumn" : 28,
+        "endLine" : 261,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/putMsg(java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.enums.Status status, java.lang.Object[] statusParams)" : {
+      "name" : "putMsg",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/putMsg(java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.enums.Status status, java.lang.Object[] statusParams)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 134,
+        "startColumn" : 18,
+        "endLine" : 134,
+        "endColumn" : 24
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "result",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/putMsg(java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.enums.Status status, java.lang.Object[] statusParams)/parameter/result",
+        "type" : "java.util.Map<java.lang.String, java.lang.Object>",
+        "displayedType" : "Map<String, Object>",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 134,
+          "startColumn" : 45,
+          "endLine" : 134,
+          "endColumn" : 51
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/putMsg(java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.enums.Status status, java.lang.Object[] statusParams)"
+      }, {
+        "name" : "status",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/putMsg(java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.enums.Status status, java.lang.Object[] statusParams)/parameter/status",
+        "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.enums.Status",
+        "displayedType" : "Status",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 134,
+          "startColumn" : 60,
+          "endLine" : 134,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/putMsg(java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.enums.Status status, java.lang.Object[] statusParams)"
+      }, {
+        "name" : "statusParams",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/putMsg(java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.enums.Status status, java.lang.Object[] statusParams)/parameter/statusParams",
+        "type" : "java.lang.Object[]",
+        "displayedType" : "Object[]",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 134,
+          "startColumn" : 78,
+          "endLine" : 134,
+          "endColumn" : 90
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/putMsg(java.util.Map<java.lang.String, java.lang.Object> result, org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.enums.Status status, java.lang.Object[] statusParams)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testDeleteUpstreamRelation()" : {
+      "name" : "testDeleteUpstreamRelation",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testDeleteUpstreamRelation()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 425,
+        "startColumn" : 17,
+        "endLine" : 425,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testDeleteDownstreamRelation()" : {
+      "name" : "testDeleteDownstreamRelation",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/testDeleteDownstreamRelation()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 394,
+        "startColumn" : 17,
+        "endLine" : 394,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getWorkflowTaskDownstreamRelationList(long projectCode, long taskCode)" : {
+      "name" : "getWorkflowTaskDownstreamRelationList",
+      "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getWorkflowTaskDownstreamRelationList(long projectCode, long taskCode)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowTaskRelation>",
+      "displayedType" : "List<WorkflowTaskRelation>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 227,
+        "startColumn" : 40,
+        "endLine" : 227,
+        "endColumn" : 77
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getWorkflowTaskDownstreamRelationList(long projectCode, long taskCode)/parameter/projectCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 227,
+          "startColumn" : 83,
+          "endLine" : 227,
+          "endColumn" : 94
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getWorkflowTaskDownstreamRelationList(long projectCode, long taskCode)"
+      }, {
+        "name" : "taskCode",
+        "key" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getWorkflowTaskDownstreamRelationList(long projectCode, long taskCode)/parameter/taskCode",
+        "type" : "long",
+        "displayedType" : "long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 227,
+          "startColumn" : 101,
+          "endLine" : 227,
+          "endColumn" : 109
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest/method/getWorkflowTaskDownstreamRelationList(long projectCode, long taskCode)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.WorkflowTaskRelationServiceTest"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/test/java/org/apache/dolphinscheduler/api/service/WorkflowTaskRelationServiceTest.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

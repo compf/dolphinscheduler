@@ -1,0 +1,199 @@
+{
+  "name" : "WorkflowEventBusFireWorkers",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 35,
+    "startColumn" : 8,
+    "endLine" : 35,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/memberField/eventHandlers" : {
+      "name" : "eventHandlers",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/memberField/eventHandlers",
+      "type" : "java.util.List<org.apache.dolphinscheduler.server.master.engine.ILifecycleEventHandler>",
+      "displayedType" : "List<ILifecycleEventHandler>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 38,
+        "startColumn" : 42,
+        "endLine" : 38,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/memberField/workflowEventBusFireThreadPool" : {
+      "name" : "workflowEventBusFireThreadPool",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/memberField/workflowEventBusFireThreadPool",
+      "type" : "java.util.concurrent.ScheduledExecutorService",
+      "displayedType" : "ScheduledExecutorService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 38,
+        "endLine" : 47,
+        "endColumn" : 68
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/memberField/DEFAULT_FIRE_INTERVAL" : {
+      "name" : "DEFAULT_FIRE_INTERVAL",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/memberField/DEFAULT_FIRE_INTERVAL",
+      "type" : "long",
+      "displayedType" : "long",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 43,
+        "startColumn" : 31,
+        "endLine" : 43,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/memberField/workflowEventBusFireWorkers" : {
+      "name" : "workflowEventBusFireWorkers",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/memberField/workflowEventBusFireWorkers",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorker[]",
+      "displayedType" : "WorkflowEventBusFireWorker[]",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 45,
+        "startColumn" : 42,
+        "endLine" : 45,
+        "endColumn" : 69
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/memberField/masterConfig" : {
+      "name" : "masterConfig",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/memberField/masterConfig",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.org.apache.dolphinscheduler.server.master.config.MasterConfig",
+      "displayedType" : "MasterConfig",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 41,
+        "startColumn" : 26,
+        "endLine" : 41,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/method/getWorker(java.lang.Integer workerSlot)" : {
+      "name" : "getWorker",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/method/getWorker(java.lang.Integer workerSlot)",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorker",
+      "displayedType" : "WorkflowEventBusFireWorker",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 39,
+        "endLine" : 72,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workerSlot",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/method/getWorker(java.lang.Integer workerSlot)/parameter/workerSlot",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 72,
+          "startColumn" : 57,
+          "endLine" : 72,
+          "endColumn" : 67
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/method/getWorker(java.lang.Integer workerSlot)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/method/start()" : {
+      "name" : "start",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/method/start()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 49,
+        "startColumn" : 17,
+        "endLine" : 49,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/method/getWorkerSize()" : {
+      "name" : "getWorkerSize",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/method/getWorkerSize()",
+      "type" : "int",
+      "displayedType" : "int",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 16,
+        "endLine" : 76,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 17,
+        "endLine" : 81,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.WorkflowEventBusFireWorkers"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/WorkflowEventBusFireWorkers.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "java.lang.AutoCloseable" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

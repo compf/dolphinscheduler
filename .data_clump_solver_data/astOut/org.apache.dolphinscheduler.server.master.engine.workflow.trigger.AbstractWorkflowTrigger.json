@@ -1,0 +1,323 @@
+{
+  "name" : "AbstractWorkflowTrigger",
+  "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 36,
+    "startColumn" : 17,
+    "endLine" : 36,
+    "endColumn" : 22
+  },
+  "modifiers" : [ "PUBLIC", "ABSTRACT" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/memberField/workflowInstanceDao" : {
+      "name" : "workflowInstanceDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/memberField/workflowInstanceDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.repository.WorkflowInstanceDao",
+      "displayedType" : "WorkflowInstanceDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 44,
+        "startColumn" : 33,
+        "endLine" : 44,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/memberField/commandDao" : {
+      "name" : "commandDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/memberField/commandDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.repository.CommandDao",
+      "displayedType" : "CommandDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 50,
+        "startColumn" : 24,
+        "endLine" : 50,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/memberField/userDao" : {
+      "name" : "userDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/memberField/userDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.repository.UserDao",
+      "displayedType" : "UserDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 47,
+        "startColumn" : 21,
+        "endLine" : 47,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/memberField/workflowDefinitionDao" : {
+      "name" : "workflowDefinitionDao",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/memberField/workflowDefinitionDao",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.repository.WorkflowDefinitionLogDao",
+      "displayedType" : "WorkflowDefinitionLogDao",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 41,
+        "startColumn" : 38,
+        "endLine" : 41,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/triggerWorkflow(TriggerRequest triggerRequest)" : {
+      "name" : "triggerWorkflow",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/triggerWorkflow(TriggerRequest triggerRequest)",
+      "type" : "TriggerResponse",
+      "displayedType" : "TriggerResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 28,
+        "endLine" : 54,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : true,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "triggerRequest",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/triggerWorkflow(TriggerRequest triggerRequest)/parameter/triggerRequest",
+        "type" : "TriggerRequest",
+        "displayedType" : "TriggerRequest",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 54,
+          "startColumn" : 65,
+          "endLine" : 54,
+          "endColumn" : 79
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/triggerWorkflow(TriggerRequest triggerRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/onTriggerSuccess(org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)" : {
+      "name" : "onTriggerSuccess",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/onTriggerSuccess(org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)",
+      "type" : "TriggerResponse",
+      "displayedType" : "TriggerResponse",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 69,
+        "startColumn" : 40,
+        "endLine" : 69,
+        "endColumn" : 56
+      },
+      "modifiers" : [ "PROTECTED", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/onTriggerSuccess(org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 69,
+          "startColumn" : 80,
+          "endLine" : 69,
+          "endColumn" : 96
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/onTriggerSuccess(org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/getProcessDefinition(java.lang.Long workflowCode, java.lang.Integer workflowVersion)" : {
+      "name" : "getProcessDefinition",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/getProcessDefinition(java.lang.Long workflowCode, java.lang.Integer workflowVersion)",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition",
+      "displayedType" : "WorkflowDefinition",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 71,
+        "startColumn" : 34,
+        "endLine" : 71,
+        "endColumn" : 54
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "workflowCode",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/getProcessDefinition(java.lang.Long workflowCode, java.lang.Integer workflowVersion)/parameter/workflowCode",
+        "type" : "java.lang.Long",
+        "displayedType" : "Long",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 71,
+          "startColumn" : 66,
+          "endLine" : 71,
+          "endColumn" : 78
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/getProcessDefinition(java.lang.Long workflowCode, java.lang.Integer workflowVersion)"
+      }, {
+        "name" : "workflowVersion",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/getProcessDefinition(java.lang.Long workflowCode, java.lang.Integer workflowVersion)/parameter/workflowVersion",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 71,
+          "startColumn" : 94,
+          "endLine" : 71,
+          "endColumn" : 109
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/getProcessDefinition(java.lang.Long workflowCode, java.lang.Integer workflowVersion)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/getExecutorUser(java.lang.Integer userId)" : {
+      "name" : "getExecutorUser",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/getExecutorUser(java.lang.Integer userId)",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 20,
+        "endLine" : 81,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PROTECTED" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "userId",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/getExecutorUser(java.lang.Integer userId)/parameter/userId",
+        "type" : "java.lang.Integer",
+        "displayedType" : "Integer",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 81,
+          "startColumn" : 50,
+          "endLine" : 81,
+          "endColumn" : 56
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/getExecutorUser(java.lang.Integer userId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/constructTriggerCommand(TriggerRequest triggerRequest, org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)" : {
+      "name" : "constructTriggerCommand",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/constructTriggerCommand(TriggerRequest triggerRequest, org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.entity.Command",
+      "displayedType" : "Command",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 66,
+        "startColumn" : 32,
+        "endLine" : 66,
+        "endColumn" : 55
+      },
+      "modifiers" : [ "PROTECTED", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "triggerRequest",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/constructTriggerCommand(TriggerRequest triggerRequest, org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)/parameter/triggerRequest",
+        "type" : "TriggerRequest",
+        "displayedType" : "TriggerRequest",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 66,
+          "startColumn" : 77,
+          "endLine" : 66,
+          "endColumn" : 91
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/constructTriggerCommand(TriggerRequest triggerRequest, org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)"
+      }, {
+        "name" : "workflowInstance",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/constructTriggerCommand(TriggerRequest triggerRequest, org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)/parameter/workflowInstance",
+        "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+        "displayedType" : "WorkflowInstance",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 67,
+          "startColumn" : 79,
+          "endLine" : 67,
+          "endColumn" : 95
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/constructTriggerCommand(TriggerRequest triggerRequest, org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.entity.WorkflowInstance workflowInstance)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger"
+    },
+    "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/constructWorkflowInstance(TriggerRequest triggerRequest)" : {
+      "name" : "constructWorkflowInstance",
+      "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/constructWorkflowInstance(TriggerRequest triggerRequest)",
+      "type" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.org.apache.dolphinscheduler.dao.entity.WorkflowInstance",
+      "displayedType" : "WorkflowInstance",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 64,
+        "startColumn" : 41,
+        "endLine" : 64,
+        "endColumn" : 66
+      },
+      "modifiers" : [ "PROTECTED", "ABSTRACT" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "triggerRequest",
+        "key" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/constructWorkflowInstance(TriggerRequest triggerRequest)/parameter/triggerRequest",
+        "type" : "TriggerRequest",
+        "displayedType" : "TriggerRequest",
+        "hasTypeVariable" : true,
+        "position" : {
+          "startLine" : 64,
+          "startColumn" : 88,
+          "endLine" : 64,
+          "endColumn" : 102
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger/method/constructWorkflowInstance(TriggerRequest triggerRequest)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.AbstractWorkflowTrigger"
+    }
+  },
+  "file_path" : "dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/workflow/trigger/AbstractWorkflowTrigger.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ "org.apache.dolphinscheduler.server.master.engine.workflow.trigger.IWorkflowTrigger<TriggerRequest, TriggerResponse>", "TriggerRequest", "TriggerResponse" ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

@@ -1,0 +1,660 @@
+{
+  "name" : "ProjectServiceTest",
+  "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 73,
+    "startColumn" : 8,
+    "endLine" : 73,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/projectLogger" : {
+      "name" : "projectLogger",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/projectLogger",
+      "type" : "org.slf4j.Logger",
+      "displayedType" : "Logger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 33,
+        "endLine" : 77,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/userMapper" : {
+      "name" : "userMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/userMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.UserMapper",
+      "displayedType" : "UserMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 91,
+        "startColumn" : 24,
+        "endLine" : 91,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/resourcePermissionCheckService" : {
+      "name" : "resourcePermissionCheckService",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/resourcePermissionCheckService",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.permission.ResourcePermissionCheckService",
+      "displayedType" : "ResourcePermissionCheckService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 94,
+        "startColumn" : 44,
+        "endLine" : 94,
+        "endColumn" : 74
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/projectName" : {
+      "name" : "projectName",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/projectName",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 99,
+        "startColumn" : 20,
+        "endLine" : 99,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/userName" : {
+      "name" : "userName",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/userName",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 101,
+        "startColumn" : 20,
+        "endLine" : 101,
+        "endColumn" : 28
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/taskGroupService" : {
+      "name" : "taskGroupService",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/taskGroupService",
+      "type" : "org.apache.dolphinscheduler.api.service.TaskGroupService",
+      "displayedType" : "TaskGroupService",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 97,
+        "startColumn" : 30,
+        "endLine" : 97,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/logger" : {
+      "name" : "logger",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/logger",
+      "type" : "org.slf4j.Logger",
+      "displayedType" : "Logger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 75,
+        "startColumn" : 33,
+        "endLine" : 75,
+        "endColumn" : 39
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/projectUserMapper" : {
+      "name" : "projectUserMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/projectUserMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.ProjectUserMapper",
+      "displayedType" : "ProjectUserMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 85,
+        "startColumn" : 31,
+        "endLine" : 85,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/projectService" : {
+      "name" : "projectService",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/projectService",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.api.service.impl.ProjectServiceImpl",
+      "displayedType" : "ProjectServiceImpl",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 79,
+        "startColumn" : 32,
+        "endLine" : 79,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/projectMapper" : {
+      "name" : "projectMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/projectMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.ProjectMapper",
+      "displayedType" : "ProjectMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 82,
+        "startColumn" : 27,
+        "endLine" : 82,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/workflowDefinitionMapper" : {
+      "name" : "workflowDefinitionMapper",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/workflowDefinitionMapper",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.mapper.WorkflowDefinitionMapper",
+      "displayedType" : "WorkflowDefinitionMapper",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 88,
+        "startColumn" : 38,
+        "endLine" : 88,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/baseServiceLogger" : {
+      "name" : "baseServiceLogger",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/memberField/baseServiceLogger",
+      "type" : "org.slf4j.Logger",
+      "displayedType" : "Logger",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 76,
+        "startColumn" : 33,
+        "endLine" : 76,
+        "endColumn" : 50
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getUserList()" : {
+      "name" : "getUserList",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getUserList()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.User>",
+      "displayedType" : "List<User>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 571,
+        "startColumn" : 24,
+        "endLine" : 571,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testQueryAuthorizedProject()" : {
+      "name" : "testQueryAuthorizedProject",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testQueryAuthorizedProject()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 326,
+        "startColumn" : 17,
+        "endLine" : 326,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testQueryAllProjectList()" : {
+      "name" : "testQueryAllProjectList",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testQueryAllProjectList()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 429,
+        "startColumn" : 17,
+        "endLine" : 429,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testQueryProjectWithAuthorizedLevel()" : {
+      "name" : "testQueryProjectWithAuthorizedLevel",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testQueryProjectWithAuthorizedLevel()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 452,
+        "startColumn" : 17,
+        "endLine" : 452,
+        "endColumn" : 52
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testCreateProject()" : {
+      "name" : "testCreateProject",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testCreateProject()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 104,
+        "startColumn" : 17,
+        "endLine" : 104,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getList()" : {
+      "name" : "getList",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getList()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.Project>",
+      "displayedType" : "List<Project>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 537,
+        "startColumn" : 27,
+        "endLine" : 537,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testUpdate()" : {
+      "name" : "testUpdate",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testUpdate()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 285,
+        "startColumn" : 17,
+        "endLine" : 285,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testQueryProjectCreatedAndAuthorizedByUser()" : {
+      "name" : "testQueryProjectCreatedAndAuthorizedByUser",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testQueryProjectCreatedAndAuthorizedByUser()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 402,
+        "startColumn" : 17,
+        "endLine" : 402,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getProject(int projectId)" : {
+      "name" : "getProject",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getProject(int projectId)",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.Project",
+      "displayedType" : "Project",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 528,
+        "startColumn" : 21,
+        "endLine" : 528,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "projectId",
+        "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getProject(int projectId)/parameter/projectId",
+        "type" : "int",
+        "displayedType" : "int",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 528,
+          "startColumn" : 36,
+          "endLine" : 528,
+          "endColumn" : 45
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getProject(int projectId)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testCheckProjectAndAuth()" : {
+      "name" : "testCheckProjectAndAuth",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testCheckProjectAndAuth()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 131,
+        "startColumn" : 17,
+        "endLine" : 131,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testQueryAuthorizedUser()" : {
+      "name" : "testQueryAuthorizedUser",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testQueryAuthorizedUser()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 347,
+        "startColumn" : 17,
+        "endLine" : 347,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/queryAllProjectListForDependent()" : {
+      "name" : "queryAllProjectListForDependent",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/queryAllProjectListForDependent()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 441,
+        "startColumn" : 17,
+        "endLine" : 441,
+        "endColumn" : 48
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getProject()" : {
+      "name" : "getProject",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getProject()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.Project",
+      "displayedType" : "Project",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 519,
+        "startColumn" : 21,
+        "endLine" : 519,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getGeneralUser()" : {
+      "name" : "getGeneralUser",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getGeneralUser()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 558,
+        "startColumn" : 18,
+        "endLine" : 558,
+        "endColumn" : 32
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testHasProjectAndPerm()" : {
+      "name" : "testHasProjectAndPerm",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testHasProjectAndPerm()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 161,
+        "startColumn" : 17,
+        "endLine" : 161,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testHasProjectAndWritePerm()" : {
+      "name" : "testHasProjectAndWritePerm",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testHasProjectAndWritePerm()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 216,
+        "startColumn" : 17,
+        "endLine" : 216,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testQueryCreatedProject()" : {
+      "name" : "testQueryCreatedProject",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testQueryCreatedProject()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 386,
+        "startColumn" : 17,
+        "endLine" : 386,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getProcessDefinitions()" : {
+      "name" : "getProcessDefinitions",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getProcessDefinitions()",
+      "type" : "java.util.List<org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.WorkflowDefinition>",
+      "displayedType" : "List<WorkflowDefinition>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 577,
+        "startColumn" : 38,
+        "endLine" : 577,
+        "endColumn" : 59
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getDesc()" : {
+      "name" : "getDesc",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getDesc()",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 585,
+        "startColumn" : 20,
+        "endLine" : 585,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testDeleteProject()" : {
+      "name" : "testDeleteProject",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testDeleteProject()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 245,
+        "startColumn" : 17,
+        "endLine" : 245,
+        "endColumn" : 34
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testQueryProjectWithAuthorizedLevelListPaging()" : {
+      "name" : "testQueryProjectWithAuthorizedLevelListPaging",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testQueryProjectWithAuthorizedLevelListPaging()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 189,
+        "startColumn" : 17,
+        "endLine" : 189,
+        "endColumn" : 62
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getLoginUser()" : {
+      "name" : "getLoginUser",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/getLoginUser()",
+      "type" : "org.apache.dolphinscheduler.api.service.org.apache.dolphinscheduler.dao.entity.User",
+      "displayedType" : "User",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 545,
+        "startColumn" : 18,
+        "endLine" : 545,
+        "endColumn" : 30
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    },
+    "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testQueryUnauthorizedProject()" : {
+      "name" : "testQueryUnauthorizedProject",
+      "key" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest/method/testQueryUnauthorizedProject()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 486,
+        "startColumn" : 17,
+        "endLine" : 486,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.api.service.ProjectServiceTest"
+    }
+  },
+  "file_path" : "dolphinscheduler-api/src/test/java/org/apache/dolphinscheduler/api/service/ProjectServiceTest.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}

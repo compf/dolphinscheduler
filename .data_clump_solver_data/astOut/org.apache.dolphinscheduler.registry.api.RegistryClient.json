@@ -1,0 +1,738 @@
+{
+  "name" : "RegistryClient",
+  "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient",
+  "type" : "class",
+  "displayedType" : null,
+  "hasTypeVariable" : false,
+  "position" : {
+    "startLine" : 52,
+    "startColumn" : 8,
+    "endLine" : 52,
+    "endColumn" : 13
+  },
+  "modifiers" : [ "PUBLIC" ],
+  "fields" : {
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/memberField/registry" : {
+      "name" : "registry",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/memberField/registry",
+      "type" : "org.apache.dolphinscheduler.registry.api.Registry",
+      "displayedType" : "Registry",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 57,
+        "startColumn" : 28,
+        "endLine" : 57,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PRIVATE", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/memberField/EMPTY" : {
+      "name" : "EMPTY",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/memberField/EMPTY",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 54,
+        "startColumn" : 33,
+        "endLine" : 54,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PRIVATE", "STATIC", "FINAL" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/memberField/stoppable" : {
+      "name" : "stoppable",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/memberField/stoppable",
+      "type" : "org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.common.IStoppable",
+      "displayedType" : "IStoppable",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 55,
+        "startColumn" : 24,
+        "endLine" : 55,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "ignore" : false,
+      "memberFieldKey" : null,
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    }
+  },
+  "methods" : {
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/persistEphemeral(java.lang.String key, java.lang.String value)" : {
+      "name" : "persistEphemeral",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/persistEphemeral(java.lang.String key, java.lang.String value)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 167,
+        "startColumn" : 17,
+        "endLine" : 167,
+        "endColumn" : 33
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/persistEphemeral(java.lang.String key, java.lang.String value)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 167,
+          "startColumn" : 41,
+          "endLine" : 167,
+          "endColumn" : 44
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/persistEphemeral(java.lang.String key, java.lang.String value)"
+      }, {
+        "name" : "value",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/persistEphemeral(java.lang.String key, java.lang.String value)/parameter/value",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 167,
+          "startColumn" : 53,
+          "endLine" : 167,
+          "endColumn" : 58
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/persistEphemeral(java.lang.String key, java.lang.String value)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getRandomServer(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType registryNodeType)" : {
+      "name" : "getRandomServer",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getRandomServer(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType registryNodeType)",
+      "type" : "java.util.Optional<org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.common.model.Server>",
+      "displayedType" : "Optional<Server>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 131,
+        "startColumn" : 29,
+        "endLine" : 131,
+        "endColumn" : 44
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "registryNodeType",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getRandomServer(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType registryNodeType)/parameter/registryNodeType",
+        "type" : "org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType",
+        "displayedType" : "RegistryNodeType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 131,
+          "startColumn" : 68,
+          "endLine" : 131,
+          "endColumn" : 84
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getRandomServer(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType registryNodeType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getServerNodes(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)" : {
+      "name" : "getServerNodes",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getServerNodes(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)",
+      "type" : "java.util.Collection<java.lang.String>",
+      "displayedType" : "Collection<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 222,
+        "startColumn" : 32,
+        "endLine" : 222,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PRIVATE" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "nodeType",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getServerNodes(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)/parameter/nodeType",
+        "type" : "org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType",
+        "displayedType" : "RegistryNodeType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 222,
+          "startColumn" : 64,
+          "endLine" : 222,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getServerNodes(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/addConnectionStateListener(org.apache.dolphinscheduler.registry.api.ConnectionListener listener)" : {
+      "name" : "addConnectionStateListener",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/addConnectionStateListener(org.apache.dolphinscheduler.registry.api.ConnectionListener listener)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 183,
+        "startColumn" : 17,
+        "endLine" : 183,
+        "endColumn" : 43
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "listener",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/addConnectionStateListener(org.apache.dolphinscheduler.registry.api.ConnectionListener listener)/parameter/listener",
+        "type" : "org.apache.dolphinscheduler.registry.api.ConnectionListener",
+        "displayedType" : "ConnectionListener",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 183,
+          "startColumn" : 63,
+          "endLine" : 183,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/addConnectionStateListener(org.apache.dolphinscheduler.registry.api.ConnectionListener listener)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/releaseLock(java.lang.String key)" : {
+      "name" : "releaseLock",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/releaseLock(java.lang.String key)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 198,
+        "startColumn" : 20,
+        "endLine" : 198,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/releaseLock(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 198,
+          "startColumn" : 39,
+          "endLine" : 198,
+          "endColumn" : 42
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/releaseLock(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getServerNodeSet(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)" : {
+      "name" : "getServerNodeSet",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getServerNodeSet(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)",
+      "type" : "java.util.Set<java.lang.String>",
+      "displayedType" : "Set<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 214,
+        "startColumn" : 24,
+        "endLine" : 214,
+        "endColumn" : 40
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "nodeType",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getServerNodeSet(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)/parameter/nodeType",
+        "type" : "org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType",
+        "displayedType" : "RegistryNodeType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 214,
+          "startColumn" : 58,
+          "endLine" : 214,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getServerNodeSet(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getChildrenKeys(java.lang.String key)" : {
+      "name" : "getChildrenKeys",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getChildrenKeys(java.lang.String key)",
+      "type" : "java.util.Collection<java.lang.String>",
+      "displayedType" : "Collection<String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 210,
+        "startColumn" : 31,
+        "endLine" : 210,
+        "endColumn" : 46
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getChildrenKeys(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 210,
+          "startColumn" : 60,
+          "endLine" : 210,
+          "endColumn" : 63
+        },
+        "modifiers" : [ "FINAL" ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getChildrenKeys(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.registry.api.SubscribeListener listener)" : {
+      "name" : "subscribe",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.registry.api.SubscribeListener listener)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 179,
+        "startColumn" : 17,
+        "endLine" : 179,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "path",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.registry.api.SubscribeListener listener)/parameter/path",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 179,
+          "startColumn" : 34,
+          "endLine" : 179,
+          "endColumn" : 38
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.registry.api.SubscribeListener listener)"
+      }, {
+        "name" : "listener",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.registry.api.SubscribeListener listener)/parameter/listener",
+        "type" : "org.apache.dolphinscheduler.registry.api.SubscribeListener",
+        "displayedType" : "SubscribeListener",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 179,
+          "startColumn" : 58,
+          "endLine" : 179,
+          "endColumn" : 66
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/subscribe(java.lang.String path, org.apache.dolphinscheduler.registry.api.SubscribeListener listener)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/remove(java.lang.String key)" : {
+      "name" : "remove",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/remove(java.lang.String key)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 171,
+        "startColumn" : 17,
+        "endLine" : 171,
+        "endColumn" : 23
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/remove(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 171,
+          "startColumn" : 31,
+          "endLine" : 171,
+          "endColumn" : 34
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/remove(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/isConnected()" : {
+      "name" : "isConnected",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/isConnected()",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 72,
+        "startColumn" : 20,
+        "endLine" : 72,
+        "endColumn" : 31
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/checkNodeExists(java.lang.String host, org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)" : {
+      "name" : "checkNodeExists",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/checkNodeExists(java.lang.String host, org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 157,
+        "startColumn" : 20,
+        "endLine" : 157,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "host",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/checkNodeExists(java.lang.String host, org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)/parameter/host",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 157,
+          "startColumn" : 43,
+          "endLine" : 157,
+          "endColumn" : 47
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/checkNodeExists(java.lang.String host, org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)"
+      }, {
+        "name" : "nodeType",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/checkNodeExists(java.lang.String host, org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)/parameter/nodeType",
+        "type" : "org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType",
+        "displayedType" : "RegistryNodeType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 157,
+          "startColumn" : 66,
+          "endLine" : 157,
+          "endColumn" : 74
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/checkNodeExists(java.lang.String host, org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/connectUntilTimeout(java.time.Duration duration)" : {
+      "name" : "connectUntilTimeout",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/connectUntilTimeout(java.time.Duration duration)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 77,
+        "startColumn" : 17,
+        "endLine" : 77,
+        "endColumn" : 36
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "duration",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/connectUntilTimeout(java.time.Duration duration)/parameter/duration",
+        "type" : "java.time.Duration",
+        "displayedType" : "Duration",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 77,
+          "startColumn" : 55,
+          "endLine" : 77,
+          "endColumn" : 63
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/connectUntilTimeout(java.time.Duration duration)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/get(java.lang.String key)" : {
+      "name" : "get",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/get(java.lang.String key)",
+      "type" : "java.lang.String",
+      "displayedType" : "String",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 175,
+        "startColumn" : 19,
+        "endLine" : 175,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/get(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 175,
+          "startColumn" : 30,
+          "endLine" : 175,
+          "endColumn" : 33
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/get(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/exists(java.lang.String key)" : {
+      "name" : "exists",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/exists(java.lang.String key)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 187,
+        "startColumn" : 20,
+        "endLine" : 187,
+        "endColumn" : 26
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/exists(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 187,
+          "startColumn" : 34,
+          "endLine" : 187,
+          "endColumn" : 37
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/exists(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getLock(java.lang.String key)" : {
+      "name" : "getLock",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getLock(java.lang.String key)",
+      "type" : "boolean",
+      "displayedType" : "boolean",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 191,
+        "startColumn" : 20,
+        "endLine" : 191,
+        "endColumn" : 27
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "key",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getLock(java.lang.String key)/parameter/key",
+        "type" : "java.lang.String",
+        "displayedType" : "String",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 191,
+          "startColumn" : 35,
+          "endLine" : 191,
+          "endColumn" : 38
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getLock(java.lang.String key)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getServerMaps(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)" : {
+      "name" : "getServerMaps",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getServerMaps(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)",
+      "type" : "java.util.Map<java.lang.String, java.lang.String>",
+      "displayedType" : "Map<String, String>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 143,
+        "startColumn" : 32,
+        "endLine" : 143,
+        "endColumn" : 45
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "nodeType",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getServerMaps(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)/parameter/nodeType",
+        "type" : "org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType",
+        "displayedType" : "RegistryNodeType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 143,
+          "startColumn" : 63,
+          "endLine" : 143,
+          "endColumn" : 71
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getServerMaps(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType nodeType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/setStoppable(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.common.IStoppable stoppable)" : {
+      "name" : "setStoppable",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/setStoppable(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.common.IStoppable stoppable)",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 202,
+        "startColumn" : 17,
+        "endLine" : 202,
+        "endColumn" : 29
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "stoppable",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/setStoppable(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.common.IStoppable stoppable)/parameter/stoppable",
+        "type" : "org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.common.IStoppable",
+        "displayedType" : "IStoppable",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 202,
+          "startColumn" : 41,
+          "endLine" : 202,
+          "endColumn" : 50
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/setStoppable(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.common.IStoppable stoppable)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getServerList(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType registryNodeType)" : {
+      "name" : "getServerList",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getServerList(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType registryNodeType)",
+      "type" : "java.util.List<org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.common.model.Server>",
+      "displayedType" : "List<Server>",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 81,
+        "startColumn" : 25,
+        "endLine" : 81,
+        "endColumn" : 38
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ {
+        "name" : "registryNodeType",
+        "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getServerList(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType registryNodeType)/parameter/registryNodeType",
+        "type" : "org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType",
+        "displayedType" : "RegistryNodeType",
+        "hasTypeVariable" : false,
+        "position" : {
+          "startLine" : 81,
+          "startColumn" : 56,
+          "endLine" : 81,
+          "endColumn" : 72
+        },
+        "modifiers" : [ ],
+        "ignore" : false,
+        "methodKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getServerList(org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.registry.api.enums.RegistryNodeType registryNodeType)"
+      } ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/close()" : {
+      "name" : "close",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/close()",
+      "type" : "void",
+      "displayedType" : "void",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 163,
+        "startColumn" : 17,
+        "endLine" : 163,
+        "endColumn" : 22
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    },
+    "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getStoppable()" : {
+      "name" : "getStoppable",
+      "key" : "org.apache.dolphinscheduler.registry.api.RegistryClient/method/getStoppable()",
+      "type" : "org.apache.dolphinscheduler.registry.api.org.apache.dolphinscheduler.common.IStoppable",
+      "displayedType" : "IStoppable",
+      "hasTypeVariable" : false,
+      "position" : {
+        "startLine" : 206,
+        "startColumn" : 23,
+        "endLine" : 206,
+        "endColumn" : 35
+      },
+      "modifiers" : [ "PUBLIC" ],
+      "overrideAnnotation" : false,
+      "returnType" : null,
+      "parameters" : [ ],
+      "classOrInterfaceKey" : "org.apache.dolphinscheduler.registry.api.RegistryClient"
+    }
+  },
+  "file_path" : "dolphinscheduler-registry/dolphinscheduler-registry-api/src/main/java/org/apache/dolphinscheduler/registry/api/RegistryClient.java",
+  "imports" : [ ],
+  "anonymous" : false,
+  "auxclass" : false,
+  "implements_" : [ ],
+  "extends_" : [ ],
+  "definedInClassOrInterfaceTypeKey" : null,
+  "innerDefinedClasses" : { },
+  "innerDefinedInterfaces" : { }
+}
