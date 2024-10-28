@@ -77,7 +77,7 @@ public class ProjectParameterServiceTest {
         // PERMISSION DENIED
         when(projectService.hasProjectAndWritePerm(Mockito.any(), Mockito.any(), Mockito.any(Result.class)))
                 .thenReturn(false);
-        Result result = projectParameterService.createProjectParameter(loginUser, projectCode, "key", "value",
+        ProjectParameterInfo projectParameterInfo = new ProjectParameterInfo(loginUser, projectCode, "key", "value", DataType.VARCHAR);
                 DataType.VARCHAR.name());
         assertNull(result.getData());
         assertNull(result.getCode());
@@ -90,7 +90,7 @@ public class ProjectParameterServiceTest {
         try (MockedStatic<CodeGenerateUtils> ignored = Mockito.mockStatic(CodeGenerateUtils.class)) {
             when(CodeGenerateUtils.genCode()).thenThrow(CodeGenerateUtils.CodeGenerateException.class);
 
-            result = projectParameterService.createProjectParameter(loginUser, projectCode, "key", "value",
+            projectParameterInfo = new ProjectParameterInfo(loginUser, projectCode, "key", "value", DataType.VARCHAR);
                     DataType.VARCHAR.name());
             assertEquals(Status.CREATE_PROJECT_PARAMETER_ERROR.getCode(), result.getCode());
         }
