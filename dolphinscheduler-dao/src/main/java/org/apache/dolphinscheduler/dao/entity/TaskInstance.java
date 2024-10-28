@@ -41,13 +41,15 @@ public class TaskInstance implements Serializable {
     private Integer id;
 
     private String name;
-
+    private String name;
     private String taskType;
-
-    private int workflowInstanceId;
-
+    private String taskType;
+    
     private String workflowInstanceName;
+    private String workflowInstanceName;
+private Long projectCode;
 
+    private long taskCode;
     private Long projectCode;
 
     private long taskCode;
@@ -65,7 +67,9 @@ public class TaskInstance implements Serializable {
     private Date firstSubmitTime;
 
     private Date submitTime;
+    private String host;
 
+    private String executePath;
     private Date startTime;
 
     private Date endTime;
