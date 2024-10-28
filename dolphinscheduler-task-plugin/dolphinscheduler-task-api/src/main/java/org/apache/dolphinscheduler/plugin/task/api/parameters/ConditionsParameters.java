@@ -60,14 +60,13 @@ public class ConditionsParameters extends AbstractParameters {
         private List<DependentTaskModel> dependTaskList;
 
         private DependentRelation relation;
-    // Corrected the end of file parsing issue by removing extra closing braces.
 
     @Data
     @Builder
     @NoArgsConstructor
     @AllArgsConstructor
     public static class ConditionResult {
-
+}
         private boolean conditionSuccess;
         private List<Long> successNode;
 
