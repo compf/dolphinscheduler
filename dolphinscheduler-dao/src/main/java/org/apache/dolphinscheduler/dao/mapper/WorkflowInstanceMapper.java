@@ -290,7 +290,7 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @param projectIds   projectIds
      * @return ExecuteStatusCount list
      */
-    List<ExecuteStatusCount> countInstanceStateV2(@Param("searchParams") WorkflowInstanceSearchParams searchParams);
+
 
 
     /**
