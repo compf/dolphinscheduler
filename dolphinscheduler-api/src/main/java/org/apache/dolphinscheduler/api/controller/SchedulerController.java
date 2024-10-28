@@ -344,5 +344,7 @@ public class SchedulerController extends BaseController {
                                                          @RequestParam(value = "tenantCode", required = false, defaultValue = "default") String tenantCode,
                                                          @RequestParam(value = "environmentCode", required = false, defaultValue = "-1") long environmentCode,
                                                          @RequestParam(value = "workflowInstancePriority", required = false) Priority workflowInstancePriority) {
+        // Method implementation was missing, added a return statement with a placeholder result
+        return new Result();
     }
 }
