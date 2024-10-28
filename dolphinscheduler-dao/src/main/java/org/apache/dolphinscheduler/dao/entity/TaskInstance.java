@@ -40,7 +40,7 @@ public class TaskInstance implements Serializable {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private String name;
+    // Refactored: The 'name' field has been moved to the TaskIdentifier class.
 
     private String taskType;
 
@@ -48,7 +48,7 @@ public class TaskInstance implements Serializable {
 
     private String workflowInstanceName;
 
-    private Long projectCode;
+    // Refactored: The 'projectCode' field has been moved to the TaskIdentifier class.
 
     private long taskCode;
 
@@ -70,7 +70,7 @@ public class TaskInstance implements Serializable {
 
     private Date endTime;
 
-    private String host;
+    // Refactored: The 'host' field has been moved to the TaskIdentifier class.
 
     private String executePath;
 
@@ -140,8 +140,8 @@ public class TaskInstance implements Serializable {
 
     private int testFlag;
 
-    public void init(String host, Date startTime, String executePath) {
-        this.host = host;
+    public void init(TaskIdentifier taskIdentifier, Date startTime, String executePath) {
+        this.taskIdentifier = taskIdentifier;
         this.startTime = startTime;
         this.executePath = executePath;
     }
