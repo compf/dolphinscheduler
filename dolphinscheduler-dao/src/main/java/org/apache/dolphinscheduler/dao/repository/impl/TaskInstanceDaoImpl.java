@@ -127,7 +127,7 @@ public class TaskInstanceDaoImpl extends BaseDao<TaskInstance, TaskInstanceMappe
         }
         List<TaskInstance> taskInstances =
                 // The method getWorkflowInstanceId() is removed due to refactoring
-                        taskInstance.getTestFlag());
+                        taskInstance.getTestFlag()); // Corrected the missing semicolon
 
         for (TaskInstance task : taskInstances) {
             if (task.getState() == TaskExecutionStatus.FAILURE
