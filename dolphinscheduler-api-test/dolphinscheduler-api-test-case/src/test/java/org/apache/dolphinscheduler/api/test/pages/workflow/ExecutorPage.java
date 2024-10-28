@@ -38,18 +38,16 @@ public class ExecutorPage {
 
     private String sessionId;
 
-    public HttpResponse startWorkflowInstance(User loginUser,
-                                              long projectCode,
-                                              long workflowDefinitionCode,
+    public HttpResponse startWorkflowInstance(WorkflowExecutionInfo executionInfo,
                                               String scheduleTime,
                                               FailureStrategy failureStrategy,
                                               WarningType warningType) {
         Map<String, Object> params = new HashMap<>();
-        params.put("loginUser", loginUser);
-        params.put("workflowDefinitionCode", workflowDefinitionCode);
-        params.put("scheduleTime", scheduleTime);
-        params.put("failureStrategy", failureStrategy);
-        params.put("warningType", warningType);
+        params.put("loginUser", executionInfo.getLoginUser());
+        params.put("workflowDefinitionCode", executionInfo.getWorkflowDefinitionCode());
+        params.put("scheduleTime", executionInfo.getScheduleTime());
+        params.put("failureStrategy", executionInfo.getFailureStrategy());
+        params.put("warningType", executionInfo.getWarningType());
         Map<String, String> headers = new HashMap<>();
         headers.put(Constants.SESSION_ID_KEY, sessionId);
 
@@ -58,10 +56,10 @@ public class ExecutorPage {
         return requestClient.post(url, headers, params);
     }
 
-    public HttpResponse queryExecutingWorkflow(User loginUser, long projectCode, long workflowInstanceCode) {
+    public HttpResponse queryExecutingWorkflow(QueryWorkflowInfo queryWorkflowInfo) {
         Map<String, Object> params = new HashMap<>();
-        params.put("loginUser", loginUser);
-        params.put("id", workflowInstanceCode);
+        params.put("loginUser", queryWorkflowInfo.getLoginUser());
+        params.put("id", queryWorkflowInfo.getWorkflowInstanceCode());
         Map<String, String> headers = new HashMap<>();
         headers.put(Constants.SESSION_ID_KEY, sessionId);
         RequestClient requestClient = new RequestClient();
