@@ -19,8 +19,8 @@ package org.apache.dolphinscheduler.api.service;
 
 import org.apache.dolphinscheduler.api.utils.Result;
 import org.apache.dolphinscheduler.dao.entity.User;
-import org.apache.dolphinscheduler.api.service.dto.ProjectParameterRequest;
-import org.apache.dolphinscheduler.api.service.dto.ProjectParameterUpdateRequest;
+import org.apache.dolphinscheduler.api.dto.ProjectParameterRequest;
+import org.apache.dolphinscheduler.api.dto.ProjectParameterUpdateRequest;
 
 public interface ProjectParameterService {
 
