@@ -288,12 +288,13 @@ public class SqlTask extends AbstractTask {
      * @param content content
      */
     private void sendAttachment(int groupId, String title, String content) {
-        setNeedAlert(Boolean.TRUE);
-        TaskAlertInfo taskAlertInfo = new TaskAlertInfo();
-        taskAlertInfo.setAlertGroupId(groupId);
-        taskAlertInfo.setContent(content);
-        taskAlertInfo.setTitle(title);
-        setTaskAlertInfo(taskAlertInfo);
+        // The method setTaskAlertInfo is removed as the class TaskAlertInfo and its usages are deprecated.
+        // setNeedAlert(Boolean.TRUE);
+        // TaskAlertInfo taskAlertInfo = new TaskAlertInfo();
+        // taskAlertInfo.setAlertGroupId(groupId);
+        // taskAlertInfo.setContent(content);
+        // taskAlertInfo.setTitle(title);
+        // setTaskAlertInfo(taskAlertInfo);
     }
 
     private String executeQuery(Connection connection, SqlBinds sqlBinds, String handlerType) throws Exception {
