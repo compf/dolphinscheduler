@@ -112,7 +112,13 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      */
     IPage<WorkflowInstance> queryWorkflowInstanceListPaging(Page<WorkflowInstance> page,
                                                             @Param("projectCode") Long projectCode,
-                                                            WorkflowInstanceQuery workflowInstanceQuery);
+                                                            @Param("workflowDefinitionCode") Long workflowDefinitionCode,
+                                                            @Param("searchVal") String searchVal,
+                                                            @Param("executorName") String executorName,
+                                                            @Param("states") int[] statusArray,
+                                                            @Param("host") String host,
+                                                            @Param("startTime") Date startTime,
+                                                            @Param("endTime") Date endTime);
 
     /**
      * set failover by host and state array
