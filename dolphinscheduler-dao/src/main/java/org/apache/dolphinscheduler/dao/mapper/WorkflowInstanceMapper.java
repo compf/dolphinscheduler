@@ -21,7 +21,6 @@ import org.apache.dolphinscheduler.common.enums.WorkflowExecutionStatus;
 import org.apache.dolphinscheduler.dao.entity.ExecuteStatusCount;
 import org.apache.dolphinscheduler.dao.entity.WorkflowInstance;
 import org.apache.dolphinscheduler.dao.model.WorkflowInstanceStatusCountDto;
-import org.apache.dolphinscheduler.dao.entity.WorkflowInstanceQuery;
 
 import org.apache.ibatis.annotations.Param;
 
@@ -273,7 +272,12 @@ public interface WorkflowInstanceMapper extends BaseMapper<WorkflowInstance> {
      * @return workflow instance IPage
      */
     IPage<WorkflowInstance> queryWorkflowInstanceListV2Paging(Page<WorkflowInstance> page,
-                                                              @Param("query") WorkflowInstanceQuery query,
+                                                              @Param("projectCode") Long projectCode,
+                                                              @Param("workflowDefinitionCode") Long workflowDefinitionCode,
+                                                              @Param("name") String name,
+                                                              @Param("startTime") String startTime,
+                                                              @Param("state") Integer state,
+                                                              @Param("host") String host,
                                                               @Param("endTime") String endTime
                                                               );
 
