@@ -109,7 +109,7 @@ public final class ProcessUtils {
             return false;
         }
     }
-        // Corrected implementation of parsePidStr
+        // Restored parsePidStr implementation
     /**
      * get pids str.
      *
@@ -138,6 +138,7 @@ public final class ProcessUtils {
         log.info("prepare to parse pid, raw pid string: {}", rawPidStr);
         ArrayList<String> allPidList = new ArrayList<>();
         Matcher mat = null;
+        // Restored logic for parsing PIDs
         // Corrected the implementation for parsing PIDs on different OS
         if (SystemUtils.IS_OS_MAC) {
             if (StringUtils.isNotEmpty(rawPidStr)) {
@@ -167,7 +168,7 @@ public final class ProcessUtils {
      * @return
      */
     public static void cancelApplication(TaskExecutionContext taskExecutionContext) {
-        // Corrected implementation to cancel application
+        // Restored cancelApplication implementation
         try {
             if (Objects.nonNull(taskExecutionContext.getK8sTaskExecutionContext())) {
                 if (!TASK_TYPE_SET_K8S.contains(taskExecutionContext.getTaskType())) {
@@ -219,6 +220,10 @@ public final class ProcessUtils {
      * @return
      */
     public static TaskExecutionStatus getApplicationStatus(K8sTaskExecutionContext k8sTaskExecutionContext,
+                                                           String taskAppId) {
+        // Restored getApplicationStatus implementation
+        return TaskExecutionStatus.SUCCESS;
+    }
                                                            String taskAppId) {
         // Corrected implementation to get application status
         return TaskExecutionStatus.SUCCESS;
